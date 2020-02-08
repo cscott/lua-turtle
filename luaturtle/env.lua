@@ -1,9 +1,9 @@
--- Bytecode interpreter
-local ops = require('ops')
-local jsval = require('jsval')
+-- JavaScript execution environment
+-- Consists of a realm, well-known symbols, etc
+local ops = require('luaturtle.ops')
+local jsval = require('luaturtle.jsval')
 
-local interp = {}
-
+-- Bytecode interpreter execution state
 local State = {}
 State.__index = State
 
@@ -37,6 +37,7 @@ end
 
 -- JavaScript execution environment
 -- Consists of a realm, well-known symbols, etc.
+-- (Also the bytecode interpreter!)
 local Env = {}
 
 function Env:new()
@@ -59,7 +60,9 @@ end
 
 
 local function nyi(which)
-   error("Not yet implemented: " + which)
+   return function()
+      error("Not yet implemented: " .. which)
+   end
 end
 
 
@@ -86,7 +89,7 @@ local one_step = {
       local obj = state:pop()
       local name = state.modul.literals[1+state:getnext()]
       local result = obj[name]
-      if result.type !== 'object' then
+      if result.type ~= 'object' then
          -- warn about unimplemented (probably library) functions
          io.write('Failing lookup of method ', name.to_str(), "\n")
       end
@@ -191,10 +194,10 @@ function Env:interpret(modul, func_id, frame)
    local func = modul.functions[func_id]
    local top = State:new(nil, frame2, modul, func)
    local state = State:new(top, frame2, modul, func)
-   while state.parent != nil do -- wait for state == top
+   while state.parent ~= nil do -- wait for state == top
       state = self:interpret_one(state)
    end
    return state:pop()
 end
 
-return interp
+return Env
