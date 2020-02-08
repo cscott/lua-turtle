@@ -21,6 +21,14 @@ function State:new(parent, frame, modul, func)
    return o
 end
 
+function State:__tostring()
+   local s = ''
+   for k,v in pairs(self) do
+      s = s .. k .. '=' .. tostring(v) .. ','
+   end
+   return 'State{' .. s .. '}'
+end
+
 function State:push(v)
    table.insert(self.stack, v)
 end
@@ -39,24 +47,46 @@ end
 -- Consists of a realm, well-known symbols, etc.
 -- (Also the bytecode interpreter!)
 local Env = {}
+Env.__index = Env
 
 function Env:new()
    local env = {
       realm = {},
       symbols = {}
    }
-   setmetatable(o, self)
+   setmetatable(env, self)
 
-   o.Object = jsval.Object() -- parent of all objects
-   o.Object.type = 'object'
+   -- %ObjectPrototype%, the parent of all Objects
+   local ObjectPrototype = jsval.newObject(env, jsval.Null)
+   env.realm.ObjectPrototype = ObjectPrototype
+   jsval.extendObj(ObjectPrototype)
+   getmetatable(ObjectPrototype)['[[SetPrototypeOf]]'] =
+      getmetatable(ObjectPrototype)['SetImmutablePrototype']
 
-   o.Array = jsval.Object(o.Object)
-   o.Array.type = 'array'
-   o.Array[jsval.String('length')] = 0
-
-   return o
+   return env
 end
 
+function Env:arrayCreate(luaArray)
+   -- XXX this is a hack, we need a proper Array type
+   local arr = jsval.newObject(self, self.realm.ObjectPrototype)
+   local max = 0
+   for i,v in ipairs(luaArray) do
+      arr[i-1] = v
+      if i > max then max = i end
+   end
+   arr.length = max
+   return arr
+end
+
+function Env:makeTopLevelFrame(context, arguments)
+   local frame = jsval.newObject(self, jsval.Null) -- Object.create(null)
+   -- set up 'this' and 'arguments'
+   frame.this = context
+   frame.arguments = self:arrayCreate(arguments)
+
+   -- constructors
+   return frame
+end
 
 
 local function nyi(which)
@@ -174,14 +204,23 @@ local one_step = {
    [ops.BI_EQ] = nyi('BI_EQ'),
    [ops.BI_GT] = nyi('BI_GT'),
    [ops.BI_GTE] = nyi('BI_GTE'),
-   [ops.BI_ADD] = nyi('BI_ADD'),
-   [ops.BI_SUB] = nyi('BI_SUB'),
+   [ops.BI_ADD] = function(env, state)
+      local right = state:pop()
+      local left = state:pop()
+      state:push( getmetatable(left).__add(left, right, env) )
+   end,
+   [ops.BI_SUB] = function(env, state)
+      local right = state:pop()
+      local left = state:pop()
+      state:push( getmetatable(left).__sub(left, right, env) )
+   end,
    [ops.BI_MUL] = nyi('BI_MUL'),
    [ops.BI_DIV] = nyi('BI_DIV')
 }
 
-function Env:interpet_one(state)
+function Env:interpretOne(state)
    local op = state:getnext()
+   -- print(state.pc, ops.bynum[op])
    local nstate = one_step[op](self, state) or state
    return nstate
 end
@@ -189,13 +228,13 @@ end
 function Env:interpret(modul, func_id, frame)
    local frame2 = frame
    if frame2 == nil then
-      frame2 = self:make_top_level_frame(jsval.Null, {})
+      frame2 = self:makeTopLevelFrame(jsval.Null, {})
    end
-   local func = modul.functions[func_id]
+   local func = modul.functions[func_id + 1] -- 1-based indexing
    local top = State:new(nil, frame2, modul, func)
    local state = State:new(top, frame2, modul, func)
    while state.parent ~= nil do -- wait for state == top
-      state = self:interpret_one(state)
+      state = self:interpretOne(state)
    end
    return state:pop()
 end

@@ -168,6 +168,19 @@ function PropertyDescriptor:to(env, obj)
 end
 
 -- EcmaScript language types
+local function extendMT(oldmt)
+   local newmt = setmetatable({}, { __index = oldmt })
+   local metamethods = {
+      '__tostring', '__add', '__sub', '__index', '__newindex'
+   }
+   for i,name in ipairs(metamethods) do
+      local func = rawget(oldmt, name)
+      if func ~= nil then
+         rawset(newmt, name, func)
+      end
+   end
+   return newmt
+end
 local JsValMT = {
    isJsVal = true,
    Type = nyi('Type'),
@@ -176,14 +189,14 @@ local JsValMT = {
    GetMethod = nyi('GetMethod'),
    Call = nyi('Call')
 }
-local UndefinedMT = setmetatable({}, { __index = JsValMT })
-local NullMT = setmetatable({}, { __index = JsValMT })
-local BooleanMT = setmetatable({}, { __index = JsValMT })
-local StringMT = setmetatable({}, { __index = JsValMT })
-local SymbolMT = setmetatable({}, { __index = JsValMT })
-local NumberMT = setmetatable({}, { __index = JsValMT })
-local BigIntMT = setmetatable({}, { __index = JsValMT })
-local ObjectMT = setmetatable({}, { __index = JsValMT })
+local UndefinedMT = extendMT(JsValMT)
+local NullMT = extendMT(JsValMT)
+local BooleanMT = extendMT(JsValMT)
+local StringMT = extendMT(JsValMT)
+local SymbolMT = extendMT(JsValMT)
+local NumberMT = extendMT(JsValMT)
+local BigIntMT = extendMT(JsValMT)
+local ObjectMT = extendMT(JsValMT)
 
 local allTypes = {
    UndefinedMT, NullMT, BooleanMT, StringMT,
@@ -422,7 +435,9 @@ function BooleanMT.ToNumber(env, b) return b.number end
 function NumberMT.ToNumber(env, n) return n end
 function StringMT.ToNumber(env, s)
    -- XXX this isn't fully spec-compliant
-   return NumberMT:from(tonumber(tostring(s)))
+   local n = tonumber(tostring(s))
+   if n == nil then n = (0/0) end
+   return NumberMT:from(n)
 end
 function SymbolMT.ToNumber(env)
    ThrowTypeError(env, 'Symbol#toNumber')
@@ -434,6 +449,28 @@ function ObjectMT.ToNumber(env, argument)
    if env == nil then env = rawget(argument, DEFAULTENV) end -- support for lua interop
    local primValue = mt(env, argument, 'ToPrimitive', 'number')
    return mt(env, primValue, 'ToNumber')
+end
+
+-- ToString
+local toStringVals = {
+   [Undefined] = StringMT:fromUTF8('undefined'),
+   [Null] = StringMT:fromUTF8('null'),
+   [True] = StringMT:fromUTF8('true'),
+   [False] = StringMT:fromUTF8('false'),
+}
+function JsValMT.ToString(env, val) return toStringVals[val] end
+function NumberMT.ToString(env, val)
+   -- XXX not entirely spec compliant
+   return StringMT:fromUTF8(tostring(val.value))
+end
+function StringMT.ToString(env, val) return val end
+function SymbolMT.ToString(env, val)
+   ThrowTypeError(env, "can't convert Symbol to string")
+end
+BigIntMT.ToString = nyi('BigInt ToString')
+function ObjectMT.ToString(env, val)
+   local primValue = mt(env, val, 'ToPrimitive', 'string')
+   return mt(env, primValue, 'ToString')
 end
 
 -- IsCallable (returns lua boolean, not Js boolean)
@@ -562,7 +599,16 @@ function ObjectMT.OrdinarySetPrototypeOf(env, O, V)
    rawset(O, PROTOTYPE, V)
    return true
 end
+ObjectMT['[[SetPrototypeOf]]'] = OrdinarySetPrototypeOf
 
+function ObjectMT.SetImmutablePrototype(env, O, V)
+   local current = mt(env, O, '[[GetPrototypeOf]]')
+   if JsValMT.SameValue(env, V, current) then
+      return true
+   else
+      return false
+   end
+end
 
 function ObjectMT.OrdinaryIsExtensible(env, obj)
    return rawget(obj, EXTENSIBLE)
@@ -704,7 +750,7 @@ end
 copyToAll('__add')
 function StringMT.__add(lstr, rstr, env)
    if getmetatable(rstr) ~= StringMT then
-      local rprim = mt(env, rval, 'ToPrimitive')
+      local rprim = mt(env, rstr, 'ToPrimitive')
       rstr = mt(env, rprim, 'ToString')
    end
    return StringMT:cons(lstr, rstr)
@@ -712,6 +758,11 @@ end
 function NumberMT.__add(l, r, env)
    if getmetatable(r) ~= NumberMT then
       local rprim = mt(env, r, 'ToPrimitive') -- may be redundant
+      if mt(env, rprim, 'Type') == 'String' then
+         -- whoops, bail to string + string case!
+         local lstr = mt(env, l, 'ToString')
+         return StringMT.__add(lstr, rprim, env)
+      end
       r = mt(env, rprim, 'ToNumeric')
    end
    return NumberMT:from(l.value + r.value)
@@ -804,11 +855,18 @@ return {
    True = True,
    False = False,
    PropertyDescriptor = PropertyDescriptor,
+   extendObj = function(obj)
+      setmetatable(obj, extendMT(getmetatable(obj)))
+   end,
    invokePrivate = mt,
    fromLua = fromLua,
    toLua = toLua,
+   convertUtf16 = function(utf16)
+      return tostring(StringMT:cons(nil, utf16))
+   end,
    Type = function(jsval) return mt(nil, jsval, 'Type') end,
    newNumber = function(val) return NumberMT:from(val) end,
    newString = function(s) return StringMT:fromUTF8(s) end,
+   newStringFromUtf16 = function(s) return StringMT:cons(nil, s) end,
    newObject = function(env, proto) return ObjectMT:create(env, proto) end,
 }

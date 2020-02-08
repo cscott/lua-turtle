@@ -64,6 +64,16 @@ function TestJsVal.testJsString()
    -- now test again w/o utf8 conversion first
    local d = b + a + b
    lu.assertEquals(#d, 11)
+
+   -- number conversion to string, too
+   local e = jsval.newNumber(5)
+   local f = a + e
+   lu.assertEquals(jsval.Type(f), 'String')
+   lu.assertEquals(tostring(f), 'abc5')
+
+   local g = e + a
+   lu.assertEquals(jsval.Type(g), 'String')
+   lu.assertEquals(tostring(g), '5abc')
 end
 
 function TestJsVal.testJsObject()
