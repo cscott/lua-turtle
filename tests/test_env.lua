@@ -62,7 +62,7 @@ function TestEnv.testMixedTypes()
    lu.assertEquals( jsval.Type(result), 'String')
 end
 
-function TestEnv.XtestFib()
+function TestEnv.testFib()
    -- Slightly more interesting module:
    -- { var fib=function(n){return (n<2)?1:fib(n-1)+fib(n-2);}; return fib(10); }
    local env = Env:new()
@@ -75,17 +75,17 @@ function TestEnv.XtestFib()
          bytecode = {
             0,        -- 0: push_frame
             1, 0,     -- 1: push_literal(0)
-            8, 1,     -- 3: set_slot_direct(1)
+            8, 1,     -- 3: set_slot_direct(1) frame.fib = undefined
             0,        -- 5: push_frame
             4, 1,     -- 6: new_function(1)
-            8, 1,     -- 8: set_slot_direct(1)
+            8, 1,     -- 8: set_slot_direct(1) frame.fib = function(..){...}
             0,        -- 10: push_frame
-            5, 1,     -- 11: get_slot_direct(1)
+            5, 1,     -- 11: get_slot_direct(1) fib
             0,        -- 13: push_frame
-            5, 8,     -- 14: get_slot_direct(8)
-            1, 9,     -- 16: push_literal(9)
+            5, 8,     -- 14: get_slot_direct(8) this
+            1, 9,     -- 16: push_literal(9)    10
             10, 1,    -- 18: invoke(1)
-            11        -- 20: return
+            11        -- 20: return             return fib.call(this, 10)
          }
       },
       ifunc.Function:new{ -- "fib"
@@ -97,22 +97,22 @@ function TestEnv.XtestFib()
             0,        -- 0: push_frame
             5, 2,     -- 1: get_slot_direct(2)
             15,       -- 3: dup
-            5, 3,     -- 4: get_slot_direct(3)
+            5, 3,     -- 4: get_slot_direct(3) arguments[0]
             0,        -- 6: push_frame
             19,       -- 7: swap
-            8, 4,     -- 8: set_slot_direct(4)
+            8, 4,     -- 8: set_slot_direct(4) n = arguments[0]
             14,       -- 10: pop
             0,        -- 11: push_frame
-            5, 4,     -- 12: get_slot_direct(4)
-            1, 5,     -- 14: push_literal(5)
+            5, 4,     -- 12: get_slot_direct(4) n
+            1, 5,     -- 14: push_literal(5)    2
             19,       -- 16: swap
-            24,       -- 17: bi_gt
-            13, 24,   -- 18: jmp_unless(24)
+            24,       -- 17: bi_gt              n < 2
+            13, 24,   -- 18: jmp_unless(24)     jmp if n > 2
             1, 6,     -- 20: push_literal(6)
-            12, 57,   -- 22: jmp(57)
+            12, 57,   -- 22: jmp(57)            return 1
             0,        -- 24: push_frame
-            5, 7,     -- 25: get_slot_direct(7)
-            5, 1,     -- 27: get_slot_direct(1)
+            5, 7,     -- 25: get_slot_direct(7) frame.__proto__
+            5, 1,     -- 27: get_slot_direct(1) frame.__proto__.fib
             0,        -- 29: push_frame
             5, 8,     -- 30: get_slot_direct(8)
             0,        -- 32: push_frame

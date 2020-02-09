@@ -8,15 +8,16 @@ local string = require('string')
 local jsval = {}
 
 -- private slot keys
-local DEFAULTENV = setmetatable({}, {
-      __tostring = function() return '[[default env]]' end
-})
-local PROTOTYPE = setmetatable({}, {
-      __tostring = function() return '[[PROTOTYPE]]' end
-})
-local EXTENSIBLE = setmetatable({}, {
-      __tostring = function() return '[[EXTENSIBLE]]' end
-})
+local function mkPrivateSlot(name)
+   return setmetatable({}, { __tostring = function() return name end })
+end
+local DEFAULTENV = mkPrivateSlot('@DEFAULTENV@')
+local PARENTFRAME = mkPrivateSlot('@PARENTFRAME@')
+local VALUE = mkPrivateSlot('@VALUE@')
+local ISAPPLY = mkPrivateSlot('@ISAPPLY@')
+-- private slots in the JS standard
+local PROTOTYPE = mkPrivateSlot('[[PROTOTYPE]]')
+local EXTENSIBLE = mkPrivateSlot('[[EXTENSIBLE]]')
 
 -- helper to call 'hidden' functions on metatable
 local function mt(env, v, name, ...)
@@ -25,6 +26,7 @@ local function mt(env, v, name, ...)
       if vm == nil or vm[name] == nil then
          local ty = vm and vm.Type
          if ty ~= nil then ty = ty() else ty = '<unknown>' end
+         if v == nil then ty = 'nil' end
          error('NYI ' .. name .. ' in ' .. ty)
       end
    end
@@ -76,7 +78,7 @@ function PropertyDescriptor:newAccessor(desc)
       configurable = desc.configurable or false
    }
 end
-function PropertyDescriptor:set(P)
+function PropertyDescriptor:setFrom(P)
    if P.value ~= nil then self.value = P.value end
    if P.get ~= nil then self.get = P.get end
    if P.set ~= nil then self.set = P.set end
@@ -116,7 +118,7 @@ end
 function PropertyDescriptor:from(env, desc)
    local obj = env:OrdinaryObjectCreate(env.realm.Object_prototype)
    local mkProp = function(field, val)
-      mt(env, obj, 'CreateDataPropertyOrThrow', StringMT:fromUTF8(field), val)
+      mt(env, obj, 'CreateDataPropertyOrThrow', StringMT:intern(field), val)
    end
    local toBool = function(b) if b then return True else return False end end
    if desc.value ~= nil then mkProp('value', desc.value) end
@@ -133,10 +135,10 @@ function PropertyDescriptor:to(env, obj)
    end
    local desc = PropertyDescriptor:new{}
    local has = function(field)
-      return mt(env, obj, 'HasProperty', StringMT:fromUTF8(field))
+      return mt(env, obj, 'HasProperty', StringMT:intern(field))
    end
    local get = function(field)
-      return mt(env, obj, 'Get', StringMT:fromUTF8(field))
+      return mt(env, obj, 'Get', StringMT:intern(field))
    end
    local getBool = function(field)
       return mt(env, get(field), 'ToBoolean').value
@@ -224,6 +226,8 @@ function ObjectMT:create(env, proto)
       { [DEFAULTENV] = env, [PROTOTYPE] = proto, [EXTENSIBLE] = true },
       ObjectMT)
 end
+
+-- String constructors
 function StringMT:cons(a, b)
    if a ~= nil and type(a) ~= 'string' then
       if a.prefix == nil then
@@ -278,6 +282,26 @@ function StringMT:flatten(s)
    return StringMT:cons(nil, table.concat(result))
 end
 
+-- String Intern table
+local stringInternTable = {}
+function StringMT:intern(s)
+   -- fast case
+   local r = stringInternTable[s]
+   if r ~= nil then return r end
+   -- slower case
+   if type(s) == 'string' then
+      r = StringMT:fromUTF8(s)
+      stringInternTable[s] = r
+      return r
+   end
+   -- more unusual case, called w/ a JS object
+   assert(mt(nil, s, 'Type') == 'String')
+   local key = tostring(s)
+   stringInternTable[key] = s
+   return s
+end
+
+-- Convert values to/from lua
 local function fromLua(env, v)
    local ty = type(v)
    if ty == 'string' then
@@ -373,7 +397,7 @@ function ObjectMT.ToPrimitive(env, input, hint)
    if env == nil then env = rawget(input, DEFAULTENV) end -- support for lua interop
    local exoticToPrim = mt(env, input, 'GetMethod', env.symbols.toPrimitive)
    if exoticToPrim ~= Undefined then
-      local result = mt(env, exoticToPrim, 'Call', StringMT:fromUTF8(hint))
+      local result = mt(env, exoticToPrim, 'Call', StringMT:intern(hint))
       if mt(env, result, 'IsObject') then
          ThrowTypeError(env, 'exotic ToPrimitive not primitive')
       end
@@ -393,7 +417,7 @@ function ObjectMT.OrdinaryToPrimitive(env, O, hint)
       methodNames = { 'valueOf', 'toString' }
    end
    for i=1,2 do
-      local method = mt(env, O, 'Get', StringMT:fromUTF8(methodNames[i]))
+      local method = mt(env, O, 'Get', StringMT:intern(methodNames[i]))
       if mt(env, method, 'IsCallable') then
          local result = mt(env, method, 'Call', O)
          if not mt(env, result, 'IsObject') then
@@ -453,10 +477,10 @@ end
 
 -- ToString
 local toStringVals = {
-   [Undefined] = StringMT:fromUTF8('undefined'),
-   [Null] = StringMT:fromUTF8('null'),
-   [True] = StringMT:fromUTF8('true'),
-   [False] = StringMT:fromUTF8('false'),
+   [Undefined] = StringMT:intern('undefined'),
+   [Null] = StringMT:intern('null'),
+   [True] = StringMT:intern('true'),
+   [False] = StringMT:intern('false'),
 }
 function JsValMT.ToString(env, val) return toStringVals[val] end
 function NumberMT.ToString(env, val)
@@ -713,20 +737,25 @@ function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc
    if field ~= nil then
       local valOrDesc = rawget(O, field)
       if mt(env, valOrDesc, 'IsPropertyDescriptor') then
-         valOrDesc:set(P)
-      elseif valOrDesc:IsSimple(true) then
+         valOrDesc:setFrom(desc)
+      elseif desc:IsSimple(true) then
          if desc.value ~= nil then
             rawset(O, field, desc.value)
          end
+         -- bail early, because valOrDesc is a value not a PropertyDescriptor
          return true
       else
-         valOrDesc = PropertyDescriptor:newSimple(valOrDesc):set(P)
+         -- valOrDesc is a value here...
+         valOrDesc = PropertyDescriptor:newSimple(valOrDesc):setFrom(desc)
+         -- ...and now it's a property descriptor
          rawset(O, field, valOrDesc)
       end
-   end
-   if valOrDesc.value ~= nil and valOrDesc:IsSimple(false) then
-      -- reoptimize if we've ended up with a simple field
-      rawset(O, field, valOrDesc.value)
+      -- if we've falled through, check once more if the resulting valOrDesc
+      -- (guaranteed to be a PropertyDescriptor) is simple, and optimize if so
+      if valOrDesc.value ~= nil and valOrDesc:IsSimple(false) then
+         -- reoptimize if we've ended up with a simple field
+         rawset(O, field, valOrDesc.value)
+      end
    end
    return true
 end
@@ -785,15 +814,49 @@ function NumberMT.__sub(l, r, env)
    return NumberMT:from(l.value - r.value)
 end
 
+-- Note that the order in which we call 'ToPrimitive' is a slight variance
+-- from the JS spec -- EcmaScript is strict about calling it on the left
+-- operand first, then the right operand -- but our turtlescript compiler
+-- can swap operands in the interest of simplifying the bytecode operation.
+function JsValMT.__lt(lval, rval, env) -- note optional env!
+   local lnum = mt(env, lval, 'ToPrimitive', 'number')
+   local rnum = mt(env, rval, 'ToPrimitive', 'number')
+   -- if *both* are strings, we do a string comparison
+   if mt(env, lnum, 'Type') == 'String' and mt(env, rnum, 'Type') == 'String' then
+      return StringMT.__lt(lval, rval, env)
+   end
+   -- otherwise, a numerical comparison (skipping some BigInt support here)
+   lnum = mt(env, lnum, 'ToNumeric')
+   rnum = mt(env, rnum, 'ToNumeric')
+   return NumberMT.__lt(lnum, rnum, env)
+end
+copyToAll('__lt')
+function StringMT.__lt(l, r, env)
+   if getmetatable(r) ~= StringMT then
+      -- this will be a numeric comparison.
+      return JsValMT.__lt(l, r, env)
+   end
+   -- XXX I don't think that the UTF-8 conversion compares the same as UTF-16
+   -- We should probably do an element-by-element comparison
+   return tostring(l) < tostring(r) -- XXX probably not exactly right
+end
+function NumberMT.__lt(l, r, env)
+   if getmetatable(r) ~= NumberMT then
+      r = mt(env, r, 'ToPrimitive', 'number')
+      r = mt(env, r, 'ToNumeric')
+   end
+   return l.value < r.value
+end
+
 -- Object utilities (lua interop)
 function ObjectMT:__index(key)
    local env = rawget(self, DEFAULTENV)
-   local jskey = StringMT:fromUTF8(tostring(key))
+   local jskey = fromLua(env, key)
    return toLua(env, mt(env, self, '[[Get]]', jskey))
 end
 function ObjectMT:__newindex(key, value)
    local env = rawget(self, DEFAULTENV)
-   local jskey = StringMT:fromUTF8(tostring(key))
+   local jskey = fromLua(env, key)
    local jsval = fromLua(env, value)
    mt(env, self, '[[Set]]', jskey, jsval, self)
 end
@@ -848,6 +911,10 @@ function StringMT.toKey(env, s)
    rawset(s, 'key', key)
    return key
 end
+function NumberMT.toKey(env, n)
+   -- XXX this is very slow :(
+   return StringMT.toKey(env, NumberMT.ToString(env, n))
+end
 
 return {
    Undefined = Undefined,
@@ -865,8 +932,40 @@ return {
       return tostring(StringMT:cons(nil, utf16))
    end,
    Type = function(jsval) return mt(nil, jsval, 'Type') end,
+   newBoolean = function(b) if b then return True else return False end end,
    newNumber = function(val) return NumberMT:from(val) end,
    newString = function(s) return StringMT:fromUTF8(s) end,
    newStringFromUtf16 = function(s) return StringMT:cons(nil, s) end,
-   newObject = function(env, proto) return ObjectMT:create(env, proto) end,
+   newStringIntern = function(s) return StringMT:intern(s) end,
+   newObject = function(env, proto)
+      if proto == nil then proto = env.realm.ObjectPrototype end
+      return ObjectMT:create(env, proto)
+   end,
+   newFunction = function(env, fields)
+      -- XXX this should match OrdinaryFunctionCreate from ECMAScript spec
+      local f = ObjectMT:create(env, env.realm.FunctionPrototype)
+      -- hidden fields of callable function objects
+      rawset(f, PARENTFRAME, fields.parentFrame)
+      rawset(f, VALUE, { modul = fields.modul, func = fields.func })
+      -- user-visible fields
+      mt(env, f, '[[Set]]', StringMT:intern('name'), fields.func.name, f)
+      mt(env, f, '[[Set]]', StringMT:intern('length'), fields.func.nargs, f)
+      return f
+   end,
+   newFrame = function(env, parentFrame, this, arguments)
+      local nFrame = ObjectMT:create(env, parentFrame)
+      mt(env, nFrame, '[[Set]]', StringMT:intern('this'), this, nFrame)
+      mt(env, nFrame, '[[Set]]', StringMT:intern('arguments'), arguments, nFrame)
+      -- this is used by the binterp compiler to avoid actual inheritance of
+      -- frame objects, but we don't support the __proto__ field yet (although
+      -- we do support actual inheritance of frame objects!).  Anyway, fake
+      -- it until you make it.
+      mt(env, nFrame, '[[Set]]', StringMT:intern('__proto__'), parentFrame, nFrame)
+      return nFrame
+   end,
+   privateFields = {
+      PARENTFRAME = PARENTFRAME,
+      VALUE = VALUE,
+      ISAPPLY = ISAPPLY,
+   }
 }
