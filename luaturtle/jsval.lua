@@ -538,8 +538,22 @@ function ObjectMT.Set(env, O, P, V, Throw)
 end
 
 function ObjectMT.OrdinaryGet(env, O, P, Receiver)
-   if env == nil then env = rawget(O, DEFAULTENV) end -- support for lua interop
-   local desc = mt(env, O, '[[GetOwnProperty]]', P)
+   -- fast path! inlined from OrdinaryGetOwnProperty impl
+   local desc
+   local GetOwnProperty = getmetatable(O)['[[GetOwnProperty]]']
+   local fastKey = rawget(P, 'key')
+   if GetOwnProperty == OrdinaryGetOwnProperty and fastKey ~= nil then
+      local fastVal = rawget(O, fastKey)
+      if fastVal == nil then
+         desc = nil -- this is fast path for method lookup through prototype
+      elseif getmetatable(fastVal) == PropertyDescriptor then
+         desc = fastVal -- moderately fast path for method lookup
+      else
+         return fastVal -- super fast path for a simple value
+      end
+   else
+      desc = GetOwnProperty(env, O, P)
+   end
    if desc == nil then
       local parent = mt(env, O, '[[GetPrototypeOf]]')
       if parent == Null then return Undefined end
@@ -556,8 +570,20 @@ end
 ObjectMT['[[Get]]'] = ObjectMT.OrdinaryGet
 
 function ObjectMT.OrdinarySet(env, O, P, V, Receiver)
-   if env == nil then env = rawget(O, DEFAULTENV) end -- support for lua interop
-   local ownDesc = mt(env, O, '[[GetOwnProperty]]', P)
+   -- fast path! inlined from OrdinaryGetOwnProperty impl
+   local GetOwnProperty = getmetatable(O)['[[GetOwnProperty]]']
+   if O == Receiver and GetOwnProperty == OrdinaryGetOwnProperty then
+      local fastKey = rawget(P, 'key')
+      if fastKey ~= nil then
+         local fastVal = rawget(O, fastKey)
+         if fastVal ~= nil and getmetatable(fastVal) ~= PropertyDescriptor then
+            -- fast path for a set of a simple value
+            rawset(O, fastKey, V)
+            return true
+         end
+      end
+   end
+   local ownDesc = GetOwnProperty(env, O, P)
    return mt(env, O, 'OrdinarySetWithOwnDescriptor', P, V, Receiver, ownDesc)
 end
 ObjectMT['[[Set]]'] = ObjectMT.OrdinarySet
@@ -594,7 +620,7 @@ function ObjectMT.OrdinarySetWithOwnDescriptor(env, O, P, V, Receiver, ownDesc)
 end
 
 -- [[GetPrototypeOf]] / [[SetPrototypeOf]]
-local function OrdinaryGetPrototypeOf(env, obj)
+function OrdinaryGetPrototypeOf(env, obj)
    return rawget(obj, PROTOTYPE)
 end
 ObjectMT.OrdinaryGetPrototypeOf = OrdinaryGetPrototypeOf
@@ -646,7 +672,8 @@ end
 ObjectMT['[[PreventExtensions]]'] = ObjectMT.OrdinaryPreventExtensions
 
 -- returns nil or a PropertyDescriptor
-function ObjectMT.OrdinaryGetOwnProperty(env, O, P)
+-- Note that a fast path from this is inlined into [[Get]] and [[Set]]
+function OrdinaryGetOwnProperty(env, O, P)
    -- P is a String or a Symbol
    local field = mt(env, P, 'toKey')
    local valOrDesc = rawget(O, field)
@@ -657,7 +684,8 @@ function ObjectMT.OrdinaryGetOwnProperty(env, O, P)
       return PropertyDescriptor:newSimple(valOrDesc)
    end
 end
-ObjectMT['[[GetOwnProperty]]'] = ObjectMT.OrdinaryGetOwnProperty
+ObjectMT.OrdinaryGetOwnProperty = OrdinaryGetOwnProperty
+ObjectMT['[[GetOwnProperty]]'] = OrdinaryGetOwnProperty
 
 function ObjectMT.OrdinaryDefineOwnProperty(env, O, P, Desc)
    local current = mt(env, O, '[[GetOwnProperty]]', P)
