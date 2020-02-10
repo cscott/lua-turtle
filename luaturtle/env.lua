@@ -157,7 +157,27 @@ function Env:new()
    env:mkDataDesc(Array, 'length', { value = 1, configurable = true })
    env.realm.Array = Array
 
+   -- Not in ECMAScript but useful: console!
+   local ConsolePrototype = jsval.newObject(env, ObjectPrototype)
+   env.realm.ConsolePrototype = ConsolePrototype
+   local Console = jsval.newObject(env, ConsolePrototype)
+   env.realm.Console = Console
+
    -- Native methods
+   local function RequireObjectCoercible(arg)
+      if rawequal(arg, jsval.Null) or rawequal(arg, jsval.Undefined) then
+         error(env:newTypeError('this not coercible to object'))
+      end
+      return arg
+   end
+   env:addNativeFunc(ConsolePrototype, 'log', 0, function(this, args)
+      local sargs = {}
+      for _,v in ipairs(args) do
+         table.insert(sargs, tostring(jsval.invokePrivate(env, v, 'ToString')))
+      end
+      print(table.concat(sargs, ' '))
+      return jsval.Undefined
+   end)
    env:addNativeFunc(Object, 'create', 2, function(this, args)
      local O = args[1] or jsval.Undefined
      local Properties = args[2] or jsval.Undefined
@@ -165,30 +185,61 @@ function Env:new()
         error(env:newTypeError('prototype not an object or null'))
      end
      local obj = jsval.newObject(env, O)
-     if Properties == jsval.Undefined then return obj end
+     if rawequal(Properties, jsval.Undefined) then return obj end
      return jsval.invokePrivate(env, obj, 'ObjectDefineProperties', Properties)
    end)
    env:addNativeFunc(Object, 'defineProperties', 2, function(this, args)
-     local Properties = args[1] or jsval.Undefined
-     return jsval.invokePrivate(env, this, 'ObjectDefineProperties', Properties)
+     local O = args[1] or jsval.Undefined
+     local Properties = args[2] or jsval.Undefined
+     return jsval.invokePrivate(env, O, 'ObjectDefineProperties', Properties)
    end)
    env:addNativeFunc(Object, 'defineProperty', 3, function(this, args)
-     local P = args[1] or jsval.Undefined
-     local Attributes = args[2] or jsval.Undefined
-     if jsval.Type(this) ~= 'Object' then
+     local O = args[1] or jsval.Undefined
+     local P = args[2] or jsval.Undefined
+     local Attributes = args[3] or jsval.Undefined
+     if jsval.Type(O) ~= 'Object' then
         error(env:newTypeError('not an object'))
      end
      local key = jsval.invokePrivate(env, P, 'ToPropertyKey')
      local desc = jsval.invokePrivate(env, Attributes, 'ToPropertyDescriptor')
-     jsval.invokePrivate(env, this, 'DefinePropertyOrThrow', key, desc)
-     return this
+     jsval.invokePrivate(env, O, 'DefinePropertyOrThrow', key, desc)
+     return O
    end)
+   -- Object.Try / Object.Throw -- turtlescript extension!
+   env:addNativeFunc(Object, 'Try', 4, function(this, args)
+     local innerThis = args[1] or jsval.Undefined
+     local bodyBlock = args[2] or jsval.Undefined
+     local catchBlock = args[3] or jsval.Undefined
+     local finallyBlock = args[4] or jsval.Undefined
+     local status, rv = env:interpretFunction(bodyBlock, innerThis, {})
+     if not status then -- exception thrown! invoke catchBlock!
+        if not jsval.isJsVal(rv) then error(rv) end -- lua exception, rethrow
+        -- print('EXCEPTION CAUGHT!', rv)
+        if jsval.Type(catchBlock) == 'Object' then
+           status, rv = env:interpretFunction( catchBlock, innerThis, { rv } )
+           -- ignore return value of catch block (not ideal)
+           if status then rv = jsval.Undefined end
+        end
+     end
+     if jsval.Type(finallyBlock)=='Object' then
+        nyi('finally block')()
+     end
+     -- rethrow if exception uncaught (or thrown during catch)
+     if not status then error(rv) end
+     return rv
+   end)
+   env:addNativeFunc(Object, 'Throw', 1, function(this, args)
+     local ex = args[1] or jsval.Undefined
+     error(ex) -- native throw!
+   end)
+
    env:addNativeFunc(ObjectPrototype, 'hasOwnProperty', 1, function(this, args)
      local V = args[1] or jsval.Undefined
      local P = jsval.invokePrivate(env, V, 'ToPropertyKey')
      local O = jsval.invokePrivate(env, this, 'ToObject')
      return jsval.invokePrivate(env, O, 'HasOwnProperty', P)
    end)
+
    rawset(env:addNativeFunc(FunctionPrototype, 'call', 1, function(this, args)
      -- push arguments on stack and use 'invoke' bytecode op
      -- arg #0 is the function itself ('this')
@@ -217,6 +268,21 @@ function Env:new()
      end
      return nargs
    end), jsval.privateFields.ISAPPLY, true)
+
+   env:addNativeFunc(StringPrototype, 'charAt', 1, function(this, args)
+     local O = RequireObjectCoercible(this)
+     local S = jsval.invokePrivate(env, O, 'ToString')
+     local pos = args[1] or jsval.Undefined
+     local position = jsval.toLua(env, jsval.invokePrivate(env, pos, 'ToInteger'))
+     local size = #S
+     if position < 0 or position >= size then
+        return jsval.newStringIntern('')
+     end
+     local start = (position << 1) + 1 -- 1-based indexing!
+     local resultStr = string.sub(jsval.stringToUtf16(S), start, start + 1)
+     return jsval.newStringFromUtf16(resultStr)
+   end)
+
    return env
 end
 
@@ -281,7 +347,7 @@ function Env:addNativeFunc(obj, name, len, f)
    self:mkDataDesc(myFunc, 'length', { value = len, configurable = true })
    rawset(myFunc, jsval.privateFields.PARENTFRAME, jsval.Null)
    rawset(myFunc, jsval.privateFields.VALUE, f)
-   self:mkDataDesc(obj, name, { value = myFunc, writable = true, configurable = true })
+   self:mkHidden(obj, name, myFunc)
    return myFunc
 end
 
@@ -295,6 +361,22 @@ function Env:makeTopLevelFrame(context, arguments)
    self:mkFrozen(frame, 'Infinity', 1/0)
    self:mkFrozen(frame, 'NaN', 0/0)
    self:mkFrozen(frame, 'undefined', jsval.Undefined)
+   self:mkHidden(frame, 'console', self.realm.Console)
+   self:addNativeFunc(frame, 'isFinite', 1, function(this, args)
+     local number = args[1] or jsval.Undefined
+     local num = jsval.invokePrivate(self, number, 'ToNumber')
+     num = num.value
+     if num ~= num then return jsval.False end -- NaN
+     if num == 1/0 or num == -1/0 then return jsval.False end -- infinities
+     return jsval.True
+   end)
+   self:addNativeFunc(frame, 'isNaN', 1, function(this, args)
+     local number = args[1] or jsval.Undefined
+     local num = jsval.invokePrivate(self, number, 'ToNumber')
+     num = num.value
+     if num ~= num then return jsval.True end -- NaN
+     return jsval.False
+   end)
 
    -- constructors
    self:mkHidden(frame, 'Array', self.realm.Array)
@@ -388,7 +470,7 @@ local one_step = {
       local arg1 = state:getnext()
       local cond = state:pop()
       cond = jsval.invokePrivate(env, cond, 'ToBoolean')
-      if cond == jsval.False then
+      if rawequal(cond, jsval.False) then
          state.pc = arg1 + 1 -- convert to 1-based indexing
       end
    end,
@@ -435,7 +517,7 @@ local one_step = {
    [ops.UN_NOT] = function(env, state)
       local arg = state:pop()
       arg = jsval.invokePrivate(env, arg, 'ToBoolean')
-      if arg == jsval.True then
+      if rawequal(arg, jsval.True) then
          state:push(jsval.False)
       else
          state:push(jsval.True)
@@ -460,14 +542,14 @@ local one_step = {
       local right = state:pop()
       local left = state:pop()
       -- Note that we flip the order of operands
-      local result = getmetatable(left).__lt(right, left, env)
+      local result = getmetatable(right).__lt(right, left, env)
       state:push( jsval.newBoolean(result) )
    end,
    [ops.BI_GTE] = function(env, state)
       local right = state:pop()
       local left = state:pop()
       -- Note that we flip the order of operands
-      local result = getmetatable(left).__le(right, left, env)
+      local result = getmetatable(right).__le(right, left, env)
       state:push( jsval.newBoolean(result) )
    end,
    [ops.BI_ADD] = function(env, state)
@@ -500,13 +582,12 @@ function Env:interpretOne(state)
 end
 
 function Env:interpret(modul, func_id, frame)
-   local frame2 = frame
-   if frame2 == nil then
-      frame2 = self:makeTopLevelFrame(jsval.Null, {})
+   if frame == nil then
+      frame = self:makeTopLevelFrame(jsval.Null, {})
    end
    local func = modul.functions[func_id + 1] -- 1-based indexing
-   local top = State:new(nil, frame2, modul, func)
-   local state = State:new(top, frame2, modul, func)
+   local top = State:new(nil, frame, modul, func)
+   local state = State:new(top, frame, modul, func)
    while state.parent ~= nil do -- wait for state == top
       state = self:interpretOne(state)
    end
@@ -570,6 +651,8 @@ function Env:invokeInternal(state, func, myThis, args)
    error('bad function object')
 end
 
+-- Returns a pair of status, result like pcall does
+-- status is false if an exception was thrown (and result is the exception)
 function Env:interpretFunction(func, this, args)
    -- assert that func is a function
    local parentFrame = rawget(func, jsval.privateFields.PARENTFRAME)
@@ -589,7 +672,7 @@ function Env:interpretFunction(func, this, args)
          local nThis = table.remove(nArgs, 1)
          return self:interpretFunction(nFunction, nThis, nArgs)
       end
-      return rv
+      return true, rv
    end
    if type(f) == 'table' and f.modul ~= nil and f.func ~= nil then
       assert(jsval.Type(parentFrame) == 'Object')
@@ -597,7 +680,10 @@ function Env:interpretFunction(func, this, args)
       local nFrame = jsval.newFrame(
          self, parentFrame, this, self:arrayCreate(args)
       )
-      return self:interpret(f.modul, f.func.id, nFrame)
+      -- Set up error-handling
+      return xpcall(
+         self.interpret, debug.traceback, self, f.modul, f.func.id, nFrame
+      )
    end
    error('bad function object')
 end

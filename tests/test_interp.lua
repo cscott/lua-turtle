@@ -8,7 +8,8 @@ local function doScriptTest( script )
    for _,line in ipairs(script) do
       local given = line[1]
       local expected = line[2]
-      local rv = i:repl( given )
+      local status, rv = i:repl( given )
+      lu.assertEquals( status, true, tostring(rv) )
       lu.assertEquals( tostring(rv), expected, given )
    end
 end

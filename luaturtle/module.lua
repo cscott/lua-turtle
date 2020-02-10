@@ -5,8 +5,9 @@ local ifunc = require("luaturtle.ifunc")
 
 -- Helper class to read the bytecode format
 local ModuleReader = {}
+ModuleReader.__index = ModuleReader
 function ModuleReader:new(buf)
-   setmetatable({ buf = buf, pos = 1 }, self)
+   return setmetatable({ buf = buf, pos = 1 }, self)
 end
 
 function ModuleReader:decodeUint()

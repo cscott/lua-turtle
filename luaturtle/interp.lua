@@ -16,17 +16,22 @@ function Interpreter:new()
    local makeRepl = jsval.invokePrivate(
       i.env, i.compileFromSource, 'GetV', jsval.newString('make_repl')
    )
-   i.replFunc = i.env:interpretFunction( makeRepl, jsval.Null, {} )
+   local status, replFunc = i.env:interpretFunction( makeRepl, jsval.Null, {} )
+   assert(status, replFunc)
+   i.replFunc = replFunc
    return i
 end
 
 -- Compile a source string to bytecode and then execute it
+-- Returns a status, result pair
 function Interpreter:interpret(source)
    -- compile source to bytecode
-   local bc = self.env:interpretFunction(
+   local status, bc = self.env:interpretFunction(
       self.compileFromSource, jsval.Null, { jsval.newString( source ) }
    )
-   -- XXX handle exceptions thrown during compilation (syntax errors)
+   if not status then
+      return status, bc -- Syntax error during compilation
+   end
    -- Create a new module from the bytecode
    return self:createModuleAndExecute( bc )
 end
@@ -34,10 +39,12 @@ end
 -- Execute a source string in a REPL.
 function Interpreter:repl(source)
    -- compile source to bytecode
-   local bc = self.env:interpretFunction(
+   local status, bc = self.env:interpretFunction(
       self.replFunc, jsval.Null, { jsval.newString( source ) }
    )
-   -- XXX handle exceptions thrown during compilation (syntax errors)
+   if not status then
+      return status, bc -- Syntax error during compilation
+   end
    -- Create a new module from the bytecode
    return self:createModuleAndExecute( bc )
 end
@@ -45,11 +52,13 @@ end
 function Interpreter:createModuleAndExecute(bc)
    local buf = {}
    self.env:arrayEach(bc, function(val)
-     table.insert(buf, string.char(jsval.toLua(val)))
+     table.insert(buf, string.char(jsval.toLua(self.env, val)))
    end)
    local nm = Module:newFromBytes( table.concat(buf) )
    -- Execute the new module
-   return self.env:interpret( nm, 0, self.frame )
+   return xpcall(
+      self.env.interpret, debug.traceback, self.env, nm, 0, self.frame
+   )
 end
 
 return Interpreter

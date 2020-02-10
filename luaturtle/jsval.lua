@@ -117,70 +117,12 @@ function PropertyDescriptor:IsDataDescriptor()
    if self.value == nil and self.writable == nil then return false end
    return true
 end
-function PropertyDescriptor.IsGenericDescriptor()
+function PropertyDescriptor:IsGenericDescriptor()
    if self == nil then return false end
    if (not self:IsAccessorDescriptor()) and (not self:IsDataDescriptor()) then
       return true
    end
    return false
-end
-function PropertyDescriptor.IsCompatible(desc, extensible, current)
-   return ObjectMT.ValidateAndApplyPropertyDescriptor(
-      nil, Undefined, Undefined, extensible, desc, current
-   )
-end
-function PropertyDescriptor:from(env, desc)
-   local obj = env:OrdinaryObjectCreate(env.realm.Object_prototype)
-   local mkProp = function(field, val)
-      mt(env, obj, 'CreateDataPropertyOrThrow', StringMT:intern(field), val)
-   end
-   local toBool = function(b) if b then return True else return False end end
-   if desc.value ~= nil then mkProp('value', desc.value) end
-   if desc.writable ~= nil then mkProp('writable', toBool(desc.writable)) end
-   if desc.get ~= nil then mkProp('get', desc.get) end
-   if desc.set ~= nil then mkProp('get', desc.set) end
-   if desc.enumerable ~= nil then mkProp('enumerable', toBool(desc.enumerable)) end
-   if desc.configurable ~= nil then mkProp('configurable', toBool(desc.configurable)) end
-   return obj
-end
-function PropertyDescriptor:to(env, obj)
-   if not mt(env, obj, 'IsObject') then
-      ThrowTypeError(env, 'property descriptor not an object')
-   end
-   local desc = PropertyDescriptor:new{}
-   local has = function(field)
-      return mt(env, obj, 'HasProperty', StringMT:intern(field))
-   end
-   local get = function(field)
-      return mt(env, obj, 'Get', StringMT:intern(field))
-   end
-   local getBool = function(field)
-      return mt(env, get(field), 'ToBoolean').value
-   end
-   if has('enumerable') then desc.enumerable = getBool('enumerable') end
-   if has('configurable') then desc.configurable = getBool('configurable') end
-   if has('value') then desc.value = get('value') end -- can be Undefined
-   if has('writable') then desc.writable = getBool('writable') end
-   if has('get') then
-      local getter = get('get')
-      if (not mt(env, getter, 'IsCallable')) and getter ~= Undefined then
-         ThrowTypeError(env, 'getter is not callable')
-      end
-      desc.get = getter -- can be Undefined
-   end
-   if has('set') then
-      local setter = get('set')
-      if (not mt(env, setter, 'IsCallable')) and setting ~= Undefined then
-         ThrowTypeError(env, 'setter is not callable')
-      end
-      desc.set = setter
-   end
-   if desc.get ~= nil or desc.set ~= nil then
-      if desc.value ~= nil or desc.writable ~= nil then
-         ThrowTypeError(env, 'accessor or data descriptor, not both')
-      end
-   end
-   return desc
 end
 
 -- EcmaScript language types
@@ -203,7 +145,8 @@ local JsValMT = {
    ToPrimitive = nyi('ToPrimitive'),
    ToObject = nyi('ToObject'),
    GetMethod = nyi('GetMethod'),
-   Call = nyi('Call')
+   Call = nyi('Call'),
+   SameValue = nyi('SameValue'),
 }
 local UndefinedMT = extendMT(JsValMT)
 local NullMT = extendMT(JsValMT)
@@ -320,21 +263,26 @@ function StringMT:intern(s)
 end
 
 -- Convert values to/from lua
+local function isJsVal(v)
+   if type(v) == 'table' then
+      local mt = getmetatable(v)
+      if mt ~= nil and mt.isJsVal == true then return true end
+   end
+   return false
+end
+
 local function fromLua(env, v)
+   if isJsVal(v) then return v end -- fast path: already converted!
    local ty = type(v)
    if ty == 'string' then
       return StringMT:fromUTF8(v)
    elseif ty == 'number' then
       return NumberMT:from(v)
-   elseif ty == 'table' then
-      local mt = getmetatable(v)
-      if mt ~= nil and mt.isJsVal == true then
-         return v
-      end
    end
    ThrowTypeError(env, "Can't convert Lua type " .. ty .. " to JS")
 end
 local function toLua(env, jsval)
+   assert(isJsVal(jsval), jsval)
    return mt(env, jsval, 'toLua')
 end
 
@@ -392,8 +340,9 @@ function ObjectMT.typeof(env, obj)
 end
 
 -- IsPropertyDescriptor (returns lua boolean, not js boolean)
-function JsValMT.IsPropertyDescriptor() return false end
-function PropertyDescriptor.IsPropertyDescriptor() return true end
+function IsPropertyDescriptor(v) -- faster
+   return getmetatable(v) == PropertyDescriptor
+end
 
 -- IsObject (returns lua boolean, not js boolean)
 function JsValMT.IsObject() return false end
@@ -412,8 +361,12 @@ function BooleanMT.ToObject(env, b)
    return O
 end
 function StringMT.ToObject(env, s)
+   -- StringCreate 9.4.3.4
    local O = ObjectMT:create(env, env.realm.StringPrototype)
    rawset(O, STRINGDATA, s)
+   mt(env, O, 'DefinePropertyOrThrow', StringMT:intern('length'),
+      PropertyDescriptor:newData{ value = Number:from(#s) } )
+   setmetatable(O, getmetatable(env.realm.StringPrototype))
    return O
 end
 function SymbolMT.ToObject(env, s)
@@ -438,7 +391,7 @@ function ObjectMT.ToPrimitive(env, input, hint)
    hint = hint or 'default'
    if env == nil then env = rawget(input, DEFAULTENV) end -- support for lua interop
    local exoticToPrim = mt(env, input, 'GetMethod', env.symbols.toPrimitive)
-   if exoticToPrim ~= Undefined then
+   if not rawequal(exoticToPrim, Undefined) then
       local result = mt(env, exoticToPrim, 'Call', StringMT:intern(hint))
       if mt(env, result, 'IsObject') then
          ThrowTypeError(env, 'exotic ToPrimitive not primitive')
@@ -475,11 +428,12 @@ function UndefinedMT.ToBoolean() return False end
 function NullMT.ToBoolean() return False end
 function BooleanMT.ToBoolean(env, b) return b end
 function NumberMT.ToBoolean(env, n)
+   n = n.value
    if n == 0 or (n ~= n) then return False end
    return True
 end
 function StringMT.ToBoolean(env, s)
-   if mt(env, s, 'IsZeroLength') then return False end
+   if StringMT.IsZeroLength(s) then return False end
    return True
 end
 function SymbolMT.ToBoolean() return True end
@@ -524,9 +478,9 @@ function JsValMT.ToInteger(env, argument)
 end
 function NumberMT.ToInteger(env, argument)
    local number = argument.value
-   if number ~= number then return 0 end -- NaN
-   if number == 0 then return number end -- +0.0 and -0.0
-   if number == (1/0) or number == (-1/0) then return number end -- Infinities
+   if number ~= number then return NumberMT:from(0) end -- NaN
+   if number == 0 then return argument end -- +0.0 and -0.0
+   if number == (1/0) or number == (-1/0) then return argument end -- Infinities
    local minus = (number < 0)
    number = math.floor(math.abs(number))
    if minus then number = -number end
@@ -669,6 +623,18 @@ function ObjectMT.IsExtensible(env, obj)
    return mt(env, obj, '[[IsExtensible]]')
 end
 
+-- DefinePropertyOrThrow (7.3.8)
+function ObjectMT.DefinePropertyOrThrow(env, O, P, desc)
+   local success = mt(env, O, '[[DefineOwnProperty]]', P, desc)
+   if not success then ThrowTypeError(env, "Can't define property") end
+   return success
+end
+
+-- HasProperty (7.3.11)
+function ObjectMT.HasProperty(env, O, P)
+   return mt(env, O, '[[HasProperty]]', P)
+end
+
 -- HasOwnProperty (7.3.12)
 function ObjectMT.HasOwnProperty(env, O, P)
    local desc = mt(env, O, '[[GetOwnProperty]]', P)
@@ -695,6 +661,20 @@ function ObjectMT.Set(env, O, P, V, Throw)
    return success
 end
 
+-- [[HasProperty]] (9.1.7)
+-- OrdinaryHasProperty (9.1.7.1)
+function OrdinaryHasProperty(env, O, P)
+   local hasOwn = mt(env, O, '[[GetOwnProperty]]', P)
+   if hasOwn ~= nil then return true end
+   local parent = mt(env, O, '[[GetPrototypeOf]]')
+   if not rawequal(parent, Null) then
+      return mt(env, parent, '[[HasProperty]]', P)
+   end
+   return false
+end
+ObjectMT.OrdinaryHasProperty = OrdinaryHasProperty
+ObjectMT['[[HasProperty]]'] = OrdinaryHasProperty
+
 function ObjectMT.OrdinaryGet(env, O, P, Receiver)
    -- fast path! inlined from OrdinaryGetOwnProperty impl
    local desc
@@ -714,7 +694,7 @@ function ObjectMT.OrdinaryGet(env, O, P, Receiver)
    end
    if desc == nil then
       local parent = mt(env, O, '[[GetPrototypeOf]]')
-      if parent == Null then return Undefined end
+      if rawequal(parent, Null) then return Undefined end
       return mt(env, parent, '[[Get]]', P, Receiver)
    end
    if desc:IsDataDescriptor() then
@@ -722,7 +702,7 @@ function ObjectMT.OrdinaryGet(env, O, P, Receiver)
       return desc.value
    end
    local getter = desc.get
-   if getter == nil or getter == Undefined then return Undefined end
+   if getter == nil or rawequal(getter, Undefined) then return Undefined end
    return mt(env, getter, 'Call', Receiver)
 end
 ObjectMT['[[Get]]'] = ObjectMT.OrdinaryGet
@@ -730,7 +710,7 @@ ObjectMT['[[Get]]'] = ObjectMT.OrdinaryGet
 function ObjectMT.OrdinarySet(env, O, P, V, Receiver)
    -- fast path! inlined from OrdinaryGetOwnProperty impl
    local GetOwnProperty = getmetatable(O)['[[GetOwnProperty]]']
-   if O == Receiver and GetOwnProperty == OrdinaryGetOwnProperty then
+   if rawequal(O, Receiver) and GetOwnProperty == OrdinaryGetOwnProperty then
       local fastKey = rawget(P, 'key')
       if fastKey ~= nil then
          local fastVal = rawget(O, fastKey)
@@ -749,7 +729,7 @@ ObjectMT['[[Set]]'] = ObjectMT.OrdinarySet
 function ObjectMT.OrdinarySetWithOwnDescriptor(env, O, P, V, Receiver, ownDesc)
    if ownDesc == nil then
       local parent = mt(env, O, '[[GetPrototypeOf]]')
-      if parent ~= Null then
+      if not rawequal(parent, Null) then
          return mt(env, parent, '[[Set]]', P, V, Receiver)
       else
          ownDesc = PropertyDescriptor:newSimple(Undefined)
@@ -772,7 +752,7 @@ function ObjectMT.OrdinarySetWithOwnDescriptor(env, O, P, V, Receiver, ownDesc)
    end
    -- ownDesc is an accessor descriptor
    local setter = ownDesc.set
-   if setter == nil or setter == Undefined then return false end
+   if setter == nil or rawequal(setter, Undefined) then return false end
    mt(env, setter, 'Call', Receiver, V)
    return true
 end
@@ -799,16 +779,16 @@ ObjectMT.OrdinaryGetPrototypeOf = OrdinaryGetPrototypeOf
 ObjectMT['[[GetPrototypeOf]]'] = OrdinaryGetPrototypeOf
 
 function ObjectMT.OrdinarySetPrototypeOf(env, O, V)
-   assert(V == Null or mt(env, V, 'IsObject'), 'bad prototype')
+   assert(rawequal(V, Null) or mt(env, V, 'IsObject'), 'bad prototype')
    local current = rawget(O, PROTOTYPE)
-   if V == current then return true end
+   if mt(env, V, 'SameValue', current) then return true end
    if rawget(O, EXTENSIBLE) == false then return false end
    local p = V
    local done = false
    while done == false do
-      if p == Null then
+      if rawequal(p, Null) then
          done = true
-      elseif p == O then
+      elseif mt(env, p, 'SameValue', O) then
          return false -- prototype cycle!  bail!
       else
          if getmetatable(p)['[[GetPrototypeOf]]'] ~= OrdinaryGetPrototypeOf then
@@ -825,7 +805,7 @@ ObjectMT['[[SetPrototypeOf]]'] = OrdinarySetPrototypeOf
 
 function ObjectMT.SetImmutablePrototype(env, O, V)
    local current = mt(env, O, '[[GetPrototypeOf]]')
-   if JsValMT.SameValue(env, V, current) then
+   if mt(env, V, 'SameValue', current) then
       return true
    else
       return false
@@ -850,7 +830,7 @@ function OrdinaryGetOwnProperty(env, O, P)
    local field = mt(env, P, 'toKey')
    local valOrDesc = rawget(O, field)
    if valOrDesc == nil then return nil end
-   if mt(env, valOrDesc, 'IsPropertyDescriptor') then
+   if IsPropertyDescriptor(valOrDesc) then
       return valOrDesc
    else
       return PropertyDescriptor:newSimple(valOrDesc)
@@ -863,7 +843,7 @@ function ObjectMT.StringGetOwnProperty(env, S, P) -- 9.4.3.5
    assert(rawget(S, STRINGDATA) ~= nil)
    if mt(env, P, 'Type') ~= 'String' then return nil end
    local index = mt(env, P, 'CanonicalNumericIndexString')
-   if index == Undefined then return nil end
+   if rawequal(index, Undefined) then return nil end
    assert(mt(env, index, 'Type') == 'Number')
    if not mt(env, index, 'IsInteger') then return nil end
    -- test for -0.0
@@ -891,7 +871,7 @@ end
 ObjectMT['[[DefineOwnProperty]]'] = ObjectMT.OrdinaryDefineOwnProperty
 
 function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc, current)
-   local field = (O ~= Undefined) and mt(env, P, 'toKey') or nil
+   local field = (not rawequal(O, Undefined)) and mt(env, P, 'toKey') or nil
    if current == nil then
       if extensible == false then return false end
       if desc:IsGenericDescriptor() or desc:IsDataDescriptor() then
@@ -934,17 +914,17 @@ function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc
    elseif current:IsDataDescriptor() and desc:IsDataDescriptor() then
       if current.configurable == false and current.writable == false then
          if desc.writable == true then return false end
-         if desc.value ~= nil and not JsValMT.SameValue(env, desc.value, current.value) then
+         if desc.value ~= nil and not mt(env, desc.value, 'SameValue', current.value) then
             return false
          end
          return true
       end
    else
       if current.configurable == false then
-         if desc.set ~= nil and not JsValMT.SameValue(env, desc.set, current.set) then
+         if desc.set ~= nil and not mt(env, desc.set, 'SameValue', current.set) then
             return false
          end
-         if desc.get ~= nil and not JsValMT.SameValue(env, desc.get, current.get) then
+         if desc.get ~= nil and not mt(env, desc.get, 'SameValue', current.get) then
             return false
          end
          return true
@@ -952,7 +932,7 @@ function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc
    end
    if field ~= nil then
       local valOrDesc = rawget(O, field)
-      if mt(env, valOrDesc, 'IsPropertyDescriptor') then
+      if IsPropertyDescriptor(valOrDesc) then
          valOrDesc:setFrom(desc)
       elseif desc:IsSimple(true) then
          if desc.value ~= nil then
@@ -1078,8 +1058,71 @@ function ObjectMT.ArraySetLength(env, A, desc)
    return true
 end
 
+-- Additional methods on PropertyDescriptor
+function PropertyDescriptor.IsCompatible(desc, extensible, current)
+   return ObjectMT.ValidateAndApplyPropertyDescriptor(
+      nil, Undefined, Undefined, extensible, desc, current
+   )
+end
+
+function PropertyDescriptor:From(env, desc)
+   local obj = ObjectMT:create(env, env.realm.ObjectPrototype)
+   local mkProp = function(field, val)
+      mt(env, obj, 'CreateDataPropertyOrThrow', StringMT:intern(field), val)
+   end
+   local toBool = function(b) if b then return True else return False end end
+   if desc.value ~= nil then mkProp('value', desc.value) end
+   if desc.writable ~= nil then mkProp('writable', toBool(desc.writable)) end
+   if desc.get ~= nil then mkProp('get', desc.get) end
+   if desc.set ~= nil then mkProp('get', desc.set) end
+   if desc.enumerable ~= nil then mkProp('enumerable', toBool(desc.enumerable)) end
+   if desc.configurable ~= nil then mkProp('configurable', toBool(desc.configurable)) end
+   return obj
+end
+
+function ObjectMT.ToPropertyDescriptor(env, obj)
+   if not mt(env, obj, 'IsObject') then
+      ThrowTypeError(env, 'property descriptor not an object')
+   end
+   local desc = PropertyDescriptor:new{}
+   local has = function(field)
+      return mt(env, obj, 'HasProperty', StringMT:intern(field))
+   end
+   local get = function(field)
+      return mt(env, obj, 'Get', StringMT:intern(field))
+   end
+   local getBool = function(field)
+      return mt(env, get(field), 'ToBoolean').value
+   end
+   if has('enumerable') then desc.enumerable = getBool('enumerable') end
+   if has('configurable') then desc.configurable = getBool('configurable') end
+   if has('value') then desc.value = get('value') end -- can be Undefined
+   if has('writable') then desc.writable = getBool('writable') end
+   if has('get') then
+      local getter = get('get')
+      if (not mt(env, getter, 'IsCallable')) and not rawequal(getter, Undefined) then
+         ThrowTypeError(env, 'getter is not callable')
+      end
+      desc.get = getter -- can be Undefined
+   end
+   if has('set') then
+      local setter = get('set')
+      if (not mt(env, setter, 'IsCallable')) and (not rawequal(setting, Undefined)) then
+         ThrowTypeError(env, 'setter is not callable')
+      end
+      desc.set = setter
+   end
+   if desc.get ~= nil or desc.set ~= nil then
+      if desc.value ~= nil or desc.writable ~= nil then
+         ThrowTypeError(env, 'accessor or data descriptor, not both')
+      end
+   end
+   return desc
+end
+
 -- Math
 function JsValMT.__add(lval, rval, env) -- note optional env!
+   assert(isJsVal(rval))
    local lprim = mt(env, lval, 'ToPrimitive')
    if mt(env, lprim, 'Type') == 'String' then
       -- ToPrimitive/ToString on rval done inside StringMT.__add
@@ -1097,6 +1140,7 @@ end
 copyToAll('__add')
 function StringMT.__add(lstr, rstr, env)
    if getmetatable(rstr) ~= StringMT then
+      assert(isJsVal(rstr))
       local rprim = mt(env, rstr, 'ToPrimitive')
       rstr = mt(env, rprim, 'ToString')
    end
@@ -1104,6 +1148,7 @@ function StringMT.__add(lstr, rstr, env)
 end
 function NumberMT.__add(l, r, env)
    if getmetatable(r) ~= NumberMT then
+      assert(isJsVal(r))
       local rprim = mt(env, r, 'ToPrimitive') -- may be redundant
       if mt(env, rprim, 'Type') == 'String' then
          -- whoops, bail to string + string case!
@@ -1213,13 +1258,69 @@ function NumberMT.__le(l, r, env)
    return l.value <= r.value
 end
 
-function StringMT.__eq(l, r, env)
-   assert(mt(env, r, 'Type')=='String') -- not implemented other cases yet
+function JsValMT.__eq(l, r, env)
+   if isJsVal(l) ~= isJsVal(r) then return false end
+   if getmetatable(l) == NumberMT then return NumberMT.__eq(l, r, env) end
+   return mt(env, l, 'SameValue', r)
+end
+function NumberMT.__eq(l, r, env)
+   if getmetatable(r) ~= NumberMT then return false end
+   return l.value == r.value -- matches Number::equal (6.1.6.1.13)
+end
+function StringMT.__eq(l, r, env) -- fast path
+   if getmetatable(r) ~= StringMT then return false end
+   return StringMT:flatten(l).suffix == StringMT:flatten(r).suffix
+end
+
+function UndefinedMT.SameValue(env, l, r)
+   if getmetatable(r) ~= UndefinedMT then return false end
+   return true
+end
+function NullMT.SameValue(env, l, r)
+   if getmetatable(r) ~= NullMT then return false end
+   return true
+end
+function BooleanMT.SameValue(env, l, r)
+   if getmetatable(r) ~= BooleanMT then return false end
+   return l.value == r.value
+end
+function StringMT.SameValue(env, l, r)
+   if getmetatable(r) ~= StringMT then return false end
    return StringMT.equals(l, r)
+end
+function SymbolMT.SameValue(env, l, r)
+   if getmetatable(r) ~= StringMT then return false end
+   return rawequal(l, r)
+end
+function ObjectMT.SameValue(env, l, r)
+   if mt(env, r, 'Type') ~= 'Object' then return false end -- allow subclassing
+   return rawequal(l, r)
+end
+function NumberMT.SameValue(env, l, r) -- see 6.1.6.1.14
+   if getmetatable(r) ~= NumberMT then return false end
+   local x, y = l.value, r.value
+   if x ~= x and y ~= y then return true end -- both x and y are NaN
+   if x == 0 and y == 0 then return (1/x) == (1/y) end -- distinguish +/- 0
+   return (x == y)
 end
 
 function StringMT.equals(l, r)
    return StringMT:flatten(l).suffix == StringMT:flatten(r).suffix
+end
+
+function StringMT.IsZeroLength(s)
+   local u8 = s.utf8
+   if u8 ~= nil then return #u8 == 0 end -- fast path!
+   for _,ss in ipairs{ s.suffix, s.prefix } do -- suffix's more likely non-nil
+      if ss ~= nil then
+         if type(ss) == 'string' then
+            if #ss > 0 then return false end
+         else
+            if not StringMT.IsZeroLength(ss) then return false end
+         end
+      end
+   end
+   return true
 end
 
 -- Object utilities (lua interop)
@@ -1245,7 +1346,8 @@ end
 
 -- UTF16 to UTF8 string conversion
 function StringMT:__tostring()
-   if self.utf8 ~= nil then return self.utf8 end -- fast path for constants
+   local u8 = self.utf8
+   if u8 ~= nil then return u8 end -- fast path for constants
    s = StringMT:flatten(self).suffix -- UTF-16 native string
    local result = {}
    local len = #s
@@ -1268,10 +1370,10 @@ function StringMT:__tostring()
       end
    end
    assert(surrogate == false, 'bad utf-16')
-   local s8 = utf8.char(table.unpack(result))
+   u8 = utf8.char(table.unpack(result))
    -- speed up future invocations!
-   self.utf8 = s8
-   return s8
+   self.utf8 = u8
+   return u8
 end
 function StringMT.toKey(env, s)
    local key = rawget(s, 'key')
@@ -1291,6 +1393,7 @@ return {
       setmetatable(obj, extendMT(getmetatable(obj)))
    end,
    invokePrivate = mt,
+   isJsVal = isJsVal,
    fromLua = fromLua,
    toLua = toLua,
    convertUtf16ToUtf8 = function(utf16)
