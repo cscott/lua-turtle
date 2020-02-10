@@ -16,8 +16,12 @@ local PARENTFRAME = mkPrivateSlot('@PARENTFRAME@')
 local VALUE = mkPrivateSlot('@VALUE@')
 local ISAPPLY = mkPrivateSlot('@ISAPPLY@')
 -- private slots in the JS standard
-local PROTOTYPE = mkPrivateSlot('[[PROTOTYPE]]')
-local EXTENSIBLE = mkPrivateSlot('[[EXTENSIBLE]]')
+local PROTOTYPE = mkPrivateSlot('[[Prototype]]')
+local EXTENSIBLE = mkPrivateSlot('[[Extensible]]')
+local BOOLEANDATA = mkPrivateSlot('[[BooleanData]]')
+local NUMBERDATA = mkPrivateSlot('[[NumberData]]')
+local SYMBOLDATA = mkPrivateSlot('[[SymbolData]]')
+local STRINGDATA = mkPrivateSlot('[[StringData]]')
 
 -- helper to call 'hidden' functions on metatable
 local function mt(env, v, name, ...)
@@ -78,6 +82,11 @@ function PropertyDescriptor:newAccessor(desc)
       configurable = desc.configurable or false
    }
 end
+function PropertyDescriptor:clone()
+   local npd = PropertyDescriptor:new{}
+   npd:setFrom(self)
+   return npd
+end
 function PropertyDescriptor:setFrom(P)
    if P.value ~= nil then self.value = P.value end
    if P.get ~= nil then self.get = P.get end
@@ -114,6 +123,11 @@ function PropertyDescriptor.IsGenericDescriptor()
       return true
    end
    return false
+end
+function PropertyDescriptor.IsCompatible(desc, extensible, current)
+   return ObjectMT.ValidateAndApplyPropertyDescriptor(
+      nil, Undefined, Undefined, extensible, desc, current
+   )
 end
 function PropertyDescriptor:from(env, desc)
    local obj = env:OrdinaryObjectCreate(env.realm.Object_prototype)
@@ -222,6 +236,7 @@ local False = setmetatable(
    { value = false, number = NumberMT:from(0) }, BooleanMT)
 function ObjectMT:create(env, proto)
    -- OrdinaryObjectCreate, more or less
+   assert(proto ~= nil)
    return setmetatable(
       { [DEFAULTENV] = env, [PROTOTYPE] = proto, [EXTENSIBLE] = true },
       ObjectMT)
@@ -268,18 +283,21 @@ function StringMT:flatten(s)
    if s.prefix == nil then return s end
    local result = {}
    local stack = { '' }
+   local ss = s
    while #stack > 0 do
-      if type(s) == 'string' then
-         table.insert(result, s)
-         s = table.remove(stack)
-      elseif s.prefix == nil then
-         s = s.suffix
+      if type(ss) == 'string' then
+         table.insert(result, ss)
+         ss = table.remove(stack)
+      elseif ss.prefix == nil then
+         ss = ss.suffix
       else
-         table.insert(stack, s.suffix)
-         s = s.prefix
+         table.insert(stack, ss.suffix)
+         ss = ss.prefix
       end
    end
-   return StringMT:cons(nil, table.concat(result))
+   s.prefix = nil
+   s.suffix = table.concat(result)
+   return s
 end
 
 -- String Intern table
@@ -373,16 +391,24 @@ function NullMT.ToObject(env, undef)
    return ThrowTypeError(env, 'ToObject on null')
 end
 function BooleanMT.ToObject(env, b)
-   return env:newBoolean(b)
+   local O = ObjectMT:create(env, env.realm.BooleanPrototype)
+   rawset(O, BOOLEANDATA, b)
+   return O
 end
 function StringMT.ToObject(env, s)
-   return env:newString(s)
+   local O = ObjectMT:create(env, env.realm.StringPrototype)
+   rawset(O, STRINGDATA, s)
+   return O
 end
-function SymbolMT.ToObject(env, num)
-   return env:newSymbol(num)
+function SymbolMT.ToObject(env, s)
+   local O = ObjectMT:create(env, env.realm.SymbolPrototype)
+   rawset(O, SYMBOLDATA, s)
+   return O
 end
 function NumberMT.ToObject(env, num)
-   return env:newNumber(num)
+   local O = ObjectMT:create(env, env.realm.NumberPrototype)
+   rawset(O, NUMBERDATA, num)
+   return O
 end
 function ObjectMT.ToObject(env, obj)
    return obj
@@ -475,6 +501,40 @@ function ObjectMT.ToNumber(env, argument)
    return mt(env, primValue, 'ToNumber')
 end
 
+function JsValMT.ToInteger(env, argument)
+   local number = mt(env, argument, 'ToNumber')
+   assert(mt(env, number, 'Type') == 'Number')
+   return NumberMT.ToInteger(env, number)
+end
+function NumberMT.ToInteger(env, argument)
+   local number = argument.value
+   if number ~= number then return 0 end -- NaN
+   if number == 0 then return number end -- +0.0 and -0.0
+   if number == (1/0) or number == (-1/0) then return number end -- Infinities
+   local minus = (number < 0)
+   number = math.floor(math.abs(number))
+   if minus then number = -number end
+   return NumberMT:from(number)
+end
+
+function JsValMT.ToUint32(env, argument)
+   local number = mt(env, argument, 'ToNumber')
+   assert(mt(env, number, 'Type') == 'Number')
+   return NumberMT.ToUint32(env, number)
+end
+function NumberMT.ToUint32(env, argument)
+   local number = argument.value
+   if (number ~= number or -- NaN
+       number == 0 or -- +0.0 and -0.0
+       number == (1/0) or number == (-1/0)) then -- Infinities
+      return NumberMT:from(0)
+   end
+   local minus = (number < 0)
+   number = math.floor(math.abs(number))
+   if minus then number = -number end
+   return NumberMT:from(number & 0xFFFFFFFF)
+end
+
 -- ToString
 local toStringVals = {
    [Undefined] = StringMT:intern('undefined'),
@@ -485,7 +545,10 @@ local toStringVals = {
 function JsValMT.ToString(env, val) return toStringVals[val] end
 function NumberMT.ToString(env, val)
    -- XXX not entirely spec compliant
-   return StringMT:fromUTF8(tostring(val.value))
+   local s = StringMT:fromUTF8(tostring(val.value))
+   -- fast-ish path for converting back to number for array index, etc
+   rawset(s, 'number', val)
+   return s
 end
 function StringMT.ToString(env, val) return val end
 function SymbolMT.ToString(env, val)
@@ -495,6 +558,81 @@ BigIntMT.ToString = nyi('BigInt ToString')
 function ObjectMT.ToString(env, val)
    local primValue = mt(env, val, 'ToPrimitive', 'string')
    return mt(env, primValue, 'ToString')
+end
+
+-- ToObject
+function JsValMT.ToString(env, val)
+   ThrowTypeError(env, "can't convert to object")
+end
+-- XXX Boolean/Number/String/Symbol/BigInt; see 7.1.18
+function ObjectMT.ToString(env, val) return val end
+
+-- ToPropertyKey
+function JsValMT.ToPropertyKey(env, val)
+   local key = mt(env, val, 'ToPrimitive', 'string')
+   if mt(env, key, 'Type') == 'Symbol' then return key end
+   return mt(env, key, 'ToString')
+end
+function NumberMT.ToPropertyKey(env, val)
+   return NumberMT.ToString(env, val) -- sort of fast path (kinda slow)
+end
+-- Fast path for string and symbol
+function SymbolMT.ToPropertyKey(env, val) return val end
+function StringMT.ToPropertyKey(env, val) return val end
+
+-- ToLength
+function JsValMT.ToLength(env, val)
+   local len = mt(env, val, 'ToInteger') -- assume unboxed
+   if len <= 0 then return 0 end
+   -- XXX clamp len to 2^53 - 1
+   return len
+end
+
+-- CanonicalNumericIndexString
+function StringMT.CanonicalNumericIndexString(env, val)
+   if val.number ~= nil then return val.number end -- fast path!
+   if StringMT.equals(val, StringMT:intern("-0")) then
+      return NumberMT:from(-1/(1/0)) -- -0.0
+   end
+   local n = mt(env, val, 'ToNumber')
+   if StringMT.equals(val, mt(env, n, 'ToString')) then
+      return n
+   end
+   return Undefined
+end
+
+-- ToIndex
+
+-- thisBooleanValue (19.3.3)
+function JsValMT.thisBooleanValue(env, val)
+   ThrowTypeError(env, 'Not a boolean value!')
+end
+function BooleanMT.thisBooleanValue(env, value)
+   return value
+end
+function ObjectMT.thisBooleanValue(env, obj)
+   local b = rawget(obj, BOOLEANDATA)
+   if b == nil then
+      ThrowTypeError(env, 'Not a boolean value!')
+   end
+   assert(mt(env, b, 'Type') == 'Boolean')
+   return b
+end
+
+-- thisNumberValue (20.1.3)
+function JsValMT.thisNumberValue(env, val)
+   ThrowTypeError(env, 'Not a number value!')
+end
+function NumberMT.thisNumberValue(env, value)
+   return value
+end
+function ObjectMT.thisNumberValue(env, obj)
+   local n = rawget(obj, NUMBERDATA)
+   if n == nil then
+      ThrowTypeError(env, 'Not a number value!')
+   end
+   assert(mt(env, n, 'Type') == 'Number')
+   return n
 end
 
 -- IsCallable (returns lua boolean, not Js boolean)
@@ -619,6 +757,20 @@ function ObjectMT.OrdinarySetWithOwnDescriptor(env, O, P, V, Receiver, ownDesc)
    return true
 end
 
+-- [[Delete]] / OrdinaryDelete (9.1.10)
+function OrdinaryDelete(env, O, P)
+   local desc = mt(env, O, '[[GetOwnProperty]]', P)
+   if desc == nil then return true end
+   if desc.configurable == true then
+      local field = mt(env, P, 'toKey')
+      rawset(O, field, nil)
+      return true
+   end
+   return false
+end
+ObjectMT.OrdinaryDelete = OrdinaryDelete
+ObjectMT['[[Delete]]'] = OrdinaryDelete
+
 -- [[GetPrototypeOf]] / [[SetPrototypeOf]]
 function OrdinaryGetPrototypeOf(env, obj)
    return rawget(obj, PROTOTYPE)
@@ -661,7 +813,7 @@ function ObjectMT.SetImmutablePrototype(env, O, V)
 end
 
 function ObjectMT.OrdinaryIsExtensible(env, obj)
-   return rawget(obj, EXTENSIBLE)
+   return rawget(obj, EXTENSIBLE) ~= false
 end
 ObjectMT['[[IsExtensible]]'] = ObjectMT.OrdinaryIsExtensible
 
@@ -687,6 +839,28 @@ end
 ObjectMT.OrdinaryGetOwnProperty = OrdinaryGetOwnProperty
 ObjectMT['[[GetOwnProperty]]'] = OrdinaryGetOwnProperty
 
+function ObjectMT.StringGetOwnProperty(env, S, P) -- 9.4.3.5
+   assert(rawget(S, STRINGDATA) ~= nil)
+   if mt(env, P, 'Type') ~= 'String' then return nil end
+   local index = mt(env, P, 'CanonicalNumericIndexString')
+   if index == Undefined then return nil end
+   assert(mt(env, index, 'Type') == 'Number')
+   if not mt(env, index, 'IsInteger') then return nil end
+   -- test for -0.0
+   if index.value == 0 and (1/index.value) == (-1/0) then return nil end
+   if index.value < 0 then return nil end
+   local str = rawget(S, STRINGDATA)
+   console.assert(str~=nil and mt(env, str, 'Type') == 'String')
+   local len = #str
+   if len <= index then return nil end
+   local start = (index << 1) + 1 -- 1-based indexing!
+   local resultStr = string.sub(StringMT:flatten(str).suffix, start, start+1)
+   return PropertyDescriptor:newData{
+      value = StringMT:cons(nil, resultStr),
+      enumerable = true,
+   }
+end
+
 function ObjectMT.OrdinaryDefineOwnProperty(env, O, P, Desc)
    local current = mt(env, O, '[[GetOwnProperty]]', P)
    local extensible = mt(env, O, '[[IsExtensible]]')
@@ -695,12 +869,6 @@ function ObjectMT.OrdinaryDefineOwnProperty(env, O, P, Desc)
    )
 end
 ObjectMT['[[DefineOwnProperty]]'] = ObjectMT.OrdinaryDefineOwnProperty
-
-function IsCompatiblePropertyDescriptor(env, Extensible, Desc, Current)
-   return ObjectMT.ValidateAndApplyPropertyDescriptor(
-      env, Undefined, Undefined, Extensible, Desc, Current
-   )
-end
 
 function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc, current)
    local field = (O ~= Undefined) and mt(env, P, 'toKey') or nil
@@ -788,6 +956,87 @@ function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc
    return true
 end
 
+function ObjectMT.ArrayDefineOwnProperty(env, A, P, desc) -- 9.4.2.1
+   local lengthStr = StringMT:intern('length')
+   if mt(env, P, 'Type') == 'String' then
+      if StringMT.equals(P, lengthStr) then
+         return mt(env, A, 'ArraySetLength', desc)
+      end
+      local index = mt(env, P, 'ToUint32')
+      if StringMT.equals(mt(env, index, 'ToString'), P) then
+         -- P is an array index
+         local oldLenDesc = mt(env, A, 'OrdinaryGetOwnProperty', lengthStr)
+         local oldLen = oldLenDesc.value
+         if index.value >= oldLen.value and oldLenDesc.writable == false then
+            return false
+         end
+         local succeeded = mt(env, A, 'OrdinaryDefineOwnProperty', P, desc)
+         if not succeeded then return false end
+         if index.value >= oldLen.value then
+            local newLenDesc = PropertyDescriptor:newData(oldLenDesc)
+            newLenDesc.value = NumberMT:from(index.value + 1)
+            succeeded = mt(
+               env, A, 'OrdinaryDefineOwnProperty', lengthStr, newLenDesc
+            )
+            assert(succeeded)
+         end
+         return true
+      end
+   end
+   return mt(env, A, 'OrdinaryDefineOwnProperty', P, desc)
+end
+
+function ObjectMT.ArraySetLength(env, A, desc)
+   local lengthStr = StringMT:intern('length')
+   if desc.value == nil then
+      return mt(env, A, 'OrdinaryDefineOwnProperty', lengthStr, desc)
+   end
+   local newLenDesc = desc:clone()
+   local newLen = mt(env, desc.value, 'ToUint32')
+   local numberLen = mt(env, desc.value, 'ToNumber')
+   if newLen.value ~= numberLen.value then
+      error('RangeError') -- XXX should throw a new RangeError exception
+   end
+   newLenDesc.value = newLen
+   local oldLenDesc = mt(env, A, 'OrdinaryGetOwnProperty', lengthStr)
+   assert(oldLenDesc ~= nil)
+   local oldLen = oldLenDesc.value
+   if newLen.value >= oldLen.value then
+      return mt(env, A, 'OrdinaryDefineOwnProperty', lengthStr, newLenDesc)
+   end
+   if oldLenDesc.writable == false then return false end
+   local newWritable
+   if newLenDesc.writable == nil or newLenDesc.writable == true then
+      newWritable = true
+   else
+      -- defer setting writable in case any elements can't be deleted
+      newWritable = false
+      newLenDesc.writable = true
+   end
+   local succeeded = mt(
+      env, A, 'OrdinaryDefineOwnProperty', lengthStr, newLenDesc
+   )
+   if not succeeded then return false end
+   for i=oldLen.value-1, newLen.value, -1 do
+      -- XXX this isn't quite right; in a sparse array we waste time trying
+      -- to delete non-existant elements.  But it's close enough.
+      local P = mt(env, NumberMT:from(i), 'ToPropertyKey')
+      local deleteSucceeded = mt(env, A, '[[Delete]]', P)
+      if not deleteSucceeded then
+         newLenDesc = newLenDesc:clone()
+         newLenDesc.value = NumberMT:from(i + 1)
+         if not newWritable then newLenDesc.writable = false end
+         mt(env, A, 'OrdinaryDefineOwnProperty', lengthStr, newLenDesc)
+         return false
+      end
+   end
+   if not newWritable then
+      return mt(env, A, 'OrdinaryDefineOwnProperty', lengthStr,
+                PropertyDescriptor:new{ writable = false })
+   end
+   return true
+end
+
 -- Math
 function JsValMT.__add(lval, rval, env) -- note optional env!
    local lprim = mt(env, lval, 'ToPrimitive')
@@ -842,6 +1091,23 @@ function NumberMT.__sub(l, r, env)
    return NumberMT:from(l.value - r.value)
 end
 
+function JsValMT.__mul(lval, rval, env) -- note optional env!
+   local lnum = mt(env, lval, 'ToNumeric')
+   local rnum = mt(env, rval, 'ToNumeric')
+   if mt(env, lnum, 'Type') ~= mt(env, rnum, 'Type') then
+      ThrowTypeError(env, 'bad types for multiplication')
+   end
+   assert(getmetatable(lnum) == NumberMT)
+   return NumberMT:from(lnum.value * rnum.value)
+end
+copyToAll('__mul')
+function NumberMT.__mul(l, r, env)
+   if getmetatable(r) ~= NumberMT then
+      r = mt(env, r, 'ToNumeric')
+   end
+   return NumberMT:from(l.value * r.value)
+end
+
 -- Note that the order in which we call 'ToPrimitive' is a slight variance
 -- from the JS spec -- EcmaScript is strict about calling it on the left
 -- operand first, then the right operand -- but our turtlescript compiler
@@ -864,9 +1130,9 @@ function StringMT.__lt(l, r, env)
       -- this will be a numeric comparison.
       return JsValMT.__lt(l, r, env)
    end
-   -- XXX I don't think that the UTF-8 conversion compares the same as UTF-16
-   -- We should probably do an element-by-element comparison
-   return tostring(l) < tostring(r) -- XXX probably not exactly right
+   l = StringMT:flatten(l).suffix
+   r = StringMT:flatten(r).suffix
+   return l < r -- This is UTF-16 but I think it works out correctly
 end
 function NumberMT.__lt(l, r, env)
    if getmetatable(r) ~= NumberMT then
@@ -876,15 +1142,24 @@ function NumberMT.__lt(l, r, env)
    return l.value < r.value
 end
 
+function StringMT.__eq(l, r, env)
+   assert(mt(env, r, 'Type')=='String') -- not implemented other cases yet
+   return StringMT.equals(l, r)
+end
+
+function StringMT.equals(l, r)
+   return StringMT:flatten(l).suffix == StringMT:flatten(r).suffix
+end
+
 -- Object utilities (lua interop)
 function ObjectMT:__index(key)
    local env = rawget(self, DEFAULTENV)
-   local jskey = fromLua(env, key)
+   local jskey = mt(env, fromLua(env, key), 'ToPropertyKey')
    return toLua(env, mt(env, self, '[[Get]]', jskey))
 end
 function ObjectMT:__newindex(key, value)
    local env = rawget(self, DEFAULTENV)
-   local jskey = fromLua(env, key)
+   local jskey = mt(env, fromLua(env, key), 'ToPropertyKey')
    local jsval = fromLua(env, value)
    mt(env, self, '[[Set]]', jskey, jsval, self)
 end
@@ -892,10 +1167,7 @@ end
 -- String utilities (lua interop)
 function StringMT:__len()
    if self.prefix ~= nil then
-      local s = StringMT:flatten(self).suffix
-      -- speed up future invocations
-      self.prefix = nil
-      self.suffix = s
+      StringMT:flatten(self)
    end
    return (#self.suffix) >> 1 -- UTF-16 length
 end
@@ -927,8 +1199,6 @@ function StringMT:__tostring()
    assert(surrogate == false, 'bad utf-16')
    local s8 = utf8.char(table.unpack(result))
    -- speed up future invocations!
-   self.prefix = nil
-   self.suffix = s
    self.utf8 = s8
    return s8
 end
@@ -938,10 +1208,6 @@ function StringMT.toKey(env, s)
    key = 'js@' .. StringMT.__tostring(s)
    rawset(s, 'key', key)
    return key
-end
-function NumberMT.toKey(env, n)
-   -- XXX this is very slow :(
-   return StringMT.toKey(env, NumberMT.ToString(env, n))
 end
 
 return {
@@ -956,9 +1222,10 @@ return {
    invokePrivate = mt,
    fromLua = fromLua,
    toLua = toLua,
-   convertUtf16 = function(utf16)
+   convertUtf16ToUtf8 = function(utf16)
       return tostring(StringMT:cons(nil, utf16))
    end,
+   stringToUtf16 = function(s) return StringMT:flatten(s).suffix end,
    Type = function(jsval) return mt(nil, jsval, 'Type') end,
    newBoolean = function(b) if b then return True else return False end end,
    newNumber = function(val) return NumberMT:from(val) end,
@@ -995,5 +1262,8 @@ return {
       PARENTFRAME = PARENTFRAME,
       VALUE = VALUE,
       ISAPPLY = ISAPPLY,
+      STRINGDATA = STRINGDATA,
+      BOOLEANDATA = BOOLEANDATA,
+      NUMBERDATA = NUMBERDATA,
    }
 }

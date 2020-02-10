@@ -29,7 +29,7 @@ function ModuleReader:decodeUtf16Str()
 end
 
 function ModuleReader:decodeUtf8Str()
-   return jsval.convertUtf16(self:decodeUtf16Str())
+   return jsval.convertUtf16ToUtf8(self:decodeUtf16Str())
 end
 
 function ModuleReader:decodeJsStr()
@@ -47,11 +47,11 @@ function Module:new(o)
    return o
 end
 
-function Module.newStartupModule()
-   return Module:new{functions = startup.functions, literals = startup.literals}
+function Module:newStartupModule()
+   return self:new{functions = startup.functions, literals = startup.literals}
 end
 
-function Module.newFromBytes(buf)
+function Module:newFromBytes(buf)
    local reader = ModuleReader:new(buf)
    -- Parse the functions
    local num_funcs = reader:decodeUint()
@@ -100,7 +100,7 @@ function Module.newFromBytes(buf)
       local val = decode[ty]()
       table.insert(literals, val)
    end
-   return Module:new{ functions = functions, literals = literals }
+   return self:new{ functions = functions, literals = literals }
 end
 
 return Module
