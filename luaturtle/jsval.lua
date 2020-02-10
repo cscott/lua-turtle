@@ -375,6 +375,22 @@ function ObjectMT.Type() return 'Object' end
 -- internal object types
 function PropertyDescriptor.Type() return 'PropertyDescriptor' end
 
+-- typeof
+function UndefinedMT.typeof() return StringMT:intern('undefined') end
+function NullMT.typeof() return StringMT:intern('object') end
+function BooleanMT.typeof() return StringMT:intern('boolean') end
+function NumberMT.typeof() return StringMT:intern('number') end
+function StringMT.typeof() return StringMT:intern('string') end
+function SymbolMT.typeof() return StringMT:intern('symbol') end
+function BigIntMT.typeof() return StringMT:intern('bigint') end
+function ObjectMT.typeof(env, obj)
+   if getmetatable(obj)['[[Call]]'] == nil then
+      return StringMT:intern('object')
+   else
+      return StringMT:intern('function')
+   end
+end
+
 -- IsPropertyDescriptor (returns lua boolean, not js boolean)
 function JsValMT.IsPropertyDescriptor() return false end
 function PropertyDescriptor.IsPropertyDescriptor() return true end
@@ -653,6 +669,12 @@ function ObjectMT.IsExtensible(env, obj)
    return mt(env, obj, '[[IsExtensible]]')
 end
 
+-- HasOwnProperty (7.3.12)
+function ObjectMT.HasOwnProperty(env, O, P)
+   local desc = mt(env, O, '[[GetOwnProperty]]', P)
+   if desc == nil then return False end
+   return True
+end
 
 -- Get/GetV
 function JsValMT.GetV(env, V, P)
@@ -660,14 +682,12 @@ function JsValMT.GetV(env, V, P)
    return mt(env, O, '[[Get]]', P, V)
 end
 function ObjectMT.Get(env, O, P)
-   if env == nil then env = rawget(O, DEFAULTENV) end -- support for lua interop
    return mt(env, O, '[[Get]]', P, O)
 end
 ObjectMT.GetV = ObjectMT.Get -- optimization
 
 -- Set
 function ObjectMT.Set(env, O, P, V, Throw)
-   if env == nil then env = rawget(O, DEFAULTENV) end -- support for lua interop
    local success = mt(env, O, '[[Set]]', P, V, O)
    if (not success) and Throw then
       ThrowTypeError(env, 'Failed to set')
@@ -956,6 +976,27 @@ function ObjectMT.ValidateAndApplyPropertyDescriptor(env, O, P, extensible, desc
    return true
 end
 
+function JsValMT.ObjectDefineProperties(env)
+   ThrowTypeError(env, "Can't define properties on non-object")
+end
+function ObjectMT.ObjectDefineProperties(env, O, Properties)
+   local props = mt(env, Properties, 'ToObject')
+   local keys = mt(env, props, '[[OwnPropertyKeys]]')
+   local descriptors = {}
+   for _,nextKey in ipairs(keys) do
+      local propDesc = mt(env, props, '[[GetOwnProperty]]', nextKey)
+      if propDesc ~= nil and propDesc.enumerable == true then
+         local descObj = mt(env, props, 'Get', nextKey)
+         local desc = mt(env, descObj, 'ToPropertyDescriptor')
+         table.insert(descriptors, { key = nextKey, desc = desc })
+      end
+   end
+   for _,pair in ipairs(descriptors) do
+      mt(env, O, 'DefinePropertyOrThrow', pair.key, pair.desc)
+   end
+   return O
+end
+
 function ObjectMT.ArrayDefineOwnProperty(env, A, P, desc) -- 9.4.2.1
    local lengthStr = StringMT:intern('length')
    if mt(env, P, 'Type') == 'String' then
@@ -1142,6 +1183,36 @@ function NumberMT.__lt(l, r, env)
    return l.value < r.value
 end
 
+function JsValMT.__le(lval, rval, env) -- note optional env!
+   local lnum = mt(env, lval, 'ToPrimitive', 'number')
+   local rnum = mt(env, rval, 'ToPrimitive', 'number')
+   -- if *both* are strings, we do a string comparison
+   if mt(env, lnum, 'Type') == 'String' and mt(env, rnum, 'Type') == 'String' then
+      return StringMT.__le(lval, rval, env)
+   end
+   -- otherwise, a numerical comparison (skipping some BigInt support here)
+   lnum = mt(env, lnum, 'ToNumeric')
+   rnum = mt(env, rnum, 'ToNumeric')
+   return NumberMT.__le(lnum, rnum, env)
+end
+copyToAll('__le')
+function StringMT.__le(l, r, env)
+   if getmetatable(r) ~= StringMT then
+      -- this will be a numeric comparison.
+      return JsValMT.__le(l, r, env)
+   end
+   l = StringMT:flatten(l).suffix
+   r = StringMT:flatten(r).suffix
+   return l <= r -- This is UTF-16 but I think it works out correctly
+end
+function NumberMT.__le(l, r, env)
+   if getmetatable(r) ~= NumberMT then
+      r = mt(env, r, 'ToPrimitive', 'number')
+      r = mt(env, r, 'ToNumeric')
+   end
+   return l.value <= r.value
+end
+
 function StringMT.__eq(l, r, env)
    assert(mt(env, r, 'Type')=='String') -- not implemented other cases yet
    return StringMT.equals(l, r)
@@ -1155,7 +1226,7 @@ end
 function ObjectMT:__index(key)
    local env = rawget(self, DEFAULTENV)
    local jskey = mt(env, fromLua(env, key), 'ToPropertyKey')
-   return toLua(env, mt(env, self, '[[Get]]', jskey))
+   return toLua(env, mt(env, self, 'GetV', jskey))
 end
 function ObjectMT:__newindex(key, value)
    local env = rawget(self, DEFAULTENV)
@@ -1243,8 +1314,12 @@ return {
       rawset(f, PARENTFRAME, fields.parentFrame)
       rawset(f, VALUE, { modul = fields.modul, func = fields.func })
       -- user-visible fields
-      mt(env, f, '[[Set]]', StringMT:intern('name'), fields.func.name, f)
-      mt(env, f, '[[Set]]', StringMT:intern('length'), fields.func.nargs, f)
+      mt(env, f, 'OrdinaryDefineOwnProperty', StringMT:intern('name'),
+         PropertyDescriptor:newData{value = fields.func.name, configurable=true}
+      )
+      mt(env, f, 'OrdinaryDefineOwnProperty', StringMT:intern('length'),
+         PropertyDescriptor:newData{value = NumberMT:from(fields.func.nargs), configurable=true}
+      )
       return f
    end,
    newFrame = function(env, parentFrame, this, arguments)

@@ -13,8 +13,10 @@ function Interpreter:new()
    i.frame = i.env:makeTopLevelFrame( jsval.Null, {} )
    i.compileFromSource = i.env:interpret( i.modul, 0, i.frame )
    -- Create repl
-   local makeRepl = i.compileFromSource.make_repl
-   i.repl = i.env:interpretFunction( makeRepl, jsval.Null, {} )
+   local makeRepl = jsval.invokePrivate(
+      i.env, i.compileFromSource, 'GetV', jsval.newString('make_repl')
+   )
+   i.replFunc = i.env:interpretFunction( makeRepl, jsval.Null, {} )
    return i
 end
 
@@ -33,7 +35,7 @@ end
 function Interpreter:repl(source)
    -- compile source to bytecode
    local bc = self.env:interpretFunction(
-      self.repl, jsval.Null, { jsval.newString( source ) }
+      self.replFunc, jsval.Null, { jsval.newString( source ) }
    )
    -- XXX handle exceptions thrown during compilation (syntax errors)
    -- Create a new module from the bytecode
