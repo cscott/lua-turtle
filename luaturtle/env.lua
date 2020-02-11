@@ -532,9 +532,20 @@ function Env:new()
      end
      return jsval.newStringFromUtf16(table.concat(elements))
    end)
+   env:addNativeFunc(StringPrototype, 'toLowerCase', 0, function(this, args)
+     local O = RequireObjectCoercible(this)
+     local S = jsval.invokePrivate(env, O, 'ToString')
+     return jsval.newString(string.lower(tostring(S)))
+   end)
+   env:addNativeFunc(StringPrototype, 'toUpperCase', 0, function(this, args)
+     local O = RequireObjectCoercible(this)
+     local S = jsval.invokePrivate(env, O, 'ToString')
+     return jsval.newString(string.upper(tostring(S)))
+   end)
    env:addNativeFunc(StringPrototype, 'valueOf', 0, function(this, args)
       return jsval.invokePrivate(env, this, 'thisStringValue')
    end)
+
    return env
 end
 

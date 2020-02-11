@@ -5,7 +5,7 @@ local jsval = require('luaturtle.jsval')
 local PROMPT = '>>> '
 
 function repl()
-   i = Interpreter:new()
+   local i = Interpreter:new()
    local silent = (arg[1] ~= nil)
    local prompt = function() if not silent then io.stdout:write(PROMPT) end end
 
@@ -24,4 +24,25 @@ function repl()
    end
 end
 
-repl()
+function readAll(filenames)
+   -- Execute all files in the same execution context
+   local i = Interpreter:new()
+   for _,filename in ipairs(filenames) do
+      local source = io.input(filename):read('a')
+      status, r = i:interpret(source)
+      if not status then
+         if jsval.isJsVal(r) then
+            local msg = i.env:prettyPrint(r)
+            error(msg)
+         else
+            error(r)
+         end
+      end
+   end
+end
+
+if arg[1] ~= nil then
+   readAll(arg)
+else
+   repl()
+end
