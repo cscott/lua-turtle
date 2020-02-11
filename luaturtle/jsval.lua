@@ -41,13 +41,14 @@ local function mt(env, v, name, ...)
    return getmetatable(v)[name](env, v, ...)
 end
 
-local function ThrowTypeError(env, msg)
+local function ThrowError(env, name, msg)
    if env ~= nil then
-      local obj = env:newTypeError(msg)
-      error(obj)
+      error(env:newError(name, msg))
    end
-   error('TypeError: ' .. msg)
+   error(name .. ': ' .. msg)
 end
+local function ThrowTypeError(env, msg) ThrowError(env, 'TypeError', msg) end
+local function ThrowRangeError(env, msg) ThrowError(env, 'RangeError', msg) end
 
 local function nyi(msg)
    return function() error('not yet implemented: ' .. msg) end
@@ -1098,7 +1099,7 @@ function ObjectMT.ArraySetLength(env, A, desc)
    local newLen = mt(env, desc.value, 'ToUint32')
    local numberLen = mt(env, desc.value, 'ToNumber')
    if newLen.value ~= numberLen.value then
-      error('RangeError') -- XXX should throw a new RangeError exception
+      ThrowRangeError(env, 'array length out of range')
    end
    newLenDesc.value = newLen
    local oldLenDesc = mt(env, A, 'OrdinaryGetOwnProperty', lengthStr)

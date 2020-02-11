@@ -514,8 +514,8 @@ function Env:arrayEach(arr, func)
    end
 end
 
-function Env.newTypeError(env, msg)
-   local O = jsval.newObject(env, env.realm.TypeErrorPrototype)
+function Env.newError(env, name, msg)
+   local O = jsval.newObject(env, env.realm[name..'Prototype'])
    rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
    if msg ~= nil then
       msg = jsval.invokePrivate(env, jsval.fromLua(env, msg), 'ToString')
@@ -523,6 +523,9 @@ function Env.newTypeError(env, msg)
    end
    return O
 end
+
+function Env:newTypeError(msg) return self:newError('TypeError', msg) end
+function Env:newRangeError(msg) return self:newError('RangeError', msg) end
 
 -- helper functions to create properties
 function Env:mkFrozen(obj, name, value)
