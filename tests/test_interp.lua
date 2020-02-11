@@ -27,7 +27,6 @@ function TestInterp.testRepl1()
    })
 end
 
---[[
 function TestInterp.testParseInt()
    doScriptTest({
          -- sanity check numeric types
@@ -54,7 +53,6 @@ function TestInterp.testParseInt()
          { "parseInt('10', 16.5)", "16" },
    } )
 end
-]]
 
 function TestInterp.testCmp()
    doScriptTest( {

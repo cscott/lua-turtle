@@ -239,6 +239,52 @@ function Env:new()
    env:mkDataDesc(Array, 'length', { value = 1, configurable = true })
    setRealm('Array', '%Array%', Array)
 
+   -- Functions of global this
+   local parseInt = env:addNativeFunc(nil, 'parseInt', 2, function(this, args)
+     local inputString = jsval.invokePrivate(env, args[1] or jsval.Undefined, 'ToString')
+     local S = string.gsub(tostring(inputString), '^%s+', '')
+     local sign = 1
+     if S ~= '' and string.sub(S, 1, 1) == '-' then sign = -1 end
+     S = string.gsub(S, '^[+-]', '')
+     local R = jsval.toLua(env, jsval.invokePrivate(env, args[2] or jsval.Undefined, 'ToInt32'))
+     local stripPrefix = true
+     if R == 0 then
+        R = 10
+     else
+        if R < 2 or R > 36 then return jsval.newNumber(0/0) end
+        if R ~= 16 then stripPrefix = false end
+     end
+     if stripPrefix then
+        if string.lower(string.sub(S, 1, 2)) == '0x' then
+           S = string.sub(S, 3)
+           R = 16
+        end
+     end
+     local function digit(i)
+        local code = string.byte(S, i)
+        if code >= 0x30 and code <= 0x39 then return code - 0x30 end -- 0-9
+        if code >= 0x41 and code <= 0x5A then return code - 0x41 + 10 end -- A-Z
+        if code >= 0x61 and code <= 0x7A then return code - 0x61 + 10 end -- a-z
+        return nil
+     end
+     -- scan for bad characters
+     local Z = S
+     for i = 1,#S do
+        local d = digit(i)
+        if d == nil or d >= R then
+           Z = string.sub(S, 1, i-1)
+           break
+        end
+     end
+     if #Z == 0 then return jsval.newNumber(0/0) end
+     local number = tonumber(Z, R)
+     assert(number ~= nil, Z .. ' radix ' .. R)
+     -- handle -0!
+     if sign < 0 and number == 0 then return jsval.newNumber(-1/(1/0)) end
+     return jsval.newNumber(sign * number)
+   end)
+   setRealm('parseInt', '%parseInt%', parseInt)
+
    -- Not in ECMAScript but useful: console!
    local ConsolePrototype = jsval.newObject(env, ObjectPrototype)
    env.realm.ConsolePrototype = ConsolePrototype
@@ -578,6 +624,7 @@ function Env:makeTopLevelFrame(context, arguments)
    self:mkFrozen(frame, 'NaN', 0/0)
    self:mkFrozen(frame, 'undefined', jsval.Undefined)
    self:mkHidden(frame, 'console', self.realm.Console)
+   self:mkHidden(frame, 'parseInt', self.realm.parseInt)
    self:addNativeFunc(frame, 'isFinite', 1, function(this, args)
      local number = args[1] or jsval.Undefined
      local num = jsval.invokePrivate(self, number, 'ToNumber')

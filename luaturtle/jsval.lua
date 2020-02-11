@@ -515,6 +515,25 @@ function NumberMT.ToInteger(env, argument)
    return NumberMT:from(number)
 end
 
+function JsValMT.ToInt32(env, argument)
+   local number = mt(env, argument, 'ToNumber')
+   assert(mt(env, number, 'Type') == 'Number')
+   return NumberMT.ToInt32(env, number)
+end
+function NumberMT.ToInt32(env, argument)
+   local number = argument.value
+   if (number ~= number or -- NaN
+       number == 0 or -- +0.0 and -0.0
+       number == (1/0) or number == (-1/0)) then -- Infinities
+      return NumberMT:from(0)
+   end
+   number = NumberMT.ToUint32(env, argument).value
+   if number >= 0x80000000 then
+      number = number - 0x100000000
+   end
+   return NumberMT:from(number)
+end
+
 function JsValMT.ToUint32(env, argument)
    local number = mt(env, argument, 'ToNumber')
    assert(mt(env, number, 'Type') == 'Number')
