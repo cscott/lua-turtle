@@ -19,7 +19,7 @@ startup.functions = {
       8, 1,     -- 3: set_slot_direct(1)
       4, 1,     -- 5: new_function(1)
       0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
+      5, 26,    -- 8: get_slot_direct(26)
       10, 0,    -- 10: invoke(0)
       14,       -- 12: pop
       0,        -- 13: push_frame
@@ -27,106 +27,106 @@ startup.functions = {
       8, 1,     -- 15: set_slot_direct(1)
       0,        -- 17: push_frame
       0,        -- 18: push_frame
-      4, 28,    -- 19: new_function(28)
+      4, 34,    -- 19: new_function(34)
       17,       -- 21: over
-      8, 117,   -- 22: set_slot_direct(117)
-      8, 118,   -- 24: set_slot_direct(118)
+      8, 190,   -- 22: set_slot_direct(190)
+      8, 191,   -- 24: set_slot_direct(191)
       0,        -- 26: push_frame
-      5, 118,   -- 27: get_slot_direct(118)
+      5, 191,   -- 27: get_slot_direct(191)
       0,        -- 29: push_frame
-      5, 20,    -- 30: get_slot_direct(20)
-      1, 119,   -- 32: push_literal(119)
+      5, 26,    -- 30: get_slot_direct(26)
+      1, 192,   -- 32: push_literal(192)
       3,        -- 34: new_array
       15,       -- 35: dup
-      1, 120,   -- 36: push_literal(120)
-      8, 6,     -- 38: set_slot_direct(6)
+      1, 193,   -- 36: push_literal(193)
+      8, 18,    -- 38: set_slot_direct(18)
       0,        -- 40: push_frame
-      4, 30,    -- 41: new_function(30)
+      4, 36,    -- 41: new_function(36)
       17,       -- 43: over
-      8, 184,   -- 44: set_slot_direct(184)
+      8, 245,   -- 44: set_slot_direct(245)
       10, 3,    -- 46: invoke(3)
       14,       -- 48: pop
       0,        -- 49: push_frame
-      5, 118,   -- 50: get_slot_direct(118)
+      5, 191,   -- 50: get_slot_direct(191)
       0,        -- 52: push_frame
-      5, 20,    -- 53: get_slot_direct(20)
-      1, 187,   -- 55: push_literal(187)
+      5, 26,    -- 53: get_slot_direct(26)
+      1, 248,   -- 55: push_literal(248)
       3,        -- 57: new_array
       15,       -- 58: dup
-      1, 188,   -- 59: push_literal(188)
-      8, 6,     -- 61: set_slot_direct(6)
+      1, 249,   -- 59: push_literal(249)
+      8, 18,    -- 61: set_slot_direct(18)
       15,       -- 63: dup
-      1, 119,   -- 64: push_literal(119)
-      8, 8,     -- 66: set_slot_direct(8)
+      1, 192,   -- 64: push_literal(192)
+      8, 31,    -- 66: set_slot_direct(31)
       0,        -- 68: push_frame
-      4, 34,    -- 69: new_function(34)
+      4, 40,    -- 69: new_function(40)
       17,       -- 71: over
-      8, 313,   -- 72: set_slot_direct(313)
+      8, 368,   -- 72: set_slot_direct(368)
       10, 3,    -- 74: invoke(3)
       14,       -- 76: pop
       0,        -- 77: push_frame
-      5, 118,   -- 78: get_slot_direct(118)
+      5, 191,   -- 78: get_slot_direct(191)
       0,        -- 80: push_frame
-      5, 20,    -- 81: get_slot_direct(20)
-      1, 316,   -- 83: push_literal(316)
+      5, 26,    -- 81: get_slot_direct(26)
+      1, 371,   -- 83: push_literal(371)
       3,        -- 85: new_array
       15,       -- 86: dup
-      1, 317,   -- 87: push_literal(317)
-      8, 6,     -- 89: set_slot_direct(6)
+      1, 372,   -- 87: push_literal(372)
+      8, 18,    -- 89: set_slot_direct(18)
       0,        -- 91: push_frame
-      4, 81,    -- 92: new_function(81)
+      4, 87,    -- 92: new_function(87)
       17,       -- 94: over
-      8, 367,   -- 95: set_slot_direct(367)
+      8, 422,   -- 95: set_slot_direct(422)
       10, 3,    -- 97: invoke(3)
       14,       -- 99: pop
       0,        -- 100: push_frame
-      5, 118,   -- 101: get_slot_direct(118)
+      5, 191,   -- 101: get_slot_direct(191)
       0,        -- 103: push_frame
-      5, 20,    -- 104: get_slot_direct(20)
-      1, 370,   -- 106: push_literal(370)
+      5, 26,    -- 104: get_slot_direct(26)
+      1, 425,   -- 106: push_literal(425)
       3,        -- 108: new_array
       15,       -- 109: dup
-      1, 371,   -- 110: push_literal(371)
-      8, 6,     -- 112: set_slot_direct(6)
+      1, 426,   -- 110: push_literal(426)
+      8, 18,    -- 112: set_slot_direct(18)
       15,       -- 114: dup
-      1, 316,   -- 115: push_literal(316)
-      8, 8,     -- 117: set_slot_direct(8)
+      1, 371,   -- 115: push_literal(371)
+      8, 31,    -- 117: set_slot_direct(31)
       0,        -- 119: push_frame
-      4, 91,    -- 120: new_function(91)
+      4, 97,    -- 120: new_function(97)
       17,       -- 122: over
-      8, 439,   -- 123: set_slot_direct(439)
+      8, 489,   -- 123: set_slot_direct(489)
       10, 3,    -- 125: invoke(3)
       14,       -- 127: pop
       0,        -- 128: push_frame
-      5, 118,   -- 129: get_slot_direct(118)
+      5, 191,   -- 129: get_slot_direct(191)
       0,        -- 131: push_frame
-      5, 20,    -- 132: get_slot_direct(20)
-      1, 440,   -- 134: push_literal(440)
+      5, 26,    -- 132: get_slot_direct(26)
+      1, 490,   -- 134: push_literal(490)
       3,        -- 136: new_array
-      4, 148,   -- 137: new_function(148)
+      4, 154,   -- 137: new_function(154)
       10, 3,    -- 139: invoke(3)
       14,       -- 141: pop
       0,        -- 142: push_frame
-      5, 118,   -- 143: get_slot_direct(118)
+      5, 191,   -- 143: get_slot_direct(191)
       0,        -- 145: push_frame
-      5, 20,    -- 146: get_slot_direct(20)
-      1, 442,   -- 148: push_literal(442)
+      5, 26,    -- 146: get_slot_direct(26)
+      1, 492,   -- 148: push_literal(492)
       3,        -- 150: new_array
       15,       -- 151: dup
-      1, 187,   -- 152: push_literal(187)
-      8, 6,     -- 154: set_slot_direct(6)
+      1, 248,   -- 152: push_literal(248)
+      8, 18,    -- 154: set_slot_direct(18)
       15,       -- 156: dup
-      1, 370,   -- 157: push_literal(370)
-      8, 8,     -- 159: set_slot_direct(8)
+      1, 425,   -- 157: push_literal(425)
+      8, 31,    -- 159: set_slot_direct(31)
       15,       -- 161: dup
-      1, 440,   -- 162: push_literal(440)
-      8, 108,   -- 164: set_slot_direct(108)
-      4, 149,   -- 166: new_function(149)
+      1, 490,   -- 162: push_literal(490)
+      8, 130,   -- 164: set_slot_direct(130)
+      4, 155,   -- 166: new_function(155)
       10, 3,    -- 168: invoke(3)
       14,       -- 170: pop
       0,        -- 171: push_frame
       5, 1,     -- 172: get_slot_direct(1)
-      1, 442,   -- 174: push_literal(442)
+      1, 492,   -- 174: push_literal(492)
       6,        -- 176: get_slot_indirect
       11        -- 177: return
     }
@@ -135,7 +135,7 @@ startup.functions = {
     name = jsval.Undefined,
     id = 1,
     nargs = 0,
-    max_stack = 4,
+    max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
@@ -144,352 +144,580 @@ startup.functions = {
       1, 0,     -- 5: push_literal(0)
       8, 3,     -- 7: set_slot_direct(3)
       0,        -- 9: push_frame
-      0,        -- 10: push_frame
-      5, 4,     -- 11: get_slot_direct(4)
-      5, 5,     -- 13: get_slot_direct(5)
-      13, 21,   -- 15: jmp_unless(21)
-      4, 2,     -- 17: new_function(2)
-      12, 23,   -- 19: jmp(23)
-      4, 3,     -- 21: new_function(3)
-      8, 3,     -- 23: set_slot_direct(3)
-      0,        -- 25: push_frame
-      5, 12,    -- 26: get_slot_direct(12)
-      5, 13,    -- 28: get_slot_direct(13)
-      4, 4,     -- 30: new_function(4)
-      8, 34,    -- 32: set_slot_direct(34)
+      1, 0,     -- 10: push_literal(0)
+      8, 4,     -- 12: set_slot_direct(4)
+      0,        -- 14: push_frame
+      1, 0,     -- 15: push_literal(0)
+      8, 5,     -- 17: set_slot_direct(5)
+      0,        -- 19: push_frame
+      1, 0,     -- 20: push_literal(0)
+      8, 6,     -- 22: set_slot_direct(6)
+      0,        -- 24: push_frame
+      1, 0,     -- 25: push_literal(0)
+      8, 7,     -- 27: set_slot_direct(7)
+      0,        -- 29: push_frame
+      1, 0,     -- 30: push_literal(0)
+      8, 8,     -- 32: set_slot_direct(8)
       0,        -- 34: push_frame
-      5, 3,     -- 35: get_slot_direct(3)
-      0,        -- 37: push_frame
-      5, 20,    -- 38: get_slot_direct(20)
-      0,        -- 40: push_frame
-      5, 12,    -- 41: get_slot_direct(12)
-      5, 13,    -- 43: get_slot_direct(13)
-      1, 34,    -- 45: push_literal(34)
-      10, 2,    -- 47: invoke(2)
-      14,       -- 49: pop
-      0,        -- 50: push_frame
-      5, 12,    -- 51: get_slot_direct(12)
-      5, 13,    -- 53: get_slot_direct(13)
-      4, 5,     -- 55: new_function(5)
-      8, 40,    -- 57: set_slot_direct(40)
-      0,        -- 59: push_frame
-      5, 3,     -- 60: get_slot_direct(3)
-      0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
+      1, 0,     -- 35: push_literal(0)
+      8, 9,     -- 37: set_slot_direct(9)
+      0,        -- 39: push_frame
+      1, 0,     -- 40: push_literal(0)
+      8, 10,    -- 42: set_slot_direct(10)
+      0,        -- 44: push_frame
+      0,        -- 45: push_frame
+      5, 11,    -- 46: get_slot_direct(11)
+      5, 12,    -- 48: get_slot_direct(12)
+      5, 13,    -- 50: get_slot_direct(13)
+      8, 3,     -- 52: set_slot_direct(3)
+      0,        -- 54: push_frame
+      0,        -- 55: push_frame
+      5, 14,    -- 56: get_slot_direct(14)
+      5, 12,    -- 58: get_slot_direct(12)
+      5, 13,    -- 60: get_slot_direct(13)
+      8, 4,     -- 62: set_slot_direct(4)
+      0,        -- 64: push_frame
       0,        -- 65: push_frame
-      5, 12,    -- 66: get_slot_direct(12)
-      5, 13,    -- 68: get_slot_direct(13)
-      1, 40,    -- 70: push_literal(40)
-      10, 2,    -- 72: invoke(2)
-      14,       -- 74: pop
+      5, 15,    -- 66: get_slot_direct(15)
+      5, 12,    -- 68: get_slot_direct(12)
+      5, 16,    -- 70: get_slot_direct(16)
+      8, 5,     -- 72: set_slot_direct(5)
+      0,        -- 74: push_frame
       0,        -- 75: push_frame
-      5, 12,    -- 76: get_slot_direct(12)
-      5, 13,    -- 78: get_slot_direct(13)
-      4, 6,     -- 80: new_function(6)
-      8, 45,    -- 82: set_slot_direct(45)
-      0,        -- 84: push_frame
-      5, 3,     -- 85: get_slot_direct(3)
-      0,        -- 87: push_frame
-      5, 20,    -- 88: get_slot_direct(20)
-      0,        -- 90: push_frame
-      5, 12,    -- 91: get_slot_direct(12)
-      5, 13,    -- 93: get_slot_direct(13)
-      1, 45,    -- 95: push_literal(45)
-      10, 2,    -- 97: invoke(2)
-      14,       -- 99: pop
-      0,        -- 100: push_frame
-      5, 12,    -- 101: get_slot_direct(12)
-      5, 13,    -- 103: get_slot_direct(13)
-      4, 7,     -- 105: new_function(7)
-      8, 50,    -- 107: set_slot_direct(50)
+      5, 15,    -- 76: get_slot_direct(15)
+      5, 17,    -- 78: get_slot_direct(17)
+      15,       -- 80: dup
+      20,       -- 81: un_not
+      13, 87,   -- 82: jmp_unless(87)
+      14,       -- 84: pop
+      4, 2,     -- 85: new_function(2)
+      8, 6,     -- 87: set_slot_direct(6)
+      0,        -- 89: push_frame
+      4, 3,     -- 90: new_function(3)
+      8, 7,     -- 92: set_slot_direct(7)
+      0,        -- 94: push_frame
+      4, 4,     -- 95: new_function(4)
+      8, 8,     -- 97: set_slot_direct(8)
+      0,        -- 99: push_frame
+      4, 5,     -- 100: new_function(5)
+      8, 9,     -- 102: set_slot_direct(9)
+      0,        -- 104: push_frame
+      4, 6,     -- 105: new_function(6)
+      8, 10,    -- 107: set_slot_direct(10)
       0,        -- 109: push_frame
-      5, 3,     -- 110: get_slot_direct(3)
-      0,        -- 112: push_frame
-      5, 20,    -- 113: get_slot_direct(20)
-      0,        -- 115: push_frame
-      5, 12,    -- 116: get_slot_direct(12)
-      5, 13,    -- 118: get_slot_direct(13)
-      1, 50,    -- 120: push_literal(50)
-      10, 2,    -- 122: invoke(2)
-      14,       -- 124: pop
-      0,        -- 125: push_frame
-      5, 51,    -- 126: get_slot_direct(51)
-      5, 13,    -- 128: get_slot_direct(13)
-      4, 8,     -- 130: new_function(8)
-      8, 52,    -- 132: set_slot_direct(52)
+      5, 36,    -- 110: get_slot_direct(36)
+      5, 12,    -- 112: get_slot_direct(12)
+      4, 7,     -- 114: new_function(7)
+      8, 50,    -- 116: set_slot_direct(50)
+      0,        -- 118: push_frame
+      5, 9,     -- 119: get_slot_direct(9)
+      0,        -- 121: push_frame
+      5, 26,    -- 122: get_slot_direct(26)
+      0,        -- 124: push_frame
+      5, 36,    -- 125: get_slot_direct(36)
+      5, 12,    -- 127: get_slot_direct(12)
+      1, 50,    -- 129: push_literal(50)
+      10, 2,    -- 131: invoke(2)
+      14,       -- 133: pop
       0,        -- 134: push_frame
-      5, 3,     -- 135: get_slot_direct(3)
-      0,        -- 137: push_frame
-      5, 20,    -- 138: get_slot_direct(20)
-      0,        -- 140: push_frame
-      5, 51,    -- 141: get_slot_direct(51)
-      5, 13,    -- 143: get_slot_direct(13)
-      1, 52,    -- 145: push_literal(52)
-      10, 2,    -- 147: invoke(2)
-      14,       -- 149: pop
-      0,        -- 150: push_frame
-      5, 51,    -- 151: get_slot_direct(51)
-      5, 13,    -- 153: get_slot_direct(13)
-      4, 9,     -- 155: new_function(9)
-      8, 54,    -- 157: set_slot_direct(54)
+      5, 36,    -- 135: get_slot_direct(36)
+      5, 12,    -- 137: get_slot_direct(12)
+      4, 8,     -- 139: new_function(8)
+      8, 57,    -- 141: set_slot_direct(57)
+      0,        -- 143: push_frame
+      5, 9,     -- 144: get_slot_direct(9)
+      0,        -- 146: push_frame
+      5, 26,    -- 147: get_slot_direct(26)
+      0,        -- 149: push_frame
+      5, 36,    -- 150: get_slot_direct(36)
+      5, 12,    -- 152: get_slot_direct(12)
+      1, 57,    -- 154: push_literal(57)
+      10, 2,    -- 156: invoke(2)
+      14,       -- 158: pop
       0,        -- 159: push_frame
-      5, 3,     -- 160: get_slot_direct(3)
-      0,        -- 162: push_frame
-      5, 20,    -- 163: get_slot_direct(20)
-      0,        -- 165: push_frame
-      5, 51,    -- 166: get_slot_direct(51)
-      5, 13,    -- 168: get_slot_direct(13)
-      1, 54,    -- 170: push_literal(54)
-      10, 2,    -- 172: invoke(2)
-      14,       -- 174: pop
-      0,        -- 175: push_frame
-      5, 51,    -- 176: get_slot_direct(51)
-      5, 13,    -- 178: get_slot_direct(13)
-      4, 10,    -- 180: new_function(10)
-      8, 60,    -- 182: set_slot_direct(60)
+      5, 36,    -- 160: get_slot_direct(36)
+      5, 12,    -- 162: get_slot_direct(12)
+      4, 9,     -- 164: new_function(9)
+      8, 62,    -- 166: set_slot_direct(62)
+      0,        -- 168: push_frame
+      5, 9,     -- 169: get_slot_direct(9)
+      0,        -- 171: push_frame
+      5, 26,    -- 172: get_slot_direct(26)
+      0,        -- 174: push_frame
+      5, 36,    -- 175: get_slot_direct(36)
+      5, 12,    -- 177: get_slot_direct(12)
+      1, 62,    -- 179: push_literal(62)
+      10, 2,    -- 181: invoke(2)
+      14,       -- 183: pop
       0,        -- 184: push_frame
-      5, 3,     -- 185: get_slot_direct(3)
-      0,        -- 187: push_frame
-      5, 20,    -- 188: get_slot_direct(20)
-      0,        -- 190: push_frame
-      5, 51,    -- 191: get_slot_direct(51)
-      5, 13,    -- 193: get_slot_direct(13)
-      1, 60,    -- 195: push_literal(60)
-      10, 2,    -- 197: invoke(2)
-      14,       -- 199: pop
-      0,        -- 200: push_frame
-      5, 51,    -- 201: get_slot_direct(51)
-      5, 13,    -- 203: get_slot_direct(13)
-      4, 11,    -- 205: new_function(11)
-      8, 45,    -- 207: set_slot_direct(45)
+      5, 36,    -- 185: get_slot_direct(36)
+      5, 12,    -- 187: get_slot_direct(12)
+      4, 10,    -- 189: new_function(10)
+      8, 67,    -- 191: set_slot_direct(67)
+      0,        -- 193: push_frame
+      5, 9,     -- 194: get_slot_direct(9)
+      0,        -- 196: push_frame
+      5, 26,    -- 197: get_slot_direct(26)
+      0,        -- 199: push_frame
+      5, 36,    -- 200: get_slot_direct(36)
+      5, 12,    -- 202: get_slot_direct(12)
+      1, 67,    -- 204: push_literal(67)
+      10, 2,    -- 206: invoke(2)
+      14,       -- 208: pop
       0,        -- 209: push_frame
-      5, 3,     -- 210: get_slot_direct(3)
-      0,        -- 212: push_frame
-      5, 20,    -- 213: get_slot_direct(20)
-      0,        -- 215: push_frame
-      5, 51,    -- 216: get_slot_direct(51)
-      5, 13,    -- 218: get_slot_direct(13)
-      1, 45,    -- 220: push_literal(45)
-      10, 2,    -- 222: invoke(2)
-      14,       -- 224: pop
-      0,        -- 225: push_frame
-      5, 51,    -- 226: get_slot_direct(51)
-      5, 13,    -- 228: get_slot_direct(13)
-      4, 12,    -- 230: new_function(12)
-      8, 71,    -- 232: set_slot_direct(71)
+      5, 68,    -- 210: get_slot_direct(68)
+      5, 12,    -- 212: get_slot_direct(12)
+      4, 11,    -- 214: new_function(11)
+      8, 69,    -- 216: set_slot_direct(69)
+      0,        -- 218: push_frame
+      5, 9,     -- 219: get_slot_direct(9)
+      0,        -- 221: push_frame
+      5, 26,    -- 222: get_slot_direct(26)
+      0,        -- 224: push_frame
+      5, 68,    -- 225: get_slot_direct(68)
+      5, 12,    -- 227: get_slot_direct(12)
+      1, 69,    -- 229: push_literal(69)
+      10, 2,    -- 231: invoke(2)
+      14,       -- 233: pop
       0,        -- 234: push_frame
-      5, 3,     -- 235: get_slot_direct(3)
-      0,        -- 237: push_frame
-      5, 20,    -- 238: get_slot_direct(20)
-      0,        -- 240: push_frame
-      5, 51,    -- 241: get_slot_direct(51)
-      5, 13,    -- 243: get_slot_direct(13)
-      1, 71,    -- 245: push_literal(71)
-      10, 2,    -- 247: invoke(2)
-      14,       -- 249: pop
-      0,        -- 250: push_frame
-      5, 51,    -- 251: get_slot_direct(51)
-      5, 13,    -- 253: get_slot_direct(13)
-      4, 13,    -- 255: new_function(13)
-      8, 75,    -- 257: set_slot_direct(75)
+      5, 68,    -- 235: get_slot_direct(68)
+      5, 12,    -- 237: get_slot_direct(12)
+      4, 12,    -- 239: new_function(12)
+      8, 71,    -- 241: set_slot_direct(71)
+      0,        -- 243: push_frame
+      5, 9,     -- 244: get_slot_direct(9)
+      0,        -- 246: push_frame
+      5, 26,    -- 247: get_slot_direct(26)
+      0,        -- 249: push_frame
+      5, 68,    -- 250: get_slot_direct(68)
+      5, 12,    -- 252: get_slot_direct(12)
+      1, 71,    -- 254: push_literal(71)
+      10, 2,    -- 256: invoke(2)
+      14,       -- 258: pop
       0,        -- 259: push_frame
-      5, 3,     -- 260: get_slot_direct(3)
-      0,        -- 262: push_frame
-      5, 20,    -- 263: get_slot_direct(20)
-      0,        -- 265: push_frame
-      5, 51,    -- 266: get_slot_direct(51)
-      5, 13,    -- 268: get_slot_direct(13)
-      1, 75,    -- 270: push_literal(75)
-      10, 2,    -- 272: invoke(2)
-      14,       -- 274: pop
-      0,        -- 275: push_frame
-      5, 51,    -- 276: get_slot_direct(51)
-      5, 13,    -- 278: get_slot_direct(13)
-      4, 14,    -- 280: new_function(14)
-      8, 79,    -- 282: set_slot_direct(79)
+      5, 68,    -- 260: get_slot_direct(68)
+      5, 12,    -- 262: get_slot_direct(12)
+      4, 13,    -- 264: new_function(13)
+      8, 78,    -- 266: set_slot_direct(78)
+      0,        -- 268: push_frame
+      5, 9,     -- 269: get_slot_direct(9)
+      0,        -- 271: push_frame
+      5, 26,    -- 272: get_slot_direct(26)
+      0,        -- 274: push_frame
+      5, 68,    -- 275: get_slot_direct(68)
+      5, 12,    -- 277: get_slot_direct(12)
+      1, 78,    -- 279: push_literal(78)
+      10, 2,    -- 281: invoke(2)
+      14,       -- 283: pop
       0,        -- 284: push_frame
-      5, 3,     -- 285: get_slot_direct(3)
-      0,        -- 287: push_frame
-      5, 20,    -- 288: get_slot_direct(20)
-      0,        -- 290: push_frame
-      5, 51,    -- 291: get_slot_direct(51)
-      5, 13,    -- 293: get_slot_direct(13)
-      1, 79,    -- 295: push_literal(79)
-      10, 2,    -- 297: invoke(2)
-      14,       -- 299: pop
-      0,        -- 300: push_frame
-      5, 80,    -- 301: get_slot_direct(80)
-      5, 13,    -- 303: get_slot_direct(13)
-      4, 15,    -- 305: new_function(15)
-      8, 91,    -- 307: set_slot_direct(91)
+      5, 68,    -- 285: get_slot_direct(68)
+      5, 12,    -- 287: get_slot_direct(12)
+      4, 14,    -- 289: new_function(14)
+      8, 62,    -- 291: set_slot_direct(62)
+      0,        -- 293: push_frame
+      5, 9,     -- 294: get_slot_direct(9)
+      0,        -- 296: push_frame
+      5, 26,    -- 297: get_slot_direct(26)
+      0,        -- 299: push_frame
+      5, 68,    -- 300: get_slot_direct(68)
+      5, 12,    -- 302: get_slot_direct(12)
+      1, 62,    -- 304: push_literal(62)
+      10, 2,    -- 306: invoke(2)
+      14,       -- 308: pop
       0,        -- 309: push_frame
-      5, 3,     -- 310: get_slot_direct(3)
-      0,        -- 312: push_frame
-      5, 20,    -- 313: get_slot_direct(20)
-      0,        -- 315: push_frame
-      5, 80,    -- 316: get_slot_direct(80)
-      5, 13,    -- 318: get_slot_direct(13)
-      1, 91,    -- 320: push_literal(91)
-      10, 2,    -- 322: invoke(2)
-      14,       -- 324: pop
-      0,        -- 325: push_frame
-      5, 80,    -- 326: get_slot_direct(80)
-      5, 13,    -- 328: get_slot_direct(13)
-      4, 20,    -- 330: new_function(20)
-      8, 87,    -- 332: set_slot_direct(87)
+      5, 68,    -- 310: get_slot_direct(68)
+      5, 12,    -- 312: get_slot_direct(12)
+      4, 15,    -- 314: new_function(15)
+      8, 90,    -- 316: set_slot_direct(90)
+      0,        -- 318: push_frame
+      5, 9,     -- 319: get_slot_direct(9)
+      0,        -- 321: push_frame
+      5, 26,    -- 322: get_slot_direct(26)
+      0,        -- 324: push_frame
+      5, 68,    -- 325: get_slot_direct(68)
+      5, 12,    -- 327: get_slot_direct(12)
+      1, 90,    -- 329: push_literal(90)
+      10, 2,    -- 331: invoke(2)
+      14,       -- 333: pop
       0,        -- 334: push_frame
-      5, 3,     -- 335: get_slot_direct(3)
-      0,        -- 337: push_frame
-      5, 20,    -- 338: get_slot_direct(20)
-      0,        -- 340: push_frame
-      5, 80,    -- 341: get_slot_direct(80)
-      5, 13,    -- 343: get_slot_direct(13)
-      1, 87,    -- 345: push_literal(87)
-      10, 2,    -- 347: invoke(2)
-      14,       -- 349: pop
-      0,        -- 350: push_frame
-      5, 80,    -- 351: get_slot_direct(80)
-      5, 13,    -- 353: get_slot_direct(13)
-      1, 95,    -- 355: push_literal(95)
-      4, 21,    -- 357: new_function(21)
-      9,        -- 359: set_slot_indirect
-      0,        -- 360: push_frame
-      5, 3,     -- 361: get_slot_direct(3)
-      0,        -- 363: push_frame
-      5, 20,    -- 364: get_slot_direct(20)
-      0,        -- 366: push_frame
-      5, 80,    -- 367: get_slot_direct(80)
-      5, 13,    -- 369: get_slot_direct(13)
-      1, 95,    -- 371: push_literal(95)
-      10, 2,    -- 373: invoke(2)
-      14,       -- 375: pop
-      0,        -- 376: push_frame
-      5, 80,    -- 377: get_slot_direct(80)
-      5, 13,    -- 379: get_slot_direct(13)
-      4, 22,    -- 381: new_function(22)
-      8, 99,    -- 383: set_slot_direct(99)
-      0,        -- 385: push_frame
-      5, 3,     -- 386: get_slot_direct(3)
-      0,        -- 388: push_frame
-      5, 20,    -- 389: get_slot_direct(20)
-      0,        -- 391: push_frame
-      5, 80,    -- 392: get_slot_direct(80)
-      5, 13,    -- 394: get_slot_direct(13)
-      1, 99,    -- 396: push_literal(99)
-      10, 2,    -- 398: invoke(2)
-      14,       -- 400: pop
-      0,        -- 401: push_frame
-      5, 100,   -- 402: get_slot_direct(100)
-      5, 13,    -- 404: get_slot_direct(13)
-      4, 23,    -- 406: new_function(23)
-      8, 99,    -- 408: set_slot_direct(99)
-      0,        -- 410: push_frame
-      5, 3,     -- 411: get_slot_direct(3)
-      0,        -- 413: push_frame
-      5, 20,    -- 414: get_slot_direct(20)
-      0,        -- 416: push_frame
-      5, 100,   -- 417: get_slot_direct(100)
-      5, 13,    -- 419: get_slot_direct(13)
-      1, 99,    -- 421: push_literal(99)
-      10, 2,    -- 423: invoke(2)
-      14,       -- 425: pop
-      0,        -- 426: push_frame
+      5, 68,    -- 335: get_slot_direct(68)
+      5, 12,    -- 337: get_slot_direct(12)
+      4, 16,    -- 339: new_function(16)
+      8, 94,    -- 341: set_slot_direct(94)
+      0,        -- 343: push_frame
+      5, 9,     -- 344: get_slot_direct(9)
+      0,        -- 346: push_frame
+      5, 26,    -- 347: get_slot_direct(26)
+      0,        -- 349: push_frame
+      5, 68,    -- 350: get_slot_direct(68)
+      5, 12,    -- 352: get_slot_direct(12)
+      1, 94,    -- 354: push_literal(94)
+      10, 2,    -- 356: invoke(2)
+      14,       -- 358: pop
+      0,        -- 359: push_frame
+      5, 68,    -- 360: get_slot_direct(68)
+      5, 12,    -- 362: get_slot_direct(12)
+      4, 17,    -- 364: new_function(17)
+      8, 98,    -- 366: set_slot_direct(98)
+      0,        -- 368: push_frame
+      5, 9,     -- 369: get_slot_direct(9)
+      0,        -- 371: push_frame
+      5, 26,    -- 372: get_slot_direct(26)
+      0,        -- 374: push_frame
+      5, 68,    -- 375: get_slot_direct(68)
+      5, 12,    -- 377: get_slot_direct(12)
+      1, 98,    -- 379: push_literal(98)
+      10, 2,    -- 381: invoke(2)
+      14,       -- 383: pop
+      0,        -- 384: push_frame
+      5, 68,    -- 385: get_slot_direct(68)
+      5, 12,    -- 387: get_slot_direct(12)
+      4, 18,    -- 389: new_function(18)
+      8, 16,    -- 391: set_slot_direct(16)
+      0,        -- 393: push_frame
+      5, 9,     -- 394: get_slot_direct(9)
+      0,        -- 396: push_frame
+      5, 26,    -- 397: get_slot_direct(26)
+      0,        -- 399: push_frame
+      5, 68,    -- 400: get_slot_direct(68)
+      5, 12,    -- 402: get_slot_direct(12)
+      1, 16,    -- 404: push_literal(16)
+      10, 2,    -- 406: invoke(2)
+      14,       -- 408: pop
+      0,        -- 409: push_frame
+      5, 101,   -- 410: get_slot_direct(101)
+      5, 12,    -- 412: get_slot_direct(12)
+      4, 19,    -- 414: new_function(19)
+      8, 112,   -- 416: set_slot_direct(112)
+      0,        -- 418: push_frame
+      5, 9,     -- 419: get_slot_direct(9)
+      0,        -- 421: push_frame
+      5, 26,    -- 422: get_slot_direct(26)
+      0,        -- 424: push_frame
+      5, 101,   -- 425: get_slot_direct(101)
       5, 12,    -- 427: get_slot_direct(12)
-      5, 13,    -- 429: get_slot_direct(13)
-      0,        -- 431: push_frame
-      5, 12,    -- 432: get_slot_direct(12)
-      5, 13,    -- 434: get_slot_direct(13)
-      5, 101,   -- 436: get_slot_direct(101)
-      8, 99,    -- 438: set_slot_direct(99)
-      0,        -- 440: push_frame
-      5, 3,     -- 441: get_slot_direct(3)
+      1, 112,   -- 429: push_literal(112)
+      10, 2,    -- 431: invoke(2)
+      14,       -- 433: pop
+      0,        -- 434: push_frame
+      5, 101,   -- 435: get_slot_direct(101)
+      5, 12,    -- 437: get_slot_direct(12)
+      4, 24,    -- 439: new_function(24)
+      8, 108,   -- 441: set_slot_direct(108)
       0,        -- 443: push_frame
-      5, 20,    -- 444: get_slot_direct(20)
+      5, 9,     -- 444: get_slot_direct(9)
       0,        -- 446: push_frame
-      5, 12,    -- 447: get_slot_direct(12)
-      5, 13,    -- 449: get_slot_direct(13)
-      1, 99,    -- 451: push_literal(99)
-      10, 2,    -- 453: invoke(2)
-      14,       -- 455: pop
-      0,        -- 456: push_frame
-      5, 25,    -- 457: get_slot_direct(25)
-      5, 13,    -- 459: get_slot_direct(13)
-      0,        -- 461: push_frame
-      5, 25,    -- 462: get_slot_direct(25)
-      5, 13,    -- 464: get_slot_direct(13)
-      5, 99,    -- 466: get_slot_direct(99)
-      8, 104,   -- 468: set_slot_direct(104)
-      0,        -- 470: push_frame
-      5, 3,     -- 471: get_slot_direct(3)
-      0,        -- 473: push_frame
-      5, 20,    -- 474: get_slot_direct(20)
-      0,        -- 476: push_frame
-      5, 25,    -- 477: get_slot_direct(25)
-      5, 13,    -- 479: get_slot_direct(13)
-      1, 104,   -- 481: push_literal(104)
-      10, 2,    -- 483: invoke(2)
-      14,       -- 485: pop
-      1, 94,    -- 486: push_literal(94)
-      1, 105,   -- 488: push_literal(105)
-      4, 24,    -- 490: new_function(24)
-      9,        -- 492: set_slot_indirect
-      1, 10,    -- 493: push_literal(10)
-      1, 105,   -- 495: push_literal(105)
-      4, 25,    -- 497: new_function(25)
-      9,        -- 499: set_slot_indirect
-      1, 94,    -- 500: push_literal(94)
-      1, 110,   -- 502: push_literal(110)
-      4, 26,    -- 504: new_function(26)
-      9,        -- 506: set_slot_indirect
-      1, 10,    -- 507: push_literal(10)
-      1, 110,   -- 509: push_literal(110)
-      4, 27,    -- 511: new_function(27)
-      9,        -- 513: set_slot_indirect
-      1, 0,     -- 514: push_literal(0)
-      11        -- 516: return
+      5, 26,    -- 447: get_slot_direct(26)
+      0,        -- 449: push_frame
+      5, 101,   -- 450: get_slot_direct(101)
+      5, 12,    -- 452: get_slot_direct(12)
+      1, 108,   -- 454: push_literal(108)
+      10, 2,    -- 456: invoke(2)
+      14,       -- 458: pop
+      0,        -- 459: push_frame
+      5, 101,   -- 460: get_slot_direct(101)
+      5, 12,    -- 462: get_slot_direct(12)
+      1, 22,    -- 464: push_literal(22)
+      4, 25,    -- 466: new_function(25)
+      9,        -- 468: set_slot_indirect
+      0,        -- 469: push_frame
+      5, 9,     -- 470: get_slot_direct(9)
+      0,        -- 472: push_frame
+      5, 26,    -- 473: get_slot_direct(26)
+      0,        -- 475: push_frame
+      5, 101,   -- 476: get_slot_direct(101)
+      5, 12,    -- 478: get_slot_direct(12)
+      1, 22,    -- 480: push_literal(22)
+      10, 2,    -- 482: invoke(2)
+      14,       -- 484: pop
+      0,        -- 485: push_frame
+      5, 101,   -- 486: get_slot_direct(101)
+      5, 12,    -- 488: get_slot_direct(12)
+      4, 26,    -- 490: new_function(26)
+      8, 16,    -- 492: set_slot_direct(16)
+      0,        -- 494: push_frame
+      5, 9,     -- 495: get_slot_direct(9)
+      0,        -- 497: push_frame
+      5, 26,    -- 498: get_slot_direct(26)
+      0,        -- 500: push_frame
+      5, 101,   -- 501: get_slot_direct(101)
+      5, 12,    -- 503: get_slot_direct(12)
+      1, 16,    -- 505: push_literal(16)
+      10, 2,    -- 507: invoke(2)
+      14,       -- 509: pop
+      0,        -- 510: push_frame
+      5, 11,    -- 511: get_slot_direct(11)
+      5, 12,    -- 513: get_slot_direct(12)
+      4, 27,    -- 515: new_function(27)
+      8, 16,    -- 517: set_slot_direct(16)
+      0,        -- 519: push_frame
+      5, 9,     -- 520: get_slot_direct(9)
+      0,        -- 522: push_frame
+      5, 26,    -- 523: get_slot_direct(26)
+      0,        -- 525: push_frame
+      5, 11,    -- 526: get_slot_direct(11)
+      5, 12,    -- 528: get_slot_direct(12)
+      1, 16,    -- 530: push_literal(16)
+      10, 2,    -- 532: invoke(2)
+      14,       -- 534: pop
+      0,        -- 535: push_frame
+      5, 14,    -- 536: get_slot_direct(14)
+      5, 12,    -- 538: get_slot_direct(12)
+      4, 28,    -- 540: new_function(28)
+      8, 16,    -- 542: set_slot_direct(16)
+      0,        -- 544: push_frame
+      5, 9,     -- 545: get_slot_direct(9)
+      0,        -- 547: push_frame
+      5, 26,    -- 548: get_slot_direct(26)
+      0,        -- 550: push_frame
+      5, 14,    -- 551: get_slot_direct(14)
+      5, 12,    -- 553: get_slot_direct(12)
+      1, 16,    -- 555: push_literal(16)
+      10, 2,    -- 557: invoke(2)
+      14,       -- 559: pop
+      0,        -- 560: push_frame
+      5, 36,    -- 561: get_slot_direct(36)
+      5, 12,    -- 563: get_slot_direct(12)
+      0,        -- 565: push_frame
+      5, 36,    -- 566: get_slot_direct(36)
+      5, 12,    -- 568: get_slot_direct(12)
+      5, 13,    -- 570: get_slot_direct(13)
+      8, 16,    -- 572: set_slot_direct(16)
+      0,        -- 574: push_frame
+      5, 9,     -- 575: get_slot_direct(9)
+      0,        -- 577: push_frame
+      5, 26,    -- 578: get_slot_direct(26)
+      0,        -- 580: push_frame
+      5, 36,    -- 581: get_slot_direct(36)
+      5, 12,    -- 583: get_slot_direct(12)
+      1, 16,    -- 585: push_literal(16)
+      10, 2,    -- 587: invoke(2)
+      14,       -- 589: pop
+      0,        -- 590: push_frame
+      5, 14,    -- 591: get_slot_direct(14)
+      5, 12,    -- 593: get_slot_direct(12)
+      5, 144,   -- 595: get_slot_direct(144)
+      20,       -- 597: un_not
+      13, 630,  -- 598: jmp_unless(630)
+      0,        -- 600: push_frame
+      5, 14,    -- 601: get_slot_direct(14)
+      5, 12,    -- 603: get_slot_direct(12)
+      0,        -- 605: push_frame
+      5, 14,    -- 606: get_slot_direct(14)
+      5, 12,    -- 608: get_slot_direct(12)
+      5, 16,    -- 610: get_slot_direct(16)
+      8, 144,   -- 612: set_slot_direct(144)
+      0,        -- 614: push_frame
+      5, 9,     -- 615: get_slot_direct(9)
+      0,        -- 617: push_frame
+      5, 26,    -- 618: get_slot_direct(26)
+      0,        -- 620: push_frame
+      5, 14,    -- 621: get_slot_direct(14)
+      5, 12,    -- 623: get_slot_direct(12)
+      1, 144,   -- 625: push_literal(144)
+      10, 2,    -- 627: invoke(2)
+      14,       -- 629: pop
+      3,        -- 630: new_array
+      15,       -- 631: dup
+      3,        -- 632: new_array
+      15,       -- 633: dup
+      0,        -- 634: push_frame
+      5, 28,    -- 635: get_slot_direct(28)
+      8, 18,    -- 637: set_slot_direct(18)
+      15,       -- 639: dup
+      1, 145,   -- 640: push_literal(145)
+      8, 31,    -- 642: set_slot_direct(31)
+      15,       -- 644: dup
+      1, 146,   -- 645: push_literal(146)
+      8, 130,   -- 647: set_slot_direct(130)
+      8, 18,    -- 649: set_slot_direct(18)
+      15,       -- 651: dup
+      3,        -- 652: new_array
+      15,       -- 653: dup
+      0,        -- 654: push_frame
+      5, 28,    -- 655: get_slot_direct(28)
+      8, 18,    -- 657: set_slot_direct(18)
+      15,       -- 659: dup
+      1, 147,   -- 660: push_literal(147)
+      8, 31,    -- 662: set_slot_direct(31)
+      15,       -- 664: dup
+      1, 148,   -- 665: push_literal(148)
+      8, 130,   -- 667: set_slot_direct(130)
+      8, 31,    -- 669: set_slot_direct(31)
+      15,       -- 671: dup
+      3,        -- 672: new_array
+      15,       -- 673: dup
+      0,        -- 674: push_frame
+      5, 28,    -- 675: get_slot_direct(28)
+      8, 18,    -- 677: set_slot_direct(18)
+      15,       -- 679: dup
+      1, 149,   -- 680: push_literal(149)
+      8, 31,    -- 682: set_slot_direct(31)
+      15,       -- 684: dup
+      1, 150,   -- 685: push_literal(150)
+      8, 130,   -- 687: set_slot_direct(130)
+      8, 130,   -- 689: set_slot_direct(130)
+      15,       -- 691: dup
+      3,        -- 692: new_array
+      15,       -- 693: dup
+      0,        -- 694: push_frame
+      5, 28,    -- 695: get_slot_direct(28)
+      8, 18,    -- 697: set_slot_direct(18)
+      15,       -- 699: dup
+      1, 151,   -- 700: push_literal(151)
+      8, 31,    -- 702: set_slot_direct(31)
+      15,       -- 704: dup
+      1, 152,   -- 705: push_literal(152)
+      8, 130,   -- 707: set_slot_direct(130)
+      8, 153,   -- 709: set_slot_direct(153)
+      15,       -- 711: dup
+      3,        -- 712: new_array
+      15,       -- 713: dup
+      0,        -- 714: push_frame
+      5, 28,    -- 715: get_slot_direct(28)
+      8, 18,    -- 717: set_slot_direct(18)
+      15,       -- 719: dup
+      1, 154,   -- 720: push_literal(154)
+      8, 31,    -- 722: set_slot_direct(31)
+      15,       -- 724: dup
+      1, 155,   -- 725: push_literal(155)
+      8, 130,   -- 727: set_slot_direct(130)
+      8, 156,   -- 729: set_slot_direct(156)
+      15,       -- 731: dup
+      3,        -- 732: new_array
+      15,       -- 733: dup
+      0,        -- 734: push_frame
+      5, 28,    -- 735: get_slot_direct(28)
+      8, 18,    -- 737: set_slot_direct(18)
+      15,       -- 739: dup
+      1, 157,   -- 740: push_literal(157)
+      8, 31,    -- 742: set_slot_direct(31)
+      15,       -- 744: dup
+      1, 158,   -- 745: push_literal(158)
+      8, 130,   -- 747: set_slot_direct(130)
+      8, 159,   -- 749: set_slot_direct(159)
+      15,       -- 751: dup
+      3,        -- 752: new_array
+      15,       -- 753: dup
+      0,        -- 754: push_frame
+      5, 28,    -- 755: get_slot_direct(28)
+      8, 18,    -- 757: set_slot_direct(18)
+      15,       -- 759: dup
+      1, 160,   -- 760: push_literal(160)
+      8, 31,    -- 762: set_slot_direct(31)
+      15,       -- 764: dup
+      1, 161,   -- 765: push_literal(161)
+      8, 130,   -- 767: set_slot_direct(130)
+      8, 162,   -- 769: set_slot_direct(162)
+      15,       -- 771: dup
+      3,        -- 772: new_array
+      15,       -- 773: dup
+      0,        -- 774: push_frame
+      5, 28,    -- 775: get_slot_direct(28)
+      8, 18,    -- 777: set_slot_direct(18)
+      15,       -- 779: dup
+      1, 163,   -- 780: push_literal(163)
+      8, 31,    -- 782: set_slot_direct(31)
+      15,       -- 784: dup
+      1, 164,   -- 785: push_literal(164)
+      8, 130,   -- 787: set_slot_direct(130)
+      8, 165,   -- 789: set_slot_direct(165)
+      15,       -- 791: dup
+      3,        -- 792: new_array
+      15,       -- 793: dup
+      0,        -- 794: push_frame
+      5, 14,    -- 795: get_slot_direct(14)
+      8, 18,    -- 797: set_slot_direct(18)
+      15,       -- 799: dup
+      1, 166,   -- 800: push_literal(166)
+      8, 31,    -- 802: set_slot_direct(31)
+      15,       -- 804: dup
+      1, 167,   -- 805: push_literal(167)
+      8, 130,   -- 807: set_slot_direct(130)
+      8, 168,   -- 809: set_slot_direct(168)
+      15,       -- 811: dup
+      3,        -- 812: new_array
+      15,       -- 813: dup
+      0,        -- 814: push_frame
+      5, 14,    -- 815: get_slot_direct(14)
+      8, 18,    -- 817: set_slot_direct(18)
+      15,       -- 819: dup
+      1, 169,   -- 820: push_literal(169)
+      8, 31,    -- 822: set_slot_direct(31)
+      15,       -- 824: dup
+      1, 167,   -- 825: push_literal(167)
+      21,       -- 827: un_minus
+      8, 130,   -- 828: set_slot_direct(130)
+      8, 170,   -- 830: set_slot_direct(170)
+      15,       -- 832: dup
+      3,        -- 833: new_array
+      15,       -- 834: dup
+      0,        -- 835: push_frame
+      5, 14,    -- 836: get_slot_direct(14)
+      8, 18,    -- 838: set_slot_direct(18)
+      15,       -- 840: dup
+      1, 133,   -- 841: push_literal(133)
+      8, 31,    -- 843: set_slot_direct(31)
+      15,       -- 845: dup
+      1, 171,   -- 846: push_literal(171)
+      8, 130,   -- 848: set_slot_direct(130)
+      8, 129,   -- 850: set_slot_direct(129)
+      15,       -- 852: dup
+      3,        -- 853: new_array
+      15,       -- 854: dup
+      0,        -- 855: push_frame
+      5, 14,    -- 856: get_slot_direct(14)
+      8, 18,    -- 858: set_slot_direct(18)
+      15,       -- 860: dup
+      1, 172,   -- 861: push_literal(172)
+      8, 31,    -- 863: set_slot_direct(31)
+      15,       -- 865: dup
+      1, 27,    -- 866: push_literal(27)
+      21,       -- 868: un_minus
+      8, 130,   -- 869: set_slot_direct(130)
+      8, 173,   -- 871: set_slot_direct(173)
+      15,       -- 873: dup
+      3,        -- 874: new_array
+      15,       -- 875: dup
+      0,        -- 876: push_frame
+      5, 14,    -- 877: get_slot_direct(14)
+      8, 18,    -- 879: set_slot_direct(18)
+      15,       -- 881: dup
+      1, 174,   -- 882: push_literal(174)
+      8, 31,    -- 884: set_slot_direct(31)
+      15,       -- 886: dup
+      1, 27,    -- 887: push_literal(27)
+      8, 130,   -- 889: set_slot_direct(130)
+      8, 175,   -- 891: set_slot_direct(175)
+      15,       -- 893: dup
+      7, 94,    -- 894: get_slot_direct_check(94)
+      19,       -- 896: swap
+      4, 29,    -- 897: new_function(29)
+      10, 1,    -- 899: invoke(1)
+      14,       -- 901: pop
+      1, 115,   -- 902: push_literal(115)
+      1, 179,   -- 904: push_literal(179)
+      4, 30,    -- 906: new_function(30)
+      9,        -- 908: set_slot_indirect
+      1, 32,    -- 909: push_literal(32)
+      1, 179,   -- 911: push_literal(179)
+      4, 31,    -- 913: new_function(31)
+      9,        -- 915: set_slot_indirect
+      1, 115,   -- 916: push_literal(115)
+      1, 183,   -- 918: push_literal(183)
+      4, 32,    -- 920: new_function(32)
+      9,        -- 922: set_slot_indirect
+      1, 32,    -- 923: push_literal(32)
+      1, 183,   -- 925: push_literal(183)
+      4, 33,    -- 927: new_function(33)
+      9,        -- 929: set_slot_indirect
+      1, 0,     -- 930: push_literal(0)
+      11        -- 932: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 2,
-    nargs = 2,
-    max_stack = 7,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 7,     -- 8: set_slot_direct(7)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 9,     -- 15: set_slot_direct(9)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      5, 4,     -- 19: get_slot_direct(4)
-      15,       -- 21: dup
-      7, 5,     -- 22: get_slot_direct_check(5)
-      19,       -- 24: swap
-      0,        -- 25: push_frame
-      5, 7,     -- 26: get_slot_direct(7)
-      0,        -- 28: push_frame
-      5, 9,     -- 29: get_slot_direct(9)
-      2,        -- 31: new_object
-      15,       -- 32: dup
-      1, 10,    -- 33: push_literal(10)
-      8, 11,    -- 35: set_slot_direct(11)
-      10, 3,    -- 37: invoke(3)
-      14,       -- 39: pop
-      1, 0,     -- 40: push_literal(0)
-      11        -- 42: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 3,
     nargs = 0,
     max_stack = 1,
     bytecode = {
@@ -500,417 +728,605 @@ startup.functions = {
       11        -- 6: return
     }
   },
+  ifunc.Function:new{ -- "Throw"
+    name = jsval.newString("Throw"),
+    id = 3,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 19,    -- 8: set_slot_direct(19)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 20,    -- 14: set_slot_direct(20)
+      0,        -- 16: push_frame
+      0,        -- 17: push_frame
+      5, 21,    -- 18: get_slot_direct(21)
+      0,        -- 20: push_frame
+      5, 19,    -- 21: get_slot_direct(19)
+      6,        -- 23: get_slot_indirect
+      13, 41,   -- 24: jmp_unless(41)
+      0,        -- 26: push_frame
+      5, 21,    -- 27: get_slot_direct(21)
+      0,        -- 29: push_frame
+      5, 19,    -- 30: get_slot_direct(19)
+      6,        -- 32: get_slot_indirect
+      15,       -- 33: dup
+      7, 22,    -- 34: get_slot_direct_check(22)
+      19,       -- 36: swap
+      10, 0,    -- 37: invoke(0)
+      12, 44,   -- 39: jmp(44)
+      0,        -- 41: push_frame
+      5, 19,    -- 42: get_slot_direct(19)
+      8, 20,    -- 44: set_slot_direct(20)
+      0,        -- 46: push_frame
+      5, 15,    -- 47: get_slot_direct(15)
+      15,       -- 49: dup
+      7, 7,     -- 50: get_slot_direct_check(7)
+      19,       -- 52: swap
+      0,        -- 53: push_frame
+      5, 20,    -- 54: get_slot_direct(20)
+      10, 1,    -- 56: invoke(1)
+      14,       -- 58: pop
+      1, 0,     -- 59: push_literal(0)
+      11        -- 61: return
+    }
+  },
+  ifunc.Function:new{ -- "ToInteger"
+    name = jsval.newString("ToInteger"),
+    id = 4,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 23,    -- 8: set_slot_direct(23)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 24,    -- 14: set_slot_direct(24)
+      0,        -- 16: push_frame
+      0,        -- 17: push_frame
+      5, 14,    -- 18: get_slot_direct(14)
+      22,       -- 20: un_typeof
+      1, 25,    -- 21: push_literal(25)
+      23,       -- 23: bi_eq
+      13, 39,   -- 24: jmp_unless(39)
+      0,        -- 26: push_frame
+      5, 14,    -- 27: get_slot_direct(14)
+      0,        -- 29: push_frame
+      5, 26,    -- 30: get_slot_direct(26)
+      0,        -- 32: push_frame
+      5, 23,    -- 33: get_slot_direct(23)
+      10, 1,    -- 35: invoke(1)
+      12, 42,   -- 37: jmp(42)
+      0,        -- 39: push_frame
+      5, 23,    -- 40: get_slot_direct(23)
+      8, 23,    -- 42: set_slot_direct(23)
+      0,        -- 44: push_frame
+      5, 23,    -- 45: get_slot_direct(23)
+      0,        -- 47: push_frame
+      5, 23,    -- 48: get_slot_direct(23)
+      23,       -- 50: bi_eq
+      20,       -- 51: un_not
+      13, 57,   -- 52: jmp_unless(57)
+      1, 18,    -- 54: push_literal(18)
+      11,       -- 56: return
+      0,        -- 57: push_frame
+      5, 23,    -- 58: get_slot_direct(23)
+      1, 18,    -- 60: push_literal(18)
+      23,       -- 62: bi_eq
+      15,       -- 63: dup
+      20,       -- 64: un_not
+      13, 86,   -- 65: jmp_unless(86)
+      14,       -- 67: pop
+      0,        -- 68: push_frame
+      5, 23,    -- 69: get_slot_direct(23)
+      1, 27,    -- 71: push_literal(27)
+      23,       -- 73: bi_eq
+      15,       -- 74: dup
+      20,       -- 75: un_not
+      13, 86,   -- 76: jmp_unless(86)
+      14,       -- 78: pop
+      0,        -- 79: push_frame
+      5, 23,    -- 80: get_slot_direct(23)
+      1, 27,    -- 82: push_literal(27)
+      21,       -- 84: un_minus
+      23,       -- 85: bi_eq
+      13, 92,   -- 86: jmp_unless(92)
+      0,        -- 88: push_frame
+      5, 23,    -- 89: get_slot_direct(23)
+      11,       -- 91: return
+      0,        -- 92: push_frame
+      0,        -- 93: push_frame
+      5, 23,    -- 94: get_slot_direct(23)
+      1, 18,    -- 96: push_literal(18)
+      19,       -- 98: swap
+      24,       -- 99: bi_gt
+      8, 24,    -- 100: set_slot_direct(24)
+      0,        -- 102: push_frame
+      0,        -- 103: push_frame
+      5, 28,    -- 104: get_slot_direct(28)
+      15,       -- 106: dup
+      7, 29,    -- 107: get_slot_direct_check(29)
+      19,       -- 109: swap
+      0,        -- 110: push_frame
+      5, 24,    -- 111: get_slot_direct(24)
+      13, 121,  -- 113: jmp_unless(121)
+      0,        -- 115: push_frame
+      5, 23,    -- 116: get_slot_direct(23)
+      21,       -- 118: un_minus
+      12, 124,  -- 119: jmp(124)
+      0,        -- 121: push_frame
+      5, 23,    -- 122: get_slot_direct(23)
+      10, 1,    -- 124: invoke(1)
+      8, 23,    -- 126: set_slot_direct(23)
+      0,        -- 128: push_frame
+      5, 24,    -- 129: get_slot_direct(24)
+      13, 139,  -- 131: jmp_unless(139)
+      0,        -- 133: push_frame
+      5, 23,    -- 134: get_slot_direct(23)
+      21,       -- 136: un_minus
+      12, 142,  -- 137: jmp(142)
+      0,        -- 139: push_frame
+      5, 23,    -- 140: get_slot_direct(23)
+      11        -- 142: return
+    }
+  },
+  ifunc.Function:new{ -- "makeNonEnumerable"
+    name = jsval.newString("makeNonEnumerable"),
+    id = 5,
+    nargs = 2,
+    max_stack = 7,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 30,    -- 8: set_slot_direct(30)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 19,    -- 15: set_slot_direct(19)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      5, 6,     -- 19: get_slot_direct(6)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      0,        -- 24: push_frame
+      5, 30,    -- 25: get_slot_direct(30)
+      0,        -- 27: push_frame
+      5, 19,    -- 28: get_slot_direct(19)
+      2,        -- 30: new_object
+      15,       -- 31: dup
+      1, 32,    -- 32: push_literal(32)
+      8, 33,    -- 34: set_slot_direct(33)
+      10, 3,    -- 36: invoke(3)
+      14,       -- 38: pop
+      1, 0,     -- 39: push_literal(0)
+      11        -- 41: return
+    }
+  },
+  ifunc.Function:new{ -- "makeFrozen"
+    name = jsval.newString("makeFrozen"),
+    id = 6,
+    nargs = 2,
+    max_stack = 7,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 30,    -- 8: set_slot_direct(30)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 19,    -- 15: set_slot_direct(19)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      5, 6,     -- 19: get_slot_direct(6)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      0,        -- 24: push_frame
+      5, 30,    -- 25: get_slot_direct(30)
+      0,        -- 27: push_frame
+      5, 19,    -- 28: get_slot_direct(19)
+      2,        -- 30: new_object
+      15,       -- 31: dup
+      1, 32,    -- 32: push_literal(32)
+      8, 34,    -- 34: set_slot_direct(34)
+      15,       -- 36: dup
+      1, 32,    -- 37: push_literal(32)
+      8, 33,    -- 39: set_slot_direct(33)
+      15,       -- 41: dup
+      1, 32,    -- 42: push_literal(32)
+      8, 35,    -- 44: set_slot_direct(35)
+      10, 3,    -- 46: invoke(3)
+      14,       -- 48: pop
+      1, 0,     -- 49: push_literal(0)
+      11        -- 51: return
+    }
+  },
   ifunc.Function:new{ -- ".codePointAt"
     name = jsval.newString(".codePointAt"),
-    id = 4,
+    id = 7,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 14,    -- 8: set_slot_direct(14)
+      8, 37,    -- 8: set_slot_direct(37)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 15,    -- 14: set_slot_direct(15)
+      8, 38,    -- 14: set_slot_direct(38)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 16,    -- 19: set_slot_direct(16)
+      8, 39,    -- 19: set_slot_direct(39)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 17,    -- 24: set_slot_direct(17)
+      8, 40,    -- 24: set_slot_direct(40)
       0,        -- 26: push_frame
-      1, 0,     -- 27: push_literal(0)
-      8, 18,    -- 29: set_slot_direct(18)
-      0,        -- 31: push_frame
-      1, 0,     -- 32: push_literal(0)
-      8, 19,    -- 34: set_slot_direct(19)
-      0,        -- 36: push_frame
-      5, 20,    -- 37: get_slot_direct(20)
-      1, 21,    -- 39: push_literal(21)
-      23,       -- 41: bi_eq
-      15,       -- 42: dup
-      20,       -- 43: un_not
-      13, 53,   -- 44: jmp_unless(53)
-      14,       -- 46: pop
-      0,        -- 47: push_frame
-      5, 20,    -- 48: get_slot_direct(20)
-      1, 0,     -- 50: push_literal(0)
-      23,       -- 52: bi_eq
-      13, 67,   -- 53: jmp_unless(67)
-      0,        -- 55: push_frame
-      5, 4,     -- 56: get_slot_direct(4)
-      15,       -- 58: dup
-      7, 22,    -- 59: get_slot_direct_check(22)
-      19,       -- 61: swap
-      1, 23,    -- 62: push_literal(23)
-      10, 1,    -- 64: invoke(1)
-      14,       -- 66: pop
-      0,        -- 67: push_frame
-      0,        -- 68: push_frame
-      5, 12,    -- 69: get_slot_direct(12)
+      5, 26,    -- 27: get_slot_direct(26)
+      1, 41,    -- 29: push_literal(41)
+      23,       -- 31: bi_eq
+      15,       -- 32: dup
+      20,       -- 33: un_not
+      13, 43,   -- 34: jmp_unless(43)
+      14,       -- 36: pop
+      0,        -- 37: push_frame
+      5, 26,    -- 38: get_slot_direct(26)
+      1, 0,     -- 40: push_literal(0)
+      23,       -- 42: bi_eq
+      13, 56,   -- 43: jmp_unless(56)
+      0,        -- 45: push_frame
+      5, 7,     -- 46: get_slot_direct(7)
+      0,        -- 48: push_frame
+      5, 26,    -- 49: get_slot_direct(26)
+      1, 42,    -- 51: push_literal(42)
+      10, 1,    -- 53: invoke(1)
+      14,       -- 55: pop
+      0,        -- 56: push_frame
+      0,        -- 57: push_frame
+      5, 36,    -- 58: get_slot_direct(36)
+      0,        -- 60: push_frame
+      5, 26,    -- 61: get_slot_direct(26)
+      0,        -- 63: push_frame
+      5, 26,    -- 64: get_slot_direct(26)
+      10, 1,    -- 66: invoke(1)
+      8, 38,    -- 68: set_slot_direct(38)
+      0,        -- 70: push_frame
       0,        -- 71: push_frame
-      5, 20,    -- 72: get_slot_direct(20)
-      0,        -- 74: push_frame
-      5, 20,    -- 75: get_slot_direct(20)
-      10, 1,    -- 77: invoke(1)
-      8, 15,    -- 79: set_slot_direct(15)
-      0,        -- 81: push_frame
-      0,        -- 82: push_frame
-      5, 15,    -- 83: get_slot_direct(15)
-      5, 24,    -- 85: get_slot_direct(24)
-      8, 16,    -- 87: set_slot_direct(16)
-      0,        -- 89: push_frame
-      0,        -- 90: push_frame
-      5, 14,    -- 91: get_slot_direct(14)
-      13, 108,  -- 93: jmp_unless(108)
-      0,        -- 95: push_frame
-      5, 25,    -- 96: get_slot_direct(25)
+      5, 38,    -- 72: get_slot_direct(38)
+      15,       -- 74: dup
+      7, 43,    -- 75: get_slot_direct_check(43)
+      19,       -- 77: swap
+      0,        -- 78: push_frame
+      5, 37,    -- 79: get_slot_direct(37)
+      10, 1,    -- 81: invoke(1)
+      8, 39,    -- 83: set_slot_direct(39)
+      0,        -- 85: push_frame
+      5, 39,    -- 86: get_slot_direct(39)
+      0,        -- 88: push_frame
+      5, 39,    -- 89: get_slot_direct(39)
+      23,       -- 91: bi_eq
+      20,       -- 92: un_not
+      13, 98,   -- 93: jmp_unless(98)
+      1, 0,     -- 95: push_literal(0)
+      11,       -- 97: return
       0,        -- 98: push_frame
-      5, 20,    -- 99: get_slot_direct(20)
-      0,        -- 101: push_frame
-      5, 14,    -- 102: get_slot_direct(14)
-      10, 1,    -- 104: invoke(1)
-      12, 110,  -- 106: jmp(110)
-      1, 6,     -- 108: push_literal(6)
-      8, 17,    -- 110: set_slot_direct(17)
-      0,        -- 112: push_frame
-      5, 26,    -- 113: get_slot_direct(26)
-      0,        -- 115: push_frame
-      5, 20,    -- 116: get_slot_direct(20)
+      5, 39,    -- 99: get_slot_direct(39)
+      1, 44,    -- 101: push_literal(44)
+      25,       -- 103: bi_gte
+      15,       -- 104: dup
+      13, 115,  -- 105: jmp_unless(115)
+      14,       -- 107: pop
+      0,        -- 108: push_frame
+      5, 39,    -- 109: get_slot_direct(39)
+      1, 45,    -- 111: push_literal(45)
+      19,       -- 113: swap
+      25,       -- 114: bi_gte
+      13, 185,  -- 115: jmp_unless(185)
+      0,        -- 117: push_frame
       0,        -- 118: push_frame
-      5, 17,    -- 119: get_slot_direct(17)
-      10, 1,    -- 121: invoke(1)
-      13, 130,  -- 123: jmp_unless(130)
+      5, 38,    -- 119: get_slot_direct(38)
+      15,       -- 121: dup
+      7, 43,    -- 122: get_slot_direct_check(43)
+      19,       -- 124: swap
       0,        -- 125: push_frame
-      1, 6,     -- 126: push_literal(6)
-      8, 17,    -- 128: set_slot_direct(17)
-      0,        -- 130: push_frame
-      5, 17,    -- 131: get_slot_direct(17)
-      1, 6,     -- 133: push_literal(6)
-      19,       -- 135: swap
-      24,       -- 136: bi_gt
-      15,       -- 137: dup
-      20,       -- 138: un_not
-      13, 149,  -- 139: jmp_unless(149)
-      14,       -- 141: pop
-      0,        -- 142: push_frame
-      5, 17,    -- 143: get_slot_direct(17)
-      0,        -- 145: push_frame
-      5, 16,    -- 146: get_slot_direct(16)
-      25,       -- 148: bi_gte
-      13, 154,  -- 149: jmp_unless(154)
-      1, 0,     -- 151: push_literal(0)
-      11,       -- 153: return
-      0,        -- 154: push_frame
-      0,        -- 155: push_frame
-      5, 15,    -- 156: get_slot_direct(15)
-      15,       -- 158: dup
-      7, 27,    -- 159: get_slot_direct_check(27)
+      5, 37,    -- 126: get_slot_direct(37)
+      1, 31,    -- 128: push_literal(31)
+      26,       -- 130: bi_add
+      10, 1,    -- 131: invoke(1)
+      8, 40,    -- 133: set_slot_direct(40)
+      0,        -- 135: push_frame
+      5, 40,    -- 136: get_slot_direct(40)
+      0,        -- 138: push_frame
+      5, 40,    -- 139: get_slot_direct(40)
+      23,       -- 141: bi_eq
+      15,       -- 142: dup
+      13, 163,  -- 143: jmp_unless(163)
+      14,       -- 145: pop
+      0,        -- 146: push_frame
+      5, 40,    -- 147: get_slot_direct(40)
+      1, 46,    -- 149: push_literal(46)
+      25,       -- 151: bi_gte
+      15,       -- 152: dup
+      13, 163,  -- 153: jmp_unless(163)
+      14,       -- 155: pop
+      0,        -- 156: push_frame
+      5, 40,    -- 157: get_slot_direct(40)
+      1, 47,    -- 159: push_literal(47)
       19,       -- 161: swap
-      0,        -- 162: push_frame
-      5, 17,    -- 163: get_slot_direct(17)
-      10, 1,    -- 165: invoke(1)
-      8, 18,    -- 167: set_slot_direct(18)
-      0,        -- 169: push_frame
-      5, 18,    -- 170: get_slot_direct(18)
-      1, 28,    -- 172: push_literal(28)
-      25,       -- 174: bi_gte
-      15,       -- 175: dup
-      13, 200,  -- 176: jmp_unless(200)
-      14,       -- 178: pop
-      0,        -- 179: push_frame
-      5, 18,    -- 180: get_slot_direct(18)
-      1, 29,    -- 182: push_literal(29)
-      19,       -- 184: swap
-      25,       -- 185: bi_gte
-      15,       -- 186: dup
-      13, 200,  -- 187: jmp_unless(200)
-      14,       -- 189: pop
-      0,        -- 190: push_frame
-      5, 16,    -- 191: get_slot_direct(16)
-      0,        -- 193: push_frame
-      5, 17,    -- 194: get_slot_direct(17)
-      1, 8,     -- 196: push_literal(8)
-      26,       -- 198: bi_add
-      24,       -- 199: bi_gt
-      13, 259,  -- 200: jmp_unless(259)
-      0,        -- 202: push_frame
-      0,        -- 203: push_frame
-      5, 15,    -- 204: get_slot_direct(15)
-      15,       -- 206: dup
-      7, 27,    -- 207: get_slot_direct_check(27)
-      19,       -- 209: swap
-      0,        -- 210: push_frame
-      5, 17,    -- 211: get_slot_direct(17)
-      1, 8,     -- 213: push_literal(8)
-      26,       -- 215: bi_add
-      10, 1,    -- 216: invoke(1)
-      8, 19,    -- 218: set_slot_direct(19)
-      0,        -- 220: push_frame
-      5, 19,    -- 221: get_slot_direct(19)
-      1, 30,    -- 223: push_literal(30)
-      25,       -- 225: bi_gte
-      15,       -- 226: dup
-      13, 237,  -- 227: jmp_unless(237)
-      14,       -- 229: pop
-      0,        -- 230: push_frame
-      5, 19,    -- 231: get_slot_direct(19)
-      1, 31,    -- 233: push_literal(31)
-      19,       -- 235: swap
-      25,       -- 236: bi_gte
-      13, 259,  -- 237: jmp_unless(259)
-      0,        -- 239: push_frame
-      5, 18,    -- 240: get_slot_direct(18)
-      1, 28,    -- 242: push_literal(28)
-      27,       -- 244: bi_sub
-      1, 32,    -- 245: push_literal(32)
-      28,       -- 247: bi_mul
-      0,        -- 248: push_frame
-      5, 19,    -- 249: get_slot_direct(19)
-      26,       -- 251: bi_add
-      1, 30,    -- 252: push_literal(30)
-      27,       -- 254: bi_sub
-      1, 33,    -- 255: push_literal(33)
-      26,       -- 257: bi_add
-      11,       -- 258: return
-      0,        -- 259: push_frame
-      5, 18,    -- 260: get_slot_direct(18)
-      11        -- 262: return
+      25,       -- 162: bi_gte
+      13, 185,  -- 163: jmp_unless(185)
+      0,        -- 165: push_frame
+      5, 39,    -- 166: get_slot_direct(39)
+      1, 44,    -- 168: push_literal(44)
+      27,       -- 170: bi_sub
+      1, 48,    -- 171: push_literal(48)
+      28,       -- 173: bi_mul
+      0,        -- 174: push_frame
+      5, 40,    -- 175: get_slot_direct(40)
+      26,       -- 177: bi_add
+      1, 46,    -- 178: push_literal(46)
+      27,       -- 180: bi_sub
+      1, 49,    -- 181: push_literal(49)
+      26,       -- 183: bi_add
+      11,       -- 184: return
+      0,        -- 185: push_frame
+      5, 39,    -- 186: get_slot_direct(39)
+      11        -- 188: return
     }
   },
   ifunc.Function:new{ -- ".indexOf"
     name = jsval.newString(".indexOf"),
-    id = 5,
+    id = 8,
     nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 35,    -- 8: set_slot_direct(35)
+      8, 51,    -- 8: set_slot_direct(51)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 36,    -- 15: set_slot_direct(36)
+      8, 52,    -- 15: set_slot_direct(52)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 37,    -- 21: set_slot_direct(37)
+      8, 53,    -- 21: set_slot_direct(53)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 38,    -- 26: set_slot_direct(38)
+      8, 54,    -- 26: set_slot_direct(54)
       0,        -- 28: push_frame
       0,        -- 29: push_frame
-      5, 36,    -- 30: get_slot_direct(36)
+      5, 52,    -- 30: get_slot_direct(52)
       15,       -- 32: dup
       20,       -- 33: un_not
       13, 39,   -- 34: jmp_unless(39)
       14,       -- 36: pop
-      1, 6,     -- 37: push_literal(6)
-      8, 37,    -- 39: set_slot_direct(37)
+      1, 18,    -- 37: push_literal(18)
+      8, 53,    -- 39: set_slot_direct(53)
       0,        -- 41: push_frame
-      1, 6,     -- 42: push_literal(6)
-      8, 38,    -- 44: set_slot_direct(38)
+      1, 18,    -- 42: push_literal(18)
+      8, 54,    -- 44: set_slot_direct(54)
       0,        -- 46: push_frame
-      5, 37,    -- 47: get_slot_direct(37)
+      5, 53,    -- 47: get_slot_direct(53)
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
-      5, 24,    -- 52: get_slot_direct(24)
+      5, 26,    -- 50: get_slot_direct(26)
+      5, 55,    -- 52: get_slot_direct(55)
       24,       -- 54: bi_gt
       13, 65,   -- 55: jmp_unless(65)
       0,        -- 57: push_frame
       0,        -- 58: push_frame
-      5, 20,    -- 59: get_slot_direct(20)
-      5, 24,    -- 61: get_slot_direct(24)
-      8, 37,    -- 63: set_slot_direct(37)
+      5, 26,    -- 59: get_slot_direct(26)
+      5, 55,    -- 61: get_slot_direct(55)
+      8, 53,    -- 63: set_slot_direct(53)
       12, 151,  -- 65: jmp(151)
       0,        -- 67: push_frame
-      1, 6,     -- 68: push_literal(6)
-      8, 38,    -- 70: set_slot_direct(38)
+      1, 18,    -- 68: push_literal(18)
+      8, 54,    -- 70: set_slot_direct(54)
       12, 83,   -- 72: jmp(83)
       0,        -- 74: push_frame
       15,       -- 75: dup
-      5, 38,    -- 76: get_slot_direct(38)
-      1, 8,     -- 78: push_literal(8)
+      5, 54,    -- 76: get_slot_direct(54)
+      1, 31,    -- 78: push_literal(31)
       26,       -- 80: bi_add
-      8, 38,    -- 81: set_slot_direct(38)
+      8, 54,    -- 81: set_slot_direct(54)
       0,        -- 83: push_frame
-      5, 38,    -- 84: get_slot_direct(38)
+      5, 54,    -- 84: get_slot_direct(54)
       0,        -- 86: push_frame
-      5, 35,    -- 87: get_slot_direct(35)
-      5, 24,    -- 89: get_slot_direct(24)
+      5, 51,    -- 87: get_slot_direct(51)
+      5, 55,    -- 89: get_slot_direct(55)
       19,       -- 91: swap
       24,       -- 92: bi_gt
       15,       -- 93: dup
       13, 126,  -- 94: jmp_unless(126)
       14,       -- 96: pop
       0,        -- 97: push_frame
-      5, 20,    -- 98: get_slot_direct(20)
+      5, 26,    -- 98: get_slot_direct(26)
       15,       -- 100: dup
-      7, 39,    -- 101: get_slot_direct_check(39)
+      7, 56,    -- 101: get_slot_direct_check(56)
       19,       -- 103: swap
       0,        -- 104: push_frame
-      5, 37,    -- 105: get_slot_direct(37)
+      5, 53,    -- 105: get_slot_direct(53)
       0,        -- 107: push_frame
-      5, 38,    -- 108: get_slot_direct(38)
+      5, 54,    -- 108: get_slot_direct(54)
       26,       -- 110: bi_add
       10, 1,    -- 111: invoke(1)
       0,        -- 113: push_frame
-      5, 35,    -- 114: get_slot_direct(35)
+      5, 51,    -- 114: get_slot_direct(51)
       15,       -- 116: dup
-      7, 39,    -- 117: get_slot_direct_check(39)
+      7, 56,    -- 117: get_slot_direct_check(56)
       19,       -- 119: swap
       0,        -- 120: push_frame
-      5, 38,    -- 121: get_slot_direct(38)
+      5, 54,    -- 121: get_slot_direct(54)
       10, 1,    -- 123: invoke(1)
       23,       -- 125: bi_eq
       20,       -- 126: un_not
       13, 74,   -- 127: jmp_unless(74)
       0,        -- 129: push_frame
-      5, 38,    -- 130: get_slot_direct(38)
+      5, 54,    -- 130: get_slot_direct(54)
       0,        -- 132: push_frame
-      5, 35,    -- 133: get_slot_direct(35)
-      5, 24,    -- 135: get_slot_direct(24)
+      5, 51,    -- 133: get_slot_direct(51)
+      5, 55,    -- 135: get_slot_direct(55)
       23,       -- 137: bi_eq
       13, 142,  -- 138: jmp_unless(142)
       12, 164,  -- 140: jmp(164)
       0,        -- 142: push_frame
       15,       -- 143: dup
-      5, 37,    -- 144: get_slot_direct(37)
-      1, 8,     -- 146: push_literal(8)
+      5, 53,    -- 144: get_slot_direct(53)
+      1, 31,    -- 146: push_literal(31)
       26,       -- 148: bi_add
-      8, 37,    -- 149: set_slot_direct(37)
+      8, 53,    -- 149: set_slot_direct(53)
       0,        -- 151: push_frame
-      5, 37,    -- 152: get_slot_direct(37)
+      5, 53,    -- 152: get_slot_direct(53)
       0,        -- 154: push_frame
-      5, 20,    -- 155: get_slot_direct(20)
-      5, 24,    -- 157: get_slot_direct(24)
+      5, 26,    -- 155: get_slot_direct(26)
+      5, 55,    -- 157: get_slot_direct(55)
       19,       -- 159: swap
       24,       -- 160: bi_gt
       20,       -- 161: un_not
       13, 67,   -- 162: jmp_unless(67)
       0,        -- 164: push_frame
-      5, 38,    -- 165: get_slot_direct(38)
+      5, 54,    -- 165: get_slot_direct(54)
       0,        -- 167: push_frame
-      5, 35,    -- 168: get_slot_direct(35)
-      5, 24,    -- 170: get_slot_direct(24)
+      5, 51,    -- 168: get_slot_direct(51)
+      5, 55,    -- 170: get_slot_direct(55)
       23,       -- 172: bi_eq
       13, 180,  -- 173: jmp_unless(180)
       0,        -- 175: push_frame
-      5, 37,    -- 176: get_slot_direct(37)
+      5, 53,    -- 176: get_slot_direct(53)
       12, 183,  -- 178: jmp(183)
-      1, 8,     -- 180: push_literal(8)
+      1, 31,    -- 180: push_literal(31)
       21,       -- 182: un_minus
       11        -- 183: return
     }
   },
   ifunc.Function:new{ -- ".slice"
     name = jsval.newString(".slice"),
-    id = 6,
+    id = 9,
     nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 41,    -- 8: set_slot_direct(41)
+      8, 58,    -- 8: set_slot_direct(58)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 42,    -- 15: set_slot_direct(42)
+      8, 59,    -- 15: set_slot_direct(59)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 43,    -- 21: set_slot_direct(43)
+      8, 60,    -- 21: set_slot_direct(60)
       0,        -- 23: push_frame
       0,        -- 24: push_frame
-      5, 20,    -- 25: get_slot_direct(20)
-      5, 24,    -- 27: get_slot_direct(24)
-      8, 43,    -- 29: set_slot_direct(43)
+      5, 26,    -- 25: get_slot_direct(26)
+      5, 55,    -- 27: get_slot_direct(55)
+      8, 60,    -- 29: set_slot_direct(60)
       0,        -- 31: push_frame
-      5, 42,    -- 32: get_slot_direct(42)
+      5, 59,    -- 32: get_slot_direct(59)
       1, 0,     -- 34: push_literal(0)
       23,       -- 36: bi_eq
       13, 45,   -- 37: jmp_unless(45)
       0,        -- 39: push_frame
       0,        -- 40: push_frame
-      5, 43,    -- 41: get_slot_direct(43)
-      8, 42,    -- 43: set_slot_direct(42)
+      5, 60,    -- 41: get_slot_direct(60)
+      8, 59,    -- 43: set_slot_direct(59)
       0,        -- 45: push_frame
-      5, 41,    -- 46: get_slot_direct(41)
-      1, 6,     -- 48: push_literal(6)
+      5, 58,    -- 46: get_slot_direct(58)
+      1, 18,    -- 48: push_literal(18)
       19,       -- 50: swap
       24,       -- 51: bi_gt
       13, 64,   -- 52: jmp_unless(64)
       0,        -- 54: push_frame
       15,       -- 55: dup
-      5, 41,    -- 56: get_slot_direct(41)
+      5, 58,    -- 56: get_slot_direct(58)
       0,        -- 58: push_frame
-      5, 43,    -- 59: get_slot_direct(43)
+      5, 60,    -- 59: get_slot_direct(60)
       26,       -- 61: bi_add
-      8, 41,    -- 62: set_slot_direct(41)
+      8, 58,    -- 62: set_slot_direct(58)
       0,        -- 64: push_frame
-      5, 42,    -- 65: get_slot_direct(42)
-      1, 6,     -- 67: push_literal(6)
+      5, 59,    -- 65: get_slot_direct(59)
+      1, 18,    -- 67: push_literal(18)
       19,       -- 69: swap
       24,       -- 70: bi_gt
       13, 83,   -- 71: jmp_unless(83)
       0,        -- 73: push_frame
       15,       -- 74: dup
-      5, 42,    -- 75: get_slot_direct(42)
+      5, 59,    -- 75: get_slot_direct(59)
       0,        -- 77: push_frame
-      5, 43,    -- 78: get_slot_direct(43)
+      5, 60,    -- 78: get_slot_direct(60)
       26,       -- 80: bi_add
-      8, 42,    -- 81: set_slot_direct(42)
+      8, 59,    -- 81: set_slot_direct(59)
       0,        -- 83: push_frame
-      5, 41,    -- 84: get_slot_direct(41)
+      5, 58,    -- 84: get_slot_direct(58)
       0,        -- 86: push_frame
-      5, 43,    -- 87: get_slot_direct(43)
+      5, 60,    -- 87: get_slot_direct(60)
       24,       -- 89: bi_gt
       13, 98,   -- 90: jmp_unless(98)
       0,        -- 92: push_frame
       0,        -- 93: push_frame
-      5, 43,    -- 94: get_slot_direct(43)
-      8, 41,    -- 96: set_slot_direct(41)
+      5, 60,    -- 94: get_slot_direct(60)
+      8, 58,    -- 96: set_slot_direct(58)
       0,        -- 98: push_frame
-      5, 42,    -- 99: get_slot_direct(42)
+      5, 59,    -- 99: get_slot_direct(59)
       0,        -- 101: push_frame
-      5, 43,    -- 102: get_slot_direct(43)
+      5, 60,    -- 102: get_slot_direct(60)
       24,       -- 104: bi_gt
       13, 113,  -- 105: jmp_unless(113)
       0,        -- 107: push_frame
       0,        -- 108: push_frame
-      5, 43,    -- 109: get_slot_direct(43)
-      8, 42,    -- 111: set_slot_direct(42)
+      5, 60,    -- 109: get_slot_direct(60)
+      8, 59,    -- 111: set_slot_direct(59)
       0,        -- 113: push_frame
-      5, 20,    -- 114: get_slot_direct(20)
+      5, 26,    -- 114: get_slot_direct(26)
       15,       -- 116: dup
-      7, 44,    -- 117: get_slot_direct_check(44)
+      7, 61,    -- 117: get_slot_direct_check(61)
       19,       -- 119: swap
       0,        -- 120: push_frame
-      5, 41,    -- 121: get_slot_direct(41)
+      5, 58,    -- 121: get_slot_direct(58)
       0,        -- 123: push_frame
-      5, 42,    -- 124: get_slot_direct(42)
+      5, 59,    -- 124: get_slot_direct(59)
       10, 2,    -- 126: invoke(2)
       11        -- 128: return
     }
   },
   ifunc.Function:new{ -- ".trim"
     name = jsval.newString(".trim"),
-    id = 7,
+    id = 10,
     nargs = 0,
     max_stack = 6,
     bytecode = {
@@ -919,228 +1335,156 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 46,    -- 7: set_slot_direct(46)
+      8, 63,    -- 7: set_slot_direct(63)
       0,        -- 9: push_frame
       1, 0,     -- 10: push_literal(0)
-      8, 47,    -- 12: set_slot_direct(47)
+      8, 64,    -- 12: set_slot_direct(64)
       0,        -- 14: push_frame
       1, 0,     -- 15: push_literal(0)
-      8, 37,    -- 17: set_slot_direct(37)
+      8, 53,    -- 17: set_slot_direct(53)
       0,        -- 19: push_frame
       0,        -- 20: push_frame
-      5, 20,    -- 21: get_slot_direct(20)
-      8, 46,    -- 23: set_slot_direct(46)
+      5, 26,    -- 21: get_slot_direct(26)
+      8, 63,    -- 23: set_slot_direct(63)
       0,        -- 25: push_frame
-      5, 46,    -- 26: get_slot_direct(46)
-      5, 24,    -- 28: get_slot_direct(24)
-      1, 6,     -- 30: push_literal(6)
+      5, 63,    -- 26: get_slot_direct(63)
+      5, 55,    -- 28: get_slot_direct(55)
+      1, 18,    -- 30: push_literal(18)
       23,       -- 32: bi_eq
       13, 39,   -- 33: jmp_unless(39)
       0,        -- 35: push_frame
-      5, 46,    -- 36: get_slot_direct(46)
+      5, 63,    -- 36: get_slot_direct(63)
       11,       -- 38: return
       0,        -- 39: push_frame
-      1, 48,    -- 40: push_literal(48)
-      8, 47,    -- 42: set_slot_direct(47)
+      1, 65,    -- 40: push_literal(65)
+      8, 64,    -- 42: set_slot_direct(64)
       0,        -- 44: push_frame
-      1, 6,     -- 45: push_literal(6)
-      8, 37,    -- 47: set_slot_direct(37)
+      1, 18,    -- 45: push_literal(18)
+      8, 53,    -- 47: set_slot_direct(53)
       12, 104,  -- 49: jmp(104)
       0,        -- 51: push_frame
-      5, 47,    -- 52: get_slot_direct(47)
+      5, 64,    -- 52: get_slot_direct(64)
       15,       -- 54: dup
-      7, 40,    -- 55: get_slot_direct_check(40)
+      7, 57,    -- 55: get_slot_direct_check(57)
       19,       -- 57: swap
       0,        -- 58: push_frame
-      5, 46,    -- 59: get_slot_direct(46)
+      5, 63,    -- 59: get_slot_direct(63)
       15,       -- 61: dup
-      7, 39,    -- 62: get_slot_direct_check(39)
+      7, 56,    -- 62: get_slot_direct_check(56)
       19,       -- 64: swap
       0,        -- 65: push_frame
-      5, 37,    -- 66: get_slot_direct(37)
+      5, 53,    -- 66: get_slot_direct(53)
       10, 1,    -- 68: invoke(1)
       10, 1,    -- 70: invoke(1)
-      1, 8,     -- 72: push_literal(8)
+      1, 31,    -- 72: push_literal(31)
       21,       -- 74: un_minus
       23,       -- 75: bi_eq
       13, 95,   -- 76: jmp_unless(95)
       0,        -- 78: push_frame
       0,        -- 79: push_frame
-      5, 46,    -- 80: get_slot_direct(46)
+      5, 63,    -- 80: get_slot_direct(63)
       15,       -- 82: dup
-      7, 44,    -- 83: get_slot_direct_check(44)
+      7, 61,    -- 83: get_slot_direct_check(61)
       19,       -- 85: swap
       0,        -- 86: push_frame
-      5, 37,    -- 87: get_slot_direct(37)
+      5, 53,    -- 87: get_slot_direct(53)
       10, 1,    -- 89: invoke(1)
-      8, 46,    -- 91: set_slot_direct(46)
+      8, 63,    -- 91: set_slot_direct(63)
       12, 117,  -- 93: jmp(117)
       0,        -- 95: push_frame
       15,       -- 96: dup
-      5, 37,    -- 97: get_slot_direct(37)
-      1, 8,     -- 99: push_literal(8)
+      5, 53,    -- 97: get_slot_direct(53)
+      1, 31,    -- 99: push_literal(31)
       26,       -- 101: bi_add
-      8, 37,    -- 102: set_slot_direct(37)
+      8, 53,    -- 102: set_slot_direct(53)
       0,        -- 104: push_frame
-      5, 37,    -- 105: get_slot_direct(37)
+      5, 53,    -- 105: get_slot_direct(53)
       0,        -- 107: push_frame
-      5, 46,    -- 108: get_slot_direct(46)
-      5, 24,    -- 110: get_slot_direct(24)
+      5, 63,    -- 108: get_slot_direct(63)
+      5, 55,    -- 110: get_slot_direct(55)
       19,       -- 112: swap
       24,       -- 113: bi_gt
       20,       -- 114: un_not
       13, 51,   -- 115: jmp_unless(51)
       0,        -- 117: push_frame
       0,        -- 118: push_frame
-      5, 46,    -- 119: get_slot_direct(46)
-      5, 24,    -- 121: get_slot_direct(24)
-      1, 8,     -- 123: push_literal(8)
+      5, 63,    -- 119: get_slot_direct(63)
+      5, 55,    -- 121: get_slot_direct(55)
+      1, 31,    -- 123: push_literal(31)
       27,       -- 125: bi_sub
-      8, 37,    -- 126: set_slot_direct(37)
+      8, 53,    -- 126: set_slot_direct(53)
       12, 188,  -- 128: jmp(188)
       0,        -- 130: push_frame
-      5, 47,    -- 131: get_slot_direct(47)
+      5, 64,    -- 131: get_slot_direct(64)
       15,       -- 133: dup
-      7, 40,    -- 134: get_slot_direct_check(40)
+      7, 57,    -- 134: get_slot_direct_check(57)
       19,       -- 136: swap
       0,        -- 137: push_frame
-      5, 46,    -- 138: get_slot_direct(46)
+      5, 63,    -- 138: get_slot_direct(63)
       15,       -- 140: dup
-      7, 39,    -- 141: get_slot_direct_check(39)
+      7, 56,    -- 141: get_slot_direct_check(56)
       19,       -- 143: swap
       0,        -- 144: push_frame
-      5, 37,    -- 145: get_slot_direct(37)
+      5, 53,    -- 145: get_slot_direct(53)
       10, 1,    -- 147: invoke(1)
       10, 1,    -- 149: invoke(1)
-      1, 8,     -- 151: push_literal(8)
+      1, 31,    -- 151: push_literal(31)
       21,       -- 153: un_minus
       23,       -- 154: bi_eq
       13, 179,  -- 155: jmp_unless(179)
       0,        -- 157: push_frame
       0,        -- 158: push_frame
-      5, 46,    -- 159: get_slot_direct(46)
+      5, 63,    -- 159: get_slot_direct(63)
       15,       -- 161: dup
-      7, 44,    -- 162: get_slot_direct_check(44)
+      7, 61,    -- 162: get_slot_direct_check(61)
       19,       -- 164: swap
-      1, 6,     -- 165: push_literal(6)
+      1, 18,    -- 165: push_literal(18)
       0,        -- 167: push_frame
-      5, 37,    -- 168: get_slot_direct(37)
-      1, 8,     -- 170: push_literal(8)
+      5, 53,    -- 168: get_slot_direct(53)
+      1, 31,    -- 170: push_literal(31)
       26,       -- 172: bi_add
       10, 2,    -- 173: invoke(2)
-      8, 46,    -- 175: set_slot_direct(46)
+      8, 63,    -- 175: set_slot_direct(63)
       12, 197,  -- 177: jmp(197)
       0,        -- 179: push_frame
       15,       -- 180: dup
-      5, 37,    -- 181: get_slot_direct(37)
-      1, 8,     -- 183: push_literal(8)
+      5, 53,    -- 181: get_slot_direct(53)
+      1, 31,    -- 183: push_literal(31)
       27,       -- 185: bi_sub
-      8, 37,    -- 186: set_slot_direct(37)
+      8, 53,    -- 186: set_slot_direct(53)
       0,        -- 188: push_frame
-      5, 37,    -- 189: get_slot_direct(37)
-      1, 6,     -- 191: push_literal(6)
+      5, 53,    -- 189: get_slot_direct(53)
+      1, 18,    -- 191: push_literal(18)
       25,       -- 193: bi_gte
       20,       -- 194: un_not
       13, 130,  -- 195: jmp_unless(130)
       0,        -- 197: push_frame
-      5, 47,    -- 198: get_slot_direct(47)
+      5, 64,    -- 198: get_slot_direct(64)
       15,       -- 200: dup
-      7, 40,    -- 201: get_slot_direct_check(40)
+      7, 57,    -- 201: get_slot_direct_check(57)
       19,       -- 203: swap
       0,        -- 204: push_frame
-      5, 46,    -- 205: get_slot_direct(46)
+      5, 63,    -- 205: get_slot_direct(63)
       15,       -- 207: dup
-      7, 39,    -- 208: get_slot_direct_check(39)
+      7, 56,    -- 208: get_slot_direct_check(56)
       19,       -- 210: swap
-      1, 6,     -- 211: push_literal(6)
+      1, 18,    -- 211: push_literal(18)
       10, 1,    -- 213: invoke(1)
       10, 1,    -- 215: invoke(1)
-      1, 8,     -- 217: push_literal(8)
+      1, 31,    -- 217: push_literal(31)
       21,       -- 219: un_minus
       23,       -- 220: bi_eq
       13, 228,  -- 221: jmp_unless(228)
       0,        -- 223: push_frame
-      5, 46,    -- 224: get_slot_direct(46)
+      5, 63,    -- 224: get_slot_direct(63)
       12, 230,  -- 226: jmp(230)
-      1, 49,    -- 228: push_literal(49)
+      1, 66,    -- 228: push_literal(66)
       11        -- 230: return
     }
   },
   ifunc.Function:new{ -- ".push"
     name = jsval.newString(".push"),
-    id = 8,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 37,    -- 7: set_slot_direct(37)
-      0,        -- 9: push_frame
-      1, 0,     -- 10: push_literal(0)
-      8, 38,    -- 12: set_slot_direct(38)
-      0,        -- 14: push_frame
-      1, 6,     -- 15: push_literal(6)
-      8, 37,    -- 17: set_slot_direct(37)
-      0,        -- 19: push_frame
-      1, 8,     -- 20: push_literal(8)
-      0,        -- 22: push_frame
-      5, 20,    -- 23: get_slot_direct(20)
-      5, 24,    -- 25: get_slot_direct(24)
-      28,       -- 27: bi_mul
-      15,       -- 28: dup
-      20,       -- 29: un_not
-      13, 35,   -- 30: jmp_unless(35)
-      14,       -- 32: pop
-      1, 6,     -- 33: push_literal(6)
-      8, 38,    -- 35: set_slot_direct(38)
-      12, 71,   -- 37: jmp(71)
-      0,        -- 39: push_frame
-      5, 20,    -- 40: get_slot_direct(20)
-      0,        -- 42: push_frame
-      5, 38,    -- 43: get_slot_direct(38)
-      0,        -- 45: push_frame
-      5, 2,     -- 46: get_slot_direct(2)
-      0,        -- 48: push_frame
-      5, 37,    -- 49: get_slot_direct(37)
-      6,        -- 51: get_slot_indirect
-      9,        -- 52: set_slot_indirect
-      0,        -- 53: push_frame
-      15,       -- 54: dup
-      5, 37,    -- 55: get_slot_direct(37)
-      1, 8,     -- 57: push_literal(8)
-      26,       -- 59: bi_add
-      8, 37,    -- 60: set_slot_direct(37)
-      0,        -- 62: push_frame
-      15,       -- 63: dup
-      5, 38,    -- 64: get_slot_direct(38)
-      1, 8,     -- 66: push_literal(8)
-      26,       -- 68: bi_add
-      8, 38,    -- 69: set_slot_direct(38)
-      0,        -- 71: push_frame
-      5, 37,    -- 72: get_slot_direct(37)
-      0,        -- 74: push_frame
-      5, 2,     -- 75: get_slot_direct(2)
-      5, 24,    -- 77: get_slot_direct(24)
-      19,       -- 79: swap
-      24,       -- 80: bi_gt
-      20,       -- 81: un_not
-      13, 39,   -- 82: jmp_unless(39)
-      0,        -- 84: push_frame
-      5, 20,    -- 85: get_slot_direct(20)
-      0,        -- 87: push_frame
-      5, 38,    -- 88: get_slot_direct(38)
-      8, 24,    -- 90: set_slot_direct(24)
-      0,        -- 92: push_frame
-      5, 38,    -- 93: get_slot_direct(38)
-      11        -- 95: return
-    }
-  },
-  ifunc.Function:new{ -- ".pop"
-    name = jsval.newString(".pop"),
-    id = 9,
+    id = 11,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -1151,361 +1495,67 @@ startup.functions = {
       1, 0,     -- 5: push_literal(0)
       8, 53,    -- 7: set_slot_direct(53)
       0,        -- 9: push_frame
-      5, 20,    -- 10: get_slot_direct(20)
-      5, 24,    -- 12: get_slot_direct(24)
-      1, 6,     -- 14: push_literal(6)
-      23,       -- 16: bi_eq
-      13, 22,   -- 17: jmp_unless(22)
-      1, 0,     -- 19: push_literal(0)
-      11,       -- 21: return
+      1, 0,     -- 10: push_literal(0)
+      8, 54,    -- 12: set_slot_direct(54)
+      0,        -- 14: push_frame
+      1, 18,    -- 15: push_literal(18)
+      8, 53,    -- 17: set_slot_direct(53)
+      0,        -- 19: push_frame
+      1, 31,    -- 20: push_literal(31)
       0,        -- 22: push_frame
-      0,        -- 23: push_frame
-      5, 20,    -- 24: get_slot_direct(20)
-      0,        -- 26: push_frame
-      5, 20,    -- 27: get_slot_direct(20)
-      5, 24,    -- 29: get_slot_direct(24)
-      1, 8,     -- 31: push_literal(8)
-      27,       -- 33: bi_sub
-      6,        -- 34: get_slot_indirect
-      8, 53,    -- 35: set_slot_direct(53)
-      0,        -- 37: push_frame
-      5, 20,    -- 38: get_slot_direct(20)
-      15,       -- 40: dup
-      5, 24,    -- 41: get_slot_direct(24)
-      1, 8,     -- 43: push_literal(8)
-      27,       -- 45: bi_sub
-      8, 24,    -- 46: set_slot_direct(24)
+      5, 26,    -- 23: get_slot_direct(26)
+      5, 55,    -- 25: get_slot_direct(55)
+      28,       -- 27: bi_mul
+      15,       -- 28: dup
+      20,       -- 29: un_not
+      13, 35,   -- 30: jmp_unless(35)
+      14,       -- 32: pop
+      1, 18,    -- 33: push_literal(18)
+      8, 54,    -- 35: set_slot_direct(54)
+      12, 71,   -- 37: jmp(71)
+      0,        -- 39: push_frame
+      5, 26,    -- 40: get_slot_direct(26)
+      0,        -- 42: push_frame
+      5, 54,    -- 43: get_slot_direct(54)
+      0,        -- 45: push_frame
+      5, 2,     -- 46: get_slot_direct(2)
       0,        -- 48: push_frame
       5, 53,    -- 49: get_slot_direct(53)
-      11        -- 51: return
-    }
-  },
-  ifunc.Function:new{ -- ".join"
-    name = jsval.newString(".join"),
-    id = 10,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 55,    -- 8: set_slot_direct(55)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      1, 0,     -- 12: push_literal(0)
-      8, 43,    -- 14: set_slot_direct(43)
-      0,        -- 16: push_frame
-      1, 0,     -- 17: push_literal(0)
-      8, 56,    -- 19: set_slot_direct(56)
-      0,        -- 21: push_frame
-      1, 0,     -- 22: push_literal(0)
-      8, 57,    -- 24: set_slot_direct(57)
-      0,        -- 26: push_frame
-      0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
-      5, 24,    -- 30: get_slot_direct(24)
-      8, 43,    -- 32: set_slot_direct(43)
-      0,        -- 34: push_frame
-      5, 55,    -- 35: get_slot_direct(55)
-      1, 0,     -- 37: push_literal(0)
-      23,       -- 39: bi_eq
-      13, 49,   -- 40: jmp_unless(49)
-      0,        -- 42: push_frame
-      1, 58,    -- 43: push_literal(58)
-      8, 55,    -- 45: set_slot_direct(55)
-      12, 58,   -- 47: jmp(58)
-      0,        -- 49: push_frame
-      1, 49,    -- 50: push_literal(49)
-      0,        -- 52: push_frame
-      5, 55,    -- 53: get_slot_direct(55)
-      26,       -- 55: bi_add
-      8, 55,    -- 56: set_slot_direct(55)
-      0,        -- 58: push_frame
-      1, 6,     -- 59: push_literal(6)
-      8, 56,    -- 61: set_slot_direct(56)
-      0,        -- 63: push_frame
-      1, 49,    -- 64: push_literal(49)
-      8, 57,    -- 66: set_slot_direct(57)
-      12, 142,  -- 68: jmp(142)
-      0,        -- 70: push_frame
-      1, 0,     -- 71: push_literal(0)
-      8, 59,    -- 73: set_slot_direct(59)
-      0,        -- 75: push_frame
-      5, 56,    -- 76: get_slot_direct(56)
-      1, 6,     -- 78: push_literal(6)
-      24,       -- 80: bi_gt
-      13, 93,   -- 81: jmp_unless(93)
-      0,        -- 83: push_frame
-      15,       -- 84: dup
-      5, 57,    -- 85: get_slot_direct(57)
-      0,        -- 87: push_frame
-      5, 55,    -- 88: get_slot_direct(55)
-      26,       -- 90: bi_add
-      8, 57,    -- 91: set_slot_direct(57)
-      0,        -- 93: push_frame
-      0,        -- 94: push_frame
-      5, 20,    -- 95: get_slot_direct(20)
-      0,        -- 97: push_frame
-      5, 56,    -- 98: get_slot_direct(56)
-      6,        -- 100: get_slot_indirect
-      8, 59,    -- 101: set_slot_direct(59)
-      0,        -- 103: push_frame
-      5, 59,    -- 104: get_slot_direct(59)
-      1, 0,     -- 106: push_literal(0)
-      23,       -- 108: bi_eq
-      20,       -- 109: un_not
-      15,       -- 110: dup
-      13, 121,  -- 111: jmp_unless(121)
-      14,       -- 113: pop
-      0,        -- 114: push_frame
-      5, 59,    -- 115: get_slot_direct(59)
-      1, 21,    -- 117: push_literal(21)
-      23,       -- 119: bi_eq
-      20,       -- 120: un_not
-      13, 133,  -- 121: jmp_unless(133)
-      0,        -- 123: push_frame
-      15,       -- 124: dup
-      5, 57,    -- 125: get_slot_direct(57)
-      0,        -- 127: push_frame
-      5, 59,    -- 128: get_slot_direct(59)
-      26,       -- 130: bi_add
-      8, 57,    -- 131: set_slot_direct(57)
-      0,        -- 133: push_frame
-      15,       -- 134: dup
-      5, 56,    -- 135: get_slot_direct(56)
-      1, 8,     -- 137: push_literal(8)
-      26,       -- 139: bi_add
-      8, 56,    -- 140: set_slot_direct(56)
-      0,        -- 142: push_frame
-      5, 56,    -- 143: get_slot_direct(56)
-      0,        -- 145: push_frame
-      5, 43,    -- 146: get_slot_direct(43)
-      19,       -- 148: swap
-      24,       -- 149: bi_gt
-      20,       -- 150: un_not
-      13, 70,   -- 151: jmp_unless(70)
-      0,        -- 153: push_frame
-      5, 57,    -- 154: get_slot_direct(57)
-      11        -- 156: return
-    }
-  },
-  ifunc.Function:new{ -- ".slice"
-    name = jsval.newString(".slice"),
-    id = 11,
-    nargs = 2,
-    max_stack = 6,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 61,    -- 8: set_slot_direct(61)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 62,    -- 15: set_slot_direct(62)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      1, 0,     -- 19: push_literal(0)
-      8, 37,    -- 21: set_slot_direct(37)
-      0,        -- 23: push_frame
-      1, 0,     -- 24: push_literal(0)
-      8, 63,    -- 26: set_slot_direct(63)
-      0,        -- 28: push_frame
-      1, 0,     -- 29: push_literal(0)
-      8, 16,    -- 31: set_slot_direct(16)
-      0,        -- 33: push_frame
-      1, 0,     -- 34: push_literal(0)
-      8, 64,    -- 36: set_slot_direct(64)
-      0,        -- 38: push_frame
-      1, 0,     -- 39: push_literal(0)
-      8, 65,    -- 41: set_slot_direct(65)
-      0,        -- 43: push_frame
-      1, 0,     -- 44: push_literal(0)
-      8, 43,    -- 46: set_slot_direct(43)
-      0,        -- 48: push_frame
-      1, 6,     -- 49: push_literal(6)
-      8, 37,    -- 51: set_slot_direct(37)
+      6,        -- 51: get_slot_indirect
+      9,        -- 52: set_slot_indirect
       0,        -- 53: push_frame
-      3,        -- 54: new_array
-      8, 64,    -- 55: set_slot_direct(64)
-      0,        -- 57: push_frame
-      0,        -- 58: push_frame
-      5, 20,    -- 59: get_slot_direct(20)
-      5, 24,    -- 61: get_slot_direct(24)
-      8, 43,    -- 63: set_slot_direct(43)
-      0,        -- 65: push_frame
-      0,        -- 66: push_frame
-      5, 61,    -- 67: get_slot_direct(61)
-      15,       -- 69: dup
-      20,       -- 70: un_not
-      13, 76,   -- 71: jmp_unless(76)
-      14,       -- 73: pop
-      1, 6,     -- 74: push_literal(6)
-      8, 65,    -- 76: set_slot_direct(65)
-      0,        -- 78: push_frame
-      0,        -- 79: push_frame
-      5, 65,    -- 80: get_slot_direct(65)
-      1, 6,     -- 82: push_literal(6)
-      25,       -- 84: bi_gte
-      13, 92,   -- 85: jmp_unless(92)
+      15,       -- 54: dup
+      5, 53,    -- 55: get_slot_direct(53)
+      1, 31,    -- 57: push_literal(31)
+      26,       -- 59: bi_add
+      8, 53,    -- 60: set_slot_direct(53)
+      0,        -- 62: push_frame
+      15,       -- 63: dup
+      5, 54,    -- 64: get_slot_direct(54)
+      1, 31,    -- 66: push_literal(31)
+      26,       -- 68: bi_add
+      8, 54,    -- 69: set_slot_direct(54)
+      0,        -- 71: push_frame
+      5, 53,    -- 72: get_slot_direct(53)
+      0,        -- 74: push_frame
+      5, 2,     -- 75: get_slot_direct(2)
+      5, 55,    -- 77: get_slot_direct(55)
+      19,       -- 79: swap
+      24,       -- 80: bi_gt
+      20,       -- 81: un_not
+      13, 39,   -- 82: jmp_unless(39)
+      0,        -- 84: push_frame
+      5, 26,    -- 85: get_slot_direct(26)
       0,        -- 87: push_frame
-      5, 65,    -- 88: get_slot_direct(65)
-      12, 99,   -- 90: jmp(99)
+      5, 54,    -- 88: get_slot_direct(54)
+      8, 55,    -- 90: set_slot_direct(55)
       0,        -- 92: push_frame
-      5, 43,    -- 93: get_slot_direct(43)
-      0,        -- 95: push_frame
-      5, 65,    -- 96: get_slot_direct(65)
-      26,       -- 98: bi_add
-      8, 65,    -- 99: set_slot_direct(65)
-      0,        -- 101: push_frame
-      5, 65,    -- 102: get_slot_direct(65)
-      1, 6,     -- 104: push_literal(6)
-      19,       -- 106: swap
-      24,       -- 107: bi_gt
-      13, 115,  -- 108: jmp_unless(115)
-      0,        -- 110: push_frame
-      1, 6,     -- 111: push_literal(6)
-      8, 65,    -- 113: set_slot_direct(65)
-      0,        -- 115: push_frame
-      0,        -- 116: push_frame
-      5, 62,    -- 117: get_slot_direct(62)
-      22,       -- 119: un_typeof
-      1, 66,    -- 120: push_literal(66)
-      23,       -- 122: bi_eq
-      20,       -- 123: un_not
-      13, 131,  -- 124: jmp_unless(131)
-      0,        -- 126: push_frame
-      5, 62,    -- 127: get_slot_direct(62)
-      12, 134,  -- 129: jmp(134)
-      0,        -- 131: push_frame
-      5, 43,    -- 132: get_slot_direct(43)
-      8, 62,    -- 134: set_slot_direct(62)
-      0,        -- 136: push_frame
-      0,        -- 137: push_frame
-      5, 62,    -- 138: get_slot_direct(62)
-      22,       -- 140: un_typeof
-      1, 67,    -- 141: push_literal(67)
-      23,       -- 143: bi_eq
-      13, 151,  -- 144: jmp_unless(151)
-      0,        -- 146: push_frame
-      5, 62,    -- 147: get_slot_direct(62)
-      12, 154,  -- 149: jmp(154)
-      0,        -- 151: push_frame
-      5, 43,    -- 152: get_slot_direct(43)
-      8, 63,    -- 154: set_slot_direct(63)
-      0,        -- 156: push_frame
-      5, 63,    -- 157: get_slot_direct(63)
-      0,        -- 159: push_frame
-      5, 43,    -- 160: get_slot_direct(43)
-      24,       -- 162: bi_gt
-      13, 171,  -- 163: jmp_unless(171)
-      0,        -- 165: push_frame
-      0,        -- 166: push_frame
-      5, 43,    -- 167: get_slot_direct(43)
-      8, 63,    -- 169: set_slot_direct(63)
-      0,        -- 171: push_frame
-      5, 63,    -- 172: get_slot_direct(63)
-      1, 6,     -- 174: push_literal(6)
-      19,       -- 176: swap
-      24,       -- 177: bi_gt
-      13, 190,  -- 178: jmp_unless(190)
-      0,        -- 180: push_frame
-      0,        -- 181: push_frame
-      5, 43,    -- 182: get_slot_direct(43)
-      0,        -- 184: push_frame
-      5, 63,    -- 185: get_slot_direct(63)
-      26,       -- 187: bi_add
-      8, 63,    -- 188: set_slot_direct(63)
-      0,        -- 190: push_frame
-      0,        -- 191: push_frame
-      5, 63,    -- 192: get_slot_direct(63)
-      0,        -- 194: push_frame
-      5, 65,    -- 195: get_slot_direct(65)
-      27,       -- 197: bi_sub
-      8, 16,    -- 198: set_slot_direct(16)
-      0,        -- 200: push_frame
-      5, 16,    -- 201: get_slot_direct(16)
-      1, 6,     -- 203: push_literal(6)
-      24,       -- 205: bi_gt
-      13, 302,  -- 206: jmp_unless(302)
-      0,        -- 208: push_frame
-      5, 20,    -- 209: get_slot_direct(20)
-      5, 39,    -- 211: get_slot_direct(39)
-      13, 262,  -- 213: jmp_unless(262)
-      12, 249,  -- 215: jmp(249)
-      0,        -- 217: push_frame
-      5, 64,    -- 218: get_slot_direct(64)
-      0,        -- 220: push_frame
-      5, 37,    -- 221: get_slot_direct(37)
-      0,        -- 223: push_frame
-      5, 20,    -- 224: get_slot_direct(20)
-      15,       -- 226: dup
-      7, 39,    -- 227: get_slot_direct_check(39)
-      19,       -- 229: swap
-      0,        -- 230: push_frame
-      5, 65,    -- 231: get_slot_direct(65)
-      0,        -- 233: push_frame
-      5, 37,    -- 234: get_slot_direct(37)
-      26,       -- 236: bi_add
-      10, 1,    -- 237: invoke(1)
-      9,        -- 239: set_slot_indirect
-      0,        -- 240: push_frame
-      15,       -- 241: dup
-      5, 37,    -- 242: get_slot_direct(37)
-      1, 8,     -- 244: push_literal(8)
-      26,       -- 246: bi_add
-      8, 37,    -- 247: set_slot_direct(37)
-      0,        -- 249: push_frame
-      5, 37,    -- 250: get_slot_direct(37)
-      0,        -- 252: push_frame
-      5, 16,    -- 253: get_slot_direct(16)
-      19,       -- 255: swap
-      24,       -- 256: bi_gt
-      20,       -- 257: un_not
-      13, 217,  -- 258: jmp_unless(217)
-      12, 302,  -- 260: jmp(302)
-      12, 291,  -- 262: jmp(291)
-      0,        -- 264: push_frame
-      5, 64,    -- 265: get_slot_direct(64)
-      0,        -- 267: push_frame
-      5, 37,    -- 268: get_slot_direct(37)
-      0,        -- 270: push_frame
-      5, 20,    -- 271: get_slot_direct(20)
-      0,        -- 273: push_frame
-      5, 65,    -- 274: get_slot_direct(65)
-      0,        -- 276: push_frame
-      5, 37,    -- 277: get_slot_direct(37)
-      26,       -- 279: bi_add
-      6,        -- 280: get_slot_indirect
-      9,        -- 281: set_slot_indirect
-      0,        -- 282: push_frame
-      15,       -- 283: dup
-      5, 37,    -- 284: get_slot_direct(37)
-      1, 8,     -- 286: push_literal(8)
-      26,       -- 288: bi_add
-      8, 37,    -- 289: set_slot_direct(37)
-      0,        -- 291: push_frame
-      5, 37,    -- 292: get_slot_direct(37)
-      0,        -- 294: push_frame
-      5, 16,    -- 295: get_slot_direct(16)
-      19,       -- 297: swap
-      24,       -- 298: bi_gt
-      20,       -- 299: un_not
-      13, 264,  -- 300: jmp_unless(264)
-      0,        -- 302: push_frame
-      5, 64,    -- 303: get_slot_direct(64)
-      11        -- 305: return
+      5, 54,    -- 93: get_slot_direct(54)
+      11        -- 95: return
     }
   },
-  ifunc.Function:new{ -- ".concat"
-    name = jsval.newString(".concat"),
+  ifunc.Function:new{ -- ".pop"
+    name = jsval.newString(".pop"),
     id = 12,
     nargs = 0,
     max_stack = 4,
@@ -1515,220 +1565,607 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 57,    -- 7: set_slot_direct(57)
+      8, 70,    -- 7: set_slot_direct(70)
       0,        -- 9: push_frame
-      1, 0,     -- 10: push_literal(0)
-      8, 37,    -- 12: set_slot_direct(37)
-      0,        -- 14: push_frame
-      1, 0,     -- 15: push_literal(0)
-      8, 38,    -- 17: set_slot_direct(38)
-      0,        -- 19: push_frame
-      3,        -- 20: new_array
-      8, 57,    -- 21: set_slot_direct(57)
+      5, 26,    -- 10: get_slot_direct(26)
+      5, 55,    -- 12: get_slot_direct(55)
+      1, 18,    -- 14: push_literal(18)
+      23,       -- 16: bi_eq
+      13, 22,   -- 17: jmp_unless(22)
+      1, 0,     -- 19: push_literal(0)
+      11,       -- 21: return
+      0,        -- 22: push_frame
       0,        -- 23: push_frame
-      1, 6,     -- 24: push_literal(6)
-      8, 37,    -- 26: set_slot_direct(37)
-      12, 53,   -- 28: jmp(53)
-      0,        -- 30: push_frame
-      5, 57,    -- 31: get_slot_direct(57)
-      0,        -- 33: push_frame
-      5, 37,    -- 34: get_slot_direct(37)
-      0,        -- 36: push_frame
-      5, 20,    -- 37: get_slot_direct(20)
-      0,        -- 39: push_frame
-      5, 37,    -- 40: get_slot_direct(37)
-      6,        -- 42: get_slot_indirect
-      9,        -- 43: set_slot_indirect
-      0,        -- 44: push_frame
-      15,       -- 45: dup
-      5, 37,    -- 46: get_slot_direct(37)
-      1, 8,     -- 48: push_literal(8)
-      26,       -- 50: bi_add
-      8, 37,    -- 51: set_slot_direct(37)
-      0,        -- 53: push_frame
-      5, 37,    -- 54: get_slot_direct(37)
-      0,        -- 56: push_frame
-      5, 20,    -- 57: get_slot_direct(20)
-      5, 24,    -- 59: get_slot_direct(24)
-      19,       -- 61: swap
-      24,       -- 62: bi_gt
-      20,       -- 63: un_not
-      13, 30,   -- 64: jmp_unless(30)
-      0,        -- 66: push_frame
-      1, 6,     -- 67: push_literal(6)
-      8, 37,    -- 69: set_slot_direct(37)
-      12, 191,  -- 71: jmp(191)
-      0,        -- 73: push_frame
-      1, 0,     -- 74: push_literal(0)
-      8, 68,    -- 76: set_slot_direct(68)
-      0,        -- 78: push_frame
-      0,        -- 79: push_frame
-      5, 2,     -- 80: get_slot_direct(2)
-      0,        -- 82: push_frame
-      5, 37,    -- 83: get_slot_direct(37)
-      6,        -- 85: get_slot_indirect
-      8, 68,    -- 86: set_slot_direct(68)
-      0,        -- 88: push_frame
-      5, 68,    -- 89: get_slot_direct(68)
-      22,       -- 91: un_typeof
-      1, 69,    -- 92: push_literal(69)
-      23,       -- 94: bi_eq
-      15,       -- 95: dup
-      13, 121,  -- 96: jmp_unless(121)
-      14,       -- 98: pop
-      0,        -- 99: push_frame
-      5, 68,    -- 100: get_slot_direct(68)
-      1, 21,    -- 102: push_literal(21)
-      23,       -- 104: bi_eq
-      20,       -- 105: un_not
-      15,       -- 106: dup
-      13, 121,  -- 107: jmp_unless(121)
-      14,       -- 109: pop
-      0,        -- 110: push_frame
-      5, 68,    -- 111: get_slot_direct(68)
-      15,       -- 113: dup
-      7, 70,    -- 114: get_slot_direct_check(70)
-      19,       -- 116: swap
-      1, 24,    -- 117: push_literal(24)
-      10, 1,    -- 119: invoke(1)
-      13, 170,  -- 121: jmp_unless(170)
-      0,        -- 123: push_frame
-      1, 6,     -- 124: push_literal(6)
-      8, 38,    -- 126: set_slot_direct(38)
-      12, 155,  -- 128: jmp(155)
-      0,        -- 130: push_frame
-      5, 57,    -- 131: get_slot_direct(57)
-      0,        -- 133: push_frame
-      5, 57,    -- 134: get_slot_direct(57)
-      5, 24,    -- 136: get_slot_direct(24)
-      0,        -- 138: push_frame
-      5, 68,    -- 139: get_slot_direct(68)
-      0,        -- 141: push_frame
-      5, 38,    -- 142: get_slot_direct(38)
-      6,        -- 144: get_slot_indirect
-      9,        -- 145: set_slot_indirect
-      0,        -- 146: push_frame
-      15,       -- 147: dup
-      5, 38,    -- 148: get_slot_direct(38)
-      1, 8,     -- 150: push_literal(8)
-      26,       -- 152: bi_add
-      8, 38,    -- 153: set_slot_direct(38)
-      0,        -- 155: push_frame
-      5, 38,    -- 156: get_slot_direct(38)
-      0,        -- 158: push_frame
-      5, 68,    -- 159: get_slot_direct(68)
-      5, 24,    -- 161: get_slot_direct(24)
-      19,       -- 163: swap
-      24,       -- 164: bi_gt
-      20,       -- 165: un_not
-      13, 130,  -- 166: jmp_unless(130)
-      12, 182,  -- 168: jmp(182)
-      0,        -- 170: push_frame
-      5, 57,    -- 171: get_slot_direct(57)
-      0,        -- 173: push_frame
-      5, 57,    -- 174: get_slot_direct(57)
-      5, 24,    -- 176: get_slot_direct(24)
-      0,        -- 178: push_frame
-      5, 68,    -- 179: get_slot_direct(68)
-      9,        -- 181: set_slot_indirect
-      0,        -- 182: push_frame
-      15,       -- 183: dup
-      5, 37,    -- 184: get_slot_direct(37)
-      1, 8,     -- 186: push_literal(8)
-      26,       -- 188: bi_add
-      8, 37,    -- 189: set_slot_direct(37)
-      0,        -- 191: push_frame
-      5, 37,    -- 192: get_slot_direct(37)
-      0,        -- 194: push_frame
-      5, 2,     -- 195: get_slot_direct(2)
-      5, 24,    -- 197: get_slot_direct(24)
-      19,       -- 199: swap
-      24,       -- 200: bi_gt
-      20,       -- 201: un_not
-      13, 73,   -- 202: jmp_unless(73)
-      0,        -- 204: push_frame
-      5, 57,    -- 205: get_slot_direct(57)
-      11        -- 207: return
+      5, 26,    -- 24: get_slot_direct(26)
+      0,        -- 26: push_frame
+      5, 26,    -- 27: get_slot_direct(26)
+      5, 55,    -- 29: get_slot_direct(55)
+      1, 31,    -- 31: push_literal(31)
+      27,       -- 33: bi_sub
+      6,        -- 34: get_slot_indirect
+      8, 70,    -- 35: set_slot_direct(70)
+      0,        -- 37: push_frame
+      5, 26,    -- 38: get_slot_direct(26)
+      15,       -- 40: dup
+      5, 55,    -- 41: get_slot_direct(55)
+      1, 31,    -- 43: push_literal(31)
+      27,       -- 45: bi_sub
+      8, 55,    -- 46: set_slot_direct(55)
+      0,        -- 48: push_frame
+      5, 70,    -- 49: get_slot_direct(70)
+      11        -- 51: return
     }
   },
-  ifunc.Function:new{ -- ".forEach"
-    name = jsval.newString(".forEach"),
+  ifunc.Function:new{ -- ".join"
+    name = jsval.newString(".join"),
     id = 13,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 72,    -- 8: set_slot_direct(72)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 73,    -- 14: set_slot_direct(73)
+      0,        -- 16: push_frame
+      1, 0,     -- 17: push_literal(0)
+      8, 60,    -- 19: set_slot_direct(60)
+      0,        -- 21: push_frame
+      1, 0,     -- 22: push_literal(0)
+      8, 74,    -- 24: set_slot_direct(74)
+      0,        -- 26: push_frame
+      1, 0,     -- 27: push_literal(0)
+      8, 75,    -- 29: set_slot_direct(75)
+      0,        -- 31: push_frame
+      0,        -- 32: push_frame
+      5, 15,    -- 33: get_slot_direct(15)
+      22,       -- 35: un_typeof
+      1, 25,    -- 36: push_literal(25)
+      23,       -- 38: bi_eq
+      13, 54,   -- 39: jmp_unless(54)
+      0,        -- 41: push_frame
+      5, 15,    -- 42: get_slot_direct(15)
+      0,        -- 44: push_frame
+      5, 26,    -- 45: get_slot_direct(26)
+      0,        -- 47: push_frame
+      5, 26,    -- 48: get_slot_direct(26)
+      10, 1,    -- 50: invoke(1)
+      12, 57,   -- 52: jmp(57)
+      0,        -- 54: push_frame
+      5, 26,    -- 55: get_slot_direct(26)
+      8, 73,    -- 57: set_slot_direct(73)
+      0,        -- 59: push_frame
+      0,        -- 60: push_frame
+      5, 73,    -- 61: get_slot_direct(73)
+      5, 55,    -- 63: get_slot_direct(55)
+      8, 60,    -- 65: set_slot_direct(60)
+      0,        -- 67: push_frame
+      5, 72,    -- 68: get_slot_direct(72)
+      1, 0,     -- 70: push_literal(0)
+      23,       -- 72: bi_eq
+      13, 82,   -- 73: jmp_unless(82)
+      0,        -- 75: push_frame
+      1, 76,    -- 76: push_literal(76)
+      8, 72,    -- 78: set_slot_direct(72)
+      12, 91,   -- 80: jmp(91)
+      0,        -- 82: push_frame
+      1, 66,    -- 83: push_literal(66)
+      0,        -- 85: push_frame
+      5, 72,    -- 86: get_slot_direct(72)
+      26,       -- 88: bi_add
+      8, 72,    -- 89: set_slot_direct(72)
+      0,        -- 91: push_frame
+      1, 18,    -- 92: push_literal(18)
+      8, 74,    -- 94: set_slot_direct(74)
+      0,        -- 96: push_frame
+      1, 66,    -- 97: push_literal(66)
+      8, 75,    -- 99: set_slot_direct(75)
+      12, 175,  -- 101: jmp(175)
+      0,        -- 103: push_frame
+      1, 0,     -- 104: push_literal(0)
+      8, 77,    -- 106: set_slot_direct(77)
+      0,        -- 108: push_frame
+      5, 74,    -- 109: get_slot_direct(74)
+      1, 18,    -- 111: push_literal(18)
+      24,       -- 113: bi_gt
+      13, 126,  -- 114: jmp_unless(126)
+      0,        -- 116: push_frame
+      15,       -- 117: dup
+      5, 75,    -- 118: get_slot_direct(75)
+      0,        -- 120: push_frame
+      5, 72,    -- 121: get_slot_direct(72)
+      26,       -- 123: bi_add
+      8, 75,    -- 124: set_slot_direct(75)
+      0,        -- 126: push_frame
+      0,        -- 127: push_frame
+      5, 73,    -- 128: get_slot_direct(73)
+      0,        -- 130: push_frame
+      5, 74,    -- 131: get_slot_direct(74)
+      6,        -- 133: get_slot_indirect
+      8, 77,    -- 134: set_slot_direct(77)
+      0,        -- 136: push_frame
+      5, 77,    -- 137: get_slot_direct(77)
+      1, 0,     -- 139: push_literal(0)
+      23,       -- 141: bi_eq
+      20,       -- 142: un_not
+      15,       -- 143: dup
+      13, 154,  -- 144: jmp_unless(154)
+      14,       -- 146: pop
+      0,        -- 147: push_frame
+      5, 77,    -- 148: get_slot_direct(77)
+      1, 41,    -- 150: push_literal(41)
+      23,       -- 152: bi_eq
+      20,       -- 153: un_not
+      13, 166,  -- 154: jmp_unless(166)
+      0,        -- 156: push_frame
+      15,       -- 157: dup
+      5, 75,    -- 158: get_slot_direct(75)
+      0,        -- 160: push_frame
+      5, 77,    -- 161: get_slot_direct(77)
+      26,       -- 163: bi_add
+      8, 75,    -- 164: set_slot_direct(75)
+      0,        -- 166: push_frame
+      15,       -- 167: dup
+      5, 74,    -- 168: get_slot_direct(74)
+      1, 31,    -- 170: push_literal(31)
+      26,       -- 172: bi_add
+      8, 74,    -- 173: set_slot_direct(74)
+      0,        -- 175: push_frame
+      5, 74,    -- 176: get_slot_direct(74)
+      0,        -- 178: push_frame
+      5, 60,    -- 179: get_slot_direct(60)
+      19,       -- 181: swap
+      24,       -- 182: bi_gt
+      20,       -- 183: un_not
+      13, 103,  -- 184: jmp_unless(103)
+      0,        -- 186: push_frame
+      5, 75,    -- 187: get_slot_direct(75)
+      11        -- 189: return
+    }
+  },
+  ifunc.Function:new{ -- ".slice"
+    name = jsval.newString(".slice"),
+    id = 14,
     nargs = 2,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 72,    -- 8: set_slot_direct(72)
+      8, 79,    -- 8: set_slot_direct(79)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 73,    -- 15: set_slot_direct(73)
+      8, 80,    -- 15: set_slot_direct(80)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 43,    -- 21: set_slot_direct(43)
+      8, 53,    -- 21: set_slot_direct(53)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 37,    -- 26: set_slot_direct(37)
+      8, 81,    -- 26: set_slot_direct(81)
       0,        -- 28: push_frame
-      1, 8,     -- 29: push_literal(8)
+      1, 0,     -- 29: push_literal(0)
+      8, 82,    -- 31: set_slot_direct(82)
+      0,        -- 33: push_frame
+      1, 0,     -- 34: push_literal(0)
+      8, 83,    -- 36: set_slot_direct(83)
+      0,        -- 38: push_frame
+      1, 0,     -- 39: push_literal(0)
+      8, 84,    -- 41: set_slot_direct(84)
+      0,        -- 43: push_frame
+      1, 0,     -- 44: push_literal(0)
+      8, 60,    -- 46: set_slot_direct(60)
+      0,        -- 48: push_frame
+      1, 18,    -- 49: push_literal(18)
+      8, 53,    -- 51: set_slot_direct(53)
+      0,        -- 53: push_frame
+      3,        -- 54: new_array
+      8, 83,    -- 55: set_slot_direct(83)
+      0,        -- 57: push_frame
+      0,        -- 58: push_frame
+      5, 26,    -- 59: get_slot_direct(26)
+      5, 55,    -- 61: get_slot_direct(55)
+      8, 60,    -- 63: set_slot_direct(60)
+      0,        -- 65: push_frame
+      0,        -- 66: push_frame
+      5, 79,    -- 67: get_slot_direct(79)
+      15,       -- 69: dup
+      20,       -- 70: un_not
+      13, 76,   -- 71: jmp_unless(76)
+      14,       -- 73: pop
+      1, 18,    -- 74: push_literal(18)
+      8, 84,    -- 76: set_slot_direct(84)
+      0,        -- 78: push_frame
+      0,        -- 79: push_frame
+      5, 84,    -- 80: get_slot_direct(84)
+      1, 18,    -- 82: push_literal(18)
+      25,       -- 84: bi_gte
+      13, 92,   -- 85: jmp_unless(92)
+      0,        -- 87: push_frame
+      5, 84,    -- 88: get_slot_direct(84)
+      12, 99,   -- 90: jmp(99)
+      0,        -- 92: push_frame
+      5, 60,    -- 93: get_slot_direct(60)
+      0,        -- 95: push_frame
+      5, 84,    -- 96: get_slot_direct(84)
+      26,       -- 98: bi_add
+      8, 84,    -- 99: set_slot_direct(84)
+      0,        -- 101: push_frame
+      5, 84,    -- 102: get_slot_direct(84)
+      1, 18,    -- 104: push_literal(18)
+      19,       -- 106: swap
+      24,       -- 107: bi_gt
+      13, 115,  -- 108: jmp_unless(115)
+      0,        -- 110: push_frame
+      1, 18,    -- 111: push_literal(18)
+      8, 84,    -- 113: set_slot_direct(84)
+      0,        -- 115: push_frame
+      0,        -- 116: push_frame
+      5, 80,    -- 117: get_slot_direct(80)
+      22,       -- 119: un_typeof
+      1, 85,    -- 120: push_literal(85)
+      23,       -- 122: bi_eq
+      20,       -- 123: un_not
+      13, 131,  -- 124: jmp_unless(131)
+      0,        -- 126: push_frame
+      5, 80,    -- 127: get_slot_direct(80)
+      12, 134,  -- 129: jmp(134)
+      0,        -- 131: push_frame
+      5, 60,    -- 132: get_slot_direct(60)
+      8, 80,    -- 134: set_slot_direct(80)
+      0,        -- 136: push_frame
+      0,        -- 137: push_frame
+      5, 80,    -- 138: get_slot_direct(80)
+      22,       -- 140: un_typeof
+      1, 86,    -- 141: push_literal(86)
+      23,       -- 143: bi_eq
+      13, 151,  -- 144: jmp_unless(151)
+      0,        -- 146: push_frame
+      5, 80,    -- 147: get_slot_direct(80)
+      12, 154,  -- 149: jmp(154)
+      0,        -- 151: push_frame
+      5, 60,    -- 152: get_slot_direct(60)
+      8, 81,    -- 154: set_slot_direct(81)
+      0,        -- 156: push_frame
+      5, 81,    -- 157: get_slot_direct(81)
+      0,        -- 159: push_frame
+      5, 60,    -- 160: get_slot_direct(60)
+      24,       -- 162: bi_gt
+      13, 171,  -- 163: jmp_unless(171)
+      0,        -- 165: push_frame
+      0,        -- 166: push_frame
+      5, 60,    -- 167: get_slot_direct(60)
+      8, 81,    -- 169: set_slot_direct(81)
+      0,        -- 171: push_frame
+      5, 81,    -- 172: get_slot_direct(81)
+      1, 18,    -- 174: push_literal(18)
+      19,       -- 176: swap
+      24,       -- 177: bi_gt
+      13, 190,  -- 178: jmp_unless(190)
+      0,        -- 180: push_frame
+      0,        -- 181: push_frame
+      5, 60,    -- 182: get_slot_direct(60)
+      0,        -- 184: push_frame
+      5, 81,    -- 185: get_slot_direct(81)
+      26,       -- 187: bi_add
+      8, 81,    -- 188: set_slot_direct(81)
+      0,        -- 190: push_frame
+      0,        -- 191: push_frame
+      5, 81,    -- 192: get_slot_direct(81)
+      0,        -- 194: push_frame
+      5, 84,    -- 195: get_slot_direct(84)
+      27,       -- 197: bi_sub
+      8, 82,    -- 198: set_slot_direct(82)
+      0,        -- 200: push_frame
+      5, 82,    -- 201: get_slot_direct(82)
+      1, 18,    -- 203: push_literal(18)
+      24,       -- 205: bi_gt
+      13, 302,  -- 206: jmp_unless(302)
+      0,        -- 208: push_frame
+      5, 26,    -- 209: get_slot_direct(26)
+      5, 56,    -- 211: get_slot_direct(56)
+      13, 262,  -- 213: jmp_unless(262)
+      12, 249,  -- 215: jmp(249)
+      0,        -- 217: push_frame
+      5, 83,    -- 218: get_slot_direct(83)
+      0,        -- 220: push_frame
+      5, 53,    -- 221: get_slot_direct(53)
+      0,        -- 223: push_frame
+      5, 26,    -- 224: get_slot_direct(26)
+      15,       -- 226: dup
+      7, 56,    -- 227: get_slot_direct_check(56)
+      19,       -- 229: swap
+      0,        -- 230: push_frame
+      5, 84,    -- 231: get_slot_direct(84)
+      0,        -- 233: push_frame
+      5, 53,    -- 234: get_slot_direct(53)
+      26,       -- 236: bi_add
+      10, 1,    -- 237: invoke(1)
+      9,        -- 239: set_slot_indirect
+      0,        -- 240: push_frame
+      15,       -- 241: dup
+      5, 53,    -- 242: get_slot_direct(53)
+      1, 31,    -- 244: push_literal(31)
+      26,       -- 246: bi_add
+      8, 53,    -- 247: set_slot_direct(53)
+      0,        -- 249: push_frame
+      5, 53,    -- 250: get_slot_direct(53)
+      0,        -- 252: push_frame
+      5, 82,    -- 253: get_slot_direct(82)
+      19,       -- 255: swap
+      24,       -- 256: bi_gt
+      20,       -- 257: un_not
+      13, 217,  -- 258: jmp_unless(217)
+      12, 302,  -- 260: jmp(302)
+      12, 291,  -- 262: jmp(291)
+      0,        -- 264: push_frame
+      5, 83,    -- 265: get_slot_direct(83)
+      0,        -- 267: push_frame
+      5, 53,    -- 268: get_slot_direct(53)
+      0,        -- 270: push_frame
+      5, 26,    -- 271: get_slot_direct(26)
+      0,        -- 273: push_frame
+      5, 84,    -- 274: get_slot_direct(84)
+      0,        -- 276: push_frame
+      5, 53,    -- 277: get_slot_direct(53)
+      26,       -- 279: bi_add
+      6,        -- 280: get_slot_indirect
+      9,        -- 281: set_slot_indirect
+      0,        -- 282: push_frame
+      15,       -- 283: dup
+      5, 53,    -- 284: get_slot_direct(53)
+      1, 31,    -- 286: push_literal(31)
+      26,       -- 288: bi_add
+      8, 53,    -- 289: set_slot_direct(53)
+      0,        -- 291: push_frame
+      5, 53,    -- 292: get_slot_direct(53)
+      0,        -- 294: push_frame
+      5, 82,    -- 295: get_slot_direct(82)
+      19,       -- 297: swap
+      24,       -- 298: bi_gt
+      20,       -- 299: un_not
+      13, 264,  -- 300: jmp_unless(264)
+      0,        -- 302: push_frame
+      5, 83,    -- 303: get_slot_direct(83)
+      11        -- 305: return
+    }
+  },
+  ifunc.Function:new{ -- ".concat"
+    name = jsval.newString(".concat"),
+    id = 15,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      1, 0,     -- 5: push_literal(0)
+      8, 75,    -- 7: set_slot_direct(75)
+      0,        -- 9: push_frame
+      1, 0,     -- 10: push_literal(0)
+      8, 53,    -- 12: set_slot_direct(53)
+      0,        -- 14: push_frame
+      1, 0,     -- 15: push_literal(0)
+      8, 54,    -- 17: set_slot_direct(54)
+      0,        -- 19: push_frame
+      3,        -- 20: new_array
+      8, 75,    -- 21: set_slot_direct(75)
+      0,        -- 23: push_frame
+      1, 18,    -- 24: push_literal(18)
+      8, 53,    -- 26: set_slot_direct(53)
+      12, 53,   -- 28: jmp(53)
+      0,        -- 30: push_frame
+      5, 75,    -- 31: get_slot_direct(75)
+      0,        -- 33: push_frame
+      5, 53,    -- 34: get_slot_direct(53)
+      0,        -- 36: push_frame
+      5, 26,    -- 37: get_slot_direct(26)
+      0,        -- 39: push_frame
+      5, 53,    -- 40: get_slot_direct(53)
+      6,        -- 42: get_slot_indirect
+      9,        -- 43: set_slot_indirect
+      0,        -- 44: push_frame
+      15,       -- 45: dup
+      5, 53,    -- 46: get_slot_direct(53)
+      1, 31,    -- 48: push_literal(31)
+      26,       -- 50: bi_add
+      8, 53,    -- 51: set_slot_direct(53)
+      0,        -- 53: push_frame
+      5, 53,    -- 54: get_slot_direct(53)
+      0,        -- 56: push_frame
+      5, 26,    -- 57: get_slot_direct(26)
+      5, 55,    -- 59: get_slot_direct(55)
+      19,       -- 61: swap
+      24,       -- 62: bi_gt
+      20,       -- 63: un_not
+      13, 30,   -- 64: jmp_unless(30)
+      0,        -- 66: push_frame
+      1, 18,    -- 67: push_literal(18)
+      8, 53,    -- 69: set_slot_direct(53)
+      12, 191,  -- 71: jmp(191)
+      0,        -- 73: push_frame
+      1, 0,     -- 74: push_literal(0)
+      8, 87,    -- 76: set_slot_direct(87)
+      0,        -- 78: push_frame
+      0,        -- 79: push_frame
+      5, 2,     -- 80: get_slot_direct(2)
+      0,        -- 82: push_frame
+      5, 53,    -- 83: get_slot_direct(53)
+      6,        -- 85: get_slot_indirect
+      8, 87,    -- 86: set_slot_direct(87)
+      0,        -- 88: push_frame
+      5, 87,    -- 89: get_slot_direct(87)
+      22,       -- 91: un_typeof
+      1, 88,    -- 92: push_literal(88)
+      23,       -- 94: bi_eq
+      15,       -- 95: dup
+      13, 121,  -- 96: jmp_unless(121)
+      14,       -- 98: pop
+      0,        -- 99: push_frame
+      5, 87,    -- 100: get_slot_direct(87)
+      1, 41,    -- 102: push_literal(41)
+      23,       -- 104: bi_eq
+      20,       -- 105: un_not
+      15,       -- 106: dup
+      13, 121,  -- 107: jmp_unless(121)
+      14,       -- 109: pop
+      0,        -- 110: push_frame
+      5, 87,    -- 111: get_slot_direct(87)
+      15,       -- 113: dup
+      7, 89,    -- 114: get_slot_direct_check(89)
+      19,       -- 116: swap
+      1, 55,    -- 117: push_literal(55)
+      10, 1,    -- 119: invoke(1)
+      13, 170,  -- 121: jmp_unless(170)
+      0,        -- 123: push_frame
+      1, 18,    -- 124: push_literal(18)
+      8, 54,    -- 126: set_slot_direct(54)
+      12, 155,  -- 128: jmp(155)
+      0,        -- 130: push_frame
+      5, 75,    -- 131: get_slot_direct(75)
+      0,        -- 133: push_frame
+      5, 75,    -- 134: get_slot_direct(75)
+      5, 55,    -- 136: get_slot_direct(55)
+      0,        -- 138: push_frame
+      5, 87,    -- 139: get_slot_direct(87)
+      0,        -- 141: push_frame
+      5, 54,    -- 142: get_slot_direct(54)
+      6,        -- 144: get_slot_indirect
+      9,        -- 145: set_slot_indirect
+      0,        -- 146: push_frame
+      15,       -- 147: dup
+      5, 54,    -- 148: get_slot_direct(54)
+      1, 31,    -- 150: push_literal(31)
+      26,       -- 152: bi_add
+      8, 54,    -- 153: set_slot_direct(54)
+      0,        -- 155: push_frame
+      5, 54,    -- 156: get_slot_direct(54)
+      0,        -- 158: push_frame
+      5, 87,    -- 159: get_slot_direct(87)
+      5, 55,    -- 161: get_slot_direct(55)
+      19,       -- 163: swap
+      24,       -- 164: bi_gt
+      20,       -- 165: un_not
+      13, 130,  -- 166: jmp_unless(130)
+      12, 182,  -- 168: jmp(182)
+      0,        -- 170: push_frame
+      5, 75,    -- 171: get_slot_direct(75)
+      0,        -- 173: push_frame
+      5, 75,    -- 174: get_slot_direct(75)
+      5, 55,    -- 176: get_slot_direct(55)
+      0,        -- 178: push_frame
+      5, 87,    -- 179: get_slot_direct(87)
+      9,        -- 181: set_slot_indirect
+      0,        -- 182: push_frame
+      15,       -- 183: dup
+      5, 53,    -- 184: get_slot_direct(53)
+      1, 31,    -- 186: push_literal(31)
+      26,       -- 188: bi_add
+      8, 53,    -- 189: set_slot_direct(53)
+      0,        -- 191: push_frame
+      5, 53,    -- 192: get_slot_direct(53)
+      0,        -- 194: push_frame
+      5, 2,     -- 195: get_slot_direct(2)
+      5, 55,    -- 197: get_slot_direct(55)
+      19,       -- 199: swap
+      24,       -- 200: bi_gt
+      20,       -- 201: un_not
+      13, 73,   -- 202: jmp_unless(73)
+      0,        -- 204: push_frame
+      5, 75,    -- 205: get_slot_direct(75)
+      11        -- 207: return
+    }
+  },
+  ifunc.Function:new{ -- ".forEach"
+    name = jsval.newString(".forEach"),
+    id = 16,
+    nargs = 2,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 91,    -- 8: set_slot_direct(91)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 92,    -- 15: set_slot_direct(92)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      1, 0,     -- 19: push_literal(0)
+      8, 60,    -- 21: set_slot_direct(60)
+      0,        -- 23: push_frame
+      1, 0,     -- 24: push_literal(0)
+      8, 53,    -- 26: set_slot_direct(53)
+      0,        -- 28: push_frame
+      1, 31,    -- 29: push_literal(31)
       0,        -- 31: push_frame
-      5, 20,    -- 32: get_slot_direct(20)
-      5, 24,    -- 34: get_slot_direct(24)
+      5, 26,    -- 32: get_slot_direct(26)
+      5, 55,    -- 34: get_slot_direct(55)
       28,       -- 36: bi_mul
       15,       -- 37: dup
       20,       -- 38: un_not
       13, 44,   -- 39: jmp_unless(44)
       14,       -- 41: pop
-      1, 6,     -- 42: push_literal(6)
-      8, 43,    -- 44: set_slot_direct(43)
+      1, 18,    -- 42: push_literal(18)
+      8, 60,    -- 44: set_slot_direct(60)
       0,        -- 46: push_frame
-      1, 6,     -- 47: push_literal(6)
-      8, 37,    -- 49: set_slot_direct(37)
+      1, 18,    -- 47: push_literal(18)
+      8, 53,    -- 49: set_slot_direct(53)
       12, 102,  -- 51: jmp(102)
       0,        -- 53: push_frame
-      5, 20,    -- 54: get_slot_direct(20)
+      5, 26,    -- 54: get_slot_direct(26)
       15,       -- 56: dup
-      7, 70,    -- 57: get_slot_direct_check(70)
+      7, 89,    -- 57: get_slot_direct_check(89)
       19,       -- 59: swap
       0,        -- 60: push_frame
-      5, 37,    -- 61: get_slot_direct(37)
+      5, 53,    -- 61: get_slot_direct(53)
       10, 1,    -- 63: invoke(1)
       13, 93,   -- 65: jmp_unless(93)
       0,        -- 67: push_frame
-      5, 72,    -- 68: get_slot_direct(72)
+      5, 91,    -- 68: get_slot_direct(91)
       15,       -- 70: dup
-      7, 74,    -- 71: get_slot_direct_check(74)
+      7, 93,    -- 71: get_slot_direct_check(93)
       19,       -- 73: swap
       0,        -- 74: push_frame
-      5, 73,    -- 75: get_slot_direct(73)
+      5, 92,    -- 75: get_slot_direct(92)
       0,        -- 77: push_frame
-      5, 20,    -- 78: get_slot_direct(20)
+      5, 26,    -- 78: get_slot_direct(26)
       0,        -- 80: push_frame
-      5, 37,    -- 81: get_slot_direct(37)
+      5, 53,    -- 81: get_slot_direct(53)
       6,        -- 83: get_slot_indirect
       0,        -- 84: push_frame
-      5, 37,    -- 85: get_slot_direct(37)
+      5, 53,    -- 85: get_slot_direct(53)
       0,        -- 87: push_frame
-      5, 20,    -- 88: get_slot_direct(20)
+      5, 26,    -- 88: get_slot_direct(26)
       10, 4,    -- 90: invoke(4)
       14,       -- 92: pop
       0,        -- 93: push_frame
       15,       -- 94: dup
-      5, 37,    -- 95: get_slot_direct(37)
-      1, 8,     -- 97: push_literal(8)
+      5, 53,    -- 95: get_slot_direct(53)
+      1, 31,    -- 97: push_literal(31)
       26,       -- 99: bi_add
-      8, 37,    -- 100: set_slot_direct(37)
+      8, 53,    -- 100: set_slot_direct(53)
       0,        -- 102: push_frame
-      5, 37,    -- 103: get_slot_direct(37)
+      5, 53,    -- 103: get_slot_direct(53)
       0,        -- 105: push_frame
-      5, 43,    -- 106: get_slot_direct(43)
+      5, 60,    -- 106: get_slot_direct(60)
       19,       -- 108: swap
       24,       -- 109: bi_gt
       20,       -- 110: un_not
@@ -1739,268 +2176,112 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".map"
     name = jsval.newString(".map"),
-    id = 14,
+    id = 17,
     nargs = 1,
     max_stack = 8,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 76,    -- 8: set_slot_direct(76)
+      8, 95,    -- 8: set_slot_direct(95)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 43,    -- 14: set_slot_direct(43)
+      8, 60,    -- 14: set_slot_direct(60)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 77,    -- 19: set_slot_direct(77)
+      8, 96,    -- 19: set_slot_direct(96)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 37,    -- 24: set_slot_direct(37)
+      8, 53,    -- 24: set_slot_direct(53)
       0,        -- 26: push_frame
       1, 0,     -- 27: push_literal(0)
-      8, 78,    -- 29: set_slot_direct(78)
+      8, 97,    -- 29: set_slot_direct(97)
       0,        -- 31: push_frame
-      1, 8,     -- 32: push_literal(8)
+      1, 31,    -- 32: push_literal(31)
       0,        -- 34: push_frame
-      5, 20,    -- 35: get_slot_direct(20)
-      5, 24,    -- 37: get_slot_direct(24)
+      5, 26,    -- 35: get_slot_direct(26)
+      5, 55,    -- 37: get_slot_direct(55)
       28,       -- 39: bi_mul
       15,       -- 40: dup
       20,       -- 41: un_not
       13, 47,   -- 42: jmp_unless(47)
       14,       -- 44: pop
-      1, 6,     -- 45: push_literal(6)
-      8, 43,    -- 47: set_slot_direct(43)
+      1, 18,    -- 45: push_literal(18)
+      8, 60,    -- 47: set_slot_direct(60)
       0,        -- 49: push_frame
       3,        -- 50: new_array
-      8, 77,    -- 51: set_slot_direct(77)
+      8, 96,    -- 51: set_slot_direct(96)
       0,        -- 53: push_frame
-      1, 6,     -- 54: push_literal(6)
-      8, 37,    -- 56: set_slot_direct(37)
+      1, 18,    -- 54: push_literal(18)
+      8, 53,    -- 56: set_slot_direct(53)
       0,        -- 58: push_frame
       0,        -- 59: push_frame
       5, 2,     -- 60: get_slot_direct(2)
-      1, 8,     -- 62: push_literal(8)
+      1, 31,    -- 62: push_literal(31)
       6,        -- 64: get_slot_indirect
-      8, 78,    -- 65: set_slot_direct(78)
+      8, 97,    -- 65: set_slot_direct(97)
       12, 124,  -- 67: jmp(124)
       0,        -- 69: push_frame
-      5, 20,    -- 70: get_slot_direct(20)
+      5, 26,    -- 70: get_slot_direct(26)
       15,       -- 72: dup
-      7, 70,    -- 73: get_slot_direct_check(70)
+      7, 89,    -- 73: get_slot_direct_check(89)
       19,       -- 75: swap
       0,        -- 76: push_frame
-      5, 37,    -- 77: get_slot_direct(37)
+      5, 53,    -- 77: get_slot_direct(53)
       10, 1,    -- 79: invoke(1)
       13, 115,  -- 81: jmp_unless(115)
       0,        -- 83: push_frame
-      5, 77,    -- 84: get_slot_direct(77)
+      5, 96,    -- 84: get_slot_direct(96)
       0,        -- 86: push_frame
-      5, 37,    -- 87: get_slot_direct(37)
+      5, 53,    -- 87: get_slot_direct(53)
       0,        -- 89: push_frame
-      5, 76,    -- 90: get_slot_direct(76)
+      5, 95,    -- 90: get_slot_direct(95)
       15,       -- 92: dup
-      7, 74,    -- 93: get_slot_direct_check(74)
+      7, 93,    -- 93: get_slot_direct_check(93)
       19,       -- 95: swap
       0,        -- 96: push_frame
-      5, 78,    -- 97: get_slot_direct(78)
+      5, 97,    -- 97: get_slot_direct(97)
       0,        -- 99: push_frame
-      5, 20,    -- 100: get_slot_direct(20)
+      5, 26,    -- 100: get_slot_direct(26)
       0,        -- 102: push_frame
-      5, 37,    -- 103: get_slot_direct(37)
+      5, 53,    -- 103: get_slot_direct(53)
       6,        -- 105: get_slot_indirect
       0,        -- 106: push_frame
-      5, 37,    -- 107: get_slot_direct(37)
+      5, 53,    -- 107: get_slot_direct(53)
       0,        -- 109: push_frame
-      5, 20,    -- 110: get_slot_direct(20)
+      5, 26,    -- 110: get_slot_direct(26)
       10, 4,    -- 112: invoke(4)
       9,        -- 114: set_slot_indirect
       0,        -- 115: push_frame
       15,       -- 116: dup
-      5, 37,    -- 117: get_slot_direct(37)
-      1, 8,     -- 119: push_literal(8)
+      5, 53,    -- 117: get_slot_direct(53)
+      1, 31,    -- 119: push_literal(31)
       26,       -- 121: bi_add
-      8, 37,    -- 122: set_slot_direct(37)
+      8, 53,    -- 122: set_slot_direct(53)
       0,        -- 124: push_frame
-      5, 37,    -- 125: get_slot_direct(37)
+      5, 53,    -- 125: get_slot_direct(53)
       0,        -- 127: push_frame
-      5, 43,    -- 128: get_slot_direct(43)
+      5, 60,    -- 128: get_slot_direct(60)
       19,       -- 130: swap
       24,       -- 131: bi_gt
       20,       -- 132: un_not
       13, 69,   -- 133: jmp_unless(69)
       0,        -- 135: push_frame
-      5, 77,    -- 136: get_slot_direct(77)
+      5, 96,    -- 136: get_slot_direct(96)
       0,        -- 138: push_frame
-      5, 43,    -- 139: get_slot_direct(43)
-      8, 24,    -- 141: set_slot_direct(24)
+      5, 60,    -- 139: get_slot_direct(60)
+      8, 55,    -- 141: set_slot_direct(55)
       0,        -- 143: push_frame
-      5, 77,    -- 144: get_slot_direct(77)
+      5, 96,    -- 144: get_slot_direct(96)
       11        -- 146: return
     }
   },
-  ifunc.Function:new{ -- ".bind"
-    name = jsval.newString(".bind"),
-    id = 15,
-    nargs = 0,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 81,    -- 7: set_slot_direct(81)
-      0,        -- 9: push_frame
-      1, 0,     -- 10: push_literal(0)
-      8, 82,    -- 12: set_slot_direct(82)
-      0,        -- 14: push_frame
-      1, 0,     -- 15: push_literal(0)
-      8, 83,    -- 17: set_slot_direct(83)
-      0,        -- 19: push_frame
-      1, 0,     -- 20: push_literal(0)
-      8, 84,    -- 22: set_slot_direct(84)
-      0,        -- 24: push_frame
-      1, 0,     -- 25: push_literal(0)
-      8, 37,    -- 27: set_slot_direct(37)
-      0,        -- 29: push_frame
-      0,        -- 30: push_frame
-      5, 20,    -- 31: get_slot_direct(20)
-      8, 81,    -- 33: set_slot_direct(81)
-      0,        -- 35: push_frame
-      5, 2,     -- 36: get_slot_direct(2)
-      5, 24,    -- 38: get_slot_direct(24)
-      1, 6,     -- 40: push_literal(6)
-      23,       -- 42: bi_eq
-      13, 49,   -- 43: jmp_unless(49)
-      0,        -- 45: push_frame
-      5, 81,    -- 46: get_slot_direct(81)
-      11,       -- 48: return
-      0,        -- 49: push_frame
-      4, 16,    -- 50: new_function(16)
-      8, 82,    -- 52: set_slot_direct(82)
-      0,        -- 54: push_frame
-      0,        -- 55: push_frame
-      5, 2,     -- 56: get_slot_direct(2)
-      1, 6,     -- 58: push_literal(6)
-      6,        -- 60: get_slot_indirect
-      8, 83,    -- 61: set_slot_direct(83)
-      0,        -- 63: push_frame
-      5, 2,     -- 64: get_slot_direct(2)
-      5, 24,    -- 66: get_slot_direct(24)
-      1, 8,     -- 68: push_literal(8)
-      23,       -- 70: bi_eq
-      13, 88,   -- 71: jmp_unless(88)
-      0,        -- 73: push_frame
-      5, 82,    -- 74: get_slot_direct(82)
-      0,        -- 76: push_frame
-      5, 20,    -- 77: get_slot_direct(20)
-      0,        -- 79: push_frame
-      4, 18,    -- 80: new_function(18)
-      17,       -- 82: over
-      8, 89,    -- 83: set_slot_direct(89)
-      10, 1,    -- 85: invoke(1)
-      11,       -- 87: return
-      0,        -- 88: push_frame
-      3,        -- 89: new_array
-      8, 84,    -- 90: set_slot_direct(84)
-      0,        -- 92: push_frame
-      1, 8,     -- 93: push_literal(8)
-      8, 37,    -- 95: set_slot_direct(37)
-      12, 125,  -- 97: jmp(125)
-      0,        -- 99: push_frame
-      5, 84,    -- 100: get_slot_direct(84)
-      15,       -- 102: dup
-      7, 52,    -- 103: get_slot_direct_check(52)
-      19,       -- 105: swap
-      0,        -- 106: push_frame
-      5, 2,     -- 107: get_slot_direct(2)
-      0,        -- 109: push_frame
-      5, 37,    -- 110: get_slot_direct(37)
-      6,        -- 112: get_slot_indirect
-      10, 1,    -- 113: invoke(1)
-      14,       -- 115: pop
-      0,        -- 116: push_frame
-      15,       -- 117: dup
-      5, 37,    -- 118: get_slot_direct(37)
-      1, 8,     -- 120: push_literal(8)
-      26,       -- 122: bi_add
-      8, 37,    -- 123: set_slot_direct(37)
-      0,        -- 125: push_frame
-      5, 37,    -- 126: get_slot_direct(37)
-      0,        -- 128: push_frame
-      5, 2,     -- 129: get_slot_direct(2)
-      5, 24,    -- 131: get_slot_direct(24)
-      19,       -- 133: swap
-      24,       -- 134: bi_gt
-      20,       -- 135: un_not
-      13, 99,   -- 136: jmp_unless(99)
-      0,        -- 138: push_frame
-      5, 82,    -- 139: get_slot_direct(82)
-      0,        -- 141: push_frame
-      5, 20,    -- 142: get_slot_direct(20)
-      0,        -- 144: push_frame
-      4, 19,    -- 145: new_function(19)
-      17,       -- 147: over
-      8, 90,    -- 148: set_slot_direct(90)
-      10, 1,    -- 150: invoke(1)
-      11        -- 152: return
-    }
-  },
-  ifunc.Function:new{ -- "addHasInstance"
-    name = jsval.newString("addHasInstance"),
-    id = 16,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 85,    -- 8: set_slot_direct(85)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 85,    -- 12: get_slot_direct(85)
-      4, 17,    -- 14: new_function(17)
-      8, 87,    -- 16: set_slot_direct(87)
-      0,        -- 18: push_frame
-      5, 85,    -- 19: get_slot_direct(85)
-      11        -- 21: return
-    }
-  },
-  ifunc.Function:new{ -- ".hasInstance"
-    name = jsval.newString(".hasInstance"),
-    id = 17,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 86,    -- 8: set_slot_direct(86)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 81,    -- 12: get_slot_direct(81)
-      15,       -- 14: dup
-      7, 87,    -- 15: get_slot_direct_check(87)
-      19,       -- 17: swap
-      0,        -- 18: push_frame
-      5, 86,    -- 19: get_slot_direct(86)
-      10, 1,    -- 21: invoke(1)
-      11        -- 23: return
-    }
-  },
-  ifunc.Function:new{ -- "bind0"
-    name = jsval.newString("bind0"),
+  ifunc.Function:new{ -- ".toString"
+    name = jsval.newString(".toString"),
     id = 18,
     nargs = 0,
     max_stack = 4,
@@ -2009,12 +2290,228 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 81,    -- 5: get_slot_direct(81)
+      1, 0,     -- 5: push_literal(0)
+      8, 99,    -- 7: set_slot_direct(99)
+      0,        -- 9: push_frame
+      1, 0,     -- 10: push_literal(0)
+      8, 100,   -- 12: set_slot_direct(100)
+      0,        -- 14: push_frame
+      0,        -- 15: push_frame
+      5, 15,    -- 16: get_slot_direct(15)
+      22,       -- 18: un_typeof
+      1, 25,    -- 19: push_literal(25)
+      23,       -- 21: bi_eq
+      13, 37,   -- 22: jmp_unless(37)
+      0,        -- 24: push_frame
+      5, 15,    -- 25: get_slot_direct(15)
+      0,        -- 27: push_frame
+      5, 26,    -- 28: get_slot_direct(26)
+      0,        -- 30: push_frame
+      5, 26,    -- 31: get_slot_direct(26)
+      10, 1,    -- 33: invoke(1)
+      12, 40,   -- 35: jmp(40)
+      0,        -- 37: push_frame
+      5, 26,    -- 38: get_slot_direct(26)
+      8, 99,    -- 40: set_slot_direct(99)
+      0,        -- 42: push_frame
+      0,        -- 43: push_frame
+      5, 99,    -- 44: get_slot_direct(99)
+      5, 78,    -- 46: get_slot_direct(78)
+      8, 100,   -- 48: set_slot_direct(100)
+      0,        -- 50: push_frame
+      5, 100,   -- 51: get_slot_direct(100)
+      22,       -- 53: un_typeof
+      1, 25,    -- 54: push_literal(25)
+      23,       -- 56: bi_eq
+      20,       -- 57: un_not
+      13, 66,   -- 58: jmp_unless(66)
+      0,        -- 60: push_frame
+      0,        -- 61: push_frame
+      5, 5,     -- 62: get_slot_direct(5)
+      8, 100,   -- 64: set_slot_direct(100)
+      0,        -- 66: push_frame
+      5, 100,   -- 67: get_slot_direct(100)
+      15,       -- 69: dup
+      7, 93,    -- 70: get_slot_direct_check(93)
+      19,       -- 72: swap
+      0,        -- 73: push_frame
+      5, 99,    -- 74: get_slot_direct(99)
+      10, 1,    -- 76: invoke(1)
+      11        -- 78: return
+    }
+  },
+  ifunc.Function:new{ -- ".bind"
+    name = jsval.newString(".bind"),
+    id = 19,
+    nargs = 0,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      1, 0,     -- 5: push_literal(0)
+      8, 102,   -- 7: set_slot_direct(102)
+      0,        -- 9: push_frame
+      1, 0,     -- 10: push_literal(0)
+      8, 103,   -- 12: set_slot_direct(103)
+      0,        -- 14: push_frame
+      1, 0,     -- 15: push_literal(0)
+      8, 104,   -- 17: set_slot_direct(104)
+      0,        -- 19: push_frame
+      1, 0,     -- 20: push_literal(0)
+      8, 105,   -- 22: set_slot_direct(105)
+      0,        -- 24: push_frame
+      1, 0,     -- 25: push_literal(0)
+      8, 53,    -- 27: set_slot_direct(53)
+      0,        -- 29: push_frame
+      0,        -- 30: push_frame
+      5, 26,    -- 31: get_slot_direct(26)
+      8, 102,   -- 33: set_slot_direct(102)
+      0,        -- 35: push_frame
+      5, 2,     -- 36: get_slot_direct(2)
+      5, 55,    -- 38: get_slot_direct(55)
+      1, 18,    -- 40: push_literal(18)
+      23,       -- 42: bi_eq
+      13, 49,   -- 43: jmp_unless(49)
+      0,        -- 45: push_frame
+      5, 102,   -- 46: get_slot_direct(102)
+      11,       -- 48: return
+      0,        -- 49: push_frame
+      4, 20,    -- 50: new_function(20)
+      8, 103,   -- 52: set_slot_direct(103)
+      0,        -- 54: push_frame
+      0,        -- 55: push_frame
+      5, 2,     -- 56: get_slot_direct(2)
+      1, 18,    -- 58: push_literal(18)
+      6,        -- 60: get_slot_indirect
+      8, 104,   -- 61: set_slot_direct(104)
+      0,        -- 63: push_frame
+      5, 2,     -- 64: get_slot_direct(2)
+      5, 55,    -- 66: get_slot_direct(55)
+      1, 31,    -- 68: push_literal(31)
+      23,       -- 70: bi_eq
+      13, 88,   -- 71: jmp_unless(88)
+      0,        -- 73: push_frame
+      5, 103,   -- 74: get_slot_direct(103)
+      0,        -- 76: push_frame
+      5, 26,    -- 77: get_slot_direct(26)
+      0,        -- 79: push_frame
+      4, 22,    -- 80: new_function(22)
+      17,       -- 82: over
+      8, 110,   -- 83: set_slot_direct(110)
+      10, 1,    -- 85: invoke(1)
+      11,       -- 87: return
+      0,        -- 88: push_frame
+      3,        -- 89: new_array
+      8, 105,   -- 90: set_slot_direct(105)
+      0,        -- 92: push_frame
+      1, 31,    -- 93: push_literal(31)
+      8, 53,    -- 95: set_slot_direct(53)
+      12, 125,  -- 97: jmp(125)
+      0,        -- 99: push_frame
+      5, 105,   -- 100: get_slot_direct(105)
+      15,       -- 102: dup
+      7, 69,    -- 103: get_slot_direct_check(69)
+      19,       -- 105: swap
+      0,        -- 106: push_frame
+      5, 2,     -- 107: get_slot_direct(2)
+      0,        -- 109: push_frame
+      5, 53,    -- 110: get_slot_direct(53)
+      6,        -- 112: get_slot_indirect
+      10, 1,    -- 113: invoke(1)
+      14,       -- 115: pop
+      0,        -- 116: push_frame
+      15,       -- 117: dup
+      5, 53,    -- 118: get_slot_direct(53)
+      1, 31,    -- 120: push_literal(31)
+      26,       -- 122: bi_add
+      8, 53,    -- 123: set_slot_direct(53)
+      0,        -- 125: push_frame
+      5, 53,    -- 126: get_slot_direct(53)
+      0,        -- 128: push_frame
+      5, 2,     -- 129: get_slot_direct(2)
+      5, 55,    -- 131: get_slot_direct(55)
+      19,       -- 133: swap
+      24,       -- 134: bi_gt
+      20,       -- 135: un_not
+      13, 99,   -- 136: jmp_unless(99)
+      0,        -- 138: push_frame
+      5, 103,   -- 139: get_slot_direct(103)
+      0,        -- 141: push_frame
+      5, 26,    -- 142: get_slot_direct(26)
+      0,        -- 144: push_frame
+      4, 23,    -- 145: new_function(23)
+      17,       -- 147: over
+      8, 111,   -- 148: set_slot_direct(111)
+      10, 1,    -- 150: invoke(1)
+      11        -- 152: return
+    }
+  },
+  ifunc.Function:new{ -- "addHasInstance"
+    name = jsval.newString("addHasInstance"),
+    id = 20,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 106,   -- 8: set_slot_direct(106)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 106,   -- 12: get_slot_direct(106)
+      4, 21,    -- 14: new_function(21)
+      8, 108,   -- 16: set_slot_direct(108)
+      0,        -- 18: push_frame
+      5, 106,   -- 19: get_slot_direct(106)
+      11        -- 21: return
+    }
+  },
+  ifunc.Function:new{ -- ".hasInstance"
+    name = jsval.newString(".hasInstance"),
+    id = 21,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 107,   -- 8: set_slot_direct(107)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 102,   -- 12: get_slot_direct(102)
+      15,       -- 14: dup
+      7, 108,   -- 15: get_slot_direct_check(108)
+      19,       -- 17: swap
+      0,        -- 18: push_frame
+      5, 107,   -- 19: get_slot_direct(107)
+      10, 1,    -- 21: invoke(1)
+      11        -- 23: return
+    }
+  },
+  ifunc.Function:new{ -- "bind0"
+    name = jsval.newString("bind0"),
+    id = 22,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 102,   -- 5: get_slot_direct(102)
       15,       -- 7: dup
-      7, 88,    -- 8: get_slot_direct_check(88)
+      7, 109,   -- 8: get_slot_direct_check(109)
       19,       -- 10: swap
       0,        -- 11: push_frame
-      5, 83,    -- 12: get_slot_direct(83)
+      5, 104,   -- 12: get_slot_direct(104)
       0,        -- 14: push_frame
       5, 2,     -- 15: get_slot_direct(2)
       10, 2,    -- 17: invoke(2)
@@ -2023,7 +2520,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "bindN"
     name = jsval.newString("bindN"),
-    id = 19,
+    id = 23,
     nargs = 0,
     max_stack = 7,
     bytecode = {
@@ -2031,21 +2528,21 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 81,    -- 5: get_slot_direct(81)
+      5, 102,   -- 5: get_slot_direct(102)
       15,       -- 7: dup
-      7, 88,    -- 8: get_slot_direct_check(88)
+      7, 109,   -- 8: get_slot_direct_check(109)
       19,       -- 10: swap
       0,        -- 11: push_frame
-      5, 83,    -- 12: get_slot_direct(83)
+      5, 104,   -- 12: get_slot_direct(104)
       0,        -- 14: push_frame
-      5, 51,    -- 15: get_slot_direct(51)
-      5, 13,    -- 17: get_slot_direct(13)
-      5, 71,    -- 19: get_slot_direct(71)
+      5, 68,    -- 15: get_slot_direct(68)
+      5, 12,    -- 17: get_slot_direct(12)
+      5, 90,    -- 19: get_slot_direct(90)
       15,       -- 21: dup
-      7, 88,    -- 22: get_slot_direct_check(88)
+      7, 109,   -- 22: get_slot_direct_check(109)
       19,       -- 24: swap
       0,        -- 25: push_frame
-      5, 84,    -- 26: get_slot_direct(84)
+      5, 105,   -- 26: get_slot_direct(105)
       0,        -- 28: push_frame
       5, 2,     -- 29: get_slot_direct(2)
       10, 2,    -- 31: invoke(2)
@@ -2055,81 +2552,80 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".hasInstance"
     name = jsval.newString(".hasInstance"),
-    id = 20,
+    id = 24,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 86,    -- 8: set_slot_direct(86)
+      8, 107,   -- 8: set_slot_direct(107)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 92,    -- 14: set_slot_direct(92)
+      8, 113,   -- 14: set_slot_direct(113)
       0,        -- 16: push_frame
-      5, 86,    -- 17: get_slot_direct(86)
+      5, 107,   -- 17: get_slot_direct(107)
       22,       -- 19: un_typeof
-      1, 69,    -- 20: push_literal(69)
+      1, 88,    -- 20: push_literal(88)
       23,       -- 22: bi_eq
       20,       -- 23: un_not
       13, 29,   -- 24: jmp_unless(29)
-      1, 10,    -- 26: push_literal(10)
+      1, 32,    -- 26: push_literal(32)
       11,       -- 28: return
       0,        -- 29: push_frame
       0,        -- 30: push_frame
-      5, 20,    -- 31: get_slot_direct(20)
-      5, 13,    -- 33: get_slot_direct(13)
-      8, 92,    -- 35: set_slot_direct(92)
+      5, 26,    -- 31: get_slot_direct(26)
+      5, 12,    -- 33: get_slot_direct(12)
+      8, 113,   -- 35: set_slot_direct(113)
       0,        -- 37: push_frame
-      5, 92,    -- 38: get_slot_direct(92)
+      5, 113,   -- 38: get_slot_direct(113)
       22,       -- 40: un_typeof
-      1, 69,    -- 41: push_literal(69)
+      1, 88,    -- 41: push_literal(88)
       23,       -- 43: bi_eq
       20,       -- 44: un_not
-      13, 59,   -- 45: jmp_unless(59)
+      13, 58,   -- 45: jmp_unless(58)
       0,        -- 47: push_frame
-      5, 4,     -- 48: get_slot_direct(4)
-      15,       -- 50: dup
-      7, 22,    -- 51: get_slot_direct_check(22)
-      19,       -- 53: swap
-      1, 23,    -- 54: push_literal(23)
-      10, 1,    -- 56: invoke(1)
-      14,       -- 58: pop
-      12, 92,   -- 59: jmp(92)
+      5, 7,     -- 48: get_slot_direct(7)
+      0,        -- 50: push_frame
+      5, 26,    -- 51: get_slot_direct(26)
+      1, 42,    -- 53: push_literal(42)
+      10, 1,    -- 55: invoke(1)
+      14,       -- 57: pop
+      12, 91,   -- 58: jmp(91)
+      0,        -- 60: push_frame
       0,        -- 61: push_frame
-      0,        -- 62: push_frame
-      5, 86,    -- 63: get_slot_direct(86)
-      5, 93,    -- 65: get_slot_direct(93)
-      8, 86,    -- 67: set_slot_direct(86)
-      0,        -- 69: push_frame
-      5, 86,    -- 70: get_slot_direct(86)
-      1, 21,    -- 72: push_literal(21)
-      23,       -- 74: bi_eq
-      13, 80,   -- 75: jmp_unless(80)
-      1, 10,    -- 77: push_literal(10)
-      11,       -- 79: return
-      0,        -- 80: push_frame
-      5, 92,    -- 81: get_slot_direct(92)
-      0,        -- 83: push_frame
-      5, 86,    -- 84: get_slot_direct(86)
-      23,       -- 86: bi_eq
-      13, 92,   -- 87: jmp_unless(92)
-      1, 94,    -- 89: push_literal(94)
-      11,       -- 91: return
-      1, 94,    -- 92: push_literal(94)
-      20,       -- 94: un_not
-      13, 61,   -- 95: jmp_unless(61)
-      1, 0,     -- 97: push_literal(0)
-      11        -- 99: return
+      5, 107,   -- 62: get_slot_direct(107)
+      5, 114,   -- 64: get_slot_direct(114)
+      8, 107,   -- 66: set_slot_direct(107)
+      0,        -- 68: push_frame
+      5, 107,   -- 69: get_slot_direct(107)
+      1, 41,    -- 71: push_literal(41)
+      23,       -- 73: bi_eq
+      13, 79,   -- 74: jmp_unless(79)
+      1, 32,    -- 76: push_literal(32)
+      11,       -- 78: return
+      0,        -- 79: push_frame
+      5, 113,   -- 80: get_slot_direct(113)
+      0,        -- 82: push_frame
+      5, 107,   -- 83: get_slot_direct(107)
+      23,       -- 85: bi_eq
+      13, 91,   -- 86: jmp_unless(91)
+      1, 115,   -- 88: push_literal(115)
+      11,       -- 90: return
+      1, 115,   -- 91: push_literal(115)
+      20,       -- 93: un_not
+      13, 60,   -- 94: jmp_unless(60)
+      1, 0,     -- 96: push_literal(0)
+      11        -- 98: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 21,
+    id = 25,
     nargs = 0,
     max_stack = 5,
     bytecode = {
@@ -2138,61 +2634,61 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 69,    -- 7: set_slot_direct(69)
+      8, 88,    -- 7: set_slot_direct(88)
       0,        -- 9: push_frame
       1, 0,     -- 10: push_literal(0)
-      8, 57,    -- 12: set_slot_direct(57)
+      8, 75,    -- 12: set_slot_direct(75)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
-      5, 13,    -- 17: get_slot_direct(13)
+      5, 26,    -- 15: get_slot_direct(26)
+      5, 12,    -- 17: get_slot_direct(12)
       22,       -- 19: un_typeof
-      1, 69,    -- 20: push_literal(69)
+      1, 88,    -- 20: push_literal(88)
       23,       -- 22: bi_eq
       13, 44,   -- 23: jmp_unless(44)
       0,        -- 25: push_frame
       0,        -- 26: push_frame
-      5, 4,     -- 27: get_slot_direct(4)
+      5, 15,    -- 27: get_slot_direct(15)
       15,       -- 29: dup
-      7, 96,    -- 30: get_slot_direct_check(96)
+      7, 116,   -- 30: get_slot_direct_check(116)
       19,       -- 32: swap
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      5, 13,    -- 36: get_slot_direct(13)
+      5, 26,    -- 34: get_slot_direct(26)
+      5, 12,    -- 36: get_slot_direct(12)
       10, 1,    -- 38: invoke(1)
-      8, 69,    -- 40: set_slot_direct(69)
+      8, 88,    -- 40: set_slot_direct(88)
       12, 48,   -- 42: jmp(48)
       0,        -- 44: push_frame
       2,        -- 45: new_object
-      8, 69,    -- 46: set_slot_direct(69)
+      8, 88,    -- 46: set_slot_direct(88)
       0,        -- 48: push_frame
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
+      5, 26,    -- 50: get_slot_direct(26)
       15,       -- 52: dup
-      7, 88,    -- 53: get_slot_direct_check(88)
+      7, 109,   -- 53: get_slot_direct_check(109)
       19,       -- 55: swap
       0,        -- 56: push_frame
-      5, 69,    -- 57: get_slot_direct(69)
+      5, 88,    -- 57: get_slot_direct(88)
       0,        -- 59: push_frame
       5, 2,     -- 60: get_slot_direct(2)
       10, 2,    -- 62: invoke(2)
-      8, 57,    -- 64: set_slot_direct(57)
+      8, 75,    -- 64: set_slot_direct(75)
       0,        -- 66: push_frame
-      5, 57,    -- 67: get_slot_direct(57)
+      5, 75,    -- 67: get_slot_direct(75)
       22,       -- 69: un_typeof
-      1, 69,    -- 70: push_literal(69)
+      1, 88,    -- 70: push_literal(88)
       23,       -- 72: bi_eq
       13, 79,   -- 73: jmp_unless(79)
       0,        -- 75: push_frame
-      5, 57,    -- 76: get_slot_direct(57)
+      5, 75,    -- 76: get_slot_direct(75)
       11,       -- 78: return
       0,        -- 79: push_frame
-      5, 69,    -- 80: get_slot_direct(69)
+      5, 88,    -- 80: get_slot_direct(88)
       11        -- 82: return
     }
   },
   ifunc.Function:new{ -- ".toString"
     name = jsval.newString(".toString"),
-    id = 22,
+    id = 26,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -2201,36 +2697,36 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 57,    -- 7: set_slot_direct(57)
+      8, 75,    -- 7: set_slot_direct(75)
       0,        -- 9: push_frame
-      1, 97,    -- 10: push_literal(97)
-      8, 57,    -- 12: set_slot_direct(57)
+      1, 117,   -- 10: push_literal(117)
+      8, 75,    -- 12: set_slot_direct(75)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
-      5, 9,     -- 17: get_slot_direct(9)
+      5, 26,    -- 15: get_slot_direct(26)
+      5, 19,    -- 17: get_slot_direct(19)
       13, 33,   -- 19: jmp_unless(33)
       0,        -- 21: push_frame
       15,       -- 22: dup
-      5, 57,    -- 23: get_slot_direct(57)
+      5, 75,    -- 23: get_slot_direct(75)
       0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      5, 9,     -- 28: get_slot_direct(9)
+      5, 26,    -- 26: get_slot_direct(26)
+      5, 19,    -- 28: get_slot_direct(19)
       26,       -- 30: bi_add
-      8, 57,    -- 31: set_slot_direct(57)
+      8, 75,    -- 31: set_slot_direct(75)
       0,        -- 33: push_frame
       15,       -- 34: dup
-      5, 57,    -- 35: get_slot_direct(57)
-      1, 98,    -- 37: push_literal(98)
+      5, 75,    -- 35: get_slot_direct(75)
+      1, 118,   -- 37: push_literal(118)
       26,       -- 39: bi_add
-      8, 57,    -- 40: set_slot_direct(57)
+      8, 75,    -- 40: set_slot_direct(75)
       0,        -- 42: push_frame
-      5, 57,    -- 43: get_slot_direct(57)
+      5, 75,    -- 43: get_slot_direct(75)
       11        -- 45: return
     }
   },
   ifunc.Function:new{ -- ".toString"
     name = jsval.newString(".toString"),
-    id = 23,
+    id = 27,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -2238,72 +2734,489 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 100,   -- 5: get_slot_direct(100)
-      5, 13,    -- 7: get_slot_direct(13)
-      5, 101,   -- 9: get_slot_direct(101)
-      15,       -- 11: dup
-      7, 74,    -- 12: get_slot_direct_check(74)
-      19,       -- 14: swap
-      0,        -- 15: push_frame
-      5, 20,    -- 16: get_slot_direct(20)
-      10, 1,    -- 18: invoke(1)
-      13, 26,   -- 20: jmp_unless(26)
-      1, 102,   -- 22: push_literal(102)
-      12, 28,   -- 24: jmp(28)
-      1, 103,   -- 26: push_literal(103)
-      11        -- 28: return
+      5, 3,     -- 5: get_slot_direct(3)
+      15,       -- 7: dup
+      7, 93,    -- 8: get_slot_direct_check(93)
+      19,       -- 10: swap
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      10, 1,    -- 14: invoke(1)
+      13, 22,   -- 16: jmp_unless(22)
+      1, 119,   -- 18: push_literal(119)
+      12, 24,   -- 20: jmp(24)
+      1, 120,   -- 22: push_literal(120)
+      11        -- 24: return
+    }
+  },
+  ifunc.Function:new{ -- ".toString"
+    name = jsval.newString(".toString"),
+    id = 28,
+    nargs = 1,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 121,   -- 8: set_slot_direct(121)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 122,   -- 14: set_slot_direct(122)
+      0,        -- 16: push_frame
+      1, 0,     -- 17: push_literal(0)
+      8, 123,   -- 19: set_slot_direct(123)
+      0,        -- 21: push_frame
+      1, 0,     -- 22: push_literal(0)
+      8, 124,   -- 24: set_slot_direct(124)
+      0,        -- 26: push_frame
+      1, 0,     -- 27: push_literal(0)
+      8, 125,   -- 29: set_slot_direct(125)
+      0,        -- 31: push_frame
+      1, 0,     -- 32: push_literal(0)
+      8, 126,   -- 34: set_slot_direct(126)
+      0,        -- 36: push_frame
+      1, 0,     -- 37: push_literal(0)
+      8, 127,   -- 39: set_slot_direct(127)
+      0,        -- 41: push_frame
+      1, 0,     -- 42: push_literal(0)
+      8, 128,   -- 44: set_slot_direct(128)
+      0,        -- 46: push_frame
+      0,        -- 47: push_frame
+      5, 4,     -- 48: get_slot_direct(4)
+      15,       -- 50: dup
+      7, 93,    -- 51: get_slot_direct_check(93)
+      19,       -- 53: swap
+      0,        -- 54: push_frame
+      5, 26,    -- 55: get_slot_direct(26)
+      10, 1,    -- 57: invoke(1)
+      8, 122,   -- 59: set_slot_direct(122)
+      0,        -- 61: push_frame
+      0,        -- 62: push_frame
+      5, 121,   -- 63: get_slot_direct(121)
+      1, 0,     -- 65: push_literal(0)
+      23,       -- 67: bi_eq
+      13, 74,   -- 68: jmp_unless(74)
+      1, 129,   -- 70: push_literal(129)
+      12, 85,   -- 72: jmp(85)
+      0,        -- 74: push_frame
+      5, 8,     -- 75: get_slot_direct(8)
+      0,        -- 77: push_frame
+      5, 26,    -- 78: get_slot_direct(26)
+      0,        -- 80: push_frame
+      5, 121,   -- 81: get_slot_direct(121)
+      10, 1,    -- 83: invoke(1)
+      8, 123,   -- 85: set_slot_direct(123)
+      0,        -- 87: push_frame
+      5, 123,   -- 88: get_slot_direct(123)
+      1, 130,   -- 90: push_literal(130)
+      19,       -- 92: swap
+      24,       -- 93: bi_gt
+      15,       -- 94: dup
+      20,       -- 95: un_not
+      13, 105,  -- 96: jmp_unless(105)
+      14,       -- 98: pop
+      0,        -- 99: push_frame
+      5, 123,   -- 100: get_slot_direct(123)
+      1, 131,   -- 102: push_literal(131)
+      24,       -- 104: bi_gt
+      13, 118,  -- 105: jmp_unless(118)
+      0,        -- 107: push_frame
+      5, 7,     -- 108: get_slot_direct(7)
+      0,        -- 110: push_frame
+      5, 26,    -- 111: get_slot_direct(26)
+      1, 132,   -- 113: push_literal(132)
+      10, 1,    -- 115: invoke(1)
+      14,       -- 117: pop
+      0,        -- 118: push_frame
+      5, 123,   -- 119: get_slot_direct(123)
+      1, 129,   -- 121: push_literal(129)
+      23,       -- 123: bi_eq
+      13, 133,  -- 124: jmp_unless(133)
+      1, 66,    -- 126: push_literal(66)
+      0,        -- 128: push_frame
+      5, 122,   -- 129: get_slot_direct(122)
+      26,       -- 131: bi_add
+      11,       -- 132: return
+      0,        -- 133: push_frame
+      5, 122,   -- 134: get_slot_direct(122)
+      0,        -- 136: push_frame
+      5, 122,   -- 137: get_slot_direct(122)
+      23,       -- 139: bi_eq
+      20,       -- 140: un_not
+      13, 146,  -- 141: jmp_unless(146)
+      1, 133,   -- 143: push_literal(133)
+      11,       -- 145: return
+      0,        -- 146: push_frame
+      5, 122,   -- 147: get_slot_direct(122)
+      1, 18,    -- 149: push_literal(18)
+      23,       -- 151: bi_eq
+      13, 157,  -- 152: jmp_unless(157)
+      1, 134,   -- 154: push_literal(134)
+      11,       -- 156: return
+      0,        -- 157: push_frame
+      1, 32,    -- 158: push_literal(32)
+      8, 124,   -- 160: set_slot_direct(124)
+      0,        -- 162: push_frame
+      5, 122,   -- 163: get_slot_direct(122)
+      1, 18,    -- 165: push_literal(18)
+      19,       -- 167: swap
+      24,       -- 168: bi_gt
+      13, 183,  -- 169: jmp_unless(183)
+      0,        -- 171: push_frame
+      1, 115,   -- 172: push_literal(115)
+      8, 124,   -- 174: set_slot_direct(124)
+      0,        -- 176: push_frame
+      0,        -- 177: push_frame
+      5, 122,   -- 178: get_slot_direct(122)
+      21,       -- 180: un_minus
+      8, 122,   -- 181: set_slot_direct(122)
+      0,        -- 183: push_frame
+      5, 122,   -- 184: get_slot_direct(122)
+      1, 27,    -- 186: push_literal(27)
+      23,       -- 188: bi_eq
+      13, 206,  -- 189: jmp_unless(206)
+      0,        -- 191: push_frame
+      5, 124,   -- 192: get_slot_direct(124)
+      13, 200,  -- 194: jmp_unless(200)
+      1, 135,   -- 196: push_literal(135)
+      12, 202,  -- 198: jmp(202)
+      1, 66,    -- 200: push_literal(66)
+      1, 136,   -- 202: push_literal(136)
+      26,       -- 204: bi_add
+      11,       -- 205: return
+      0,        -- 206: push_frame
+      0,        -- 207: push_frame
+      5, 28,    -- 208: get_slot_direct(28)
+      15,       -- 210: dup
+      7, 29,    -- 211: get_slot_direct_check(29)
+      19,       -- 213: swap
+      0,        -- 214: push_frame
+      5, 122,   -- 215: get_slot_direct(122)
+      10, 1,    -- 217: invoke(1)
+      8, 125,   -- 219: set_slot_direct(125)
+      0,        -- 221: push_frame
+      0,        -- 222: push_frame
+      5, 122,   -- 223: get_slot_direct(122)
+      0,        -- 225: push_frame
+      5, 125,   -- 226: get_slot_direct(125)
+      27,       -- 228: bi_sub
+      8, 126,   -- 229: set_slot_direct(126)
+      0,        -- 231: push_frame
+      1, 66,    -- 232: push_literal(66)
+      8, 127,   -- 234: set_slot_direct(127)
+      12, 345,  -- 236: jmp(345)
+      0,        -- 238: push_frame
+      1, 0,     -- 239: push_literal(0)
+      8, 137,   -- 241: set_slot_direct(137)
+      0,        -- 243: push_frame
+      1, 0,     -- 244: push_literal(0)
+      8, 138,   -- 246: set_slot_direct(138)
+      0,        -- 248: push_frame
+      0,        -- 249: push_frame
+      5, 28,    -- 250: get_slot_direct(28)
+      15,       -- 252: dup
+      7, 29,    -- 253: get_slot_direct_check(29)
+      19,       -- 255: swap
+      0,        -- 256: push_frame
+      5, 125,   -- 257: get_slot_direct(125)
+      0,        -- 259: push_frame
+      5, 121,   -- 260: get_slot_direct(121)
+      29,       -- 262: bi_div
+      10, 1,    -- 263: invoke(1)
+      8, 137,   -- 265: set_slot_direct(137)
+      0,        -- 267: push_frame
+      0,        -- 268: push_frame
+      5, 125,   -- 269: get_slot_direct(125)
+      0,        -- 271: push_frame
+      5, 137,   -- 272: get_slot_direct(137)
+      0,        -- 274: push_frame
+      5, 121,   -- 275: get_slot_direct(121)
+      28,       -- 277: bi_mul
+      27,       -- 278: bi_sub
+      8, 138,   -- 279: set_slot_direct(138)
+      0,        -- 281: push_frame
+      5, 138,   -- 282: get_slot_direct(138)
+      1, 129,   -- 284: push_literal(129)
+      19,       -- 286: swap
+      24,       -- 287: bi_gt
+      13, 314,  -- 288: jmp_unless(314)
+      0,        -- 290: push_frame
+      0,        -- 291: push_frame
+      5, 36,    -- 292: get_slot_direct(36)
+      15,       -- 294: dup
+      7, 139,   -- 295: get_slot_direct_check(139)
+      19,       -- 297: swap
+      1, 140,   -- 298: push_literal(140)
+      0,        -- 300: push_frame
+      5, 138,   -- 301: get_slot_direct(138)
+      26,       -- 303: bi_add
+      10, 1,    -- 304: invoke(1)
+      0,        -- 306: push_frame
+      5, 127,   -- 307: get_slot_direct(127)
+      26,       -- 309: bi_add
+      8, 127,   -- 310: set_slot_direct(127)
+      12, 339,  -- 312: jmp(339)
+      0,        -- 314: push_frame
+      0,        -- 315: push_frame
+      5, 36,    -- 316: get_slot_direct(36)
+      15,       -- 318: dup
+      7, 139,   -- 319: get_slot_direct_check(139)
+      19,       -- 321: swap
+      1, 141,   -- 322: push_literal(141)
+      0,        -- 324: push_frame
+      5, 138,   -- 325: get_slot_direct(138)
+      26,       -- 327: bi_add
+      1, 129,   -- 328: push_literal(129)
+      27,       -- 330: bi_sub
+      10, 1,    -- 331: invoke(1)
+      0,        -- 333: push_frame
+      5, 127,   -- 334: get_slot_direct(127)
+      26,       -- 336: bi_add
+      8, 127,   -- 337: set_slot_direct(127)
+      0,        -- 339: push_frame
+      0,        -- 340: push_frame
+      5, 137,   -- 341: get_slot_direct(137)
+      8, 125,   -- 343: set_slot_direct(125)
+      0,        -- 345: push_frame
+      5, 125,   -- 346: get_slot_direct(125)
+      1, 18,    -- 348: push_literal(18)
+      23,       -- 350: bi_eq
+      20,       -- 351: un_not
+      20,       -- 352: un_not
+      13, 238,  -- 353: jmp_unless(238)
+      0,        -- 355: push_frame
+      5, 127,   -- 356: get_slot_direct(127)
+      1, 66,    -- 358: push_literal(66)
+      23,       -- 360: bi_eq
+      13, 368,  -- 361: jmp_unless(368)
+      0,        -- 363: push_frame
+      1, 134,   -- 364: push_literal(134)
+      8, 127,   -- 366: set_slot_direct(127)
+      0,        -- 368: push_frame
+      5, 124,   -- 369: get_slot_direct(124)
+      13, 382,  -- 371: jmp_unless(382)
+      0,        -- 373: push_frame
+      1, 135,   -- 374: push_literal(135)
+      0,        -- 376: push_frame
+      5, 127,   -- 377: get_slot_direct(127)
+      26,       -- 379: bi_add
+      8, 127,   -- 380: set_slot_direct(127)
+      0,        -- 382: push_frame
+      1, 142,   -- 383: push_literal(142)
+      8, 128,   -- 385: set_slot_direct(128)
+      0,        -- 387: push_frame
+      5, 126,   -- 388: get_slot_direct(126)
+      0,        -- 390: push_frame
+      5, 128,   -- 391: get_slot_direct(128)
+      24,       -- 393: bi_gt
+      13, 524,  -- 394: jmp_unless(524)
+      0,        -- 396: push_frame
+      15,       -- 397: dup
+      5, 127,   -- 398: get_slot_direct(127)
+      1, 143,   -- 400: push_literal(143)
+      26,       -- 402: bi_add
+      8, 127,   -- 403: set_slot_direct(127)
+      12, 514,  -- 405: jmp(514)
+      0,        -- 407: push_frame
+      0,        -- 408: push_frame
+      5, 28,    -- 409: get_slot_direct(28)
+      15,       -- 411: dup
+      7, 29,    -- 412: get_slot_direct_check(29)
+      19,       -- 414: swap
+      0,        -- 415: push_frame
+      5, 126,   -- 416: get_slot_direct(126)
+      0,        -- 418: push_frame
+      5, 121,   -- 419: get_slot_direct(121)
+      28,       -- 421: bi_mul
+      10, 1,    -- 422: invoke(1)
+      8, 138,   -- 424: set_slot_direct(138)
+      0,        -- 426: push_frame
+      5, 138,   -- 427: get_slot_direct(138)
+      1, 129,   -- 429: push_literal(129)
+      19,       -- 431: swap
+      24,       -- 432: bi_gt
+      13, 459,  -- 433: jmp_unless(459)
+      0,        -- 435: push_frame
+      15,       -- 436: dup
+      5, 127,   -- 437: get_slot_direct(127)
+      0,        -- 439: push_frame
+      5, 36,    -- 440: get_slot_direct(36)
+      15,       -- 442: dup
+      7, 139,   -- 443: get_slot_direct_check(139)
+      19,       -- 445: swap
+      1, 140,   -- 446: push_literal(140)
+      0,        -- 448: push_frame
+      5, 138,   -- 449: get_slot_direct(138)
+      26,       -- 451: bi_add
+      10, 1,    -- 452: invoke(1)
+      26,       -- 454: bi_add
+      8, 127,   -- 455: set_slot_direct(127)
+      12, 484,  -- 457: jmp(484)
+      0,        -- 459: push_frame
+      15,       -- 460: dup
+      5, 127,   -- 461: get_slot_direct(127)
+      0,        -- 463: push_frame
+      5, 36,    -- 464: get_slot_direct(36)
+      15,       -- 466: dup
+      7, 139,   -- 467: get_slot_direct_check(139)
+      19,       -- 469: swap
+      1, 141,   -- 470: push_literal(141)
+      0,        -- 472: push_frame
+      5, 138,   -- 473: get_slot_direct(138)
+      26,       -- 475: bi_add
+      1, 129,   -- 476: push_literal(129)
+      27,       -- 478: bi_sub
+      10, 1,    -- 479: invoke(1)
+      26,       -- 481: bi_add
+      8, 127,   -- 482: set_slot_direct(127)
+      0,        -- 484: push_frame
+      15,       -- 485: dup
+      5, 126,   -- 486: get_slot_direct(126)
+      0,        -- 488: push_frame
+      5, 121,   -- 489: get_slot_direct(121)
+      28,       -- 491: bi_mul
+      8, 126,   -- 492: set_slot_direct(126)
+      0,        -- 494: push_frame
+      15,       -- 495: dup
+      5, 128,   -- 496: get_slot_direct(128)
+      0,        -- 498: push_frame
+      5, 121,   -- 499: get_slot_direct(121)
+      28,       -- 501: bi_mul
+      8, 128,   -- 502: set_slot_direct(128)
+      0,        -- 504: push_frame
+      15,       -- 505: dup
+      5, 126,   -- 506: get_slot_direct(126)
+      0,        -- 508: push_frame
+      5, 138,   -- 509: get_slot_direct(138)
+      27,       -- 511: bi_sub
+      8, 126,   -- 512: set_slot_direct(126)
+      0,        -- 514: push_frame
+      5, 126,   -- 515: get_slot_direct(126)
+      0,        -- 517: push_frame
+      5, 128,   -- 518: get_slot_direct(128)
+      24,       -- 520: bi_gt
+      20,       -- 521: un_not
+      13, 407,  -- 522: jmp_unless(407)
+      0,        -- 524: push_frame
+      5, 127,   -- 525: get_slot_direct(127)
+      11        -- 527: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 24,
+    id = 29,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 176,   -- 8: set_slot_direct(176)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 177,   -- 14: set_slot_direct(177)
+      0,        -- 16: push_frame
+      1, 0,     -- 17: push_literal(0)
+      8, 19,    -- 19: set_slot_direct(19)
+      0,        -- 21: push_frame
+      1, 0,     -- 22: push_literal(0)
+      8, 178,   -- 24: set_slot_direct(178)
+      0,        -- 26: push_frame
+      0,        -- 27: push_frame
+      5, 176,   -- 28: get_slot_direct(176)
+      1, 18,    -- 30: push_literal(18)
+      6,        -- 32: get_slot_indirect
+      8, 177,   -- 33: set_slot_direct(177)
+      0,        -- 35: push_frame
+      0,        -- 36: push_frame
+      5, 176,   -- 37: get_slot_direct(176)
+      1, 31,    -- 39: push_literal(31)
+      6,        -- 41: get_slot_indirect
+      8, 19,    -- 42: set_slot_direct(19)
+      0,        -- 44: push_frame
+      0,        -- 45: push_frame
+      5, 176,   -- 46: get_slot_direct(176)
+      1, 130,   -- 48: push_literal(130)
+      6,        -- 50: get_slot_indirect
+      8, 178,   -- 51: set_slot_direct(178)
+      0,        -- 53: push_frame
+      5, 177,   -- 54: get_slot_direct(177)
+      0,        -- 56: push_frame
+      5, 19,    -- 57: get_slot_direct(19)
+      0,        -- 59: push_frame
+      5, 178,   -- 60: get_slot_direct(178)
+      9,        -- 62: set_slot_indirect
+      0,        -- 63: push_frame
+      5, 10,    -- 64: get_slot_direct(10)
+      0,        -- 66: push_frame
+      5, 26,    -- 67: get_slot_direct(26)
+      0,        -- 69: push_frame
+      5, 177,   -- 70: get_slot_direct(177)
+      0,        -- 72: push_frame
+      5, 19,    -- 73: get_slot_direct(19)
+      10, 2,    -- 75: invoke(2)
+      14,       -- 77: pop
+      1, 0,     -- 78: push_literal(0)
+      11        -- 80: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 30,
     nargs = 3,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 106,   -- 8: set_slot_direct(106)
+      8, 180,   -- 8: set_slot_direct(180)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 107,   -- 15: set_slot_direct(107)
+      8, 181,   -- 15: set_slot_direct(181)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 109,   -- 22: set_slot_direct(109)
+      8, 182,   -- 22: set_slot_direct(182)
       14,       -- 24: pop
       0,        -- 25: push_frame
-      5, 109,   -- 26: get_slot_direct(109)
+      5, 182,   -- 26: get_slot_direct(182)
       15,       -- 28: dup
-      7, 74,    -- 29: get_slot_direct_check(74)
+      7, 93,    -- 29: get_slot_direct_check(93)
       19,       -- 31: swap
       0,        -- 32: push_frame
-      5, 106,   -- 33: get_slot_direct(106)
+      5, 180,   -- 33: get_slot_direct(180)
       10, 1,    -- 35: invoke(1)
       14,       -- 37: pop
       0,        -- 38: push_frame
-      5, 107,   -- 39: get_slot_direct(107)
+      5, 181,   -- 39: get_slot_direct(181)
       15,       -- 41: dup
-      7, 74,    -- 42: get_slot_direct_check(74)
+      7, 93,    -- 42: get_slot_direct_check(93)
       19,       -- 44: swap
       0,        -- 45: push_frame
-      5, 106,   -- 46: get_slot_direct(106)
+      5, 180,   -- 46: get_slot_direct(180)
       10, 1,    -- 48: invoke(1)
       15,       -- 50: dup
-      7, 105,   -- 51: get_slot_direct_check(105)
+      7, 179,   -- 51: get_slot_direct_check(179)
       19,       -- 53: swap
       0,        -- 54: push_frame
-      5, 106,   -- 55: get_slot_direct(106)
+      5, 180,   -- 55: get_slot_direct(180)
       0,        -- 57: push_frame
-      5, 107,   -- 58: get_slot_direct(107)
+      5, 181,   -- 58: get_slot_direct(181)
       0,        -- 60: push_frame
-      5, 109,   -- 61: get_slot_direct(109)
+      5, 182,   -- 61: get_slot_direct(182)
       10, 3,    -- 63: invoke(3)
       14,       -- 65: pop
       1, 0,     -- 66: push_literal(0)
@@ -2312,27 +3225,27 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 25,
+    id = 31,
     nargs = 3,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 106,   -- 8: set_slot_direct(106)
+      8, 180,   -- 8: set_slot_direct(180)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 107,   -- 15: set_slot_direct(107)
+      8, 181,   -- 15: set_slot_direct(181)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 109,   -- 22: set_slot_direct(109)
+      8, 182,   -- 22: set_slot_direct(182)
       14,       -- 24: pop
       1, 0,     -- 25: push_literal(0)
       11        -- 27: return
@@ -2340,123 +3253,123 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 26,
+    id = 32,
     nargs = 3,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 106,   -- 8: set_slot_direct(106)
+      8, 180,   -- 8: set_slot_direct(180)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 111,   -- 15: set_slot_direct(111)
+      8, 184,   -- 15: set_slot_direct(184)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 112,   -- 22: set_slot_direct(112)
+      8, 185,   -- 22: set_slot_direct(185)
       14,       -- 24: pop
       0,        -- 25: push_frame
-      5, 111,   -- 26: get_slot_direct(111)
+      5, 184,   -- 26: get_slot_direct(184)
       15,       -- 28: dup
-      7, 74,    -- 29: get_slot_direct_check(74)
+      7, 93,    -- 29: get_slot_direct_check(93)
       19,       -- 31: swap
       0,        -- 32: push_frame
-      5, 106,   -- 33: get_slot_direct(106)
+      5, 180,   -- 33: get_slot_direct(180)
       10, 1,    -- 35: invoke(1)
       11        -- 37: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 27,
+    id = 33,
     nargs = 3,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 106,   -- 8: set_slot_direct(106)
+      8, 180,   -- 8: set_slot_direct(180)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 111,   -- 15: set_slot_direct(111)
+      8, 184,   -- 15: set_slot_direct(184)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 112,   -- 22: set_slot_direct(112)
+      8, 185,   -- 22: set_slot_direct(185)
       14,       -- 24: pop
       0,        -- 25: push_frame
-      5, 112,   -- 26: get_slot_direct(112)
+      5, 185,   -- 26: get_slot_direct(185)
       15,       -- 28: dup
-      7, 74,    -- 29: get_slot_direct_check(74)
+      7, 93,    -- 29: get_slot_direct_check(93)
       19,       -- 31: swap
       0,        -- 32: push_frame
-      5, 106,   -- 33: get_slot_direct(106)
+      5, 180,   -- 33: get_slot_direct(180)
       10, 1,    -- 35: invoke(1)
       11        -- 37: return
     }
   },
   ifunc.Function:new{ -- "_define"
     name = jsval.newString("_define"),
-    id = 28,
+    id = 34,
     nargs = 3,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 9,     -- 8: set_slot_direct(9)
+      8, 19,    -- 8: set_slot_direct(19)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 113,   -- 15: set_slot_direct(113)
+      8, 186,   -- 15: set_slot_direct(186)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 114,   -- 22: set_slot_direct(114)
+      8, 187,   -- 22: set_slot_direct(187)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 115,   -- 28: set_slot_direct(115)
+      8, 188,   -- 28: set_slot_direct(188)
       0,        -- 30: push_frame
       0,        -- 31: push_frame
-      5, 113,   -- 32: get_slot_direct(113)
+      5, 186,   -- 32: get_slot_direct(186)
       15,       -- 34: dup
-      7, 79,    -- 35: get_slot_direct_check(79)
+      7, 98,    -- 35: get_slot_direct_check(98)
       19,       -- 37: swap
-      4, 29,    -- 38: new_function(29)
+      4, 35,    -- 38: new_function(35)
       10, 1,    -- 40: invoke(1)
-      8, 115,   -- 42: set_slot_direct(115)
+      8, 188,   -- 42: set_slot_direct(188)
       0,        -- 44: push_frame
       5, 1,     -- 45: get_slot_direct(1)
       0,        -- 47: push_frame
-      5, 9,     -- 48: get_slot_direct(9)
+      5, 19,    -- 48: get_slot_direct(19)
       0,        -- 50: push_frame
-      5, 114,   -- 51: get_slot_direct(114)
+      5, 187,   -- 51: get_slot_direct(187)
       15,       -- 53: dup
-      7, 88,    -- 54: get_slot_direct_check(88)
+      7, 109,   -- 54: get_slot_direct_check(109)
       19,       -- 56: swap
       0,        -- 57: push_frame
-      5, 20,    -- 58: get_slot_direct(20)
+      5, 26,    -- 58: get_slot_direct(26)
       0,        -- 60: push_frame
-      5, 115,   -- 61: get_slot_direct(115)
+      5, 188,   -- 61: get_slot_direct(188)
       10, 2,    -- 63: invoke(2)
       9,        -- 65: set_slot_indirect
       1, 0,     -- 66: push_literal(0)
@@ -2465,214 +3378,214 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 29,
+    id = 35,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 116,   -- 8: set_slot_direct(116)
+      8, 189,   -- 8: set_slot_direct(189)
       14,       -- 10: pop
       0,        -- 11: push_frame
       5, 1,     -- 12: get_slot_direct(1)
       0,        -- 14: push_frame
-      5, 116,   -- 15: get_slot_direct(116)
+      5, 189,   -- 15: get_slot_direct(189)
       6,        -- 17: get_slot_indirect
       11        -- 18: return
     }
   },
   ifunc.Function:new{ -- "make_tokenize"
     name = jsval.newString("make_tokenize"),
-    id = 30,
+    id = 36,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 121,   -- 8: set_slot_direct(121)
+      8, 194,   -- 8: set_slot_direct(194)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      4, 31,    -- 12: new_function(31)
+      4, 37,    -- 12: new_function(37)
       17,       -- 14: over
-      8, 119,   -- 15: set_slot_direct(119)
+      8, 192,   -- 15: set_slot_direct(192)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 119,   -- 19: get_slot_direct(119)
-      1, 119,   -- 21: push_literal(119)
-      8, 183,   -- 23: set_slot_direct(183)
+      5, 192,   -- 19: get_slot_direct(192)
+      1, 192,   -- 21: push_literal(192)
+      8, 244,   -- 23: set_slot_direct(244)
       0,        -- 25: push_frame
-      5, 119,   -- 26: get_slot_direct(119)
+      5, 192,   -- 26: get_slot_direct(192)
       0,        -- 28: push_frame
-      5, 184,   -- 29: get_slot_direct(184)
-      8, 185,   -- 31: set_slot_direct(185)
+      5, 245,   -- 29: get_slot_direct(245)
+      8, 246,   -- 31: set_slot_direct(246)
       0,        -- 33: push_frame
-      5, 119,   -- 34: get_slot_direct(119)
+      5, 192,   -- 34: get_slot_direct(192)
       0,        -- 36: push_frame
-      5, 121,   -- 37: get_slot_direct(121)
-      8, 186,   -- 39: set_slot_direct(186)
+      5, 194,   -- 37: get_slot_direct(194)
+      8, 247,   -- 39: set_slot_direct(247)
       0,        -- 41: push_frame
-      5, 119,   -- 42: get_slot_direct(119)
+      5, 192,   -- 42: get_slot_direct(192)
       11        -- 44: return
     }
   },
   ifunc.Function:new{ -- "tokenize"
     name = jsval.newString("tokenize"),
-    id = 31,
+    id = 37,
     nargs = 4,
     max_stack = 8,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 106,   -- 8: set_slot_direct(106)
+      8, 180,   -- 8: set_slot_direct(180)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 122,   -- 15: set_slot_direct(122)
+      8, 195,   -- 15: set_slot_direct(195)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 123,   -- 22: set_slot_direct(123)
+      8, 196,   -- 22: set_slot_direct(196)
       15,       -- 24: dup
-      5, 124,   -- 25: get_slot_direct(124)
+      5, 153,   -- 25: get_slot_direct(153)
       0,        -- 27: push_frame
       19,       -- 28: swap
-      8, 125,   -- 29: set_slot_direct(125)
+      8, 197,   -- 29: set_slot_direct(197)
       14,       -- 31: pop
       0,        -- 32: push_frame
       1, 0,     -- 33: push_literal(0)
-      8, 126,   -- 35: set_slot_direct(126)
+      8, 198,   -- 35: set_slot_direct(198)
       0,        -- 37: push_frame
       1, 0,     -- 38: push_literal(0)
-      8, 36,    -- 40: set_slot_direct(36)
+      8, 52,    -- 40: set_slot_direct(52)
       0,        -- 42: push_frame
       1, 0,     -- 43: push_literal(0)
-      8, 37,    -- 45: set_slot_direct(37)
+      8, 53,    -- 45: set_slot_direct(53)
       0,        -- 47: push_frame
       1, 0,     -- 48: push_literal(0)
-      8, 24,    -- 50: set_slot_direct(24)
+      8, 55,    -- 50: set_slot_direct(55)
       0,        -- 52: push_frame
       1, 0,     -- 53: push_literal(0)
-      8, 127,   -- 55: set_slot_direct(127)
+      8, 23,    -- 55: set_slot_direct(23)
       0,        -- 57: push_frame
       1, 0,     -- 58: push_literal(0)
-      8, 128,   -- 60: set_slot_direct(128)
+      8, 199,   -- 60: set_slot_direct(199)
       0,        -- 62: push_frame
       1, 0,     -- 63: push_literal(0)
-      8, 46,    -- 65: set_slot_direct(46)
+      8, 63,    -- 65: set_slot_direct(63)
       0,        -- 67: push_frame
       1, 0,     -- 68: push_literal(0)
-      8, 57,    -- 70: set_slot_direct(57)
+      8, 75,    -- 70: set_slot_direct(75)
       0,        -- 72: push_frame
       1, 0,     -- 73: push_literal(0)
-      8, 129,   -- 75: set_slot_direct(129)
+      8, 200,   -- 75: set_slot_direct(200)
       0,        -- 77: push_frame
       1, 0,     -- 78: push_literal(0)
-      8, 130,   -- 80: set_slot_direct(130)
+      8, 201,   -- 80: set_slot_direct(201)
       0,        -- 82: push_frame
-      1, 6,     -- 83: push_literal(6)
-      8, 37,    -- 85: set_slot_direct(37)
+      1, 18,    -- 83: push_literal(18)
+      8, 53,    -- 85: set_slot_direct(53)
       0,        -- 87: push_frame
       0,        -- 88: push_frame
-      5, 106,   -- 89: get_slot_direct(106)
-      5, 24,    -- 91: get_slot_direct(24)
-      8, 24,    -- 93: set_slot_direct(24)
+      5, 180,   -- 89: get_slot_direct(180)
+      5, 55,    -- 91: get_slot_direct(55)
+      8, 55,    -- 93: set_slot_direct(55)
       0,        -- 95: push_frame
       3,        -- 96: new_array
-      8, 57,    -- 97: set_slot_direct(57)
+      8, 75,    -- 97: set_slot_direct(75)
       0,        -- 99: push_frame
-      4, 32,    -- 100: new_function(32)
-      8, 129,   -- 102: set_slot_direct(129)
+      4, 38,    -- 100: new_function(38)
+      8, 200,   -- 102: set_slot_direct(200)
       0,        -- 104: push_frame
-      4, 33,    -- 105: new_function(33)
-      8, 130,   -- 107: set_slot_direct(130)
+      4, 39,    -- 105: new_function(39)
+      8, 201,   -- 107: set_slot_direct(201)
       0,        -- 109: push_frame
-      5, 106,   -- 110: get_slot_direct(106)
+      5, 180,   -- 110: get_slot_direct(180)
       20,       -- 112: un_not
       13, 118,  -- 113: jmp_unless(118)
       1, 0,     -- 115: push_literal(0)
       11,       -- 117: return
       0,        -- 118: push_frame
-      5, 122,   -- 119: get_slot_direct(122)
+      5, 195,   -- 119: get_slot_direct(195)
       22,       -- 121: un_typeof
-      1, 15,    -- 122: push_literal(15)
+      1, 38,    -- 122: push_literal(38)
       23,       -- 124: bi_eq
       20,       -- 125: un_not
       13, 133,  -- 126: jmp_unless(133)
       0,        -- 128: push_frame
-      1, 140,   -- 129: push_literal(140)
-      8, 122,   -- 131: set_slot_direct(122)
+      1, 210,   -- 129: push_literal(210)
+      8, 195,   -- 131: set_slot_direct(195)
       0,        -- 133: push_frame
-      5, 123,   -- 134: get_slot_direct(123)
+      5, 196,   -- 134: get_slot_direct(196)
       22,       -- 136: un_typeof
-      1, 15,    -- 137: push_literal(15)
+      1, 38,    -- 137: push_literal(38)
       23,       -- 139: bi_eq
       20,       -- 140: un_not
       13, 148,  -- 141: jmp_unless(148)
       0,        -- 143: push_frame
-      1, 141,   -- 144: push_literal(141)
-      8, 123,   -- 146: set_slot_direct(123)
+      1, 211,   -- 144: push_literal(211)
+      8, 196,   -- 146: set_slot_direct(196)
       0,        -- 148: push_frame
       0,        -- 149: push_frame
-      5, 106,   -- 150: get_slot_direct(106)
+      5, 180,   -- 150: get_slot_direct(180)
       15,       -- 152: dup
-      7, 39,    -- 153: get_slot_direct_check(39)
+      7, 56,    -- 153: get_slot_direct_check(56)
       19,       -- 155: swap
       0,        -- 156: push_frame
-      5, 37,    -- 157: get_slot_direct(37)
+      5, 53,    -- 157: get_slot_direct(53)
       10, 1,    -- 159: invoke(1)
-      8, 126,   -- 161: set_slot_direct(126)
+      8, 198,   -- 161: set_slot_direct(198)
       12, 2128, -- 163: jmp(2128)
       0,        -- 165: push_frame
       0,        -- 166: push_frame
-      5, 37,    -- 167: get_slot_direct(37)
-      8, 36,    -- 169: set_slot_direct(36)
+      5, 53,    -- 167: get_slot_direct(53)
+      8, 52,    -- 169: set_slot_direct(52)
       0,        -- 171: push_frame
-      5, 126,   -- 172: get_slot_direct(126)
-      1, 142,   -- 174: push_literal(142)
+      5, 198,   -- 172: get_slot_direct(198)
+      1, 212,   -- 174: push_literal(212)
       19,       -- 176: swap
       25,       -- 177: bi_gte
       13, 206,  -- 178: jmp_unless(206)
       0,        -- 180: push_frame
       15,       -- 181: dup
-      5, 37,    -- 182: get_slot_direct(37)
-      1, 8,     -- 184: push_literal(8)
+      5, 53,    -- 182: get_slot_direct(53)
+      1, 31,    -- 184: push_literal(31)
       26,       -- 186: bi_add
-      8, 37,    -- 187: set_slot_direct(37)
+      8, 53,    -- 187: set_slot_direct(53)
       0,        -- 189: push_frame
       0,        -- 190: push_frame
-      5, 106,   -- 191: get_slot_direct(106)
+      5, 180,   -- 191: get_slot_direct(180)
       15,       -- 193: dup
-      7, 39,    -- 194: get_slot_direct_check(39)
+      7, 56,    -- 194: get_slot_direct_check(56)
       19,       -- 196: swap
       0,        -- 197: push_frame
-      5, 37,    -- 198: get_slot_direct(37)
+      5, 53,    -- 198: get_slot_direct(53)
       10, 1,    -- 200: invoke(1)
-      8, 126,   -- 202: set_slot_direct(126)
+      8, 198,   -- 202: set_slot_direct(198)
       12, 2128, -- 204: jmp(2128)
       0,        -- 206: push_frame
-      5, 126,   -- 207: get_slot_direct(126)
-      1, 143,   -- 209: push_literal(143)
+      5, 198,   -- 207: get_slot_direct(198)
+      1, 213,   -- 209: push_literal(213)
       25,       -- 211: bi_gte
       15,       -- 212: dup
       13, 223,  -- 213: jmp_unless(223)
       14,       -- 215: pop
       0,        -- 216: push_frame
-      5, 126,   -- 217: get_slot_direct(126)
-      1, 144,   -- 219: push_literal(144)
+      5, 198,   -- 217: get_slot_direct(198)
+      1, 214,   -- 219: push_literal(214)
       19,       -- 221: swap
       25,       -- 222: bi_gte
       15,       -- 223: dup
@@ -2680,15 +3593,15 @@ startup.functions = {
       13, 267,  -- 225: jmp_unless(267)
       14,       -- 227: pop
       0,        -- 228: push_frame
-      5, 126,   -- 229: get_slot_direct(126)
-      1, 145,   -- 231: push_literal(145)
+      5, 198,   -- 229: get_slot_direct(198)
+      1, 215,   -- 231: push_literal(215)
       25,       -- 233: bi_gte
       15,       -- 234: dup
       13, 245,  -- 235: jmp_unless(245)
       14,       -- 237: pop
       0,        -- 238: push_frame
-      5, 126,   -- 239: get_slot_direct(126)
-      1, 146,   -- 241: push_literal(146)
+      5, 198,   -- 239: get_slot_direct(198)
+      1, 216,   -- 241: push_literal(216)
       19,       -- 243: swap
       25,       -- 244: bi_gte
       15,       -- 245: dup
@@ -2696,49 +3609,49 @@ startup.functions = {
       13, 267,  -- 247: jmp_unless(267)
       14,       -- 249: pop
       0,        -- 250: push_frame
-      5, 126,   -- 251: get_slot_direct(126)
-      1, 147,   -- 253: push_literal(147)
+      5, 198,   -- 251: get_slot_direct(198)
+      1, 217,   -- 253: push_literal(217)
       23,       -- 255: bi_eq
       15,       -- 256: dup
       20,       -- 257: un_not
       13, 267,  -- 258: jmp_unless(267)
       14,       -- 260: pop
       0,        -- 261: push_frame
-      5, 126,   -- 262: get_slot_direct(126)
-      1, 148,   -- 264: push_literal(148)
+      5, 198,   -- 262: get_slot_direct(198)
+      1, 218,   -- 264: push_literal(218)
       23,       -- 266: bi_eq
       13, 439,  -- 267: jmp_unless(439)
       0,        -- 269: push_frame
       0,        -- 270: push_frame
-      5, 126,   -- 271: get_slot_direct(126)
-      8, 46,    -- 273: set_slot_direct(46)
+      5, 198,   -- 271: get_slot_direct(198)
+      8, 63,    -- 273: set_slot_direct(63)
       0,        -- 275: push_frame
       15,       -- 276: dup
-      5, 37,    -- 277: get_slot_direct(37)
-      1, 8,     -- 279: push_literal(8)
+      5, 53,    -- 277: get_slot_direct(53)
+      1, 31,    -- 279: push_literal(31)
       26,       -- 281: bi_add
-      8, 37,    -- 282: set_slot_direct(37)
+      8, 53,    -- 282: set_slot_direct(53)
       12, 409,  -- 284: jmp(409)
       0,        -- 286: push_frame
       0,        -- 287: push_frame
-      5, 106,   -- 288: get_slot_direct(106)
+      5, 180,   -- 288: get_slot_direct(180)
       15,       -- 290: dup
-      7, 39,    -- 291: get_slot_direct_check(39)
+      7, 56,    -- 291: get_slot_direct_check(56)
       19,       -- 293: swap
       0,        -- 294: push_frame
-      5, 37,    -- 295: get_slot_direct(37)
+      5, 53,    -- 295: get_slot_direct(53)
       10, 1,    -- 297: invoke(1)
-      8, 126,   -- 299: set_slot_direct(126)
+      8, 198,   -- 299: set_slot_direct(198)
       0,        -- 301: push_frame
-      5, 126,   -- 302: get_slot_direct(126)
-      1, 143,   -- 304: push_literal(143)
+      5, 198,   -- 302: get_slot_direct(198)
+      1, 213,   -- 304: push_literal(213)
       25,       -- 306: bi_gte
       15,       -- 307: dup
       13, 318,  -- 308: jmp_unless(318)
       14,       -- 310: pop
       0,        -- 311: push_frame
-      5, 126,   -- 312: get_slot_direct(126)
-      1, 144,   -- 314: push_literal(144)
+      5, 198,   -- 312: get_slot_direct(198)
+      1, 214,   -- 314: push_literal(214)
       19,       -- 316: swap
       25,       -- 317: bi_gte
       15,       -- 318: dup
@@ -2746,15 +3659,15 @@ startup.functions = {
       13, 384,  -- 320: jmp_unless(384)
       14,       -- 322: pop
       0,        -- 323: push_frame
-      5, 126,   -- 324: get_slot_direct(126)
-      1, 145,   -- 326: push_literal(145)
+      5, 198,   -- 324: get_slot_direct(198)
+      1, 215,   -- 326: push_literal(215)
       25,       -- 328: bi_gte
       15,       -- 329: dup
       13, 340,  -- 330: jmp_unless(340)
       14,       -- 332: pop
       0,        -- 333: push_frame
-      5, 126,   -- 334: get_slot_direct(126)
-      1, 146,   -- 336: push_literal(146)
+      5, 198,   -- 334: get_slot_direct(198)
+      1, 216,   -- 336: push_literal(216)
       19,       -- 338: swap
       25,       -- 339: bi_gte
       15,       -- 340: dup
@@ -2762,15 +3675,15 @@ startup.functions = {
       13, 384,  -- 342: jmp_unless(384)
       14,       -- 344: pop
       0,        -- 345: push_frame
-      5, 126,   -- 346: get_slot_direct(126)
-      1, 149,   -- 348: push_literal(149)
+      5, 198,   -- 346: get_slot_direct(198)
+      1, 134,   -- 348: push_literal(134)
       25,       -- 350: bi_gte
       15,       -- 351: dup
       13, 362,  -- 352: jmp_unless(362)
       14,       -- 354: pop
       0,        -- 355: push_frame
-      5, 126,   -- 356: get_slot_direct(126)
-      1, 150,   -- 358: push_literal(150)
+      5, 198,   -- 356: get_slot_direct(198)
+      1, 219,   -- 358: push_literal(219)
       19,       -- 360: swap
       25,       -- 361: bi_gte
       15,       -- 362: dup
@@ -2778,62 +3691,62 @@ startup.functions = {
       13, 384,  -- 364: jmp_unless(384)
       14,       -- 366: pop
       0,        -- 367: push_frame
-      5, 126,   -- 368: get_slot_direct(126)
-      1, 148,   -- 370: push_literal(148)
+      5, 198,   -- 368: get_slot_direct(198)
+      1, 218,   -- 370: push_literal(218)
       23,       -- 372: bi_eq
       15,       -- 373: dup
       20,       -- 374: un_not
       13, 384,  -- 375: jmp_unless(384)
       14,       -- 377: pop
       0,        -- 378: push_frame
-      5, 126,   -- 379: get_slot_direct(126)
-      1, 147,   -- 381: push_literal(147)
+      5, 198,   -- 379: get_slot_direct(198)
+      1, 217,   -- 381: push_literal(217)
       23,       -- 383: bi_eq
       13, 407,  -- 384: jmp_unless(407)
       0,        -- 386: push_frame
       15,       -- 387: dup
-      5, 46,    -- 388: get_slot_direct(46)
+      5, 63,    -- 388: get_slot_direct(63)
       0,        -- 390: push_frame
-      5, 126,   -- 391: get_slot_direct(126)
+      5, 198,   -- 391: get_slot_direct(198)
       26,       -- 393: bi_add
-      8, 46,    -- 394: set_slot_direct(46)
+      8, 63,    -- 394: set_slot_direct(63)
       0,        -- 396: push_frame
       15,       -- 397: dup
-      5, 37,    -- 398: get_slot_direct(37)
-      1, 8,     -- 400: push_literal(8)
+      5, 53,    -- 398: get_slot_direct(53)
+      1, 31,    -- 400: push_literal(31)
       26,       -- 402: bi_add
-      8, 37,    -- 403: set_slot_direct(37)
+      8, 53,    -- 403: set_slot_direct(53)
       12, 409,  -- 405: jmp(409)
       12, 414,  -- 407: jmp(414)
-      1, 94,    -- 409: push_literal(94)
+      1, 115,   -- 409: push_literal(115)
       20,       -- 411: un_not
       13, 286,  -- 412: jmp_unless(286)
       0,        -- 414: push_frame
-      5, 57,    -- 415: get_slot_direct(57)
+      5, 75,    -- 415: get_slot_direct(75)
       15,       -- 417: dup
-      7, 52,    -- 418: get_slot_direct_check(52)
+      7, 69,    -- 418: get_slot_direct_check(69)
       19,       -- 420: swap
       0,        -- 421: push_frame
-      5, 130,   -- 422: get_slot_direct(130)
+      5, 201,   -- 422: get_slot_direct(201)
       0,        -- 424: push_frame
-      5, 20,    -- 425: get_slot_direct(20)
-      1, 9,     -- 427: push_literal(9)
+      5, 26,    -- 425: get_slot_direct(26)
+      1, 19,    -- 427: push_literal(19)
       0,        -- 429: push_frame
-      5, 46,    -- 430: get_slot_direct(46)
+      5, 63,    -- 430: get_slot_direct(63)
       10, 2,    -- 432: invoke(2)
       10, 1,    -- 434: invoke(1)
       14,       -- 436: pop
       12, 2128, -- 437: jmp(2128)
       0,        -- 439: push_frame
-      5, 126,   -- 440: get_slot_direct(126)
-      1, 149,   -- 442: push_literal(149)
+      5, 198,   -- 440: get_slot_direct(198)
+      1, 134,   -- 442: push_literal(134)
       25,       -- 444: bi_gte
       15,       -- 445: dup
       13, 456,  -- 446: jmp_unless(456)
       14,       -- 448: pop
       0,        -- 449: push_frame
-      5, 126,   -- 450: get_slot_direct(126)
-      1, 150,   -- 452: push_literal(150)
+      5, 198,   -- 450: get_slot_direct(198)
+      1, 219,   -- 452: push_literal(219)
       19,       -- 454: swap
       25,       -- 455: bi_gte
       15,       -- 456: dup
@@ -2841,116 +3754,116 @@ startup.functions = {
       13, 512,  -- 458: jmp_unless(512)
       14,       -- 460: pop
       0,        -- 461: push_frame
-      5, 126,   -- 462: get_slot_direct(126)
-      1, 151,   -- 464: push_literal(151)
+      5, 198,   -- 462: get_slot_direct(198)
+      1, 143,   -- 464: push_literal(143)
       23,       -- 466: bi_eq
       15,       -- 467: dup
       13, 512,  -- 468: jmp_unless(512)
       14,       -- 470: pop
       0,        -- 471: push_frame
-      5, 106,   -- 472: get_slot_direct(106)
+      5, 180,   -- 472: get_slot_direct(180)
       15,       -- 474: dup
-      7, 39,    -- 475: get_slot_direct_check(39)
+      7, 56,    -- 475: get_slot_direct_check(56)
       19,       -- 477: swap
       0,        -- 478: push_frame
-      5, 37,    -- 479: get_slot_direct(37)
-      1, 8,     -- 481: push_literal(8)
+      5, 53,    -- 479: get_slot_direct(53)
+      1, 31,    -- 481: push_literal(31)
       26,       -- 483: bi_add
       10, 1,    -- 484: invoke(1)
-      1, 149,   -- 486: push_literal(149)
+      1, 134,   -- 486: push_literal(134)
       25,       -- 488: bi_gte
       15,       -- 489: dup
       13, 512,  -- 490: jmp_unless(512)
       14,       -- 492: pop
       0,        -- 493: push_frame
-      5, 106,   -- 494: get_slot_direct(106)
+      5, 180,   -- 494: get_slot_direct(180)
       15,       -- 496: dup
-      7, 39,    -- 497: get_slot_direct_check(39)
+      7, 56,    -- 497: get_slot_direct_check(56)
       19,       -- 499: swap
       0,        -- 500: push_frame
-      5, 37,    -- 501: get_slot_direct(37)
-      1, 8,     -- 503: push_literal(8)
+      5, 53,    -- 501: get_slot_direct(53)
+      1, 31,    -- 503: push_literal(31)
       26,       -- 505: bi_add
       10, 1,    -- 506: invoke(1)
-      1, 150,   -- 508: push_literal(150)
+      1, 219,   -- 508: push_literal(219)
       19,       -- 510: swap
       25,       -- 511: bi_gte
       13, 1200, -- 512: jmp_unless(1200)
       0,        -- 514: push_frame
-      5, 126,   -- 515: get_slot_direct(126)
-      1, 151,   -- 517: push_literal(151)
+      5, 198,   -- 515: get_slot_direct(198)
+      1, 143,   -- 517: push_literal(143)
       23,       -- 519: bi_eq
       13, 529,  -- 520: jmp_unless(529)
       0,        -- 522: push_frame
-      1, 49,    -- 523: push_literal(49)
-      8, 46,    -- 525: set_slot_direct(46)
+      1, 66,    -- 523: push_literal(66)
+      8, 63,    -- 525: set_slot_direct(63)
       12, 719,  -- 527: jmp(719)
       0,        -- 529: push_frame
       1, 0,     -- 530: push_literal(0)
-      8, 152,   -- 532: set_slot_direct(152)
+      8, 220,   -- 532: set_slot_direct(220)
       0,        -- 534: push_frame
       0,        -- 535: push_frame
-      5, 126,   -- 536: get_slot_direct(126)
-      8, 46,    -- 538: set_slot_direct(46)
+      5, 198,   -- 536: get_slot_direct(198)
+      8, 63,    -- 538: set_slot_direct(63)
       0,        -- 540: push_frame
       15,       -- 541: dup
-      5, 37,    -- 542: get_slot_direct(37)
-      1, 8,     -- 544: push_literal(8)
+      5, 53,    -- 542: get_slot_direct(53)
+      1, 31,    -- 544: push_literal(31)
       26,       -- 546: bi_add
-      8, 37,    -- 547: set_slot_direct(37)
+      8, 53,    -- 547: set_slot_direct(53)
       0,        -- 549: push_frame
       0,        -- 550: push_frame
-      5, 106,   -- 551: get_slot_direct(106)
+      5, 180,   -- 551: get_slot_direct(180)
       15,       -- 553: dup
-      7, 39,    -- 554: get_slot_direct_check(39)
+      7, 56,    -- 554: get_slot_direct_check(56)
       19,       -- 556: swap
       0,        -- 557: push_frame
-      5, 37,    -- 558: get_slot_direct(37)
+      5, 53,    -- 558: get_slot_direct(53)
       10, 1,    -- 560: invoke(1)
-      8, 126,   -- 562: set_slot_direct(126)
+      8, 198,   -- 562: set_slot_direct(198)
       0,        -- 564: push_frame
       0,        -- 565: push_frame
-      5, 46,    -- 566: get_slot_direct(46)
-      1, 149,   -- 568: push_literal(149)
+      5, 63,    -- 566: get_slot_direct(63)
+      1, 134,   -- 568: push_literal(134)
       23,       -- 570: bi_eq
       15,       -- 571: dup
       13, 581,  -- 572: jmp_unless(581)
       14,       -- 574: pop
       0,        -- 575: push_frame
-      5, 126,   -- 576: get_slot_direct(126)
-      1, 153,   -- 578: push_literal(153)
+      5, 198,   -- 576: get_slot_direct(198)
+      1, 122,   -- 578: push_literal(122)
       23,       -- 580: bi_eq
-      8, 152,   -- 581: set_slot_direct(152)
+      8, 220,   -- 581: set_slot_direct(220)
       0,        -- 583: push_frame
-      5, 152,   -- 584: get_slot_direct(152)
+      5, 220,   -- 584: get_slot_direct(220)
       13, 607,  -- 586: jmp_unless(607)
       0,        -- 588: push_frame
       15,       -- 589: dup
-      5, 46,    -- 590: get_slot_direct(46)
+      5, 63,    -- 590: get_slot_direct(63)
       0,        -- 592: push_frame
-      5, 126,   -- 593: get_slot_direct(126)
+      5, 198,   -- 593: get_slot_direct(198)
       26,       -- 595: bi_add
-      8, 46,    -- 596: set_slot_direct(46)
+      8, 63,    -- 596: set_slot_direct(63)
       0,        -- 598: push_frame
       15,       -- 599: dup
-      5, 37,    -- 600: get_slot_direct(37)
-      1, 8,     -- 602: push_literal(8)
+      5, 53,    -- 600: get_slot_direct(53)
+      1, 31,    -- 602: push_literal(31)
       26,       -- 604: bi_add
-      8, 37,    -- 605: set_slot_direct(37)
+      8, 53,    -- 605: set_slot_direct(53)
       12, 714,  -- 607: jmp(714)
       0,        -- 609: push_frame
       0,        -- 610: push_frame
-      5, 106,   -- 611: get_slot_direct(106)
+      5, 180,   -- 611: get_slot_direct(180)
       15,       -- 613: dup
-      7, 39,    -- 614: get_slot_direct_check(39)
+      7, 56,    -- 614: get_slot_direct_check(56)
       19,       -- 616: swap
       0,        -- 617: push_frame
-      5, 37,    -- 618: get_slot_direct(37)
+      5, 53,    -- 618: get_slot_direct(53)
       10, 1,    -- 620: invoke(1)
-      8, 126,   -- 622: set_slot_direct(126)
+      8, 198,   -- 622: set_slot_direct(198)
       0,        -- 624: push_frame
-      5, 126,   -- 625: get_slot_direct(126)
-      1, 149,   -- 627: push_literal(149)
+      5, 198,   -- 625: get_slot_direct(198)
+      1, 134,   -- 627: push_literal(134)
       19,       -- 629: swap
       24,       -- 630: bi_gt
       15,       -- 631: dup
@@ -2958,25 +3871,25 @@ startup.functions = {
       13, 642,  -- 633: jmp_unless(642)
       14,       -- 635: pop
       0,        -- 636: push_frame
-      5, 126,   -- 637: get_slot_direct(126)
-      1, 150,   -- 639: push_literal(150)
+      5, 198,   -- 637: get_slot_direct(198)
+      1, 219,   -- 639: push_literal(219)
       24,       -- 641: bi_gt
       13, 695,  -- 642: jmp_unless(695)
       0,        -- 644: push_frame
-      5, 152,   -- 645: get_slot_direct(152)
+      5, 220,   -- 645: get_slot_direct(220)
       15,       -- 647: dup
       13, 690,  -- 648: jmp_unless(690)
       14,       -- 650: pop
       0,        -- 651: push_frame
-      5, 126,   -- 652: get_slot_direct(126)
-      1, 143,   -- 654: push_literal(143)
+      5, 198,   -- 652: get_slot_direct(198)
+      1, 213,   -- 654: push_literal(213)
       25,       -- 656: bi_gte
       15,       -- 657: dup
       13, 668,  -- 658: jmp_unless(668)
       14,       -- 660: pop
       0,        -- 661: push_frame
-      5, 126,   -- 662: get_slot_direct(126)
-      1, 85,    -- 664: push_literal(85)
+      5, 198,   -- 662: get_slot_direct(198)
+      1, 106,   -- 664: push_literal(106)
       19,       -- 666: swap
       25,       -- 667: bi_gte
       15,       -- 668: dup
@@ -2984,15 +3897,15 @@ startup.functions = {
       13, 690,  -- 670: jmp_unless(690)
       14,       -- 672: pop
       0,        -- 673: push_frame
-      5, 126,   -- 674: get_slot_direct(126)
-      1, 145,   -- 676: push_literal(145)
+      5, 198,   -- 674: get_slot_direct(198)
+      1, 215,   -- 676: push_literal(215)
       25,       -- 678: bi_gte
       15,       -- 679: dup
       13, 690,  -- 680: jmp_unless(690)
       14,       -- 682: pop
       0,        -- 683: push_frame
-      5, 126,   -- 684: get_slot_direct(126)
-      1, 154,   -- 686: push_literal(154)
+      5, 198,   -- 684: get_slot_direct(198)
+      1, 221,   -- 686: push_literal(221)
       19,       -- 688: swap
       25,       -- 689: bi_gte
       20,       -- 690: un_not
@@ -3000,58 +3913,58 @@ startup.functions = {
       12, 719,  -- 693: jmp(719)
       0,        -- 695: push_frame
       15,       -- 696: dup
-      5, 37,    -- 697: get_slot_direct(37)
-      1, 8,     -- 699: push_literal(8)
+      5, 53,    -- 697: get_slot_direct(53)
+      1, 31,    -- 699: push_literal(31)
       26,       -- 701: bi_add
-      8, 37,    -- 702: set_slot_direct(37)
+      8, 53,    -- 702: set_slot_direct(53)
       0,        -- 704: push_frame
       15,       -- 705: dup
-      5, 46,    -- 706: get_slot_direct(46)
+      5, 63,    -- 706: get_slot_direct(63)
       0,        -- 708: push_frame
-      5, 126,   -- 709: get_slot_direct(126)
+      5, 198,   -- 709: get_slot_direct(198)
       26,       -- 711: bi_add
-      8, 46,    -- 712: set_slot_direct(46)
-      1, 94,    -- 714: push_literal(94)
+      8, 63,    -- 712: set_slot_direct(63)
+      1, 115,   -- 714: push_literal(115)
       20,       -- 716: un_not
       13, 609,  -- 717: jmp_unless(609)
       0,        -- 719: push_frame
-      5, 126,   -- 720: get_slot_direct(126)
-      1, 151,   -- 722: push_literal(151)
+      5, 198,   -- 720: get_slot_direct(198)
+      1, 143,   -- 722: push_literal(143)
       23,       -- 724: bi_eq
       15,       -- 725: dup
       13, 733,  -- 726: jmp_unless(733)
       14,       -- 728: pop
       0,        -- 729: push_frame
-      5, 152,   -- 730: get_slot_direct(152)
+      5, 220,   -- 730: get_slot_direct(220)
       20,       -- 732: un_not
       13, 817,  -- 733: jmp_unless(817)
       0,        -- 735: push_frame
       15,       -- 736: dup
-      5, 37,    -- 737: get_slot_direct(37)
-      1, 8,     -- 739: push_literal(8)
+      5, 53,    -- 737: get_slot_direct(53)
+      1, 31,    -- 739: push_literal(31)
       26,       -- 741: bi_add
-      8, 37,    -- 742: set_slot_direct(37)
+      8, 53,    -- 742: set_slot_direct(53)
       0,        -- 744: push_frame
       15,       -- 745: dup
-      5, 46,    -- 746: get_slot_direct(46)
+      5, 63,    -- 746: get_slot_direct(63)
       0,        -- 748: push_frame
-      5, 126,   -- 749: get_slot_direct(126)
+      5, 198,   -- 749: get_slot_direct(198)
       26,       -- 751: bi_add
-      8, 46,    -- 752: set_slot_direct(46)
+      8, 63,    -- 752: set_slot_direct(63)
       12, 812,  -- 754: jmp(812)
       0,        -- 756: push_frame
       0,        -- 757: push_frame
-      5, 106,   -- 758: get_slot_direct(106)
+      5, 180,   -- 758: get_slot_direct(180)
       15,       -- 760: dup
-      7, 39,    -- 761: get_slot_direct_check(39)
+      7, 56,    -- 761: get_slot_direct_check(56)
       19,       -- 763: swap
       0,        -- 764: push_frame
-      5, 37,    -- 765: get_slot_direct(37)
+      5, 53,    -- 765: get_slot_direct(53)
       10, 1,    -- 767: invoke(1)
-      8, 126,   -- 769: set_slot_direct(126)
+      8, 198,   -- 769: set_slot_direct(198)
       0,        -- 771: push_frame
-      5, 126,   -- 772: get_slot_direct(126)
-      1, 149,   -- 774: push_literal(149)
+      5, 198,   -- 772: get_slot_direct(198)
+      1, 134,   -- 774: push_literal(134)
       19,       -- 776: swap
       24,       -- 777: bi_gt
       15,       -- 778: dup
@@ -3059,108 +3972,108 @@ startup.functions = {
       13, 789,  -- 780: jmp_unless(789)
       14,       -- 782: pop
       0,        -- 783: push_frame
-      5, 126,   -- 784: get_slot_direct(126)
-      1, 150,   -- 786: push_literal(150)
+      5, 198,   -- 784: get_slot_direct(198)
+      1, 219,   -- 786: push_literal(219)
       24,       -- 788: bi_gt
       13, 793,  -- 789: jmp_unless(793)
       12, 817,  -- 791: jmp(817)
       0,        -- 793: push_frame
       15,       -- 794: dup
-      5, 37,    -- 795: get_slot_direct(37)
-      1, 8,     -- 797: push_literal(8)
+      5, 53,    -- 795: get_slot_direct(53)
+      1, 31,    -- 797: push_literal(31)
       26,       -- 799: bi_add
-      8, 37,    -- 800: set_slot_direct(37)
+      8, 53,    -- 800: set_slot_direct(53)
       0,        -- 802: push_frame
       15,       -- 803: dup
-      5, 46,    -- 804: get_slot_direct(46)
+      5, 63,    -- 804: get_slot_direct(63)
       0,        -- 806: push_frame
-      5, 126,   -- 807: get_slot_direct(126)
+      5, 198,   -- 807: get_slot_direct(198)
       26,       -- 809: bi_add
-      8, 46,    -- 810: set_slot_direct(46)
-      1, 94,    -- 812: push_literal(94)
+      8, 63,    -- 810: set_slot_direct(63)
+      1, 115,   -- 812: push_literal(115)
       20,       -- 814: un_not
       13, 756,  -- 815: jmp_unless(756)
       0,        -- 817: push_frame
-      5, 126,   -- 818: get_slot_direct(126)
-      1, 68,    -- 820: push_literal(68)
+      5, 198,   -- 818: get_slot_direct(198)
+      1, 87,    -- 820: push_literal(87)
       23,       -- 822: bi_eq
       15,       -- 823: dup
       20,       -- 824: un_not
       13, 834,  -- 825: jmp_unless(834)
       14,       -- 827: pop
       0,        -- 828: push_frame
-      5, 126,   -- 829: get_slot_direct(126)
-      1, 155,   -- 831: push_literal(155)
+      5, 198,   -- 829: get_slot_direct(198)
+      1, 145,   -- 831: push_literal(145)
       23,       -- 833: bi_eq
       15,       -- 834: dup
       13, 842,  -- 835: jmp_unless(842)
       14,       -- 837: pop
       0,        -- 838: push_frame
-      5, 152,   -- 839: get_slot_direct(152)
+      5, 220,   -- 839: get_slot_direct(220)
       20,       -- 841: un_not
       13, 1038, -- 842: jmp_unless(1038)
       0,        -- 844: push_frame
       15,       -- 845: dup
-      5, 37,    -- 846: get_slot_direct(37)
-      1, 8,     -- 848: push_literal(8)
+      5, 53,    -- 846: get_slot_direct(53)
+      1, 31,    -- 848: push_literal(31)
       26,       -- 850: bi_add
-      8, 37,    -- 851: set_slot_direct(37)
+      8, 53,    -- 851: set_slot_direct(53)
       0,        -- 853: push_frame
       15,       -- 854: dup
-      5, 46,    -- 855: get_slot_direct(46)
+      5, 63,    -- 855: get_slot_direct(63)
       0,        -- 857: push_frame
-      5, 126,   -- 858: get_slot_direct(126)
+      5, 198,   -- 858: get_slot_direct(198)
       26,       -- 860: bi_add
-      8, 46,    -- 861: set_slot_direct(46)
+      8, 63,    -- 861: set_slot_direct(63)
       0,        -- 863: push_frame
       0,        -- 864: push_frame
-      5, 106,   -- 865: get_slot_direct(106)
+      5, 180,   -- 865: get_slot_direct(180)
       15,       -- 867: dup
-      7, 39,    -- 868: get_slot_direct_check(39)
+      7, 56,    -- 868: get_slot_direct_check(56)
       19,       -- 870: swap
       0,        -- 871: push_frame
-      5, 37,    -- 872: get_slot_direct(37)
+      5, 53,    -- 872: get_slot_direct(53)
       10, 1,    -- 874: invoke(1)
-      8, 126,   -- 876: set_slot_direct(126)
+      8, 198,   -- 876: set_slot_direct(198)
       0,        -- 878: push_frame
-      5, 126,   -- 879: get_slot_direct(126)
-      1, 136,   -- 881: push_literal(136)
+      5, 198,   -- 879: get_slot_direct(198)
+      1, 135,   -- 881: push_literal(135)
       23,       -- 883: bi_eq
       15,       -- 884: dup
       20,       -- 885: un_not
       13, 895,  -- 886: jmp_unless(895)
       14,       -- 888: pop
       0,        -- 889: push_frame
-      5, 126,   -- 890: get_slot_direct(126)
-      1, 156,   -- 892: push_literal(156)
+      5, 198,   -- 890: get_slot_direct(198)
+      1, 222,   -- 892: push_literal(222)
       23,       -- 894: bi_eq
       13, 931,  -- 895: jmp_unless(931)
       0,        -- 897: push_frame
       15,       -- 898: dup
-      5, 37,    -- 899: get_slot_direct(37)
-      1, 8,     -- 901: push_literal(8)
+      5, 53,    -- 899: get_slot_direct(53)
+      1, 31,    -- 901: push_literal(31)
       26,       -- 903: bi_add
-      8, 37,    -- 904: set_slot_direct(37)
+      8, 53,    -- 904: set_slot_direct(53)
       0,        -- 906: push_frame
       15,       -- 907: dup
-      5, 46,    -- 908: get_slot_direct(46)
+      5, 63,    -- 908: get_slot_direct(63)
       0,        -- 910: push_frame
-      5, 126,   -- 911: get_slot_direct(126)
+      5, 198,   -- 911: get_slot_direct(198)
       26,       -- 913: bi_add
-      8, 46,    -- 914: set_slot_direct(46)
+      8, 63,    -- 914: set_slot_direct(63)
       0,        -- 916: push_frame
       0,        -- 917: push_frame
-      5, 106,   -- 918: get_slot_direct(106)
+      5, 180,   -- 918: get_slot_direct(180)
       15,       -- 920: dup
-      7, 39,    -- 921: get_slot_direct_check(39)
+      7, 56,    -- 921: get_slot_direct_check(56)
       19,       -- 923: swap
       0,        -- 924: push_frame
-      5, 37,    -- 925: get_slot_direct(37)
+      5, 53,    -- 925: get_slot_direct(53)
       10, 1,    -- 927: invoke(1)
-      8, 126,   -- 929: set_slot_direct(126)
+      8, 198,   -- 929: set_slot_direct(198)
       0,        -- 931: push_frame
-      5, 126,   -- 932: get_slot_direct(126)
-      1, 149,   -- 934: push_literal(149)
+      5, 198,   -- 932: get_slot_direct(198)
+      1, 134,   -- 934: push_literal(134)
       19,       -- 936: swap
       24,       -- 937: bi_gt
       15,       -- 938: dup
@@ -3168,401 +4081,401 @@ startup.functions = {
       13, 949,  -- 940: jmp_unless(949)
       14,       -- 942: pop
       0,        -- 943: push_frame
-      5, 126,   -- 944: get_slot_direct(126)
-      1, 150,   -- 946: push_literal(150)
+      5, 198,   -- 944: get_slot_direct(198)
+      1, 219,   -- 946: push_literal(219)
       24,       -- 948: bi_gt
       13, 975,  -- 949: jmp_unless(975)
       0,        -- 951: push_frame
-      5, 129,   -- 952: get_slot_direct(129)
+      5, 200,   -- 952: get_slot_direct(200)
       0,        -- 954: push_frame
-      5, 20,    -- 955: get_slot_direct(20)
+      5, 26,    -- 955: get_slot_direct(26)
       0,        -- 957: push_frame
-      5, 130,   -- 958: get_slot_direct(130)
+      5, 201,   -- 958: get_slot_direct(201)
       0,        -- 960: push_frame
-      5, 20,    -- 961: get_slot_direct(20)
-      1, 67,    -- 963: push_literal(67)
+      5, 26,    -- 961: get_slot_direct(26)
+      1, 86,    -- 963: push_literal(86)
       0,        -- 965: push_frame
-      5, 46,    -- 966: get_slot_direct(46)
+      5, 63,    -- 966: get_slot_direct(63)
       10, 2,    -- 968: invoke(2)
-      1, 157,   -- 970: push_literal(157)
+      1, 223,   -- 970: push_literal(223)
       10, 2,    -- 972: invoke(2)
       14,       -- 974: pop
       12, 1033, -- 975: jmp(1033)
       0,        -- 977: push_frame
       15,       -- 978: dup
-      5, 37,    -- 979: get_slot_direct(37)
-      1, 8,     -- 981: push_literal(8)
+      5, 53,    -- 979: get_slot_direct(53)
+      1, 31,    -- 981: push_literal(31)
       26,       -- 983: bi_add
-      8, 37,    -- 984: set_slot_direct(37)
+      8, 53,    -- 984: set_slot_direct(53)
       0,        -- 986: push_frame
       15,       -- 987: dup
-      5, 46,    -- 988: get_slot_direct(46)
+      5, 63,    -- 988: get_slot_direct(63)
       0,        -- 990: push_frame
-      5, 126,   -- 991: get_slot_direct(126)
+      5, 198,   -- 991: get_slot_direct(198)
       26,       -- 993: bi_add
-      8, 46,    -- 994: set_slot_direct(46)
+      8, 63,    -- 994: set_slot_direct(63)
       0,        -- 996: push_frame
       0,        -- 997: push_frame
-      5, 106,   -- 998: get_slot_direct(106)
+      5, 180,   -- 998: get_slot_direct(180)
       15,       -- 1000: dup
-      7, 39,    -- 1001: get_slot_direct_check(39)
+      7, 56,    -- 1001: get_slot_direct_check(56)
       19,       -- 1003: swap
       0,        -- 1004: push_frame
-      5, 37,    -- 1005: get_slot_direct(37)
+      5, 53,    -- 1005: get_slot_direct(53)
       10, 1,    -- 1007: invoke(1)
-      8, 126,   -- 1009: set_slot_direct(126)
+      8, 198,   -- 1009: set_slot_direct(198)
       0,        -- 1011: push_frame
-      5, 126,   -- 1012: get_slot_direct(126)
-      1, 149,   -- 1014: push_literal(149)
+      5, 198,   -- 1012: get_slot_direct(198)
+      1, 134,   -- 1014: push_literal(134)
       25,       -- 1016: bi_gte
       15,       -- 1017: dup
       13, 1028, -- 1018: jmp_unless(1028)
       14,       -- 1020: pop
       0,        -- 1021: push_frame
-      5, 126,   -- 1022: get_slot_direct(126)
-      1, 150,   -- 1024: push_literal(150)
+      5, 198,   -- 1022: get_slot_direct(198)
+      1, 219,   -- 1024: push_literal(219)
       19,       -- 1026: swap
       25,       -- 1027: bi_gte
       20,       -- 1028: un_not
       13, 1033, -- 1029: jmp_unless(1033)
       12, 1038, -- 1031: jmp(1038)
-      1, 94,    -- 1033: push_literal(94)
+      1, 115,   -- 1033: push_literal(115)
       20,       -- 1035: un_not
       13, 977,  -- 1036: jmp_unless(977)
       0,        -- 1038: push_frame
-      5, 126,   -- 1039: get_slot_direct(126)
-      1, 143,   -- 1041: push_literal(143)
+      5, 198,   -- 1039: get_slot_direct(198)
+      1, 213,   -- 1041: push_literal(213)
       25,       -- 1043: bi_gte
       15,       -- 1044: dup
       13, 1055, -- 1045: jmp_unless(1055)
       14,       -- 1047: pop
       0,        -- 1048: push_frame
-      5, 126,   -- 1049: get_slot_direct(126)
-      1, 144,   -- 1051: push_literal(144)
+      5, 198,   -- 1049: get_slot_direct(198)
+      1, 214,   -- 1051: push_literal(214)
       19,       -- 1053: swap
       25,       -- 1054: bi_gte
       13, 1100, -- 1055: jmp_unless(1100)
       0,        -- 1057: push_frame
       15,       -- 1058: dup
-      5, 46,    -- 1059: get_slot_direct(46)
+      5, 63,    -- 1059: get_slot_direct(63)
       0,        -- 1061: push_frame
-      5, 126,   -- 1062: get_slot_direct(126)
+      5, 198,   -- 1062: get_slot_direct(198)
       26,       -- 1064: bi_add
-      8, 46,    -- 1065: set_slot_direct(46)
+      8, 63,    -- 1065: set_slot_direct(63)
       0,        -- 1067: push_frame
       15,       -- 1068: dup
-      5, 37,    -- 1069: get_slot_direct(37)
-      1, 8,     -- 1071: push_literal(8)
+      5, 53,    -- 1069: get_slot_direct(53)
+      1, 31,    -- 1071: push_literal(31)
       26,       -- 1073: bi_add
-      8, 37,    -- 1074: set_slot_direct(37)
+      8, 53,    -- 1074: set_slot_direct(53)
       0,        -- 1076: push_frame
-      5, 129,   -- 1077: get_slot_direct(129)
+      5, 200,   -- 1077: get_slot_direct(200)
       0,        -- 1079: push_frame
-      5, 20,    -- 1080: get_slot_direct(20)
+      5, 26,    -- 1080: get_slot_direct(26)
       0,        -- 1082: push_frame
-      5, 130,   -- 1083: get_slot_direct(130)
+      5, 201,   -- 1083: get_slot_direct(201)
       0,        -- 1085: push_frame
-      5, 20,    -- 1086: get_slot_direct(20)
-      1, 67,    -- 1088: push_literal(67)
+      5, 26,    -- 1086: get_slot_direct(26)
+      1, 86,    -- 1088: push_literal(86)
       0,        -- 1090: push_frame
-      5, 46,    -- 1091: get_slot_direct(46)
+      5, 63,    -- 1091: get_slot_direct(63)
       10, 2,    -- 1093: invoke(2)
-      1, 158,   -- 1095: push_literal(158)
+      1, 224,   -- 1095: push_literal(224)
       10, 2,    -- 1097: invoke(2)
       14,       -- 1099: pop
       0,        -- 1100: push_frame
-      1, 8,     -- 1101: push_literal(8)
+      1, 31,    -- 1101: push_literal(31)
       0,        -- 1103: push_frame
-      5, 46,    -- 1104: get_slot_direct(46)
+      5, 63,    -- 1104: get_slot_direct(63)
       28,       -- 1106: bi_mul
-      8, 127,   -- 1107: set_slot_direct(127)
+      8, 23,    -- 1107: set_slot_direct(23)
       0,        -- 1109: push_frame
-      5, 159,   -- 1110: get_slot_direct(159)
+      5, 225,   -- 1110: get_slot_direct(225)
       0,        -- 1112: push_frame
-      5, 20,    -- 1113: get_slot_direct(20)
+      5, 26,    -- 1113: get_slot_direct(26)
       0,        -- 1115: push_frame
-      5, 127,   -- 1116: get_slot_direct(127)
+      5, 23,    -- 1116: get_slot_direct(23)
       10, 1,    -- 1118: invoke(1)
       13, 1174, -- 1120: jmp_unless(1174)
       0,        -- 1122: push_frame
       1, 0,     -- 1123: push_literal(0)
-      8, 132,   -- 1125: set_slot_direct(132)
+      8, 203,   -- 1125: set_slot_direct(203)
       0,        -- 1127: push_frame
       0,        -- 1128: push_frame
-      5, 130,   -- 1129: get_slot_direct(130)
+      5, 201,   -- 1129: get_slot_direct(201)
       0,        -- 1131: push_frame
-      5, 20,    -- 1132: get_slot_direct(20)
-      1, 67,    -- 1134: push_literal(67)
+      5, 26,    -- 1132: get_slot_direct(26)
+      1, 86,    -- 1134: push_literal(86)
       0,        -- 1136: push_frame
-      5, 127,   -- 1137: get_slot_direct(127)
+      5, 23,    -- 1137: get_slot_direct(23)
       10, 2,    -- 1139: invoke(2)
-      8, 132,   -- 1141: set_slot_direct(132)
+      8, 203,   -- 1141: set_slot_direct(203)
       0,        -- 1143: push_frame
-      5, 132,   -- 1144: get_slot_direct(132)
+      5, 203,   -- 1144: get_slot_direct(203)
       0,        -- 1146: push_frame
-      5, 152,   -- 1147: get_slot_direct(152)
+      5, 220,   -- 1147: get_slot_direct(220)
       13, 1155, -- 1149: jmp_unless(1155)
-      1, 160,   -- 1151: push_literal(160)
+      1, 226,   -- 1151: push_literal(226)
       12, 1157, -- 1153: jmp(1157)
-      1, 161,   -- 1155: push_literal(161)
-      8, 162,   -- 1157: set_slot_direct(162)
+      1, 129,   -- 1155: push_literal(129)
+      8, 177,   -- 1157: set_slot_direct(177)
       0,        -- 1159: push_frame
-      5, 57,    -- 1160: get_slot_direct(57)
+      5, 75,    -- 1160: get_slot_direct(75)
       15,       -- 1162: dup
-      7, 52,    -- 1163: get_slot_direct_check(52)
+      7, 69,    -- 1163: get_slot_direct_check(69)
       19,       -- 1165: swap
       0,        -- 1166: push_frame
-      5, 132,   -- 1167: get_slot_direct(132)
+      5, 203,   -- 1167: get_slot_direct(203)
       10, 1,    -- 1169: invoke(1)
       14,       -- 1171: pop
       12, 1198, -- 1172: jmp(1198)
       0,        -- 1174: push_frame
-      5, 129,   -- 1175: get_slot_direct(129)
+      5, 200,   -- 1175: get_slot_direct(200)
       0,        -- 1177: push_frame
-      5, 20,    -- 1178: get_slot_direct(20)
+      5, 26,    -- 1178: get_slot_direct(26)
       0,        -- 1180: push_frame
-      5, 130,   -- 1181: get_slot_direct(130)
+      5, 201,   -- 1181: get_slot_direct(201)
       0,        -- 1183: push_frame
-      5, 20,    -- 1184: get_slot_direct(20)
-      1, 67,    -- 1186: push_literal(67)
+      5, 26,    -- 1184: get_slot_direct(26)
+      1, 86,    -- 1186: push_literal(86)
       0,        -- 1188: push_frame
-      5, 46,    -- 1189: get_slot_direct(46)
+      5, 63,    -- 1189: get_slot_direct(63)
       10, 2,    -- 1191: invoke(2)
-      1, 158,   -- 1193: push_literal(158)
+      1, 224,   -- 1193: push_literal(224)
       10, 2,    -- 1195: invoke(2)
       14,       -- 1197: pop
       12, 2128, -- 1198: jmp(2128)
       0,        -- 1200: push_frame
-      5, 126,   -- 1201: get_slot_direct(126)
-      1, 163,   -- 1203: push_literal(163)
+      5, 198,   -- 1201: get_slot_direct(198)
+      1, 227,   -- 1203: push_literal(227)
       23,       -- 1205: bi_eq
       15,       -- 1206: dup
       20,       -- 1207: un_not
       13, 1217, -- 1208: jmp_unless(1217)
       14,       -- 1210: pop
       0,        -- 1211: push_frame
-      5, 126,   -- 1212: get_slot_direct(126)
-      1, 164,   -- 1214: push_literal(164)
+      5, 198,   -- 1212: get_slot_direct(198)
+      1, 228,   -- 1214: push_literal(228)
       23,       -- 1216: bi_eq
       13, 1699, -- 1217: jmp_unless(1699)
       0,        -- 1219: push_frame
-      1, 49,    -- 1220: push_literal(49)
-      8, 46,    -- 1222: set_slot_direct(46)
+      1, 66,    -- 1220: push_literal(66)
+      8, 63,    -- 1222: set_slot_direct(63)
       0,        -- 1224: push_frame
       0,        -- 1225: push_frame
-      5, 126,   -- 1226: get_slot_direct(126)
-      8, 128,   -- 1228: set_slot_direct(128)
+      5, 198,   -- 1226: get_slot_direct(198)
+      8, 199,   -- 1228: set_slot_direct(199)
       0,        -- 1230: push_frame
       15,       -- 1231: dup
-      5, 37,    -- 1232: get_slot_direct(37)
-      1, 8,     -- 1234: push_literal(8)
+      5, 53,    -- 1232: get_slot_direct(53)
+      1, 31,    -- 1234: push_literal(31)
       26,       -- 1236: bi_add
-      8, 37,    -- 1237: set_slot_direct(37)
+      8, 53,    -- 1237: set_slot_direct(53)
       12, 1645, -- 1239: jmp(1645)
       0,        -- 1241: push_frame
       0,        -- 1242: push_frame
-      5, 106,   -- 1243: get_slot_direct(106)
+      5, 180,   -- 1243: get_slot_direct(180)
       15,       -- 1245: dup
-      7, 39,    -- 1246: get_slot_direct_check(39)
+      7, 56,    -- 1246: get_slot_direct_check(56)
       19,       -- 1248: swap
       0,        -- 1249: push_frame
-      5, 37,    -- 1250: get_slot_direct(37)
+      5, 53,    -- 1250: get_slot_direct(53)
       10, 1,    -- 1252: invoke(1)
-      8, 126,   -- 1254: set_slot_direct(126)
+      8, 198,   -- 1254: set_slot_direct(198)
       0,        -- 1256: push_frame
-      5, 126,   -- 1257: get_slot_direct(126)
-      1, 142,   -- 1259: push_literal(142)
+      5, 198,   -- 1257: get_slot_direct(198)
+      1, 212,   -- 1259: push_literal(212)
       19,       -- 1261: swap
       24,       -- 1262: bi_gt
       13, 1323, -- 1263: jmp_unless(1323)
       0,        -- 1265: push_frame
-      5, 129,   -- 1266: get_slot_direct(129)
+      5, 200,   -- 1266: get_slot_direct(200)
       0,        -- 1268: push_frame
-      5, 20,    -- 1269: get_slot_direct(20)
+      5, 26,    -- 1269: get_slot_direct(26)
       0,        -- 1271: push_frame
-      5, 130,   -- 1272: get_slot_direct(130)
+      5, 201,   -- 1272: get_slot_direct(201)
       0,        -- 1274: push_frame
-      5, 20,    -- 1275: get_slot_direct(20)
-      1, 15,    -- 1277: push_literal(15)
+      5, 26,    -- 1275: get_slot_direct(26)
+      1, 38,    -- 1277: push_literal(38)
       0,        -- 1279: push_frame
-      5, 46,    -- 1280: get_slot_direct(46)
+      5, 63,    -- 1280: get_slot_direct(63)
       10, 2,    -- 1282: invoke(2)
       0,        -- 1284: push_frame
-      5, 126,   -- 1285: get_slot_direct(126)
-      1, 165,   -- 1287: push_literal(165)
+      5, 198,   -- 1285: get_slot_direct(198)
+      1, 229,   -- 1287: push_literal(229)
       23,       -- 1289: bi_eq
       15,       -- 1290: dup
       20,       -- 1291: un_not
       13, 1312, -- 1292: jmp_unless(1312)
       14,       -- 1294: pop
       0,        -- 1295: push_frame
-      5, 126,   -- 1296: get_slot_direct(126)
-      1, 166,   -- 1298: push_literal(166)
+      5, 198,   -- 1296: get_slot_direct(198)
+      1, 230,   -- 1298: push_literal(230)
       23,       -- 1300: bi_eq
       15,       -- 1301: dup
       20,       -- 1302: un_not
       13, 1312, -- 1303: jmp_unless(1312)
       14,       -- 1305: pop
       0,        -- 1306: push_frame
-      5, 126,   -- 1307: get_slot_direct(126)
-      1, 49,    -- 1309: push_literal(49)
+      5, 198,   -- 1307: get_slot_direct(198)
+      1, 66,    -- 1309: push_literal(66)
       23,       -- 1311: bi_eq
       13, 1318, -- 1312: jmp_unless(1318)
-      1, 167,   -- 1314: push_literal(167)
+      1, 231,   -- 1314: push_literal(231)
       12, 1320, -- 1316: jmp(1320)
-      1, 168,   -- 1318: push_literal(168)
+      1, 232,   -- 1318: push_literal(232)
       10, 2,    -- 1320: invoke(2)
       14,       -- 1322: pop
       0,        -- 1323: push_frame
-      5, 126,   -- 1324: get_slot_direct(126)
+      5, 198,   -- 1324: get_slot_direct(198)
       0,        -- 1326: push_frame
-      5, 128,   -- 1327: get_slot_direct(128)
+      5, 199,   -- 1327: get_slot_direct(199)
       23,       -- 1329: bi_eq
       13, 1334, -- 1330: jmp_unless(1334)
       12, 1650, -- 1332: jmp(1650)
       0,        -- 1334: push_frame
-      5, 126,   -- 1335: get_slot_direct(126)
-      1, 169,   -- 1337: push_literal(169)
+      5, 198,   -- 1335: get_slot_direct(198)
+      1, 233,   -- 1337: push_literal(233)
       23,       -- 1339: bi_eq
       13, 1626, -- 1340: jmp_unless(1626)
       0,        -- 1342: push_frame
       15,       -- 1343: dup
-      5, 37,    -- 1344: get_slot_direct(37)
-      1, 8,     -- 1346: push_literal(8)
+      5, 53,    -- 1344: get_slot_direct(53)
+      1, 31,    -- 1346: push_literal(31)
       26,       -- 1348: bi_add
-      8, 37,    -- 1349: set_slot_direct(37)
+      8, 53,    -- 1349: set_slot_direct(53)
       0,        -- 1351: push_frame
-      5, 37,    -- 1352: get_slot_direct(37)
+      5, 53,    -- 1352: get_slot_direct(53)
       0,        -- 1354: push_frame
-      5, 24,    -- 1355: get_slot_direct(24)
+      5, 55,    -- 1355: get_slot_direct(55)
       25,       -- 1357: bi_gte
       13, 1384, -- 1358: jmp_unless(1384)
       0,        -- 1360: push_frame
-      5, 129,   -- 1361: get_slot_direct(129)
+      5, 200,   -- 1361: get_slot_direct(200)
       0,        -- 1363: push_frame
-      5, 20,    -- 1364: get_slot_direct(20)
+      5, 26,    -- 1364: get_slot_direct(26)
       0,        -- 1366: push_frame
-      5, 130,   -- 1367: get_slot_direct(130)
+      5, 201,   -- 1367: get_slot_direct(201)
       0,        -- 1369: push_frame
-      5, 20,    -- 1370: get_slot_direct(20)
-      1, 15,    -- 1372: push_literal(15)
+      5, 26,    -- 1370: get_slot_direct(26)
+      1, 38,    -- 1372: push_literal(38)
       0,        -- 1374: push_frame
-      5, 46,    -- 1375: get_slot_direct(46)
+      5, 63,    -- 1375: get_slot_direct(63)
       10, 2,    -- 1377: invoke(2)
-      1, 170,   -- 1379: push_literal(170)
+      1, 234,   -- 1379: push_literal(234)
       10, 2,    -- 1381: invoke(2)
       14,       -- 1383: pop
       0,        -- 1384: push_frame
       0,        -- 1385: push_frame
-      5, 106,   -- 1386: get_slot_direct(106)
+      5, 180,   -- 1386: get_slot_direct(180)
       15,       -- 1388: dup
-      7, 39,    -- 1389: get_slot_direct_check(39)
+      7, 56,    -- 1389: get_slot_direct_check(56)
       19,       -- 1391: swap
       0,        -- 1392: push_frame
-      5, 37,    -- 1393: get_slot_direct(37)
+      5, 53,    -- 1393: get_slot_direct(53)
       10, 1,    -- 1395: invoke(1)
-      8, 126,   -- 1397: set_slot_direct(126)
+      8, 198,   -- 1397: set_slot_direct(198)
       0,        -- 1399: push_frame
-      5, 126,   -- 1400: get_slot_direct(126)
-      1, 171,   -- 1402: push_literal(171)
+      5, 198,   -- 1400: get_slot_direct(198)
+      1, 235,   -- 1402: push_literal(235)
       23,       -- 1404: bi_eq
       13, 1414, -- 1405: jmp_unless(1414)
       0,        -- 1407: push_frame
-      1, 172,   -- 1408: push_literal(172)
-      8, 126,   -- 1410: set_slot_direct(126)
+      1, 236,   -- 1408: push_literal(236)
+      8, 198,   -- 1410: set_slot_direct(198)
       12, 1626, -- 1412: jmp(1626)
       0,        -- 1414: push_frame
-      5, 126,   -- 1415: get_slot_direct(126)
-      1, 85,    -- 1417: push_literal(85)
+      5, 198,   -- 1415: get_slot_direct(198)
+      1, 106,   -- 1417: push_literal(106)
       23,       -- 1419: bi_eq
       13, 1429, -- 1420: jmp_unless(1429)
       0,        -- 1422: push_frame
-      1, 173,   -- 1423: push_literal(173)
-      8, 126,   -- 1425: set_slot_direct(126)
+      1, 237,   -- 1423: push_literal(237)
+      8, 198,   -- 1425: set_slot_direct(198)
       12, 1626, -- 1427: jmp(1626)
       0,        -- 1429: push_frame
-      5, 126,   -- 1430: get_slot_direct(126)
-      1, 127,   -- 1432: push_literal(127)
+      5, 198,   -- 1430: get_slot_direct(198)
+      1, 23,    -- 1432: push_literal(23)
       23,       -- 1434: bi_eq
       13, 1444, -- 1435: jmp_unless(1444)
       0,        -- 1437: push_frame
-      1, 165,   -- 1438: push_literal(165)
-      8, 126,   -- 1440: set_slot_direct(126)
+      1, 229,   -- 1438: push_literal(229)
+      8, 198,   -- 1440: set_slot_direct(198)
       12, 1626, -- 1442: jmp(1626)
       0,        -- 1444: push_frame
-      5, 126,   -- 1445: get_slot_direct(126)
-      1, 174,   -- 1447: push_literal(174)
+      5, 198,   -- 1445: get_slot_direct(198)
+      1, 127,   -- 1447: push_literal(127)
       23,       -- 1449: bi_eq
       13, 1459, -- 1450: jmp_unless(1459)
       0,        -- 1452: push_frame
-      1, 166,   -- 1453: push_literal(166)
-      8, 126,   -- 1455: set_slot_direct(126)
+      1, 230,   -- 1453: push_literal(230)
+      8, 198,   -- 1455: set_slot_direct(198)
       12, 1626, -- 1457: jmp(1626)
       0,        -- 1459: push_frame
-      5, 126,   -- 1460: get_slot_direct(126)
-      1, 132,   -- 1462: push_literal(132)
+      5, 198,   -- 1460: get_slot_direct(198)
+      1, 203,   -- 1462: push_literal(203)
       23,       -- 1464: bi_eq
       13, 1474, -- 1465: jmp_unless(1474)
       0,        -- 1467: push_frame
-      1, 175,   -- 1468: push_literal(175)
-      8, 126,   -- 1470: set_slot_direct(126)
+      1, 238,   -- 1468: push_literal(238)
+      8, 198,   -- 1470: set_slot_direct(198)
       12, 1626, -- 1472: jmp(1626)
       0,        -- 1474: push_frame
-      5, 126,   -- 1475: get_slot_direct(126)
-      1, 176,   -- 1477: push_literal(176)
+      5, 198,   -- 1475: get_slot_direct(198)
+      1, 239,   -- 1477: push_literal(239)
       23,       -- 1479: bi_eq
       13, 1626, -- 1480: jmp_unless(1626)
       0,        -- 1482: push_frame
-      5, 37,    -- 1483: get_slot_direct(37)
+      5, 53,    -- 1483: get_slot_direct(53)
       0,        -- 1485: push_frame
-      5, 24,    -- 1486: get_slot_direct(24)
+      5, 55,    -- 1486: get_slot_direct(55)
       25,       -- 1488: bi_gte
       13, 1515, -- 1489: jmp_unless(1515)
       0,        -- 1491: push_frame
-      5, 129,   -- 1492: get_slot_direct(129)
+      5, 200,   -- 1492: get_slot_direct(200)
       0,        -- 1494: push_frame
-      5, 20,    -- 1495: get_slot_direct(20)
+      5, 26,    -- 1495: get_slot_direct(26)
       0,        -- 1497: push_frame
-      5, 130,   -- 1498: get_slot_direct(130)
+      5, 201,   -- 1498: get_slot_direct(201)
       0,        -- 1500: push_frame
-      5, 20,    -- 1501: get_slot_direct(20)
-      1, 15,    -- 1503: push_literal(15)
+      5, 26,    -- 1501: get_slot_direct(26)
+      1, 38,    -- 1503: push_literal(38)
       0,        -- 1505: push_frame
-      5, 46,    -- 1506: get_slot_direct(46)
+      5, 63,    -- 1506: get_slot_direct(63)
       10, 2,    -- 1508: invoke(2)
-      1, 170,   -- 1510: push_literal(170)
+      1, 234,   -- 1510: push_literal(234)
       10, 2,    -- 1512: invoke(2)
       14,       -- 1514: pop
       0,        -- 1515: push_frame
       0,        -- 1516: push_frame
-      5, 177,   -- 1517: get_slot_direct(177)
+      5, 240,   -- 1517: get_slot_direct(240)
       0,        -- 1519: push_frame
-      5, 20,    -- 1520: get_slot_direct(20)
+      5, 26,    -- 1520: get_slot_direct(26)
       0,        -- 1522: push_frame
-      5, 106,   -- 1523: get_slot_direct(106)
+      5, 180,   -- 1523: get_slot_direct(180)
       15,       -- 1525: dup
-      7, 44,    -- 1526: get_slot_direct_check(44)
+      7, 61,    -- 1526: get_slot_direct_check(61)
       19,       -- 1528: swap
       0,        -- 1529: push_frame
-      5, 37,    -- 1530: get_slot_direct(37)
-      1, 8,     -- 1532: push_literal(8)
+      5, 53,    -- 1530: get_slot_direct(53)
+      1, 31,    -- 1532: push_literal(31)
       26,       -- 1534: bi_add
       0,        -- 1535: push_frame
-      5, 37,    -- 1536: get_slot_direct(37)
-      1, 8,     -- 1538: push_literal(8)
+      5, 53,    -- 1536: get_slot_direct(53)
+      1, 31,    -- 1538: push_literal(31)
       26,       -- 1540: bi_add
-      1, 178,   -- 1541: push_literal(178)
+      1, 156,   -- 1541: push_literal(156)
       26,       -- 1543: bi_add
       10, 2,    -- 1544: invoke(2)
-      1, 160,   -- 1546: push_literal(160)
+      1, 226,   -- 1546: push_literal(226)
       10, 2,    -- 1548: invoke(2)
-      8, 126,   -- 1550: set_slot_direct(126)
+      8, 198,   -- 1550: set_slot_direct(198)
       0,        -- 1552: push_frame
-      5, 159,   -- 1553: get_slot_direct(159)
+      5, 225,   -- 1553: get_slot_direct(225)
       0,        -- 1555: push_frame
-      5, 20,    -- 1556: get_slot_direct(20)
+      5, 26,    -- 1556: get_slot_direct(26)
       0,        -- 1558: push_frame
-      5, 126,   -- 1559: get_slot_direct(126)
+      5, 198,   -- 1559: get_slot_direct(198)
       10, 1,    -- 1561: invoke(1)
       20,       -- 1563: un_not
       15,       -- 1564: dup
@@ -3570,462 +4483,462 @@ startup.functions = {
       13, 1576, -- 1566: jmp_unless(1576)
       14,       -- 1568: pop
       0,        -- 1569: push_frame
-      5, 126,   -- 1570: get_slot_direct(126)
-      1, 6,     -- 1572: push_literal(6)
+      5, 198,   -- 1570: get_slot_direct(198)
+      1, 18,    -- 1572: push_literal(18)
       19,       -- 1574: swap
       24,       -- 1575: bi_gt
       13, 1602, -- 1576: jmp_unless(1602)
       0,        -- 1578: push_frame
-      5, 129,   -- 1579: get_slot_direct(129)
+      5, 200,   -- 1579: get_slot_direct(200)
       0,        -- 1581: push_frame
-      5, 20,    -- 1582: get_slot_direct(20)
+      5, 26,    -- 1582: get_slot_direct(26)
       0,        -- 1584: push_frame
-      5, 130,   -- 1585: get_slot_direct(130)
+      5, 201,   -- 1585: get_slot_direct(201)
       0,        -- 1587: push_frame
-      5, 20,    -- 1588: get_slot_direct(20)
-      1, 15,    -- 1590: push_literal(15)
+      5, 26,    -- 1588: get_slot_direct(26)
+      1, 38,    -- 1590: push_literal(38)
       0,        -- 1592: push_frame
-      5, 46,    -- 1593: get_slot_direct(46)
+      5, 63,    -- 1593: get_slot_direct(63)
       10, 2,    -- 1595: invoke(2)
-      1, 170,   -- 1597: push_literal(170)
+      1, 234,   -- 1597: push_literal(234)
       10, 2,    -- 1599: invoke(2)
       14,       -- 1601: pop
       0,        -- 1602: push_frame
       0,        -- 1603: push_frame
-      5, 12,    -- 1604: get_slot_direct(12)
+      5, 36,    -- 1604: get_slot_direct(36)
       15,       -- 1606: dup
-      7, 179,   -- 1607: get_slot_direct_check(179)
+      7, 139,   -- 1607: get_slot_direct_check(139)
       19,       -- 1609: swap
       0,        -- 1610: push_frame
-      5, 126,   -- 1611: get_slot_direct(126)
+      5, 198,   -- 1611: get_slot_direct(198)
       10, 1,    -- 1613: invoke(1)
-      8, 126,   -- 1615: set_slot_direct(126)
+      8, 198,   -- 1615: set_slot_direct(198)
       0,        -- 1617: push_frame
       15,       -- 1618: dup
-      5, 37,    -- 1619: get_slot_direct(37)
-      1, 178,   -- 1621: push_literal(178)
+      5, 53,    -- 1619: get_slot_direct(53)
+      1, 156,   -- 1621: push_literal(156)
       26,       -- 1623: bi_add
-      8, 37,    -- 1624: set_slot_direct(37)
+      8, 53,    -- 1624: set_slot_direct(53)
       0,        -- 1626: push_frame
       15,       -- 1627: dup
-      5, 46,    -- 1628: get_slot_direct(46)
+      5, 63,    -- 1628: get_slot_direct(63)
       0,        -- 1630: push_frame
-      5, 126,   -- 1631: get_slot_direct(126)
+      5, 198,   -- 1631: get_slot_direct(198)
       26,       -- 1633: bi_add
-      8, 46,    -- 1634: set_slot_direct(46)
+      8, 63,    -- 1634: set_slot_direct(63)
       0,        -- 1636: push_frame
       15,       -- 1637: dup
-      5, 37,    -- 1638: get_slot_direct(37)
-      1, 8,     -- 1640: push_literal(8)
+      5, 53,    -- 1638: get_slot_direct(53)
+      1, 31,    -- 1640: push_literal(31)
       26,       -- 1642: bi_add
-      8, 37,    -- 1643: set_slot_direct(37)
-      1, 94,    -- 1645: push_literal(94)
+      8, 53,    -- 1643: set_slot_direct(53)
+      1, 115,   -- 1645: push_literal(115)
       20,       -- 1647: un_not
       13, 1241, -- 1648: jmp_unless(1241)
       0,        -- 1650: push_frame
       15,       -- 1651: dup
-      5, 37,    -- 1652: get_slot_direct(37)
-      1, 8,     -- 1654: push_literal(8)
+      5, 53,    -- 1652: get_slot_direct(53)
+      1, 31,    -- 1654: push_literal(31)
       26,       -- 1656: bi_add
-      8, 37,    -- 1657: set_slot_direct(37)
+      8, 53,    -- 1657: set_slot_direct(53)
       0,        -- 1659: push_frame
-      5, 57,    -- 1660: get_slot_direct(57)
+      5, 75,    -- 1660: get_slot_direct(75)
       15,       -- 1662: dup
-      7, 52,    -- 1663: get_slot_direct_check(52)
+      7, 69,    -- 1663: get_slot_direct_check(69)
       19,       -- 1665: swap
       0,        -- 1666: push_frame
-      5, 130,   -- 1667: get_slot_direct(130)
+      5, 201,   -- 1667: get_slot_direct(201)
       0,        -- 1669: push_frame
-      5, 20,    -- 1670: get_slot_direct(20)
-      1, 15,    -- 1672: push_literal(15)
+      5, 26,    -- 1670: get_slot_direct(26)
+      1, 38,    -- 1672: push_literal(38)
       0,        -- 1674: push_frame
-      5, 46,    -- 1675: get_slot_direct(46)
+      5, 63,    -- 1675: get_slot_direct(63)
       10, 2,    -- 1677: invoke(2)
       10, 1,    -- 1679: invoke(1)
       14,       -- 1681: pop
       0,        -- 1682: push_frame
       0,        -- 1683: push_frame
-      5, 106,   -- 1684: get_slot_direct(106)
+      5, 180,   -- 1684: get_slot_direct(180)
       15,       -- 1686: dup
-      7, 39,    -- 1687: get_slot_direct_check(39)
+      7, 56,    -- 1687: get_slot_direct_check(56)
       19,       -- 1689: swap
       0,        -- 1690: push_frame
-      5, 37,    -- 1691: get_slot_direct(37)
+      5, 53,    -- 1691: get_slot_direct(53)
       10, 1,    -- 1693: invoke(1)
-      8, 126,   -- 1695: set_slot_direct(126)
+      8, 198,   -- 1695: set_slot_direct(198)
       12, 2128, -- 1697: jmp(2128)
       0,        -- 1699: push_frame
-      5, 126,   -- 1700: get_slot_direct(126)
-      1, 180,   -- 1702: push_literal(180)
+      5, 198,   -- 1700: get_slot_direct(198)
+      1, 241,   -- 1702: push_literal(241)
       23,       -- 1704: bi_eq
       15,       -- 1705: dup
       13, 1727, -- 1706: jmp_unless(1727)
       14,       -- 1708: pop
       0,        -- 1709: push_frame
-      5, 106,   -- 1710: get_slot_direct(106)
+      5, 180,   -- 1710: get_slot_direct(180)
       15,       -- 1712: dup
-      7, 39,    -- 1713: get_slot_direct_check(39)
+      7, 56,    -- 1713: get_slot_direct_check(56)
       19,       -- 1715: swap
       0,        -- 1716: push_frame
-      5, 37,    -- 1717: get_slot_direct(37)
-      1, 8,     -- 1719: push_literal(8)
+      5, 53,    -- 1717: get_slot_direct(53)
+      1, 31,    -- 1719: push_literal(31)
       26,       -- 1721: bi_add
       10, 1,    -- 1722: invoke(1)
-      1, 180,   -- 1724: push_literal(180)
+      1, 241,   -- 1724: push_literal(241)
       23,       -- 1726: bi_eq
       13, 1803, -- 1727: jmp_unless(1803)
       0,        -- 1729: push_frame
       15,       -- 1730: dup
-      5, 37,    -- 1731: get_slot_direct(37)
-      1, 8,     -- 1733: push_literal(8)
+      5, 53,    -- 1731: get_slot_direct(53)
+      1, 31,    -- 1733: push_literal(31)
       26,       -- 1735: bi_add
-      8, 37,    -- 1736: set_slot_direct(37)
+      8, 53,    -- 1736: set_slot_direct(53)
       12, 1796, -- 1738: jmp(1796)
       0,        -- 1740: push_frame
       0,        -- 1741: push_frame
-      5, 106,   -- 1742: get_slot_direct(106)
+      5, 180,   -- 1742: get_slot_direct(180)
       15,       -- 1744: dup
-      7, 39,    -- 1745: get_slot_direct_check(39)
+      7, 56,    -- 1745: get_slot_direct_check(56)
       19,       -- 1747: swap
       0,        -- 1748: push_frame
-      5, 37,    -- 1749: get_slot_direct(37)
+      5, 53,    -- 1749: get_slot_direct(53)
       10, 1,    -- 1751: invoke(1)
-      8, 126,   -- 1753: set_slot_direct(126)
+      8, 198,   -- 1753: set_slot_direct(198)
       0,        -- 1755: push_frame
-      5, 126,   -- 1756: get_slot_direct(126)
-      1, 165,   -- 1758: push_literal(165)
+      5, 198,   -- 1756: get_slot_direct(198)
+      1, 229,   -- 1758: push_literal(229)
       23,       -- 1760: bi_eq
       15,       -- 1761: dup
       20,       -- 1762: un_not
       13, 1783, -- 1763: jmp_unless(1783)
       14,       -- 1765: pop
       0,        -- 1766: push_frame
-      5, 126,   -- 1767: get_slot_direct(126)
-      1, 166,   -- 1769: push_literal(166)
+      5, 198,   -- 1767: get_slot_direct(198)
+      1, 230,   -- 1769: push_literal(230)
       23,       -- 1771: bi_eq
       15,       -- 1772: dup
       20,       -- 1773: un_not
       13, 1783, -- 1774: jmp_unless(1783)
       14,       -- 1776: pop
       0,        -- 1777: push_frame
-      5, 126,   -- 1778: get_slot_direct(126)
-      1, 49,    -- 1780: push_literal(49)
+      5, 198,   -- 1778: get_slot_direct(198)
+      1, 66,    -- 1780: push_literal(66)
       23,       -- 1782: bi_eq
       13, 1787, -- 1783: jmp_unless(1787)
       12, 1801, -- 1785: jmp(1801)
       0,        -- 1787: push_frame
       15,       -- 1788: dup
-      5, 37,    -- 1789: get_slot_direct(37)
-      1, 8,     -- 1791: push_literal(8)
+      5, 53,    -- 1789: get_slot_direct(53)
+      1, 31,    -- 1791: push_literal(31)
       26,       -- 1793: bi_add
-      8, 37,    -- 1794: set_slot_direct(37)
-      1, 94,    -- 1796: push_literal(94)
+      8, 53,    -- 1794: set_slot_direct(53)
+      1, 115,   -- 1796: push_literal(115)
       20,       -- 1798: un_not
       13, 1740, -- 1799: jmp_unless(1740)
       12, 2128, -- 1801: jmp(2128)
       0,        -- 1803: push_frame
-      5, 126,   -- 1804: get_slot_direct(126)
-      1, 180,   -- 1806: push_literal(180)
+      5, 198,   -- 1804: get_slot_direct(198)
+      1, 241,   -- 1806: push_literal(241)
       23,       -- 1808: bi_eq
       15,       -- 1809: dup
       13, 1831, -- 1810: jmp_unless(1831)
       14,       -- 1812: pop
       0,        -- 1813: push_frame
-      5, 106,   -- 1814: get_slot_direct(106)
+      5, 180,   -- 1814: get_slot_direct(180)
       15,       -- 1816: dup
-      7, 39,    -- 1817: get_slot_direct_check(39)
+      7, 56,    -- 1817: get_slot_direct_check(56)
       19,       -- 1819: swap
       0,        -- 1820: push_frame
-      5, 37,    -- 1821: get_slot_direct(37)
-      1, 8,     -- 1823: push_literal(8)
+      5, 53,    -- 1821: get_slot_direct(53)
+      1, 31,    -- 1823: push_literal(31)
       26,       -- 1825: bi_add
       10, 1,    -- 1826: invoke(1)
-      1, 181,   -- 1828: push_literal(181)
+      1, 242,   -- 1828: push_literal(242)
       23,       -- 1830: bi_eq
       13, 1942, -- 1831: jmp_unless(1942)
       0,        -- 1833: push_frame
       15,       -- 1834: dup
-      5, 37,    -- 1835: get_slot_direct(37)
-      1, 124,   -- 1837: push_literal(124)
+      5, 53,    -- 1835: get_slot_direct(53)
+      1, 153,   -- 1837: push_literal(153)
       26,       -- 1839: bi_add
-      8, 37,    -- 1840: set_slot_direct(37)
+      8, 53,    -- 1840: set_slot_direct(53)
       12, 1935, -- 1842: jmp(1935)
       0,        -- 1844: push_frame
       0,        -- 1845: push_frame
-      5, 106,   -- 1846: get_slot_direct(106)
+      5, 180,   -- 1846: get_slot_direct(180)
       15,       -- 1848: dup
-      7, 39,    -- 1849: get_slot_direct_check(39)
+      7, 56,    -- 1849: get_slot_direct_check(56)
       19,       -- 1851: swap
       0,        -- 1852: push_frame
-      5, 37,    -- 1853: get_slot_direct(37)
+      5, 53,    -- 1853: get_slot_direct(53)
       10, 1,    -- 1855: invoke(1)
-      8, 126,   -- 1857: set_slot_direct(126)
+      8, 198,   -- 1857: set_slot_direct(198)
       0,        -- 1859: push_frame
-      5, 126,   -- 1860: get_slot_direct(126)
-      1, 49,    -- 1862: push_literal(49)
+      5, 198,   -- 1860: get_slot_direct(198)
+      1, 66,    -- 1862: push_literal(66)
       23,       -- 1864: bi_eq
       15,       -- 1865: dup
       20,       -- 1866: un_not
       13, 1898, -- 1867: jmp_unless(1898)
       14,       -- 1869: pop
       0,        -- 1870: push_frame
-      5, 126,   -- 1871: get_slot_direct(126)
-      1, 180,   -- 1873: push_literal(180)
+      5, 198,   -- 1871: get_slot_direct(198)
+      1, 241,   -- 1873: push_literal(241)
       23,       -- 1875: bi_eq
       15,       -- 1876: dup
       13, 1898, -- 1877: jmp_unless(1898)
       14,       -- 1879: pop
       0,        -- 1880: push_frame
-      5, 106,   -- 1881: get_slot_direct(106)
+      5, 180,   -- 1881: get_slot_direct(180)
       15,       -- 1883: dup
-      7, 39,    -- 1884: get_slot_direct_check(39)
+      7, 56,    -- 1884: get_slot_direct_check(56)
       19,       -- 1886: swap
       0,        -- 1887: push_frame
-      5, 37,    -- 1888: get_slot_direct(37)
-      1, 8,     -- 1890: push_literal(8)
+      5, 53,    -- 1888: get_slot_direct(53)
+      1, 31,    -- 1890: push_literal(31)
       27,       -- 1892: bi_sub
       10, 1,    -- 1893: invoke(1)
-      1, 181,   -- 1895: push_literal(181)
+      1, 242,   -- 1895: push_literal(242)
       23,       -- 1897: bi_eq
       13, 1926, -- 1898: jmp_unless(1926)
       0,        -- 1900: push_frame
       15,       -- 1901: dup
-      5, 37,    -- 1902: get_slot_direct(37)
-      1, 8,     -- 1904: push_literal(8)
+      5, 53,    -- 1902: get_slot_direct(53)
+      1, 31,    -- 1904: push_literal(31)
       26,       -- 1906: bi_add
-      8, 37,    -- 1907: set_slot_direct(37)
+      8, 53,    -- 1907: set_slot_direct(53)
       0,        -- 1909: push_frame
       0,        -- 1910: push_frame
-      5, 106,   -- 1911: get_slot_direct(106)
+      5, 180,   -- 1911: get_slot_direct(180)
       15,       -- 1913: dup
-      7, 39,    -- 1914: get_slot_direct_check(39)
+      7, 56,    -- 1914: get_slot_direct_check(56)
       19,       -- 1916: swap
       0,        -- 1917: push_frame
-      5, 37,    -- 1918: get_slot_direct(37)
+      5, 53,    -- 1918: get_slot_direct(53)
       10, 1,    -- 1920: invoke(1)
-      8, 126,   -- 1922: set_slot_direct(126)
+      8, 198,   -- 1922: set_slot_direct(198)
       12, 1940, -- 1924: jmp(1940)
       0,        -- 1926: push_frame
       15,       -- 1927: dup
-      5, 37,    -- 1928: get_slot_direct(37)
-      1, 8,     -- 1930: push_literal(8)
+      5, 53,    -- 1928: get_slot_direct(53)
+      1, 31,    -- 1930: push_literal(31)
       26,       -- 1932: bi_add
-      8, 37,    -- 1933: set_slot_direct(37)
-      1, 94,    -- 1935: push_literal(94)
+      8, 53,    -- 1933: set_slot_direct(53)
+      1, 115,   -- 1935: push_literal(115)
       20,       -- 1937: un_not
       13, 1844, -- 1938: jmp_unless(1844)
       12, 2128, -- 1940: jmp(2128)
       0,        -- 1942: push_frame
-      5, 122,   -- 1943: get_slot_direct(122)
+      5, 195,   -- 1943: get_slot_direct(195)
       15,       -- 1945: dup
-      7, 40,    -- 1946: get_slot_direct_check(40)
+      7, 57,    -- 1946: get_slot_direct_check(57)
       19,       -- 1948: swap
       0,        -- 1949: push_frame
-      5, 126,   -- 1950: get_slot_direct(126)
+      5, 198,   -- 1950: get_slot_direct(198)
       10, 1,    -- 1952: invoke(1)
-      1, 6,     -- 1954: push_literal(6)
+      1, 18,    -- 1954: push_literal(18)
       25,       -- 1956: bi_gte
       13, 2081, -- 1957: jmp_unless(2081)
       0,        -- 1959: push_frame
       0,        -- 1960: push_frame
-      5, 126,   -- 1961: get_slot_direct(126)
-      8, 46,    -- 1963: set_slot_direct(46)
+      5, 198,   -- 1961: get_slot_direct(198)
+      8, 63,    -- 1963: set_slot_direct(63)
       0,        -- 1965: push_frame
       15,       -- 1966: dup
-      5, 37,    -- 1967: get_slot_direct(37)
-      1, 8,     -- 1969: push_literal(8)
+      5, 53,    -- 1967: get_slot_direct(53)
+      1, 31,    -- 1969: push_literal(31)
       26,       -- 1971: bi_add
-      8, 37,    -- 1972: set_slot_direct(37)
+      8, 53,    -- 1972: set_slot_direct(53)
       0,        -- 1974: push_frame
       0,        -- 1975: push_frame
-      5, 106,   -- 1976: get_slot_direct(106)
+      5, 180,   -- 1976: get_slot_direct(180)
       15,       -- 1978: dup
-      7, 39,    -- 1979: get_slot_direct_check(39)
+      7, 56,    -- 1979: get_slot_direct_check(56)
       19,       -- 1981: swap
       0,        -- 1982: push_frame
-      5, 37,    -- 1983: get_slot_direct(37)
+      5, 53,    -- 1983: get_slot_direct(53)
       10, 1,    -- 1985: invoke(1)
-      8, 126,   -- 1987: set_slot_direct(126)
+      8, 198,   -- 1987: set_slot_direct(198)
       12, 2045, -- 1989: jmp(2045)
       0,        -- 1991: push_frame
-      5, 123,   -- 1992: get_slot_direct(123)
+      5, 196,   -- 1992: get_slot_direct(196)
       15,       -- 1994: dup
-      7, 40,    -- 1995: get_slot_direct_check(40)
+      7, 57,    -- 1995: get_slot_direct_check(57)
       19,       -- 1997: swap
       0,        -- 1998: push_frame
-      5, 126,   -- 1999: get_slot_direct(126)
+      5, 198,   -- 1999: get_slot_direct(198)
       10, 1,    -- 2001: invoke(1)
-      1, 6,     -- 2003: push_literal(6)
+      1, 18,    -- 2003: push_literal(18)
       19,       -- 2005: swap
       24,       -- 2006: bi_gt
       13, 2011, -- 2007: jmp_unless(2011)
       12, 2056, -- 2009: jmp(2056)
       0,        -- 2011: push_frame
       15,       -- 2012: dup
-      5, 46,    -- 2013: get_slot_direct(46)
+      5, 63,    -- 2013: get_slot_direct(63)
       0,        -- 2015: push_frame
-      5, 126,   -- 2016: get_slot_direct(126)
+      5, 198,   -- 2016: get_slot_direct(198)
       26,       -- 2018: bi_add
-      8, 46,    -- 2019: set_slot_direct(46)
+      8, 63,    -- 2019: set_slot_direct(63)
       0,        -- 2021: push_frame
       15,       -- 2022: dup
-      5, 37,    -- 2023: get_slot_direct(37)
-      1, 8,     -- 2025: push_literal(8)
+      5, 53,    -- 2023: get_slot_direct(53)
+      1, 31,    -- 2025: push_literal(31)
       26,       -- 2027: bi_add
-      8, 37,    -- 2028: set_slot_direct(37)
+      8, 53,    -- 2028: set_slot_direct(53)
       0,        -- 2030: push_frame
       0,        -- 2031: push_frame
-      5, 106,   -- 2032: get_slot_direct(106)
+      5, 180,   -- 2032: get_slot_direct(180)
       15,       -- 2034: dup
-      7, 39,    -- 2035: get_slot_direct_check(39)
+      7, 56,    -- 2035: get_slot_direct_check(56)
       19,       -- 2037: swap
       0,        -- 2038: push_frame
-      5, 37,    -- 2039: get_slot_direct(37)
+      5, 53,    -- 2039: get_slot_direct(53)
       10, 1,    -- 2041: invoke(1)
-      8, 126,   -- 2043: set_slot_direct(126)
+      8, 198,   -- 2043: set_slot_direct(198)
       0,        -- 2045: push_frame
-      5, 37,    -- 2046: get_slot_direct(37)
+      5, 53,    -- 2046: get_slot_direct(53)
       0,        -- 2048: push_frame
-      5, 24,    -- 2049: get_slot_direct(24)
+      5, 55,    -- 2049: get_slot_direct(55)
       19,       -- 2051: swap
       24,       -- 2052: bi_gt
       20,       -- 2053: un_not
       13, 1991, -- 2054: jmp_unless(1991)
       0,        -- 2056: push_frame
-      5, 57,    -- 2057: get_slot_direct(57)
+      5, 75,    -- 2057: get_slot_direct(75)
       15,       -- 2059: dup
-      7, 52,    -- 2060: get_slot_direct_check(52)
+      7, 69,    -- 2060: get_slot_direct_check(69)
       19,       -- 2062: swap
       0,        -- 2063: push_frame
-      5, 130,   -- 2064: get_slot_direct(130)
+      5, 201,   -- 2064: get_slot_direct(201)
       0,        -- 2066: push_frame
-      5, 20,    -- 2067: get_slot_direct(20)
-      1, 182,   -- 2069: push_literal(182)
+      5, 26,    -- 2067: get_slot_direct(26)
+      1, 243,   -- 2069: push_literal(243)
       0,        -- 2071: push_frame
-      5, 46,    -- 2072: get_slot_direct(46)
+      5, 63,    -- 2072: get_slot_direct(63)
       10, 2,    -- 2074: invoke(2)
       10, 1,    -- 2076: invoke(1)
       14,       -- 2078: pop
       12, 2128, -- 2079: jmp(2128)
       0,        -- 2081: push_frame
       15,       -- 2082: dup
-      5, 37,    -- 2083: get_slot_direct(37)
-      1, 8,     -- 2085: push_literal(8)
+      5, 53,    -- 2083: get_slot_direct(53)
+      1, 31,    -- 2085: push_literal(31)
       26,       -- 2087: bi_add
-      8, 37,    -- 2088: set_slot_direct(37)
+      8, 53,    -- 2088: set_slot_direct(53)
       0,        -- 2090: push_frame
-      5, 57,    -- 2091: get_slot_direct(57)
+      5, 75,    -- 2091: get_slot_direct(75)
       15,       -- 2093: dup
-      7, 52,    -- 2094: get_slot_direct_check(52)
+      7, 69,    -- 2094: get_slot_direct_check(69)
       19,       -- 2096: swap
       0,        -- 2097: push_frame
-      5, 130,   -- 2098: get_slot_direct(130)
+      5, 201,   -- 2098: get_slot_direct(201)
       0,        -- 2100: push_frame
-      5, 20,    -- 2101: get_slot_direct(20)
-      1, 182,   -- 2103: push_literal(182)
+      5, 26,    -- 2101: get_slot_direct(26)
+      1, 243,   -- 2103: push_literal(243)
       0,        -- 2105: push_frame
-      5, 126,   -- 2106: get_slot_direct(126)
+      5, 198,   -- 2106: get_slot_direct(198)
       10, 2,    -- 2108: invoke(2)
       10, 1,    -- 2110: invoke(1)
       14,       -- 2112: pop
       0,        -- 2113: push_frame
       0,        -- 2114: push_frame
-      5, 106,   -- 2115: get_slot_direct(106)
+      5, 180,   -- 2115: get_slot_direct(180)
       15,       -- 2117: dup
-      7, 39,    -- 2118: get_slot_direct_check(39)
+      7, 56,    -- 2118: get_slot_direct_check(56)
       19,       -- 2120: swap
       0,        -- 2121: push_frame
-      5, 37,    -- 2122: get_slot_direct(37)
+      5, 53,    -- 2122: get_slot_direct(53)
       10, 1,    -- 2124: invoke(1)
-      8, 126,   -- 2126: set_slot_direct(126)
+      8, 198,   -- 2126: set_slot_direct(198)
       0,        -- 2128: push_frame
-      5, 126,   -- 2129: get_slot_direct(126)
+      5, 198,   -- 2129: get_slot_direct(198)
       20,       -- 2131: un_not
       13, 165,  -- 2132: jmp_unless(165)
       0,        -- 2134: push_frame
-      5, 57,    -- 2135: get_slot_direct(57)
+      5, 75,    -- 2135: get_slot_direct(75)
       11        -- 2137: return
     }
   },
   ifunc.Function:new{ -- "error"
     name = jsval.newString("error"),
-    id = 32,
+    id = 38,
     nargs = 3,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 7,     -- 8: set_slot_direct(7)
+      8, 30,    -- 8: set_slot_direct(30)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 131,   -- 15: set_slot_direct(131)
+      8, 202,   -- 15: set_slot_direct(202)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 132,   -- 22: set_slot_direct(132)
+      8, 203,   -- 22: set_slot_direct(203)
       14,       -- 24: pop
       0,        -- 25: push_frame
       0,        -- 26: push_frame
-      5, 132,   -- 27: get_slot_direct(132)
+      5, 203,   -- 27: get_slot_direct(203)
       15,       -- 29: dup
       20,       -- 30: un_not
       13, 37,   -- 31: jmp_unless(37)
       14,       -- 33: pop
       0,        -- 34: push_frame
-      5, 7,     -- 35: get_slot_direct(7)
-      8, 132,   -- 37: set_slot_direct(132)
+      5, 30,    -- 35: get_slot_direct(30)
+      8, 203,   -- 37: set_slot_direct(203)
       0,        -- 39: push_frame
-      5, 132,   -- 40: get_slot_direct(132)
-      1, 133,   -- 42: push_literal(133)
-      8, 9,     -- 44: set_slot_direct(9)
+      5, 203,   -- 40: get_slot_direct(203)
+      1, 204,   -- 42: push_literal(204)
+      8, 19,    -- 44: set_slot_direct(19)
       0,        -- 46: push_frame
-      5, 132,   -- 47: get_slot_direct(132)
-      5, 36,    -- 49: get_slot_direct(36)
+      5, 203,   -- 47: get_slot_direct(203)
+      5, 52,    -- 49: get_slot_direct(52)
       15,       -- 51: dup
       20,       -- 52: un_not
       13, 61,   -- 53: jmp_unless(61)
       14,       -- 55: pop
       0,        -- 56: push_frame
-      5, 132,   -- 57: get_slot_direct(132)
-      5, 134,   -- 59: get_slot_direct(134)
+      5, 203,   -- 57: get_slot_direct(203)
+      5, 205,   -- 59: get_slot_direct(205)
       13, 90,   -- 61: jmp_unless(90)
       0,        -- 63: push_frame
       15,       -- 64: dup
-      5, 131,   -- 65: get_slot_direct(131)
-      1, 135,   -- 67: push_literal(135)
+      5, 202,   -- 65: get_slot_direct(202)
+      1, 206,   -- 67: push_literal(206)
       0,        -- 69: push_frame
-      5, 132,   -- 70: get_slot_direct(132)
-      5, 36,    -- 72: get_slot_direct(36)
+      5, 203,   -- 70: get_slot_direct(203)
+      5, 52,    -- 72: get_slot_direct(52)
       26,       -- 74: bi_add
-      1, 136,   -- 75: push_literal(136)
+      1, 135,   -- 75: push_literal(135)
       26,       -- 77: bi_add
       0,        -- 78: push_frame
-      5, 132,   -- 79: get_slot_direct(132)
-      5, 134,   -- 81: get_slot_direct(134)
+      5, 203,   -- 79: get_slot_direct(203)
+      5, 205,   -- 81: get_slot_direct(205)
       26,       -- 83: bi_add
-      1, 137,   -- 84: push_literal(137)
+      1, 207,   -- 84: push_literal(207)
       26,       -- 86: bi_add
       26,       -- 87: bi_add
-      8, 131,   -- 88: set_slot_direct(131)
+      8, 202,   -- 88: set_slot_direct(202)
       0,        -- 90: push_frame
-      5, 132,   -- 91: get_slot_direct(132)
+      5, 203,   -- 91: get_slot_direct(203)
       0,        -- 93: push_frame
-      5, 131,   -- 94: get_slot_direct(131)
-      8, 131,   -- 96: set_slot_direct(131)
+      5, 202,   -- 94: get_slot_direct(202)
+      8, 202,   -- 96: set_slot_direct(202)
       0,        -- 98: push_frame
-      5, 4,     -- 99: get_slot_direct(4)
+      5, 15,    -- 99: get_slot_direct(15)
       15,       -- 101: dup
-      7, 22,    -- 102: get_slot_direct_check(22)
+      7, 7,     -- 102: get_slot_direct_check(7)
       19,       -- 104: swap
       0,        -- 105: push_frame
-      5, 132,   -- 106: get_slot_direct(132)
+      5, 203,   -- 106: get_slot_direct(203)
       10, 1,    -- 108: invoke(1)
       14,       -- 110: pop
       1, 0,     -- 111: push_literal(0)
@@ -4034,667 +4947,651 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "make"
     name = jsval.newString("make"),
-    id = 33,
+    id = 39,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 138,   -- 8: set_slot_direct(138)
+      8, 208,   -- 8: set_slot_direct(208)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 139,   -- 15: set_slot_direct(139)
+      8, 209,   -- 15: set_slot_direct(209)
       14,       -- 17: pop
       2,        -- 18: new_object
       15,       -- 19: dup
       0,        -- 20: push_frame
-      5, 138,   -- 21: get_slot_direct(138)
-      8, 138,   -- 23: set_slot_direct(138)
+      5, 208,   -- 21: get_slot_direct(208)
+      8, 208,   -- 23: set_slot_direct(208)
       15,       -- 25: dup
       0,        -- 26: push_frame
-      5, 139,   -- 27: get_slot_direct(139)
-      8, 139,   -- 29: set_slot_direct(139)
+      5, 209,   -- 27: get_slot_direct(209)
+      8, 209,   -- 29: set_slot_direct(209)
       15,       -- 31: dup
       0,        -- 32: push_frame
-      5, 36,    -- 33: get_slot_direct(36)
-      8, 36,    -- 35: set_slot_direct(36)
+      5, 52,    -- 33: get_slot_direct(52)
+      8, 52,    -- 35: set_slot_direct(52)
       15,       -- 37: dup
       0,        -- 38: push_frame
-      5, 37,    -- 39: get_slot_direct(37)
-      8, 134,   -- 41: set_slot_direct(134)
+      5, 53,    -- 39: get_slot_direct(53)
+      8, 205,   -- 41: set_slot_direct(205)
       11        -- 43: return
     }
   },
   ifunc.Function:new{ -- "make_parse"
     name = jsval.newString("make_parse"),
-    id = 34,
+    id = 40,
     nargs = 2,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 189,   -- 8: set_slot_direct(189)
+      8, 250,   -- 8: set_slot_direct(250)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 119,   -- 15: set_slot_direct(119)
+      8, 192,   -- 15: set_slot_direct(192)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 125,   -- 21: set_slot_direct(125)
+      8, 197,   -- 21: set_slot_direct(197)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 190,   -- 26: set_slot_direct(190)
+      8, 251,   -- 26: set_slot_direct(251)
       0,        -- 28: push_frame
       1, 0,     -- 29: push_literal(0)
-      8, 191,   -- 31: set_slot_direct(191)
+      8, 252,   -- 31: set_slot_direct(252)
       0,        -- 33: push_frame
       1, 0,     -- 34: push_literal(0)
-      8, 192,   -- 36: set_slot_direct(192)
+      8, 253,   -- 36: set_slot_direct(253)
       0,        -- 38: push_frame
       1, 0,     -- 39: push_literal(0)
-      8, 193,   -- 41: set_slot_direct(193)
+      8, 254,   -- 41: set_slot_direct(254)
       0,        -- 43: push_frame
       1, 0,     -- 44: push_literal(0)
-      8, 194,   -- 46: set_slot_direct(194)
+      8, 255,   -- 46: set_slot_direct(255)
       0,        -- 48: push_frame
       1, 0,     -- 49: push_literal(0)
-      8, 195,   -- 51: set_slot_direct(195)
+      8, 256,   -- 51: set_slot_direct(256)
       0,        -- 53: push_frame
       1, 0,     -- 54: push_literal(0)
-      8, 129,   -- 56: set_slot_direct(129)
+      8, 200,   -- 56: set_slot_direct(200)
       0,        -- 58: push_frame
       1, 0,     -- 59: push_literal(0)
-      8, 196,   -- 61: set_slot_direct(196)
+      8, 257,   -- 61: set_slot_direct(257)
       0,        -- 63: push_frame
       1, 0,     -- 64: push_literal(0)
-      8, 197,   -- 66: set_slot_direct(197)
+      8, 258,   -- 66: set_slot_direct(258)
       0,        -- 68: push_frame
       1, 0,     -- 69: push_literal(0)
-      8, 198,   -- 71: set_slot_direct(198)
+      8, 259,   -- 71: set_slot_direct(259)
       0,        -- 73: push_frame
       1, 0,     -- 74: push_literal(0)
-      8, 199,   -- 76: set_slot_direct(199)
+      8, 260,   -- 76: set_slot_direct(260)
       0,        -- 78: push_frame
       1, 0,     -- 79: push_literal(0)
-      8, 200,   -- 81: set_slot_direct(200)
+      8, 261,   -- 81: set_slot_direct(261)
       0,        -- 83: push_frame
       1, 0,     -- 84: push_literal(0)
-      8, 201,   -- 86: set_slot_direct(201)
+      8, 262,   -- 86: set_slot_direct(262)
       0,        -- 88: push_frame
       1, 0,     -- 89: push_literal(0)
-      8, 202,   -- 91: set_slot_direct(202)
+      8, 263,   -- 91: set_slot_direct(263)
       0,        -- 93: push_frame
       1, 0,     -- 94: push_literal(0)
-      8, 72,    -- 96: set_slot_direct(72)
+      8, 91,    -- 96: set_slot_direct(91)
       0,        -- 98: push_frame
       1, 0,     -- 99: push_literal(0)
-      8, 203,   -- 101: set_slot_direct(203)
+      8, 264,   -- 101: set_slot_direct(264)
       0,        -- 103: push_frame
       1, 0,     -- 104: push_literal(0)
-      8, 204,   -- 106: set_slot_direct(204)
+      8, 265,   -- 106: set_slot_direct(265)
       0,        -- 108: push_frame
       1, 0,     -- 109: push_literal(0)
-      8, 205,   -- 111: set_slot_direct(205)
+      8, 266,   -- 111: set_slot_direct(266)
       0,        -- 113: push_frame
       1, 0,     -- 114: push_literal(0)
-      8, 206,   -- 116: set_slot_direct(206)
+      8, 267,   -- 116: set_slot_direct(267)
       0,        -- 118: push_frame
       1, 0,     -- 119: push_literal(0)
-      8, 207,   -- 121: set_slot_direct(207)
+      8, 268,   -- 121: set_slot_direct(268)
       0,        -- 123: push_frame
       1, 0,     -- 124: push_literal(0)
-      8, 208,   -- 126: set_slot_direct(208)
+      8, 269,   -- 126: set_slot_direct(269)
       0,        -- 128: push_frame
       1, 0,     -- 129: push_literal(0)
-      8, 122,   -- 131: set_slot_direct(122)
+      8, 195,   -- 131: set_slot_direct(195)
       0,        -- 133: push_frame
       1, 0,     -- 134: push_literal(0)
-      8, 209,   -- 136: set_slot_direct(209)
+      8, 270,   -- 136: set_slot_direct(270)
       0,        -- 138: push_frame
       1, 0,     -- 139: push_literal(0)
-      8, 187,   -- 141: set_slot_direct(187)
+      8, 248,   -- 141: set_slot_direct(248)
       0,        -- 143: push_frame
       1, 0,     -- 144: push_literal(0)
-      8, 210,   -- 146: set_slot_direct(210)
+      8, 271,   -- 146: set_slot_direct(271)
       0,        -- 148: push_frame
       2,        -- 149: new_object
-      8, 191,   -- 150: set_slot_direct(191)
+      8, 252,   -- 150: set_slot_direct(252)
       0,        -- 152: push_frame
-      4, 35,    -- 153: new_function(35)
-      8, 195,   -- 155: set_slot_direct(195)
+      4, 41,    -- 153: new_function(41)
+      8, 256,   -- 155: set_slot_direct(256)
       0,        -- 157: push_frame
-      4, 36,    -- 158: new_function(36)
-      8, 129,   -- 160: set_slot_direct(129)
+      4, 42,    -- 158: new_function(42)
+      8, 200,   -- 160: set_slot_direct(200)
       0,        -- 162: push_frame
       2,        -- 163: new_object
       15,       -- 164: dup
-      4, 37,    -- 165: new_function(37)
-      8, 118,   -- 167: set_slot_direct(118)
+      4, 43,    -- 165: new_function(43)
+      8, 191,   -- 167: set_slot_direct(191)
       15,       -- 169: dup
-      4, 38,    -- 170: new_function(38)
-      8, 221,   -- 172: set_slot_direct(221)
+      4, 44,    -- 170: new_function(44)
+      8, 282,   -- 172: set_slot_direct(282)
       15,       -- 174: dup
-      4, 39,    -- 175: new_function(39)
-      8, 54,    -- 177: set_slot_direct(54)
+      4, 45,    -- 175: new_function(45)
+      8, 71,    -- 177: set_slot_direct(71)
       15,       -- 179: dup
-      4, 40,    -- 180: new_function(40)
-      8, 223,   -- 182: set_slot_direct(223)
-      8, 196,   -- 184: set_slot_direct(196)
+      4, 46,    -- 180: new_function(46)
+      8, 284,   -- 182: set_slot_direct(284)
+      8, 257,   -- 184: set_slot_direct(257)
       0,        -- 186: push_frame
-      4, 41,    -- 187: new_function(41)
-      8, 197,   -- 189: set_slot_direct(197)
+      4, 47,    -- 187: new_function(47)
+      8, 258,   -- 189: set_slot_direct(258)
       0,        -- 191: push_frame
-      4, 42,    -- 192: new_function(42)
-      8, 198,   -- 194: set_slot_direct(198)
+      4, 48,    -- 192: new_function(48)
+      8, 259,   -- 194: set_slot_direct(259)
       0,        -- 196: push_frame
-      4, 43,    -- 197: new_function(43)
-      8, 199,   -- 199: set_slot_direct(199)
+      4, 49,    -- 197: new_function(49)
+      8, 260,   -- 199: set_slot_direct(260)
       0,        -- 201: push_frame
-      4, 44,    -- 202: new_function(44)
-      8, 200,   -- 204: set_slot_direct(200)
+      4, 50,    -- 202: new_function(50)
+      8, 261,   -- 204: set_slot_direct(261)
       0,        -- 206: push_frame
-      4, 45,    -- 207: new_function(45)
-      8, 201,   -- 209: set_slot_direct(201)
+      4, 51,    -- 207: new_function(51)
+      8, 262,   -- 209: set_slot_direct(262)
       0,        -- 211: push_frame
-      4, 46,    -- 212: new_function(46)
-      8, 202,   -- 214: set_slot_direct(202)
+      4, 52,    -- 212: new_function(52)
+      8, 263,   -- 214: set_slot_direct(263)
       0,        -- 216: push_frame
-      4, 47,    -- 217: new_function(47)
-      8, 72,    -- 219: set_slot_direct(72)
+      4, 53,    -- 217: new_function(53)
+      8, 91,    -- 219: set_slot_direct(91)
       0,        -- 221: push_frame
       2,        -- 222: new_object
       15,       -- 223: dup
-      4, 48,    -- 224: new_function(48)
-      8, 215,   -- 226: set_slot_direct(215)
+      4, 54,    -- 224: new_function(54)
+      8, 276,   -- 226: set_slot_direct(276)
       15,       -- 228: dup
-      4, 49,    -- 229: new_function(49)
-      8, 216,   -- 231: set_slot_direct(216)
-      8, 203,   -- 233: set_slot_direct(203)
+      4, 55,    -- 229: new_function(55)
+      8, 277,   -- 231: set_slot_direct(277)
+      8, 264,   -- 233: set_slot_direct(264)
       0,        -- 235: push_frame
-      4, 50,    -- 236: new_function(50)
-      8, 204,   -- 238: set_slot_direct(204)
+      4, 56,    -- 236: new_function(56)
+      8, 265,   -- 238: set_slot_direct(265)
       0,        -- 240: push_frame
-      4, 51,    -- 241: new_function(51)
-      8, 205,   -- 243: set_slot_direct(205)
+      4, 57,    -- 241: new_function(57)
+      8, 266,   -- 243: set_slot_direct(266)
       0,        -- 245: push_frame
-      4, 53,    -- 246: new_function(53)
-      8, 206,   -- 248: set_slot_direct(206)
+      4, 59,    -- 246: new_function(59)
+      8, 267,   -- 248: set_slot_direct(267)
       0,        -- 250: push_frame
-      4, 55,    -- 251: new_function(55)
-      8, 207,   -- 253: set_slot_direct(207)
+      4, 61,    -- 251: new_function(61)
+      8, 268,   -- 253: set_slot_direct(268)
       0,        -- 255: push_frame
-      4, 57,    -- 256: new_function(57)
-      8, 208,   -- 258: set_slot_direct(208)
+      4, 63,    -- 256: new_function(63)
+      8, 269,   -- 258: set_slot_direct(269)
       0,        -- 260: push_frame
-      4, 59,    -- 261: new_function(59)
-      8, 122,   -- 263: set_slot_direct(122)
+      4, 65,    -- 261: new_function(65)
+      8, 195,   -- 263: set_slot_direct(195)
       0,        -- 265: push_frame
-      4, 61,    -- 266: new_function(61)
-      8, 209,   -- 268: set_slot_direct(209)
+      4, 67,    -- 266: new_function(67)
+      8, 270,   -- 268: set_slot_direct(270)
       0,        -- 270: push_frame
-      5, 204,   -- 271: get_slot_direct(204)
+      5, 265,   -- 271: get_slot_direct(265)
       0,        -- 273: push_frame
-      5, 20,    -- 274: get_slot_direct(20)
-      1, 229,   -- 276: push_literal(229)
+      5, 26,    -- 274: get_slot_direct(26)
+      1, 290,   -- 276: push_literal(290)
       10, 1,    -- 278: invoke(1)
       14,       -- 280: pop
       0,        -- 281: push_frame
-      5, 204,   -- 282: get_slot_direct(204)
+      5, 265,   -- 282: get_slot_direct(265)
       0,        -- 284: push_frame
-      5, 20,    -- 285: get_slot_direct(20)
-      1, 220,   -- 287: push_literal(220)
+      5, 26,    -- 285: get_slot_direct(26)
+      1, 281,   -- 287: push_literal(281)
       10, 1,    -- 289: invoke(1)
       14,       -- 291: pop
       0,        -- 292: push_frame
-      5, 204,   -- 293: get_slot_direct(204)
+      5, 265,   -- 293: get_slot_direct(265)
       0,        -- 295: push_frame
-      5, 20,    -- 296: get_slot_direct(20)
-      1, 253,   -- 298: push_literal(253)
+      5, 26,    -- 296: get_slot_direct(26)
+      1, 312,   -- 298: push_literal(312)
       10, 1,    -- 300: invoke(1)
       14,       -- 302: pop
       0,        -- 303: push_frame
-      5, 204,   -- 304: get_slot_direct(204)
+      5, 265,   -- 304: get_slot_direct(265)
       0,        -- 306: push_frame
-      5, 20,    -- 307: get_slot_direct(20)
-      1, 239,   -- 309: push_literal(239)
+      5, 26,    -- 307: get_slot_direct(26)
+      1, 299,   -- 309: push_literal(299)
       10, 1,    -- 311: invoke(1)
       14,       -- 313: pop
       0,        -- 314: push_frame
-      5, 204,   -- 315: get_slot_direct(204)
+      5, 265,   -- 315: get_slot_direct(265)
       0,        -- 317: push_frame
-      5, 20,    -- 318: get_slot_direct(20)
-      1, 254,   -- 320: push_literal(254)
+      5, 26,    -- 318: get_slot_direct(26)
+      1, 313,   -- 320: push_literal(313)
       10, 1,    -- 322: invoke(1)
       14,       -- 324: pop
       0,        -- 325: push_frame
-      5, 204,   -- 326: get_slot_direct(204)
+      5, 265,   -- 326: get_slot_direct(265)
       0,        -- 328: push_frame
-      5, 20,    -- 329: get_slot_direct(20)
-      1, 137,   -- 331: push_literal(137)
+      5, 26,    -- 329: get_slot_direct(26)
+      1, 207,   -- 331: push_literal(207)
       10, 1,    -- 333: invoke(1)
       14,       -- 335: pop
       0,        -- 336: push_frame
-      5, 204,   -- 337: get_slot_direct(204)
+      5, 265,   -- 337: get_slot_direct(265)
       0,        -- 339: push_frame
-      5, 20,    -- 340: get_slot_direct(20)
-      1, 242,   -- 342: push_literal(242)
+      5, 26,    -- 340: get_slot_direct(26)
+      1, 302,   -- 342: push_literal(302)
       10, 1,    -- 344: invoke(1)
       14,       -- 346: pop
       0,        -- 347: push_frame
-      5, 204,   -- 348: get_slot_direct(204)
+      5, 265,   -- 348: get_slot_direct(265)
       0,        -- 350: push_frame
-      5, 20,    -- 351: get_slot_direct(20)
-      1, 58,    -- 353: push_literal(58)
+      5, 26,    -- 351: get_slot_direct(26)
+      1, 76,    -- 353: push_literal(76)
       10, 1,    -- 355: invoke(1)
       14,       -- 357: pop
       0,        -- 358: push_frame
-      5, 204,   -- 359: get_slot_direct(204)
+      5, 265,   -- 359: get_slot_direct(265)
       0,        -- 361: push_frame
-      5, 20,    -- 362: get_slot_direct(20)
-      1, 255,   -- 364: push_literal(255)
+      5, 26,    -- 362: get_slot_direct(26)
+      1, 314,   -- 364: push_literal(314)
       10, 1,    -- 366: invoke(1)
       14,       -- 368: pop
       0,        -- 369: push_frame
-      5, 205,   -- 370: get_slot_direct(205)
+      5, 266,   -- 370: get_slot_direct(266)
       0,        -- 372: push_frame
-      5, 20,    -- 373: get_slot_direct(20)
-      1, 102,   -- 375: push_literal(102)
-      1, 94,    -- 377: push_literal(94)
+      5, 26,    -- 373: get_slot_direct(26)
+      1, 119,   -- 375: push_literal(119)
+      1, 115,   -- 377: push_literal(115)
       10, 2,    -- 379: invoke(2)
       14,       -- 381: pop
       0,        -- 382: push_frame
-      5, 205,   -- 383: get_slot_direct(205)
+      5, 266,   -- 383: get_slot_direct(266)
       0,        -- 385: push_frame
-      5, 20,    -- 386: get_slot_direct(20)
-      1, 103,   -- 388: push_literal(103)
-      1, 10,    -- 390: push_literal(10)
+      5, 26,    -- 386: get_slot_direct(26)
+      1, 120,   -- 388: push_literal(120)
+      1, 32,    -- 390: push_literal(32)
       10, 2,    -- 392: invoke(2)
       14,       -- 394: pop
       0,        -- 395: push_frame
-      5, 205,   -- 396: get_slot_direct(205)
+      5, 266,   -- 396: get_slot_direct(266)
       0,        -- 398: push_frame
-      5, 20,    -- 399: get_slot_direct(20)
-      1, 256,   -- 401: push_literal(256)
-      1, 21,    -- 403: push_literal(21)
+      5, 26,    -- 399: get_slot_direct(26)
+      1, 315,   -- 401: push_literal(315)
+      1, 41,    -- 403: push_literal(41)
       10, 2,    -- 405: invoke(2)
       14,       -- 407: pop
       0,        -- 408: push_frame
-      5, 205,   -- 409: get_slot_direct(205)
+      5, 266,   -- 409: get_slot_direct(266)
       0,        -- 411: push_frame
-      5, 20,    -- 412: get_slot_direct(20)
-      1, 66,    -- 414: push_literal(66)
+      5, 26,    -- 412: get_slot_direct(26)
+      1, 85,    -- 414: push_literal(85)
       1, 0,     -- 416: push_literal(0)
       10, 2,    -- 418: invoke(2)
       14,       -- 420: pop
       0,        -- 421: push_frame
-      5, 205,   -- 422: get_slot_direct(205)
+      5, 266,   -- 422: get_slot_direct(266)
       0,        -- 424: push_frame
-      5, 20,    -- 425: get_slot_direct(20)
-      1, 257,   -- 427: push_literal(257)
-      1, 258,   -- 429: push_literal(258)
+      5, 26,    -- 425: get_slot_direct(26)
+      1, 133,   -- 427: push_literal(133)
+      1, 171,   -- 429: push_literal(171)
       10, 2,    -- 431: invoke(2)
       14,       -- 433: pop
       0,        -- 434: push_frame
-      5, 205,   -- 435: get_slot_direct(205)
+      5, 266,   -- 435: get_slot_direct(266)
       0,        -- 437: push_frame
-      5, 20,    -- 438: get_slot_direct(20)
-      1, 259,   -- 440: push_literal(259)
-      1, 260,   -- 442: push_literal(260)
+      5, 26,    -- 438: get_slot_direct(26)
+      1, 136,   -- 440: push_literal(136)
+      1, 27,    -- 442: push_literal(27)
       10, 2,    -- 444: invoke(2)
       14,       -- 446: pop
       0,        -- 447: push_frame
-      5, 205,   -- 448: get_slot_direct(205)
+      5, 265,   -- 448: get_slot_direct(265)
       0,        -- 450: push_frame
-      5, 20,    -- 451: get_slot_direct(20)
-      1, 4,     -- 453: push_literal(4)
-      2,        -- 455: new_object
-      10, 2,    -- 456: invoke(2)
-      14,       -- 458: pop
-      0,        -- 459: push_frame
-      5, 205,   -- 460: get_slot_direct(205)
+      5, 26,    -- 451: get_slot_direct(26)
+      1, 292,   -- 453: push_literal(292)
+      10, 1,    -- 455: invoke(1)
+      0,        -- 457: push_frame
+      5, 256,   -- 458: get_slot_direct(256)
+      8, 276,   -- 460: set_slot_direct(276)
       0,        -- 462: push_frame
-      5, 20,    -- 463: get_slot_direct(20)
-      1, 51,    -- 465: push_literal(51)
-      3,        -- 467: new_array
-      10, 2,    -- 468: invoke(2)
-      14,       -- 470: pop
-      0,        -- 471: push_frame
-      5, 204,   -- 472: get_slot_direct(204)
-      0,        -- 474: push_frame
-      5, 20,    -- 475: get_slot_direct(20)
-      1, 231,   -- 477: push_literal(231)
-      10, 1,    -- 479: invoke(1)
-      0,        -- 481: push_frame
-      5, 195,   -- 482: get_slot_direct(195)
-      8, 215,   -- 484: set_slot_direct(215)
-      0,        -- 486: push_frame
-      5, 204,   -- 487: get_slot_direct(204)
-      0,        -- 489: push_frame
-      5, 20,    -- 490: get_slot_direct(20)
-      1, 20,    -- 492: push_literal(20)
-      10, 1,    -- 494: invoke(1)
-      4, 62,    -- 496: new_function(62)
-      8, 215,   -- 498: set_slot_direct(215)
-      0,        -- 500: push_frame
-      5, 208,   -- 501: get_slot_direct(208)
-      0,        -- 503: push_frame
-      5, 20,    -- 504: get_slot_direct(20)
-      1, 261,   -- 506: push_literal(261)
-      10, 1,    -- 508: invoke(1)
-      14,       -- 510: pop
-      0,        -- 511: push_frame
-      5, 208,   -- 512: get_slot_direct(208)
-      0,        -- 514: push_frame
-      5, 20,    -- 515: get_slot_direct(20)
-      1, 262,   -- 517: push_literal(262)
-      10, 1,    -- 519: invoke(1)
-      14,       -- 521: pop
-      0,        -- 522: push_frame
-      5, 208,   -- 523: get_slot_direct(208)
-      0,        -- 525: push_frame
-      5, 20,    -- 526: get_slot_direct(20)
-      1, 263,   -- 528: push_literal(263)
-      10, 1,    -- 530: invoke(1)
-      14,       -- 532: pop
-      0,        -- 533: push_frame
-      5, 208,   -- 534: get_slot_direct(208)
-      0,        -- 536: push_frame
-      5, 20,    -- 537: get_slot_direct(20)
-      1, 264,   -- 539: push_literal(264)
-      10, 1,    -- 541: invoke(1)
-      14,       -- 543: pop
-      0,        -- 544: push_frame
-      5, 208,   -- 545: get_slot_direct(208)
-      0,        -- 547: push_frame
-      5, 20,    -- 548: get_slot_direct(20)
-      1, 265,   -- 550: push_literal(265)
-      10, 1,    -- 552: invoke(1)
-      14,       -- 554: pop
-      0,        -- 555: push_frame
-      5, 206,   -- 556: get_slot_direct(206)
-      0,        -- 558: push_frame
-      5, 20,    -- 559: get_slot_direct(20)
-      1, 266,   -- 561: push_literal(266)
-      1, 267,   -- 563: push_literal(267)
-      4, 63,    -- 565: new_function(63)
-      10, 3,    -- 567: invoke(3)
-      14,       -- 569: pop
-      0,        -- 570: push_frame
-      5, 207,   -- 571: get_slot_direct(207)
-      0,        -- 573: push_frame
-      5, 20,    -- 574: get_slot_direct(20)
-      1, 270,   -- 576: push_literal(270)
-      1, 271,   -- 578: push_literal(271)
-      10, 2,    -- 580: invoke(2)
-      14,       -- 582: pop
-      0,        -- 583: push_frame
-      5, 207,   -- 584: get_slot_direct(207)
-      0,        -- 586: push_frame
-      5, 20,    -- 587: get_slot_direct(20)
-      1, 272,   -- 589: push_literal(272)
-      1, 273,   -- 591: push_literal(273)
-      10, 2,    -- 593: invoke(2)
-      14,       -- 595: pop
-      0,        -- 596: push_frame
-      5, 207,   -- 597: get_slot_direct(207)
-      0,        -- 599: push_frame
-      5, 20,    -- 600: get_slot_direct(20)
-      1, 274,   -- 602: push_literal(274)
-      1, 275,   -- 604: push_literal(275)
-      10, 2,    -- 606: invoke(2)
-      14,       -- 608: pop
-      0,        -- 609: push_frame
-      5, 207,   -- 610: get_slot_direct(207)
-      0,        -- 612: push_frame
-      5, 20,    -- 613: get_slot_direct(20)
-      1, 276,   -- 615: push_literal(276)
-      1, 275,   -- 617: push_literal(275)
-      10, 2,    -- 619: invoke(2)
-      14,       -- 621: pop
-      0,        -- 622: push_frame
-      5, 207,   -- 623: get_slot_direct(207)
-      0,        -- 625: push_frame
-      5, 20,    -- 626: get_slot_direct(20)
-      1, 277,   -- 628: push_literal(277)
-      1, 278,   -- 630: push_literal(278)
-      10, 2,    -- 632: invoke(2)
-      14,       -- 634: pop
-      0,        -- 635: push_frame
-      5, 207,   -- 636: get_slot_direct(207)
-      0,        -- 638: push_frame
-      5, 20,    -- 639: get_slot_direct(20)
-      1, 279,   -- 641: push_literal(279)
-      1, 278,   -- 643: push_literal(278)
-      10, 2,    -- 645: invoke(2)
-      14,       -- 647: pop
-      0,        -- 648: push_frame
-      5, 207,   -- 649: get_slot_direct(207)
-      0,        -- 651: push_frame
-      5, 20,    -- 652: get_slot_direct(20)
-      1, 280,   -- 654: push_literal(280)
-      1, 278,   -- 656: push_literal(278)
-      10, 2,    -- 658: invoke(2)
-      14,       -- 660: pop
-      0,        -- 661: push_frame
-      5, 207,   -- 662: get_slot_direct(207)
-      0,        -- 664: push_frame
-      5, 20,    -- 665: get_slot_direct(20)
-      1, 281,   -- 667: push_literal(281)
-      1, 278,   -- 669: push_literal(278)
-      10, 2,    -- 671: invoke(2)
-      14,       -- 673: pop
-      0,        -- 674: push_frame
-      5, 206,   -- 675: get_slot_direct(206)
-      0,        -- 677: push_frame
-      5, 20,    -- 678: get_slot_direct(20)
-      1, 156,   -- 680: push_literal(156)
-      1, 282,   -- 682: push_literal(282)
-      10, 2,    -- 684: invoke(2)
-      14,       -- 686: pop
-      0,        -- 687: push_frame
-      5, 206,   -- 688: get_slot_direct(206)
-      0,        -- 690: push_frame
-      5, 20,    -- 691: get_slot_direct(20)
-      1, 136,   -- 693: push_literal(136)
-      1, 282,   -- 695: push_literal(282)
-      10, 2,    -- 697: invoke(2)
-      14,       -- 699: pop
-      0,        -- 700: push_frame
-      5, 206,   -- 701: get_slot_direct(206)
-      0,        -- 703: push_frame
-      5, 20,    -- 704: get_slot_direct(20)
-      1, 181,   -- 706: push_literal(181)
-      1, 283,   -- 708: push_literal(283)
-      10, 2,    -- 710: invoke(2)
-      14,       -- 712: pop
-      0,        -- 713: push_frame
-      5, 206,   -- 714: get_slot_direct(206)
-      0,        -- 716: push_frame
-      5, 20,    -- 717: get_slot_direct(20)
-      1, 180,   -- 719: push_literal(180)
-      1, 283,   -- 721: push_literal(283)
-      10, 2,    -- 723: invoke(2)
-      14,       -- 725: pop
-      0,        -- 726: push_frame
-      5, 206,   -- 727: get_slot_direct(206)
-      0,        -- 729: push_frame
-      5, 20,    -- 730: get_slot_direct(20)
-      1, 151,   -- 732: push_literal(151)
-      1, 284,   -- 734: push_literal(284)
-      4, 64,    -- 736: new_function(64)
-      10, 3,    -- 738: invoke(3)
-      14,       -- 740: pop
-      0,        -- 741: push_frame
-      5, 206,   -- 742: get_slot_direct(206)
-      0,        -- 744: push_frame
-      5, 20,    -- 745: get_slot_direct(20)
-      1, 248,   -- 747: push_literal(248)
-      1, 284,   -- 749: push_literal(284)
-      4, 65,    -- 751: new_function(65)
-      10, 3,    -- 753: invoke(3)
-      14,       -- 755: pop
-      0,        -- 756: push_frame
-      5, 206,   -- 757: get_slot_direct(206)
-      0,        -- 759: push_frame
-      5, 20,    -- 760: get_slot_direct(20)
-      1, 236,   -- 762: push_literal(236)
-      1, 286,   -- 764: push_literal(286)
-      4, 66,    -- 766: new_function(66)
-      10, 3,    -- 768: invoke(3)
-      14,       -- 770: pop
-      0,        -- 771: push_frame
-      5, 122,   -- 772: get_slot_direct(122)
-      0,        -- 774: push_frame
-      5, 20,    -- 775: get_slot_direct(20)
-      1, 288,   -- 777: push_literal(288)
-      10, 1,    -- 779: invoke(1)
-      14,       -- 781: pop
-      0,        -- 782: push_frame
-      5, 122,   -- 783: get_slot_direct(122)
-      0,        -- 785: push_frame
-      5, 20,    -- 786: get_slot_direct(20)
-      1, 136,   -- 788: push_literal(136)
-      10, 1,    -- 790: invoke(1)
+      5, 265,   -- 463: get_slot_direct(265)
+      0,        -- 465: push_frame
+      5, 26,    -- 466: get_slot_direct(26)
+      1, 26,    -- 468: push_literal(26)
+      10, 1,    -- 470: invoke(1)
+      4, 68,    -- 472: new_function(68)
+      8, 276,   -- 474: set_slot_direct(276)
+      0,        -- 476: push_frame
+      5, 269,   -- 477: get_slot_direct(269)
+      0,        -- 479: push_frame
+      5, 26,    -- 480: get_slot_direct(26)
+      1, 316,   -- 482: push_literal(316)
+      10, 1,    -- 484: invoke(1)
+      14,       -- 486: pop
+      0,        -- 487: push_frame
+      5, 269,   -- 488: get_slot_direct(269)
+      0,        -- 490: push_frame
+      5, 26,    -- 491: get_slot_direct(26)
+      1, 317,   -- 493: push_literal(317)
+      10, 1,    -- 495: invoke(1)
+      14,       -- 497: pop
+      0,        -- 498: push_frame
+      5, 269,   -- 499: get_slot_direct(269)
+      0,        -- 501: push_frame
+      5, 26,    -- 502: get_slot_direct(26)
+      1, 318,   -- 504: push_literal(318)
+      10, 1,    -- 506: invoke(1)
+      14,       -- 508: pop
+      0,        -- 509: push_frame
+      5, 269,   -- 510: get_slot_direct(269)
+      0,        -- 512: push_frame
+      5, 26,    -- 513: get_slot_direct(26)
+      1, 319,   -- 515: push_literal(319)
+      10, 1,    -- 517: invoke(1)
+      14,       -- 519: pop
+      0,        -- 520: push_frame
+      5, 269,   -- 521: get_slot_direct(269)
+      0,        -- 523: push_frame
+      5, 26,    -- 524: get_slot_direct(26)
+      1, 320,   -- 526: push_literal(320)
+      10, 1,    -- 528: invoke(1)
+      14,       -- 530: pop
+      0,        -- 531: push_frame
+      5, 267,   -- 532: get_slot_direct(267)
+      0,        -- 534: push_frame
+      5, 26,    -- 535: get_slot_direct(26)
+      1, 321,   -- 537: push_literal(321)
+      1, 322,   -- 539: push_literal(322)
+      4, 69,    -- 541: new_function(69)
+      10, 3,    -- 543: invoke(3)
+      14,       -- 545: pop
+      0,        -- 546: push_frame
+      5, 268,   -- 547: get_slot_direct(268)
+      0,        -- 549: push_frame
+      5, 26,    -- 550: get_slot_direct(26)
+      1, 325,   -- 552: push_literal(325)
+      1, 326,   -- 554: push_literal(326)
+      10, 2,    -- 556: invoke(2)
+      14,       -- 558: pop
+      0,        -- 559: push_frame
+      5, 268,   -- 560: get_slot_direct(268)
+      0,        -- 562: push_frame
+      5, 26,    -- 563: get_slot_direct(26)
+      1, 327,   -- 565: push_literal(327)
+      1, 328,   -- 567: push_literal(328)
+      10, 2,    -- 569: invoke(2)
+      14,       -- 571: pop
+      0,        -- 572: push_frame
+      5, 268,   -- 573: get_slot_direct(268)
+      0,        -- 575: push_frame
+      5, 26,    -- 576: get_slot_direct(26)
+      1, 329,   -- 578: push_literal(329)
+      1, 330,   -- 580: push_literal(330)
+      10, 2,    -- 582: invoke(2)
+      14,       -- 584: pop
+      0,        -- 585: push_frame
+      5, 268,   -- 586: get_slot_direct(268)
+      0,        -- 588: push_frame
+      5, 26,    -- 589: get_slot_direct(26)
+      1, 331,   -- 591: push_literal(331)
+      1, 330,   -- 593: push_literal(330)
+      10, 2,    -- 595: invoke(2)
+      14,       -- 597: pop
+      0,        -- 598: push_frame
+      5, 268,   -- 599: get_slot_direct(268)
+      0,        -- 601: push_frame
+      5, 26,    -- 602: get_slot_direct(26)
+      1, 332,   -- 604: push_literal(332)
+      1, 333,   -- 606: push_literal(333)
+      10, 2,    -- 608: invoke(2)
+      14,       -- 610: pop
+      0,        -- 611: push_frame
+      5, 268,   -- 612: get_slot_direct(268)
+      0,        -- 614: push_frame
+      5, 26,    -- 615: get_slot_direct(26)
+      1, 334,   -- 617: push_literal(334)
+      1, 333,   -- 619: push_literal(333)
+      10, 2,    -- 621: invoke(2)
+      14,       -- 623: pop
+      0,        -- 624: push_frame
+      5, 268,   -- 625: get_slot_direct(268)
+      0,        -- 627: push_frame
+      5, 26,    -- 628: get_slot_direct(26)
+      1, 335,   -- 630: push_literal(335)
+      1, 333,   -- 632: push_literal(333)
+      10, 2,    -- 634: invoke(2)
+      14,       -- 636: pop
+      0,        -- 637: push_frame
+      5, 268,   -- 638: get_slot_direct(268)
+      0,        -- 640: push_frame
+      5, 26,    -- 641: get_slot_direct(26)
+      1, 336,   -- 643: push_literal(336)
+      1, 333,   -- 645: push_literal(333)
+      10, 2,    -- 647: invoke(2)
+      14,       -- 649: pop
+      0,        -- 650: push_frame
+      5, 267,   -- 651: get_slot_direct(267)
+      0,        -- 653: push_frame
+      5, 26,    -- 654: get_slot_direct(26)
+      1, 222,   -- 656: push_literal(222)
+      1, 337,   -- 658: push_literal(337)
+      10, 2,    -- 660: invoke(2)
+      14,       -- 662: pop
+      0,        -- 663: push_frame
+      5, 267,   -- 664: get_slot_direct(267)
+      0,        -- 666: push_frame
+      5, 26,    -- 667: get_slot_direct(26)
+      1, 135,   -- 669: push_literal(135)
+      1, 337,   -- 671: push_literal(337)
+      10, 2,    -- 673: invoke(2)
+      14,       -- 675: pop
+      0,        -- 676: push_frame
+      5, 267,   -- 677: get_slot_direct(267)
+      0,        -- 679: push_frame
+      5, 26,    -- 680: get_slot_direct(26)
+      1, 242,   -- 682: push_literal(242)
+      1, 338,   -- 684: push_literal(338)
+      10, 2,    -- 686: invoke(2)
+      14,       -- 688: pop
+      0,        -- 689: push_frame
+      5, 267,   -- 690: get_slot_direct(267)
+      0,        -- 692: push_frame
+      5, 26,    -- 693: get_slot_direct(26)
+      1, 241,   -- 695: push_literal(241)
+      1, 338,   -- 697: push_literal(338)
+      10, 2,    -- 699: invoke(2)
+      14,       -- 701: pop
+      0,        -- 702: push_frame
+      5, 267,   -- 703: get_slot_direct(267)
+      0,        -- 705: push_frame
+      5, 26,    -- 706: get_slot_direct(26)
+      1, 143,   -- 708: push_literal(143)
+      1, 339,   -- 710: push_literal(339)
+      4, 70,    -- 712: new_function(70)
+      10, 3,    -- 714: invoke(3)
+      14,       -- 716: pop
+      0,        -- 717: push_frame
+      5, 267,   -- 718: get_slot_direct(267)
+      0,        -- 720: push_frame
+      5, 26,    -- 721: get_slot_direct(26)
+      1, 308,   -- 723: push_literal(308)
+      1, 339,   -- 725: push_literal(339)
+      4, 71,    -- 727: new_function(71)
+      10, 3,    -- 729: invoke(3)
+      14,       -- 731: pop
+      0,        -- 732: push_frame
+      5, 267,   -- 733: get_slot_direct(267)
+      0,        -- 735: push_frame
+      5, 26,    -- 736: get_slot_direct(26)
+      1, 297,   -- 738: push_literal(297)
+      1, 341,   -- 740: push_literal(341)
+      4, 72,    -- 742: new_function(72)
+      10, 3,    -- 744: invoke(3)
+      14,       -- 746: pop
+      0,        -- 747: push_frame
+      5, 195,   -- 748: get_slot_direct(195)
+      0,        -- 750: push_frame
+      5, 26,    -- 751: get_slot_direct(26)
+      1, 343,   -- 753: push_literal(343)
+      10, 1,    -- 755: invoke(1)
+      14,       -- 757: pop
+      0,        -- 758: push_frame
+      5, 195,   -- 759: get_slot_direct(195)
+      0,        -- 761: push_frame
+      5, 26,    -- 762: get_slot_direct(26)
+      1, 135,   -- 764: push_literal(135)
+      10, 1,    -- 766: invoke(1)
+      14,       -- 768: pop
+      0,        -- 769: push_frame
+      5, 195,   -- 770: get_slot_direct(195)
+      0,        -- 772: push_frame
+      5, 26,    -- 773: get_slot_direct(26)
+      1, 344,   -- 775: push_literal(344)
+      10, 1,    -- 777: invoke(1)
+      14,       -- 779: pop
+      0,        -- 780: push_frame
+      5, 195,   -- 781: get_slot_direct(195)
+      0,        -- 783: push_frame
+      5, 26,    -- 784: get_slot_direct(26)
+      1, 297,   -- 786: push_literal(297)
+      4, 73,    -- 788: new_function(73)
+      10, 2,    -- 790: invoke(2)
       14,       -- 792: pop
       0,        -- 793: push_frame
-      5, 122,   -- 794: get_slot_direct(122)
+      5, 195,   -- 794: get_slot_direct(195)
       0,        -- 796: push_frame
-      5, 20,    -- 797: get_slot_direct(20)
-      1, 289,   -- 799: push_literal(289)
-      10, 1,    -- 801: invoke(1)
-      14,       -- 803: pop
-      0,        -- 804: push_frame
-      5, 122,   -- 805: get_slot_direct(122)
-      0,        -- 807: push_frame
-      5, 20,    -- 808: get_slot_direct(20)
-      1, 236,   -- 810: push_literal(236)
-      4, 67,    -- 812: new_function(67)
-      10, 2,    -- 814: invoke(2)
-      14,       -- 816: pop
-      0,        -- 817: push_frame
-      5, 122,   -- 818: get_slot_direct(122)
-      0,        -- 820: push_frame
-      5, 20,    -- 821: get_slot_direct(20)
-      1, 237,   -- 823: push_literal(237)
-      4, 68,    -- 825: new_function(68)
-      10, 2,    -- 827: invoke(2)
-      14,       -- 829: pop
-      0,        -- 830: push_frame
-      5, 122,   -- 831: get_slot_direct(122)
-      0,        -- 833: push_frame
-      5, 20,    -- 834: get_slot_direct(20)
-      1, 248,   -- 836: push_literal(248)
-      4, 69,    -- 838: new_function(69)
-      10, 2,    -- 840: invoke(2)
-      14,       -- 842: pop
-      0,        -- 843: push_frame
-      5, 122,   -- 844: get_slot_direct(122)
-      0,        -- 846: push_frame
-      5, 20,    -- 847: get_slot_direct(20)
-      1, 243,   -- 849: push_literal(243)
-      4, 70,    -- 851: new_function(70)
-      10, 2,    -- 853: invoke(2)
-      14,       -- 855: pop
-      0,        -- 856: push_frame
-      5, 209,   -- 857: get_slot_direct(209)
-      0,        -- 859: push_frame
-      5, 20,    -- 860: get_slot_direct(20)
-      1, 243,   -- 862: push_literal(243)
-      4, 71,    -- 864: new_function(71)
-      10, 2,    -- 866: invoke(2)
-      14,       -- 868: pop
-      0,        -- 869: push_frame
-      5, 209,   -- 870: get_slot_direct(209)
-      0,        -- 872: push_frame
-      5, 20,    -- 873: get_slot_direct(20)
-      1, 241,   -- 875: push_literal(241)
-      4, 72,    -- 877: new_function(72)
-      10, 2,    -- 879: invoke(2)
-      14,       -- 881: pop
-      0,        -- 882: push_frame
-      5, 209,   -- 883: get_slot_direct(209)
-      0,        -- 885: push_frame
-      5, 20,    -- 886: get_slot_direct(20)
-      1, 295,   -- 888: push_literal(295)
-      4, 73,    -- 890: new_function(73)
-      10, 2,    -- 892: invoke(2)
-      14,       -- 894: pop
-      0,        -- 895: push_frame
-      5, 209,   -- 896: get_slot_direct(209)
-      0,        -- 898: push_frame
-      5, 20,    -- 899: get_slot_direct(20)
-      1, 296,   -- 901: push_literal(296)
-      4, 74,    -- 903: new_function(74)
-      10, 2,    -- 905: invoke(2)
-      14,       -- 907: pop
-      0,        -- 908: push_frame
-      5, 209,   -- 909: get_slot_direct(209)
-      0,        -- 911: push_frame
-      5, 20,    -- 912: get_slot_direct(20)
-      1, 298,   -- 914: push_literal(298)
-      4, 75,    -- 916: new_function(75)
-      10, 2,    -- 918: invoke(2)
-      14,       -- 920: pop
-      0,        -- 921: push_frame
-      5, 209,   -- 922: get_slot_direct(209)
-      0,        -- 924: push_frame
-      5, 20,    -- 925: get_slot_direct(20)
-      1, 105,   -- 927: push_literal(105)
-      4, 76,    -- 929: new_function(76)
-      10, 2,    -- 931: invoke(2)
-      14,       -- 933: pop
-      0,        -- 934: push_frame
-      4, 77,    -- 935: new_function(77)
-      8, 187,   -- 937: set_slot_direct(187)
-      0,        -- 939: push_frame
-      4, 78,    -- 940: new_function(78)
-      8, 210,   -- 942: set_slot_direct(210)
-      0,        -- 944: push_frame
-      5, 187,   -- 945: get_slot_direct(187)
-      1, 187,   -- 947: push_literal(187)
-      8, 183,   -- 949: set_slot_direct(183)
-      0,        -- 951: push_frame
-      5, 187,   -- 952: get_slot_direct(187)
+      5, 26,    -- 797: get_slot_direct(26)
+      1, 25,    -- 799: push_literal(25)
+      4, 74,    -- 801: new_function(74)
+      10, 2,    -- 803: invoke(2)
+      14,       -- 805: pop
+      0,        -- 806: push_frame
+      5, 195,   -- 807: get_slot_direct(195)
+      0,        -- 809: push_frame
+      5, 26,    -- 810: get_slot_direct(26)
+      1, 308,   -- 812: push_literal(308)
+      4, 75,    -- 814: new_function(75)
+      10, 2,    -- 816: invoke(2)
+      14,       -- 818: pop
+      0,        -- 819: push_frame
+      5, 195,   -- 820: get_slot_direct(195)
+      0,        -- 822: push_frame
+      5, 26,    -- 823: get_slot_direct(26)
+      1, 303,   -- 825: push_literal(303)
+      4, 76,    -- 827: new_function(76)
+      10, 2,    -- 829: invoke(2)
+      14,       -- 831: pop
+      0,        -- 832: push_frame
+      5, 270,   -- 833: get_slot_direct(270)
+      0,        -- 835: push_frame
+      5, 26,    -- 836: get_slot_direct(26)
+      1, 303,   -- 838: push_literal(303)
+      4, 77,    -- 840: new_function(77)
+      10, 2,    -- 842: invoke(2)
+      14,       -- 844: pop
+      0,        -- 845: push_frame
+      5, 270,   -- 846: get_slot_direct(270)
+      0,        -- 848: push_frame
+      5, 26,    -- 849: get_slot_direct(26)
+      1, 301,   -- 851: push_literal(301)
+      4, 78,    -- 853: new_function(78)
+      10, 2,    -- 855: invoke(2)
+      14,       -- 857: pop
+      0,        -- 858: push_frame
+      5, 270,   -- 859: get_slot_direct(270)
+      0,        -- 861: push_frame
+      5, 26,    -- 862: get_slot_direct(26)
+      1, 350,   -- 864: push_literal(350)
+      4, 79,    -- 866: new_function(79)
+      10, 2,    -- 868: invoke(2)
+      14,       -- 870: pop
+      0,        -- 871: push_frame
+      5, 270,   -- 872: get_slot_direct(270)
+      0,        -- 874: push_frame
+      5, 26,    -- 875: get_slot_direct(26)
+      1, 351,   -- 877: push_literal(351)
+      4, 80,    -- 879: new_function(80)
+      10, 2,    -- 881: invoke(2)
+      14,       -- 883: pop
+      0,        -- 884: push_frame
+      5, 270,   -- 885: get_slot_direct(270)
+      0,        -- 887: push_frame
+      5, 26,    -- 888: get_slot_direct(26)
+      1, 353,   -- 890: push_literal(353)
+      4, 81,    -- 892: new_function(81)
+      10, 2,    -- 894: invoke(2)
+      14,       -- 896: pop
+      0,        -- 897: push_frame
+      5, 270,   -- 898: get_slot_direct(270)
+      0,        -- 900: push_frame
+      5, 26,    -- 901: get_slot_direct(26)
+      1, 179,   -- 903: push_literal(179)
+      4, 82,    -- 905: new_function(82)
+      10, 2,    -- 907: invoke(2)
+      14,       -- 909: pop
+      0,        -- 910: push_frame
+      4, 83,    -- 911: new_function(83)
+      8, 248,   -- 913: set_slot_direct(248)
+      0,        -- 915: push_frame
+      4, 84,    -- 916: new_function(84)
+      8, 271,   -- 918: set_slot_direct(271)
+      0,        -- 920: push_frame
+      5, 248,   -- 921: get_slot_direct(248)
+      1, 248,   -- 923: push_literal(248)
+      8, 244,   -- 925: set_slot_direct(244)
+      0,        -- 927: push_frame
+      5, 248,   -- 928: get_slot_direct(248)
+      0,        -- 930: push_frame
+      5, 368,   -- 931: get_slot_direct(368)
+      8, 246,   -- 933: set_slot_direct(246)
+      0,        -- 935: push_frame
+      5, 248,   -- 936: get_slot_direct(248)
+      3,        -- 938: new_array
+      15,       -- 939: dup
+      1, 192,   -- 940: push_literal(192)
+      8, 18,    -- 942: set_slot_direct(18)
+      8, 369,   -- 944: set_slot_direct(369)
+      0,        -- 946: push_frame
+      5, 248,   -- 947: get_slot_direct(248)
+      0,        -- 949: push_frame
+      5, 250,   -- 950: get_slot_direct(250)
+      8, 247,   -- 952: set_slot_direct(247)
       0,        -- 954: push_frame
-      5, 313,   -- 955: get_slot_direct(313)
-      8, 185,   -- 957: set_slot_direct(185)
-      0,        -- 959: push_frame
-      5, 187,   -- 960: get_slot_direct(187)
-      3,        -- 962: new_array
-      15,       -- 963: dup
-      1, 119,   -- 964: push_literal(119)
-      8, 6,     -- 966: set_slot_direct(6)
-      8, 314,   -- 968: set_slot_direct(314)
-      0,        -- 970: push_frame
-      5, 187,   -- 971: get_slot_direct(187)
-      0,        -- 973: push_frame
-      5, 189,   -- 974: get_slot_direct(189)
-      8, 186,   -- 976: set_slot_direct(186)
-      0,        -- 978: push_frame
-      5, 187,   -- 979: get_slot_direct(187)
-      0,        -- 981: push_frame
-      5, 210,   -- 982: get_slot_direct(210)
-      8, 315,   -- 984: set_slot_direct(315)
-      0,        -- 986: push_frame
-      5, 187,   -- 987: get_slot_direct(187)
-      11        -- 989: return
+      5, 248,   -- 955: get_slot_direct(248)
+      0,        -- 957: push_frame
+      5, 271,   -- 958: get_slot_direct(271)
+      8, 370,   -- 960: set_slot_direct(370)
+      0,        -- 962: push_frame
+      5, 248,   -- 963: get_slot_direct(248)
+      11        -- 965: return
     }
   },
   ifunc.Function:new{ -- "itself"
     name = jsval.newString("itself"),
-    id = 35,
+    id = 41,
     nargs = 0,
     max_stack = 1,
     bytecode = {
@@ -4702,89 +5599,89 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 20,    -- 5: get_slot_direct(20)
+      5, 26,    -- 5: get_slot_direct(26)
       11        -- 7: return
     }
   },
   ifunc.Function:new{ -- "error"
     name = jsval.newString("error"),
-    id = 36,
+    id = 42,
     nargs = 3,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 7,     -- 8: set_slot_direct(7)
+      8, 30,    -- 8: set_slot_direct(30)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 131,   -- 15: set_slot_direct(131)
+      8, 202,   -- 15: set_slot_direct(202)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 132,   -- 22: set_slot_direct(132)
+      8, 203,   -- 22: set_slot_direct(203)
       14,       -- 24: pop
       0,        -- 25: push_frame
       0,        -- 26: push_frame
-      5, 132,   -- 27: get_slot_direct(132)
+      5, 203,   -- 27: get_slot_direct(203)
       15,       -- 29: dup
       20,       -- 30: un_not
       13, 37,   -- 31: jmp_unless(37)
       14,       -- 33: pop
       0,        -- 34: push_frame
-      5, 7,     -- 35: get_slot_direct(7)
-      8, 132,   -- 37: set_slot_direct(132)
+      5, 30,    -- 35: get_slot_direct(30)
+      8, 203,   -- 37: set_slot_direct(203)
       0,        -- 39: push_frame
-      5, 132,   -- 40: get_slot_direct(132)
-      1, 133,   -- 42: push_literal(133)
-      8, 9,     -- 44: set_slot_direct(9)
+      5, 203,   -- 40: get_slot_direct(203)
+      1, 204,   -- 42: push_literal(204)
+      8, 19,    -- 44: set_slot_direct(19)
       0,        -- 46: push_frame
-      5, 132,   -- 47: get_slot_direct(132)
-      5, 36,    -- 49: get_slot_direct(36)
+      5, 203,   -- 47: get_slot_direct(203)
+      5, 52,    -- 49: get_slot_direct(52)
       15,       -- 51: dup
       20,       -- 52: un_not
       13, 61,   -- 53: jmp_unless(61)
       14,       -- 55: pop
       0,        -- 56: push_frame
-      5, 132,   -- 57: get_slot_direct(132)
-      5, 134,   -- 59: get_slot_direct(134)
+      5, 203,   -- 57: get_slot_direct(203)
+      5, 205,   -- 59: get_slot_direct(205)
       13, 90,   -- 61: jmp_unless(90)
       0,        -- 63: push_frame
       15,       -- 64: dup
-      5, 131,   -- 65: get_slot_direct(131)
-      1, 135,   -- 67: push_literal(135)
+      5, 202,   -- 65: get_slot_direct(202)
+      1, 206,   -- 67: push_literal(206)
       0,        -- 69: push_frame
-      5, 132,   -- 70: get_slot_direct(132)
-      5, 36,    -- 72: get_slot_direct(36)
+      5, 203,   -- 70: get_slot_direct(203)
+      5, 52,    -- 72: get_slot_direct(52)
       26,       -- 74: bi_add
-      1, 136,   -- 75: push_literal(136)
+      1, 135,   -- 75: push_literal(135)
       26,       -- 77: bi_add
       0,        -- 78: push_frame
-      5, 132,   -- 79: get_slot_direct(132)
-      5, 134,   -- 81: get_slot_direct(134)
+      5, 203,   -- 79: get_slot_direct(203)
+      5, 205,   -- 81: get_slot_direct(205)
       26,       -- 83: bi_add
-      1, 137,   -- 84: push_literal(137)
+      1, 207,   -- 84: push_literal(207)
       26,       -- 86: bi_add
       26,       -- 87: bi_add
-      8, 131,   -- 88: set_slot_direct(131)
+      8, 202,   -- 88: set_slot_direct(202)
       0,        -- 90: push_frame
-      5, 132,   -- 91: get_slot_direct(132)
+      5, 203,   -- 91: get_slot_direct(203)
       0,        -- 93: push_frame
-      5, 131,   -- 94: get_slot_direct(131)
-      8, 131,   -- 96: set_slot_direct(131)
+      5, 202,   -- 94: get_slot_direct(202)
+      8, 202,   -- 96: set_slot_direct(202)
       0,        -- 98: push_frame
-      5, 4,     -- 99: get_slot_direct(4)
+      5, 15,    -- 99: get_slot_direct(15)
       15,       -- 101: dup
-      7, 22,    -- 102: get_slot_direct_check(22)
+      7, 7,     -- 102: get_slot_direct_check(7)
       19,       -- 104: swap
       0,        -- 105: push_frame
-      5, 132,   -- 106: get_slot_direct(132)
+      5, 203,   -- 106: get_slot_direct(203)
       10, 1,    -- 108: invoke(1)
       14,       -- 110: pop
       1, 0,     -- 111: push_literal(0)
@@ -4793,169 +5690,169 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "define:"
     name = jsval.newString("define:"),
-    id = 37,
+    id = 43,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 127,   -- 8: set_slot_direct(127)
+      8, 23,    -- 8: set_slot_direct(23)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 132,   -- 14: set_slot_direct(132)
+      8, 203,   -- 14: set_slot_direct(203)
       0,        -- 16: push_frame
       0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
-      5, 211,   -- 20: get_slot_direct(211)
+      5, 26,    -- 18: get_slot_direct(26)
+      5, 272,   -- 20: get_slot_direct(272)
       0,        -- 22: push_frame
-      5, 127,   -- 23: get_slot_direct(127)
-      5, 139,   -- 25: get_slot_direct(139)
+      5, 23,    -- 23: get_slot_direct(23)
+      5, 209,   -- 25: get_slot_direct(209)
       6,        -- 27: get_slot_indirect
-      8, 132,   -- 28: set_slot_direct(132)
+      8, 203,   -- 28: set_slot_direct(203)
       0,        -- 30: push_frame
-      5, 132,   -- 31: get_slot_direct(132)
+      5, 203,   -- 31: get_slot_direct(203)
       22,       -- 33: un_typeof
-      1, 69,    -- 34: push_literal(69)
+      1, 88,    -- 34: push_literal(88)
       23,       -- 36: bi_eq
       13, 64,   -- 37: jmp_unless(64)
       0,        -- 39: push_frame
-      5, 129,   -- 40: get_slot_direct(129)
+      5, 200,   -- 40: get_slot_direct(200)
       0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
+      5, 26,    -- 43: get_slot_direct(26)
       0,        -- 45: push_frame
-      5, 127,   -- 46: get_slot_direct(127)
+      5, 23,    -- 46: get_slot_direct(23)
       0,        -- 48: push_frame
-      5, 132,   -- 49: get_slot_direct(132)
-      5, 212,   -- 51: get_slot_direct(212)
+      5, 203,   -- 49: get_slot_direct(203)
+      5, 273,   -- 51: get_slot_direct(273)
       13, 59,   -- 53: jmp_unless(59)
-      1, 213,   -- 55: push_literal(213)
+      1, 274,   -- 55: push_literal(274)
       12, 61,   -- 57: jmp(61)
-      1, 214,   -- 59: push_literal(214)
+      1, 275,   -- 59: push_literal(275)
       10, 2,    -- 61: invoke(2)
       14,       -- 63: pop
       0,        -- 64: push_frame
-      5, 20,    -- 65: get_slot_direct(20)
-      5, 211,   -- 67: get_slot_direct(211)
+      5, 26,    -- 65: get_slot_direct(26)
+      5, 272,   -- 67: get_slot_direct(272)
       0,        -- 69: push_frame
-      5, 127,   -- 70: get_slot_direct(127)
-      5, 139,   -- 72: get_slot_direct(139)
+      5, 23,    -- 70: get_slot_direct(23)
+      5, 209,   -- 72: get_slot_direct(209)
       0,        -- 74: push_frame
-      5, 127,   -- 75: get_slot_direct(127)
+      5, 23,    -- 75: get_slot_direct(23)
       9,        -- 77: set_slot_indirect
       0,        -- 78: push_frame
-      5, 127,   -- 79: get_slot_direct(127)
-      1, 10,    -- 81: push_literal(10)
-      8, 212,   -- 83: set_slot_direct(212)
+      5, 23,    -- 79: get_slot_direct(23)
+      1, 32,    -- 81: push_literal(32)
+      8, 273,   -- 83: set_slot_direct(273)
       0,        -- 85: push_frame
-      5, 127,   -- 86: get_slot_direct(127)
+      5, 23,    -- 86: get_slot_direct(23)
       0,        -- 88: push_frame
-      5, 195,   -- 89: get_slot_direct(195)
-      8, 215,   -- 91: set_slot_direct(215)
+      5, 256,   -- 89: get_slot_direct(256)
+      8, 276,   -- 91: set_slot_direct(276)
       0,        -- 93: push_frame
-      5, 127,   -- 94: get_slot_direct(127)
-      1, 21,    -- 96: push_literal(21)
-      8, 216,   -- 98: set_slot_direct(216)
+      5, 23,    -- 94: get_slot_direct(23)
+      1, 41,    -- 96: push_literal(41)
+      8, 277,   -- 98: set_slot_direct(277)
       0,        -- 100: push_frame
-      5, 127,   -- 101: get_slot_direct(127)
-      1, 21,    -- 103: push_literal(21)
-      8, 217,   -- 105: set_slot_direct(217)
+      5, 23,    -- 101: get_slot_direct(23)
+      1, 41,    -- 103: push_literal(41)
+      8, 278,   -- 105: set_slot_direct(278)
       0,        -- 107: push_frame
-      5, 127,   -- 108: get_slot_direct(127)
-      1, 6,     -- 110: push_literal(6)
-      8, 218,   -- 112: set_slot_direct(218)
+      5, 23,    -- 108: get_slot_direct(23)
+      1, 18,    -- 110: push_literal(18)
+      8, 279,   -- 112: set_slot_direct(279)
       0,        -- 114: push_frame
-      5, 127,   -- 115: get_slot_direct(127)
+      5, 23,    -- 115: get_slot_direct(23)
       0,        -- 117: push_frame
-      5, 190,   -- 118: get_slot_direct(190)
-      8, 190,   -- 120: set_slot_direct(190)
+      5, 251,   -- 118: get_slot_direct(251)
+      8, 251,   -- 120: set_slot_direct(251)
       0,        -- 122: push_frame
-      5, 127,   -- 123: get_slot_direct(127)
+      5, 23,    -- 123: get_slot_direct(23)
       11        -- 125: return
     }
   },
   ifunc.Function:new{ -- "find:"
     name = jsval.newString("find:"),
-    id = 38,
+    id = 44,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 127,   -- 8: set_slot_direct(127)
+      8, 23,    -- 8: set_slot_direct(23)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 68,    -- 14: set_slot_direct(68)
+      8, 87,    -- 14: set_slot_direct(87)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 92,    -- 19: set_slot_direct(92)
+      8, 113,   -- 19: set_slot_direct(113)
       0,        -- 21: push_frame
       0,        -- 22: push_frame
-      5, 20,    -- 23: get_slot_direct(20)
-      8, 68,    -- 25: set_slot_direct(68)
+      5, 26,    -- 23: get_slot_direct(26)
+      8, 87,    -- 25: set_slot_direct(87)
       12, 110,  -- 27: jmp(110)
       0,        -- 29: push_frame
       0,        -- 30: push_frame
-      5, 68,    -- 31: get_slot_direct(68)
-      5, 211,   -- 33: get_slot_direct(211)
+      5, 87,    -- 31: get_slot_direct(87)
+      5, 272,   -- 33: get_slot_direct(272)
       15,       -- 35: dup
-      7, 70,    -- 36: get_slot_direct_check(70)
+      7, 89,    -- 36: get_slot_direct_check(89)
       19,       -- 38: swap
       0,        -- 39: push_frame
-      5, 127,   -- 40: get_slot_direct(127)
+      5, 23,    -- 40: get_slot_direct(23)
       10, 1,    -- 42: invoke(1)
       13, 57,   -- 44: jmp_unless(57)
       0,        -- 46: push_frame
-      5, 68,    -- 47: get_slot_direct(68)
-      5, 211,   -- 49: get_slot_direct(211)
+      5, 87,    -- 47: get_slot_direct(87)
+      5, 272,   -- 49: get_slot_direct(272)
       0,        -- 51: push_frame
-      5, 127,   -- 52: get_slot_direct(127)
+      5, 23,    -- 52: get_slot_direct(23)
       6,        -- 54: get_slot_indirect
       12, 59,   -- 55: jmp(59)
-      1, 21,    -- 57: push_literal(21)
-      8, 92,    -- 59: set_slot_direct(92)
+      1, 41,    -- 57: push_literal(41)
+      8, 113,   -- 59: set_slot_direct(113)
       0,        -- 61: push_frame
-      5, 92,    -- 62: get_slot_direct(92)
+      5, 113,   -- 62: get_slot_direct(113)
       13, 70,   -- 64: jmp_unless(70)
       0,        -- 66: push_frame
-      5, 92,    -- 67: get_slot_direct(92)
+      5, 113,   -- 67: get_slot_direct(113)
       11,       -- 69: return
       0,        -- 70: push_frame
       0,        -- 71: push_frame
-      5, 68,    -- 72: get_slot_direct(68)
-      5, 219,   -- 74: get_slot_direct(219)
-      8, 68,    -- 76: set_slot_direct(68)
+      5, 87,    -- 72: get_slot_direct(87)
+      5, 280,   -- 74: get_slot_direct(280)
+      8, 87,    -- 76: set_slot_direct(87)
       0,        -- 78: push_frame
-      5, 68,    -- 79: get_slot_direct(68)
+      5, 87,    -- 79: get_slot_direct(87)
       20,       -- 81: un_not
       13, 110,  -- 82: jmp_unless(110)
       0,        -- 84: push_frame
-      5, 191,   -- 85: get_slot_direct(191)
+      5, 252,   -- 85: get_slot_direct(252)
       0,        -- 87: push_frame
-      5, 191,   -- 88: get_slot_direct(191)
+      5, 252,   -- 88: get_slot_direct(252)
       15,       -- 90: dup
-      7, 70,    -- 91: get_slot_direct_check(70)
+      7, 89,    -- 91: get_slot_direct_check(89)
       19,       -- 93: swap
       0,        -- 94: push_frame
-      5, 127,   -- 95: get_slot_direct(127)
+      5, 23,    -- 95: get_slot_direct(23)
       10, 1,    -- 97: invoke(1)
       13, 106,  -- 99: jmp_unless(106)
       0,        -- 101: push_frame
-      5, 127,   -- 102: get_slot_direct(127)
+      5, 23,    -- 102: get_slot_direct(23)
       12, 108,  -- 104: jmp(108)
-      1, 220,   -- 106: push_literal(220)
+      1, 281,   -- 106: push_literal(281)
       6,        -- 108: get_slot_indirect
       11,       -- 109: return
-      1, 94,    -- 110: push_literal(94)
+      1, 115,   -- 110: push_literal(115)
       20,       -- 112: un_not
       13, 29,   -- 113: jmp_unless(29)
       1, 0,     -- 115: push_literal(0)
@@ -4964,7 +5861,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "pop:"
     name = jsval.newString("pop:"),
-    id = 39,
+    id = 45,
     nargs = 0,
     max_stack = 2,
     bytecode = {
@@ -4972,36 +5869,36 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 93,    -- 5: get_slot_direct(93)
+      5, 114,   -- 5: get_slot_direct(114)
       0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
-      5, 219,   -- 10: get_slot_direct(219)
-      8, 190,   -- 12: set_slot_direct(190)
+      5, 26,    -- 8: get_slot_direct(26)
+      5, 280,   -- 10: get_slot_direct(280)
+      8, 251,   -- 12: set_slot_direct(251)
       1, 0,     -- 14: push_literal(0)
       11        -- 16: return
     }
   },
   ifunc.Function:new{ -- "reserve:"
     name = jsval.newString("reserve:"),
-    id = 40,
+    id = 46,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 127,   -- 8: set_slot_direct(127)
+      8, 23,    -- 8: set_slot_direct(23)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 132,   -- 14: set_slot_direct(132)
+      8, 203,   -- 14: set_slot_direct(203)
       0,        -- 16: push_frame
-      5, 127,   -- 17: get_slot_direct(127)
-      5, 222,   -- 19: get_slot_direct(222)
-      1, 9,     -- 21: push_literal(9)
+      5, 23,    -- 17: get_slot_direct(23)
+      5, 283,   -- 19: get_slot_direct(283)
+      1, 19,    -- 21: push_literal(19)
       23,       -- 23: bi_eq
       20,       -- 24: un_not
       15,       -- 25: dup
@@ -5009,77 +5906,77 @@ startup.functions = {
       13, 35,   -- 27: jmp_unless(35)
       14,       -- 29: pop
       0,        -- 30: push_frame
-      5, 127,   -- 31: get_slot_direct(127)
-      5, 212,   -- 33: get_slot_direct(212)
+      5, 23,    -- 31: get_slot_direct(23)
+      5, 273,   -- 33: get_slot_direct(273)
       13, 40,   -- 35: jmp_unless(40)
       1, 0,     -- 37: push_literal(0)
       11,       -- 39: return
       0,        -- 40: push_frame
       0,        -- 41: push_frame
-      5, 20,    -- 42: get_slot_direct(20)
-      5, 211,   -- 44: get_slot_direct(211)
+      5, 26,    -- 42: get_slot_direct(26)
+      5, 272,   -- 44: get_slot_direct(272)
       15,       -- 46: dup
-      7, 70,    -- 47: get_slot_direct_check(70)
+      7, 89,    -- 47: get_slot_direct_check(89)
       19,       -- 49: swap
       0,        -- 50: push_frame
-      5, 127,   -- 51: get_slot_direct(127)
-      5, 139,   -- 53: get_slot_direct(139)
+      5, 23,    -- 51: get_slot_direct(23)
+      5, 209,   -- 53: get_slot_direct(209)
       10, 1,    -- 55: invoke(1)
       13, 72,   -- 57: jmp_unless(72)
       0,        -- 59: push_frame
-      5, 20,    -- 60: get_slot_direct(20)
-      5, 211,   -- 62: get_slot_direct(211)
+      5, 26,    -- 60: get_slot_direct(26)
+      5, 272,   -- 62: get_slot_direct(272)
       0,        -- 64: push_frame
-      5, 127,   -- 65: get_slot_direct(127)
-      5, 139,   -- 67: get_slot_direct(139)
+      5, 23,    -- 65: get_slot_direct(23)
+      5, 209,   -- 67: get_slot_direct(209)
       6,        -- 69: get_slot_indirect
       12, 74,   -- 70: jmp(74)
-      1, 21,    -- 72: push_literal(21)
-      8, 132,   -- 74: set_slot_direct(132)
+      1, 41,    -- 72: push_literal(41)
+      8, 203,   -- 74: set_slot_direct(203)
       0,        -- 76: push_frame
-      5, 132,   -- 77: get_slot_direct(132)
+      5, 203,   -- 77: get_slot_direct(203)
       13, 115,  -- 79: jmp_unless(115)
       0,        -- 81: push_frame
-      5, 132,   -- 82: get_slot_direct(132)
-      5, 212,   -- 84: get_slot_direct(212)
+      5, 203,   -- 82: get_slot_direct(203)
+      5, 273,   -- 84: get_slot_direct(273)
       13, 91,   -- 86: jmp_unless(91)
       1, 0,     -- 88: push_literal(0)
       11,       -- 90: return
       0,        -- 91: push_frame
-      5, 132,   -- 92: get_slot_direct(132)
-      5, 222,   -- 94: get_slot_direct(222)
-      1, 9,     -- 96: push_literal(9)
+      5, 203,   -- 92: get_slot_direct(203)
+      5, 283,   -- 94: get_slot_direct(283)
+      1, 19,    -- 96: push_literal(19)
       23,       -- 98: bi_eq
       13, 115,  -- 99: jmp_unless(115)
       0,        -- 101: push_frame
-      5, 129,   -- 102: get_slot_direct(129)
+      5, 200,   -- 102: get_slot_direct(200)
       0,        -- 104: push_frame
-      5, 20,    -- 105: get_slot_direct(20)
+      5, 26,    -- 105: get_slot_direct(26)
       0,        -- 107: push_frame
-      5, 127,   -- 108: get_slot_direct(127)
-      1, 214,   -- 110: push_literal(214)
+      5, 23,    -- 108: get_slot_direct(23)
+      1, 275,   -- 110: push_literal(275)
       10, 2,    -- 112: invoke(2)
       14,       -- 114: pop
       0,        -- 115: push_frame
-      5, 20,    -- 116: get_slot_direct(20)
-      5, 211,   -- 118: get_slot_direct(211)
+      5, 26,    -- 116: get_slot_direct(26)
+      5, 272,   -- 118: get_slot_direct(272)
       0,        -- 120: push_frame
-      5, 127,   -- 121: get_slot_direct(127)
-      5, 139,   -- 123: get_slot_direct(139)
+      5, 23,    -- 121: get_slot_direct(23)
+      5, 209,   -- 123: get_slot_direct(209)
       0,        -- 125: push_frame
-      5, 127,   -- 126: get_slot_direct(127)
+      5, 23,    -- 126: get_slot_direct(23)
       9,        -- 128: set_slot_indirect
       0,        -- 129: push_frame
-      5, 127,   -- 130: get_slot_direct(127)
-      1, 94,    -- 132: push_literal(94)
-      8, 212,   -- 134: set_slot_direct(212)
+      5, 23,    -- 130: get_slot_direct(23)
+      1, 115,   -- 132: push_literal(115)
+      8, 273,   -- 134: set_slot_direct(273)
       1, 0,     -- 136: push_literal(0)
       11        -- 138: return
     }
   },
   ifunc.Function:new{ -- "new_scope"
     name = jsval.newString("new_scope"),
-    id = 41,
+    id = 47,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -5088,333 +5985,333 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 224,   -- 7: set_slot_direct(224)
+      8, 285,   -- 7: set_slot_direct(285)
       0,        -- 9: push_frame
       0,        -- 10: push_frame
-      5, 190,   -- 11: get_slot_direct(190)
-      8, 224,   -- 13: set_slot_direct(224)
+      5, 251,   -- 11: get_slot_direct(251)
+      8, 285,   -- 13: set_slot_direct(285)
       0,        -- 15: push_frame
-      5, 93,    -- 16: get_slot_direct(93)
+      5, 114,   -- 16: get_slot_direct(114)
       0,        -- 18: push_frame
-      5, 4,     -- 19: get_slot_direct(4)
+      5, 15,    -- 19: get_slot_direct(15)
       15,       -- 21: dup
-      7, 96,    -- 22: get_slot_direct_check(96)
+      7, 116,   -- 22: get_slot_direct_check(116)
       19,       -- 24: swap
       0,        -- 25: push_frame
-      5, 196,   -- 26: get_slot_direct(196)
+      5, 257,   -- 26: get_slot_direct(257)
       10, 1,    -- 28: invoke(1)
-      8, 190,   -- 30: set_slot_direct(190)
+      8, 251,   -- 30: set_slot_direct(251)
       0,        -- 32: push_frame
-      5, 190,   -- 33: get_slot_direct(190)
+      5, 251,   -- 33: get_slot_direct(251)
       2,        -- 35: new_object
-      8, 211,   -- 36: set_slot_direct(211)
+      8, 272,   -- 36: set_slot_direct(272)
       0,        -- 38: push_frame
-      5, 190,   -- 39: get_slot_direct(190)
+      5, 251,   -- 39: get_slot_direct(251)
       0,        -- 41: push_frame
-      5, 224,   -- 42: get_slot_direct(224)
-      8, 219,   -- 44: set_slot_direct(219)
+      5, 285,   -- 42: get_slot_direct(285)
+      8, 280,   -- 44: set_slot_direct(280)
       0,        -- 46: push_frame
-      5, 190,   -- 47: get_slot_direct(190)
+      5, 251,   -- 47: get_slot_direct(251)
       0,        -- 49: push_frame
-      5, 224,   -- 50: get_slot_direct(224)
+      5, 285,   -- 50: get_slot_direct(285)
       13, 64,   -- 52: jmp_unless(64)
       0,        -- 54: push_frame
-      5, 224,   -- 55: get_slot_direct(224)
-      5, 225,   -- 57: get_slot_direct(225)
-      1, 8,     -- 59: push_literal(8)
+      5, 285,   -- 55: get_slot_direct(285)
+      5, 286,   -- 57: get_slot_direct(286)
+      1, 31,    -- 59: push_literal(31)
       26,       -- 61: bi_add
       12, 66,   -- 62: jmp(66)
-      1, 6,     -- 64: push_literal(6)
-      8, 225,   -- 66: set_slot_direct(225)
+      1, 18,    -- 64: push_literal(18)
+      8, 286,   -- 66: set_slot_direct(286)
       0,        -- 68: push_frame
-      5, 190,   -- 69: get_slot_direct(190)
+      5, 251,   -- 69: get_slot_direct(251)
       11        -- 71: return
     }
   },
   ifunc.Function:new{ -- "advance"
     name = jsval.newString("advance"),
-    id = 42,
+    id = 48,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
+      8, 287,   -- 8: set_slot_direct(287)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 143,   -- 14: set_slot_direct(143)
+      8, 213,   -- 14: set_slot_direct(213)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 92,    -- 19: set_slot_direct(92)
+      8, 113,   -- 19: set_slot_direct(113)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 132,   -- 24: set_slot_direct(132)
+      8, 203,   -- 24: set_slot_direct(203)
       0,        -- 26: push_frame
       1, 0,     -- 27: push_literal(0)
-      8, 86,    -- 29: set_slot_direct(86)
+      8, 107,   -- 29: set_slot_direct(107)
       0,        -- 31: push_frame
-      5, 226,   -- 32: get_slot_direct(226)
+      5, 287,   -- 32: get_slot_direct(287)
       15,       -- 34: dup
       13, 48,   -- 35: jmp_unless(48)
       14,       -- 37: pop
       0,        -- 38: push_frame
-      5, 192,   -- 39: get_slot_direct(192)
-      5, 226,   -- 41: get_slot_direct(226)
+      5, 253,   -- 39: get_slot_direct(253)
+      5, 287,   -- 41: get_slot_direct(287)
       0,        -- 43: push_frame
-      5, 226,   -- 44: get_slot_direct(226)
+      5, 287,   -- 44: get_slot_direct(287)
       23,       -- 46: bi_eq
       20,       -- 47: un_not
       13, 71,   -- 48: jmp_unless(71)
       0,        -- 50: push_frame
-      5, 129,   -- 51: get_slot_direct(129)
+      5, 200,   -- 51: get_slot_direct(200)
       0,        -- 53: push_frame
-      5, 20,    -- 54: get_slot_direct(20)
+      5, 26,    -- 54: get_slot_direct(26)
       0,        -- 56: push_frame
-      5, 192,   -- 57: get_slot_direct(192)
-      1, 227,   -- 59: push_literal(227)
+      5, 253,   -- 57: get_slot_direct(253)
+      1, 288,   -- 59: push_literal(288)
       0,        -- 61: push_frame
-      5, 226,   -- 62: get_slot_direct(226)
+      5, 287,   -- 62: get_slot_direct(287)
       26,       -- 64: bi_add
-      1, 228,   -- 65: push_literal(228)
+      1, 289,   -- 65: push_literal(289)
       26,       -- 67: bi_add
       10, 2,    -- 68: invoke(2)
       14,       -- 70: pop
       0,        -- 71: push_frame
-      5, 194,   -- 72: get_slot_direct(194)
+      5, 255,   -- 72: get_slot_direct(255)
       0,        -- 74: push_frame
-      5, 193,   -- 75: get_slot_direct(193)
-      5, 24,    -- 77: get_slot_direct(24)
+      5, 254,   -- 75: get_slot_direct(254)
+      5, 55,    -- 77: get_slot_direct(55)
       25,       -- 79: bi_gte
       13, 96,   -- 80: jmp_unless(96)
       0,        -- 82: push_frame
-      5, 93,    -- 83: get_slot_direct(93)
+      5, 114,   -- 83: get_slot_direct(114)
       0,        -- 85: push_frame
-      5, 191,   -- 86: get_slot_direct(191)
-      1, 229,   -- 88: push_literal(229)
+      5, 252,   -- 86: get_slot_direct(252)
+      1, 290,   -- 88: push_literal(290)
       6,        -- 90: get_slot_indirect
-      8, 192,   -- 91: set_slot_direct(192)
+      8, 253,   -- 91: set_slot_direct(253)
       1, 0,     -- 93: push_literal(0)
       11,       -- 95: return
       0,        -- 96: push_frame
       0,        -- 97: push_frame
-      5, 193,   -- 98: get_slot_direct(193)
+      5, 254,   -- 98: get_slot_direct(254)
       0,        -- 100: push_frame
-      5, 194,   -- 101: get_slot_direct(194)
+      5, 255,   -- 101: get_slot_direct(255)
       6,        -- 103: get_slot_indirect
-      8, 132,   -- 104: set_slot_direct(132)
+      8, 203,   -- 104: set_slot_direct(203)
       0,        -- 106: push_frame
-      5, 93,    -- 107: get_slot_direct(93)
+      5, 114,   -- 107: get_slot_direct(114)
       15,       -- 109: dup
-      5, 194,   -- 110: get_slot_direct(194)
-      1, 8,     -- 112: push_literal(8)
+      5, 255,   -- 110: get_slot_direct(255)
+      1, 31,    -- 112: push_literal(31)
       26,       -- 114: bi_add
-      8, 194,   -- 115: set_slot_direct(194)
+      8, 255,   -- 115: set_slot_direct(255)
       0,        -- 117: push_frame
       0,        -- 118: push_frame
-      5, 132,   -- 119: get_slot_direct(132)
-      5, 139,   -- 121: get_slot_direct(139)
-      8, 86,    -- 123: set_slot_direct(86)
+      5, 203,   -- 119: get_slot_direct(203)
+      5, 209,   -- 121: get_slot_direct(209)
+      8, 107,   -- 123: set_slot_direct(107)
       0,        -- 125: push_frame
       0,        -- 126: push_frame
-      5, 132,   -- 127: get_slot_direct(132)
-      5, 138,   -- 129: get_slot_direct(138)
-      8, 143,   -- 131: set_slot_direct(143)
+      5, 203,   -- 127: get_slot_direct(203)
+      5, 208,   -- 129: get_slot_direct(208)
+      8, 213,   -- 131: set_slot_direct(213)
       0,        -- 133: push_frame
-      5, 143,   -- 134: get_slot_direct(143)
-      1, 9,     -- 136: push_literal(9)
+      5, 213,   -- 134: get_slot_direct(213)
+      1, 19,    -- 136: push_literal(19)
       23,       -- 138: bi_eq
       13, 158,  -- 139: jmp_unless(158)
       0,        -- 141: push_frame
       0,        -- 142: push_frame
-      5, 190,   -- 143: get_slot_direct(190)
+      5, 251,   -- 143: get_slot_direct(251)
       15,       -- 145: dup
-      7, 221,   -- 146: get_slot_direct_check(221)
+      7, 282,   -- 146: get_slot_direct_check(282)
       19,       -- 148: swap
       0,        -- 149: push_frame
-      5, 86,    -- 150: get_slot_direct(86)
+      5, 107,   -- 150: get_slot_direct(107)
       10, 1,    -- 152: invoke(1)
-      8, 92,    -- 154: set_slot_direct(92)
+      8, 113,   -- 154: set_slot_direct(113)
       12, 251,  -- 156: jmp(251)
       0,        -- 158: push_frame
-      5, 143,   -- 159: get_slot_direct(143)
-      1, 182,   -- 161: push_literal(182)
+      5, 213,   -- 159: get_slot_direct(213)
+      1, 243,   -- 161: push_literal(243)
       23,       -- 163: bi_eq
       13, 202,  -- 164: jmp_unless(202)
       0,        -- 166: push_frame
       0,        -- 167: push_frame
-      5, 191,   -- 168: get_slot_direct(191)
+      5, 252,   -- 168: get_slot_direct(252)
       0,        -- 170: push_frame
-      5, 86,    -- 171: get_slot_direct(86)
+      5, 107,   -- 171: get_slot_direct(107)
       6,        -- 173: get_slot_indirect
-      8, 92,    -- 174: set_slot_direct(92)
+      8, 113,   -- 174: set_slot_direct(113)
       0,        -- 176: push_frame
-      5, 92,    -- 177: get_slot_direct(92)
+      5, 113,   -- 177: get_slot_direct(113)
       20,       -- 179: un_not
       13, 200,  -- 180: jmp_unless(200)
       0,        -- 182: push_frame
-      5, 129,   -- 183: get_slot_direct(129)
+      5, 200,   -- 183: get_slot_direct(200)
       0,        -- 185: push_frame
-      5, 20,    -- 186: get_slot_direct(20)
+      5, 26,    -- 186: get_slot_direct(26)
       0,        -- 188: push_frame
-      5, 132,   -- 189: get_slot_direct(132)
-      1, 230,   -- 191: push_literal(230)
+      5, 203,   -- 189: get_slot_direct(203)
+      1, 291,   -- 191: push_literal(291)
       0,        -- 193: push_frame
-      5, 86,    -- 194: get_slot_direct(86)
+      5, 107,   -- 194: get_slot_direct(107)
       26,       -- 196: bi_add
       10, 2,    -- 197: invoke(2)
       14,       -- 199: pop
       12, 251,  -- 200: jmp(251)
       0,        -- 202: push_frame
-      5, 143,   -- 203: get_slot_direct(143)
-      1, 15,    -- 205: push_literal(15)
+      5, 213,   -- 203: get_slot_direct(213)
+      1, 38,    -- 205: push_literal(38)
       23,       -- 207: bi_eq
       15,       -- 208: dup
       20,       -- 209: un_not
       13, 219,  -- 210: jmp_unless(219)
       14,       -- 212: pop
       0,        -- 213: push_frame
-      5, 143,   -- 214: get_slot_direct(143)
-      1, 67,    -- 216: push_literal(67)
+      5, 213,   -- 214: get_slot_direct(213)
+      1, 86,    -- 216: push_literal(86)
       23,       -- 218: bi_eq
       13, 237,  -- 219: jmp_unless(237)
       0,        -- 221: push_frame
       0,        -- 222: push_frame
-      5, 191,   -- 223: get_slot_direct(191)
-      1, 231,   -- 225: push_literal(231)
+      5, 252,   -- 223: get_slot_direct(252)
+      1, 292,   -- 225: push_literal(292)
       6,        -- 227: get_slot_indirect
-      8, 92,    -- 228: set_slot_direct(92)
+      8, 113,   -- 228: set_slot_direct(113)
       0,        -- 230: push_frame
-      1, 232,   -- 231: push_literal(232)
-      8, 143,   -- 233: set_slot_direct(143)
+      1, 293,   -- 231: push_literal(293)
+      8, 213,   -- 233: set_slot_direct(213)
       12, 251,  -- 235: jmp(251)
       0,        -- 237: push_frame
-      5, 129,   -- 238: get_slot_direct(129)
+      5, 200,   -- 238: get_slot_direct(200)
       0,        -- 240: push_frame
-      5, 20,    -- 241: get_slot_direct(20)
+      5, 26,    -- 241: get_slot_direct(26)
       0,        -- 243: push_frame
-      5, 132,   -- 244: get_slot_direct(132)
-      1, 233,   -- 246: push_literal(233)
+      5, 203,   -- 244: get_slot_direct(203)
+      1, 294,   -- 246: push_literal(294)
       10, 2,    -- 248: invoke(2)
       14,       -- 250: pop
       0,        -- 251: push_frame
-      5, 93,    -- 252: get_slot_direct(93)
+      5, 114,   -- 252: get_slot_direct(114)
       0,        -- 254: push_frame
-      5, 4,     -- 255: get_slot_direct(4)
+      5, 15,    -- 255: get_slot_direct(15)
       15,       -- 257: dup
-      7, 96,    -- 258: get_slot_direct_check(96)
+      7, 116,   -- 258: get_slot_direct_check(116)
       19,       -- 260: swap
       0,        -- 261: push_frame
-      5, 92,    -- 262: get_slot_direct(92)
+      5, 113,   -- 262: get_slot_direct(113)
       10, 1,    -- 264: invoke(1)
-      8, 192,   -- 266: set_slot_direct(192)
+      8, 253,   -- 266: set_slot_direct(253)
       0,        -- 268: push_frame
-      5, 192,   -- 269: get_slot_direct(192)
+      5, 253,   -- 269: get_slot_direct(253)
       0,        -- 271: push_frame
-      5, 132,   -- 272: get_slot_direct(132)
-      5, 36,    -- 274: get_slot_direct(36)
-      8, 36,    -- 276: set_slot_direct(36)
+      5, 203,   -- 272: get_slot_direct(203)
+      5, 52,    -- 274: get_slot_direct(52)
+      8, 52,    -- 276: set_slot_direct(52)
       0,        -- 278: push_frame
-      5, 192,   -- 279: get_slot_direct(192)
+      5, 253,   -- 279: get_slot_direct(253)
       0,        -- 281: push_frame
-      5, 132,   -- 282: get_slot_direct(132)
-      5, 134,   -- 284: get_slot_direct(134)
-      8, 134,   -- 286: set_slot_direct(134)
+      5, 203,   -- 282: get_slot_direct(203)
+      5, 205,   -- 284: get_slot_direct(205)
+      8, 205,   -- 286: set_slot_direct(205)
       0,        -- 288: push_frame
-      5, 192,   -- 289: get_slot_direct(192)
+      5, 253,   -- 289: get_slot_direct(253)
       0,        -- 291: push_frame
-      5, 86,    -- 292: get_slot_direct(86)
-      8, 139,   -- 294: set_slot_direct(139)
+      5, 107,   -- 292: get_slot_direct(107)
+      8, 209,   -- 294: set_slot_direct(209)
       0,        -- 296: push_frame
-      5, 192,   -- 297: get_slot_direct(192)
+      5, 253,   -- 297: get_slot_direct(253)
       0,        -- 299: push_frame
-      5, 143,   -- 300: get_slot_direct(143)
-      8, 222,   -- 302: set_slot_direct(222)
+      5, 213,   -- 300: get_slot_direct(213)
+      8, 283,   -- 302: set_slot_direct(283)
       0,        -- 304: push_frame
-      5, 192,   -- 305: get_slot_direct(192)
+      5, 253,   -- 305: get_slot_direct(253)
       11        -- 307: return
     }
   },
   ifunc.Function:new{ -- "expression"
     name = jsval.newString("expression"),
-    id = 43,
+    id = 49,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 234,   -- 8: set_slot_direct(234)
+      8, 295,   -- 8: set_slot_direct(295)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 235,   -- 14: set_slot_direct(235)
+      8, 296,   -- 14: set_slot_direct(296)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 132,   -- 19: set_slot_direct(132)
+      8, 203,   -- 19: set_slot_direct(203)
       0,        -- 21: push_frame
       0,        -- 22: push_frame
-      5, 192,   -- 23: get_slot_direct(192)
-      8, 132,   -- 25: set_slot_direct(132)
+      5, 253,   -- 23: get_slot_direct(253)
+      8, 203,   -- 25: set_slot_direct(203)
       0,        -- 27: push_frame
-      5, 198,   -- 28: get_slot_direct(198)
+      5, 259,   -- 28: get_slot_direct(259)
       0,        -- 30: push_frame
-      5, 20,    -- 31: get_slot_direct(20)
+      5, 26,    -- 31: get_slot_direct(26)
       10, 0,    -- 33: invoke(0)
       14,       -- 35: pop
       0,        -- 36: push_frame
       0,        -- 37: push_frame
-      5, 132,   -- 38: get_slot_direct(132)
+      5, 203,   -- 38: get_slot_direct(203)
       15,       -- 40: dup
-      7, 215,   -- 41: get_slot_direct_check(215)
+      7, 276,   -- 41: get_slot_direct_check(276)
       19,       -- 43: swap
       10, 0,    -- 44: invoke(0)
-      8, 235,   -- 46: set_slot_direct(235)
+      8, 296,   -- 46: set_slot_direct(296)
       12, 80,   -- 48: jmp(80)
       0,        -- 50: push_frame
       0,        -- 51: push_frame
-      5, 192,   -- 52: get_slot_direct(192)
-      8, 132,   -- 54: set_slot_direct(132)
+      5, 253,   -- 52: get_slot_direct(253)
+      8, 203,   -- 54: set_slot_direct(203)
       0,        -- 56: push_frame
-      5, 198,   -- 57: get_slot_direct(198)
+      5, 259,   -- 57: get_slot_direct(259)
       0,        -- 59: push_frame
-      5, 20,    -- 60: get_slot_direct(20)
+      5, 26,    -- 60: get_slot_direct(26)
       10, 0,    -- 62: invoke(0)
       14,       -- 64: pop
       0,        -- 65: push_frame
       0,        -- 66: push_frame
-      5, 132,   -- 67: get_slot_direct(132)
+      5, 203,   -- 67: get_slot_direct(203)
       15,       -- 69: dup
-      7, 216,   -- 70: get_slot_direct_check(216)
+      7, 277,   -- 70: get_slot_direct_check(277)
       19,       -- 72: swap
       0,        -- 73: push_frame
-      5, 235,   -- 74: get_slot_direct(235)
+      5, 296,   -- 74: get_slot_direct(296)
       10, 1,    -- 76: invoke(1)
-      8, 235,   -- 78: set_slot_direct(235)
+      8, 296,   -- 78: set_slot_direct(296)
       0,        -- 80: push_frame
-      5, 234,   -- 81: get_slot_direct(234)
+      5, 295,   -- 81: get_slot_direct(295)
       0,        -- 83: push_frame
-      5, 192,   -- 84: get_slot_direct(192)
-      5, 218,   -- 86: get_slot_direct(218)
+      5, 253,   -- 84: get_slot_direct(253)
+      5, 279,   -- 86: get_slot_direct(279)
       19,       -- 88: swap
       24,       -- 89: bi_gt
       20,       -- 90: un_not
       13, 50,   -- 91: jmp_unless(50)
       0,        -- 93: push_frame
-      5, 235,   -- 94: get_slot_direct(235)
+      5, 296,   -- 94: get_slot_direct(296)
       11        -- 96: return
     }
   },
   ifunc.Function:new{ -- "statement"
     name = jsval.newString("statement"),
-    id = 44,
+    id = 50,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -5423,225 +6320,225 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 127,   -- 7: set_slot_direct(127)
+      8, 23,    -- 7: set_slot_direct(23)
       0,        -- 9: push_frame
       1, 0,     -- 10: push_literal(0)
-      8, 86,    -- 12: set_slot_direct(86)
+      8, 107,   -- 12: set_slot_direct(107)
       0,        -- 14: push_frame
       0,        -- 15: push_frame
-      5, 192,   -- 16: get_slot_direct(192)
-      8, 127,   -- 18: set_slot_direct(127)
+      5, 253,   -- 16: get_slot_direct(253)
+      8, 23,    -- 18: set_slot_direct(23)
       0,        -- 20: push_frame
-      5, 127,   -- 21: get_slot_direct(127)
-      5, 217,   -- 23: get_slot_direct(217)
+      5, 23,    -- 21: get_slot_direct(23)
+      5, 278,   -- 23: get_slot_direct(278)
       13, 61,   -- 25: jmp_unless(61)
       0,        -- 27: push_frame
-      5, 198,   -- 28: get_slot_direct(198)
+      5, 259,   -- 28: get_slot_direct(259)
       0,        -- 30: push_frame
-      5, 20,    -- 31: get_slot_direct(20)
+      5, 26,    -- 31: get_slot_direct(26)
       10, 0,    -- 33: invoke(0)
       14,       -- 35: pop
       0,        -- 36: push_frame
-      5, 190,   -- 37: get_slot_direct(190)
+      5, 251,   -- 37: get_slot_direct(251)
       15,       -- 39: dup
-      7, 223,   -- 40: get_slot_direct_check(223)
+      7, 284,   -- 40: get_slot_direct_check(284)
       19,       -- 42: swap
       0,        -- 43: push_frame
-      5, 127,   -- 44: get_slot_direct(127)
+      5, 23,    -- 44: get_slot_direct(23)
       10, 1,    -- 46: invoke(1)
       14,       -- 48: pop
       0,        -- 49: push_frame
-      5, 127,   -- 50: get_slot_direct(127)
+      5, 23,    -- 50: get_slot_direct(23)
       15,       -- 52: dup
-      7, 217,   -- 53: get_slot_direct_check(217)
+      7, 278,   -- 53: get_slot_direct_check(278)
       19,       -- 55: swap
       10, 0,    -- 56: invoke(0)
       11,       -- 58: return
       12, 175,  -- 59: jmp(175)
       0,        -- 61: push_frame
       0,        -- 62: push_frame
-      5, 199,   -- 63: get_slot_direct(199)
+      5, 260,   -- 63: get_slot_direct(260)
       0,        -- 65: push_frame
-      5, 20,    -- 66: get_slot_direct(20)
-      1, 6,     -- 68: push_literal(6)
+      5, 26,    -- 66: get_slot_direct(26)
+      1, 18,    -- 68: push_literal(18)
       10, 1,    -- 70: invoke(1)
-      8, 86,    -- 72: set_slot_direct(86)
+      8, 107,   -- 72: set_slot_direct(107)
       0,        -- 74: push_frame
-      5, 86,    -- 75: get_slot_direct(86)
-      5, 208,   -- 77: get_slot_direct(208)
+      5, 107,   -- 75: get_slot_direct(107)
+      5, 269,   -- 77: get_slot_direct(269)
       20,       -- 79: un_not
       15,       -- 80: dup
       13, 115,  -- 81: jmp_unless(115)
       14,       -- 83: pop
       0,        -- 84: push_frame
-      5, 86,    -- 85: get_slot_direct(86)
-      5, 226,   -- 87: get_slot_direct(226)
-      1, 236,   -- 89: push_literal(236)
+      5, 107,   -- 85: get_slot_direct(107)
+      5, 287,   -- 87: get_slot_direct(287)
+      1, 297,   -- 89: push_literal(297)
       23,       -- 91: bi_eq
       20,       -- 92: un_not
       15,       -- 93: dup
       13, 115,  -- 94: jmp_unless(115)
       14,       -- 96: pop
       0,        -- 97: push_frame
-      5, 86,    -- 98: get_slot_direct(86)
-      5, 222,   -- 100: get_slot_direct(222)
-      1, 237,   -- 102: push_literal(237)
+      5, 107,   -- 98: get_slot_direct(107)
+      5, 283,   -- 100: get_slot_direct(283)
+      1, 25,    -- 102: push_literal(25)
       23,       -- 104: bi_eq
       15,       -- 105: dup
       13, 114,  -- 106: jmp_unless(114)
       14,       -- 108: pop
       0,        -- 109: push_frame
-      5, 86,    -- 110: get_slot_direct(86)
-      5, 9,     -- 112: get_slot_direct(9)
+      5, 107,   -- 110: get_slot_direct(107)
+      5, 19,    -- 112: get_slot_direct(19)
       20,       -- 114: un_not
       13, 131,  -- 115: jmp_unless(131)
       0,        -- 117: push_frame
-      5, 129,   -- 118: get_slot_direct(129)
+      5, 200,   -- 118: get_slot_direct(200)
       0,        -- 120: push_frame
-      5, 20,    -- 121: get_slot_direct(20)
+      5, 26,    -- 121: get_slot_direct(26)
       0,        -- 123: push_frame
-      5, 86,    -- 124: get_slot_direct(86)
-      1, 238,   -- 126: push_literal(238)
+      5, 107,   -- 124: get_slot_direct(107)
+      1, 298,   -- 126: push_literal(298)
       10, 2,    -- 128: invoke(2)
       14,       -- 130: pop
       0,        -- 131: push_frame
-      5, 86,    -- 132: get_slot_direct(86)
-      5, 222,   -- 134: get_slot_direct(222)
-      1, 237,   -- 136: push_literal(237)
+      5, 107,   -- 132: get_slot_direct(107)
+      5, 283,   -- 134: get_slot_direct(283)
+      1, 25,    -- 136: push_literal(25)
       23,       -- 138: bi_eq
       15,       -- 139: dup
       13, 161,  -- 140: jmp_unless(161)
       14,       -- 142: pop
       0,        -- 143: push_frame
-      5, 86,    -- 144: get_slot_direct(86)
-      5, 9,     -- 146: get_slot_direct(9)
+      5, 107,   -- 144: get_slot_direct(107)
+      5, 19,    -- 146: get_slot_direct(19)
       15,       -- 148: dup
       13, 161,  -- 149: jmp_unless(161)
       14,       -- 151: pop
       0,        -- 152: push_frame
-      5, 192,   -- 153: get_slot_direct(192)
-      5, 226,   -- 155: get_slot_direct(226)
-      1, 239,   -- 157: push_literal(239)
+      5, 253,   -- 153: get_slot_direct(253)
+      5, 287,   -- 155: get_slot_direct(287)
+      1, 299,   -- 157: push_literal(299)
       23,       -- 159: bi_eq
       20,       -- 160: un_not
       20,       -- 161: un_not
       13, 175,  -- 162: jmp_unless(175)
       0,        -- 164: push_frame
-      5, 198,   -- 165: get_slot_direct(198)
+      5, 259,   -- 165: get_slot_direct(259)
       0,        -- 167: push_frame
-      5, 20,    -- 168: get_slot_direct(20)
-      1, 239,   -- 170: push_literal(239)
+      5, 26,    -- 168: get_slot_direct(26)
+      1, 299,   -- 170: push_literal(299)
       10, 1,    -- 172: invoke(1)
       14,       -- 174: pop
       0,        -- 175: push_frame
-      5, 86,    -- 176: get_slot_direct(86)
+      5, 107,   -- 176: get_slot_direct(107)
       13, 189,  -- 178: jmp_unless(189)
       3,        -- 180: new_array
       15,       -- 181: dup
       0,        -- 182: push_frame
-      5, 86,    -- 183: get_slot_direct(86)
-      8, 6,     -- 185: set_slot_direct(6)
+      5, 107,   -- 183: get_slot_direct(107)
+      8, 18,    -- 185: set_slot_direct(18)
       12, 191,  -- 187: jmp(191)
-      1, 21,    -- 189: push_literal(21)
+      1, 41,    -- 189: push_literal(41)
       11        -- 191: return
     }
   },
   ifunc.Function:new{ -- "hoist_var"
     name = jsval.newString("hoist_var"),
-    id = 45,
+    id = 51,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 240,   -- 8: set_slot_direct(240)
+      8, 300,   -- 8: set_slot_direct(300)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 86,    -- 14: set_slot_direct(86)
+      8, 107,   -- 14: set_slot_direct(107)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 224,   -- 19: set_slot_direct(224)
+      8, 285,   -- 19: set_slot_direct(285)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 37,    -- 24: set_slot_direct(37)
+      8, 53,    -- 24: set_slot_direct(53)
       0,        -- 26: push_frame
       3,        -- 27: new_array
-      8, 86,    -- 28: set_slot_direct(86)
+      8, 107,   -- 28: set_slot_direct(107)
       0,        -- 30: push_frame
       3,        -- 31: new_array
-      8, 224,   -- 32: set_slot_direct(224)
+      8, 285,   -- 32: set_slot_direct(285)
       0,        -- 34: push_frame
-      1, 6,     -- 35: push_literal(6)
-      8, 37,    -- 37: set_slot_direct(37)
+      1, 18,    -- 35: push_literal(18)
+      8, 53,    -- 37: set_slot_direct(53)
       12, 100,  -- 39: jmp(100)
       0,        -- 41: push_frame
-      5, 240,   -- 42: get_slot_direct(240)
+      5, 300,   -- 42: get_slot_direct(300)
       0,        -- 44: push_frame
-      5, 37,    -- 45: get_slot_direct(37)
+      5, 53,    -- 45: get_slot_direct(53)
       6,        -- 47: get_slot_indirect
-      5, 139,   -- 48: get_slot_direct(139)
-      1, 241,   -- 50: push_literal(241)
+      5, 209,   -- 48: get_slot_direct(209)
+      1, 301,   -- 50: push_literal(301)
       23,       -- 52: bi_eq
       13, 74,   -- 53: jmp_unless(74)
       0,        -- 55: push_frame
-      5, 86,    -- 56: get_slot_direct(86)
+      5, 107,   -- 56: get_slot_direct(107)
       15,       -- 58: dup
-      7, 52,    -- 59: get_slot_direct_check(52)
+      7, 69,    -- 59: get_slot_direct_check(69)
       19,       -- 61: swap
       0,        -- 62: push_frame
-      5, 240,   -- 63: get_slot_direct(240)
+      5, 300,   -- 63: get_slot_direct(300)
       0,        -- 65: push_frame
-      5, 37,    -- 66: get_slot_direct(37)
+      5, 53,    -- 66: get_slot_direct(53)
       6,        -- 68: get_slot_indirect
       10, 1,    -- 69: invoke(1)
       14,       -- 71: pop
       12, 91,   -- 72: jmp(91)
       0,        -- 74: push_frame
-      5, 224,   -- 75: get_slot_direct(224)
+      5, 285,   -- 75: get_slot_direct(285)
       15,       -- 77: dup
-      7, 52,    -- 78: get_slot_direct_check(52)
+      7, 69,    -- 78: get_slot_direct_check(69)
       19,       -- 80: swap
       0,        -- 81: push_frame
-      5, 240,   -- 82: get_slot_direct(240)
+      5, 300,   -- 82: get_slot_direct(300)
       0,        -- 84: push_frame
-      5, 37,    -- 85: get_slot_direct(37)
+      5, 53,    -- 85: get_slot_direct(53)
       6,        -- 87: get_slot_indirect
       10, 1,    -- 88: invoke(1)
       14,       -- 90: pop
       0,        -- 91: push_frame
       15,       -- 92: dup
-      5, 37,    -- 93: get_slot_direct(37)
-      1, 8,     -- 95: push_literal(8)
+      5, 53,    -- 93: get_slot_direct(53)
+      1, 31,    -- 95: push_literal(31)
       26,       -- 97: bi_add
-      8, 37,    -- 98: set_slot_direct(37)
+      8, 53,    -- 98: set_slot_direct(53)
       0,        -- 100: push_frame
-      5, 37,    -- 101: get_slot_direct(37)
+      5, 53,    -- 101: get_slot_direct(53)
       0,        -- 103: push_frame
-      5, 240,   -- 104: get_slot_direct(240)
-      5, 24,    -- 106: get_slot_direct(24)
+      5, 300,   -- 104: get_slot_direct(300)
+      5, 55,    -- 106: get_slot_direct(55)
       19,       -- 108: swap
       24,       -- 109: bi_gt
       20,       -- 110: un_not
       13, 41,   -- 111: jmp_unless(41)
       0,        -- 113: push_frame
-      5, 86,    -- 114: get_slot_direct(86)
+      5, 107,   -- 114: get_slot_direct(107)
       15,       -- 116: dup
-      7, 71,    -- 117: get_slot_direct_check(71)
+      7, 90,    -- 117: get_slot_direct_check(90)
       19,       -- 119: swap
       0,        -- 120: push_frame
-      5, 224,   -- 121: get_slot_direct(224)
+      5, 285,   -- 121: get_slot_direct(285)
       10, 1,    -- 123: invoke(1)
       11        -- 125: return
     }
   },
   ifunc.Function:new{ -- "statements"
     name = jsval.newString("statements"),
-    id = 46,
+    id = 52,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -5650,68 +6547,68 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
+      8, 213,   -- 7: set_slot_direct(213)
       0,        -- 9: push_frame
       1, 0,     -- 10: push_literal(0)
-      8, 224,   -- 12: set_slot_direct(224)
+      8, 285,   -- 12: set_slot_direct(285)
       0,        -- 14: push_frame
       3,        -- 15: new_array
-      8, 143,   -- 16: set_slot_direct(143)
+      8, 213,   -- 16: set_slot_direct(213)
       12, 79,   -- 18: jmp(79)
       0,        -- 20: push_frame
-      5, 192,   -- 21: get_slot_direct(192)
-      5, 226,   -- 23: get_slot_direct(226)
-      1, 242,   -- 25: push_literal(242)
+      5, 253,   -- 21: get_slot_direct(253)
+      5, 287,   -- 23: get_slot_direct(287)
+      1, 302,   -- 25: push_literal(302)
       23,       -- 27: bi_eq
       15,       -- 28: dup
       20,       -- 29: un_not
       13, 41,   -- 30: jmp_unless(41)
       14,       -- 32: pop
       0,        -- 33: push_frame
-      5, 192,   -- 34: get_slot_direct(192)
-      5, 226,   -- 36: get_slot_direct(226)
-      1, 229,   -- 38: push_literal(229)
+      5, 253,   -- 34: get_slot_direct(253)
+      5, 287,   -- 36: get_slot_direct(287)
+      1, 290,   -- 38: push_literal(290)
       23,       -- 40: bi_eq
       13, 45,   -- 41: jmp_unless(45)
       12, 84,   -- 43: jmp(84)
       0,        -- 45: push_frame
       0,        -- 46: push_frame
-      5, 200,   -- 47: get_slot_direct(200)
+      5, 261,   -- 47: get_slot_direct(261)
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
+      5, 26,    -- 50: get_slot_direct(26)
       10, 0,    -- 52: invoke(0)
-      8, 224,   -- 54: set_slot_direct(224)
+      8, 285,   -- 54: set_slot_direct(285)
       0,        -- 56: push_frame
-      5, 224,   -- 57: get_slot_direct(224)
+      5, 285,   -- 57: get_slot_direct(285)
       13, 79,   -- 59: jmp_unless(79)
       0,        -- 61: push_frame
-      5, 143,   -- 62: get_slot_direct(143)
-      5, 52,    -- 64: get_slot_direct(52)
+      5, 213,   -- 62: get_slot_direct(213)
+      5, 69,    -- 64: get_slot_direct(69)
       15,       -- 66: dup
-      7, 88,    -- 67: get_slot_direct_check(88)
+      7, 109,   -- 67: get_slot_direct_check(109)
       19,       -- 69: swap
       0,        -- 70: push_frame
-      5, 143,   -- 71: get_slot_direct(143)
+      5, 213,   -- 71: get_slot_direct(213)
       0,        -- 73: push_frame
-      5, 224,   -- 74: get_slot_direct(224)
+      5, 285,   -- 74: get_slot_direct(285)
       10, 2,    -- 76: invoke(2)
       14,       -- 78: pop
-      1, 94,    -- 79: push_literal(94)
+      1, 115,   -- 79: push_literal(115)
       20,       -- 81: un_not
       13, 20,   -- 82: jmp_unless(20)
       0,        -- 84: push_frame
-      5, 201,   -- 85: get_slot_direct(201)
+      5, 262,   -- 85: get_slot_direct(262)
       0,        -- 87: push_frame
-      5, 20,    -- 88: get_slot_direct(20)
+      5, 26,    -- 88: get_slot_direct(26)
       0,        -- 90: push_frame
-      5, 143,   -- 91: get_slot_direct(143)
+      5, 213,   -- 91: get_slot_direct(213)
       10, 1,    -- 93: invoke(1)
       11        -- 95: return
     }
   },
   ifunc.Function:new{ -- "block"
     name = jsval.newString("block"),
-    id = 47,
+    id = 53,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -5720,22 +6617,22 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 132,   -- 7: set_slot_direct(132)
+      8, 203,   -- 7: set_slot_direct(203)
       0,        -- 9: push_frame
       0,        -- 10: push_frame
-      5, 192,   -- 11: get_slot_direct(192)
-      8, 132,   -- 13: set_slot_direct(132)
+      5, 253,   -- 11: get_slot_direct(253)
+      8, 203,   -- 13: set_slot_direct(203)
       0,        -- 15: push_frame
-      5, 198,   -- 16: get_slot_direct(198)
+      5, 259,   -- 16: get_slot_direct(259)
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      1, 243,   -- 21: push_literal(243)
+      5, 26,    -- 19: get_slot_direct(26)
+      1, 303,   -- 21: push_literal(303)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 132,   -- 27: get_slot_direct(132)
+      5, 203,   -- 27: get_slot_direct(203)
       15,       -- 29: dup
-      7, 217,   -- 30: get_slot_direct_check(217)
+      7, 278,   -- 30: get_slot_direct_check(278)
       19,       -- 32: swap
       10, 0,    -- 33: invoke(0)
       11        -- 35: return
@@ -5743,7 +6640,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "nud:"
     name = jsval.newString("nud:"),
-    id = 48,
+    id = 54,
     nargs = 0,
     max_stack = 5,
     bytecode = {
@@ -5751,15 +6648,15 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 129,   -- 5: get_slot_direct(129)
+      5, 200,   -- 5: get_slot_direct(200)
       0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
+      5, 26,    -- 8: get_slot_direct(26)
       0,        -- 10: push_frame
-      5, 20,    -- 11: get_slot_direct(20)
-      1, 244,   -- 13: push_literal(244)
+      5, 26,    -- 11: get_slot_direct(26)
+      1, 304,   -- 13: push_literal(304)
       0,        -- 15: push_frame
-      5, 20,    -- 16: get_slot_direct(20)
-      5, 139,   -- 18: get_slot_direct(139)
+      5, 26,    -- 16: get_slot_direct(26)
+      5, 209,   -- 18: get_slot_direct(209)
       26,       -- 20: bi_add
       10, 2,    -- 21: invoke(2)
       14,       -- 23: pop
@@ -5769,25 +6666,25 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "led:"
     name = jsval.newString("led:"),
-    id = 49,
+    id = 55,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
+      8, 296,   -- 8: set_slot_direct(296)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 129,   -- 12: get_slot_direct(129)
+      5, 200,   -- 12: get_slot_direct(200)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
-      1, 245,   -- 20: push_literal(245)
+      5, 26,    -- 18: get_slot_direct(26)
+      1, 305,   -- 20: push_literal(305)
       10, 2,    -- 22: invoke(2)
       14,       -- 24: pop
       1, 0,     -- 25: push_literal(0)
@@ -5796,153 +6693,153 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "symbol"
     name = jsval.newString("symbol"),
-    id = 50,
+    id = 56,
     nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
+      8, 287,   -- 8: set_slot_direct(287)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 246,   -- 15: set_slot_direct(246)
+      8, 306,   -- 15: set_slot_direct(306)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 224,   -- 21: set_slot_direct(224)
+      8, 285,   -- 21: set_slot_direct(285)
       0,        -- 23: push_frame
       0,        -- 24: push_frame
-      5, 191,   -- 25: get_slot_direct(191)
+      5, 252,   -- 25: get_slot_direct(252)
       15,       -- 27: dup
-      7, 70,    -- 28: get_slot_direct_check(70)
+      7, 89,    -- 28: get_slot_direct_check(89)
       19,       -- 30: swap
       0,        -- 31: push_frame
-      5, 226,   -- 32: get_slot_direct(226)
+      5, 287,   -- 32: get_slot_direct(287)
       10, 1,    -- 34: invoke(1)
       13, 47,   -- 36: jmp_unless(47)
       0,        -- 38: push_frame
-      5, 191,   -- 39: get_slot_direct(191)
+      5, 252,   -- 39: get_slot_direct(252)
       0,        -- 41: push_frame
-      5, 226,   -- 42: get_slot_direct(226)
+      5, 287,   -- 42: get_slot_direct(287)
       6,        -- 44: get_slot_indirect
       12, 49,   -- 45: jmp(49)
-      1, 21,    -- 47: push_literal(21)
-      8, 224,   -- 49: set_slot_direct(224)
+      1, 41,    -- 47: push_literal(41)
+      8, 285,   -- 49: set_slot_direct(285)
       0,        -- 51: push_frame
       0,        -- 52: push_frame
-      5, 246,   -- 53: get_slot_direct(246)
+      5, 306,   -- 53: get_slot_direct(306)
       15,       -- 55: dup
       20,       -- 56: un_not
       13, 62,   -- 57: jmp_unless(62)
       14,       -- 59: pop
-      1, 6,     -- 60: push_literal(6)
-      8, 246,   -- 62: set_slot_direct(246)
+      1, 18,    -- 60: push_literal(18)
+      8, 306,   -- 62: set_slot_direct(306)
       0,        -- 64: push_frame
-      5, 224,   -- 65: get_slot_direct(224)
+      5, 285,   -- 65: get_slot_direct(285)
       13, 90,   -- 67: jmp_unless(90)
       0,        -- 69: push_frame
-      5, 246,   -- 70: get_slot_direct(246)
+      5, 306,   -- 70: get_slot_direct(306)
       0,        -- 72: push_frame
-      5, 224,   -- 73: get_slot_direct(224)
-      5, 218,   -- 75: get_slot_direct(218)
+      5, 285,   -- 73: get_slot_direct(285)
+      5, 279,   -- 75: get_slot_direct(279)
       25,       -- 77: bi_gte
       13, 88,   -- 78: jmp_unless(88)
       0,        -- 80: push_frame
-      5, 224,   -- 81: get_slot_direct(224)
+      5, 285,   -- 81: get_slot_direct(285)
       0,        -- 83: push_frame
-      5, 246,   -- 84: get_slot_direct(246)
-      8, 218,   -- 86: set_slot_direct(218)
+      5, 306,   -- 84: get_slot_direct(306)
+      8, 279,   -- 86: set_slot_direct(279)
       12, 137,  -- 88: jmp(137)
       0,        -- 90: push_frame
       0,        -- 91: push_frame
-      5, 4,     -- 92: get_slot_direct(4)
+      5, 15,    -- 92: get_slot_direct(15)
       15,       -- 94: dup
-      7, 96,    -- 95: get_slot_direct_check(96)
+      7, 116,   -- 95: get_slot_direct_check(116)
       19,       -- 97: swap
       0,        -- 98: push_frame
-      5, 203,   -- 99: get_slot_direct(203)
+      5, 264,   -- 99: get_slot_direct(264)
       10, 1,    -- 101: invoke(1)
-      8, 224,   -- 103: set_slot_direct(224)
+      8, 285,   -- 103: set_slot_direct(285)
       0,        -- 105: push_frame
-      5, 224,   -- 106: get_slot_direct(224)
+      5, 285,   -- 106: get_slot_direct(285)
       0,        -- 108: push_frame
-      5, 224,   -- 109: get_slot_direct(224)
+      5, 285,   -- 109: get_slot_direct(285)
       0,        -- 111: push_frame
-      5, 226,   -- 112: get_slot_direct(226)
+      5, 287,   -- 112: get_slot_direct(287)
       17,       -- 114: over
-      8, 139,   -- 115: set_slot_direct(139)
-      8, 226,   -- 117: set_slot_direct(226)
+      8, 209,   -- 115: set_slot_direct(209)
+      8, 287,   -- 117: set_slot_direct(287)
       0,        -- 119: push_frame
-      5, 224,   -- 120: get_slot_direct(224)
+      5, 285,   -- 120: get_slot_direct(285)
       0,        -- 122: push_frame
-      5, 246,   -- 123: get_slot_direct(246)
-      8, 218,   -- 125: set_slot_direct(218)
+      5, 306,   -- 123: get_slot_direct(306)
+      8, 279,   -- 125: set_slot_direct(279)
       0,        -- 127: push_frame
-      5, 191,   -- 128: get_slot_direct(191)
+      5, 252,   -- 128: get_slot_direct(252)
       0,        -- 130: push_frame
-      5, 226,   -- 131: get_slot_direct(226)
+      5, 287,   -- 131: get_slot_direct(287)
       0,        -- 133: push_frame
-      5, 224,   -- 134: get_slot_direct(224)
+      5, 285,   -- 134: get_slot_direct(285)
       9,        -- 136: set_slot_indirect
       0,        -- 137: push_frame
-      5, 224,   -- 138: get_slot_direct(224)
+      5, 285,   -- 138: get_slot_direct(285)
       11        -- 140: return
     }
   },
   ifunc.Function:new{ -- "constant"
     name = jsval.newString("constant"),
-    id = 51,
+    id = 57,
     nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 224,   -- 8: set_slot_direct(224)
+      8, 285,   -- 8: set_slot_direct(285)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 86,    -- 15: set_slot_direct(86)
+      8, 107,   -- 15: set_slot_direct(107)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 153,   -- 21: set_slot_direct(153)
+      8, 122,   -- 21: set_slot_direct(122)
       0,        -- 23: push_frame
       0,        -- 24: push_frame
-      5, 204,   -- 25: get_slot_direct(204)
+      5, 265,   -- 25: get_slot_direct(265)
       0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
+      5, 26,    -- 28: get_slot_direct(26)
       0,        -- 30: push_frame
-      5, 224,   -- 31: get_slot_direct(224)
+      5, 285,   -- 31: get_slot_direct(285)
       10, 1,    -- 33: invoke(1)
-      8, 153,   -- 35: set_slot_direct(153)
+      8, 122,   -- 35: set_slot_direct(122)
       0,        -- 37: push_frame
-      5, 153,   -- 38: get_slot_direct(153)
-      4, 52,    -- 40: new_function(52)
-      8, 215,   -- 42: set_slot_direct(215)
+      5, 122,   -- 38: get_slot_direct(122)
+      4, 58,    -- 40: new_function(58)
+      8, 276,   -- 42: set_slot_direct(276)
       0,        -- 44: push_frame
-      5, 153,   -- 45: get_slot_direct(153)
+      5, 122,   -- 45: get_slot_direct(122)
       0,        -- 47: push_frame
-      5, 86,    -- 48: get_slot_direct(86)
-      8, 139,   -- 50: set_slot_direct(139)
+      5, 107,   -- 48: get_slot_direct(107)
+      8, 209,   -- 50: set_slot_direct(209)
       0,        -- 52: push_frame
-      5, 153,   -- 53: get_slot_direct(153)
+      5, 122,   -- 53: get_slot_direct(122)
       11        -- 55: return
     }
   },
   ifunc.Function:new{ -- ".nud"
     name = jsval.newString(".nud"),
-    id = 52,
+    id = 58,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -5950,519 +6847,241 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 190,   -- 5: get_slot_direct(190)
+      5, 251,   -- 5: get_slot_direct(251)
       15,       -- 7: dup
-      7, 223,   -- 8: get_slot_direct_check(223)
+      7, 284,   -- 8: get_slot_direct_check(284)
       19,       -- 10: swap
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
+      5, 26,    -- 12: get_slot_direct(26)
       10, 1,    -- 14: invoke(1)
       14,       -- 16: pop
       0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
+      5, 26,    -- 18: get_slot_direct(26)
       0,        -- 20: push_frame
-      5, 191,   -- 21: get_slot_direct(191)
+      5, 252,   -- 21: get_slot_direct(252)
       0,        -- 23: push_frame
-      5, 20,    -- 24: get_slot_direct(20)
-      5, 226,   -- 26: get_slot_direct(226)
+      5, 26,    -- 24: get_slot_direct(26)
+      5, 287,   -- 26: get_slot_direct(287)
       6,        -- 28: get_slot_indirect
-      5, 139,   -- 29: get_slot_direct(139)
-      8, 139,   -- 31: set_slot_direct(139)
+      5, 209,   -- 29: get_slot_direct(209)
+      8, 209,   -- 31: set_slot_direct(209)
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      1, 232,   -- 36: push_literal(232)
-      8, 222,   -- 38: set_slot_direct(222)
+      5, 26,    -- 34: get_slot_direct(26)
+      1, 293,   -- 36: push_literal(293)
+      8, 283,   -- 38: set_slot_direct(283)
       0,        -- 40: push_frame
-      5, 20,    -- 41: get_slot_direct(20)
+      5, 26,    -- 41: get_slot_direct(26)
       11        -- 43: return
     }
   },
   ifunc.Function:new{ -- "infix"
     name = jsval.newString("infix"),
-    id = 53,
-    nargs = 3,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 246,   -- 15: set_slot_direct(246)
-      15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
-      0,        -- 20: push_frame
-      19,       -- 21: swap
-      8, 216,   -- 22: set_slot_direct(216)
-      14,       -- 24: pop
-      0,        -- 25: push_frame
-      1, 0,     -- 26: push_literal(0)
-      8, 224,   -- 28: set_slot_direct(224)
-      0,        -- 30: push_frame
-      0,        -- 31: push_frame
-      5, 204,   -- 32: get_slot_direct(204)
-      0,        -- 34: push_frame
-      5, 20,    -- 35: get_slot_direct(20)
-      0,        -- 37: push_frame
-      5, 226,   -- 38: get_slot_direct(226)
-      0,        -- 40: push_frame
-      5, 246,   -- 41: get_slot_direct(246)
-      10, 2,    -- 43: invoke(2)
-      8, 224,   -- 45: set_slot_direct(224)
-      0,        -- 47: push_frame
-      5, 224,   -- 48: get_slot_direct(224)
-      0,        -- 50: push_frame
-      5, 216,   -- 51: get_slot_direct(216)
-      15,       -- 53: dup
-      20,       -- 54: un_not
-      13, 60,   -- 55: jmp_unless(60)
-      14,       -- 57: pop
-      4, 54,    -- 58: new_function(54)
-      8, 216,   -- 60: set_slot_direct(216)
-      0,        -- 62: push_frame
-      5, 224,   -- 63: get_slot_direct(224)
-      11        -- 65: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 54,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      0,        -- 14: push_frame
-      5, 235,   -- 15: get_slot_direct(235)
-      8, 18,    -- 17: set_slot_direct(18)
-      0,        -- 19: push_frame
-      5, 20,    -- 20: get_slot_direct(20)
-      0,        -- 22: push_frame
-      5, 199,   -- 23: get_slot_direct(199)
-      0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      0,        -- 28: push_frame
-      5, 246,   -- 29: get_slot_direct(246)
-      10, 1,    -- 31: invoke(1)
-      8, 19,    -- 33: set_slot_direct(19)
-      0,        -- 35: push_frame
-      5, 20,    -- 36: get_slot_direct(20)
-      1, 247,   -- 38: push_literal(247)
-      8, 222,   -- 40: set_slot_direct(222)
-      0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
-      11        -- 45: return
-    }
-  },
-  ifunc.Function:new{ -- "infixr"
-    name = jsval.newString("infixr"),
-    id = 55,
-    nargs = 3,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 246,   -- 15: set_slot_direct(246)
-      15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
-      0,        -- 20: push_frame
-      19,       -- 21: swap
-      8, 216,   -- 22: set_slot_direct(216)
-      14,       -- 24: pop
-      0,        -- 25: push_frame
-      1, 0,     -- 26: push_literal(0)
-      8, 224,   -- 28: set_slot_direct(224)
-      0,        -- 30: push_frame
-      0,        -- 31: push_frame
-      5, 204,   -- 32: get_slot_direct(204)
-      0,        -- 34: push_frame
-      5, 20,    -- 35: get_slot_direct(20)
-      0,        -- 37: push_frame
-      5, 226,   -- 38: get_slot_direct(226)
-      0,        -- 40: push_frame
-      5, 246,   -- 41: get_slot_direct(246)
-      10, 2,    -- 43: invoke(2)
-      8, 224,   -- 45: set_slot_direct(224)
-      0,        -- 47: push_frame
-      5, 224,   -- 48: get_slot_direct(224)
-      0,        -- 50: push_frame
-      5, 216,   -- 51: get_slot_direct(216)
-      15,       -- 53: dup
-      20,       -- 54: un_not
-      13, 60,   -- 55: jmp_unless(60)
-      14,       -- 57: pop
-      4, 56,    -- 58: new_function(56)
-      8, 216,   -- 60: set_slot_direct(216)
-      0,        -- 62: push_frame
-      5, 224,   -- 63: get_slot_direct(224)
-      11        -- 65: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 56,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      0,        -- 14: push_frame
-      5, 235,   -- 15: get_slot_direct(235)
-      8, 18,    -- 17: set_slot_direct(18)
-      0,        -- 19: push_frame
-      5, 20,    -- 20: get_slot_direct(20)
-      0,        -- 22: push_frame
-      5, 199,   -- 23: get_slot_direct(199)
-      0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      0,        -- 28: push_frame
-      5, 246,   -- 29: get_slot_direct(246)
-      1, 8,     -- 31: push_literal(8)
-      27,       -- 33: bi_sub
-      10, 1,    -- 34: invoke(1)
-      8, 19,    -- 36: set_slot_direct(19)
-      0,        -- 38: push_frame
-      5, 20,    -- 39: get_slot_direct(20)
-      1, 247,   -- 41: push_literal(247)
-      8, 222,   -- 43: set_slot_direct(222)
-      0,        -- 45: push_frame
-      5, 20,    -- 46: get_slot_direct(20)
-      11        -- 48: return
-    }
-  },
-  ifunc.Function:new{ -- "assignment"
-    name = jsval.newString("assignment"),
-    id = 57,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 207,   -- 12: get_slot_direct(207)
-      0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
-      0,        -- 17: push_frame
-      5, 226,   -- 18: get_slot_direct(226)
-      1, 161,   -- 20: push_literal(161)
-      4, 58,    -- 22: new_function(58)
-      10, 3,    -- 24: invoke(3)
-      11        -- 26: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 58,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 235,   -- 12: get_slot_direct(235)
-      5, 226,   -- 14: get_slot_direct(226)
-      1, 151,   -- 16: push_literal(151)
-      23,       -- 18: bi_eq
-      20,       -- 19: un_not
-      15,       -- 20: dup
-      13, 46,   -- 21: jmp_unless(46)
-      14,       -- 23: pop
-      0,        -- 24: push_frame
-      5, 235,   -- 25: get_slot_direct(235)
-      5, 226,   -- 27: get_slot_direct(226)
-      1, 248,   -- 29: push_literal(248)
-      23,       -- 31: bi_eq
-      20,       -- 32: un_not
-      15,       -- 33: dup
-      13, 46,   -- 34: jmp_unless(46)
-      14,       -- 36: pop
-      0,        -- 37: push_frame
-      5, 235,   -- 38: get_slot_direct(235)
-      5, 222,   -- 40: get_slot_direct(222)
-      1, 9,     -- 42: push_literal(9)
-      23,       -- 44: bi_eq
-      20,       -- 45: un_not
-      13, 62,   -- 46: jmp_unless(62)
-      0,        -- 48: push_frame
-      5, 129,   -- 49: get_slot_direct(129)
-      0,        -- 51: push_frame
-      5, 20,    -- 52: get_slot_direct(20)
-      0,        -- 54: push_frame
-      5, 235,   -- 55: get_slot_direct(235)
-      1, 249,   -- 57: push_literal(249)
-      10, 2,    -- 59: invoke(2)
-      14,       -- 61: pop
-      0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
-      0,        -- 65: push_frame
-      5, 235,   -- 66: get_slot_direct(235)
-      8, 18,    -- 68: set_slot_direct(18)
-      0,        -- 70: push_frame
-      5, 20,    -- 71: get_slot_direct(20)
-      0,        -- 73: push_frame
-      5, 199,   -- 74: get_slot_direct(199)
-      0,        -- 76: push_frame
-      5, 20,    -- 77: get_slot_direct(20)
-      1, 250,   -- 79: push_literal(250)
-      10, 1,    -- 81: invoke(1)
-      8, 19,    -- 83: set_slot_direct(19)
-      0,        -- 85: push_frame
-      5, 20,    -- 86: get_slot_direct(20)
-      1, 94,    -- 88: push_literal(94)
-      8, 208,   -- 90: set_slot_direct(208)
-      0,        -- 92: push_frame
-      5, 20,    -- 93: get_slot_direct(20)
-      1, 247,   -- 95: push_literal(247)
-      8, 222,   -- 97: set_slot_direct(222)
-      0,        -- 99: push_frame
-      5, 20,    -- 100: get_slot_direct(20)
-      11        -- 102: return
-    }
-  },
-  ifunc.Function:new{ -- "prefix"
-    name = jsval.newString("prefix"),
     id = 59,
-    nargs = 2,
-    max_stack = 4,
+    nargs = 3,
+    max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 226,   -- 8: set_slot_direct(226)
+      8, 287,   -- 8: set_slot_direct(287)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 215,   -- 15: set_slot_direct(215)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      1, 0,     -- 19: push_literal(0)
-      8, 224,   -- 21: set_slot_direct(224)
-      0,        -- 23: push_frame
-      0,        -- 24: push_frame
-      5, 204,   -- 25: get_slot_direct(204)
-      0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
+      8, 306,   -- 15: set_slot_direct(306)
+      15,       -- 17: dup
+      5, 130,   -- 18: get_slot_direct(130)
+      0,        -- 20: push_frame
+      19,       -- 21: swap
+      8, 277,   -- 22: set_slot_direct(277)
+      14,       -- 24: pop
+      0,        -- 25: push_frame
+      1, 0,     -- 26: push_literal(0)
+      8, 285,   -- 28: set_slot_direct(285)
       0,        -- 30: push_frame
-      5, 226,   -- 31: get_slot_direct(226)
-      10, 1,    -- 33: invoke(1)
-      8, 224,   -- 35: set_slot_direct(224)
+      0,        -- 31: push_frame
+      5, 265,   -- 32: get_slot_direct(265)
+      0,        -- 34: push_frame
+      5, 26,    -- 35: get_slot_direct(26)
       0,        -- 37: push_frame
-      5, 224,   -- 38: get_slot_direct(224)
+      5, 287,   -- 38: get_slot_direct(287)
       0,        -- 40: push_frame
-      5, 215,   -- 41: get_slot_direct(215)
-      15,       -- 43: dup
-      20,       -- 44: un_not
-      13, 50,   -- 45: jmp_unless(50)
-      14,       -- 47: pop
-      4, 60,    -- 48: new_function(60)
-      8, 215,   -- 50: set_slot_direct(215)
-      0,        -- 52: push_frame
-      5, 224,   -- 53: get_slot_direct(224)
-      11        -- 55: return
+      5, 306,   -- 41: get_slot_direct(306)
+      10, 2,    -- 43: invoke(2)
+      8, 285,   -- 45: set_slot_direct(285)
+      0,        -- 47: push_frame
+      5, 285,   -- 48: get_slot_direct(285)
+      0,        -- 50: push_frame
+      5, 277,   -- 51: get_slot_direct(277)
+      15,       -- 53: dup
+      20,       -- 54: un_not
+      13, 60,   -- 55: jmp_unless(60)
+      14,       -- 57: pop
+      4, 60,    -- 58: new_function(60)
+      8, 277,   -- 60: set_slot_direct(277)
+      0,        -- 62: push_frame
+      5, 285,   -- 63: get_slot_direct(285)
+      11        -- 65: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 60,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      5, 190,   -- 5: get_slot_direct(190)
-      15,       -- 7: dup
-      7, 223,   -- 8: get_slot_direct_check(223)
-      19,       -- 10: swap
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      10, 1,    -- 14: invoke(1)
-      14,       -- 16: pop
-      0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
-      0,        -- 20: push_frame
-      5, 199,   -- 21: get_slot_direct(199)
-      0,        -- 23: push_frame
-      5, 20,    -- 24: get_slot_direct(20)
-      1, 251,   -- 26: push_literal(251)
-      10, 1,    -- 28: invoke(1)
-      8, 18,    -- 30: set_slot_direct(18)
-      0,        -- 32: push_frame
-      5, 20,    -- 33: get_slot_direct(20)
-      1, 252,   -- 35: push_literal(252)
-      8, 222,   -- 37: set_slot_direct(222)
-      0,        -- 39: push_frame
-      5, 20,    -- 40: get_slot_direct(20)
-      11        -- 42: return
-    }
-  },
-  ifunc.Function:new{ -- "stmt"
-    name = jsval.newString("stmt"),
-    id = 61,
-    nargs = 2,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 224,   -- 8: set_slot_direct(224)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 85,    -- 15: set_slot_direct(85)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      1, 0,     -- 19: push_literal(0)
-      8, 153,   -- 21: set_slot_direct(153)
-      0,        -- 23: push_frame
-      0,        -- 24: push_frame
-      5, 204,   -- 25: get_slot_direct(204)
-      0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
-      0,        -- 30: push_frame
-      5, 224,   -- 31: get_slot_direct(224)
-      10, 1,    -- 33: invoke(1)
-      8, 153,   -- 35: set_slot_direct(153)
-      0,        -- 37: push_frame
-      5, 153,   -- 38: get_slot_direct(153)
-      0,        -- 40: push_frame
-      5, 85,    -- 41: get_slot_direct(85)
-      8, 217,   -- 43: set_slot_direct(217)
-      0,        -- 45: push_frame
-      5, 153,   -- 46: get_slot_direct(153)
-      11        -- 48: return
-    }
-  },
-  ifunc.Function:new{ -- ".nud"
-    name = jsval.newString(".nud"),
-    id = 62,
-    nargs = 0,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      5, 190,   -- 5: get_slot_direct(190)
-      15,       -- 7: dup
-      7, 223,   -- 8: get_slot_direct_check(223)
-      19,       -- 10: swap
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      10, 1,    -- 14: invoke(1)
-      14,       -- 16: pop
-      0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
-      1, 20,    -- 20: push_literal(20)
-      8, 222,   -- 22: set_slot_direct(222)
-      0,        -- 24: push_frame
-      5, 20,    -- 25: get_slot_direct(20)
-      11        -- 27: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 63,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
+      8, 296,   -- 8: set_slot_direct(296)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
+      5, 26,    -- 12: get_slot_direct(26)
       0,        -- 14: push_frame
-      5, 235,   -- 15: get_slot_direct(235)
-      8, 18,    -- 17: set_slot_direct(18)
+      5, 296,   -- 15: get_slot_direct(296)
+      8, 39,    -- 17: set_slot_direct(39)
       0,        -- 19: push_frame
-      5, 20,    -- 20: get_slot_direct(20)
+      5, 26,    -- 20: get_slot_direct(26)
       0,        -- 22: push_frame
-      5, 199,   -- 23: get_slot_direct(199)
+      5, 260,   -- 23: get_slot_direct(260)
       0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      1, 6,     -- 28: push_literal(6)
-      10, 1,    -- 30: invoke(1)
-      8, 19,    -- 32: set_slot_direct(19)
+      5, 26,    -- 26: get_slot_direct(26)
+      0,        -- 28: push_frame
+      5, 306,   -- 29: get_slot_direct(306)
+      10, 1,    -- 31: invoke(1)
+      8, 40,    -- 33: set_slot_direct(40)
+      0,        -- 35: push_frame
+      5, 26,    -- 36: get_slot_direct(26)
+      1, 307,   -- 38: push_literal(307)
+      8, 283,   -- 40: set_slot_direct(283)
+      0,        -- 42: push_frame
+      5, 26,    -- 43: get_slot_direct(26)
+      11        -- 45: return
+    }
+  },
+  ifunc.Function:new{ -- "infixr"
+    name = jsval.newString("infixr"),
+    id = 61,
+    nargs = 3,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 287,   -- 8: set_slot_direct(287)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 306,   -- 15: set_slot_direct(306)
+      15,       -- 17: dup
+      5, 130,   -- 18: get_slot_direct(130)
+      0,        -- 20: push_frame
+      19,       -- 21: swap
+      8, 277,   -- 22: set_slot_direct(277)
+      14,       -- 24: pop
+      0,        -- 25: push_frame
+      1, 0,     -- 26: push_literal(0)
+      8, 285,   -- 28: set_slot_direct(285)
+      0,        -- 30: push_frame
+      0,        -- 31: push_frame
+      5, 265,   -- 32: get_slot_direct(265)
       0,        -- 34: push_frame
-      5, 198,   -- 35: get_slot_direct(198)
+      5, 26,    -- 35: get_slot_direct(26)
       0,        -- 37: push_frame
-      5, 20,    -- 38: get_slot_direct(20)
-      1, 253,   -- 40: push_literal(253)
-      10, 1,    -- 42: invoke(1)
-      14,       -- 44: pop
+      5, 287,   -- 38: get_slot_direct(287)
+      0,        -- 40: push_frame
+      5, 306,   -- 41: get_slot_direct(306)
+      10, 2,    -- 43: invoke(2)
+      8, 285,   -- 45: set_slot_direct(285)
+      0,        -- 47: push_frame
+      5, 285,   -- 48: get_slot_direct(285)
+      0,        -- 50: push_frame
+      5, 277,   -- 51: get_slot_direct(277)
+      15,       -- 53: dup
+      20,       -- 54: un_not
+      13, 60,   -- 55: jmp_unless(60)
+      14,       -- 57: pop
+      4, 62,    -- 58: new_function(62)
+      8, 277,   -- 60: set_slot_direct(277)
+      0,        -- 62: push_frame
+      5, 285,   -- 63: get_slot_direct(285)
+      11        -- 65: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 62,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 296,   -- 8: set_slot_direct(296)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      0,        -- 14: push_frame
+      5, 296,   -- 15: get_slot_direct(296)
+      8, 39,    -- 17: set_slot_direct(39)
+      0,        -- 19: push_frame
+      5, 26,    -- 20: get_slot_direct(26)
+      0,        -- 22: push_frame
+      5, 260,   -- 23: get_slot_direct(260)
+      0,        -- 25: push_frame
+      5, 26,    -- 26: get_slot_direct(26)
+      0,        -- 28: push_frame
+      5, 306,   -- 29: get_slot_direct(306)
+      1, 31,    -- 31: push_literal(31)
+      27,       -- 33: bi_sub
+      10, 1,    -- 34: invoke(1)
+      8, 40,    -- 36: set_slot_direct(40)
+      0,        -- 38: push_frame
+      5, 26,    -- 39: get_slot_direct(26)
+      1, 307,   -- 41: push_literal(307)
+      8, 283,   -- 43: set_slot_direct(283)
       0,        -- 45: push_frame
-      5, 20,    -- 46: get_slot_direct(20)
-      0,        -- 48: push_frame
-      5, 199,   -- 49: get_slot_direct(199)
-      0,        -- 51: push_frame
-      5, 20,    -- 52: get_slot_direct(20)
-      1, 6,     -- 54: push_literal(6)
-      10, 1,    -- 56: invoke(1)
-      8, 268,   -- 58: set_slot_direct(268)
-      0,        -- 60: push_frame
-      5, 20,    -- 61: get_slot_direct(20)
-      1, 269,   -- 63: push_literal(269)
-      8, 222,   -- 65: set_slot_direct(222)
-      0,        -- 67: push_frame
-      5, 20,    -- 68: get_slot_direct(20)
-      11        -- 70: return
+      5, 26,    -- 46: get_slot_direct(26)
+      11        -- 48: return
+    }
+  },
+  ifunc.Function:new{ -- "assignment"
+    name = jsval.newString("assignment"),
+    id = 63,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 287,   -- 8: set_slot_direct(287)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 268,   -- 12: get_slot_direct(268)
+      0,        -- 14: push_frame
+      5, 26,    -- 15: get_slot_direct(26)
+      0,        -- 17: push_frame
+      5, 287,   -- 18: get_slot_direct(287)
+      1, 129,   -- 20: push_literal(129)
+      4, 64,    -- 22: new_function(64)
+      10, 3,    -- 24: invoke(3)
+      11        -- 26: return
     }
   },
   ifunc.Function:new{
@@ -6474,1163 +7093,888 @@ startup.functions = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
+      8, 296,   -- 8: set_slot_direct(296)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      0,        -- 14: push_frame
-      5, 235,   -- 15: get_slot_direct(235)
-      8, 18,    -- 17: set_slot_direct(18)
-      0,        -- 19: push_frame
-      5, 192,   -- 20: get_slot_direct(192)
-      5, 222,   -- 22: get_slot_direct(222)
-      1, 9,     -- 24: push_literal(9)
-      23,       -- 26: bi_eq
-      20,       -- 27: un_not
-      13, 44,   -- 28: jmp_unless(44)
-      0,        -- 30: push_frame
-      5, 129,   -- 31: get_slot_direct(129)
-      0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      0,        -- 36: push_frame
-      5, 192,   -- 37: get_slot_direct(192)
-      1, 285,   -- 39: push_literal(285)
-      10, 2,    -- 41: invoke(2)
-      14,       -- 43: pop
-      0,        -- 44: push_frame
-      5, 192,   -- 45: get_slot_direct(192)
-      1, 232,   -- 47: push_literal(232)
-      8, 222,   -- 49: set_slot_direct(222)
+      5, 296,   -- 12: get_slot_direct(296)
+      5, 287,   -- 14: get_slot_direct(287)
+      1, 143,   -- 16: push_literal(143)
+      23,       -- 18: bi_eq
+      20,       -- 19: un_not
+      15,       -- 20: dup
+      13, 46,   -- 21: jmp_unless(46)
+      14,       -- 23: pop
+      0,        -- 24: push_frame
+      5, 296,   -- 25: get_slot_direct(296)
+      5, 287,   -- 27: get_slot_direct(287)
+      1, 308,   -- 29: push_literal(308)
+      23,       -- 31: bi_eq
+      20,       -- 32: un_not
+      15,       -- 33: dup
+      13, 46,   -- 34: jmp_unless(46)
+      14,       -- 36: pop
+      0,        -- 37: push_frame
+      5, 296,   -- 38: get_slot_direct(296)
+      5, 283,   -- 40: get_slot_direct(283)
+      1, 19,    -- 42: push_literal(19)
+      23,       -- 44: bi_eq
+      20,       -- 45: un_not
+      13, 62,   -- 46: jmp_unless(62)
+      0,        -- 48: push_frame
+      5, 200,   -- 49: get_slot_direct(200)
       0,        -- 51: push_frame
-      5, 20,    -- 52: get_slot_direct(20)
+      5, 26,    -- 52: get_slot_direct(26)
       0,        -- 54: push_frame
-      5, 192,   -- 55: get_slot_direct(192)
-      8, 19,    -- 57: set_slot_direct(19)
-      0,        -- 59: push_frame
-      5, 20,    -- 60: get_slot_direct(20)
-      1, 247,   -- 62: push_literal(247)
-      8, 222,   -- 64: set_slot_direct(222)
-      0,        -- 66: push_frame
-      5, 198,   -- 67: get_slot_direct(198)
-      0,        -- 69: push_frame
-      5, 20,    -- 70: get_slot_direct(20)
-      10, 0,    -- 72: invoke(0)
-      14,       -- 74: pop
-      0,        -- 75: push_frame
-      5, 20,    -- 76: get_slot_direct(20)
-      11        -- 78: return
+      5, 296,   -- 55: get_slot_direct(296)
+      1, 309,   -- 57: push_literal(309)
+      10, 2,    -- 59: invoke(2)
+      14,       -- 61: pop
+      0,        -- 62: push_frame
+      5, 26,    -- 63: get_slot_direct(26)
+      0,        -- 65: push_frame
+      5, 296,   -- 66: get_slot_direct(296)
+      8, 39,    -- 68: set_slot_direct(39)
+      0,        -- 70: push_frame
+      5, 26,    -- 71: get_slot_direct(26)
+      0,        -- 73: push_frame
+      5, 260,   -- 74: get_slot_direct(260)
+      0,        -- 76: push_frame
+      5, 26,    -- 77: get_slot_direct(26)
+      1, 170,   -- 79: push_literal(170)
+      10, 1,    -- 81: invoke(1)
+      8, 40,    -- 83: set_slot_direct(40)
+      0,        -- 85: push_frame
+      5, 26,    -- 86: get_slot_direct(26)
+      1, 115,   -- 88: push_literal(115)
+      8, 269,   -- 90: set_slot_direct(269)
+      0,        -- 92: push_frame
+      5, 26,    -- 93: get_slot_direct(26)
+      1, 307,   -- 95: push_literal(307)
+      8, 283,   -- 97: set_slot_direct(283)
+      0,        -- 99: push_frame
+      5, 26,    -- 100: get_slot_direct(26)
+      11        -- 102: return
     }
   },
-  ifunc.Function:new{
-    name = jsval.Undefined,
+  ifunc.Function:new{ -- "prefix"
+    name = jsval.newString("prefix"),
     id = 65,
-    nargs = 1,
+    nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      0,        -- 14: push_frame
-      5, 235,   -- 15: get_slot_direct(235)
-      8, 18,    -- 17: set_slot_direct(18)
-      0,        -- 19: push_frame
-      5, 20,    -- 20: get_slot_direct(20)
-      0,        -- 22: push_frame
-      5, 199,   -- 23: get_slot_direct(199)
-      0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      1, 6,     -- 28: push_literal(6)
-      10, 1,    -- 30: invoke(1)
-      8, 19,    -- 32: set_slot_direct(19)
-      0,        -- 34: push_frame
-      5, 20,    -- 35: get_slot_direct(20)
-      1, 247,   -- 37: push_literal(247)
-      8, 222,   -- 39: set_slot_direct(222)
-      0,        -- 41: push_frame
-      5, 198,   -- 42: get_slot_direct(198)
-      0,        -- 44: push_frame
-      5, 20,    -- 45: get_slot_direct(20)
-      1, 137,   -- 47: push_literal(137)
-      10, 1,    -- 49: invoke(1)
-      14,       -- 51: pop
+      8, 287,   -- 8: set_slot_direct(287)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 276,   -- 15: set_slot_direct(276)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      1, 0,     -- 19: push_literal(0)
+      8, 285,   -- 21: set_slot_direct(285)
+      0,        -- 23: push_frame
+      0,        -- 24: push_frame
+      5, 265,   -- 25: get_slot_direct(265)
+      0,        -- 27: push_frame
+      5, 26,    -- 28: get_slot_direct(26)
+      0,        -- 30: push_frame
+      5, 287,   -- 31: get_slot_direct(287)
+      10, 1,    -- 33: invoke(1)
+      8, 285,   -- 35: set_slot_direct(285)
+      0,        -- 37: push_frame
+      5, 285,   -- 38: get_slot_direct(285)
+      0,        -- 40: push_frame
+      5, 276,   -- 41: get_slot_direct(276)
+      15,       -- 43: dup
+      20,       -- 44: un_not
+      13, 50,   -- 45: jmp_unless(50)
+      14,       -- 47: pop
+      4, 66,    -- 48: new_function(66)
+      8, 276,   -- 50: set_slot_direct(276)
       0,        -- 52: push_frame
-      5, 20,    -- 53: get_slot_direct(20)
+      5, 285,   -- 53: get_slot_direct(285)
       11        -- 55: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 66,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 251,   -- 5: get_slot_direct(251)
+      15,       -- 7: dup
+      7, 284,   -- 8: get_slot_direct_check(284)
+      19,       -- 10: swap
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      10, 1,    -- 14: invoke(1)
+      14,       -- 16: pop
+      0,        -- 17: push_frame
+      5, 26,    -- 18: get_slot_direct(26)
+      0,        -- 20: push_frame
+      5, 260,   -- 21: get_slot_direct(260)
+      0,        -- 23: push_frame
+      5, 26,    -- 24: get_slot_direct(26)
+      1, 310,   -- 26: push_literal(310)
+      10, 1,    -- 28: invoke(1)
+      8, 39,    -- 30: set_slot_direct(39)
+      0,        -- 32: push_frame
+      5, 26,    -- 33: get_slot_direct(26)
+      1, 311,   -- 35: push_literal(311)
+      8, 283,   -- 37: set_slot_direct(283)
+      0,        -- 39: push_frame
+      5, 26,    -- 40: get_slot_direct(26)
+      11        -- 42: return
+    }
+  },
+  ifunc.Function:new{ -- "stmt"
+    name = jsval.newString("stmt"),
+    id = 67,
+    nargs = 2,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 285,   -- 8: set_slot_direct(285)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 106,   -- 15: set_slot_direct(106)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      1, 0,     -- 19: push_literal(0)
+      8, 122,   -- 21: set_slot_direct(122)
+      0,        -- 23: push_frame
+      0,        -- 24: push_frame
+      5, 265,   -- 25: get_slot_direct(265)
+      0,        -- 27: push_frame
+      5, 26,    -- 28: get_slot_direct(26)
+      0,        -- 30: push_frame
+      5, 285,   -- 31: get_slot_direct(285)
+      10, 1,    -- 33: invoke(1)
+      8, 122,   -- 35: set_slot_direct(122)
+      0,        -- 37: push_frame
+      5, 122,   -- 38: get_slot_direct(122)
+      0,        -- 40: push_frame
+      5, 106,   -- 41: get_slot_direct(106)
+      8, 278,   -- 43: set_slot_direct(278)
+      0,        -- 45: push_frame
+      5, 122,   -- 46: get_slot_direct(122)
+      11        -- 48: return
+    }
+  },
+  ifunc.Function:new{ -- ".nud"
+    name = jsval.newString(".nud"),
+    id = 68,
+    nargs = 0,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 251,   -- 5: get_slot_direct(251)
+      15,       -- 7: dup
+      7, 284,   -- 8: get_slot_direct_check(284)
+      19,       -- 10: swap
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      10, 1,    -- 14: invoke(1)
+      14,       -- 16: pop
+      0,        -- 17: push_frame
+      5, 26,    -- 18: get_slot_direct(26)
+      1, 26,    -- 20: push_literal(26)
+      8, 283,   -- 22: set_slot_direct(283)
+      0,        -- 24: push_frame
+      5, 26,    -- 25: get_slot_direct(26)
+      11        -- 27: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 69,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 296,   -- 8: set_slot_direct(296)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      0,        -- 14: push_frame
+      5, 296,   -- 15: get_slot_direct(296)
+      8, 39,    -- 17: set_slot_direct(39)
+      0,        -- 19: push_frame
+      5, 26,    -- 20: get_slot_direct(26)
+      0,        -- 22: push_frame
+      5, 260,   -- 23: get_slot_direct(260)
+      0,        -- 25: push_frame
+      5, 26,    -- 26: get_slot_direct(26)
+      1, 18,    -- 28: push_literal(18)
+      10, 1,    -- 30: invoke(1)
+      8, 40,    -- 32: set_slot_direct(40)
+      0,        -- 34: push_frame
+      5, 259,   -- 35: get_slot_direct(259)
+      0,        -- 37: push_frame
+      5, 26,    -- 38: get_slot_direct(26)
+      1, 312,   -- 40: push_literal(312)
+      10, 1,    -- 42: invoke(1)
+      14,       -- 44: pop
+      0,        -- 45: push_frame
+      5, 26,    -- 46: get_slot_direct(26)
+      0,        -- 48: push_frame
+      5, 260,   -- 49: get_slot_direct(260)
+      0,        -- 51: push_frame
+      5, 26,    -- 52: get_slot_direct(26)
+      1, 18,    -- 54: push_literal(18)
+      10, 1,    -- 56: invoke(1)
+      8, 323,   -- 58: set_slot_direct(323)
+      0,        -- 60: push_frame
+      5, 26,    -- 61: get_slot_direct(26)
+      1, 324,   -- 63: push_literal(324)
+      8, 283,   -- 65: set_slot_direct(283)
+      0,        -- 67: push_frame
+      5, 26,    -- 68: get_slot_direct(26)
+      11        -- 70: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 70,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 296,   -- 8: set_slot_direct(296)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      0,        -- 14: push_frame
+      5, 296,   -- 15: get_slot_direct(296)
+      8, 39,    -- 17: set_slot_direct(39)
+      0,        -- 19: push_frame
+      5, 253,   -- 20: get_slot_direct(253)
+      5, 283,   -- 22: get_slot_direct(283)
+      1, 19,    -- 24: push_literal(19)
+      23,       -- 26: bi_eq
+      20,       -- 27: un_not
+      13, 44,   -- 28: jmp_unless(44)
+      0,        -- 30: push_frame
+      5, 200,   -- 31: get_slot_direct(200)
+      0,        -- 33: push_frame
+      5, 26,    -- 34: get_slot_direct(26)
+      0,        -- 36: push_frame
+      5, 253,   -- 37: get_slot_direct(253)
+      1, 340,   -- 39: push_literal(340)
+      10, 2,    -- 41: invoke(2)
+      14,       -- 43: pop
+      0,        -- 44: push_frame
+      5, 253,   -- 45: get_slot_direct(253)
+      1, 293,   -- 47: push_literal(293)
+      8, 283,   -- 49: set_slot_direct(283)
+      0,        -- 51: push_frame
+      5, 26,    -- 52: get_slot_direct(26)
+      0,        -- 54: push_frame
+      5, 253,   -- 55: get_slot_direct(253)
+      8, 40,    -- 57: set_slot_direct(40)
+      0,        -- 59: push_frame
+      5, 26,    -- 60: get_slot_direct(26)
+      1, 307,   -- 62: push_literal(307)
+      8, 283,   -- 64: set_slot_direct(283)
+      0,        -- 66: push_frame
+      5, 259,   -- 67: get_slot_direct(259)
+      0,        -- 69: push_frame
+      5, 26,    -- 70: get_slot_direct(26)
+      10, 0,    -- 72: invoke(0)
+      14,       -- 74: pop
+      0,        -- 75: push_frame
+      5, 26,    -- 76: get_slot_direct(26)
+      11        -- 78: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 71,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 296,   -- 8: set_slot_direct(296)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      0,        -- 14: push_frame
+      5, 296,   -- 15: get_slot_direct(296)
+      8, 39,    -- 17: set_slot_direct(39)
+      0,        -- 19: push_frame
+      5, 26,    -- 20: get_slot_direct(26)
+      0,        -- 22: push_frame
+      5, 260,   -- 23: get_slot_direct(260)
+      0,        -- 25: push_frame
+      5, 26,    -- 26: get_slot_direct(26)
+      1, 18,    -- 28: push_literal(18)
+      10, 1,    -- 30: invoke(1)
+      8, 40,    -- 32: set_slot_direct(40)
+      0,        -- 34: push_frame
+      5, 26,    -- 35: get_slot_direct(26)
+      1, 307,   -- 37: push_literal(307)
+      8, 283,   -- 39: set_slot_direct(283)
+      0,        -- 41: push_frame
+      5, 259,   -- 42: get_slot_direct(259)
+      0,        -- 44: push_frame
+      5, 26,    -- 45: get_slot_direct(26)
+      1, 207,   -- 47: push_literal(207)
+      10, 1,    -- 49: invoke(1)
+      14,       -- 51: pop
+      0,        -- 52: push_frame
+      5, 26,    -- 53: get_slot_direct(26)
+      11        -- 55: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 72,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 235,   -- 8: set_slot_direct(235)
+      8, 296,   -- 8: set_slot_direct(296)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 143,   -- 14: set_slot_direct(143)
+      8, 213,   -- 14: set_slot_direct(213)
       0,        -- 16: push_frame
       3,        -- 17: new_array
-      8, 143,   -- 18: set_slot_direct(143)
+      8, 213,   -- 18: set_slot_direct(213)
       0,        -- 20: push_frame
-      5, 235,   -- 21: get_slot_direct(235)
-      5, 226,   -- 23: get_slot_direct(226)
-      1, 151,   -- 25: push_literal(151)
+      5, 296,   -- 21: get_slot_direct(296)
+      5, 287,   -- 23: get_slot_direct(287)
+      1, 143,   -- 25: push_literal(143)
       23,       -- 27: bi_eq
       15,       -- 28: dup
       20,       -- 29: un_not
       13, 41,   -- 30: jmp_unless(41)
       14,       -- 32: pop
       0,        -- 33: push_frame
-      5, 235,   -- 34: get_slot_direct(235)
-      5, 226,   -- 36: get_slot_direct(226)
-      1, 248,   -- 38: push_literal(248)
+      5, 296,   -- 34: get_slot_direct(296)
+      5, 287,   -- 36: get_slot_direct(287)
+      1, 308,   -- 38: push_literal(308)
       23,       -- 40: bi_eq
       13, 80,   -- 41: jmp_unless(80)
       0,        -- 43: push_frame
-      5, 20,    -- 44: get_slot_direct(20)
-      1, 269,   -- 46: push_literal(269)
-      8, 222,   -- 48: set_slot_direct(222)
+      5, 26,    -- 44: get_slot_direct(26)
+      1, 324,   -- 46: push_literal(324)
+      8, 283,   -- 48: set_slot_direct(283)
       0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
+      5, 26,    -- 51: get_slot_direct(26)
       0,        -- 53: push_frame
-      5, 235,   -- 54: get_slot_direct(235)
-      5, 18,    -- 56: get_slot_direct(18)
-      8, 18,    -- 58: set_slot_direct(18)
+      5, 296,   -- 54: get_slot_direct(296)
+      5, 39,    -- 56: get_slot_direct(39)
+      8, 39,    -- 58: set_slot_direct(39)
       0,        -- 60: push_frame
-      5, 20,    -- 61: get_slot_direct(20)
+      5, 26,    -- 61: get_slot_direct(26)
       0,        -- 63: push_frame
-      5, 235,   -- 64: get_slot_direct(235)
-      5, 19,    -- 66: get_slot_direct(19)
-      8, 19,    -- 68: set_slot_direct(19)
+      5, 296,   -- 64: get_slot_direct(296)
+      5, 40,    -- 66: get_slot_direct(40)
+      8, 40,    -- 68: set_slot_direct(40)
       0,        -- 70: push_frame
-      5, 20,    -- 71: get_slot_direct(20)
+      5, 26,    -- 71: get_slot_direct(26)
       0,        -- 73: push_frame
-      5, 143,   -- 74: get_slot_direct(143)
-      8, 268,   -- 76: set_slot_direct(268)
+      5, 213,   -- 74: get_slot_direct(213)
+      8, 323,   -- 76: set_slot_direct(323)
       12, 193,  -- 78: jmp(193)
       0,        -- 80: push_frame
-      5, 20,    -- 81: get_slot_direct(20)
-      1, 247,   -- 83: push_literal(247)
-      8, 222,   -- 85: set_slot_direct(222)
+      5, 26,    -- 81: get_slot_direct(26)
+      1, 307,   -- 83: push_literal(307)
+      8, 283,   -- 85: set_slot_direct(283)
       0,        -- 87: push_frame
-      5, 20,    -- 88: get_slot_direct(20)
+      5, 26,    -- 88: get_slot_direct(26)
       0,        -- 90: push_frame
-      5, 235,   -- 91: get_slot_direct(235)
-      8, 18,    -- 93: set_slot_direct(18)
+      5, 296,   -- 91: get_slot_direct(296)
+      8, 39,    -- 93: set_slot_direct(39)
       0,        -- 95: push_frame
-      5, 20,    -- 96: get_slot_direct(20)
+      5, 26,    -- 96: get_slot_direct(26)
       0,        -- 98: push_frame
-      5, 143,   -- 99: get_slot_direct(143)
-      8, 19,    -- 101: set_slot_direct(19)
+      5, 213,   -- 99: get_slot_direct(213)
+      8, 40,    -- 101: set_slot_direct(40)
       0,        -- 103: push_frame
-      5, 235,   -- 104: get_slot_direct(235)
-      5, 222,   -- 106: get_slot_direct(222)
-      1, 237,   -- 108: push_literal(237)
+      5, 296,   -- 104: get_slot_direct(296)
+      5, 283,   -- 106: get_slot_direct(283)
+      1, 25,    -- 108: push_literal(25)
       23,       -- 110: bi_eq
       20,       -- 111: un_not
       15,       -- 112: dup
       13, 177,  -- 113: jmp_unless(177)
       14,       -- 115: pop
       0,        -- 116: push_frame
-      5, 235,   -- 117: get_slot_direct(235)
-      5, 222,   -- 119: get_slot_direct(222)
-      1, 9,     -- 121: push_literal(9)
+      5, 296,   -- 117: get_slot_direct(296)
+      5, 283,   -- 119: get_slot_direct(283)
+      1, 19,    -- 121: push_literal(19)
       23,       -- 123: bi_eq
       20,       -- 124: un_not
       15,       -- 125: dup
       13, 177,  -- 126: jmp_unless(177)
       14,       -- 128: pop
       0,        -- 129: push_frame
-      5, 235,   -- 130: get_slot_direct(235)
-      5, 226,   -- 132: get_slot_direct(226)
-      1, 236,   -- 134: push_literal(236)
+      5, 296,   -- 130: get_slot_direct(296)
+      5, 287,   -- 132: get_slot_direct(287)
+      1, 297,   -- 134: push_literal(297)
       23,       -- 136: bi_eq
       20,       -- 137: un_not
       15,       -- 138: dup
       13, 177,  -- 139: jmp_unless(177)
       14,       -- 141: pop
       0,        -- 142: push_frame
-      5, 235,   -- 143: get_slot_direct(235)
-      5, 226,   -- 145: get_slot_direct(226)
-      1, 272,   -- 147: push_literal(272)
+      5, 296,   -- 143: get_slot_direct(296)
+      5, 287,   -- 145: get_slot_direct(287)
+      1, 327,   -- 147: push_literal(327)
       23,       -- 149: bi_eq
       20,       -- 150: un_not
       15,       -- 151: dup
       13, 177,  -- 152: jmp_unless(177)
       14,       -- 154: pop
       0,        -- 155: push_frame
-      5, 235,   -- 156: get_slot_direct(235)
-      5, 226,   -- 158: get_slot_direct(226)
-      1, 270,   -- 160: push_literal(270)
+      5, 296,   -- 156: get_slot_direct(296)
+      5, 287,   -- 158: get_slot_direct(287)
+      1, 325,   -- 160: push_literal(325)
       23,       -- 162: bi_eq
       20,       -- 163: un_not
       15,       -- 164: dup
       13, 177,  -- 165: jmp_unless(177)
       14,       -- 167: pop
       0,        -- 168: push_frame
-      5, 235,   -- 169: get_slot_direct(235)
-      5, 226,   -- 171: get_slot_direct(226)
-      1, 266,   -- 173: push_literal(266)
+      5, 296,   -- 169: get_slot_direct(296)
+      5, 287,   -- 171: get_slot_direct(287)
+      1, 321,   -- 173: push_literal(321)
       23,       -- 175: bi_eq
       20,       -- 176: un_not
       13, 193,  -- 177: jmp_unless(193)
       0,        -- 179: push_frame
-      5, 129,   -- 180: get_slot_direct(129)
+      5, 200,   -- 180: get_slot_direct(200)
       0,        -- 182: push_frame
-      5, 20,    -- 183: get_slot_direct(20)
+      5, 26,    -- 183: get_slot_direct(26)
       0,        -- 185: push_frame
-      5, 235,   -- 186: get_slot_direct(235)
-      1, 287,   -- 188: push_literal(287)
+      5, 296,   -- 186: get_slot_direct(296)
+      1, 342,   -- 188: push_literal(342)
       10, 2,    -- 190: invoke(2)
       14,       -- 192: pop
       0,        -- 193: push_frame
-      5, 192,   -- 194: get_slot_direct(192)
-      5, 226,   -- 196: get_slot_direct(226)
-      1, 254,   -- 198: push_literal(254)
+      5, 253,   -- 194: get_slot_direct(253)
+      5, 287,   -- 196: get_slot_direct(287)
+      1, 313,   -- 198: push_literal(313)
       23,       -- 200: bi_eq
       20,       -- 201: un_not
       13, 255,  -- 202: jmp_unless(255)
       12, 250,  -- 204: jmp(250)
       0,        -- 206: push_frame
-      5, 143,   -- 207: get_slot_direct(143)
+      5, 213,   -- 207: get_slot_direct(213)
       15,       -- 209: dup
-      7, 52,    -- 210: get_slot_direct_check(52)
+      7, 69,    -- 210: get_slot_direct_check(69)
       19,       -- 212: swap
       0,        -- 213: push_frame
-      5, 199,   -- 214: get_slot_direct(199)
+      5, 260,   -- 214: get_slot_direct(260)
       0,        -- 216: push_frame
-      5, 20,    -- 217: get_slot_direct(20)
-      1, 6,     -- 219: push_literal(6)
+      5, 26,    -- 217: get_slot_direct(26)
+      1, 18,    -- 219: push_literal(18)
       10, 1,    -- 221: invoke(1)
       10, 1,    -- 223: invoke(1)
       14,       -- 225: pop
       0,        -- 226: push_frame
-      5, 192,   -- 227: get_slot_direct(192)
-      5, 226,   -- 229: get_slot_direct(226)
-      1, 58,    -- 231: push_literal(58)
+      5, 253,   -- 227: get_slot_direct(253)
+      5, 287,   -- 229: get_slot_direct(287)
+      1, 76,    -- 231: push_literal(76)
       23,       -- 233: bi_eq
       20,       -- 234: un_not
       13, 239,  -- 235: jmp_unless(239)
       12, 255,  -- 237: jmp(255)
       0,        -- 239: push_frame
-      5, 198,   -- 240: get_slot_direct(198)
+      5, 259,   -- 240: get_slot_direct(259)
       0,        -- 242: push_frame
-      5, 20,    -- 243: get_slot_direct(20)
-      1, 58,    -- 245: push_literal(58)
+      5, 26,    -- 243: get_slot_direct(26)
+      1, 76,    -- 245: push_literal(76)
       10, 1,    -- 247: invoke(1)
       14,       -- 249: pop
-      1, 94,    -- 250: push_literal(94)
+      1, 115,   -- 250: push_literal(115)
       20,       -- 252: un_not
       13, 206,  -- 253: jmp_unless(206)
       0,        -- 255: push_frame
-      5, 198,   -- 256: get_slot_direct(198)
+      5, 259,   -- 256: get_slot_direct(259)
       0,        -- 258: push_frame
-      5, 20,    -- 259: get_slot_direct(20)
-      1, 254,   -- 261: push_literal(254)
+      5, 26,    -- 259: get_slot_direct(26)
+      1, 313,   -- 261: push_literal(313)
       10, 1,    -- 263: invoke(1)
       14,       -- 265: pop
       0,        -- 266: push_frame
-      5, 20,    -- 267: get_slot_direct(20)
+      5, 26,    -- 267: get_slot_direct(26)
       11        -- 269: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 67,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 68,    -- 7: set_slot_direct(68)
-      0,        -- 9: push_frame
-      0,        -- 10: push_frame
-      5, 199,   -- 11: get_slot_direct(199)
-      0,        -- 13: push_frame
-      5, 20,    -- 14: get_slot_direct(20)
-      1, 6,     -- 16: push_literal(6)
-      10, 1,    -- 18: invoke(1)
-      8, 68,    -- 20: set_slot_direct(68)
-      0,        -- 22: push_frame
-      5, 198,   -- 23: get_slot_direct(198)
-      0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      1, 254,   -- 28: push_literal(254)
-      10, 1,    -- 30: invoke(1)
-      14,       -- 32: pop
-      0,        -- 33: push_frame
-      5, 68,    -- 34: get_slot_direct(68)
-      11        -- 36: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 68,
-    nargs = 0,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
-      0,        -- 9: push_frame
-      3,        -- 10: new_array
-      8, 143,   -- 11: set_slot_direct(143)
-      0,        -- 13: push_frame
-      5, 192,   -- 14: get_slot_direct(192)
-      5, 222,   -- 16: get_slot_direct(222)
-      1, 9,     -- 18: push_literal(9)
-      23,       -- 20: bi_eq
-      13, 65,   -- 21: jmp_unless(65)
-      0,        -- 23: push_frame
-      5, 190,   -- 24: get_slot_direct(190)
-      15,       -- 26: dup
-      7, 118,   -- 27: get_slot_direct_check(118)
-      19,       -- 29: swap
-      0,        -- 30: push_frame
-      5, 192,   -- 31: get_slot_direct(192)
-      10, 1,    -- 33: invoke(1)
-      14,       -- 35: pop
-      0,        -- 36: push_frame
-      5, 20,    -- 37: get_slot_direct(20)
-      0,        -- 39: push_frame
-      5, 192,   -- 40: get_slot_direct(192)
-      5, 139,   -- 42: get_slot_direct(139)
-      8, 9,     -- 44: set_slot_direct(9)
-      0,        -- 46: push_frame
-      5, 20,    -- 47: get_slot_direct(20)
-      0,        -- 49: push_frame
-      5, 190,   -- 50: get_slot_direct(190)
-      8, 190,   -- 52: set_slot_direct(190)
-      0,        -- 54: push_frame
-      5, 198,   -- 55: get_slot_direct(198)
-      0,        -- 57: push_frame
-      5, 20,    -- 58: get_slot_direct(20)
-      10, 0,    -- 60: invoke(0)
-      14,       -- 62: pop
-      12, 72,   -- 63: jmp(72)
-      0,        -- 65: push_frame
-      5, 20,    -- 66: get_slot_direct(20)
-      1, 21,    -- 68: push_literal(21)
-      8, 9,     -- 70: set_slot_direct(9)
-      0,        -- 72: push_frame
-      5, 197,   -- 73: get_slot_direct(197)
-      0,        -- 75: push_frame
-      5, 20,    -- 76: get_slot_direct(20)
-      10, 0,    -- 78: invoke(0)
-      14,       -- 80: pop
-      0,        -- 81: push_frame
-      5, 190,   -- 82: get_slot_direct(190)
-      15,       -- 84: dup
-      7, 118,   -- 85: get_slot_direct_check(118)
-      19,       -- 87: swap
-      2,        -- 88: new_object
-      15,       -- 89: dup
-      1, 2,     -- 90: push_literal(2)
-      8, 139,   -- 92: set_slot_direct(139)
-      15,       -- 94: dup
-      1, 9,     -- 95: push_literal(9)
-      8, 222,   -- 97: set_slot_direct(222)
-      10, 1,    -- 99: invoke(1)
-      14,       -- 101: pop
-      0,        -- 102: push_frame
-      5, 198,   -- 103: get_slot_direct(198)
-      0,        -- 105: push_frame
-      5, 20,    -- 106: get_slot_direct(20)
-      1, 236,   -- 108: push_literal(236)
-      10, 1,    -- 110: invoke(1)
-      14,       -- 112: pop
-      0,        -- 113: push_frame
-      5, 192,   -- 114: get_slot_direct(192)
-      5, 226,   -- 116: get_slot_direct(226)
-      1, 254,   -- 118: push_literal(254)
-      23,       -- 120: bi_eq
-      20,       -- 121: un_not
-      13, 215,  -- 122: jmp_unless(215)
-      12, 210,  -- 124: jmp(210)
-      0,        -- 126: push_frame
-      5, 192,   -- 127: get_slot_direct(192)
-      5, 222,   -- 129: get_slot_direct(222)
-      1, 9,     -- 131: push_literal(9)
-      23,       -- 133: bi_eq
-      20,       -- 134: un_not
-      13, 151,  -- 135: jmp_unless(151)
-      0,        -- 137: push_frame
-      5, 129,   -- 138: get_slot_direct(129)
-      0,        -- 140: push_frame
-      5, 20,    -- 141: get_slot_direct(20)
-      0,        -- 143: push_frame
-      5, 192,   -- 144: get_slot_direct(192)
-      1, 290,   -- 146: push_literal(290)
-      10, 2,    -- 148: invoke(2)
-      14,       -- 150: pop
-      0,        -- 151: push_frame
-      5, 190,   -- 152: get_slot_direct(190)
-      15,       -- 154: dup
-      7, 118,   -- 155: get_slot_direct_check(118)
-      19,       -- 157: swap
-      0,        -- 158: push_frame
-      5, 192,   -- 159: get_slot_direct(192)
-      10, 1,    -- 161: invoke(1)
-      14,       -- 163: pop
-      0,        -- 164: push_frame
-      5, 143,   -- 165: get_slot_direct(143)
-      15,       -- 167: dup
-      7, 52,    -- 168: get_slot_direct_check(52)
-      19,       -- 170: swap
-      0,        -- 171: push_frame
-      5, 192,   -- 172: get_slot_direct(192)
-      10, 1,    -- 174: invoke(1)
-      14,       -- 176: pop
-      0,        -- 177: push_frame
-      5, 198,   -- 178: get_slot_direct(198)
-      0,        -- 180: push_frame
-      5, 20,    -- 181: get_slot_direct(20)
-      10, 0,    -- 183: invoke(0)
-      14,       -- 185: pop
-      0,        -- 186: push_frame
-      5, 192,   -- 187: get_slot_direct(192)
-      5, 226,   -- 189: get_slot_direct(226)
-      1, 58,    -- 191: push_literal(58)
-      23,       -- 193: bi_eq
-      20,       -- 194: un_not
-      13, 199,  -- 195: jmp_unless(199)
-      12, 215,  -- 197: jmp(215)
-      0,        -- 199: push_frame
-      5, 198,   -- 200: get_slot_direct(198)
-      0,        -- 202: push_frame
-      5, 20,    -- 203: get_slot_direct(20)
-      1, 58,    -- 205: push_literal(58)
-      10, 1,    -- 207: invoke(1)
-      14,       -- 209: pop
-      1, 94,    -- 210: push_literal(94)
-      20,       -- 212: un_not
-      13, 126,  -- 213: jmp_unless(126)
-      0,        -- 215: push_frame
-      5, 20,    -- 216: get_slot_direct(20)
-      0,        -- 218: push_frame
-      5, 143,   -- 219: get_slot_direct(143)
-      8, 18,    -- 221: set_slot_direct(18)
-      0,        -- 223: push_frame
-      5, 198,   -- 224: get_slot_direct(198)
-      0,        -- 226: push_frame
-      5, 20,    -- 227: get_slot_direct(20)
-      1, 254,   -- 229: push_literal(254)
-      10, 1,    -- 231: invoke(1)
-      14,       -- 233: pop
-      0,        -- 234: push_frame
-      5, 198,   -- 235: get_slot_direct(198)
-      0,        -- 237: push_frame
-      5, 20,    -- 238: get_slot_direct(20)
-      1, 243,   -- 240: push_literal(243)
-      10, 1,    -- 242: invoke(1)
-      14,       -- 244: pop
-      0,        -- 245: push_frame
-      5, 192,   -- 246: get_slot_direct(192)
-      5, 222,   -- 248: get_slot_direct(222)
-      1, 232,   -- 250: push_literal(232)
-      23,       -- 252: bi_eq
-      15,       -- 253: dup
-      13, 265,  -- 254: jmp_unless(265)
-      14,       -- 256: pop
-      0,        -- 257: push_frame
-      5, 192,   -- 258: get_slot_direct(192)
-      5, 139,   -- 260: get_slot_direct(139)
-      1, 291,   -- 262: push_literal(291)
-      23,       -- 264: bi_eq
-      13, 287,  -- 265: jmp_unless(287)
-      0,        -- 267: push_frame
-      5, 198,   -- 268: get_slot_direct(198)
-      0,        -- 270: push_frame
-      5, 20,    -- 271: get_slot_direct(20)
-      10, 0,    -- 273: invoke(0)
-      14,       -- 275: pop
-      0,        -- 276: push_frame
-      5, 198,   -- 277: get_slot_direct(198)
-      0,        -- 279: push_frame
-      5, 20,    -- 280: get_slot_direct(20)
-      1, 239,   -- 282: push_literal(239)
-      10, 1,    -- 284: invoke(1)
-      14,       -- 286: pop
-      0,        -- 287: push_frame
-      5, 20,    -- 288: get_slot_direct(20)
-      0,        -- 290: push_frame
-      5, 202,   -- 291: get_slot_direct(202)
-      0,        -- 293: push_frame
-      5, 20,    -- 294: get_slot_direct(20)
-      10, 0,    -- 296: invoke(0)
-      8, 19,    -- 298: set_slot_direct(19)
-      0,        -- 300: push_frame
-      5, 198,   -- 301: get_slot_direct(198)
-      0,        -- 303: push_frame
-      5, 20,    -- 304: get_slot_direct(20)
-      1, 242,   -- 306: push_literal(242)
-      10, 1,    -- 308: invoke(1)
-      14,       -- 310: pop
-      0,        -- 311: push_frame
-      5, 20,    -- 312: get_slot_direct(20)
-      1, 237,   -- 314: push_literal(237)
-      8, 222,   -- 316: set_slot_direct(222)
-      0,        -- 318: push_frame
-      5, 190,   -- 319: get_slot_direct(190)
-      15,       -- 321: dup
-      7, 54,    -- 322: get_slot_direct_check(54)
-      19,       -- 324: swap
-      10, 0,    -- 325: invoke(0)
-      14,       -- 327: pop
-      0,        -- 328: push_frame
-      5, 20,    -- 329: get_slot_direct(20)
-      11        -- 331: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 69,
-    nargs = 0,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
-      0,        -- 9: push_frame
-      3,        -- 10: new_array
-      8, 143,   -- 11: set_slot_direct(143)
-      0,        -- 13: push_frame
-      5, 192,   -- 14: get_slot_direct(192)
-      5, 226,   -- 16: get_slot_direct(226)
-      1, 137,   -- 18: push_literal(137)
-      23,       -- 20: bi_eq
-      20,       -- 21: un_not
-      13, 75,   -- 22: jmp_unless(75)
-      12, 70,   -- 24: jmp(70)
-      0,        -- 26: push_frame
-      5, 143,   -- 27: get_slot_direct(143)
-      15,       -- 29: dup
-      7, 52,    -- 30: get_slot_direct_check(52)
-      19,       -- 32: swap
-      0,        -- 33: push_frame
-      5, 199,   -- 34: get_slot_direct(199)
-      0,        -- 36: push_frame
-      5, 20,    -- 37: get_slot_direct(20)
-      1, 6,     -- 39: push_literal(6)
-      10, 1,    -- 41: invoke(1)
-      10, 1,    -- 43: invoke(1)
-      14,       -- 45: pop
-      0,        -- 46: push_frame
-      5, 192,   -- 47: get_slot_direct(192)
-      5, 226,   -- 49: get_slot_direct(226)
-      1, 58,    -- 51: push_literal(58)
-      23,       -- 53: bi_eq
-      20,       -- 54: un_not
-      13, 59,   -- 55: jmp_unless(59)
-      12, 75,   -- 57: jmp(75)
-      0,        -- 59: push_frame
-      5, 198,   -- 60: get_slot_direct(198)
-      0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
-      1, 58,    -- 65: push_literal(58)
-      10, 1,    -- 67: invoke(1)
-      14,       -- 69: pop
-      1, 94,    -- 70: push_literal(94)
-      20,       -- 72: un_not
-      13, 26,   -- 73: jmp_unless(26)
-      0,        -- 75: push_frame
-      5, 198,   -- 76: get_slot_direct(198)
-      0,        -- 78: push_frame
-      5, 20,    -- 79: get_slot_direct(20)
-      1, 137,   -- 81: push_literal(137)
-      10, 1,    -- 83: invoke(1)
-      14,       -- 85: pop
-      0,        -- 86: push_frame
-      5, 20,    -- 87: get_slot_direct(20)
-      0,        -- 89: push_frame
-      5, 143,   -- 90: get_slot_direct(143)
-      8, 18,    -- 92: set_slot_direct(18)
-      0,        -- 94: push_frame
-      5, 20,    -- 95: get_slot_direct(20)
-      1, 252,   -- 97: push_literal(252)
-      8, 222,   -- 99: set_slot_direct(222)
-      0,        -- 101: push_frame
-      5, 20,    -- 102: get_slot_direct(20)
-      11        -- 104: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 70,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
-      0,        -- 9: push_frame
-      1, 0,     -- 10: push_literal(0)
-      8, 127,   -- 12: set_slot_direct(127)
-      0,        -- 14: push_frame
-      1, 0,     -- 15: push_literal(0)
-      8, 86,    -- 17: set_slot_direct(86)
-      0,        -- 19: push_frame
-      3,        -- 20: new_array
-      8, 143,   -- 21: set_slot_direct(143)
-      0,        -- 23: push_frame
-      5, 192,   -- 24: get_slot_direct(192)
-      5, 226,   -- 26: get_slot_direct(226)
-      1, 242,   -- 28: push_literal(242)
-      23,       -- 30: bi_eq
-      20,       -- 31: un_not
-      13, 165,  -- 32: jmp_unless(165)
-      12, 160,  -- 34: jmp(160)
-      0,        -- 36: push_frame
-      0,        -- 37: push_frame
-      5, 192,   -- 38: get_slot_direct(192)
-      8, 127,   -- 40: set_slot_direct(127)
-      0,        -- 42: push_frame
-      5, 127,   -- 43: get_slot_direct(127)
-      5, 222,   -- 45: get_slot_direct(222)
-      1, 9,     -- 47: push_literal(9)
-      23,       -- 49: bi_eq
-      20,       -- 50: un_not
-      15,       -- 51: dup
-      13, 64,   -- 52: jmp_unless(64)
-      14,       -- 54: pop
-      0,        -- 55: push_frame
-      5, 127,   -- 56: get_slot_direct(127)
-      5, 222,   -- 58: get_slot_direct(222)
-      1, 232,   -- 60: push_literal(232)
-      23,       -- 62: bi_eq
-      20,       -- 63: un_not
-      13, 80,   -- 64: jmp_unless(80)
-      0,        -- 66: push_frame
-      5, 129,   -- 67: get_slot_direct(129)
-      0,        -- 69: push_frame
-      5, 20,    -- 70: get_slot_direct(20)
-      0,        -- 72: push_frame
-      5, 192,   -- 73: get_slot_direct(192)
-      1, 292,   -- 75: push_literal(292)
-      10, 2,    -- 77: invoke(2)
-      14,       -- 79: pop
-      0,        -- 80: push_frame
-      5, 198,   -- 81: get_slot_direct(198)
-      0,        -- 83: push_frame
-      5, 20,    -- 84: get_slot_direct(20)
-      10, 0,    -- 86: invoke(0)
-      14,       -- 88: pop
-      0,        -- 89: push_frame
-      5, 198,   -- 90: get_slot_direct(198)
-      0,        -- 92: push_frame
-      5, 20,    -- 93: get_slot_direct(20)
-      1, 253,   -- 95: push_literal(253)
-      10, 1,    -- 97: invoke(1)
-      14,       -- 99: pop
-      0,        -- 100: push_frame
-      0,        -- 101: push_frame
-      5, 199,   -- 102: get_slot_direct(199)
-      0,        -- 104: push_frame
-      5, 20,    -- 105: get_slot_direct(20)
-      1, 6,     -- 107: push_literal(6)
-      10, 1,    -- 109: invoke(1)
-      8, 86,    -- 111: set_slot_direct(86)
-      0,        -- 113: push_frame
-      5, 86,    -- 114: get_slot_direct(86)
-      0,        -- 116: push_frame
-      5, 127,   -- 117: get_slot_direct(127)
-      5, 139,   -- 119: get_slot_direct(139)
-      8, 293,   -- 121: set_slot_direct(293)
-      0,        -- 123: push_frame
-      5, 143,   -- 124: get_slot_direct(143)
-      15,       -- 126: dup
-      7, 52,    -- 127: get_slot_direct_check(52)
-      19,       -- 129: swap
-      0,        -- 130: push_frame
-      5, 86,    -- 131: get_slot_direct(86)
-      10, 1,    -- 133: invoke(1)
-      14,       -- 135: pop
-      0,        -- 136: push_frame
-      5, 192,   -- 137: get_slot_direct(192)
-      5, 226,   -- 139: get_slot_direct(226)
-      1, 58,    -- 141: push_literal(58)
-      23,       -- 143: bi_eq
-      20,       -- 144: un_not
-      13, 149,  -- 145: jmp_unless(149)
-      12, 165,  -- 147: jmp(165)
-      0,        -- 149: push_frame
-      5, 198,   -- 150: get_slot_direct(198)
-      0,        -- 152: push_frame
-      5, 20,    -- 153: get_slot_direct(20)
-      1, 58,    -- 155: push_literal(58)
-      10, 1,    -- 157: invoke(1)
-      14,       -- 159: pop
-      1, 94,    -- 160: push_literal(94)
-      20,       -- 162: un_not
-      13, 36,   -- 163: jmp_unless(36)
-      0,        -- 165: push_frame
-      5, 198,   -- 166: get_slot_direct(198)
-      0,        -- 168: push_frame
-      5, 20,    -- 169: get_slot_direct(20)
-      1, 242,   -- 171: push_literal(242)
-      10, 1,    -- 173: invoke(1)
-      14,       -- 175: pop
-      0,        -- 176: push_frame
-      5, 20,    -- 177: get_slot_direct(20)
-      0,        -- 179: push_frame
-      5, 143,   -- 180: get_slot_direct(143)
-      8, 18,    -- 182: set_slot_direct(18)
-      0,        -- 184: push_frame
-      5, 20,    -- 185: get_slot_direct(20)
-      1, 252,   -- 187: push_literal(252)
-      8, 222,   -- 189: set_slot_direct(222)
-      0,        -- 191: push_frame
-      5, 20,    -- 192: get_slot_direct(20)
-      11        -- 194: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 71,
-    nargs = 0,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
-      0,        -- 9: push_frame
-      0,        -- 10: push_frame
-      5, 202,   -- 11: get_slot_direct(202)
-      0,        -- 13: push_frame
-      5, 20,    -- 14: get_slot_direct(20)
-      10, 0,    -- 16: invoke(0)
-      8, 143,   -- 18: set_slot_direct(143)
-      0,        -- 20: push_frame
-      5, 198,   -- 21: get_slot_direct(198)
-      0,        -- 23: push_frame
-      5, 20,    -- 24: get_slot_direct(20)
-      1, 242,   -- 26: push_literal(242)
-      10, 1,    -- 28: invoke(1)
-      14,       -- 30: pop
-      3,        -- 31: new_array
-      15,       -- 32: dup
-      2,        -- 33: new_object
-      15,       -- 34: dup
-      1, 72,    -- 35: push_literal(72)
-      8, 139,   -- 37: set_slot_direct(139)
-      15,       -- 39: dup
-      1, 200,   -- 40: push_literal(200)
-      8, 222,   -- 42: set_slot_direct(222)
-      15,       -- 44: dup
-      0,        -- 45: push_frame
-      5, 143,   -- 46: get_slot_direct(143)
-      8, 18,    -- 48: set_slot_direct(18)
-      8, 6,     -- 50: set_slot_direct(6)
-      11        -- 52: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 72,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      14,       -- 3: pop
-      0,        -- 4: push_frame
-      1, 0,     -- 5: push_literal(0)
-      8, 143,   -- 7: set_slot_direct(143)
-      0,        -- 9: push_frame
-      1, 0,     -- 10: push_literal(0)
-      8, 127,   -- 12: set_slot_direct(127)
-      0,        -- 14: push_frame
-      1, 0,     -- 15: push_literal(0)
-      8, 132,   -- 17: set_slot_direct(132)
-      0,        -- 19: push_frame
-      1, 0,     -- 20: push_literal(0)
-      8, 86,    -- 22: set_slot_direct(86)
-      0,        -- 24: push_frame
-      3,        -- 25: new_array
-      8, 143,   -- 26: set_slot_direct(143)
-      12, 210,  -- 28: jmp(210)
-      0,        -- 30: push_frame
-      0,        -- 31: push_frame
-      5, 192,   -- 32: get_slot_direct(192)
-      8, 127,   -- 34: set_slot_direct(127)
-      0,        -- 36: push_frame
-      5, 127,   -- 37: get_slot_direct(127)
-      5, 222,   -- 39: get_slot_direct(222)
-      1, 9,     -- 41: push_literal(9)
-      23,       -- 43: bi_eq
-      20,       -- 44: un_not
-      13, 61,   -- 45: jmp_unless(61)
-      0,        -- 47: push_frame
-      5, 129,   -- 48: get_slot_direct(129)
-      0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
-      0,        -- 53: push_frame
-      5, 127,   -- 54: get_slot_direct(127)
-      1, 294,   -- 56: push_literal(294)
-      10, 2,    -- 58: invoke(2)
-      14,       -- 60: pop
-      0,        -- 61: push_frame
-      5, 190,   -- 62: get_slot_direct(190)
-      15,       -- 64: dup
-      7, 118,   -- 65: get_slot_direct_check(118)
-      19,       -- 67: swap
-      0,        -- 68: push_frame
-      5, 127,   -- 69: get_slot_direct(127)
-      10, 1,    -- 71: invoke(1)
-      14,       -- 73: pop
-      0,        -- 74: push_frame
-      2,        -- 75: new_object
-      15,       -- 76: dup
-      1, 241,   -- 77: push_literal(241)
-      8, 139,   -- 79: set_slot_direct(139)
-      15,       -- 81: dup
-      1, 200,   -- 82: push_literal(200)
-      8, 222,   -- 84: set_slot_direct(222)
-      15,       -- 86: dup
-      0,        -- 87: push_frame
-      5, 127,   -- 88: get_slot_direct(127)
-      8, 18,    -- 90: set_slot_direct(18)
-      8, 86,    -- 92: set_slot_direct(86)
-      0,        -- 94: push_frame
-      5, 143,   -- 95: get_slot_direct(143)
-      15,       -- 97: dup
-      7, 52,    -- 98: get_slot_direct_check(52)
-      19,       -- 100: swap
-      0,        -- 101: push_frame
-      5, 86,    -- 102: get_slot_direct(86)
-      10, 1,    -- 104: invoke(1)
-      14,       -- 106: pop
-      0,        -- 107: push_frame
-      5, 198,   -- 108: get_slot_direct(198)
-      0,        -- 110: push_frame
-      5, 20,    -- 111: get_slot_direct(20)
-      10, 0,    -- 113: invoke(0)
-      14,       -- 115: pop
-      0,        -- 116: push_frame
-      5, 192,   -- 117: get_slot_direct(192)
-      5, 226,   -- 119: get_slot_direct(226)
-      1, 261,   -- 121: push_literal(261)
-      23,       -- 123: bi_eq
-      13, 186,  -- 124: jmp_unless(186)
-      0,        -- 126: push_frame
-      0,        -- 127: push_frame
-      5, 192,   -- 128: get_slot_direct(192)
-      8, 132,   -- 130: set_slot_direct(132)
-      0,        -- 132: push_frame
-      5, 198,   -- 133: get_slot_direct(198)
-      0,        -- 135: push_frame
-      5, 20,    -- 136: get_slot_direct(20)
-      1, 261,   -- 138: push_literal(261)
-      10, 1,    -- 140: invoke(1)
-      14,       -- 142: pop
-      0,        -- 143: push_frame
-      5, 132,   -- 144: get_slot_direct(132)
-      0,        -- 146: push_frame
-      5, 127,   -- 147: get_slot_direct(127)
-      8, 18,    -- 149: set_slot_direct(18)
-      0,        -- 151: push_frame
-      5, 132,   -- 152: get_slot_direct(132)
-      0,        -- 154: push_frame
-      5, 199,   -- 155: get_slot_direct(199)
-      0,        -- 157: push_frame
-      5, 20,    -- 158: get_slot_direct(20)
-      1, 6,     -- 160: push_literal(6)
-      10, 1,    -- 162: invoke(1)
-      8, 19,    -- 164: set_slot_direct(19)
-      0,        -- 166: push_frame
-      5, 132,   -- 167: get_slot_direct(132)
-      1, 247,   -- 169: push_literal(247)
-      8, 222,   -- 171: set_slot_direct(222)
-      0,        -- 173: push_frame
-      5, 143,   -- 174: get_slot_direct(143)
-      15,       -- 176: dup
-      7, 52,    -- 177: get_slot_direct_check(52)
-      19,       -- 179: swap
-      0,        -- 180: push_frame
-      5, 132,   -- 181: get_slot_direct(132)
-      10, 1,    -- 183: invoke(1)
-      14,       -- 185: pop
-      0,        -- 186: push_frame
-      5, 192,   -- 187: get_slot_direct(192)
-      5, 226,   -- 189: get_slot_direct(226)
-      1, 58,    -- 191: push_literal(58)
-      23,       -- 193: bi_eq
-      20,       -- 194: un_not
-      13, 199,  -- 195: jmp_unless(199)
-      12, 215,  -- 197: jmp(215)
-      0,        -- 199: push_frame
-      5, 198,   -- 200: get_slot_direct(198)
-      0,        -- 202: push_frame
-      5, 20,    -- 203: get_slot_direct(20)
-      1, 58,    -- 205: push_literal(58)
-      10, 1,    -- 207: invoke(1)
-      14,       -- 209: pop
-      1, 94,    -- 210: push_literal(94)
-      20,       -- 212: un_not
-      13, 30,   -- 213: jmp_unless(30)
-      0,        -- 215: push_frame
-      5, 198,   -- 216: get_slot_direct(198)
-      0,        -- 218: push_frame
-      5, 20,    -- 219: get_slot_direct(20)
-      1, 239,   -- 221: push_literal(239)
-      10, 1,    -- 223: invoke(1)
-      14,       -- 225: pop
-      0,        -- 226: push_frame
-      5, 143,   -- 227: get_slot_direct(143)
-      11        -- 229: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 73,
     nargs = 0,
-    max_stack = 5,
+    max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 198,   -- 5: get_slot_direct(198)
-      0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
-      1, 236,   -- 10: push_literal(236)
-      10, 1,    -- 12: invoke(1)
-      14,       -- 14: pop
-      0,        -- 15: push_frame
-      5, 20,    -- 16: get_slot_direct(20)
-      0,        -- 18: push_frame
-      5, 199,   -- 19: get_slot_direct(199)
-      0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
-      1, 6,     -- 24: push_literal(6)
-      10, 1,    -- 26: invoke(1)
-      8, 18,    -- 28: set_slot_direct(18)
-      0,        -- 30: push_frame
-      5, 198,   -- 31: get_slot_direct(198)
+      1, 0,     -- 5: push_literal(0)
+      8, 87,    -- 7: set_slot_direct(87)
+      0,        -- 9: push_frame
+      0,        -- 10: push_frame
+      5, 260,   -- 11: get_slot_direct(260)
+      0,        -- 13: push_frame
+      5, 26,    -- 14: get_slot_direct(26)
+      1, 18,    -- 16: push_literal(18)
+      10, 1,    -- 18: invoke(1)
+      8, 87,    -- 20: set_slot_direct(87)
+      0,        -- 22: push_frame
+      5, 259,   -- 23: get_slot_direct(259)
+      0,        -- 25: push_frame
+      5, 26,    -- 26: get_slot_direct(26)
+      1, 313,   -- 28: push_literal(313)
+      10, 1,    -- 30: invoke(1)
+      14,       -- 32: pop
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      1, 254,   -- 36: push_literal(254)
-      10, 1,    -- 38: invoke(1)
-      14,       -- 40: pop
-      0,        -- 41: push_frame
-      5, 20,    -- 42: get_slot_direct(20)
-      0,        -- 44: push_frame
-      5, 72,    -- 45: get_slot_direct(72)
-      0,        -- 47: push_frame
-      5, 20,    -- 48: get_slot_direct(20)
-      10, 0,    -- 50: invoke(0)
-      1, 6,     -- 52: push_literal(6)
-      6,        -- 54: get_slot_indirect
-      8, 19,    -- 55: set_slot_direct(19)
-      0,        -- 57: push_frame
-      5, 192,   -- 58: get_slot_direct(192)
-      5, 226,   -- 60: get_slot_direct(226)
-      1, 255,   -- 62: push_literal(255)
-      23,       -- 64: bi_eq
-      13, 143,  -- 65: jmp_unless(143)
-      0,        -- 67: push_frame
-      5, 190,   -- 68: get_slot_direct(190)
-      15,       -- 70: dup
-      7, 223,   -- 71: get_slot_direct_check(223)
-      19,       -- 73: swap
-      0,        -- 74: push_frame
-      5, 192,   -- 75: get_slot_direct(192)
-      10, 1,    -- 77: invoke(1)
-      14,       -- 79: pop
-      0,        -- 80: push_frame
-      5, 198,   -- 81: get_slot_direct(198)
-      0,        -- 83: push_frame
-      5, 20,    -- 84: get_slot_direct(20)
-      1, 255,   -- 86: push_literal(255)
-      10, 1,    -- 88: invoke(1)
-      14,       -- 90: pop
-      0,        -- 91: push_frame
-      5, 20,    -- 92: get_slot_direct(20)
-      0,        -- 94: push_frame
-      5, 192,   -- 95: get_slot_direct(192)
-      5, 226,   -- 97: get_slot_direct(226)
-      1, 295,   -- 99: push_literal(295)
-      23,       -- 101: bi_eq
-      13, 128,  -- 102: jmp_unless(128)
-      2,        -- 104: new_object
-      15,       -- 105: dup
-      1, 72,    -- 106: push_literal(72)
-      8, 139,   -- 108: set_slot_direct(139)
-      15,       -- 110: dup
-      1, 200,   -- 111: push_literal(200)
-      8, 222,   -- 113: set_slot_direct(222)
-      15,       -- 115: dup
-      0,        -- 116: push_frame
-      5, 200,   -- 117: get_slot_direct(200)
-      0,        -- 119: push_frame
-      5, 20,    -- 120: get_slot_direct(20)
-      10, 0,    -- 122: invoke(0)
-      8, 18,    -- 124: set_slot_direct(18)
-      12, 139,  -- 126: jmp(139)
-      0,        -- 128: push_frame
-      5, 72,    -- 129: get_slot_direct(72)
-      0,        -- 131: push_frame
-      5, 20,    -- 132: get_slot_direct(20)
-      10, 0,    -- 134: invoke(0)
-      1, 6,     -- 136: push_literal(6)
-      6,        -- 138: get_slot_indirect
-      8, 268,   -- 139: set_slot_direct(268)
-      12, 150,  -- 141: jmp(150)
-      0,        -- 143: push_frame
-      5, 20,    -- 144: get_slot_direct(20)
-      1, 21,    -- 146: push_literal(21)
-      8, 268,   -- 148: set_slot_direct(268)
-      0,        -- 150: push_frame
-      5, 20,    -- 151: get_slot_direct(20)
-      1, 200,   -- 153: push_literal(200)
-      8, 222,   -- 155: set_slot_direct(222)
-      3,        -- 157: new_array
-      15,       -- 158: dup
-      0,        -- 159: push_frame
-      5, 20,    -- 160: get_slot_direct(20)
-      8, 6,     -- 162: set_slot_direct(6)
-      11        -- 164: return
+      5, 87,    -- 34: get_slot_direct(87)
+      11        -- 36: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 74,
     nargs = 0,
-    max_stack = 4,
+    max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 192,   -- 5: get_slot_direct(192)
-      5, 226,   -- 7: get_slot_direct(226)
-      1, 239,   -- 9: push_literal(239)
-      23,       -- 11: bi_eq
-      20,       -- 12: un_not
-      13, 32,   -- 13: jmp_unless(32)
-      0,        -- 15: push_frame
-      5, 20,    -- 16: get_slot_direct(20)
-      0,        -- 18: push_frame
-      5, 199,   -- 19: get_slot_direct(199)
-      0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
-      1, 6,     -- 24: push_literal(6)
-      10, 1,    -- 26: invoke(1)
-      8, 18,    -- 28: set_slot_direct(18)
-      12, 39,   -- 30: jmp(39)
-      0,        -- 32: push_frame
-      5, 20,    -- 33: get_slot_direct(20)
-      1, 21,    -- 35: push_literal(21)
-      8, 18,    -- 37: set_slot_direct(18)
+      1, 0,     -- 5: push_literal(0)
+      8, 213,   -- 7: set_slot_direct(213)
+      0,        -- 9: push_frame
+      3,        -- 10: new_array
+      8, 213,   -- 11: set_slot_direct(213)
+      0,        -- 13: push_frame
+      5, 253,   -- 14: get_slot_direct(253)
+      5, 283,   -- 16: get_slot_direct(283)
+      1, 19,    -- 18: push_literal(19)
+      23,       -- 20: bi_eq
+      13, 65,   -- 21: jmp_unless(65)
+      0,        -- 23: push_frame
+      5, 251,   -- 24: get_slot_direct(251)
+      15,       -- 26: dup
+      7, 191,   -- 27: get_slot_direct_check(191)
+      19,       -- 29: swap
+      0,        -- 30: push_frame
+      5, 253,   -- 31: get_slot_direct(253)
+      10, 1,    -- 33: invoke(1)
+      14,       -- 35: pop
+      0,        -- 36: push_frame
+      5, 26,    -- 37: get_slot_direct(26)
       0,        -- 39: push_frame
-      5, 198,   -- 40: get_slot_direct(198)
-      0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
-      1, 239,   -- 45: push_literal(239)
-      10, 1,    -- 47: invoke(1)
-      14,       -- 49: pop
-      0,        -- 50: push_frame
-      5, 192,   -- 51: get_slot_direct(192)
-      5, 226,   -- 53: get_slot_direct(226)
-      1, 242,   -- 55: push_literal(242)
-      23,       -- 57: bi_eq
-      20,       -- 58: un_not
-      13, 75,   -- 59: jmp_unless(75)
-      0,        -- 61: push_frame
-      5, 129,   -- 62: get_slot_direct(129)
-      0,        -- 64: push_frame
-      5, 20,    -- 65: get_slot_direct(20)
-      0,        -- 67: push_frame
-      5, 192,   -- 68: get_slot_direct(192)
-      1, 297,   -- 70: push_literal(297)
-      10, 2,    -- 72: invoke(2)
-      14,       -- 74: pop
+      5, 253,   -- 40: get_slot_direct(253)
+      5, 209,   -- 42: get_slot_direct(209)
+      8, 19,    -- 44: set_slot_direct(19)
+      0,        -- 46: push_frame
+      5, 26,    -- 47: get_slot_direct(26)
+      0,        -- 49: push_frame
+      5, 251,   -- 50: get_slot_direct(251)
+      8, 251,   -- 52: set_slot_direct(251)
+      0,        -- 54: push_frame
+      5, 259,   -- 55: get_slot_direct(259)
+      0,        -- 57: push_frame
+      5, 26,    -- 58: get_slot_direct(26)
+      10, 0,    -- 60: invoke(0)
+      14,       -- 62: pop
+      12, 72,   -- 63: jmp(72)
+      0,        -- 65: push_frame
+      5, 26,    -- 66: get_slot_direct(26)
+      1, 41,    -- 68: push_literal(41)
+      8, 19,    -- 70: set_slot_direct(19)
+      0,        -- 72: push_frame
+      5, 258,   -- 73: get_slot_direct(258)
       0,        -- 75: push_frame
-      5, 20,    -- 76: get_slot_direct(20)
-      1, 200,   -- 78: push_literal(200)
-      8, 222,   -- 80: set_slot_direct(222)
-      3,        -- 82: new_array
-      15,       -- 83: dup
-      0,        -- 84: push_frame
-      5, 20,    -- 85: get_slot_direct(20)
-      8, 6,     -- 87: set_slot_direct(6)
-      11        -- 89: return
+      5, 26,    -- 76: get_slot_direct(26)
+      10, 0,    -- 78: invoke(0)
+      14,       -- 80: pop
+      0,        -- 81: push_frame
+      5, 251,   -- 82: get_slot_direct(251)
+      15,       -- 84: dup
+      7, 191,   -- 85: get_slot_direct_check(191)
+      19,       -- 87: swap
+      2,        -- 88: new_object
+      15,       -- 89: dup
+      1, 2,     -- 90: push_literal(2)
+      8, 209,   -- 92: set_slot_direct(209)
+      15,       -- 94: dup
+      1, 19,    -- 95: push_literal(19)
+      8, 283,   -- 97: set_slot_direct(283)
+      10, 1,    -- 99: invoke(1)
+      14,       -- 101: pop
+      0,        -- 102: push_frame
+      5, 259,   -- 103: get_slot_direct(259)
+      0,        -- 105: push_frame
+      5, 26,    -- 106: get_slot_direct(26)
+      1, 297,   -- 108: push_literal(297)
+      10, 1,    -- 110: invoke(1)
+      14,       -- 112: pop
+      0,        -- 113: push_frame
+      5, 253,   -- 114: get_slot_direct(253)
+      5, 287,   -- 116: get_slot_direct(287)
+      1, 313,   -- 118: push_literal(313)
+      23,       -- 120: bi_eq
+      20,       -- 121: un_not
+      13, 215,  -- 122: jmp_unless(215)
+      12, 210,  -- 124: jmp(210)
+      0,        -- 126: push_frame
+      5, 253,   -- 127: get_slot_direct(253)
+      5, 283,   -- 129: get_slot_direct(283)
+      1, 19,    -- 131: push_literal(19)
+      23,       -- 133: bi_eq
+      20,       -- 134: un_not
+      13, 151,  -- 135: jmp_unless(151)
+      0,        -- 137: push_frame
+      5, 200,   -- 138: get_slot_direct(200)
+      0,        -- 140: push_frame
+      5, 26,    -- 141: get_slot_direct(26)
+      0,        -- 143: push_frame
+      5, 253,   -- 144: get_slot_direct(253)
+      1, 345,   -- 146: push_literal(345)
+      10, 2,    -- 148: invoke(2)
+      14,       -- 150: pop
+      0,        -- 151: push_frame
+      5, 251,   -- 152: get_slot_direct(251)
+      15,       -- 154: dup
+      7, 191,   -- 155: get_slot_direct_check(191)
+      19,       -- 157: swap
+      0,        -- 158: push_frame
+      5, 253,   -- 159: get_slot_direct(253)
+      10, 1,    -- 161: invoke(1)
+      14,       -- 163: pop
+      0,        -- 164: push_frame
+      5, 213,   -- 165: get_slot_direct(213)
+      15,       -- 167: dup
+      7, 69,    -- 168: get_slot_direct_check(69)
+      19,       -- 170: swap
+      0,        -- 171: push_frame
+      5, 253,   -- 172: get_slot_direct(253)
+      10, 1,    -- 174: invoke(1)
+      14,       -- 176: pop
+      0,        -- 177: push_frame
+      5, 259,   -- 178: get_slot_direct(259)
+      0,        -- 180: push_frame
+      5, 26,    -- 181: get_slot_direct(26)
+      10, 0,    -- 183: invoke(0)
+      14,       -- 185: pop
+      0,        -- 186: push_frame
+      5, 253,   -- 187: get_slot_direct(253)
+      5, 287,   -- 189: get_slot_direct(287)
+      1, 76,    -- 191: push_literal(76)
+      23,       -- 193: bi_eq
+      20,       -- 194: un_not
+      13, 199,  -- 195: jmp_unless(199)
+      12, 215,  -- 197: jmp(215)
+      0,        -- 199: push_frame
+      5, 259,   -- 200: get_slot_direct(259)
+      0,        -- 202: push_frame
+      5, 26,    -- 203: get_slot_direct(26)
+      1, 76,    -- 205: push_literal(76)
+      10, 1,    -- 207: invoke(1)
+      14,       -- 209: pop
+      1, 115,   -- 210: push_literal(115)
+      20,       -- 212: un_not
+      13, 126,  -- 213: jmp_unless(126)
+      0,        -- 215: push_frame
+      5, 26,    -- 216: get_slot_direct(26)
+      0,        -- 218: push_frame
+      5, 213,   -- 219: get_slot_direct(213)
+      8, 39,    -- 221: set_slot_direct(39)
+      0,        -- 223: push_frame
+      5, 259,   -- 224: get_slot_direct(259)
+      0,        -- 226: push_frame
+      5, 26,    -- 227: get_slot_direct(26)
+      1, 313,   -- 229: push_literal(313)
+      10, 1,    -- 231: invoke(1)
+      14,       -- 233: pop
+      0,        -- 234: push_frame
+      5, 259,   -- 235: get_slot_direct(259)
+      0,        -- 237: push_frame
+      5, 26,    -- 238: get_slot_direct(26)
+      1, 303,   -- 240: push_literal(303)
+      10, 1,    -- 242: invoke(1)
+      14,       -- 244: pop
+      0,        -- 245: push_frame
+      5, 253,   -- 246: get_slot_direct(253)
+      5, 283,   -- 248: get_slot_direct(283)
+      1, 293,   -- 250: push_literal(293)
+      23,       -- 252: bi_eq
+      15,       -- 253: dup
+      13, 265,  -- 254: jmp_unless(265)
+      14,       -- 256: pop
+      0,        -- 257: push_frame
+      5, 253,   -- 258: get_slot_direct(253)
+      5, 209,   -- 260: get_slot_direct(209)
+      1, 346,   -- 262: push_literal(346)
+      23,       -- 264: bi_eq
+      13, 287,  -- 265: jmp_unless(287)
+      0,        -- 267: push_frame
+      5, 259,   -- 268: get_slot_direct(259)
+      0,        -- 270: push_frame
+      5, 26,    -- 271: get_slot_direct(26)
+      10, 0,    -- 273: invoke(0)
+      14,       -- 275: pop
+      0,        -- 276: push_frame
+      5, 259,   -- 277: get_slot_direct(259)
+      0,        -- 279: push_frame
+      5, 26,    -- 280: get_slot_direct(26)
+      1, 299,   -- 282: push_literal(299)
+      10, 1,    -- 284: invoke(1)
+      14,       -- 286: pop
+      0,        -- 287: push_frame
+      5, 26,    -- 288: get_slot_direct(26)
+      0,        -- 290: push_frame
+      5, 263,   -- 291: get_slot_direct(263)
+      0,        -- 293: push_frame
+      5, 26,    -- 294: get_slot_direct(26)
+      10, 0,    -- 296: invoke(0)
+      8, 40,    -- 298: set_slot_direct(40)
+      0,        -- 300: push_frame
+      5, 259,   -- 301: get_slot_direct(259)
+      0,        -- 303: push_frame
+      5, 26,    -- 304: get_slot_direct(26)
+      1, 302,   -- 306: push_literal(302)
+      10, 1,    -- 308: invoke(1)
+      14,       -- 310: pop
+      0,        -- 311: push_frame
+      5, 26,    -- 312: get_slot_direct(26)
+      1, 25,    -- 314: push_literal(25)
+      8, 283,   -- 316: set_slot_direct(283)
+      0,        -- 318: push_frame
+      5, 251,   -- 319: get_slot_direct(251)
+      15,       -- 321: dup
+      7, 71,    -- 322: get_slot_direct_check(71)
+      19,       -- 324: swap
+      10, 0,    -- 325: invoke(0)
+      14,       -- 327: pop
+      0,        -- 328: push_frame
+      5, 26,    -- 329: get_slot_direct(26)
+      11        -- 331: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
     id = 75,
     nargs = 0,
-    max_stack = 4,
+    max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 198,   -- 5: get_slot_direct(198)
-      0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
-      1, 239,   -- 10: push_literal(239)
-      10, 1,    -- 12: invoke(1)
-      14,       -- 14: pop
-      0,        -- 15: push_frame
-      5, 192,   -- 16: get_slot_direct(192)
-      5, 226,   -- 18: get_slot_direct(226)
-      1, 242,   -- 20: push_literal(242)
-      23,       -- 22: bi_eq
-      20,       -- 23: un_not
-      13, 40,   -- 24: jmp_unless(40)
+      1, 0,     -- 5: push_literal(0)
+      8, 213,   -- 7: set_slot_direct(213)
+      0,        -- 9: push_frame
+      3,        -- 10: new_array
+      8, 213,   -- 11: set_slot_direct(213)
+      0,        -- 13: push_frame
+      5, 253,   -- 14: get_slot_direct(253)
+      5, 287,   -- 16: get_slot_direct(287)
+      1, 207,   -- 18: push_literal(207)
+      23,       -- 20: bi_eq
+      20,       -- 21: un_not
+      13, 75,   -- 22: jmp_unless(75)
+      12, 70,   -- 24: jmp(70)
       0,        -- 26: push_frame
-      5, 129,   -- 27: get_slot_direct(129)
-      0,        -- 29: push_frame
-      5, 20,    -- 30: get_slot_direct(20)
-      0,        -- 32: push_frame
-      5, 192,   -- 33: get_slot_direct(192)
-      1, 297,   -- 35: push_literal(297)
-      10, 2,    -- 37: invoke(2)
-      14,       -- 39: pop
-      0,        -- 40: push_frame
-      5, 20,    -- 41: get_slot_direct(20)
-      1, 200,   -- 43: push_literal(200)
-      8, 222,   -- 45: set_slot_direct(222)
-      3,        -- 47: new_array
-      15,       -- 48: dup
-      0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
-      8, 6,     -- 52: set_slot_direct(6)
-      11        -- 54: return
+      5, 213,   -- 27: get_slot_direct(213)
+      15,       -- 29: dup
+      7, 69,    -- 30: get_slot_direct_check(69)
+      19,       -- 32: swap
+      0,        -- 33: push_frame
+      5, 260,   -- 34: get_slot_direct(260)
+      0,        -- 36: push_frame
+      5, 26,    -- 37: get_slot_direct(26)
+      1, 18,    -- 39: push_literal(18)
+      10, 1,    -- 41: invoke(1)
+      10, 1,    -- 43: invoke(1)
+      14,       -- 45: pop
+      0,        -- 46: push_frame
+      5, 253,   -- 47: get_slot_direct(253)
+      5, 287,   -- 49: get_slot_direct(287)
+      1, 76,    -- 51: push_literal(76)
+      23,       -- 53: bi_eq
+      20,       -- 54: un_not
+      13, 59,   -- 55: jmp_unless(59)
+      12, 75,   -- 57: jmp(75)
+      0,        -- 59: push_frame
+      5, 259,   -- 60: get_slot_direct(259)
+      0,        -- 62: push_frame
+      5, 26,    -- 63: get_slot_direct(26)
+      1, 76,    -- 65: push_literal(76)
+      10, 1,    -- 67: invoke(1)
+      14,       -- 69: pop
+      1, 115,   -- 70: push_literal(115)
+      20,       -- 72: un_not
+      13, 26,   -- 73: jmp_unless(26)
+      0,        -- 75: push_frame
+      5, 259,   -- 76: get_slot_direct(259)
+      0,        -- 78: push_frame
+      5, 26,    -- 79: get_slot_direct(26)
+      1, 207,   -- 81: push_literal(207)
+      10, 1,    -- 83: invoke(1)
+      14,       -- 85: pop
+      0,        -- 86: push_frame
+      5, 26,    -- 87: get_slot_direct(26)
+      0,        -- 89: push_frame
+      5, 213,   -- 90: get_slot_direct(213)
+      8, 39,    -- 92: set_slot_direct(39)
+      0,        -- 94: push_frame
+      5, 26,    -- 95: get_slot_direct(26)
+      1, 311,   -- 97: push_literal(311)
+      8, 283,   -- 99: set_slot_direct(283)
+      0,        -- 101: push_frame
+      5, 26,    -- 102: get_slot_direct(26)
+      11        -- 104: return
     }
   },
   ifunc.Function:new{
@@ -7643,302 +7987,855 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 198,   -- 5: get_slot_direct(198)
+      1, 0,     -- 5: push_literal(0)
+      8, 213,   -- 7: set_slot_direct(213)
+      0,        -- 9: push_frame
+      1, 0,     -- 10: push_literal(0)
+      8, 23,    -- 12: set_slot_direct(23)
+      0,        -- 14: push_frame
+      1, 0,     -- 15: push_literal(0)
+      8, 107,   -- 17: set_slot_direct(107)
+      0,        -- 19: push_frame
+      3,        -- 20: new_array
+      8, 213,   -- 21: set_slot_direct(213)
+      0,        -- 23: push_frame
+      5, 253,   -- 24: get_slot_direct(253)
+      5, 287,   -- 26: get_slot_direct(287)
+      1, 302,   -- 28: push_literal(302)
+      23,       -- 30: bi_eq
+      20,       -- 31: un_not
+      13, 165,  -- 32: jmp_unless(165)
+      12, 160,  -- 34: jmp(160)
+      0,        -- 36: push_frame
+      0,        -- 37: push_frame
+      5, 253,   -- 38: get_slot_direct(253)
+      8, 23,    -- 40: set_slot_direct(23)
+      0,        -- 42: push_frame
+      5, 23,    -- 43: get_slot_direct(23)
+      5, 283,   -- 45: get_slot_direct(283)
+      1, 19,    -- 47: push_literal(19)
+      23,       -- 49: bi_eq
+      20,       -- 50: un_not
+      15,       -- 51: dup
+      13, 64,   -- 52: jmp_unless(64)
+      14,       -- 54: pop
+      0,        -- 55: push_frame
+      5, 23,    -- 56: get_slot_direct(23)
+      5, 283,   -- 58: get_slot_direct(283)
+      1, 293,   -- 60: push_literal(293)
+      23,       -- 62: bi_eq
+      20,       -- 63: un_not
+      13, 80,   -- 64: jmp_unless(80)
+      0,        -- 66: push_frame
+      5, 200,   -- 67: get_slot_direct(200)
+      0,        -- 69: push_frame
+      5, 26,    -- 70: get_slot_direct(26)
+      0,        -- 72: push_frame
+      5, 253,   -- 73: get_slot_direct(253)
+      1, 347,   -- 75: push_literal(347)
+      10, 2,    -- 77: invoke(2)
+      14,       -- 79: pop
+      0,        -- 80: push_frame
+      5, 259,   -- 81: get_slot_direct(259)
+      0,        -- 83: push_frame
+      5, 26,    -- 84: get_slot_direct(26)
+      10, 0,    -- 86: invoke(0)
+      14,       -- 88: pop
+      0,        -- 89: push_frame
+      5, 259,   -- 90: get_slot_direct(259)
+      0,        -- 92: push_frame
+      5, 26,    -- 93: get_slot_direct(26)
+      1, 312,   -- 95: push_literal(312)
+      10, 1,    -- 97: invoke(1)
+      14,       -- 99: pop
+      0,        -- 100: push_frame
+      0,        -- 101: push_frame
+      5, 260,   -- 102: get_slot_direct(260)
+      0,        -- 104: push_frame
+      5, 26,    -- 105: get_slot_direct(26)
+      1, 18,    -- 107: push_literal(18)
+      10, 1,    -- 109: invoke(1)
+      8, 107,   -- 111: set_slot_direct(107)
+      0,        -- 113: push_frame
+      5, 107,   -- 114: get_slot_direct(107)
+      0,        -- 116: push_frame
+      5, 23,    -- 117: get_slot_direct(23)
+      5, 209,   -- 119: get_slot_direct(209)
+      8, 348,   -- 121: set_slot_direct(348)
+      0,        -- 123: push_frame
+      5, 213,   -- 124: get_slot_direct(213)
+      15,       -- 126: dup
+      7, 69,    -- 127: get_slot_direct_check(69)
+      19,       -- 129: swap
+      0,        -- 130: push_frame
+      5, 107,   -- 131: get_slot_direct(107)
+      10, 1,    -- 133: invoke(1)
+      14,       -- 135: pop
+      0,        -- 136: push_frame
+      5, 253,   -- 137: get_slot_direct(253)
+      5, 287,   -- 139: get_slot_direct(287)
+      1, 76,    -- 141: push_literal(76)
+      23,       -- 143: bi_eq
+      20,       -- 144: un_not
+      13, 149,  -- 145: jmp_unless(149)
+      12, 165,  -- 147: jmp(165)
+      0,        -- 149: push_frame
+      5, 259,   -- 150: get_slot_direct(259)
+      0,        -- 152: push_frame
+      5, 26,    -- 153: get_slot_direct(26)
+      1, 76,    -- 155: push_literal(76)
+      10, 1,    -- 157: invoke(1)
+      14,       -- 159: pop
+      1, 115,   -- 160: push_literal(115)
+      20,       -- 162: un_not
+      13, 36,   -- 163: jmp_unless(36)
+      0,        -- 165: push_frame
+      5, 259,   -- 166: get_slot_direct(259)
+      0,        -- 168: push_frame
+      5, 26,    -- 169: get_slot_direct(26)
+      1, 302,   -- 171: push_literal(302)
+      10, 1,    -- 173: invoke(1)
+      14,       -- 175: pop
+      0,        -- 176: push_frame
+      5, 26,    -- 177: get_slot_direct(26)
+      0,        -- 179: push_frame
+      5, 213,   -- 180: get_slot_direct(213)
+      8, 39,    -- 182: set_slot_direct(39)
+      0,        -- 184: push_frame
+      5, 26,    -- 185: get_slot_direct(26)
+      1, 311,   -- 187: push_literal(311)
+      8, 283,   -- 189: set_slot_direct(283)
+      0,        -- 191: push_frame
+      5, 26,    -- 192: get_slot_direct(26)
+      11        -- 194: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 77,
+    nargs = 0,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      1, 0,     -- 5: push_literal(0)
+      8, 213,   -- 7: set_slot_direct(213)
+      0,        -- 9: push_frame
+      0,        -- 10: push_frame
+      5, 263,   -- 11: get_slot_direct(263)
+      0,        -- 13: push_frame
+      5, 26,    -- 14: get_slot_direct(26)
+      10, 0,    -- 16: invoke(0)
+      8, 213,   -- 18: set_slot_direct(213)
+      0,        -- 20: push_frame
+      5, 259,   -- 21: get_slot_direct(259)
+      0,        -- 23: push_frame
+      5, 26,    -- 24: get_slot_direct(26)
+      1, 302,   -- 26: push_literal(302)
+      10, 1,    -- 28: invoke(1)
+      14,       -- 30: pop
+      3,        -- 31: new_array
+      15,       -- 32: dup
+      2,        -- 33: new_object
+      15,       -- 34: dup
+      1, 91,    -- 35: push_literal(91)
+      8, 209,   -- 37: set_slot_direct(209)
+      15,       -- 39: dup
+      1, 261,   -- 40: push_literal(261)
+      8, 283,   -- 42: set_slot_direct(283)
+      15,       -- 44: dup
+      0,        -- 45: push_frame
+      5, 213,   -- 46: get_slot_direct(213)
+      8, 39,    -- 48: set_slot_direct(39)
+      8, 18,    -- 50: set_slot_direct(18)
+      11        -- 52: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 78,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      1, 0,     -- 5: push_literal(0)
+      8, 213,   -- 7: set_slot_direct(213)
+      0,        -- 9: push_frame
+      1, 0,     -- 10: push_literal(0)
+      8, 23,    -- 12: set_slot_direct(23)
+      0,        -- 14: push_frame
+      1, 0,     -- 15: push_literal(0)
+      8, 203,   -- 17: set_slot_direct(203)
+      0,        -- 19: push_frame
+      1, 0,     -- 20: push_literal(0)
+      8, 107,   -- 22: set_slot_direct(107)
+      0,        -- 24: push_frame
+      3,        -- 25: new_array
+      8, 213,   -- 26: set_slot_direct(213)
+      12, 210,  -- 28: jmp(210)
+      0,        -- 30: push_frame
+      0,        -- 31: push_frame
+      5, 253,   -- 32: get_slot_direct(253)
+      8, 23,    -- 34: set_slot_direct(23)
+      0,        -- 36: push_frame
+      5, 23,    -- 37: get_slot_direct(23)
+      5, 283,   -- 39: get_slot_direct(283)
+      1, 19,    -- 41: push_literal(19)
+      23,       -- 43: bi_eq
+      20,       -- 44: un_not
+      13, 61,   -- 45: jmp_unless(61)
+      0,        -- 47: push_frame
+      5, 200,   -- 48: get_slot_direct(200)
+      0,        -- 50: push_frame
+      5, 26,    -- 51: get_slot_direct(26)
+      0,        -- 53: push_frame
+      5, 23,    -- 54: get_slot_direct(23)
+      1, 349,   -- 56: push_literal(349)
+      10, 2,    -- 58: invoke(2)
+      14,       -- 60: pop
+      0,        -- 61: push_frame
+      5, 251,   -- 62: get_slot_direct(251)
+      15,       -- 64: dup
+      7, 191,   -- 65: get_slot_direct_check(191)
+      19,       -- 67: swap
+      0,        -- 68: push_frame
+      5, 23,    -- 69: get_slot_direct(23)
+      10, 1,    -- 71: invoke(1)
+      14,       -- 73: pop
+      0,        -- 74: push_frame
+      2,        -- 75: new_object
+      15,       -- 76: dup
+      1, 301,   -- 77: push_literal(301)
+      8, 209,   -- 79: set_slot_direct(209)
+      15,       -- 81: dup
+      1, 261,   -- 82: push_literal(261)
+      8, 283,   -- 84: set_slot_direct(283)
+      15,       -- 86: dup
+      0,        -- 87: push_frame
+      5, 23,    -- 88: get_slot_direct(23)
+      8, 39,    -- 90: set_slot_direct(39)
+      8, 107,   -- 92: set_slot_direct(107)
+      0,        -- 94: push_frame
+      5, 213,   -- 95: get_slot_direct(213)
+      15,       -- 97: dup
+      7, 69,    -- 98: get_slot_direct_check(69)
+      19,       -- 100: swap
+      0,        -- 101: push_frame
+      5, 107,   -- 102: get_slot_direct(107)
+      10, 1,    -- 104: invoke(1)
+      14,       -- 106: pop
+      0,        -- 107: push_frame
+      5, 259,   -- 108: get_slot_direct(259)
+      0,        -- 110: push_frame
+      5, 26,    -- 111: get_slot_direct(26)
+      10, 0,    -- 113: invoke(0)
+      14,       -- 115: pop
+      0,        -- 116: push_frame
+      5, 253,   -- 117: get_slot_direct(253)
+      5, 287,   -- 119: get_slot_direct(287)
+      1, 316,   -- 121: push_literal(316)
+      23,       -- 123: bi_eq
+      13, 186,  -- 124: jmp_unless(186)
+      0,        -- 126: push_frame
+      0,        -- 127: push_frame
+      5, 253,   -- 128: get_slot_direct(253)
+      8, 203,   -- 130: set_slot_direct(203)
+      0,        -- 132: push_frame
+      5, 259,   -- 133: get_slot_direct(259)
+      0,        -- 135: push_frame
+      5, 26,    -- 136: get_slot_direct(26)
+      1, 316,   -- 138: push_literal(316)
+      10, 1,    -- 140: invoke(1)
+      14,       -- 142: pop
+      0,        -- 143: push_frame
+      5, 203,   -- 144: get_slot_direct(203)
+      0,        -- 146: push_frame
+      5, 23,    -- 147: get_slot_direct(23)
+      8, 39,    -- 149: set_slot_direct(39)
+      0,        -- 151: push_frame
+      5, 203,   -- 152: get_slot_direct(203)
+      0,        -- 154: push_frame
+      5, 260,   -- 155: get_slot_direct(260)
+      0,        -- 157: push_frame
+      5, 26,    -- 158: get_slot_direct(26)
+      1, 18,    -- 160: push_literal(18)
+      10, 1,    -- 162: invoke(1)
+      8, 40,    -- 164: set_slot_direct(40)
+      0,        -- 166: push_frame
+      5, 203,   -- 167: get_slot_direct(203)
+      1, 307,   -- 169: push_literal(307)
+      8, 283,   -- 171: set_slot_direct(283)
+      0,        -- 173: push_frame
+      5, 213,   -- 174: get_slot_direct(213)
+      15,       -- 176: dup
+      7, 69,    -- 177: get_slot_direct_check(69)
+      19,       -- 179: swap
+      0,        -- 180: push_frame
+      5, 203,   -- 181: get_slot_direct(203)
+      10, 1,    -- 183: invoke(1)
+      14,       -- 185: pop
+      0,        -- 186: push_frame
+      5, 253,   -- 187: get_slot_direct(253)
+      5, 287,   -- 189: get_slot_direct(287)
+      1, 76,    -- 191: push_literal(76)
+      23,       -- 193: bi_eq
+      20,       -- 194: un_not
+      13, 199,  -- 195: jmp_unless(199)
+      12, 215,  -- 197: jmp(215)
+      0,        -- 199: push_frame
+      5, 259,   -- 200: get_slot_direct(259)
+      0,        -- 202: push_frame
+      5, 26,    -- 203: get_slot_direct(26)
+      1, 76,    -- 205: push_literal(76)
+      10, 1,    -- 207: invoke(1)
+      14,       -- 209: pop
+      1, 115,   -- 210: push_literal(115)
+      20,       -- 212: un_not
+      13, 30,   -- 213: jmp_unless(30)
+      0,        -- 215: push_frame
+      5, 259,   -- 216: get_slot_direct(259)
+      0,        -- 218: push_frame
+      5, 26,    -- 219: get_slot_direct(26)
+      1, 299,   -- 221: push_literal(299)
+      10, 1,    -- 223: invoke(1)
+      14,       -- 225: pop
+      0,        -- 226: push_frame
+      5, 213,   -- 227: get_slot_direct(213)
+      11        -- 229: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 79,
+    nargs = 0,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 259,   -- 5: get_slot_direct(259)
       0,        -- 7: push_frame
-      5, 20,    -- 8: get_slot_direct(20)
-      1, 236,   -- 10: push_literal(236)
+      5, 26,    -- 8: get_slot_direct(26)
+      1, 297,   -- 10: push_literal(297)
       10, 1,    -- 12: invoke(1)
       14,       -- 14: pop
       0,        -- 15: push_frame
-      5, 20,    -- 16: get_slot_direct(20)
+      5, 26,    -- 16: get_slot_direct(26)
       0,        -- 18: push_frame
-      5, 199,   -- 19: get_slot_direct(199)
+      5, 260,   -- 19: get_slot_direct(260)
       0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
-      1, 6,     -- 24: push_literal(6)
+      5, 26,    -- 22: get_slot_direct(26)
+      1, 18,    -- 24: push_literal(18)
       10, 1,    -- 26: invoke(1)
-      8, 18,    -- 28: set_slot_direct(18)
+      8, 39,    -- 28: set_slot_direct(39)
       0,        -- 30: push_frame
-      5, 198,   -- 31: get_slot_direct(198)
+      5, 259,   -- 31: get_slot_direct(259)
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      1, 254,   -- 36: push_literal(254)
+      5, 26,    -- 34: get_slot_direct(26)
+      1, 313,   -- 36: push_literal(313)
       10, 1,    -- 38: invoke(1)
       14,       -- 40: pop
       0,        -- 41: push_frame
-      5, 20,    -- 42: get_slot_direct(20)
+      5, 26,    -- 42: get_slot_direct(26)
       0,        -- 44: push_frame
-      5, 72,    -- 45: get_slot_direct(72)
+      5, 91,    -- 45: get_slot_direct(91)
       0,        -- 47: push_frame
-      5, 20,    -- 48: get_slot_direct(20)
+      5, 26,    -- 48: get_slot_direct(26)
       10, 0,    -- 50: invoke(0)
-      1, 6,     -- 52: push_literal(6)
+      1, 18,    -- 52: push_literal(18)
       6,        -- 54: get_slot_indirect
-      8, 19,    -- 55: set_slot_direct(19)
+      8, 40,    -- 55: set_slot_direct(40)
       0,        -- 57: push_frame
-      5, 20,    -- 58: get_slot_direct(20)
-      1, 200,   -- 60: push_literal(200)
-      8, 222,   -- 62: set_slot_direct(222)
+      5, 253,   -- 58: get_slot_direct(253)
+      5, 287,   -- 60: get_slot_direct(287)
+      1, 314,   -- 62: push_literal(314)
+      23,       -- 64: bi_eq
+      13, 143,  -- 65: jmp_unless(143)
+      0,        -- 67: push_frame
+      5, 251,   -- 68: get_slot_direct(251)
+      15,       -- 70: dup
+      7, 284,   -- 71: get_slot_direct_check(284)
+      19,       -- 73: swap
+      0,        -- 74: push_frame
+      5, 253,   -- 75: get_slot_direct(253)
+      10, 1,    -- 77: invoke(1)
+      14,       -- 79: pop
+      0,        -- 80: push_frame
+      5, 259,   -- 81: get_slot_direct(259)
+      0,        -- 83: push_frame
+      5, 26,    -- 84: get_slot_direct(26)
+      1, 314,   -- 86: push_literal(314)
+      10, 1,    -- 88: invoke(1)
+      14,       -- 90: pop
+      0,        -- 91: push_frame
+      5, 26,    -- 92: get_slot_direct(26)
+      0,        -- 94: push_frame
+      5, 253,   -- 95: get_slot_direct(253)
+      5, 287,   -- 97: get_slot_direct(287)
+      1, 350,   -- 99: push_literal(350)
+      23,       -- 101: bi_eq
+      13, 128,  -- 102: jmp_unless(128)
+      2,        -- 104: new_object
+      15,       -- 105: dup
+      1, 91,    -- 106: push_literal(91)
+      8, 209,   -- 108: set_slot_direct(209)
+      15,       -- 110: dup
+      1, 261,   -- 111: push_literal(261)
+      8, 283,   -- 113: set_slot_direct(283)
+      15,       -- 115: dup
+      0,        -- 116: push_frame
+      5, 261,   -- 117: get_slot_direct(261)
+      0,        -- 119: push_frame
+      5, 26,    -- 120: get_slot_direct(26)
+      10, 0,    -- 122: invoke(0)
+      8, 39,    -- 124: set_slot_direct(39)
+      12, 139,  -- 126: jmp(139)
+      0,        -- 128: push_frame
+      5, 91,    -- 129: get_slot_direct(91)
+      0,        -- 131: push_frame
+      5, 26,    -- 132: get_slot_direct(26)
+      10, 0,    -- 134: invoke(0)
+      1, 18,    -- 136: push_literal(18)
+      6,        -- 138: get_slot_indirect
+      8, 323,   -- 139: set_slot_direct(323)
+      12, 150,  -- 141: jmp(150)
+      0,        -- 143: push_frame
+      5, 26,    -- 144: get_slot_direct(26)
+      1, 41,    -- 146: push_literal(41)
+      8, 323,   -- 148: set_slot_direct(323)
+      0,        -- 150: push_frame
+      5, 26,    -- 151: get_slot_direct(26)
+      1, 261,   -- 153: push_literal(261)
+      8, 283,   -- 155: set_slot_direct(283)
+      3,        -- 157: new_array
+      15,       -- 158: dup
+      0,        -- 159: push_frame
+      5, 26,    -- 160: get_slot_direct(26)
+      8, 18,    -- 162: set_slot_direct(18)
+      11        -- 164: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 80,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 253,   -- 5: get_slot_direct(253)
+      5, 287,   -- 7: get_slot_direct(287)
+      1, 299,   -- 9: push_literal(299)
+      23,       -- 11: bi_eq
+      20,       -- 12: un_not
+      13, 32,   -- 13: jmp_unless(32)
+      0,        -- 15: push_frame
+      5, 26,    -- 16: get_slot_direct(26)
+      0,        -- 18: push_frame
+      5, 260,   -- 19: get_slot_direct(260)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      1, 18,    -- 24: push_literal(18)
+      10, 1,    -- 26: invoke(1)
+      8, 39,    -- 28: set_slot_direct(39)
+      12, 39,   -- 30: jmp(39)
+      0,        -- 32: push_frame
+      5, 26,    -- 33: get_slot_direct(26)
+      1, 41,    -- 35: push_literal(41)
+      8, 39,    -- 37: set_slot_direct(39)
+      0,        -- 39: push_frame
+      5, 259,   -- 40: get_slot_direct(259)
+      0,        -- 42: push_frame
+      5, 26,    -- 43: get_slot_direct(26)
+      1, 299,   -- 45: push_literal(299)
+      10, 1,    -- 47: invoke(1)
+      14,       -- 49: pop
+      0,        -- 50: push_frame
+      5, 253,   -- 51: get_slot_direct(253)
+      5, 287,   -- 53: get_slot_direct(287)
+      1, 302,   -- 55: push_literal(302)
+      23,       -- 57: bi_eq
+      20,       -- 58: un_not
+      13, 75,   -- 59: jmp_unless(75)
+      0,        -- 61: push_frame
+      5, 200,   -- 62: get_slot_direct(200)
+      0,        -- 64: push_frame
+      5, 26,    -- 65: get_slot_direct(26)
+      0,        -- 67: push_frame
+      5, 253,   -- 68: get_slot_direct(253)
+      1, 352,   -- 70: push_literal(352)
+      10, 2,    -- 72: invoke(2)
+      14,       -- 74: pop
+      0,        -- 75: push_frame
+      5, 26,    -- 76: get_slot_direct(26)
+      1, 261,   -- 78: push_literal(261)
+      8, 283,   -- 80: set_slot_direct(283)
+      3,        -- 82: new_array
+      15,       -- 83: dup
+      0,        -- 84: push_frame
+      5, 26,    -- 85: get_slot_direct(26)
+      8, 18,    -- 87: set_slot_direct(18)
+      11        -- 89: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 81,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 259,   -- 5: get_slot_direct(259)
+      0,        -- 7: push_frame
+      5, 26,    -- 8: get_slot_direct(26)
+      1, 299,   -- 10: push_literal(299)
+      10, 1,    -- 12: invoke(1)
+      14,       -- 14: pop
+      0,        -- 15: push_frame
+      5, 253,   -- 16: get_slot_direct(253)
+      5, 287,   -- 18: get_slot_direct(287)
+      1, 302,   -- 20: push_literal(302)
+      23,       -- 22: bi_eq
+      20,       -- 23: un_not
+      13, 40,   -- 24: jmp_unless(40)
+      0,        -- 26: push_frame
+      5, 200,   -- 27: get_slot_direct(200)
+      0,        -- 29: push_frame
+      5, 26,    -- 30: get_slot_direct(26)
+      0,        -- 32: push_frame
+      5, 253,   -- 33: get_slot_direct(253)
+      1, 352,   -- 35: push_literal(352)
+      10, 2,    -- 37: invoke(2)
+      14,       -- 39: pop
+      0,        -- 40: push_frame
+      5, 26,    -- 41: get_slot_direct(26)
+      1, 261,   -- 43: push_literal(261)
+      8, 283,   -- 45: set_slot_direct(283)
+      3,        -- 47: new_array
+      15,       -- 48: dup
+      0,        -- 49: push_frame
+      5, 26,    -- 50: get_slot_direct(26)
+      8, 18,    -- 52: set_slot_direct(18)
+      11        -- 54: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 82,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      14,       -- 3: pop
+      0,        -- 4: push_frame
+      5, 259,   -- 5: get_slot_direct(259)
+      0,        -- 7: push_frame
+      5, 26,    -- 8: get_slot_direct(26)
+      1, 297,   -- 10: push_literal(297)
+      10, 1,    -- 12: invoke(1)
+      14,       -- 14: pop
+      0,        -- 15: push_frame
+      5, 26,    -- 16: get_slot_direct(26)
+      0,        -- 18: push_frame
+      5, 260,   -- 19: get_slot_direct(260)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      1, 18,    -- 24: push_literal(18)
+      10, 1,    -- 26: invoke(1)
+      8, 39,    -- 28: set_slot_direct(39)
+      0,        -- 30: push_frame
+      5, 259,   -- 31: get_slot_direct(259)
+      0,        -- 33: push_frame
+      5, 26,    -- 34: get_slot_direct(26)
+      1, 313,   -- 36: push_literal(313)
+      10, 1,    -- 38: invoke(1)
+      14,       -- 40: pop
+      0,        -- 41: push_frame
+      5, 26,    -- 42: get_slot_direct(26)
+      0,        -- 44: push_frame
+      5, 91,    -- 45: get_slot_direct(91)
+      0,        -- 47: push_frame
+      5, 26,    -- 48: get_slot_direct(26)
+      10, 0,    -- 50: invoke(0)
+      1, 18,    -- 52: push_literal(18)
+      6,        -- 54: get_slot_indirect
+      8, 40,    -- 55: set_slot_direct(40)
+      0,        -- 57: push_frame
+      5, 26,    -- 58: get_slot_direct(26)
+      1, 261,   -- 60: push_literal(261)
+      8, 283,   -- 62: set_slot_direct(283)
       3,        -- 64: new_array
       15,       -- 65: dup
       0,        -- 66: push_frame
-      5, 20,    -- 67: get_slot_direct(20)
-      8, 6,     -- 69: set_slot_direct(6)
+      5, 26,    -- 67: get_slot_direct(26)
+      8, 18,    -- 69: set_slot_direct(18)
       11        -- 71: return
     }
   },
   ifunc.Function:new{ -- "parse"
     name = jsval.newString("parse"),
-    id = 77,
+    id = 83,
     nargs = 3,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 299,   -- 8: set_slot_direct(299)
+      8, 354,   -- 8: set_slot_direct(354)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 300,   -- 15: set_slot_direct(300)
+      8, 355,   -- 15: set_slot_direct(355)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 301,   -- 22: set_slot_direct(301)
+      8, 356,   -- 22: set_slot_direct(356)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 224,   -- 28: set_slot_direct(224)
+      8, 285,   -- 28: set_slot_direct(285)
       0,        -- 30: push_frame
-      5, 93,    -- 31: get_slot_direct(93)
+      5, 114,   -- 31: get_slot_direct(114)
       0,        -- 33: push_frame
-      5, 301,   -- 34: get_slot_direct(301)
-      8, 125,   -- 36: set_slot_direct(125)
+      5, 356,   -- 34: get_slot_direct(356)
+      8, 197,   -- 36: set_slot_direct(197)
       0,        -- 38: push_frame
-      5, 93,    -- 39: get_slot_direct(93)
+      5, 114,   -- 39: get_slot_direct(114)
       0,        -- 41: push_frame
-      5, 119,   -- 42: get_slot_direct(119)
+      5, 192,   -- 42: get_slot_direct(192)
       0,        -- 44: push_frame
-      5, 20,    -- 45: get_slot_direct(20)
+      5, 26,    -- 45: get_slot_direct(26)
       0,        -- 47: push_frame
-      5, 299,   -- 48: get_slot_direct(299)
-      1, 302,   -- 50: push_literal(302)
-      1, 303,   -- 52: push_literal(303)
+      5, 354,   -- 48: get_slot_direct(354)
+      1, 357,   -- 50: push_literal(357)
+      1, 358,   -- 52: push_literal(358)
       10, 3,    -- 54: invoke(3)
-      8, 193,   -- 56: set_slot_direct(193)
+      8, 254,   -- 56: set_slot_direct(254)
       0,        -- 58: push_frame
-      5, 93,    -- 59: get_slot_direct(93)
-      1, 6,     -- 61: push_literal(6)
-      8, 194,   -- 63: set_slot_direct(194)
+      5, 114,   -- 59: get_slot_direct(114)
+      1, 18,    -- 61: push_literal(18)
+      8, 255,   -- 63: set_slot_direct(255)
       0,        -- 65: push_frame
-      5, 197,   -- 66: get_slot_direct(197)
+      5, 258,   -- 66: get_slot_direct(258)
       0,        -- 68: push_frame
-      5, 20,    -- 69: get_slot_direct(20)
+      5, 26,    -- 69: get_slot_direct(26)
       10, 0,    -- 71: invoke(0)
       14,       -- 73: pop
       0,        -- 74: push_frame
-      5, 300,   -- 75: get_slot_direct(300)
+      5, 355,   -- 75: get_slot_direct(355)
       13, 144,  -- 77: jmp_unless(144)
       0,        -- 79: push_frame
       1, 0,     -- 80: push_literal(0)
-      8, 37,    -- 82: set_slot_direct(37)
+      8, 53,    -- 82: set_slot_direct(53)
       0,        -- 84: push_frame
       0,        -- 85: push_frame
-      5, 119,   -- 86: get_slot_direct(119)
+      5, 192,   -- 86: get_slot_direct(192)
       0,        -- 88: push_frame
-      5, 20,    -- 89: get_slot_direct(20)
+      5, 26,    -- 89: get_slot_direct(26)
       0,        -- 91: push_frame
-      5, 300,   -- 92: get_slot_direct(300)
+      5, 355,   -- 92: get_slot_direct(355)
       10, 1,    -- 94: invoke(1)
-      8, 300,   -- 96: set_slot_direct(300)
+      8, 355,   -- 96: set_slot_direct(355)
       0,        -- 98: push_frame
-      1, 6,     -- 99: push_literal(6)
-      8, 37,    -- 101: set_slot_direct(37)
+      1, 18,    -- 99: push_literal(18)
+      8, 53,    -- 101: set_slot_direct(53)
       12, 131,  -- 103: jmp(131)
       0,        -- 105: push_frame
-      5, 190,   -- 106: get_slot_direct(190)
+      5, 251,   -- 106: get_slot_direct(251)
       15,       -- 108: dup
-      7, 118,   -- 109: get_slot_direct_check(118)
+      7, 191,   -- 109: get_slot_direct_check(191)
       19,       -- 111: swap
       0,        -- 112: push_frame
-      5, 300,   -- 113: get_slot_direct(300)
+      5, 355,   -- 113: get_slot_direct(355)
       0,        -- 115: push_frame
-      5, 37,    -- 116: get_slot_direct(37)
+      5, 53,    -- 116: get_slot_direct(53)
       6,        -- 118: get_slot_indirect
       10, 1,    -- 119: invoke(1)
       14,       -- 121: pop
       0,        -- 122: push_frame
       15,       -- 123: dup
-      5, 37,    -- 124: get_slot_direct(37)
-      1, 8,     -- 126: push_literal(8)
+      5, 53,    -- 124: get_slot_direct(53)
+      1, 31,    -- 126: push_literal(31)
       26,       -- 128: bi_add
-      8, 37,    -- 129: set_slot_direct(37)
+      8, 53,    -- 129: set_slot_direct(53)
       0,        -- 131: push_frame
-      5, 37,    -- 132: get_slot_direct(37)
+      5, 53,    -- 132: get_slot_direct(53)
       0,        -- 134: push_frame
-      5, 300,   -- 135: get_slot_direct(300)
-      5, 24,    -- 137: get_slot_direct(24)
+      5, 355,   -- 135: get_slot_direct(355)
+      5, 55,    -- 137: get_slot_direct(55)
       19,       -- 139: swap
       24,       -- 140: bi_gt
       20,       -- 141: un_not
       13, 105,  -- 142: jmp_unless(105)
       0,        -- 144: push_frame
-      5, 198,   -- 145: get_slot_direct(198)
+      5, 259,   -- 145: get_slot_direct(259)
       0,        -- 147: push_frame
-      5, 20,    -- 148: get_slot_direct(20)
+      5, 26,    -- 148: get_slot_direct(26)
       10, 0,    -- 150: invoke(0)
       14,       -- 152: pop
       0,        -- 153: push_frame
       0,        -- 154: push_frame
-      5, 202,   -- 155: get_slot_direct(202)
+      5, 263,   -- 155: get_slot_direct(263)
       0,        -- 157: push_frame
-      5, 20,    -- 158: get_slot_direct(20)
+      5, 26,    -- 158: get_slot_direct(26)
       10, 0,    -- 160: invoke(0)
-      8, 224,   -- 162: set_slot_direct(224)
+      8, 285,   -- 162: set_slot_direct(285)
       0,        -- 164: push_frame
-      5, 198,   -- 165: get_slot_direct(198)
+      5, 259,   -- 165: get_slot_direct(259)
       0,        -- 167: push_frame
-      5, 20,    -- 168: get_slot_direct(20)
-      1, 229,   -- 170: push_literal(229)
+      5, 26,    -- 168: get_slot_direct(26)
+      1, 290,   -- 170: push_literal(290)
       10, 1,    -- 172: invoke(1)
       14,       -- 174: pop
       0,        -- 175: push_frame
-      5, 190,   -- 176: get_slot_direct(190)
+      5, 251,   -- 176: get_slot_direct(251)
       15,       -- 178: dup
-      7, 54,    -- 179: get_slot_direct_check(54)
+      7, 71,    -- 179: get_slot_direct_check(71)
       19,       -- 181: swap
       10, 0,    -- 182: invoke(0)
       14,       -- 184: pop
       0,        -- 185: push_frame
-      5, 224,   -- 186: get_slot_direct(224)
+      5, 285,   -- 186: get_slot_direct(285)
       11        -- 188: return
     }
   },
   ifunc.Function:new{ -- "parse_repl"
     name = jsval.newString("parse_repl"),
-    id = 78,
+    id = 84,
     nargs = 4,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 299,   -- 15: set_slot_direct(299)
+      8, 354,   -- 15: set_slot_direct(354)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 300,   -- 22: set_slot_direct(300)
+      8, 355,   -- 22: set_slot_direct(355)
       15,       -- 24: dup
-      5, 124,   -- 25: get_slot_direct(124)
+      5, 153,   -- 25: get_slot_direct(153)
       0,        -- 27: push_frame
       19,       -- 28: swap
-      8, 301,   -- 29: set_slot_direct(301)
+      8, 356,   -- 29: set_slot_direct(356)
       14,       -- 31: pop
       0,        -- 32: push_frame
       1, 0,     -- 33: push_literal(0)
-      8, 305,   -- 35: set_slot_direct(305)
+      8, 360,   -- 35: set_slot_direct(360)
       0,        -- 37: push_frame
       1, 0,     -- 38: push_literal(0)
-      8, 306,   -- 40: set_slot_direct(306)
+      8, 361,   -- 40: set_slot_direct(361)
       0,        -- 42: push_frame
       1, 0,     -- 43: push_literal(0)
-      8, 307,   -- 45: set_slot_direct(307)
+      8, 362,   -- 45: set_slot_direct(362)
       0,        -- 47: push_frame
       1, 0,     -- 48: push_literal(0)
-      8, 308,   -- 50: set_slot_direct(308)
+      8, 363,   -- 50: set_slot_direct(363)
       0,        -- 52: push_frame
       1, 0,     -- 53: push_literal(0)
-      8, 309,   -- 55: set_slot_direct(309)
+      8, 364,   -- 55: set_slot_direct(364)
       0,        -- 57: push_frame
       1, 0,     -- 58: push_literal(0)
-      8, 310,   -- 60: set_slot_direct(310)
+      8, 365,   -- 60: set_slot_direct(365)
       0,        -- 62: push_frame
-      5, 93,    -- 63: get_slot_direct(93)
+      5, 114,   -- 63: get_slot_direct(114)
       0,        -- 65: push_frame
-      5, 301,   -- 66: get_slot_direct(301)
-      8, 125,   -- 68: set_slot_direct(125)
+      5, 356,   -- 66: get_slot_direct(356)
+      8, 197,   -- 68: set_slot_direct(197)
       0,        -- 70: push_frame
-      1, 302,   -- 71: push_literal(302)
-      8, 305,   -- 73: set_slot_direct(305)
+      1, 357,   -- 71: push_literal(357)
+      8, 360,   -- 73: set_slot_direct(360)
       0,        -- 75: push_frame
-      1, 303,   -- 76: push_literal(303)
-      8, 306,   -- 78: set_slot_direct(306)
+      1, 358,   -- 76: push_literal(358)
+      8, 361,   -- 78: set_slot_direct(361)
       0,        -- 80: push_frame
       0,        -- 81: push_frame
-      5, 190,   -- 82: get_slot_direct(190)
-      8, 307,   -- 84: set_slot_direct(307)
+      5, 251,   -- 82: get_slot_direct(251)
+      8, 362,   -- 84: set_slot_direct(362)
       0,        -- 86: push_frame
-      5, 304,   -- 87: get_slot_direct(304)
+      5, 359,   -- 87: get_slot_direct(359)
       13, 103,  -- 89: jmp_unless(103)
       0,        -- 91: push_frame
-      5, 93,    -- 92: get_slot_direct(93)
+      5, 114,   -- 92: get_slot_direct(114)
       0,        -- 94: push_frame
-      5, 304,   -- 95: get_slot_direct(304)
-      5, 190,   -- 97: get_slot_direct(190)
-      8, 190,   -- 99: set_slot_direct(190)
+      5, 359,   -- 95: get_slot_direct(359)
+      5, 251,   -- 97: get_slot_direct(251)
+      8, 251,   -- 99: set_slot_direct(251)
       12, 182,  -- 101: jmp(182)
       0,        -- 103: push_frame
-      5, 197,   -- 104: get_slot_direct(197)
+      5, 258,   -- 104: get_slot_direct(258)
       0,        -- 106: push_frame
-      5, 20,    -- 107: get_slot_direct(20)
+      5, 26,    -- 107: get_slot_direct(26)
       10, 0,    -- 109: invoke(0)
       14,       -- 111: pop
       0,        -- 112: push_frame
-      5, 300,   -- 113: get_slot_direct(300)
+      5, 355,   -- 113: get_slot_direct(355)
       13, 182,  -- 115: jmp_unless(182)
       0,        -- 117: push_frame
       1, 0,     -- 118: push_literal(0)
-      8, 37,    -- 120: set_slot_direct(37)
+      8, 53,    -- 120: set_slot_direct(53)
       0,        -- 122: push_frame
       0,        -- 123: push_frame
-      5, 119,   -- 124: get_slot_direct(119)
+      5, 192,   -- 124: get_slot_direct(192)
       0,        -- 126: push_frame
-      5, 20,    -- 127: get_slot_direct(20)
+      5, 26,    -- 127: get_slot_direct(26)
       0,        -- 129: push_frame
-      5, 300,   -- 130: get_slot_direct(300)
+      5, 355,   -- 130: get_slot_direct(355)
       10, 1,    -- 132: invoke(1)
-      8, 300,   -- 134: set_slot_direct(300)
+      8, 355,   -- 134: set_slot_direct(355)
       0,        -- 136: push_frame
-      1, 6,     -- 137: push_literal(6)
-      8, 37,    -- 139: set_slot_direct(37)
+      1, 18,    -- 137: push_literal(18)
+      8, 53,    -- 139: set_slot_direct(53)
       12, 169,  -- 141: jmp(169)
       0,        -- 143: push_frame
-      5, 190,   -- 144: get_slot_direct(190)
+      5, 251,   -- 144: get_slot_direct(251)
       15,       -- 146: dup
-      7, 118,   -- 147: get_slot_direct_check(118)
+      7, 191,   -- 147: get_slot_direct_check(191)
       19,       -- 149: swap
       0,        -- 150: push_frame
-      5, 300,   -- 151: get_slot_direct(300)
+      5, 355,   -- 151: get_slot_direct(355)
       0,        -- 153: push_frame
-      5, 37,    -- 154: get_slot_direct(37)
+      5, 53,    -- 154: get_slot_direct(53)
       6,        -- 156: get_slot_indirect
       10, 1,    -- 157: invoke(1)
       14,       -- 159: pop
       0,        -- 160: push_frame
       15,       -- 161: dup
-      5, 37,    -- 162: get_slot_direct(37)
-      1, 8,     -- 164: push_literal(8)
+      5, 53,    -- 162: get_slot_direct(53)
+      1, 31,    -- 164: push_literal(31)
       26,       -- 166: bi_add
-      8, 37,    -- 167: set_slot_direct(37)
+      8, 53,    -- 167: set_slot_direct(53)
       0,        -- 169: push_frame
-      5, 37,    -- 170: get_slot_direct(37)
+      5, 53,    -- 170: get_slot_direct(53)
       0,        -- 172: push_frame
-      5, 300,   -- 173: get_slot_direct(300)
-      5, 24,    -- 175: get_slot_direct(24)
+      5, 355,   -- 173: get_slot_direct(355)
+      5, 55,    -- 175: get_slot_direct(55)
       19,       -- 177: swap
       24,       -- 178: bi_gt
       20,       -- 179: un_not
@@ -7947,98 +8844,98 @@ startup.functions = {
       2,        -- 183: new_object
       15,       -- 184: dup
       0,        -- 185: push_frame
-      5, 190,   -- 186: get_slot_direct(190)
-      8, 190,   -- 188: set_slot_direct(190)
-      8, 308,   -- 190: set_slot_direct(308)
+      5, 251,   -- 186: get_slot_direct(251)
+      8, 251,   -- 188: set_slot_direct(251)
+      8, 363,   -- 190: set_slot_direct(363)
       0,        -- 192: push_frame
       0,        -- 193: push_frame
-      5, 119,   -- 194: get_slot_direct(119)
+      5, 192,   -- 194: get_slot_direct(192)
       0,        -- 196: push_frame
-      5, 20,    -- 197: get_slot_direct(20)
+      5, 26,    -- 197: get_slot_direct(26)
       0,        -- 199: push_frame
-      5, 299,   -- 200: get_slot_direct(299)
+      5, 354,   -- 200: get_slot_direct(354)
       0,        -- 202: push_frame
-      5, 305,   -- 203: get_slot_direct(305)
+      5, 360,   -- 203: get_slot_direct(360)
       0,        -- 205: push_frame
-      5, 306,   -- 206: get_slot_direct(306)
+      5, 361,   -- 206: get_slot_direct(361)
       10, 3,    -- 208: invoke(3)
-      8, 309,   -- 210: set_slot_direct(309)
+      8, 364,   -- 210: set_slot_direct(364)
       0,        -- 212: push_frame
-      5, 4,     -- 213: get_slot_direct(4)
+      5, 15,    -- 213: get_slot_direct(15)
       15,       -- 215: dup
-      7, 311,   -- 216: get_slot_direct_check(311)
+      7, 366,   -- 216: get_slot_direct_check(366)
       19,       -- 218: swap
       0,        -- 219: push_frame
-      5, 20,    -- 220: get_slot_direct(20)
-      4, 79,    -- 222: new_function(79)
-      4, 80,    -- 224: new_function(80)
+      5, 26,    -- 220: get_slot_direct(26)
+      4, 85,    -- 222: new_function(85)
+      4, 86,    -- 224: new_function(86)
       10, 3,    -- 226: invoke(3)
       14,       -- 228: pop
       0,        -- 229: push_frame
-      5, 310,   -- 230: get_slot_direct(310)
+      5, 365,   -- 230: get_slot_direct(365)
       20,       -- 232: un_not
       13, 300,  -- 233: jmp_unless(300)
       0,        -- 235: push_frame
       1, 0,     -- 236: push_literal(0)
-      8, 224,   -- 238: set_slot_direct(224)
+      8, 285,   -- 238: set_slot_direct(285)
       0,        -- 240: push_frame
-      5, 93,    -- 241: get_slot_direct(93)
+      5, 114,   -- 241: get_slot_direct(114)
       0,        -- 243: push_frame
-      5, 309,   -- 244: get_slot_direct(309)
-      8, 193,   -- 246: set_slot_direct(193)
+      5, 364,   -- 244: get_slot_direct(364)
+      8, 254,   -- 246: set_slot_direct(254)
       0,        -- 248: push_frame
-      5, 93,    -- 249: get_slot_direct(93)
-      1, 6,     -- 251: push_literal(6)
-      8, 194,   -- 253: set_slot_direct(194)
+      5, 114,   -- 249: get_slot_direct(114)
+      1, 18,    -- 251: push_literal(18)
+      8, 255,   -- 253: set_slot_direct(255)
       0,        -- 255: push_frame
-      5, 198,   -- 256: get_slot_direct(198)
+      5, 259,   -- 256: get_slot_direct(259)
       0,        -- 258: push_frame
-      5, 20,    -- 259: get_slot_direct(20)
+      5, 26,    -- 259: get_slot_direct(26)
       10, 0,    -- 261: invoke(0)
       14,       -- 263: pop
       0,        -- 264: push_frame
       0,        -- 265: push_frame
-      5, 202,   -- 266: get_slot_direct(202)
+      5, 263,   -- 266: get_slot_direct(263)
       0,        -- 268: push_frame
-      5, 20,    -- 269: get_slot_direct(20)
+      5, 26,    -- 269: get_slot_direct(26)
       10, 0,    -- 271: invoke(0)
-      8, 224,   -- 273: set_slot_direct(224)
+      8, 285,   -- 273: set_slot_direct(285)
       0,        -- 275: push_frame
-      5, 198,   -- 276: get_slot_direct(198)
+      5, 259,   -- 276: get_slot_direct(259)
       0,        -- 278: push_frame
-      5, 20,    -- 279: get_slot_direct(20)
-      1, 229,   -- 281: push_literal(229)
+      5, 26,    -- 279: get_slot_direct(26)
+      1, 290,   -- 281: push_literal(290)
       10, 1,    -- 283: invoke(1)
       14,       -- 285: pop
       0,        -- 286: push_frame
       0,        -- 287: push_frame
-      5, 224,   -- 288: get_slot_direct(224)
-      8, 310,   -- 290: set_slot_direct(310)
+      5, 285,   -- 288: get_slot_direct(285)
+      8, 365,   -- 290: set_slot_direct(365)
       0,        -- 292: push_frame
-      5, 308,   -- 293: get_slot_direct(308)
+      5, 363,   -- 293: get_slot_direct(363)
       0,        -- 295: push_frame
-      5, 190,   -- 296: get_slot_direct(190)
-      8, 190,   -- 298: set_slot_direct(190)
+      5, 251,   -- 296: get_slot_direct(251)
+      8, 251,   -- 298: set_slot_direct(251)
       0,        -- 300: push_frame
-      5, 93,    -- 301: get_slot_direct(93)
+      5, 114,   -- 301: get_slot_direct(114)
       0,        -- 303: push_frame
-      5, 307,   -- 304: get_slot_direct(307)
-      8, 190,   -- 306: set_slot_direct(190)
+      5, 362,   -- 304: get_slot_direct(362)
+      8, 251,   -- 306: set_slot_direct(251)
       2,        -- 308: new_object
       15,       -- 309: dup
       0,        -- 310: push_frame
-      5, 308,   -- 311: get_slot_direct(308)
-      8, 304,   -- 313: set_slot_direct(304)
+      5, 363,   -- 311: get_slot_direct(363)
+      8, 359,   -- 313: set_slot_direct(359)
       15,       -- 315: dup
       0,        -- 316: push_frame
-      5, 310,   -- 317: get_slot_direct(310)
-      8, 310,   -- 319: set_slot_direct(310)
+      5, 365,   -- 317: get_slot_direct(365)
+      8, 365,   -- 319: set_slot_direct(365)
       11        -- 321: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 79,
+    id = 85,
     nargs = 0,
     max_stack = 6,
     bytecode = {
@@ -8047,590 +8944,590 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 68,    -- 7: set_slot_direct(68)
+      8, 87,    -- 7: set_slot_direct(87)
       0,        -- 9: push_frame
-      5, 93,    -- 10: get_slot_direct(93)
-      5, 93,    -- 12: get_slot_direct(93)
+      5, 114,   -- 10: get_slot_direct(114)
+      5, 114,   -- 12: get_slot_direct(114)
       0,        -- 14: push_frame
-      5, 309,   -- 15: get_slot_direct(309)
-      8, 193,   -- 17: set_slot_direct(193)
+      5, 364,   -- 15: get_slot_direct(364)
+      8, 254,   -- 17: set_slot_direct(254)
       0,        -- 19: push_frame
-      5, 93,    -- 20: get_slot_direct(93)
-      5, 93,    -- 22: get_slot_direct(93)
-      1, 6,     -- 24: push_literal(6)
-      8, 194,   -- 26: set_slot_direct(194)
+      5, 114,   -- 20: get_slot_direct(114)
+      5, 114,   -- 22: get_slot_direct(114)
+      1, 18,    -- 24: push_literal(18)
+      8, 255,   -- 26: set_slot_direct(255)
       0,        -- 28: push_frame
-      5, 198,   -- 29: get_slot_direct(198)
+      5, 259,   -- 29: get_slot_direct(259)
       0,        -- 31: push_frame
-      5, 20,    -- 32: get_slot_direct(20)
+      5, 26,    -- 32: get_slot_direct(26)
       10, 0,    -- 34: invoke(0)
       14,       -- 36: pop
       0,        -- 37: push_frame
       0,        -- 38: push_frame
-      5, 199,   -- 39: get_slot_direct(199)
+      5, 260,   -- 39: get_slot_direct(260)
       0,        -- 41: push_frame
-      5, 20,    -- 42: get_slot_direct(20)
-      1, 6,     -- 44: push_literal(6)
+      5, 26,    -- 42: get_slot_direct(26)
+      1, 18,    -- 44: push_literal(18)
       10, 1,    -- 46: invoke(1)
-      8, 68,    -- 48: set_slot_direct(68)
+      8, 87,    -- 48: set_slot_direct(87)
       0,        -- 50: push_frame
-      5, 198,   -- 51: get_slot_direct(198)
+      5, 259,   -- 51: get_slot_direct(259)
       0,        -- 53: push_frame
-      5, 20,    -- 54: get_slot_direct(20)
-      1, 229,   -- 56: push_literal(229)
+      5, 26,    -- 54: get_slot_direct(26)
+      1, 290,   -- 56: push_literal(290)
       10, 1,    -- 58: invoke(1)
       14,       -- 60: pop
       0,        -- 61: push_frame
-      5, 93,    -- 62: get_slot_direct(93)
+      5, 114,   -- 62: get_slot_direct(114)
       3,        -- 64: new_array
       15,       -- 65: dup
       2,        -- 66: new_object
       15,       -- 67: dup
-      1, 296,   -- 68: push_literal(296)
-      8, 139,   -- 70: set_slot_direct(139)
+      1, 351,   -- 68: push_literal(351)
+      8, 209,   -- 70: set_slot_direct(209)
       15,       -- 72: dup
-      1, 200,   -- 73: push_literal(200)
-      8, 222,   -- 75: set_slot_direct(222)
+      1, 261,   -- 73: push_literal(261)
+      8, 283,   -- 75: set_slot_direct(283)
       15,       -- 77: dup
       0,        -- 78: push_frame
-      5, 68,    -- 79: get_slot_direct(68)
-      8, 18,    -- 81: set_slot_direct(18)
-      8, 6,     -- 83: set_slot_direct(6)
-      8, 310,   -- 85: set_slot_direct(310)
+      5, 87,    -- 79: get_slot_direct(87)
+      8, 39,    -- 81: set_slot_direct(39)
+      8, 18,    -- 83: set_slot_direct(18)
+      8, 365,   -- 85: set_slot_direct(365)
       0,        -- 87: push_frame
-      5, 308,   -- 88: get_slot_direct(308)
+      5, 363,   -- 88: get_slot_direct(363)
       0,        -- 90: push_frame
-      5, 190,   -- 91: get_slot_direct(190)
-      8, 190,   -- 93: set_slot_direct(190)
+      5, 251,   -- 91: get_slot_direct(251)
+      8, 251,   -- 93: set_slot_direct(251)
       1, 0,     -- 95: push_literal(0)
       11        -- 97: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 80,
+    id = 86,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 312,   -- 8: set_slot_direct(312)
+      8, 367,   -- 8: set_slot_direct(367)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 93,    -- 12: get_slot_direct(93)
+      5, 114,   -- 12: get_slot_direct(114)
       0,        -- 14: push_frame
-      5, 119,   -- 15: get_slot_direct(119)
+      5, 192,   -- 15: get_slot_direct(192)
       0,        -- 17: push_frame
-      5, 20,    -- 18: get_slot_direct(20)
+      5, 26,    -- 18: get_slot_direct(26)
       0,        -- 20: push_frame
-      5, 299,   -- 21: get_slot_direct(299)
+      5, 354,   -- 21: get_slot_direct(354)
       0,        -- 23: push_frame
-      5, 305,   -- 24: get_slot_direct(305)
+      5, 360,   -- 24: get_slot_direct(360)
       0,        -- 26: push_frame
-      5, 306,   -- 27: get_slot_direct(306)
+      5, 361,   -- 27: get_slot_direct(361)
       10, 3,    -- 29: invoke(3)
-      8, 309,   -- 31: set_slot_direct(309)
+      8, 364,   -- 31: set_slot_direct(364)
       1, 0,     -- 33: push_literal(0)
       11        -- 35: return
     }
   },
   ifunc.Function:new{ -- "make_bytecode_table"
     name = jsval.newString("make_bytecode_table"),
-    id = 81,
+    id = 87,
     nargs = 1,
     max_stack = 7,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 318,   -- 8: set_slot_direct(318)
+      8, 373,   -- 8: set_slot_direct(373)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 319,   -- 14: set_slot_direct(319)
+      8, 374,   -- 14: set_slot_direct(374)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 320,   -- 19: set_slot_direct(320)
+      8, 375,   -- 19: set_slot_direct(375)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 321,   -- 24: set_slot_direct(321)
+      8, 376,   -- 24: set_slot_direct(376)
       0,        -- 26: push_frame
       1, 0,     -- 27: push_literal(0)
-      8, 322,   -- 29: set_slot_direct(322)
+      8, 377,   -- 29: set_slot_direct(377)
       0,        -- 31: push_frame
       1, 0,     -- 32: push_literal(0)
-      8, 323,   -- 34: set_slot_direct(323)
+      8, 378,   -- 34: set_slot_direct(378)
       0,        -- 36: push_frame
       3,        -- 37: new_array
-      8, 319,   -- 38: set_slot_direct(319)
+      8, 374,   -- 38: set_slot_direct(374)
       0,        -- 40: push_frame
       2,        -- 41: new_object
-      8, 320,   -- 42: set_slot_direct(320)
+      8, 375,   -- 42: set_slot_direct(375)
       0,        -- 44: push_frame
-      4, 82,    -- 45: new_function(82)
-      8, 321,   -- 47: set_slot_direct(321)
+      4, 88,    -- 45: new_function(88)
+      8, 376,   -- 47: set_slot_direct(376)
       0,        -- 49: push_frame
-      4, 86,    -- 50: new_function(86)
-      8, 322,   -- 52: set_slot_direct(322)
+      4, 92,    -- 50: new_function(92)
+      8, 377,   -- 52: set_slot_direct(377)
       0,        -- 54: push_frame
-      4, 87,    -- 55: new_function(87)
-      8, 323,   -- 57: set_slot_direct(323)
+      4, 93,    -- 55: new_function(93)
+      8, 378,   -- 57: set_slot_direct(378)
       0,        -- 59: push_frame
-      5, 321,   -- 60: get_slot_direct(321)
+      5, 376,   -- 60: get_slot_direct(376)
       0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
-      1, 337,   -- 65: push_literal(337)
-      1, 6,     -- 67: push_literal(6)
-      1, 6,     -- 69: push_literal(6)
-      1, 8,     -- 71: push_literal(8)
+      5, 26,    -- 63: get_slot_direct(26)
+      1, 392,   -- 65: push_literal(392)
+      1, 18,    -- 67: push_literal(18)
+      1, 18,    -- 69: push_literal(18)
+      1, 31,    -- 71: push_literal(31)
       10, 4,    -- 73: invoke(4)
       14,       -- 75: pop
       0,        -- 76: push_frame
-      5, 321,   -- 77: get_slot_direct(321)
+      5, 376,   -- 77: get_slot_direct(376)
       0,        -- 79: push_frame
-      5, 20,    -- 80: get_slot_direct(20)
-      1, 338,   -- 82: push_literal(338)
-      1, 8,     -- 84: push_literal(8)
-      1, 6,     -- 86: push_literal(6)
-      1, 8,     -- 88: push_literal(8)
+      5, 26,    -- 80: get_slot_direct(26)
+      1, 393,   -- 82: push_literal(393)
+      1, 31,    -- 84: push_literal(31)
+      1, 18,    -- 86: push_literal(18)
+      1, 31,    -- 88: push_literal(31)
       0,        -- 90: push_frame
-      5, 322,   -- 91: get_slot_direct(322)
+      5, 377,   -- 91: get_slot_direct(377)
       10, 5,    -- 93: invoke(5)
       14,       -- 95: pop
       0,        -- 96: push_frame
-      5, 321,   -- 97: get_slot_direct(321)
+      5, 376,   -- 97: get_slot_direct(376)
       0,        -- 99: push_frame
-      5, 20,    -- 100: get_slot_direct(20)
-      1, 339,   -- 102: push_literal(339)
-      1, 6,     -- 104: push_literal(6)
-      1, 6,     -- 106: push_literal(6)
-      1, 8,     -- 108: push_literal(8)
+      5, 26,    -- 100: get_slot_direct(26)
+      1, 394,   -- 102: push_literal(394)
+      1, 18,    -- 104: push_literal(18)
+      1, 18,    -- 106: push_literal(18)
+      1, 31,    -- 108: push_literal(31)
       10, 4,    -- 110: invoke(4)
       14,       -- 112: pop
       0,        -- 113: push_frame
-      5, 321,   -- 114: get_slot_direct(321)
+      5, 376,   -- 114: get_slot_direct(376)
       0,        -- 116: push_frame
-      5, 20,    -- 117: get_slot_direct(20)
-      1, 340,   -- 119: push_literal(340)
-      1, 6,     -- 121: push_literal(6)
-      1, 6,     -- 123: push_literal(6)
-      1, 8,     -- 125: push_literal(8)
+      5, 26,    -- 117: get_slot_direct(26)
+      1, 395,   -- 119: push_literal(395)
+      1, 18,    -- 121: push_literal(18)
+      1, 18,    -- 123: push_literal(18)
+      1, 31,    -- 125: push_literal(31)
       10, 4,    -- 127: invoke(4)
       14,       -- 129: pop
       0,        -- 130: push_frame
-      5, 321,   -- 131: get_slot_direct(321)
+      5, 376,   -- 131: get_slot_direct(376)
       0,        -- 133: push_frame
-      5, 20,    -- 134: get_slot_direct(20)
-      1, 341,   -- 136: push_literal(341)
-      1, 8,     -- 138: push_literal(8)
-      1, 6,     -- 140: push_literal(6)
-      1, 8,     -- 142: push_literal(8)
+      5, 26,    -- 134: get_slot_direct(26)
+      1, 396,   -- 136: push_literal(396)
+      1, 31,    -- 138: push_literal(31)
+      1, 18,    -- 140: push_literal(18)
+      1, 31,    -- 142: push_literal(31)
       10, 4,    -- 144: invoke(4)
       14,       -- 146: pop
       0,        -- 147: push_frame
-      5, 321,   -- 148: get_slot_direct(321)
+      5, 376,   -- 148: get_slot_direct(376)
       0,        -- 150: push_frame
-      5, 20,    -- 151: get_slot_direct(20)
-      1, 342,   -- 153: push_literal(342)
-      1, 8,     -- 155: push_literal(8)
-      1, 8,     -- 157: push_literal(8)
-      1, 8,     -- 159: push_literal(8)
+      5, 26,    -- 151: get_slot_direct(26)
+      1, 397,   -- 153: push_literal(397)
+      1, 31,    -- 155: push_literal(31)
+      1, 31,    -- 157: push_literal(31)
+      1, 31,    -- 159: push_literal(31)
       0,        -- 161: push_frame
-      5, 322,   -- 162: get_slot_direct(322)
+      5, 377,   -- 162: get_slot_direct(377)
       10, 5,    -- 164: invoke(5)
       14,       -- 166: pop
       0,        -- 167: push_frame
-      5, 321,   -- 168: get_slot_direct(321)
+      5, 376,   -- 168: get_slot_direct(376)
       0,        -- 170: push_frame
-      5, 20,    -- 171: get_slot_direct(20)
-      1, 343,   -- 173: push_literal(343)
-      1, 6,     -- 175: push_literal(6)
-      1, 108,   -- 177: push_literal(108)
-      1, 8,     -- 179: push_literal(8)
+      5, 26,    -- 171: get_slot_direct(26)
+      1, 398,   -- 173: push_literal(398)
+      1, 18,    -- 175: push_literal(18)
+      1, 130,   -- 177: push_literal(130)
+      1, 31,    -- 179: push_literal(31)
       10, 4,    -- 181: invoke(4)
       14,       -- 183: pop
       0,        -- 184: push_frame
-      5, 321,   -- 185: get_slot_direct(321)
+      5, 376,   -- 185: get_slot_direct(376)
       0,        -- 187: push_frame
-      5, 20,    -- 188: get_slot_direct(20)
-      1, 344,   -- 190: push_literal(344)
-      1, 8,     -- 192: push_literal(8)
-      1, 8,     -- 194: push_literal(8)
-      1, 8,     -- 196: push_literal(8)
+      5, 26,    -- 188: get_slot_direct(26)
+      1, 399,   -- 190: push_literal(399)
+      1, 31,    -- 192: push_literal(31)
+      1, 31,    -- 194: push_literal(31)
+      1, 31,    -- 196: push_literal(31)
       0,        -- 198: push_frame
-      5, 322,   -- 199: get_slot_direct(322)
+      5, 377,   -- 199: get_slot_direct(377)
       10, 5,    -- 201: invoke(5)
       14,       -- 203: pop
       0,        -- 204: push_frame
-      5, 321,   -- 205: get_slot_direct(321)
+      5, 376,   -- 205: get_slot_direct(376)
       0,        -- 207: push_frame
-      5, 20,    -- 208: get_slot_direct(20)
-      1, 345,   -- 210: push_literal(345)
-      1, 8,     -- 212: push_literal(8)
-      1, 108,   -- 214: push_literal(108)
-      1, 6,     -- 216: push_literal(6)
+      5, 26,    -- 208: get_slot_direct(26)
+      1, 400,   -- 210: push_literal(400)
+      1, 31,    -- 212: push_literal(31)
+      1, 130,   -- 214: push_literal(130)
+      1, 18,    -- 216: push_literal(18)
       0,        -- 218: push_frame
-      5, 322,   -- 219: get_slot_direct(322)
+      5, 377,   -- 219: get_slot_direct(377)
       10, 5,    -- 221: invoke(5)
       14,       -- 223: pop
       0,        -- 224: push_frame
-      5, 321,   -- 225: get_slot_direct(321)
+      5, 376,   -- 225: get_slot_direct(376)
       0,        -- 227: push_frame
-      5, 20,    -- 228: get_slot_direct(20)
-      1, 346,   -- 230: push_literal(346)
-      1, 6,     -- 232: push_literal(6)
-      1, 124,   -- 234: push_literal(124)
-      1, 6,     -- 236: push_literal(6)
+      5, 26,    -- 228: get_slot_direct(26)
+      1, 401,   -- 230: push_literal(401)
+      1, 18,    -- 232: push_literal(18)
+      1, 153,   -- 234: push_literal(153)
+      1, 18,    -- 236: push_literal(18)
       10, 4,    -- 238: invoke(4)
       14,       -- 240: pop
       0,        -- 241: push_frame
-      5, 321,   -- 242: get_slot_direct(321)
+      5, 376,   -- 242: get_slot_direct(376)
       0,        -- 244: push_frame
-      5, 20,    -- 245: get_slot_direct(20)
-      1, 347,   -- 247: push_literal(347)
-      1, 8,     -- 249: push_literal(8)
-      4, 88,    -- 251: new_function(88)
-      1, 8,     -- 253: push_literal(8)
+      5, 26,    -- 245: get_slot_direct(26)
+      1, 402,   -- 247: push_literal(402)
+      1, 31,    -- 249: push_literal(31)
+      4, 94,    -- 251: new_function(94)
+      1, 31,    -- 253: push_literal(31)
       10, 4,    -- 255: invoke(4)
       14,       -- 257: pop
       0,        -- 258: push_frame
-      5, 321,   -- 259: get_slot_direct(321)
+      5, 376,   -- 259: get_slot_direct(376)
       0,        -- 261: push_frame
-      5, 20,    -- 262: get_slot_direct(20)
-      1, 296,   -- 264: push_literal(296)
-      1, 6,     -- 266: push_literal(6)
-      1, 8,     -- 268: push_literal(8)
-      1, 6,     -- 270: push_literal(6)
+      5, 26,    -- 262: get_slot_direct(26)
+      1, 351,   -- 264: push_literal(351)
+      1, 18,    -- 266: push_literal(18)
+      1, 31,    -- 268: push_literal(31)
+      1, 18,    -- 270: push_literal(18)
       10, 4,    -- 272: invoke(4)
       14,       -- 274: pop
       0,        -- 275: push_frame
-      5, 321,   -- 276: get_slot_direct(321)
+      5, 376,   -- 276: get_slot_direct(376)
       0,        -- 278: push_frame
-      5, 20,    -- 279: get_slot_direct(20)
-      1, 350,   -- 281: push_literal(350)
-      1, 8,     -- 283: push_literal(8)
-      1, 6,     -- 285: push_literal(6)
-      1, 6,     -- 287: push_literal(6)
+      5, 26,    -- 279: get_slot_direct(26)
+      1, 405,   -- 281: push_literal(405)
+      1, 31,    -- 283: push_literal(31)
+      1, 18,    -- 285: push_literal(18)
+      1, 18,    -- 287: push_literal(18)
       0,        -- 289: push_frame
-      5, 323,   -- 290: get_slot_direct(323)
+      5, 378,   -- 290: get_slot_direct(378)
       10, 5,    -- 292: invoke(5)
       14,       -- 294: pop
       0,        -- 295: push_frame
-      5, 321,   -- 296: get_slot_direct(321)
+      5, 376,   -- 296: get_slot_direct(376)
       0,        -- 298: push_frame
-      5, 20,    -- 299: get_slot_direct(20)
-      1, 351,   -- 301: push_literal(351)
-      1, 8,     -- 303: push_literal(8)
-      1, 8,     -- 305: push_literal(8)
-      1, 6,     -- 307: push_literal(6)
+      5, 26,    -- 299: get_slot_direct(26)
+      1, 406,   -- 301: push_literal(406)
+      1, 31,    -- 303: push_literal(31)
+      1, 31,    -- 305: push_literal(31)
+      1, 18,    -- 307: push_literal(18)
       0,        -- 309: push_frame
-      5, 323,   -- 310: get_slot_direct(323)
+      5, 378,   -- 310: get_slot_direct(378)
       10, 5,    -- 312: invoke(5)
       14,       -- 314: pop
       0,        -- 315: push_frame
-      5, 321,   -- 316: get_slot_direct(321)
+      5, 376,   -- 316: get_slot_direct(376)
       0,        -- 318: push_frame
-      5, 20,    -- 319: get_slot_direct(20)
-      1, 54,    -- 321: push_literal(54)
-      1, 6,     -- 323: push_literal(6)
-      1, 8,     -- 325: push_literal(8)
-      1, 6,     -- 327: push_literal(6)
+      5, 26,    -- 319: get_slot_direct(26)
+      1, 71,    -- 321: push_literal(71)
+      1, 18,    -- 323: push_literal(18)
+      1, 31,    -- 325: push_literal(31)
+      1, 18,    -- 327: push_literal(18)
       10, 4,    -- 329: invoke(4)
       14,       -- 331: pop
       0,        -- 332: push_frame
-      5, 321,   -- 333: get_slot_direct(321)
+      5, 376,   -- 333: get_slot_direct(376)
       0,        -- 335: push_frame
-      5, 20,    -- 336: get_slot_direct(20)
-      1, 352,   -- 338: push_literal(352)
-      1, 6,     -- 340: push_literal(6)
-      1, 8,     -- 342: push_literal(8)
-      1, 108,   -- 344: push_literal(108)
+      5, 26,    -- 336: get_slot_direct(26)
+      1, 407,   -- 338: push_literal(407)
+      1, 18,    -- 340: push_literal(18)
+      1, 31,    -- 342: push_literal(31)
+      1, 130,   -- 344: push_literal(130)
       10, 4,    -- 346: invoke(4)
       14,       -- 348: pop
       0,        -- 349: push_frame
-      5, 321,   -- 350: get_slot_direct(321)
+      5, 376,   -- 350: get_slot_direct(376)
       0,        -- 352: push_frame
-      5, 20,    -- 353: get_slot_direct(20)
-      1, 353,   -- 355: push_literal(353)
-      1, 6,     -- 357: push_literal(6)
-      1, 108,   -- 359: push_literal(108)
-      1, 178,   -- 361: push_literal(178)
+      5, 26,    -- 353: get_slot_direct(26)
+      1, 408,   -- 355: push_literal(408)
+      1, 18,    -- 357: push_literal(18)
+      1, 130,   -- 359: push_literal(130)
+      1, 156,   -- 361: push_literal(156)
       10, 4,    -- 363: invoke(4)
       14,       -- 365: pop
       0,        -- 366: push_frame
-      5, 321,   -- 367: get_slot_direct(321)
+      5, 376,   -- 367: get_slot_direct(376)
       0,        -- 369: push_frame
-      5, 20,    -- 370: get_slot_direct(20)
-      1, 354,   -- 372: push_literal(354)
-      1, 6,     -- 374: push_literal(6)
-      1, 108,   -- 376: push_literal(108)
-      1, 124,   -- 378: push_literal(124)
+      5, 26,    -- 370: get_slot_direct(26)
+      1, 409,   -- 372: push_literal(409)
+      1, 18,    -- 374: push_literal(18)
+      1, 130,   -- 376: push_literal(130)
+      1, 153,   -- 378: push_literal(153)
       10, 4,    -- 380: invoke(4)
       14,       -- 382: pop
       0,        -- 383: push_frame
-      5, 321,   -- 384: get_slot_direct(321)
+      5, 376,   -- 384: get_slot_direct(376)
       0,        -- 386: push_frame
-      5, 20,    -- 387: get_slot_direct(20)
-      1, 355,   -- 389: push_literal(355)
-      1, 6,     -- 391: push_literal(6)
-      1, 124,   -- 393: push_literal(124)
-      1, 178,   -- 395: push_literal(178)
+      5, 26,    -- 387: get_slot_direct(26)
+      1, 410,   -- 389: push_literal(410)
+      1, 18,    -- 391: push_literal(18)
+      1, 153,   -- 393: push_literal(153)
+      1, 156,   -- 395: push_literal(156)
       10, 4,    -- 397: invoke(4)
       14,       -- 399: pop
       0,        -- 400: push_frame
-      5, 321,   -- 401: get_slot_direct(321)
+      5, 376,   -- 401: get_slot_direct(376)
       0,        -- 403: push_frame
-      5, 20,    -- 404: get_slot_direct(20)
-      1, 356,   -- 406: push_literal(356)
-      1, 6,     -- 408: push_literal(6)
-      1, 108,   -- 410: push_literal(108)
-      1, 108,   -- 412: push_literal(108)
+      5, 26,    -- 404: get_slot_direct(26)
+      1, 411,   -- 406: push_literal(411)
+      1, 18,    -- 408: push_literal(18)
+      1, 130,   -- 410: push_literal(130)
+      1, 130,   -- 412: push_literal(130)
       10, 4,    -- 414: invoke(4)
       14,       -- 416: pop
       0,        -- 417: push_frame
-      5, 321,   -- 418: get_slot_direct(321)
+      5, 376,   -- 418: get_slot_direct(376)
       0,        -- 420: push_frame
-      5, 20,    -- 421: get_slot_direct(20)
-      1, 357,   -- 423: push_literal(357)
-      1, 6,     -- 425: push_literal(6)
-      1, 8,     -- 427: push_literal(8)
-      1, 8,     -- 429: push_literal(8)
+      5, 26,    -- 421: get_slot_direct(26)
+      1, 412,   -- 423: push_literal(412)
+      1, 18,    -- 425: push_literal(18)
+      1, 31,    -- 427: push_literal(31)
+      1, 31,    -- 429: push_literal(31)
       10, 4,    -- 431: invoke(4)
       14,       -- 433: pop
       0,        -- 434: push_frame
-      5, 321,   -- 435: get_slot_direct(321)
+      5, 376,   -- 435: get_slot_direct(376)
       0,        -- 437: push_frame
-      5, 20,    -- 438: get_slot_direct(20)
-      1, 358,   -- 440: push_literal(358)
-      1, 6,     -- 442: push_literal(6)
-      1, 8,     -- 444: push_literal(8)
-      1, 8,     -- 446: push_literal(8)
+      5, 26,    -- 438: get_slot_direct(26)
+      1, 413,   -- 440: push_literal(413)
+      1, 18,    -- 442: push_literal(18)
+      1, 31,    -- 444: push_literal(31)
+      1, 31,    -- 446: push_literal(31)
       10, 4,    -- 448: invoke(4)
       14,       -- 450: pop
       0,        -- 451: push_frame
-      5, 321,   -- 452: get_slot_direct(321)
+      5, 376,   -- 452: get_slot_direct(376)
       0,        -- 454: push_frame
-      5, 20,    -- 455: get_slot_direct(20)
-      1, 359,   -- 457: push_literal(359)
-      1, 6,     -- 459: push_literal(6)
-      1, 8,     -- 461: push_literal(8)
-      1, 8,     -- 463: push_literal(8)
+      5, 26,    -- 455: get_slot_direct(26)
+      1, 414,   -- 457: push_literal(414)
+      1, 18,    -- 459: push_literal(18)
+      1, 31,    -- 461: push_literal(31)
+      1, 31,    -- 463: push_literal(31)
       10, 4,    -- 465: invoke(4)
       14,       -- 467: pop
       0,        -- 468: push_frame
-      5, 321,   -- 469: get_slot_direct(321)
+      5, 376,   -- 469: get_slot_direct(376)
       0,        -- 471: push_frame
-      5, 20,    -- 472: get_slot_direct(20)
-      1, 360,   -- 474: push_literal(360)
-      1, 6,     -- 476: push_literal(6)
-      1, 108,   -- 478: push_literal(108)
-      1, 8,     -- 480: push_literal(8)
+      5, 26,    -- 472: get_slot_direct(26)
+      1, 415,   -- 474: push_literal(415)
+      1, 18,    -- 476: push_literal(18)
+      1, 130,   -- 478: push_literal(130)
+      1, 31,    -- 480: push_literal(31)
       10, 4,    -- 482: invoke(4)
       14,       -- 484: pop
       0,        -- 485: push_frame
-      5, 321,   -- 486: get_slot_direct(321)
+      5, 376,   -- 486: get_slot_direct(376)
       0,        -- 488: push_frame
-      5, 20,    -- 489: get_slot_direct(20)
-      1, 361,   -- 491: push_literal(361)
-      1, 6,     -- 493: push_literal(6)
-      1, 108,   -- 495: push_literal(108)
-      1, 8,     -- 497: push_literal(8)
+      5, 26,    -- 489: get_slot_direct(26)
+      1, 416,   -- 491: push_literal(416)
+      1, 18,    -- 493: push_literal(18)
+      1, 130,   -- 495: push_literal(130)
+      1, 31,    -- 497: push_literal(31)
       10, 4,    -- 499: invoke(4)
       14,       -- 501: pop
       0,        -- 502: push_frame
-      5, 321,   -- 503: get_slot_direct(321)
+      5, 376,   -- 503: get_slot_direct(376)
       0,        -- 505: push_frame
-      5, 20,    -- 506: get_slot_direct(20)
-      1, 362,   -- 508: push_literal(362)
-      1, 6,     -- 510: push_literal(6)
-      1, 108,   -- 512: push_literal(108)
-      1, 8,     -- 514: push_literal(8)
+      5, 26,    -- 506: get_slot_direct(26)
+      1, 417,   -- 508: push_literal(417)
+      1, 18,    -- 510: push_literal(18)
+      1, 130,   -- 512: push_literal(130)
+      1, 31,    -- 514: push_literal(31)
       10, 4,    -- 516: invoke(4)
       14,       -- 518: pop
       0,        -- 519: push_frame
-      5, 321,   -- 520: get_slot_direct(321)
+      5, 376,   -- 520: get_slot_direct(376)
       0,        -- 522: push_frame
-      5, 20,    -- 523: get_slot_direct(20)
-      1, 363,   -- 525: push_literal(363)
-      1, 6,     -- 527: push_literal(6)
-      1, 108,   -- 529: push_literal(108)
-      1, 8,     -- 531: push_literal(8)
+      5, 26,    -- 523: get_slot_direct(26)
+      1, 418,   -- 525: push_literal(418)
+      1, 18,    -- 527: push_literal(18)
+      1, 130,   -- 529: push_literal(130)
+      1, 31,    -- 531: push_literal(31)
       10, 4,    -- 533: invoke(4)
       14,       -- 535: pop
       0,        -- 536: push_frame
-      5, 321,   -- 537: get_slot_direct(321)
+      5, 376,   -- 537: get_slot_direct(376)
       0,        -- 539: push_frame
-      5, 20,    -- 540: get_slot_direct(20)
-      1, 364,   -- 542: push_literal(364)
-      1, 6,     -- 544: push_literal(6)
-      1, 108,   -- 546: push_literal(108)
-      1, 8,     -- 548: push_literal(8)
+      5, 26,    -- 540: get_slot_direct(26)
+      1, 419,   -- 542: push_literal(419)
+      1, 18,    -- 544: push_literal(18)
+      1, 130,   -- 546: push_literal(130)
+      1, 31,    -- 548: push_literal(31)
       10, 4,    -- 550: invoke(4)
       14,       -- 552: pop
       0,        -- 553: push_frame
-      5, 321,   -- 554: get_slot_direct(321)
+      5, 376,   -- 554: get_slot_direct(376)
       0,        -- 556: push_frame
-      5, 20,    -- 557: get_slot_direct(20)
-      1, 365,   -- 559: push_literal(365)
-      1, 6,     -- 561: push_literal(6)
-      1, 108,   -- 563: push_literal(108)
-      1, 8,     -- 565: push_literal(8)
+      5, 26,    -- 557: get_slot_direct(26)
+      1, 420,   -- 559: push_literal(420)
+      1, 18,    -- 561: push_literal(18)
+      1, 130,   -- 563: push_literal(130)
+      1, 31,    -- 565: push_literal(31)
       10, 4,    -- 567: invoke(4)
       14,       -- 569: pop
       0,        -- 570: push_frame
-      5, 321,   -- 571: get_slot_direct(321)
+      5, 376,   -- 571: get_slot_direct(376)
       0,        -- 573: push_frame
-      5, 20,    -- 574: get_slot_direct(20)
-      1, 366,   -- 576: push_literal(366)
-      1, 6,     -- 578: push_literal(6)
-      1, 108,   -- 580: push_literal(108)
-      1, 8,     -- 582: push_literal(8)
+      5, 26,    -- 574: get_slot_direct(26)
+      1, 421,   -- 576: push_literal(421)
+      1, 18,    -- 578: push_literal(18)
+      1, 130,   -- 580: push_literal(130)
+      1, 31,    -- 582: push_literal(31)
       10, 4,    -- 584: invoke(4)
       14,       -- 586: pop
       2,        -- 587: new_object
       15,       -- 588: dup
-      1, 316,   -- 589: push_literal(316)
-      8, 183,   -- 591: set_slot_direct(183)
+      1, 371,   -- 589: push_literal(371)
+      8, 244,   -- 591: set_slot_direct(244)
       15,       -- 593: dup
       0,        -- 594: push_frame
-      5, 367,   -- 595: get_slot_direct(367)
-      8, 185,   -- 597: set_slot_direct(185)
+      5, 422,   -- 595: get_slot_direct(422)
+      8, 246,   -- 597: set_slot_direct(246)
       15,       -- 599: dup
       3,        -- 600: new_array
-      8, 314,   -- 601: set_slot_direct(314)
+      8, 369,   -- 601: set_slot_direct(369)
       15,       -- 603: dup
       0,        -- 604: push_frame
-      5, 318,   -- 605: get_slot_direct(318)
-      8, 186,   -- 607: set_slot_direct(186)
+      5, 373,   -- 605: get_slot_direct(373)
+      8, 247,   -- 607: set_slot_direct(247)
       15,       -- 609: dup
-      4, 89,    -- 610: new_function(89)
-      8, 368,   -- 612: set_slot_direct(368)
+      4, 95,    -- 610: new_function(95)
+      8, 423,   -- 612: set_slot_direct(423)
       15,       -- 614: dup
-      4, 90,    -- 615: new_function(90)
-      8, 369,   -- 617: set_slot_direct(369)
+      4, 96,    -- 615: new_function(96)
+      8, 424,   -- 617: set_slot_direct(424)
       11        -- 619: return
     }
   },
   ifunc.Function:new{ -- "bc"
     name = jsval.newString("bc"),
-    id = 82,
+    id = 88,
     nargs = 5,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 9,     -- 8: set_slot_direct(9)
+      8, 19,    -- 8: set_slot_direct(19)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 324,   -- 15: set_slot_direct(324)
+      8, 379,   -- 15: set_slot_direct(379)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 325,   -- 22: set_slot_direct(325)
+      8, 380,   -- 22: set_slot_direct(380)
       15,       -- 24: dup
-      5, 124,   -- 25: get_slot_direct(124)
+      5, 153,   -- 25: get_slot_direct(153)
       0,        -- 27: push_frame
       19,       -- 28: swap
-      8, 326,   -- 29: set_slot_direct(326)
+      8, 381,   -- 29: set_slot_direct(381)
       15,       -- 31: dup
-      5, 178,   -- 32: get_slot_direct(178)
+      5, 156,   -- 32: get_slot_direct(156)
       0,        -- 34: push_frame
       19,       -- 35: swap
-      8, 327,   -- 36: set_slot_direct(327)
+      8, 382,   -- 36: set_slot_direct(382)
       14,       -- 38: pop
       0,        -- 39: push_frame
       1, 0,     -- 40: push_literal(0)
-      8, 328,   -- 42: set_slot_direct(328)
+      8, 383,   -- 42: set_slot_direct(383)
       0,        -- 44: push_frame
       2,        -- 45: new_object
       15,       -- 46: dup
       0,        -- 47: push_frame
-      5, 319,   -- 48: get_slot_direct(319)
-      5, 24,    -- 50: get_slot_direct(24)
-      8, 226,   -- 52: set_slot_direct(226)
+      5, 374,   -- 48: get_slot_direct(374)
+      5, 55,    -- 50: get_slot_direct(55)
+      8, 287,   -- 52: set_slot_direct(287)
       15,       -- 54: dup
       0,        -- 55: push_frame
-      5, 9,     -- 56: get_slot_direct(9)
-      8, 9,     -- 58: set_slot_direct(9)
+      5, 19,    -- 56: get_slot_direct(19)
+      8, 19,    -- 58: set_slot_direct(19)
       15,       -- 60: dup
       0,        -- 61: push_frame
-      5, 324,   -- 62: get_slot_direct(324)
-      8, 324,   -- 64: set_slot_direct(324)
+      5, 379,   -- 62: get_slot_direct(379)
+      8, 379,   -- 64: set_slot_direct(379)
       15,       -- 66: dup
       0,        -- 67: push_frame
-      5, 325,   -- 68: get_slot_direct(325)
-      8, 325,   -- 70: set_slot_direct(325)
+      5, 380,   -- 68: get_slot_direct(380)
+      8, 380,   -- 70: set_slot_direct(380)
       15,       -- 72: dup
       0,        -- 73: push_frame
-      5, 326,   -- 74: get_slot_direct(326)
-      8, 326,   -- 76: set_slot_direct(326)
+      5, 381,   -- 74: get_slot_direct(381)
+      8, 381,   -- 76: set_slot_direct(381)
       15,       -- 78: dup
       0,        -- 79: push_frame
-      5, 327,   -- 80: get_slot_direct(327)
-      8, 327,   -- 82: set_slot_direct(327)
-      8, 328,   -- 84: set_slot_direct(328)
+      5, 382,   -- 80: get_slot_direct(382)
+      8, 382,   -- 82: set_slot_direct(382)
+      8, 383,   -- 84: set_slot_direct(383)
       0,        -- 86: push_frame
-      5, 328,   -- 87: get_slot_direct(328)
-      5, 325,   -- 89: get_slot_direct(325)
+      5, 383,   -- 87: get_slot_direct(383)
+      5, 380,   -- 89: get_slot_direct(380)
       22,       -- 91: un_typeof
-      1, 237,   -- 92: push_literal(237)
+      1, 25,    -- 92: push_literal(25)
       23,       -- 94: bi_eq
       20,       -- 95: un_not
       13, 105,  -- 96: jmp_unless(105)
       0,        -- 98: push_frame
-      5, 328,   -- 99: get_slot_direct(328)
-      4, 83,    -- 101: new_function(83)
-      8, 325,   -- 103: set_slot_direct(325)
+      5, 383,   -- 99: get_slot_direct(383)
+      4, 89,    -- 101: new_function(89)
+      8, 380,   -- 103: set_slot_direct(380)
       0,        -- 105: push_frame
-      5, 328,   -- 106: get_slot_direct(328)
-      5, 326,   -- 108: get_slot_direct(326)
+      5, 383,   -- 106: get_slot_direct(383)
+      5, 381,   -- 108: get_slot_direct(381)
       22,       -- 110: un_typeof
-      1, 237,   -- 111: push_literal(237)
+      1, 25,    -- 111: push_literal(25)
       23,       -- 113: bi_eq
       20,       -- 114: un_not
       13, 124,  -- 115: jmp_unless(124)
       0,        -- 117: push_frame
-      5, 328,   -- 118: get_slot_direct(328)
-      4, 84,    -- 120: new_function(84)
-      8, 326,   -- 122: set_slot_direct(326)
+      5, 383,   -- 118: get_slot_direct(383)
+      4, 90,    -- 120: new_function(90)
+      8, 381,   -- 122: set_slot_direct(381)
       0,        -- 124: push_frame
-      5, 328,   -- 125: get_slot_direct(328)
-      5, 327,   -- 127: get_slot_direct(327)
+      5, 383,   -- 125: get_slot_direct(383)
+      5, 382,   -- 127: get_slot_direct(382)
       20,       -- 129: un_not
       13, 139,  -- 130: jmp_unless(139)
       0,        -- 132: push_frame
-      5, 328,   -- 133: get_slot_direct(328)
-      4, 85,    -- 135: new_function(85)
-      8, 327,   -- 137: set_slot_direct(327)
+      5, 383,   -- 133: get_slot_direct(383)
+      4, 91,    -- 135: new_function(91)
+      8, 382,   -- 137: set_slot_direct(382)
       0,        -- 139: push_frame
-      5, 319,   -- 140: get_slot_direct(319)
+      5, 374,   -- 140: get_slot_direct(374)
       0,        -- 142: push_frame
-      5, 328,   -- 143: get_slot_direct(328)
-      5, 226,   -- 145: get_slot_direct(226)
+      5, 383,   -- 143: get_slot_direct(383)
+      5, 287,   -- 145: get_slot_direct(287)
       0,        -- 147: push_frame
-      5, 328,   -- 148: get_slot_direct(328)
+      5, 383,   -- 148: get_slot_direct(383)
       9,        -- 150: set_slot_indirect
       0,        -- 151: push_frame
-      5, 320,   -- 152: get_slot_direct(320)
+      5, 375,   -- 152: get_slot_direct(375)
       0,        -- 154: push_frame
-      5, 328,   -- 155: get_slot_direct(328)
-      5, 9,     -- 157: get_slot_direct(9)
+      5, 383,   -- 155: get_slot_direct(383)
+      5, 19,    -- 157: get_slot_direct(19)
       0,        -- 159: push_frame
-      5, 328,   -- 160: get_slot_direct(328)
+      5, 383,   -- 160: get_slot_direct(383)
       9,        -- 162: set_slot_indirect
       1, 0,     -- 163: push_literal(0)
       11        -- 165: return
@@ -8638,7 +9535,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".stackpop"
     name = jsval.newString(".stackpop"),
-    id = 83,
+    id = 89,
     nargs = 0,
     max_stack = 1,
     bytecode = {
@@ -8646,13 +9543,13 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 325,   -- 5: get_slot_direct(325)
+      5, 380,   -- 5: get_slot_direct(380)
       11        -- 7: return
     }
   },
   ifunc.Function:new{ -- ".stackpush"
     name = jsval.newString(".stackpush"),
-    id = 84,
+    id = 90,
     nargs = 0,
     max_stack = 1,
     bytecode = {
@@ -8660,730 +9557,730 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 326,   -- 5: get_slot_direct(326)
+      5, 381,   -- 5: get_slot_direct(381)
       11        -- 7: return
     }
   },
   ifunc.Function:new{ -- ".printargs"
     name = jsval.newString(".printargs"),
-    id = 85,
+    id = 91,
     nargs = 3,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 329,   -- 15: set_slot_direct(329)
+      8, 384,   -- 15: set_slot_direct(384)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 330,   -- 22: set_slot_direct(330)
+      8, 385,   -- 22: set_slot_direct(385)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 57,    -- 28: set_slot_direct(57)
+      8, 75,    -- 28: set_slot_direct(75)
       0,        -- 30: push_frame
       1, 0,     -- 31: push_literal(0)
-      8, 37,    -- 33: set_slot_direct(37)
+      8, 53,    -- 33: set_slot_direct(53)
       0,        -- 35: push_frame
-      1, 49,    -- 36: push_literal(49)
-      8, 57,    -- 38: set_slot_direct(57)
+      1, 66,    -- 36: push_literal(66)
+      8, 75,    -- 38: set_slot_direct(75)
       0,        -- 40: push_frame
-      1, 6,     -- 41: push_literal(6)
-      8, 37,    -- 43: set_slot_direct(37)
+      1, 18,    -- 41: push_literal(18)
+      8, 53,    -- 43: set_slot_direct(53)
       12, 86,   -- 45: jmp(86)
       0,        -- 47: push_frame
       15,       -- 48: dup
-      5, 57,    -- 49: get_slot_direct(57)
-      1, 142,   -- 51: push_literal(142)
+      5, 75,    -- 49: get_slot_direct(75)
+      1, 212,   -- 51: push_literal(212)
       26,       -- 53: bi_add
-      8, 57,    -- 54: set_slot_direct(57)
+      8, 75,    -- 54: set_slot_direct(75)
       0,        -- 56: push_frame
       15,       -- 57: dup
-      5, 57,    -- 58: get_slot_direct(57)
+      5, 75,    -- 58: get_slot_direct(75)
       0,        -- 60: push_frame
-      5, 329,   -- 61: get_slot_direct(329)
+      5, 384,   -- 61: get_slot_direct(384)
       0,        -- 63: push_frame
-      5, 330,   -- 64: get_slot_direct(330)
+      5, 385,   -- 64: get_slot_direct(385)
       0,        -- 66: push_frame
-      5, 37,    -- 67: get_slot_direct(37)
+      5, 53,    -- 67: get_slot_direct(53)
       26,       -- 69: bi_add
-      1, 8,     -- 70: push_literal(8)
+      1, 31,    -- 70: push_literal(31)
       26,       -- 72: bi_add
       6,        -- 73: get_slot_indirect
       26,       -- 74: bi_add
-      8, 57,    -- 75: set_slot_direct(57)
+      8, 75,    -- 75: set_slot_direct(75)
       0,        -- 77: push_frame
       15,       -- 78: dup
-      5, 37,    -- 79: get_slot_direct(37)
-      1, 8,     -- 81: push_literal(8)
+      5, 53,    -- 79: get_slot_direct(53)
+      1, 31,    -- 81: push_literal(31)
       26,       -- 83: bi_add
-      8, 37,    -- 84: set_slot_direct(37)
+      8, 53,    -- 84: set_slot_direct(53)
       0,        -- 86: push_frame
-      5, 37,    -- 87: get_slot_direct(37)
+      5, 53,    -- 87: get_slot_direct(53)
       0,        -- 89: push_frame
-      5, 20,    -- 90: get_slot_direct(20)
-      5, 324,   -- 92: get_slot_direct(324)
+      5, 26,    -- 90: get_slot_direct(26)
+      5, 379,   -- 92: get_slot_direct(379)
       19,       -- 94: swap
       24,       -- 95: bi_gt
       20,       -- 96: un_not
       13, 47,   -- 97: jmp_unless(47)
       0,        -- 99: push_frame
-      5, 57,    -- 100: get_slot_direct(57)
+      5, 75,    -- 100: get_slot_direct(75)
       11        -- 102: return
     }
   },
   ifunc.Function:new{ -- "print_literal"
     name = jsval.newString("print_literal"),
-    id = 86,
+    id = 92,
     nargs = 3,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 329,   -- 15: set_slot_direct(329)
+      8, 384,   -- 15: set_slot_direct(384)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 330,   -- 22: set_slot_direct(330)
+      8, 385,   -- 22: set_slot_direct(385)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 331,   -- 28: set_slot_direct(331)
+      8, 386,   -- 28: set_slot_direct(386)
       0,        -- 30: push_frame
       0,        -- 31: push_frame
-      5, 329,   -- 32: get_slot_direct(329)
+      5, 384,   -- 32: get_slot_direct(384)
       0,        -- 34: push_frame
-      5, 330,   -- 35: get_slot_direct(330)
-      1, 8,     -- 37: push_literal(8)
+      5, 385,   -- 35: get_slot_direct(385)
+      1, 31,    -- 37: push_literal(31)
       26,       -- 39: bi_add
       6,        -- 40: get_slot_indirect
-      8, 331,   -- 41: set_slot_direct(331)
-      1, 142,   -- 43: push_literal(142)
+      8, 386,   -- 41: set_slot_direct(386)
+      1, 212,   -- 43: push_literal(212)
       0,        -- 45: push_frame
-      5, 331,   -- 46: get_slot_direct(331)
+      5, 386,   -- 46: get_slot_direct(386)
       26,       -- 48: bi_add
-      1, 332,   -- 49: push_literal(332)
+      1, 387,   -- 49: push_literal(387)
       26,       -- 51: bi_add
       0,        -- 52: push_frame
-      5, 304,   -- 53: get_slot_direct(304)
-      5, 333,   -- 55: get_slot_direct(333)
+      5, 359,   -- 53: get_slot_direct(359)
+      5, 388,   -- 55: get_slot_direct(388)
       0,        -- 57: push_frame
-      5, 331,   -- 58: get_slot_direct(331)
+      5, 386,   -- 58: get_slot_direct(386)
       6,        -- 60: get_slot_indirect
       26,       -- 61: bi_add
-      1, 334,   -- 62: push_literal(334)
+      1, 389,   -- 62: push_literal(389)
       26,       -- 64: bi_add
       11        -- 65: return
     }
   },
   ifunc.Function:new{ -- "print_label"
     name = jsval.newString("print_label"),
-    id = 87,
+    id = 93,
     nargs = 3,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 329,   -- 15: set_slot_direct(329)
+      8, 384,   -- 15: set_slot_direct(384)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 330,   -- 22: set_slot_direct(330)
+      8, 385,   -- 22: set_slot_direct(385)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 335,   -- 28: set_slot_direct(335)
+      8, 390,   -- 28: set_slot_direct(390)
       0,        -- 30: push_frame
       0,        -- 31: push_frame
-      5, 329,   -- 32: get_slot_direct(329)
+      5, 384,   -- 32: get_slot_direct(384)
       0,        -- 34: push_frame
-      5, 330,   -- 35: get_slot_direct(330)
-      1, 8,     -- 37: push_literal(8)
+      5, 385,   -- 35: get_slot_direct(385)
+      1, 31,    -- 37: push_literal(31)
       26,       -- 39: bi_add
       6,        -- 40: get_slot_indirect
-      8, 335,   -- 41: set_slot_direct(335)
+      8, 390,   -- 41: set_slot_direct(390)
       0,        -- 43: push_frame
-      5, 335,   -- 44: get_slot_direct(335)
+      5, 390,   -- 44: get_slot_direct(390)
       22,       -- 46: un_typeof
-      1, 67,    -- 47: push_literal(67)
+      1, 86,    -- 47: push_literal(86)
       23,       -- 49: bi_eq
       20,       -- 50: un_not
       13, 61,   -- 51: jmp_unless(61)
       0,        -- 53: push_frame
       0,        -- 54: push_frame
-      5, 335,   -- 55: get_slot_direct(335)
-      5, 336,   -- 57: get_slot_direct(336)
-      8, 335,   -- 59: set_slot_direct(335)
-      1, 142,   -- 61: push_literal(142)
+      5, 390,   -- 55: get_slot_direct(390)
+      5, 391,   -- 57: get_slot_direct(391)
+      8, 390,   -- 59: set_slot_direct(390)
+      1, 212,   -- 61: push_literal(212)
       0,        -- 63: push_frame
-      5, 335,   -- 64: get_slot_direct(335)
+      5, 390,   -- 64: get_slot_direct(390)
       26,       -- 66: bi_add
       11        -- 67: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 88,
+    id = 94,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 348,   -- 8: set_slot_direct(348)
+      8, 403,   -- 8: set_slot_direct(403)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 349,   -- 15: set_slot_direct(349)
+      8, 404,   -- 15: set_slot_direct(404)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 349,   -- 19: get_slot_direct(349)
-      1, 108,   -- 21: push_literal(108)
+      5, 404,   -- 19: get_slot_direct(404)
+      1, 130,   -- 21: push_literal(130)
       26,       -- 23: bi_add
       11        -- 24: return
     }
   },
   ifunc.Function:new{ -- "for_num:"
     name = jsval.newString("for_num:"),
-    id = 89,
+    id = 95,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 127,   -- 8: set_slot_direct(127)
+      8, 23,    -- 8: set_slot_direct(23)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 319,   -- 12: get_slot_direct(319)
+      5, 374,   -- 12: get_slot_direct(374)
       0,        -- 14: push_frame
-      5, 127,   -- 15: get_slot_direct(127)
+      5, 23,    -- 15: get_slot_direct(23)
       6,        -- 17: get_slot_indirect
       11        -- 18: return
     }
   },
   ifunc.Function:new{ -- "for_name:"
     name = jsval.newString("for_name:"),
-    id = 90,
+    id = 96,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 9,     -- 8: set_slot_direct(9)
+      8, 19,    -- 8: set_slot_direct(19)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 320,   -- 12: get_slot_direct(320)
+      5, 375,   -- 12: get_slot_direct(375)
       0,        -- 14: push_frame
-      5, 9,     -- 15: get_slot_direct(9)
+      5, 19,    -- 15: get_slot_direct(19)
       6,        -- 17: get_slot_indirect
       11        -- 18: return
     }
   },
   ifunc.Function:new{ -- "make_bcompile"
     name = jsval.newString("make_bcompile"),
-    id = 91,
+    id = 97,
     nargs = 2,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 372,   -- 8: set_slot_direct(372)
+      8, 427,   -- 8: set_slot_direct(427)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 373,   -- 15: set_slot_direct(373)
+      8, 428,   -- 15: set_slot_direct(428)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 374,   -- 21: set_slot_direct(374)
+      8, 429,   -- 21: set_slot_direct(429)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 375,   -- 26: set_slot_direct(375)
+      8, 430,   -- 26: set_slot_direct(430)
       0,        -- 28: push_frame
       1, 0,     -- 29: push_literal(0)
-      8, 376,   -- 31: set_slot_direct(376)
+      8, 431,   -- 31: set_slot_direct(431)
       0,        -- 33: push_frame
       1, 0,     -- 34: push_literal(0)
-      8, 252,   -- 36: set_slot_direct(252)
+      8, 311,   -- 36: set_slot_direct(311)
       0,        -- 38: push_frame
       1, 0,     -- 39: push_literal(0)
-      8, 247,   -- 41: set_slot_direct(247)
+      8, 307,   -- 41: set_slot_direct(307)
       0,        -- 43: push_frame
       1, 0,     -- 44: push_literal(0)
-      8, 208,   -- 46: set_slot_direct(208)
+      8, 269,   -- 46: set_slot_direct(269)
       0,        -- 48: push_frame
       1, 0,     -- 49: push_literal(0)
-      8, 269,   -- 51: set_slot_direct(269)
+      8, 324,   -- 51: set_slot_direct(324)
       0,        -- 53: push_frame
       1, 0,     -- 54: push_literal(0)
-      8, 209,   -- 56: set_slot_direct(209)
+      8, 270,   -- 56: set_slot_direct(270)
       0,        -- 58: push_frame
       1, 0,     -- 59: push_literal(0)
-      8, 370,   -- 61: set_slot_direct(370)
+      8, 425,   -- 61: set_slot_direct(425)
       0,        -- 63: push_frame
-      4, 92,    -- 64: new_function(92)
-      8, 374,   -- 66: set_slot_direct(374)
+      4, 98,    -- 64: new_function(98)
+      8, 429,   -- 66: set_slot_direct(429)
       0,        -- 68: push_frame
       2,        -- 69: new_object
-      8, 375,   -- 70: set_slot_direct(375)
+      8, 430,   -- 70: set_slot_direct(430)
       0,        -- 72: push_frame
-      4, 93,    -- 73: new_function(93)
-      8, 376,   -- 75: set_slot_direct(376)
+      4, 99,    -- 73: new_function(99)
+      8, 431,   -- 75: set_slot_direct(431)
       0,        -- 77: push_frame
-      5, 375,   -- 78: get_slot_direct(375)
-      4, 109,   -- 80: new_function(109)
-      8, 9,     -- 82: set_slot_direct(9)
+      5, 430,   -- 78: get_slot_direct(430)
+      4, 115,   -- 80: new_function(115)
+      8, 19,    -- 82: set_slot_direct(19)
       0,        -- 84: push_frame
-      5, 375,   -- 85: get_slot_direct(375)
-      4, 110,   -- 87: new_function(110)
-      8, 232,   -- 89: set_slot_direct(232)
+      5, 430,   -- 85: get_slot_direct(430)
+      4, 116,   -- 87: new_function(116)
+      8, 293,   -- 89: set_slot_direct(293)
       0,        -- 91: push_frame
-      5, 375,   -- 92: get_slot_direct(375)
-      4, 111,   -- 94: new_function(111)
-      8, 252,   -- 96: set_slot_direct(252)
+      5, 430,   -- 92: get_slot_direct(430)
+      4, 117,   -- 94: new_function(117)
+      8, 311,   -- 96: set_slot_direct(311)
       0,        -- 98: push_frame
-      4, 112,   -- 99: new_function(112)
-      8, 252,   -- 101: set_slot_direct(252)
+      4, 118,   -- 99: new_function(118)
+      8, 311,   -- 101: set_slot_direct(311)
       0,        -- 103: push_frame
-      5, 252,   -- 104: get_slot_direct(252)
+      5, 311,   -- 104: get_slot_direct(311)
       0,        -- 106: push_frame
-      5, 20,    -- 107: get_slot_direct(20)
-      1, 288,   -- 109: push_literal(288)
-      1, 357,   -- 111: push_literal(357)
+      5, 26,    -- 107: get_slot_direct(26)
+      1, 343,   -- 109: push_literal(343)
+      1, 412,   -- 111: push_literal(412)
       10, 2,    -- 113: invoke(2)
       14,       -- 115: pop
       0,        -- 116: push_frame
-      5, 252,   -- 117: get_slot_direct(252)
+      5, 311,   -- 117: get_slot_direct(311)
       0,        -- 119: push_frame
-      5, 20,    -- 120: get_slot_direct(20)
-      1, 136,   -- 122: push_literal(136)
-      1, 358,   -- 124: push_literal(358)
+      5, 26,    -- 120: get_slot_direct(26)
+      1, 135,   -- 122: push_literal(135)
+      1, 413,   -- 124: push_literal(413)
       10, 2,    -- 126: invoke(2)
       14,       -- 128: pop
       0,        -- 129: push_frame
-      5, 252,   -- 130: get_slot_direct(252)
+      5, 311,   -- 130: get_slot_direct(311)
       0,        -- 132: push_frame
-      5, 20,    -- 133: get_slot_direct(20)
-      1, 289,   -- 135: push_literal(289)
-      1, 359,   -- 137: push_literal(359)
+      5, 26,    -- 133: get_slot_direct(26)
+      1, 344,   -- 135: push_literal(344)
+      1, 414,   -- 137: push_literal(414)
       10, 2,    -- 139: invoke(2)
       14,       -- 141: pop
       0,        -- 142: push_frame
-      5, 252,   -- 143: get_slot_direct(252)
+      5, 311,   -- 143: get_slot_direct(311)
       0,        -- 145: push_frame
-      5, 20,    -- 146: get_slot_direct(20)
-      1, 248,   -- 148: push_literal(248)
-      4, 114,   -- 150: new_function(114)
+      5, 26,    -- 146: get_slot_direct(26)
+      1, 308,   -- 148: push_literal(308)
+      4, 120,   -- 150: new_function(120)
       10, 2,    -- 152: invoke(2)
       14,       -- 154: pop
       0,        -- 155: push_frame
-      5, 252,   -- 156: get_slot_direct(252)
+      5, 311,   -- 156: get_slot_direct(311)
       0,        -- 158: push_frame
-      5, 20,    -- 159: get_slot_direct(20)
-      1, 243,   -- 161: push_literal(243)
-      4, 116,   -- 163: new_function(116)
+      5, 26,    -- 159: get_slot_direct(26)
+      1, 303,   -- 161: push_literal(303)
+      4, 122,   -- 163: new_function(122)
       10, 2,    -- 165: invoke(2)
       14,       -- 167: pop
       0,        -- 168: push_frame
-      5, 375,   -- 169: get_slot_direct(375)
-      4, 118,   -- 171: new_function(118)
-      8, 247,   -- 173: set_slot_direct(247)
+      5, 430,   -- 169: get_slot_direct(430)
+      4, 124,   -- 171: new_function(124)
+      8, 307,   -- 173: set_slot_direct(307)
       0,        -- 175: push_frame
-      4, 119,   -- 176: new_function(119)
-      8, 247,   -- 178: set_slot_direct(247)
+      4, 125,   -- 176: new_function(125)
+      8, 307,   -- 178: set_slot_direct(307)
       0,        -- 180: push_frame
-      4, 121,   -- 181: new_function(121)
-      8, 208,   -- 183: set_slot_direct(208)
+      4, 127,   -- 181: new_function(127)
+      8, 269,   -- 183: set_slot_direct(269)
       0,        -- 185: push_frame
-      5, 247,   -- 186: get_slot_direct(247)
+      5, 307,   -- 186: get_slot_direct(307)
       0,        -- 188: push_frame
-      5, 20,    -- 189: get_slot_direct(20)
-      1, 261,   -- 191: push_literal(261)
+      5, 26,    -- 189: get_slot_direct(26)
+      1, 316,   -- 191: push_literal(316)
       0,        -- 193: push_frame
-      5, 208,   -- 194: get_slot_direct(208)
+      5, 269,   -- 194: get_slot_direct(269)
       0,        -- 196: push_frame
-      5, 20,    -- 197: get_slot_direct(20)
-      1, 21,    -- 199: push_literal(21)
+      5, 26,    -- 197: get_slot_direct(26)
+      1, 41,    -- 199: push_literal(41)
       10, 1,    -- 201: invoke(1)
       10, 2,    -- 203: invoke(2)
       14,       -- 205: pop
       0,        -- 206: push_frame
-      5, 247,   -- 207: get_slot_direct(247)
+      5, 307,   -- 207: get_slot_direct(307)
       0,        -- 209: push_frame
-      5, 20,    -- 210: get_slot_direct(20)
-      1, 262,   -- 212: push_literal(262)
+      5, 26,    -- 210: get_slot_direct(26)
+      1, 317,   -- 212: push_literal(317)
       0,        -- 214: push_frame
-      5, 208,   -- 215: get_slot_direct(208)
+      5, 269,   -- 215: get_slot_direct(269)
       0,        -- 217: push_frame
-      5, 20,    -- 218: get_slot_direct(20)
-      1, 363,   -- 220: push_literal(363)
+      5, 26,    -- 218: get_slot_direct(26)
+      1, 418,   -- 220: push_literal(418)
       10, 1,    -- 222: invoke(1)
       10, 2,    -- 224: invoke(2)
       14,       -- 226: pop
       0,        -- 227: push_frame
-      5, 247,   -- 228: get_slot_direct(247)
+      5, 307,   -- 228: get_slot_direct(307)
       0,        -- 230: push_frame
-      5, 20,    -- 231: get_slot_direct(20)
-      1, 263,   -- 233: push_literal(263)
+      5, 26,    -- 231: get_slot_direct(26)
+      1, 318,   -- 233: push_literal(318)
       0,        -- 235: push_frame
-      5, 208,   -- 236: get_slot_direct(208)
+      5, 269,   -- 236: get_slot_direct(269)
       0,        -- 238: push_frame
-      5, 20,    -- 239: get_slot_direct(20)
-      1, 364,   -- 241: push_literal(364)
+      5, 26,    -- 239: get_slot_direct(26)
+      1, 419,   -- 241: push_literal(419)
       10, 1,    -- 243: invoke(1)
       10, 2,    -- 245: invoke(2)
       14,       -- 247: pop
       0,        -- 248: push_frame
-      5, 247,   -- 249: get_slot_direct(247)
+      5, 307,   -- 249: get_slot_direct(307)
       0,        -- 251: push_frame
-      5, 20,    -- 252: get_slot_direct(20)
-      1, 264,   -- 254: push_literal(264)
+      5, 26,    -- 252: get_slot_direct(26)
+      1, 319,   -- 254: push_literal(319)
       0,        -- 256: push_frame
-      5, 208,   -- 257: get_slot_direct(208)
+      5, 269,   -- 257: get_slot_direct(269)
       0,        -- 259: push_frame
-      5, 20,    -- 260: get_slot_direct(20)
-      1, 365,   -- 262: push_literal(365)
+      5, 26,    -- 260: get_slot_direct(26)
+      1, 420,   -- 262: push_literal(420)
       10, 1,    -- 264: invoke(1)
       10, 2,    -- 266: invoke(2)
       14,       -- 268: pop
       0,        -- 269: push_frame
-      5, 247,   -- 270: get_slot_direct(247)
+      5, 307,   -- 270: get_slot_direct(307)
       0,        -- 272: push_frame
-      5, 20,    -- 273: get_slot_direct(20)
-      1, 265,   -- 275: push_literal(265)
+      5, 26,    -- 273: get_slot_direct(26)
+      1, 320,   -- 275: push_literal(320)
       0,        -- 277: push_frame
-      5, 208,   -- 278: get_slot_direct(208)
+      5, 269,   -- 278: get_slot_direct(269)
       0,        -- 280: push_frame
-      5, 20,    -- 281: get_slot_direct(20)
-      1, 366,   -- 283: push_literal(366)
+      5, 26,    -- 281: get_slot_direct(26)
+      1, 421,   -- 283: push_literal(421)
       10, 1,    -- 285: invoke(1)
       10, 2,    -- 287: invoke(2)
       14,       -- 289: pop
       0,        -- 290: push_frame
-      5, 247,   -- 291: get_slot_direct(247)
+      5, 307,   -- 291: get_slot_direct(307)
       0,        -- 293: push_frame
-      5, 20,    -- 294: get_slot_direct(20)
-      1, 270,   -- 296: push_literal(270)
-      4, 123,   -- 298: new_function(123)
+      5, 26,    -- 294: get_slot_direct(26)
+      1, 325,   -- 296: push_literal(325)
+      4, 129,   -- 298: new_function(129)
       10, 2,    -- 300: invoke(2)
       14,       -- 302: pop
       0,        -- 303: push_frame
-      5, 247,   -- 304: get_slot_direct(247)
+      5, 307,   -- 304: get_slot_direct(307)
       0,        -- 306: push_frame
-      5, 20,    -- 307: get_slot_direct(20)
-      1, 272,   -- 309: push_literal(272)
-      4, 124,   -- 311: new_function(124)
+      5, 26,    -- 307: get_slot_direct(26)
+      1, 327,   -- 309: push_literal(327)
+      4, 130,   -- 311: new_function(130)
       10, 2,    -- 313: invoke(2)
       14,       -- 315: pop
       0,        -- 316: push_frame
-      5, 247,   -- 317: get_slot_direct(247)
+      5, 307,   -- 317: get_slot_direct(307)
       0,        -- 319: push_frame
-      5, 20,    -- 320: get_slot_direct(20)
-      1, 274,   -- 322: push_literal(274)
-      1, 360,   -- 324: push_literal(360)
+      5, 26,    -- 320: get_slot_direct(26)
+      1, 329,   -- 322: push_literal(329)
+      1, 415,   -- 324: push_literal(415)
       10, 2,    -- 326: invoke(2)
       14,       -- 328: pop
       0,        -- 329: push_frame
-      5, 247,   -- 330: get_slot_direct(247)
+      5, 307,   -- 330: get_slot_direct(307)
       0,        -- 332: push_frame
-      5, 20,    -- 333: get_slot_direct(20)
-      1, 276,   -- 335: push_literal(276)
-      4, 125,   -- 337: new_function(125)
+      5, 26,    -- 333: get_slot_direct(26)
+      1, 331,   -- 335: push_literal(331)
+      4, 131,   -- 337: new_function(131)
       10, 2,    -- 339: invoke(2)
       14,       -- 341: pop
       0,        -- 342: push_frame
-      5, 247,   -- 343: get_slot_direct(247)
+      5, 307,   -- 343: get_slot_direct(307)
       0,        -- 345: push_frame
-      5, 20,    -- 346: get_slot_direct(20)
-      1, 277,   -- 348: push_literal(277)
-      1, 361,   -- 350: push_literal(361)
-      1, 8,     -- 352: push_literal(8)
+      5, 26,    -- 346: get_slot_direct(26)
+      1, 332,   -- 348: push_literal(332)
+      1, 416,   -- 350: push_literal(416)
+      1, 31,    -- 352: push_literal(31)
       10, 3,    -- 354: invoke(3)
       14,       -- 356: pop
       0,        -- 357: push_frame
-      5, 247,   -- 358: get_slot_direct(247)
+      5, 307,   -- 358: get_slot_direct(307)
       0,        -- 360: push_frame
-      5, 20,    -- 361: get_slot_direct(20)
-      1, 279,   -- 363: push_literal(279)
-      1, 362,   -- 365: push_literal(362)
-      1, 8,     -- 367: push_literal(8)
+      5, 26,    -- 361: get_slot_direct(26)
+      1, 334,   -- 363: push_literal(334)
+      1, 417,   -- 365: push_literal(417)
+      1, 31,    -- 367: push_literal(31)
       10, 3,    -- 369: invoke(3)
       14,       -- 371: pop
       0,        -- 372: push_frame
-      5, 247,   -- 373: get_slot_direct(247)
+      5, 307,   -- 373: get_slot_direct(307)
       0,        -- 375: push_frame
-      5, 20,    -- 376: get_slot_direct(20)
-      1, 280,   -- 378: push_literal(280)
-      1, 361,   -- 380: push_literal(361)
+      5, 26,    -- 376: get_slot_direct(26)
+      1, 335,   -- 378: push_literal(335)
+      1, 416,   -- 380: push_literal(416)
       10, 2,    -- 382: invoke(2)
       14,       -- 384: pop
       0,        -- 385: push_frame
-      5, 247,   -- 386: get_slot_direct(247)
+      5, 307,   -- 386: get_slot_direct(307)
       0,        -- 388: push_frame
-      5, 20,    -- 389: get_slot_direct(20)
-      1, 281,   -- 391: push_literal(281)
-      1, 362,   -- 393: push_literal(362)
+      5, 26,    -- 389: get_slot_direct(26)
+      1, 336,   -- 391: push_literal(336)
+      1, 417,   -- 393: push_literal(417)
       10, 2,    -- 395: invoke(2)
       14,       -- 397: pop
       0,        -- 398: push_frame
-      5, 247,   -- 399: get_slot_direct(247)
+      5, 307,   -- 399: get_slot_direct(307)
       0,        -- 401: push_frame
-      5, 20,    -- 402: get_slot_direct(20)
-      1, 156,   -- 404: push_literal(156)
-      1, 363,   -- 406: push_literal(363)
+      5, 26,    -- 402: get_slot_direct(26)
+      1, 222,   -- 404: push_literal(222)
+      1, 418,   -- 406: push_literal(418)
       10, 2,    -- 408: invoke(2)
       14,       -- 410: pop
       0,        -- 411: push_frame
-      5, 247,   -- 412: get_slot_direct(247)
+      5, 307,   -- 412: get_slot_direct(307)
       0,        -- 414: push_frame
-      5, 20,    -- 415: get_slot_direct(20)
-      1, 136,   -- 417: push_literal(136)
-      1, 364,   -- 419: push_literal(364)
+      5, 26,    -- 415: get_slot_direct(26)
+      1, 135,   -- 417: push_literal(135)
+      1, 419,   -- 419: push_literal(419)
       10, 2,    -- 421: invoke(2)
       14,       -- 423: pop
       0,        -- 424: push_frame
-      5, 247,   -- 425: get_slot_direct(247)
+      5, 307,   -- 425: get_slot_direct(307)
       0,        -- 427: push_frame
-      5, 20,    -- 428: get_slot_direct(20)
-      1, 181,   -- 430: push_literal(181)
-      1, 365,   -- 432: push_literal(365)
+      5, 26,    -- 428: get_slot_direct(26)
+      1, 242,   -- 430: push_literal(242)
+      1, 420,   -- 432: push_literal(420)
       10, 2,    -- 434: invoke(2)
       14,       -- 436: pop
       0,        -- 437: push_frame
-      5, 247,   -- 438: get_slot_direct(247)
+      5, 307,   -- 438: get_slot_direct(307)
       0,        -- 440: push_frame
-      5, 20,    -- 441: get_slot_direct(20)
-      1, 180,   -- 443: push_literal(180)
-      1, 366,   -- 445: push_literal(366)
+      5, 26,    -- 441: get_slot_direct(26)
+      1, 241,   -- 443: push_literal(241)
+      1, 421,   -- 445: push_literal(421)
       10, 2,    -- 447: invoke(2)
       14,       -- 449: pop
       0,        -- 450: push_frame
-      5, 247,   -- 451: get_slot_direct(247)
+      5, 307,   -- 451: get_slot_direct(307)
       0,        -- 453: push_frame
-      5, 20,    -- 454: get_slot_direct(20)
-      1, 151,   -- 456: push_literal(151)
-      4, 126,   -- 458: new_function(126)
+      5, 26,    -- 454: get_slot_direct(26)
+      1, 143,   -- 456: push_literal(143)
+      4, 132,   -- 458: new_function(132)
       10, 2,    -- 460: invoke(2)
       14,       -- 462: pop
       0,        -- 463: push_frame
-      5, 247,   -- 464: get_slot_direct(247)
+      5, 307,   -- 464: get_slot_direct(307)
       0,        -- 466: push_frame
-      5, 20,    -- 467: get_slot_direct(20)
-      1, 248,   -- 469: push_literal(248)
-      4, 127,   -- 471: new_function(127)
+      5, 26,    -- 467: get_slot_direct(26)
+      1, 308,   -- 469: push_literal(308)
+      4, 133,   -- 471: new_function(133)
       10, 2,    -- 473: invoke(2)
       14,       -- 475: pop
       0,        -- 476: push_frame
-      5, 247,   -- 477: get_slot_direct(247)
+      5, 307,   -- 477: get_slot_direct(307)
       0,        -- 479: push_frame
-      5, 20,    -- 480: get_slot_direct(20)
-      1, 236,   -- 482: push_literal(236)
-      4, 128,   -- 484: new_function(128)
+      5, 26,    -- 480: get_slot_direct(26)
+      1, 297,   -- 482: push_literal(297)
+      4, 134,   -- 484: new_function(134)
       10, 2,    -- 486: invoke(2)
       14,       -- 488: pop
       0,        -- 489: push_frame
-      5, 375,   -- 490: get_slot_direct(375)
-      4, 130,   -- 492: new_function(130)
-      8, 269,   -- 494: set_slot_direct(269)
+      5, 430,   -- 490: get_slot_direct(430)
+      4, 136,   -- 492: new_function(136)
+      8, 324,   -- 494: set_slot_direct(324)
       0,        -- 496: push_frame
-      4, 131,   -- 497: new_function(131)
-      8, 269,   -- 499: set_slot_direct(269)
+      4, 137,   -- 497: new_function(137)
+      8, 324,   -- 499: set_slot_direct(324)
       0,        -- 501: push_frame
-      5, 269,   -- 502: get_slot_direct(269)
+      5, 324,   -- 502: get_slot_direct(324)
       0,        -- 504: push_frame
-      5, 20,    -- 505: get_slot_direct(20)
-      1, 266,   -- 507: push_literal(266)
-      4, 132,   -- 509: new_function(132)
+      5, 26,    -- 505: get_slot_direct(26)
+      1, 321,   -- 507: push_literal(321)
+      4, 138,   -- 509: new_function(138)
       10, 2,    -- 511: invoke(2)
       14,       -- 513: pop
       0,        -- 514: push_frame
-      5, 269,   -- 515: get_slot_direct(269)
+      5, 324,   -- 515: get_slot_direct(324)
       0,        -- 517: push_frame
-      5, 20,    -- 518: get_slot_direct(20)
-      1, 236,   -- 520: push_literal(236)
-      4, 133,   -- 522: new_function(133)
+      5, 26,    -- 518: get_slot_direct(26)
+      1, 297,   -- 520: push_literal(297)
+      4, 139,   -- 522: new_function(139)
       10, 2,    -- 524: invoke(2)
       14,       -- 526: pop
       0,        -- 527: push_frame
-      5, 375,   -- 528: get_slot_direct(375)
-      4, 135,   -- 530: new_function(135)
-      8, 200,   -- 532: set_slot_direct(200)
+      5, 430,   -- 528: get_slot_direct(430)
+      4, 141,   -- 530: new_function(141)
+      8, 261,   -- 532: set_slot_direct(261)
       0,        -- 534: push_frame
-      4, 136,   -- 535: new_function(136)
-      8, 209,   -- 537: set_slot_direct(209)
+      4, 142,   -- 535: new_function(142)
+      8, 270,   -- 537: set_slot_direct(270)
       0,        -- 539: push_frame
-      5, 209,   -- 540: get_slot_direct(209)
+      5, 270,   -- 540: get_slot_direct(270)
       0,        -- 542: push_frame
-      5, 20,    -- 543: get_slot_direct(20)
-      1, 72,    -- 545: push_literal(72)
-      4, 137,   -- 547: new_function(137)
+      5, 26,    -- 543: get_slot_direct(26)
+      1, 91,    -- 545: push_literal(91)
+      4, 143,   -- 547: new_function(143)
       10, 2,    -- 549: invoke(2)
       14,       -- 551: pop
       0,        -- 552: push_frame
-      5, 209,   -- 553: get_slot_direct(209)
+      5, 270,   -- 553: get_slot_direct(270)
       0,        -- 555: push_frame
-      5, 20,    -- 556: get_slot_direct(20)
-      1, 241,   -- 558: push_literal(241)
-      4, 139,   -- 560: new_function(139)
+      5, 26,    -- 556: get_slot_direct(26)
+      1, 301,   -- 558: push_literal(301)
+      4, 145,   -- 560: new_function(145)
       10, 2,    -- 562: invoke(2)
       14,       -- 564: pop
       0,        -- 565: push_frame
-      5, 209,   -- 566: get_slot_direct(209)
+      5, 270,   -- 566: get_slot_direct(270)
       0,        -- 568: push_frame
-      5, 20,    -- 569: get_slot_direct(20)
-      1, 295,   -- 571: push_literal(295)
-      4, 140,   -- 573: new_function(140)
+      5, 26,    -- 569: get_slot_direct(26)
+      1, 350,   -- 571: push_literal(350)
+      4, 146,   -- 573: new_function(146)
       10, 2,    -- 575: invoke(2)
       14,       -- 577: pop
       0,        -- 578: push_frame
-      5, 209,   -- 579: get_slot_direct(209)
+      5, 270,   -- 579: get_slot_direct(270)
       0,        -- 581: push_frame
-      5, 20,    -- 582: get_slot_direct(20)
-      1, 296,   -- 584: push_literal(296)
-      4, 141,   -- 586: new_function(141)
+      5, 26,    -- 582: get_slot_direct(26)
+      1, 351,   -- 584: push_literal(351)
+      4, 147,   -- 586: new_function(147)
       10, 2,    -- 588: invoke(2)
       14,       -- 590: pop
       0,        -- 591: push_frame
-      5, 209,   -- 592: get_slot_direct(209)
+      5, 270,   -- 592: get_slot_direct(270)
       0,        -- 594: push_frame
-      5, 20,    -- 595: get_slot_direct(20)
-      1, 298,   -- 597: push_literal(298)
-      4, 142,   -- 599: new_function(142)
+      5, 26,    -- 595: get_slot_direct(26)
+      1, 353,   -- 597: push_literal(353)
+      4, 148,   -- 599: new_function(148)
       10, 2,    -- 601: invoke(2)
       14,       -- 603: pop
       0,        -- 604: push_frame
-      5, 209,   -- 605: get_slot_direct(209)
+      5, 270,   -- 605: get_slot_direct(270)
       0,        -- 607: push_frame
-      5, 20,    -- 608: get_slot_direct(20)
-      1, 105,   -- 610: push_literal(105)
-      4, 143,   -- 612: new_function(143)
+      5, 26,    -- 608: get_slot_direct(26)
+      1, 179,   -- 610: push_literal(179)
+      4, 149,   -- 612: new_function(149)
       10, 2,    -- 614: invoke(2)
       14,       -- 616: pop
       0,        -- 617: push_frame
-      5, 375,   -- 618: get_slot_direct(375)
-      1, 20,    -- 620: push_literal(20)
-      4, 144,   -- 622: new_function(144)
+      5, 430,   -- 618: get_slot_direct(430)
+      1, 26,    -- 620: push_literal(26)
+      4, 150,   -- 622: new_function(150)
       9,        -- 624: set_slot_indirect
       0,        -- 625: push_frame
-      5, 375,   -- 626: get_slot_direct(375)
-      1, 237,   -- 628: push_literal(237)
-      4, 145,   -- 630: new_function(145)
+      5, 430,   -- 626: get_slot_direct(430)
+      1, 25,    -- 628: push_literal(25)
+      4, 151,   -- 630: new_function(151)
       9,        -- 632: set_slot_indirect
       0,        -- 633: push_frame
-      4, 147,   -- 634: new_function(147)
-      8, 370,   -- 636: set_slot_direct(370)
+      4, 153,   -- 634: new_function(153)
+      8, 425,   -- 636: set_slot_direct(425)
       0,        -- 638: push_frame
-      5, 370,   -- 639: get_slot_direct(370)
-      1, 370,   -- 641: push_literal(370)
-      8, 183,   -- 643: set_slot_direct(183)
+      5, 425,   -- 639: get_slot_direct(425)
+      1, 425,   -- 641: push_literal(425)
+      8, 244,   -- 643: set_slot_direct(244)
       0,        -- 645: push_frame
-      5, 370,   -- 646: get_slot_direct(370)
+      5, 425,   -- 646: get_slot_direct(425)
       0,        -- 648: push_frame
-      5, 439,   -- 649: get_slot_direct(439)
-      8, 185,   -- 651: set_slot_direct(185)
+      5, 489,   -- 649: get_slot_direct(489)
+      8, 246,   -- 651: set_slot_direct(246)
       0,        -- 653: push_frame
-      5, 370,   -- 654: get_slot_direct(370)
+      5, 425,   -- 654: get_slot_direct(425)
       3,        -- 656: new_array
       15,       -- 657: dup
-      1, 316,   -- 658: push_literal(316)
-      8, 6,     -- 660: set_slot_direct(6)
-      8, 314,   -- 662: set_slot_direct(314)
+      1, 371,   -- 658: push_literal(371)
+      8, 18,    -- 660: set_slot_direct(18)
+      8, 369,   -- 662: set_slot_direct(369)
       0,        -- 664: push_frame
-      5, 370,   -- 665: get_slot_direct(370)
+      5, 425,   -- 665: get_slot_direct(425)
       0,        -- 667: push_frame
-      5, 372,   -- 668: get_slot_direct(372)
-      8, 186,   -- 670: set_slot_direct(186)
+      5, 427,   -- 668: get_slot_direct(427)
+      8, 247,   -- 670: set_slot_direct(247)
       0,        -- 672: push_frame
-      5, 370,   -- 673: get_slot_direct(370)
+      5, 425,   -- 673: get_slot_direct(425)
       11        -- 675: return
     }
   },
   ifunc.Function:new{ -- "assert"
     name = jsval.newString("assert"),
-    id = 92,
+    id = 98,
     nargs = 2,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 171,   -- 8: set_slot_direct(171)
+      8, 235,   -- 8: set_slot_direct(235)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 7,     -- 15: set_slot_direct(7)
+      8, 30,    -- 15: set_slot_direct(30)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 171,   -- 19: get_slot_direct(171)
+      5, 235,   -- 19: get_slot_direct(235)
       20,       -- 21: un_not
       13, 51,   -- 22: jmp_unless(51)
       0,        -- 24: push_frame
-      5, 377,   -- 25: get_slot_direct(377)
+      5, 432,   -- 25: get_slot_direct(432)
       15,       -- 27: dup
-      7, 378,   -- 28: get_slot_direct_check(378)
+      7, 433,   -- 28: get_slot_direct_check(433)
       19,       -- 30: swap
-      1, 379,   -- 31: push_literal(379)
+      1, 434,   -- 31: push_literal(434)
       0,        -- 33: push_frame
-      5, 7,     -- 34: get_slot_direct(7)
+      5, 30,    -- 34: get_slot_direct(30)
       10, 2,    -- 36: invoke(2)
       14,       -- 38: pop
       0,        -- 39: push_frame
-      5, 377,   -- 40: get_slot_direct(377)
+      5, 432,   -- 40: get_slot_direct(432)
       15,       -- 42: dup
-      7, 374,   -- 43: get_slot_direct_check(374)
+      7, 429,   -- 43: get_slot_direct_check(429)
       19,       -- 45: swap
-      1, 10,    -- 46: push_literal(10)
+      1, 32,    -- 46: push_literal(32)
       10, 1,    -- 48: invoke(1)
       14,       -- 50: pop
       1, 0,     -- 51: push_literal(0)
@@ -9392,320 +10289,320 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "mkstate"
     name = jsval.newString("mkstate"),
-    id = 93,
+    id = 99,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 380,   -- 8: set_slot_direct(380)
+      8, 435,   -- 8: set_slot_direct(435)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 304,   -- 14: set_slot_direct(304)
+      8, 359,   -- 14: set_slot_direct(359)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 381,   -- 19: set_slot_direct(381)
+      8, 436,   -- 19: set_slot_direct(436)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 382,   -- 24: set_slot_direct(382)
+      8, 437,   -- 24: set_slot_direct(437)
       0,        -- 26: push_frame
       2,        -- 27: new_object
       15,       -- 28: dup
       3,        -- 29: new_array
-      8, 383,   -- 30: set_slot_direct(383)
+      8, 438,   -- 30: set_slot_direct(438)
       15,       -- 32: dup
       3,        -- 33: new_array
-      8, 333,   -- 34: set_slot_direct(333)
+      8, 388,   -- 34: set_slot_direct(388)
       15,       -- 36: dup
-      1, 6,     -- 37: push_literal(6)
-      8, 190,   -- 39: set_slot_direct(190)
+      1, 18,    -- 37: push_literal(18)
+      8, 251,   -- 39: set_slot_direct(251)
       15,       -- 41: dup
       0,        -- 42: push_frame
-      5, 380,   -- 43: get_slot_direct(380)
+      5, 435,   -- 43: get_slot_direct(435)
       20,       -- 45: un_not
-      8, 384,   -- 46: set_slot_direct(384)
-      8, 304,   -- 48: set_slot_direct(304)
+      8, 439,   -- 46: set_slot_direct(439)
+      8, 359,   -- 48: set_slot_direct(359)
       0,        -- 50: push_frame
-      5, 304,   -- 51: get_slot_direct(304)
-      4, 94,    -- 53: new_function(94)
-      8, 232,   -- 55: set_slot_direct(232)
+      5, 359,   -- 51: get_slot_direct(359)
+      4, 100,   -- 53: new_function(100)
+      8, 293,   -- 55: set_slot_direct(293)
       0,        -- 57: push_frame
-      5, 304,   -- 58: get_slot_direct(304)
-      4, 95,    -- 60: new_function(95)
-      8, 341,   -- 62: set_slot_direct(341)
+      5, 359,   -- 58: get_slot_direct(359)
+      4, 101,   -- 60: new_function(101)
+      8, 396,   -- 62: set_slot_direct(396)
       0,        -- 64: push_frame
-      5, 304,   -- 65: get_slot_direct(304)
-      4, 96,    -- 67: new_function(96)
-      8, 397,   -- 69: set_slot_direct(397)
+      5, 359,   -- 65: get_slot_direct(359)
+      4, 102,   -- 67: new_function(102)
+      8, 451,   -- 69: set_slot_direct(451)
       0,        -- 71: push_frame
-      5, 304,   -- 72: get_slot_direct(304)
-      4, 97,    -- 74: new_function(97)
-      8, 400,   -- 76: set_slot_direct(400)
+      5, 359,   -- 72: get_slot_direct(359)
+      4, 103,   -- 74: new_function(103)
+      8, 454,   -- 76: set_slot_direct(454)
       0,        -- 78: push_frame
-      4, 98,    -- 79: new_function(98)
-      8, 381,   -- 81: set_slot_direct(381)
+      4, 104,   -- 79: new_function(104)
+      8, 436,   -- 81: set_slot_direct(436)
       0,        -- 83: push_frame
-      4, 99,    -- 84: new_function(99)
-      8, 382,   -- 86: set_slot_direct(382)
+      4, 105,   -- 84: new_function(105)
+      8, 437,   -- 86: set_slot_direct(437)
       0,        -- 88: push_frame
-      5, 304,   -- 89: get_slot_direct(304)
-      4, 100,   -- 91: new_function(100)
-      8, 412,   -- 93: set_slot_direct(412)
+      5, 359,   -- 89: get_slot_direct(359)
+      4, 106,   -- 91: new_function(106)
+      8, 462,   -- 93: set_slot_direct(462)
       0,        -- 95: push_frame
-      5, 304,   -- 96: get_slot_direct(304)
-      4, 101,   -- 98: new_function(101)
-      8, 414,   -- 100: set_slot_direct(414)
+      5, 359,   -- 96: get_slot_direct(359)
+      4, 107,   -- 98: new_function(107)
+      8, 464,   -- 100: set_slot_direct(464)
       0,        -- 102: push_frame
-      5, 304,   -- 103: get_slot_direct(304)
-      4, 102,   -- 105: new_function(102)
-      8, 415,   -- 107: set_slot_direct(415)
+      5, 359,   -- 103: get_slot_direct(359)
+      4, 108,   -- 105: new_function(108)
+      8, 465,   -- 107: set_slot_direct(465)
       0,        -- 109: push_frame
-      5, 304,   -- 110: get_slot_direct(304)
-      4, 103,   -- 112: new_function(103)
-      8, 417,   -- 114: set_slot_direct(417)
+      5, 359,   -- 110: get_slot_direct(359)
+      4, 109,   -- 112: new_function(109)
+      8, 467,   -- 114: set_slot_direct(467)
       0,        -- 116: push_frame
-      5, 304,   -- 117: get_slot_direct(304)
-      4, 104,   -- 119: new_function(104)
-      8, 418,   -- 121: set_slot_direct(418)
+      5, 359,   -- 117: get_slot_direct(359)
+      4, 110,   -- 119: new_function(110)
+      8, 468,   -- 121: set_slot_direct(468)
       0,        -- 123: push_frame
-      5, 304,   -- 124: get_slot_direct(304)
-      4, 105,   -- 126: new_function(105)
-      8, 419,   -- 128: set_slot_direct(419)
+      5, 359,   -- 124: get_slot_direct(359)
+      4, 111,   -- 126: new_function(111)
+      8, 469,   -- 128: set_slot_direct(469)
       0,        -- 130: push_frame
-      5, 304,   -- 131: get_slot_direct(304)
-      4, 106,   -- 133: new_function(106)
-      8, 422,   -- 135: set_slot_direct(422)
+      5, 359,   -- 131: get_slot_direct(359)
+      4, 112,   -- 133: new_function(112)
+      8, 472,   -- 135: set_slot_direct(472)
       0,        -- 137: push_frame
-      5, 304,   -- 138: get_slot_direct(304)
-      4, 107,   -- 140: new_function(107)
-      8, 421,   -- 142: set_slot_direct(421)
+      5, 359,   -- 138: get_slot_direct(359)
+      4, 113,   -- 140: new_function(113)
+      8, 471,   -- 142: set_slot_direct(471)
       0,        -- 144: push_frame
-      5, 304,   -- 145: get_slot_direct(304)
-      4, 108,   -- 147: new_function(108)
-      8, 423,   -- 149: set_slot_direct(423)
+      5, 359,   -- 145: get_slot_direct(359)
+      4, 114,   -- 147: new_function(114)
+      8, 473,   -- 149: set_slot_direct(473)
       0,        -- 151: push_frame
-      5, 304,   -- 152: get_slot_direct(304)
+      5, 359,   -- 152: get_slot_direct(359)
       11        -- 154: return
     }
   },
   ifunc.Function:new{ -- ".literal"
     name = jsval.newString(".literal"),
-    id = 94,
+    id = 100,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 385,   -- 8: set_slot_direct(385)
+      8, 178,   -- 8: set_slot_direct(178)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 37,    -- 14: set_slot_direct(37)
+      8, 53,    -- 14: set_slot_direct(53)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 386,   -- 19: set_slot_direct(386)
+      8, 440,   -- 19: set_slot_direct(440)
       0,        -- 21: push_frame
-      1, 6,     -- 22: push_literal(6)
-      8, 37,    -- 24: set_slot_direct(37)
+      1, 18,    -- 22: push_literal(18)
+      8, 53,    -- 24: set_slot_direct(53)
       0,        -- 26: push_frame
       0,        -- 27: push_frame
-      5, 385,   -- 28: get_slot_direct(385)
+      5, 178,   -- 28: get_slot_direct(178)
       0,        -- 30: push_frame
-      5, 385,   -- 31: get_slot_direct(385)
+      5, 178,   -- 31: get_slot_direct(178)
       23,       -- 33: bi_eq
       20,       -- 34: un_not
-      8, 386,   -- 35: set_slot_direct(386)
+      8, 440,   -- 35: set_slot_direct(440)
       12, 93,   -- 37: jmp(93)
       0,        -- 39: push_frame
       1, 0,     -- 40: push_literal(0)
-      8, 387,   -- 42: set_slot_direct(387)
+      8, 441,   -- 42: set_slot_direct(441)
       0,        -- 44: push_frame
       0,        -- 45: push_frame
-      5, 20,    -- 46: get_slot_direct(20)
-      5, 333,   -- 48: get_slot_direct(333)
+      5, 26,    -- 46: get_slot_direct(26)
+      5, 388,   -- 48: get_slot_direct(388)
       0,        -- 50: push_frame
-      5, 37,    -- 51: get_slot_direct(37)
+      5, 53,    -- 51: get_slot_direct(53)
       6,        -- 53: get_slot_indirect
-      8, 387,   -- 54: set_slot_direct(387)
+      8, 441,   -- 54: set_slot_direct(441)
       0,        -- 56: push_frame
-      5, 386,   -- 57: get_slot_direct(386)
+      5, 440,   -- 57: get_slot_direct(440)
       13, 71,   -- 59: jmp_unless(71)
       0,        -- 61: push_frame
-      5, 387,   -- 62: get_slot_direct(387)
+      5, 441,   -- 62: get_slot_direct(441)
       0,        -- 64: push_frame
-      5, 387,   -- 65: get_slot_direct(387)
+      5, 441,   -- 65: get_slot_direct(441)
       23,       -- 67: bi_eq
       20,       -- 68: un_not
       12, 78,   -- 69: jmp(78)
       0,        -- 71: push_frame
-      5, 387,   -- 72: get_slot_direct(387)
+      5, 441,   -- 72: get_slot_direct(441)
       0,        -- 74: push_frame
-      5, 385,   -- 75: get_slot_direct(385)
+      5, 178,   -- 75: get_slot_direct(178)
       23,       -- 77: bi_eq
       13, 84,   -- 78: jmp_unless(84)
       0,        -- 80: push_frame
-      5, 37,    -- 81: get_slot_direct(37)
+      5, 53,    -- 81: get_slot_direct(53)
       11,       -- 83: return
       0,        -- 84: push_frame
       15,       -- 85: dup
-      5, 37,    -- 86: get_slot_direct(37)
-      1, 8,     -- 88: push_literal(8)
+      5, 53,    -- 86: get_slot_direct(53)
+      1, 31,    -- 88: push_literal(31)
       26,       -- 90: bi_add
-      8, 37,    -- 91: set_slot_direct(37)
+      8, 53,    -- 91: set_slot_direct(53)
       0,        -- 93: push_frame
-      5, 37,    -- 94: get_slot_direct(37)
+      5, 53,    -- 94: get_slot_direct(53)
       0,        -- 96: push_frame
-      5, 20,    -- 97: get_slot_direct(20)
-      5, 333,   -- 99: get_slot_direct(333)
-      5, 24,    -- 101: get_slot_direct(24)
+      5, 26,    -- 97: get_slot_direct(26)
+      5, 388,   -- 99: get_slot_direct(388)
+      5, 55,    -- 101: get_slot_direct(55)
       19,       -- 103: swap
       24,       -- 104: bi_gt
       20,       -- 105: un_not
       13, 39,   -- 106: jmp_unless(39)
       0,        -- 108: push_frame
-      5, 20,    -- 109: get_slot_direct(20)
-      5, 333,   -- 111: get_slot_direct(333)
+      5, 26,    -- 109: get_slot_direct(26)
+      5, 388,   -- 111: get_slot_direct(388)
       0,        -- 113: push_frame
-      5, 37,    -- 114: get_slot_direct(37)
+      5, 53,    -- 114: get_slot_direct(53)
       0,        -- 116: push_frame
-      5, 385,   -- 117: get_slot_direct(385)
+      5, 178,   -- 117: get_slot_direct(178)
       9,        -- 119: set_slot_indirect
       0,        -- 120: push_frame
-      5, 37,    -- 121: get_slot_direct(37)
+      5, 53,    -- 121: get_slot_direct(53)
       11        -- 123: return
     }
   },
   ifunc.Function:new{ -- ".new_function"
     name = jsval.newString(".new_function"),
-    id = 95,
+    id = 101,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 84,    -- 8: set_slot_direct(84)
+      8, 105,   -- 8: set_slot_direct(105)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 388,   -- 14: set_slot_direct(388)
+      8, 442,   -- 14: set_slot_direct(442)
       0,        -- 16: push_frame
       2,        -- 17: new_object
       15,       -- 18: dup
       0,        -- 19: push_frame
-      5, 20,    -- 20: get_slot_direct(20)
-      5, 383,   -- 22: get_slot_direct(383)
-      5, 24,    -- 24: get_slot_direct(24)
-      8, 226,   -- 26: set_slot_direct(226)
+      5, 26,    -- 20: get_slot_direct(26)
+      5, 438,   -- 22: get_slot_direct(438)
+      5, 55,    -- 24: get_slot_direct(55)
+      8, 287,   -- 26: set_slot_direct(287)
       15,       -- 28: dup
       0,        -- 29: push_frame
-      5, 84,    -- 30: get_slot_direct(84)
-      8, 84,    -- 32: set_slot_direct(84)
+      5, 105,   -- 30: get_slot_direct(105)
+      8, 105,   -- 32: set_slot_direct(105)
       15,       -- 34: dup
-      1, 6,     -- 35: push_literal(6)
-      8, 389,   -- 37: set_slot_direct(389)
+      1, 18,    -- 35: push_literal(18)
+      8, 443,   -- 37: set_slot_direct(443)
       15,       -- 39: dup
       3,        -- 40: new_array
-      8, 329,   -- 41: set_slot_direct(329)
+      8, 384,   -- 41: set_slot_direct(384)
       15,       -- 43: dup
-      1, 6,     -- 44: push_literal(6)
-      8, 390,   -- 46: set_slot_direct(390)
+      1, 18,    -- 44: push_literal(18)
+      8, 444,   -- 46: set_slot_direct(444)
       15,       -- 48: dup
       3,        -- 49: new_array
-      8, 391,   -- 50: set_slot_direct(391)
-      8, 388,   -- 52: set_slot_direct(388)
+      8, 445,   -- 50: set_slot_direct(445)
+      8, 442,   -- 52: set_slot_direct(442)
       0,        -- 54: push_frame
-      5, 20,    -- 55: get_slot_direct(20)
-      5, 383,   -- 57: get_slot_direct(383)
+      5, 26,    -- 55: get_slot_direct(26)
+      5, 438,   -- 57: get_slot_direct(438)
       0,        -- 59: push_frame
-      5, 388,   -- 60: get_slot_direct(388)
-      5, 226,   -- 62: get_slot_direct(226)
+      5, 442,   -- 60: get_slot_direct(442)
+      5, 287,   -- 62: get_slot_direct(287)
       0,        -- 64: push_frame
-      5, 388,   -- 65: get_slot_direct(388)
+      5, 442,   -- 65: get_slot_direct(442)
       9,        -- 67: set_slot_indirect
       0,        -- 68: push_frame
-      5, 388,   -- 69: get_slot_direct(388)
+      5, 442,   -- 69: get_slot_direct(442)
       11        -- 71: return
     }
   },
   ifunc.Function:new{ -- ".emit"
     name = jsval.newString(".emit"),
-    id = 96,
+    id = 102,
     nargs = 1,
     max_stack = 7,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 392,   -- 8: set_slot_direct(392)
+      8, 446,   -- 8: set_slot_direct(446)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 393,   -- 14: set_slot_direct(393)
+      8, 447,   -- 14: set_slot_direct(447)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 394,   -- 19: set_slot_direct(394)
+      8, 448,   -- 19: set_slot_direct(448)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 37,    -- 24: set_slot_direct(37)
+      8, 53,    -- 24: set_slot_direct(53)
       0,        -- 26: push_frame
       0,        -- 27: push_frame
-      5, 373,   -- 28: get_slot_direct(373)
+      5, 428,   -- 28: get_slot_direct(428)
       15,       -- 30: dup
-      7, 369,   -- 31: get_slot_direct_check(369)
+      7, 424,   -- 31: get_slot_direct_check(424)
       19,       -- 33: swap
       0,        -- 34: push_frame
-      5, 392,   -- 35: get_slot_direct(392)
+      5, 446,   -- 35: get_slot_direct(446)
       10, 1,    -- 37: invoke(1)
-      8, 393,   -- 39: set_slot_direct(393)
+      8, 447,   -- 39: set_slot_direct(447)
       0,        -- 41: push_frame
       0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
-      5, 395,   -- 45: get_slot_direct(395)
-      8, 394,   -- 47: set_slot_direct(394)
+      5, 26,    -- 43: get_slot_direct(26)
+      5, 449,   -- 45: get_slot_direct(449)
+      8, 448,   -- 47: set_slot_direct(448)
       0,        -- 49: push_frame
-      1, 8,     -- 50: push_literal(8)
-      8, 37,    -- 52: set_slot_direct(37)
+      1, 31,    -- 50: push_literal(31)
+      8, 53,    -- 52: set_slot_direct(53)
       0,        -- 54: push_frame
-      5, 374,   -- 55: get_slot_direct(374)
+      5, 429,   -- 55: get_slot_direct(429)
       0,        -- 57: push_frame
-      5, 20,    -- 58: get_slot_direct(20)
+      5, 26,    -- 58: get_slot_direct(26)
       0,        -- 60: push_frame
-      5, 393,   -- 61: get_slot_direct(393)
+      5, 447,   -- 61: get_slot_direct(447)
       0,        -- 63: push_frame
-      5, 392,   -- 64: get_slot_direct(392)
+      5, 446,   -- 64: get_slot_direct(446)
       10, 2,    -- 66: invoke(2)
       14,       -- 68: pop
       0,        -- 69: push_frame
-      5, 374,   -- 70: get_slot_direct(374)
+      5, 429,   -- 70: get_slot_direct(429)
       0,        -- 72: push_frame
-      5, 20,    -- 73: get_slot_direct(20)
+      5, 26,    -- 73: get_slot_direct(26)
       0,        -- 75: push_frame
-      5, 394,   -- 76: get_slot_direct(394)
-      5, 390,   -- 78: get_slot_direct(390)
+      5, 448,   -- 76: get_slot_direct(448)
+      5, 444,   -- 78: get_slot_direct(444)
       0,        -- 80: push_frame
-      5, 393,   -- 81: get_slot_direct(393)
-      5, 325,   -- 83: get_slot_direct(325)
+      5, 447,   -- 81: get_slot_direct(447)
+      5, 380,   -- 83: get_slot_direct(380)
       15,       -- 85: dup
-      7, 88,    -- 86: get_slot_direct_check(88)
+      7, 109,   -- 86: get_slot_direct_check(109)
       19,       -- 88: swap
       0,        -- 89: push_frame
-      5, 393,   -- 90: get_slot_direct(393)
+      5, 447,   -- 90: get_slot_direct(447)
       0,        -- 92: push_frame
       5, 2,     -- 93: get_slot_direct(2)
       10, 2,    -- 95: invoke(2)
@@ -9713,354 +10610,354 @@ startup.functions = {
       10, 1,    -- 98: invoke(1)
       14,       -- 100: pop
       0,        -- 101: push_frame
-      5, 394,   -- 102: get_slot_direct(394)
-      5, 329,   -- 104: get_slot_direct(329)
+      5, 448,   -- 102: get_slot_direct(448)
+      5, 384,   -- 104: get_slot_direct(384)
       15,       -- 106: dup
-      7, 52,    -- 107: get_slot_direct_check(52)
+      7, 69,    -- 107: get_slot_direct_check(69)
       19,       -- 109: swap
       0,        -- 110: push_frame
-      5, 393,   -- 111: get_slot_direct(393)
-      5, 226,   -- 113: get_slot_direct(226)
+      5, 447,   -- 111: get_slot_direct(447)
+      5, 287,   -- 113: get_slot_direct(287)
       10, 1,    -- 115: invoke(1)
       14,       -- 117: pop
       12, 148,  -- 118: jmp(148)
       0,        -- 120: push_frame
-      5, 394,   -- 121: get_slot_direct(394)
-      5, 329,   -- 123: get_slot_direct(329)
+      5, 448,   -- 121: get_slot_direct(448)
+      5, 384,   -- 123: get_slot_direct(384)
       15,       -- 125: dup
-      7, 52,    -- 126: get_slot_direct_check(52)
+      7, 69,    -- 126: get_slot_direct_check(69)
       19,       -- 128: swap
       0,        -- 129: push_frame
       5, 2,     -- 130: get_slot_direct(2)
       0,        -- 132: push_frame
-      5, 37,    -- 133: get_slot_direct(37)
+      5, 53,    -- 133: get_slot_direct(53)
       6,        -- 135: get_slot_indirect
       10, 1,    -- 136: invoke(1)
       14,       -- 138: pop
       0,        -- 139: push_frame
       15,       -- 140: dup
-      5, 37,    -- 141: get_slot_direct(37)
-      1, 8,     -- 143: push_literal(8)
+      5, 53,    -- 141: get_slot_direct(53)
+      1, 31,    -- 143: push_literal(31)
       26,       -- 145: bi_add
-      8, 37,    -- 146: set_slot_direct(37)
+      8, 53,    -- 146: set_slot_direct(53)
       0,        -- 148: push_frame
-      5, 37,    -- 149: get_slot_direct(37)
+      5, 53,    -- 149: get_slot_direct(53)
       0,        -- 151: push_frame
       5, 2,     -- 152: get_slot_direct(2)
-      5, 24,    -- 154: get_slot_direct(24)
+      5, 55,    -- 154: get_slot_direct(55)
       19,       -- 156: swap
       24,       -- 157: bi_gt
       20,       -- 158: un_not
       13, 120,  -- 159: jmp_unless(120)
       0,        -- 161: push_frame
-      5, 394,   -- 162: get_slot_direct(394)
+      5, 448,   -- 162: get_slot_direct(448)
       15,       -- 164: dup
-      5, 390,   -- 165: get_slot_direct(390)
+      5, 444,   -- 165: get_slot_direct(444)
       0,        -- 167: push_frame
-      5, 393,   -- 168: get_slot_direct(393)
-      5, 325,   -- 170: get_slot_direct(325)
+      5, 447,   -- 168: get_slot_direct(447)
+      5, 380,   -- 170: get_slot_direct(380)
       15,       -- 172: dup
-      7, 88,    -- 173: get_slot_direct_check(88)
+      7, 109,   -- 173: get_slot_direct_check(109)
       19,       -- 175: swap
       0,        -- 176: push_frame
-      5, 393,   -- 177: get_slot_direct(393)
+      5, 447,   -- 177: get_slot_direct(447)
       0,        -- 179: push_frame
       5, 2,     -- 180: get_slot_direct(2)
       10, 2,    -- 182: invoke(2)
       27,       -- 184: bi_sub
-      8, 390,   -- 185: set_slot_direct(390)
+      8, 444,   -- 185: set_slot_direct(444)
       0,        -- 187: push_frame
-      5, 394,   -- 188: get_slot_direct(394)
+      5, 448,   -- 188: get_slot_direct(448)
       15,       -- 190: dup
-      5, 390,   -- 191: get_slot_direct(390)
+      5, 444,   -- 191: get_slot_direct(444)
       0,        -- 193: push_frame
-      5, 393,   -- 194: get_slot_direct(393)
-      5, 326,   -- 196: get_slot_direct(326)
+      5, 447,   -- 194: get_slot_direct(447)
+      5, 381,   -- 196: get_slot_direct(381)
       15,       -- 198: dup
-      7, 88,    -- 199: get_slot_direct_check(88)
+      7, 109,   -- 199: get_slot_direct_check(109)
       19,       -- 201: swap
       0,        -- 202: push_frame
-      5, 393,   -- 203: get_slot_direct(393)
+      5, 447,   -- 203: get_slot_direct(447)
       0,        -- 205: push_frame
       5, 2,     -- 206: get_slot_direct(2)
       10, 2,    -- 208: invoke(2)
       26,       -- 210: bi_add
-      8, 390,   -- 211: set_slot_direct(390)
+      8, 444,   -- 211: set_slot_direct(444)
       0,        -- 213: push_frame
-      5, 394,   -- 214: get_slot_direct(394)
-      5, 390,   -- 216: get_slot_direct(390)
+      5, 448,   -- 214: get_slot_direct(448)
+      5, 444,   -- 216: get_slot_direct(444)
       0,        -- 218: push_frame
-      5, 394,   -- 219: get_slot_direct(394)
-      5, 389,   -- 221: get_slot_direct(389)
+      5, 448,   -- 219: get_slot_direct(448)
+      5, 443,   -- 221: get_slot_direct(443)
       24,       -- 223: bi_gt
       13, 236,  -- 224: jmp_unless(236)
       0,        -- 226: push_frame
-      5, 394,   -- 227: get_slot_direct(394)
+      5, 448,   -- 227: get_slot_direct(448)
       0,        -- 229: push_frame
-      5, 394,   -- 230: get_slot_direct(394)
-      5, 390,   -- 232: get_slot_direct(390)
-      8, 389,   -- 234: set_slot_direct(389)
+      5, 448,   -- 230: get_slot_direct(448)
+      5, 444,   -- 232: get_slot_direct(444)
+      8, 443,   -- 234: set_slot_direct(443)
       0,        -- 236: push_frame
-      5, 394,   -- 237: get_slot_direct(394)
-      1, 94,    -- 239: push_literal(94)
-      8, 396,   -- 241: set_slot_direct(396)
+      5, 448,   -- 237: get_slot_direct(448)
+      1, 115,   -- 239: push_literal(115)
+      8, 450,   -- 241: set_slot_direct(450)
       1, 0,     -- 243: push_literal(0)
       11        -- 245: return
     }
   },
   ifunc.Function:new{ -- ".decompile"
     name = jsval.newString(".decompile"),
-    id = 97,
+    id = 103,
     nargs = 1,
     max_stack = 7,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 398,   -- 8: set_slot_direct(398)
+      8, 452,   -- 8: set_slot_direct(452)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 57,    -- 14: set_slot_direct(57)
+      8, 75,    -- 14: set_slot_direct(75)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 85,    -- 19: set_slot_direct(85)
+      8, 106,   -- 19: set_slot_direct(106)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 330,   -- 24: set_slot_direct(330)
+      8, 385,   -- 24: set_slot_direct(385)
       0,        -- 26: push_frame
-      1, 49,    -- 27: push_literal(49)
-      8, 57,    -- 29: set_slot_direct(57)
+      1, 66,    -- 27: push_literal(66)
+      8, 75,    -- 29: set_slot_direct(75)
       0,        -- 31: push_frame
       0,        -- 32: push_frame
-      5, 20,    -- 33: get_slot_direct(20)
-      5, 383,   -- 35: get_slot_direct(383)
+      5, 26,    -- 33: get_slot_direct(26)
+      5, 438,   -- 35: get_slot_direct(438)
       0,        -- 37: push_frame
-      5, 398,   -- 38: get_slot_direct(398)
+      5, 452,   -- 38: get_slot_direct(452)
       6,        -- 40: get_slot_indirect
-      8, 85,    -- 41: set_slot_direct(85)
+      8, 106,   -- 41: set_slot_direct(106)
       0,        -- 43: push_frame
-      1, 6,     -- 44: push_literal(6)
-      8, 330,   -- 46: set_slot_direct(330)
+      1, 18,    -- 44: push_literal(18)
+      8, 385,   -- 46: set_slot_direct(385)
       12, 162,  -- 48: jmp(162)
       0,        -- 50: push_frame
       1, 0,     -- 51: push_literal(0)
-      8, 393,   -- 53: set_slot_direct(393)
+      8, 447,   -- 53: set_slot_direct(447)
       0,        -- 55: push_frame
       1, 0,     -- 56: push_literal(0)
-      8, 37,    -- 58: set_slot_direct(37)
+      8, 53,    -- 58: set_slot_direct(53)
       0,        -- 60: push_frame
       0,        -- 61: push_frame
-      5, 373,   -- 62: get_slot_direct(373)
+      5, 428,   -- 62: get_slot_direct(428)
       15,       -- 64: dup
-      7, 368,   -- 65: get_slot_direct_check(368)
+      7, 423,   -- 65: get_slot_direct_check(423)
       19,       -- 67: swap
       0,        -- 68: push_frame
-      5, 85,    -- 69: get_slot_direct(85)
-      5, 329,   -- 71: get_slot_direct(329)
+      5, 106,   -- 69: get_slot_direct(106)
+      5, 384,   -- 71: get_slot_direct(384)
       0,        -- 73: push_frame
-      5, 330,   -- 74: get_slot_direct(330)
+      5, 385,   -- 74: get_slot_direct(385)
       6,        -- 76: get_slot_indirect
       10, 1,    -- 77: invoke(1)
-      8, 393,   -- 79: set_slot_direct(393)
+      8, 447,   -- 79: set_slot_direct(447)
       0,        -- 81: push_frame
-      1, 6,     -- 82: push_literal(6)
-      8, 37,    -- 84: set_slot_direct(37)
+      1, 18,    -- 82: push_literal(18)
+      8, 53,    -- 84: set_slot_direct(53)
       0,        -- 86: push_frame
       15,       -- 87: dup
-      5, 57,    -- 88: get_slot_direct(57)
+      5, 75,    -- 88: get_slot_direct(75)
       0,        -- 90: push_frame
-      5, 330,   -- 91: get_slot_direct(330)
-      1, 399,   -- 93: push_literal(399)
+      5, 385,   -- 91: get_slot_direct(385)
+      1, 453,   -- 93: push_literal(453)
       26,       -- 95: bi_add
       26,       -- 96: bi_add
-      8, 57,    -- 97: set_slot_direct(57)
+      8, 75,    -- 97: set_slot_direct(75)
       0,        -- 99: push_frame
       15,       -- 100: dup
-      5, 57,    -- 101: get_slot_direct(57)
+      5, 75,    -- 101: get_slot_direct(75)
       0,        -- 103: push_frame
-      5, 393,   -- 104: get_slot_direct(393)
-      5, 9,     -- 106: get_slot_direct(9)
+      5, 447,   -- 104: get_slot_direct(447)
+      5, 19,    -- 106: get_slot_direct(19)
       26,       -- 108: bi_add
-      8, 57,    -- 109: set_slot_direct(57)
+      8, 75,    -- 109: set_slot_direct(75)
       0,        -- 111: push_frame
       15,       -- 112: dup
-      5, 57,    -- 113: get_slot_direct(57)
+      5, 75,    -- 113: get_slot_direct(75)
       0,        -- 115: push_frame
-      5, 393,   -- 116: get_slot_direct(393)
+      5, 447,   -- 116: get_slot_direct(447)
       15,       -- 118: dup
-      7, 327,   -- 119: get_slot_direct_check(327)
+      7, 382,   -- 119: get_slot_direct_check(382)
       19,       -- 121: swap
       0,        -- 122: push_frame
-      5, 20,    -- 123: get_slot_direct(20)
+      5, 26,    -- 123: get_slot_direct(26)
       0,        -- 125: push_frame
-      5, 85,    -- 126: get_slot_direct(85)
-      5, 329,   -- 128: get_slot_direct(329)
+      5, 106,   -- 126: get_slot_direct(106)
+      5, 384,   -- 128: get_slot_direct(384)
       0,        -- 130: push_frame
-      5, 330,   -- 131: get_slot_direct(330)
+      5, 385,   -- 131: get_slot_direct(385)
       10, 3,    -- 133: invoke(3)
       26,       -- 135: bi_add
-      8, 57,    -- 136: set_slot_direct(57)
+      8, 75,    -- 136: set_slot_direct(75)
       0,        -- 138: push_frame
       15,       -- 139: dup
-      5, 57,    -- 140: get_slot_direct(57)
-      1, 165,   -- 142: push_literal(165)
+      5, 75,    -- 140: get_slot_direct(75)
+      1, 229,   -- 142: push_literal(229)
       26,       -- 144: bi_add
-      8, 57,    -- 145: set_slot_direct(57)
+      8, 75,    -- 145: set_slot_direct(75)
       0,        -- 147: push_frame
       15,       -- 148: dup
-      5, 330,   -- 149: get_slot_direct(330)
-      1, 8,     -- 151: push_literal(8)
+      5, 385,   -- 149: get_slot_direct(385)
+      1, 31,    -- 151: push_literal(31)
       0,        -- 153: push_frame
-      5, 393,   -- 154: get_slot_direct(393)
-      5, 324,   -- 156: get_slot_direct(324)
+      5, 447,   -- 154: get_slot_direct(447)
+      5, 379,   -- 156: get_slot_direct(379)
       26,       -- 158: bi_add
       26,       -- 159: bi_add
-      8, 330,   -- 160: set_slot_direct(330)
+      8, 385,   -- 160: set_slot_direct(385)
       0,        -- 162: push_frame
-      5, 330,   -- 163: get_slot_direct(330)
+      5, 385,   -- 163: get_slot_direct(385)
       0,        -- 165: push_frame
-      5, 85,    -- 166: get_slot_direct(85)
-      5, 329,   -- 168: get_slot_direct(329)
-      5, 24,    -- 170: get_slot_direct(24)
+      5, 106,   -- 166: get_slot_direct(106)
+      5, 384,   -- 168: get_slot_direct(384)
+      5, 55,    -- 170: get_slot_direct(55)
       19,       -- 172: swap
       24,       -- 173: bi_gt
       20,       -- 174: un_not
       13, 50,   -- 175: jmp_unless(50)
       0,        -- 177: push_frame
-      5, 57,    -- 178: get_slot_direct(57)
+      5, 75,    -- 178: get_slot_direct(75)
       11        -- 180: return
     }
   },
   ifunc.Function:new{ -- "encode_uint"
     name = jsval.newString("encode_uint"),
-    id = 98,
+    id = 104,
     nargs = 2,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 401,   -- 8: set_slot_direct(401)
+      8, 455,   -- 8: set_slot_direct(455)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 385,   -- 15: set_slot_direct(385)
+      8, 178,   -- 15: set_slot_direct(178)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 402,   -- 21: set_slot_direct(402)
+      8, 456,   -- 21: set_slot_direct(456)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 403,   -- 26: set_slot_direct(403)
+      8, 457,   -- 26: set_slot_direct(457)
       0,        -- 28: push_frame
-      5, 374,   -- 29: get_slot_direct(374)
+      5, 429,   -- 29: get_slot_direct(429)
       0,        -- 31: push_frame
-      5, 20,    -- 32: get_slot_direct(20)
+      5, 26,    -- 32: get_slot_direct(26)
       0,        -- 34: push_frame
-      5, 385,   -- 35: get_slot_direct(385)
-      1, 6,     -- 37: push_literal(6)
+      5, 178,   -- 35: get_slot_direct(178)
+      1, 18,    -- 37: push_literal(18)
       25,       -- 39: bi_gte
       0,        -- 40: push_frame
-      5, 385,   -- 41: get_slot_direct(385)
+      5, 178,   -- 41: get_slot_direct(178)
       10, 2,    -- 43: invoke(2)
       14,       -- 45: pop
       0,        -- 46: push_frame
-      5, 385,   -- 47: get_slot_direct(385)
-      1, 404,   -- 49: push_literal(404)
+      5, 178,   -- 47: get_slot_direct(178)
+      1, 458,   -- 49: push_literal(458)
       19,       -- 51: swap
       24,       -- 52: bi_gt
       13, 71,   -- 53: jmp_unless(71)
       0,        -- 55: push_frame
-      5, 401,   -- 56: get_slot_direct(401)
+      5, 455,   -- 56: get_slot_direct(455)
       15,       -- 58: dup
-      7, 52,    -- 59: get_slot_direct_check(52)
+      7, 69,    -- 59: get_slot_direct_check(69)
       19,       -- 61: swap
       0,        -- 62: push_frame
-      5, 385,   -- 63: get_slot_direct(385)
+      5, 178,   -- 63: get_slot_direct(178)
       10, 1,    -- 65: invoke(1)
       14,       -- 67: pop
       1, 0,     -- 68: push_literal(0)
       11,       -- 70: return
       0,        -- 71: push_frame
       0,        -- 72: push_frame
-      5, 405,   -- 73: get_slot_direct(405)
+      5, 28,    -- 73: get_slot_direct(28)
       15,       -- 75: dup
-      7, 406,   -- 76: get_slot_direct_check(406)
+      7, 29,    -- 76: get_slot_direct_check(29)
       19,       -- 78: swap
       0,        -- 79: push_frame
-      5, 385,   -- 80: get_slot_direct(385)
-      1, 404,   -- 82: push_literal(404)
+      5, 178,   -- 80: get_slot_direct(178)
+      1, 458,   -- 82: push_literal(458)
       29,       -- 84: bi_div
       10, 1,    -- 85: invoke(1)
-      8, 402,   -- 87: set_slot_direct(402)
+      8, 456,   -- 87: set_slot_direct(456)
       0,        -- 89: push_frame
       0,        -- 90: push_frame
-      5, 385,   -- 91: get_slot_direct(385)
-      1, 404,   -- 93: push_literal(404)
+      5, 178,   -- 91: get_slot_direct(178)
+      1, 458,   -- 93: push_literal(458)
       0,        -- 95: push_frame
-      5, 402,   -- 96: get_slot_direct(402)
+      5, 456,   -- 96: get_slot_direct(456)
       28,       -- 98: bi_mul
       27,       -- 99: bi_sub
-      8, 403,   -- 100: set_slot_direct(403)
+      8, 457,   -- 100: set_slot_direct(457)
       0,        -- 102: push_frame
-      5, 374,   -- 103: get_slot_direct(374)
+      5, 429,   -- 103: get_slot_direct(429)
       0,        -- 105: push_frame
-      5, 20,    -- 106: get_slot_direct(20)
+      5, 26,    -- 106: get_slot_direct(26)
       0,        -- 108: push_frame
-      5, 403,   -- 109: get_slot_direct(403)
-      1, 6,     -- 111: push_literal(6)
+      5, 457,   -- 109: get_slot_direct(457)
+      1, 18,    -- 111: push_literal(18)
       25,       -- 113: bi_gte
       15,       -- 114: dup
       13, 125,  -- 115: jmp_unless(125)
       14,       -- 117: pop
       0,        -- 118: push_frame
-      5, 403,   -- 119: get_slot_direct(403)
-      1, 404,   -- 121: push_literal(404)
+      5, 457,   -- 119: get_slot_direct(457)
+      1, 458,   -- 121: push_literal(458)
       19,       -- 123: swap
       24,       -- 124: bi_gt
       0,        -- 125: push_frame
-      5, 385,   -- 126: get_slot_direct(385)
+      5, 178,   -- 126: get_slot_direct(178)
       10, 2,    -- 128: invoke(2)
       14,       -- 130: pop
       0,        -- 131: push_frame
-      5, 374,   -- 132: get_slot_direct(374)
+      5, 429,   -- 132: get_slot_direct(429)
       0,        -- 134: push_frame
-      5, 20,    -- 135: get_slot_direct(20)
+      5, 26,    -- 135: get_slot_direct(26)
       0,        -- 137: push_frame
-      5, 402,   -- 138: get_slot_direct(402)
-      1, 6,     -- 140: push_literal(6)
+      5, 456,   -- 138: get_slot_direct(456)
+      1, 18,    -- 140: push_literal(18)
       24,       -- 142: bi_gt
       0,        -- 143: push_frame
-      5, 385,   -- 144: get_slot_direct(385)
+      5, 178,   -- 144: get_slot_direct(178)
       10, 2,    -- 146: invoke(2)
       14,       -- 148: pop
       0,        -- 149: push_frame
-      5, 401,   -- 150: get_slot_direct(401)
+      5, 455,   -- 150: get_slot_direct(455)
       15,       -- 152: dup
-      7, 52,    -- 153: get_slot_direct_check(52)
+      7, 69,    -- 153: get_slot_direct_check(69)
       19,       -- 155: swap
       0,        -- 156: push_frame
-      5, 403,   -- 157: get_slot_direct(403)
-      1, 404,   -- 159: push_literal(404)
+      5, 457,   -- 157: get_slot_direct(457)
+      1, 458,   -- 159: push_literal(458)
       26,       -- 161: bi_add
       10, 1,    -- 162: invoke(1)
       14,       -- 164: pop
       0,        -- 165: push_frame
-      5, 381,   -- 166: get_slot_direct(381)
+      5, 436,   -- 166: get_slot_direct(436)
       0,        -- 168: push_frame
-      5, 20,    -- 169: get_slot_direct(20)
+      5, 26,    -- 169: get_slot_direct(26)
       0,        -- 171: push_frame
-      5, 401,   -- 172: get_slot_direct(401)
+      5, 455,   -- 172: get_slot_direct(455)
       0,        -- 174: push_frame
-      5, 402,   -- 175: get_slot_direct(402)
+      5, 456,   -- 175: get_slot_direct(456)
       10, 2,    -- 177: invoke(2)
       14,       -- 179: pop
       1, 0,     -- 180: push_literal(0)
@@ -10069,68 +10966,68 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "encode_str"
     name = jsval.newString("encode_str"),
-    id = 99,
+    id = 105,
     nargs = 2,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 401,   -- 8: set_slot_direct(401)
+      8, 455,   -- 8: set_slot_direct(455)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 46,    -- 15: set_slot_direct(46)
+      8, 63,    -- 15: set_slot_direct(63)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 37,    -- 21: set_slot_direct(37)
+      8, 53,    -- 21: set_slot_direct(53)
       0,        -- 23: push_frame
-      1, 6,     -- 24: push_literal(6)
-      8, 37,    -- 26: set_slot_direct(37)
+      1, 18,    -- 24: push_literal(18)
+      8, 53,    -- 26: set_slot_direct(53)
       0,        -- 28: push_frame
-      5, 381,   -- 29: get_slot_direct(381)
+      5, 436,   -- 29: get_slot_direct(436)
       0,        -- 31: push_frame
-      5, 20,    -- 32: get_slot_direct(20)
+      5, 26,    -- 32: get_slot_direct(26)
       0,        -- 34: push_frame
-      5, 401,   -- 35: get_slot_direct(401)
+      5, 455,   -- 35: get_slot_direct(455)
       0,        -- 37: push_frame
-      5, 46,    -- 38: get_slot_direct(46)
-      5, 24,    -- 40: get_slot_direct(24)
+      5, 63,    -- 38: get_slot_direct(63)
+      5, 55,    -- 40: get_slot_direct(55)
       10, 2,    -- 42: invoke(2)
       14,       -- 44: pop
       12, 80,   -- 45: jmp(80)
       0,        -- 47: push_frame
-      5, 381,   -- 48: get_slot_direct(381)
+      5, 436,   -- 48: get_slot_direct(436)
       0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
+      5, 26,    -- 51: get_slot_direct(26)
       0,        -- 53: push_frame
-      5, 401,   -- 54: get_slot_direct(401)
+      5, 455,   -- 54: get_slot_direct(455)
       0,        -- 56: push_frame
-      5, 46,    -- 57: get_slot_direct(46)
+      5, 63,    -- 57: get_slot_direct(63)
       15,       -- 59: dup
-      7, 27,    -- 60: get_slot_direct_check(27)
+      7, 43,    -- 60: get_slot_direct_check(43)
       19,       -- 62: swap
       0,        -- 63: push_frame
-      5, 37,    -- 64: get_slot_direct(37)
+      5, 53,    -- 64: get_slot_direct(53)
       10, 1,    -- 66: invoke(1)
       10, 2,    -- 68: invoke(2)
       14,       -- 70: pop
       0,        -- 71: push_frame
       15,       -- 72: dup
-      5, 37,    -- 73: get_slot_direct(37)
-      1, 8,     -- 75: push_literal(8)
+      5, 53,    -- 73: get_slot_direct(53)
+      1, 31,    -- 75: push_literal(31)
       26,       -- 77: bi_add
-      8, 37,    -- 78: set_slot_direct(37)
+      8, 53,    -- 78: set_slot_direct(53)
       0,        -- 80: push_frame
-      5, 37,    -- 81: get_slot_direct(37)
+      5, 53,    -- 81: get_slot_direct(53)
       0,        -- 83: push_frame
-      5, 46,    -- 84: get_slot_direct(46)
-      5, 24,    -- 86: get_slot_direct(24)
+      5, 63,    -- 84: get_slot_direct(63)
+      5, 55,    -- 86: get_slot_direct(55)
       19,       -- 88: swap
       24,       -- 89: bi_gt
       20,       -- 90: un_not
@@ -10141,7 +11038,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".encode"
     name = jsval.newString(".encode"),
-    id = 100,
+    id = 106,
     nargs = 0,
     max_stack = 5,
     bytecode = {
@@ -10150,341 +11047,341 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 401,   -- 7: set_slot_direct(401)
+      8, 455,   -- 7: set_slot_direct(455)
       0,        -- 9: push_frame
       1, 0,     -- 10: push_literal(0)
-      8, 37,    -- 12: set_slot_direct(37)
+      8, 53,    -- 12: set_slot_direct(53)
       0,        -- 14: push_frame
       3,        -- 15: new_array
-      8, 401,   -- 16: set_slot_direct(401)
+      8, 455,   -- 16: set_slot_direct(455)
       0,        -- 18: push_frame
-      5, 381,   -- 19: get_slot_direct(381)
+      5, 436,   -- 19: get_slot_direct(436)
       0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
+      5, 26,    -- 22: get_slot_direct(26)
       0,        -- 24: push_frame
-      5, 401,   -- 25: get_slot_direct(401)
+      5, 455,   -- 25: get_slot_direct(455)
       0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
-      5, 383,   -- 30: get_slot_direct(383)
-      5, 24,    -- 32: get_slot_direct(24)
+      5, 26,    -- 28: get_slot_direct(26)
+      5, 438,   -- 30: get_slot_direct(438)
+      5, 55,    -- 32: get_slot_direct(55)
       10, 2,    -- 34: invoke(2)
       14,       -- 36: pop
       0,        -- 37: push_frame
-      1, 6,     -- 38: push_literal(6)
-      8, 37,    -- 40: set_slot_direct(37)
+      1, 18,    -- 38: push_literal(18)
+      8, 53,    -- 40: set_slot_direct(53)
       12, 237,  -- 42: jmp(237)
       0,        -- 44: push_frame
       1, 0,     -- 45: push_literal(0)
-      8, 85,    -- 47: set_slot_direct(85)
+      8, 106,   -- 47: set_slot_direct(106)
       0,        -- 49: push_frame
       1, 0,     -- 50: push_literal(0)
-      8, 38,    -- 52: set_slot_direct(38)
+      8, 54,    -- 52: set_slot_direct(54)
       0,        -- 54: push_frame
       0,        -- 55: push_frame
-      5, 20,    -- 56: get_slot_direct(20)
-      5, 383,   -- 58: get_slot_direct(383)
+      5, 26,    -- 56: get_slot_direct(26)
+      5, 438,   -- 58: get_slot_direct(438)
       0,        -- 60: push_frame
-      5, 37,    -- 61: get_slot_direct(37)
+      5, 53,    -- 61: get_slot_direct(53)
       6,        -- 63: get_slot_indirect
-      8, 85,    -- 64: set_slot_direct(85)
+      8, 106,   -- 64: set_slot_direct(106)
       0,        -- 66: push_frame
-      5, 381,   -- 67: get_slot_direct(381)
+      5, 436,   -- 67: get_slot_direct(436)
       0,        -- 69: push_frame
-      5, 20,    -- 70: get_slot_direct(20)
+      5, 26,    -- 70: get_slot_direct(26)
       0,        -- 72: push_frame
-      5, 401,   -- 73: get_slot_direct(401)
+      5, 455,   -- 73: get_slot_direct(455)
       0,        -- 75: push_frame
-      5, 85,    -- 76: get_slot_direct(85)
-      5, 84,    -- 78: get_slot_direct(84)
+      5, 106,   -- 76: get_slot_direct(106)
+      5, 105,   -- 78: get_slot_direct(105)
       10, 2,    -- 80: invoke(2)
       14,       -- 82: pop
       0,        -- 83: push_frame
-      5, 381,   -- 84: get_slot_direct(381)
+      5, 436,   -- 84: get_slot_direct(436)
       0,        -- 86: push_frame
-      5, 20,    -- 87: get_slot_direct(20)
+      5, 26,    -- 87: get_slot_direct(26)
       0,        -- 89: push_frame
-      5, 401,   -- 90: get_slot_direct(401)
+      5, 455,   -- 90: get_slot_direct(455)
       0,        -- 92: push_frame
-      5, 85,    -- 93: get_slot_direct(85)
-      5, 389,   -- 95: get_slot_direct(389)
+      5, 106,   -- 93: get_slot_direct(106)
+      5, 443,   -- 95: get_slot_direct(443)
       10, 2,    -- 97: invoke(2)
       14,       -- 99: pop
       0,        -- 100: push_frame
-      5, 382,   -- 101: get_slot_direct(382)
+      5, 437,   -- 101: get_slot_direct(437)
       0,        -- 103: push_frame
-      5, 20,    -- 104: get_slot_direct(20)
+      5, 26,    -- 104: get_slot_direct(26)
       0,        -- 106: push_frame
-      5, 401,   -- 107: get_slot_direct(401)
+      5, 455,   -- 107: get_slot_direct(455)
       0,        -- 109: push_frame
-      5, 85,    -- 110: get_slot_direct(85)
-      5, 9,     -- 112: get_slot_direct(9)
+      5, 106,   -- 110: get_slot_direct(106)
+      5, 19,    -- 112: get_slot_direct(19)
       15,       -- 114: dup
       20,       -- 115: un_not
       13, 121,  -- 116: jmp_unless(121)
       14,       -- 118: pop
-      1, 49,    -- 119: push_literal(49)
+      1, 66,    -- 119: push_literal(66)
       10, 2,    -- 121: invoke(2)
       14,       -- 123: pop
       0,        -- 124: push_frame
-      5, 381,   -- 125: get_slot_direct(381)
+      5, 436,   -- 125: get_slot_direct(436)
       0,        -- 127: push_frame
-      5, 20,    -- 128: get_slot_direct(20)
+      5, 26,    -- 128: get_slot_direct(26)
       0,        -- 130: push_frame
-      5, 401,   -- 131: get_slot_direct(401)
+      5, 455,   -- 131: get_slot_direct(455)
       0,        -- 133: push_frame
-      5, 85,    -- 134: get_slot_direct(85)
-      5, 329,   -- 136: get_slot_direct(329)
-      5, 24,    -- 138: get_slot_direct(24)
+      5, 106,   -- 134: get_slot_direct(106)
+      5, 384,   -- 136: get_slot_direct(384)
+      5, 55,    -- 138: get_slot_direct(55)
       10, 2,    -- 140: invoke(2)
       14,       -- 142: pop
       0,        -- 143: push_frame
-      1, 6,     -- 144: push_literal(6)
-      8, 38,    -- 146: set_slot_direct(38)
+      1, 18,    -- 144: push_literal(18)
+      8, 54,    -- 146: set_slot_direct(54)
       12, 213,  -- 148: jmp(213)
       0,        -- 150: push_frame
       1, 0,     -- 151: push_literal(0)
-      8, 86,    -- 153: set_slot_direct(86)
+      8, 107,   -- 153: set_slot_direct(107)
       0,        -- 155: push_frame
       0,        -- 156: push_frame
-      5, 85,    -- 157: get_slot_direct(85)
-      5, 329,   -- 159: get_slot_direct(329)
+      5, 106,   -- 157: get_slot_direct(106)
+      5, 384,   -- 159: get_slot_direct(384)
       0,        -- 161: push_frame
-      5, 38,    -- 162: get_slot_direct(38)
+      5, 54,    -- 162: get_slot_direct(54)
       6,        -- 164: get_slot_indirect
-      8, 86,    -- 165: set_slot_direct(86)
+      8, 107,   -- 165: set_slot_direct(107)
       0,        -- 167: push_frame
       0,        -- 168: push_frame
-      5, 86,    -- 169: get_slot_direct(86)
+      5, 107,   -- 169: get_slot_direct(107)
       22,       -- 171: un_typeof
-      1, 67,    -- 172: push_literal(67)
+      1, 86,    -- 172: push_literal(86)
       23,       -- 174: bi_eq
       13, 182,  -- 175: jmp_unless(182)
       0,        -- 177: push_frame
-      5, 86,    -- 178: get_slot_direct(86)
+      5, 107,   -- 178: get_slot_direct(107)
       12, 187,  -- 180: jmp(187)
       0,        -- 182: push_frame
-      5, 86,    -- 183: get_slot_direct(86)
-      5, 336,   -- 185: get_slot_direct(336)
-      8, 86,    -- 187: set_slot_direct(86)
+      5, 107,   -- 183: get_slot_direct(107)
+      5, 391,   -- 185: get_slot_direct(391)
+      8, 107,   -- 187: set_slot_direct(107)
       0,        -- 189: push_frame
-      5, 381,   -- 190: get_slot_direct(381)
+      5, 436,   -- 190: get_slot_direct(436)
       0,        -- 192: push_frame
-      5, 20,    -- 193: get_slot_direct(20)
+      5, 26,    -- 193: get_slot_direct(26)
       0,        -- 195: push_frame
-      5, 401,   -- 196: get_slot_direct(401)
+      5, 455,   -- 196: get_slot_direct(455)
       0,        -- 198: push_frame
-      5, 86,    -- 199: get_slot_direct(86)
+      5, 107,   -- 199: get_slot_direct(107)
       10, 2,    -- 201: invoke(2)
       14,       -- 203: pop
       0,        -- 204: push_frame
       15,       -- 205: dup
-      5, 38,    -- 206: get_slot_direct(38)
-      1, 8,     -- 208: push_literal(8)
+      5, 54,    -- 206: get_slot_direct(54)
+      1, 31,    -- 208: push_literal(31)
       26,       -- 210: bi_add
-      8, 38,    -- 211: set_slot_direct(38)
+      8, 54,    -- 211: set_slot_direct(54)
       0,        -- 213: push_frame
-      5, 38,    -- 214: get_slot_direct(38)
+      5, 54,    -- 214: get_slot_direct(54)
       0,        -- 216: push_frame
-      5, 85,    -- 217: get_slot_direct(85)
-      5, 329,   -- 219: get_slot_direct(329)
-      5, 24,    -- 221: get_slot_direct(24)
+      5, 106,   -- 217: get_slot_direct(106)
+      5, 384,   -- 219: get_slot_direct(384)
+      5, 55,    -- 221: get_slot_direct(55)
       19,       -- 223: swap
       24,       -- 224: bi_gt
       20,       -- 225: un_not
       13, 150,  -- 226: jmp_unless(150)
       0,        -- 228: push_frame
       15,       -- 229: dup
-      5, 37,    -- 230: get_slot_direct(37)
-      1, 8,     -- 232: push_literal(8)
+      5, 53,    -- 230: get_slot_direct(53)
+      1, 31,    -- 232: push_literal(31)
       26,       -- 234: bi_add
-      8, 37,    -- 235: set_slot_direct(37)
+      8, 53,    -- 235: set_slot_direct(53)
       0,        -- 237: push_frame
-      5, 37,    -- 238: get_slot_direct(37)
+      5, 53,    -- 238: get_slot_direct(53)
       0,        -- 240: push_frame
-      5, 20,    -- 241: get_slot_direct(20)
-      5, 383,   -- 243: get_slot_direct(383)
-      5, 24,    -- 245: get_slot_direct(24)
+      5, 26,    -- 241: get_slot_direct(26)
+      5, 438,   -- 243: get_slot_direct(438)
+      5, 55,    -- 245: get_slot_direct(55)
       19,       -- 247: swap
       24,       -- 248: bi_gt
       20,       -- 249: un_not
       13, 44,   -- 250: jmp_unless(44)
       0,        -- 252: push_frame
-      5, 381,   -- 253: get_slot_direct(381)
+      5, 436,   -- 253: get_slot_direct(436)
       0,        -- 255: push_frame
-      5, 20,    -- 256: get_slot_direct(20)
+      5, 26,    -- 256: get_slot_direct(26)
       0,        -- 258: push_frame
-      5, 401,   -- 259: get_slot_direct(401)
+      5, 455,   -- 259: get_slot_direct(455)
       0,        -- 261: push_frame
-      5, 20,    -- 262: get_slot_direct(20)
-      5, 333,   -- 264: get_slot_direct(333)
-      5, 24,    -- 266: get_slot_direct(24)
+      5, 26,    -- 262: get_slot_direct(26)
+      5, 388,   -- 264: get_slot_direct(388)
+      5, 55,    -- 266: get_slot_direct(55)
       10, 2,    -- 268: invoke(2)
       14,       -- 270: pop
       0,        -- 271: push_frame
-      1, 6,     -- 272: push_literal(6)
-      8, 37,    -- 274: set_slot_direct(37)
+      1, 18,    -- 272: push_literal(18)
+      8, 53,    -- 274: set_slot_direct(53)
       12, 501,  -- 276: jmp(501)
       0,        -- 278: push_frame
       1, 0,     -- 279: push_literal(0)
-      8, 407,   -- 281: set_slot_direct(407)
+      8, 459,   -- 281: set_slot_direct(459)
       0,        -- 283: push_frame
       0,        -- 284: push_frame
-      5, 20,    -- 285: get_slot_direct(20)
-      5, 333,   -- 287: get_slot_direct(333)
+      5, 26,    -- 285: get_slot_direct(26)
+      5, 388,   -- 287: get_slot_direct(388)
       0,        -- 289: push_frame
-      5, 37,    -- 290: get_slot_direct(37)
+      5, 53,    -- 290: get_slot_direct(53)
       6,        -- 292: get_slot_indirect
-      8, 407,   -- 293: set_slot_direct(407)
+      8, 459,   -- 293: set_slot_direct(459)
       0,        -- 295: push_frame
-      5, 407,   -- 296: get_slot_direct(407)
+      5, 459,   -- 296: get_slot_direct(459)
       22,       -- 298: un_typeof
-      1, 67,    -- 299: push_literal(67)
+      1, 86,    -- 299: push_literal(86)
       23,       -- 301: bi_eq
       13, 341,  -- 302: jmp_unless(341)
       0,        -- 304: push_frame
-      5, 381,   -- 305: get_slot_direct(381)
+      5, 436,   -- 305: get_slot_direct(436)
       0,        -- 307: push_frame
-      5, 20,    -- 308: get_slot_direct(20)
+      5, 26,    -- 308: get_slot_direct(26)
       0,        -- 310: push_frame
-      5, 401,   -- 311: get_slot_direct(401)
-      1, 6,     -- 313: push_literal(6)
+      5, 455,   -- 311: get_slot_direct(455)
+      1, 18,    -- 313: push_literal(18)
       10, 2,    -- 315: invoke(2)
       14,       -- 317: pop
       0,        -- 318: push_frame
-      5, 382,   -- 319: get_slot_direct(382)
+      5, 437,   -- 319: get_slot_direct(437)
       0,        -- 321: push_frame
-      5, 20,    -- 322: get_slot_direct(20)
+      5, 26,    -- 322: get_slot_direct(26)
       0,        -- 324: push_frame
-      5, 401,   -- 325: get_slot_direct(401)
+      5, 455,   -- 325: get_slot_direct(455)
       0,        -- 327: push_frame
-      5, 407,   -- 328: get_slot_direct(407)
+      5, 459,   -- 328: get_slot_direct(459)
       15,       -- 330: dup
-      7, 99,    -- 331: get_slot_direct_check(99)
+      7, 16,    -- 331: get_slot_direct_check(16)
       19,       -- 333: swap
       10, 0,    -- 334: invoke(0)
       10, 2,    -- 336: invoke(2)
       14,       -- 338: pop
       12, 492,  -- 339: jmp(492)
       0,        -- 341: push_frame
-      5, 407,   -- 342: get_slot_direct(407)
+      5, 459,   -- 342: get_slot_direct(459)
       22,       -- 344: un_typeof
-      1, 15,    -- 345: push_literal(15)
+      1, 38,    -- 345: push_literal(38)
       23,       -- 347: bi_eq
       13, 381,  -- 348: jmp_unless(381)
       0,        -- 350: push_frame
-      5, 381,   -- 351: get_slot_direct(381)
+      5, 436,   -- 351: get_slot_direct(436)
       0,        -- 353: push_frame
-      5, 20,    -- 354: get_slot_direct(20)
+      5, 26,    -- 354: get_slot_direct(26)
       0,        -- 356: push_frame
-      5, 401,   -- 357: get_slot_direct(401)
-      1, 8,     -- 359: push_literal(8)
+      5, 455,   -- 357: get_slot_direct(455)
+      1, 31,    -- 359: push_literal(31)
       10, 2,    -- 361: invoke(2)
       14,       -- 363: pop
       0,        -- 364: push_frame
-      5, 382,   -- 365: get_slot_direct(382)
+      5, 437,   -- 365: get_slot_direct(437)
       0,        -- 367: push_frame
-      5, 20,    -- 368: get_slot_direct(20)
+      5, 26,    -- 368: get_slot_direct(26)
       0,        -- 370: push_frame
-      5, 401,   -- 371: get_slot_direct(401)
+      5, 455,   -- 371: get_slot_direct(455)
       0,        -- 373: push_frame
-      5, 407,   -- 374: get_slot_direct(407)
+      5, 459,   -- 374: get_slot_direct(459)
       10, 2,    -- 376: invoke(2)
       14,       -- 378: pop
       12, 492,  -- 379: jmp(492)
       0,        -- 381: push_frame
-      5, 407,   -- 382: get_slot_direct(407)
+      5, 459,   -- 382: get_slot_direct(459)
       22,       -- 384: un_typeof
-      1, 408,   -- 385: push_literal(408)
+      1, 460,   -- 385: push_literal(460)
       23,       -- 387: bi_eq
       13, 415,  -- 388: jmp_unless(415)
       0,        -- 390: push_frame
-      5, 381,   -- 391: get_slot_direct(381)
+      5, 436,   -- 391: get_slot_direct(436)
       0,        -- 393: push_frame
-      5, 20,    -- 394: get_slot_direct(20)
+      5, 26,    -- 394: get_slot_direct(26)
       0,        -- 396: push_frame
-      5, 401,   -- 397: get_slot_direct(401)
+      5, 455,   -- 397: get_slot_direct(455)
       0,        -- 399: push_frame
-      5, 407,   -- 400: get_slot_direct(407)
+      5, 459,   -- 400: get_slot_direct(459)
       13, 408,  -- 402: jmp_unless(408)
-      1, 108,   -- 404: push_literal(108)
+      1, 130,   -- 404: push_literal(130)
       12, 410,  -- 406: jmp(410)
-      1, 124,   -- 408: push_literal(124)
+      1, 153,   -- 408: push_literal(153)
       10, 2,    -- 410: invoke(2)
       14,       -- 412: pop
       12, 492,  -- 413: jmp(492)
       0,        -- 415: push_frame
-      5, 407,   -- 416: get_slot_direct(407)
-      1, 21,    -- 418: push_literal(21)
+      5, 459,   -- 416: get_slot_direct(459)
+      1, 41,    -- 418: push_literal(41)
       23,       -- 420: bi_eq
       13, 439,  -- 421: jmp_unless(439)
       0,        -- 423: push_frame
-      5, 381,   -- 424: get_slot_direct(381)
+      5, 436,   -- 424: get_slot_direct(436)
       0,        -- 426: push_frame
-      5, 20,    -- 427: get_slot_direct(20)
+      5, 26,    -- 427: get_slot_direct(26)
       0,        -- 429: push_frame
-      5, 401,   -- 430: get_slot_direct(401)
-      1, 178,   -- 432: push_literal(178)
+      5, 455,   -- 430: get_slot_direct(455)
+      1, 156,   -- 432: push_literal(156)
       10, 2,    -- 434: invoke(2)
       14,       -- 436: pop
       12, 492,  -- 437: jmp(492)
       0,        -- 439: push_frame
-      5, 407,   -- 440: get_slot_direct(407)
+      5, 459,   -- 440: get_slot_direct(459)
       1, 0,     -- 442: push_literal(0)
       23,       -- 444: bi_eq
       13, 463,  -- 445: jmp_unless(463)
       0,        -- 447: push_frame
-      5, 381,   -- 448: get_slot_direct(381)
+      5, 436,   -- 448: get_slot_direct(436)
       0,        -- 450: push_frame
-      5, 20,    -- 451: get_slot_direct(20)
+      5, 26,    -- 451: get_slot_direct(26)
       0,        -- 453: push_frame
-      5, 401,   -- 454: get_slot_direct(401)
-      1, 409,   -- 456: push_literal(409)
+      5, 455,   -- 454: get_slot_direct(455)
+      1, 159,   -- 456: push_literal(159)
       10, 2,    -- 458: invoke(2)
       14,       -- 460: pop
       12, 492,  -- 461: jmp(492)
       0,        -- 463: push_frame
-      5, 377,   -- 464: get_slot_direct(377)
+      5, 432,   -- 464: get_slot_direct(432)
       15,       -- 466: dup
-      7, 378,   -- 467: get_slot_direct_check(378)
+      7, 433,   -- 467: get_slot_direct_check(433)
       19,       -- 469: swap
-      1, 410,   -- 470: push_literal(410)
+      1, 461,   -- 470: push_literal(461)
       0,        -- 472: push_frame
-      5, 407,   -- 473: get_slot_direct(407)
+      5, 459,   -- 473: get_slot_direct(459)
       10, 2,    -- 475: invoke(2)
       14,       -- 477: pop
       0,        -- 478: push_frame
-      5, 381,   -- 479: get_slot_direct(381)
+      5, 436,   -- 479: get_slot_direct(436)
       0,        -- 481: push_frame
-      5, 20,    -- 482: get_slot_direct(20)
+      5, 26,    -- 482: get_slot_direct(26)
       0,        -- 484: push_frame
-      5, 401,   -- 485: get_slot_direct(401)
-      1, 411,   -- 487: push_literal(411)
+      5, 455,   -- 485: get_slot_direct(455)
+      1, 162,   -- 487: push_literal(162)
       10, 2,    -- 489: invoke(2)
       14,       -- 491: pop
       0,        -- 492: push_frame
       15,       -- 493: dup
-      5, 37,    -- 494: get_slot_direct(37)
-      1, 8,     -- 496: push_literal(8)
+      5, 53,    -- 494: get_slot_direct(53)
+      1, 31,    -- 496: push_literal(31)
       26,       -- 498: bi_add
-      8, 37,    -- 499: set_slot_direct(37)
+      8, 53,    -- 499: set_slot_direct(53)
       0,        -- 501: push_frame
-      5, 37,    -- 502: get_slot_direct(37)
+      5, 53,    -- 502: get_slot_direct(53)
       0,        -- 504: push_frame
-      5, 20,    -- 505: get_slot_direct(20)
-      5, 333,   -- 507: get_slot_direct(333)
-      5, 24,    -- 509: get_slot_direct(24)
+      5, 26,    -- 505: get_slot_direct(26)
+      5, 388,   -- 507: get_slot_direct(388)
+      5, 55,    -- 509: get_slot_direct(55)
       19,       -- 511: swap
       24,       -- 512: bi_gt
       20,       -- 513: un_not
       13, 278,  -- 514: jmp_unless(278)
       0,        -- 516: push_frame
-      5, 401,   -- 517: get_slot_direct(401)
+      5, 455,   -- 517: get_slot_direct(455)
       11        -- 519: return
     }
   },
   ifunc.Function:new{ -- ".new_label"
     name = jsval.newString(".new_label"),
-    id = 101,
+    id = 107,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -10493,40 +11390,40 @@ startup.functions = {
       14,       -- 3: pop
       2,        -- 4: new_object
       15,       -- 5: dup
-      1, 413,   -- 6: push_literal(413)
-      8, 336,   -- 8: set_slot_direct(336)
+      1, 463,   -- 6: push_literal(463)
+      8, 391,   -- 8: set_slot_direct(391)
       11        -- 10: return
     }
   },
   ifunc.Function:new{ -- ".set_label"
     name = jsval.newString(".set_label"),
-    id = 102,
+    id = 108,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 336,   -- 8: set_slot_direct(336)
+      8, 391,   -- 8: set_slot_direct(391)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 336,   -- 12: get_slot_direct(336)
+      5, 391,   -- 12: get_slot_direct(391)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
-      5, 395,   -- 17: get_slot_direct(395)
-      5, 329,   -- 19: get_slot_direct(329)
-      5, 24,    -- 21: get_slot_direct(24)
-      8, 336,   -- 23: set_slot_direct(336)
+      5, 26,    -- 15: get_slot_direct(26)
+      5, 449,   -- 17: get_slot_direct(449)
+      5, 384,   -- 19: get_slot_direct(384)
+      5, 55,    -- 21: get_slot_direct(55)
+      8, 391,   -- 23: set_slot_direct(391)
       1, 0,     -- 25: push_literal(0)
       11        -- 27: return
     }
   },
   ifunc.Function:new{ -- ".peek_loop_label"
     name = jsval.newString(".peek_loop_label"),
-    id = 103,
+    id = 109,
     nargs = 0,
     max_stack = 3,
     bytecode = {
@@ -10535,19 +11432,19 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 416,   -- 7: set_slot_direct(416)
+      8, 466,   -- 7: set_slot_direct(466)
       0,        -- 9: push_frame
       0,        -- 10: push_frame
-      5, 20,    -- 11: get_slot_direct(20)
-      5, 395,   -- 13: get_slot_direct(395)
-      5, 391,   -- 15: get_slot_direct(391)
-      8, 416,   -- 17: set_slot_direct(416)
+      5, 26,    -- 11: get_slot_direct(26)
+      5, 449,   -- 13: get_slot_direct(449)
+      5, 445,   -- 15: get_slot_direct(445)
+      8, 466,   -- 17: set_slot_direct(466)
       0,        -- 19: push_frame
-      5, 416,   -- 20: get_slot_direct(416)
+      5, 466,   -- 20: get_slot_direct(466)
       0,        -- 22: push_frame
-      5, 416,   -- 23: get_slot_direct(416)
-      5, 24,    -- 25: get_slot_direct(24)
-      1, 8,     -- 27: push_literal(8)
+      5, 466,   -- 23: get_slot_direct(466)
+      5, 55,    -- 25: get_slot_direct(55)
+      1, 31,    -- 27: push_literal(31)
       27,       -- 29: bi_sub
       6,        -- 30: get_slot_indirect
       11        -- 31: return
@@ -10555,7 +11452,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".pop_loop_label"
     name = jsval.newString(".pop_loop_label"),
-    id = 104,
+    id = 110,
     nargs = 0,
     max_stack = 2,
     bytecode = {
@@ -10563,11 +11460,11 @@ startup.functions = {
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
       0,        -- 4: push_frame
-      5, 20,    -- 5: get_slot_direct(20)
-      5, 395,   -- 7: get_slot_direct(395)
-      5, 391,   -- 9: get_slot_direct(391)
+      5, 26,    -- 5: get_slot_direct(26)
+      5, 449,   -- 7: get_slot_direct(449)
+      5, 445,   -- 9: get_slot_direct(445)
       15,       -- 11: dup
-      7, 54,    -- 12: get_slot_direct_check(54)
+      7, 71,    -- 12: get_slot_direct_check(71)
       19,       -- 14: swap
       10, 0,    -- 15: invoke(0)
       11        -- 17: return
@@ -10575,61 +11472,61 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".push_loop_label"
     name = jsval.newString(".push_loop_label"),
-    id = 105,
+    id = 111,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 336,   -- 8: set_slot_direct(336)
+      8, 391,   -- 8: set_slot_direct(391)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      5, 395,   -- 14: get_slot_direct(395)
-      5, 391,   -- 16: get_slot_direct(391)
+      5, 26,    -- 12: get_slot_direct(26)
+      5, 449,   -- 14: get_slot_direct(449)
+      5, 445,   -- 16: get_slot_direct(445)
       15,       -- 18: dup
-      7, 52,    -- 19: get_slot_direct_check(52)
+      7, 69,    -- 19: get_slot_direct_check(69)
       19,       -- 21: swap
       0,        -- 22: push_frame
-      5, 336,   -- 23: get_slot_direct(336)
+      5, 391,   -- 23: get_slot_direct(391)
       10, 1,    -- 25: invoke(1)
       11        -- 27: return
     }
   },
   ifunc.Function:new{ -- ".bcompile_stmts"
     name = jsval.newString(".bcompile_stmts"),
-    id = 106,
+    id = 112,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 420,   -- 8: set_slot_direct(420)
+      8, 470,   -- 8: set_slot_direct(470)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
+      5, 26,    -- 12: get_slot_direct(26)
       15,       -- 14: dup
-      7, 421,   -- 15: get_slot_direct_check(421)
+      7, 471,   -- 15: get_slot_direct_check(471)
       19,       -- 17: swap
       2,        -- 18: new_object
       15,       -- 19: dup
-      1, 72,    -- 20: push_literal(72)
-      8, 139,   -- 22: set_slot_direct(139)
+      1, 91,    -- 20: push_literal(91)
+      8, 209,   -- 22: set_slot_direct(209)
       15,       -- 24: dup
-      1, 200,   -- 25: push_literal(200)
-      8, 222,   -- 27: set_slot_direct(222)
+      1, 261,   -- 25: push_literal(261)
+      8, 283,   -- 27: set_slot_direct(283)
       15,       -- 29: dup
       0,        -- 30: push_frame
-      5, 420,   -- 31: get_slot_direct(420)
-      8, 18,    -- 33: set_slot_direct(18)
+      5, 470,   -- 31: get_slot_direct(470)
+      8, 39,    -- 33: set_slot_direct(39)
       10, 1,    -- 35: invoke(1)
       14,       -- 37: pop
       1, 0,     -- 38: push_literal(0)
@@ -10638,164 +11535,164 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".bcompile_stmt"
     name = jsval.newString(".bcompile_stmt"),
-    id = 107,
+    id = 113,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 310,   -- 8: set_slot_direct(310)
+      8, 365,   -- 8: set_slot_direct(365)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 374,   -- 12: get_slot_direct(374)
+      5, 429,   -- 12: get_slot_direct(429)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 304,   -- 18: get_slot_direct(304)
-      5, 395,   -- 20: get_slot_direct(395)
-      5, 390,   -- 22: get_slot_direct(390)
-      1, 6,     -- 24: push_literal(6)
+      5, 359,   -- 18: get_slot_direct(359)
+      5, 449,   -- 20: get_slot_direct(449)
+      5, 444,   -- 22: get_slot_direct(444)
+      1, 18,    -- 24: push_literal(18)
       23,       -- 26: bi_eq
       0,        -- 27: push_frame
-      5, 310,   -- 28: get_slot_direct(310)
+      5, 365,   -- 28: get_slot_direct(365)
       10, 2,    -- 30: invoke(2)
       14,       -- 32: pop
       0,        -- 33: push_frame
-      5, 310,   -- 34: get_slot_direct(310)
-      5, 222,   -- 36: get_slot_direct(222)
-      1, 247,   -- 38: push_literal(247)
+      5, 365,   -- 34: get_slot_direct(365)
+      5, 283,   -- 36: get_slot_direct(283)
+      1, 307,   -- 38: push_literal(307)
       23,       -- 40: bi_eq
       15,       -- 41: dup
       13, 105,  -- 42: jmp_unless(105)
       14,       -- 44: pop
       0,        -- 45: push_frame
-      5, 310,   -- 46: get_slot_direct(310)
-      5, 139,   -- 48: get_slot_direct(139)
-      1, 261,   -- 50: push_literal(261)
+      5, 365,   -- 46: get_slot_direct(365)
+      5, 209,   -- 48: get_slot_direct(209)
+      1, 316,   -- 50: push_literal(316)
       23,       -- 52: bi_eq
       15,       -- 53: dup
       20,       -- 54: un_not
       13, 105,  -- 55: jmp_unless(105)
       14,       -- 57: pop
       0,        -- 58: push_frame
-      5, 310,   -- 59: get_slot_direct(310)
-      5, 139,   -- 61: get_slot_direct(139)
-      1, 262,   -- 63: push_literal(262)
+      5, 365,   -- 59: get_slot_direct(365)
+      5, 209,   -- 61: get_slot_direct(209)
+      1, 317,   -- 63: push_literal(317)
       23,       -- 65: bi_eq
       15,       -- 66: dup
       20,       -- 67: un_not
       13, 105,  -- 68: jmp_unless(105)
       14,       -- 70: pop
       0,        -- 71: push_frame
-      5, 310,   -- 72: get_slot_direct(310)
-      5, 139,   -- 74: get_slot_direct(139)
-      1, 263,   -- 76: push_literal(263)
+      5, 365,   -- 72: get_slot_direct(365)
+      5, 209,   -- 74: get_slot_direct(209)
+      1, 318,   -- 76: push_literal(318)
       23,       -- 78: bi_eq
       15,       -- 79: dup
       20,       -- 80: un_not
       13, 105,  -- 81: jmp_unless(105)
       14,       -- 83: pop
       0,        -- 84: push_frame
-      5, 310,   -- 85: get_slot_direct(310)
-      5, 139,   -- 87: get_slot_direct(139)
-      1, 264,   -- 89: push_literal(264)
+      5, 365,   -- 85: get_slot_direct(365)
+      5, 209,   -- 87: get_slot_direct(209)
+      1, 319,   -- 89: push_literal(319)
       23,       -- 91: bi_eq
       15,       -- 92: dup
       20,       -- 93: un_not
       13, 105,  -- 94: jmp_unless(105)
       14,       -- 96: pop
       0,        -- 97: push_frame
-      5, 310,   -- 98: get_slot_direct(310)
-      5, 139,   -- 100: get_slot_direct(139)
-      1, 265,   -- 102: push_literal(265)
+      5, 365,   -- 98: get_slot_direct(365)
+      5, 209,   -- 100: get_slot_direct(209)
+      1, 320,   -- 102: push_literal(320)
       23,       -- 104: bi_eq
       13, 156,  -- 105: jmp_unless(156)
       0,        -- 107: push_frame
-      5, 375,   -- 108: get_slot_direct(375)
+      5, 430,   -- 108: get_slot_direct(430)
       0,        -- 110: push_frame
-      5, 310,   -- 111: get_slot_direct(310)
-      5, 222,   -- 113: get_slot_direct(222)
+      5, 365,   -- 111: get_slot_direct(365)
+      5, 283,   -- 113: get_slot_direct(283)
       6,        -- 115: get_slot_indirect
       15,       -- 116: dup
-      7, 74,    -- 117: get_slot_direct_check(74)
+      7, 93,    -- 117: get_slot_direct_check(93)
       19,       -- 119: swap
       0,        -- 120: push_frame
-      5, 310,   -- 121: get_slot_direct(310)
+      5, 365,   -- 121: get_slot_direct(365)
       0,        -- 123: push_frame
-      5, 20,    -- 124: get_slot_direct(20)
-      1, 8,     -- 126: push_literal(8)
+      5, 26,    -- 124: get_slot_direct(26)
+      1, 31,    -- 126: push_literal(31)
       10, 3,    -- 128: invoke(3)
       14,       -- 130: pop
       0,        -- 131: push_frame
-      5, 374,   -- 132: get_slot_direct(374)
+      5, 429,   -- 132: get_slot_direct(429)
       0,        -- 134: push_frame
-      5, 20,    -- 135: get_slot_direct(20)
+      5, 26,    -- 135: get_slot_direct(26)
       0,        -- 137: push_frame
-      5, 304,   -- 138: get_slot_direct(304)
-      5, 395,   -- 140: get_slot_direct(395)
-      5, 390,   -- 142: get_slot_direct(390)
-      1, 6,     -- 144: push_literal(6)
+      5, 359,   -- 138: get_slot_direct(359)
+      5, 449,   -- 140: get_slot_direct(449)
+      5, 444,   -- 142: get_slot_direct(444)
+      1, 18,    -- 144: push_literal(18)
       23,       -- 146: bi_eq
       0,        -- 147: push_frame
-      5, 310,   -- 148: get_slot_direct(310)
+      5, 365,   -- 148: get_slot_direct(365)
       10, 2,    -- 150: invoke(2)
       14,       -- 152: pop
       1, 0,     -- 153: push_literal(0)
       11,       -- 155: return
       0,        -- 156: push_frame
-      5, 20,    -- 157: get_slot_direct(20)
+      5, 26,    -- 157: get_slot_direct(26)
       15,       -- 159: dup
-      7, 423,   -- 160: get_slot_direct_check(423)
+      7, 473,   -- 160: get_slot_direct_check(473)
       19,       -- 162: swap
       0,        -- 163: push_frame
-      5, 310,   -- 164: get_slot_direct(310)
+      5, 365,   -- 164: get_slot_direct(365)
       10, 1,    -- 166: invoke(1)
       14,       -- 168: pop
       0,        -- 169: push_frame
-      5, 310,   -- 170: get_slot_direct(310)
-      5, 222,   -- 172: get_slot_direct(222)
-      1, 200,   -- 174: push_literal(200)
+      5, 365,   -- 170: get_slot_direct(365)
+      5, 283,   -- 172: get_slot_direct(283)
+      1, 261,   -- 174: push_literal(261)
       23,       -- 176: bi_eq
       20,       -- 177: un_not
       13, 214,  -- 178: jmp_unless(214)
       0,        -- 180: push_frame
-      5, 374,   -- 181: get_slot_direct(374)
+      5, 429,   -- 181: get_slot_direct(429)
       0,        -- 183: push_frame
-      5, 20,    -- 184: get_slot_direct(20)
+      5, 26,    -- 184: get_slot_direct(26)
       0,        -- 186: push_frame
-      5, 304,   -- 187: get_slot_direct(304)
-      5, 395,   -- 189: get_slot_direct(395)
-      5, 390,   -- 191: get_slot_direct(390)
-      1, 8,     -- 193: push_literal(8)
+      5, 359,   -- 187: get_slot_direct(359)
+      5, 449,   -- 189: get_slot_direct(449)
+      5, 444,   -- 191: get_slot_direct(444)
+      1, 31,    -- 193: push_literal(31)
       23,       -- 195: bi_eq
       0,        -- 196: push_frame
-      5, 310,   -- 197: get_slot_direct(310)
+      5, 365,   -- 197: get_slot_direct(365)
       10, 2,    -- 199: invoke(2)
       14,       -- 201: pop
       0,        -- 202: push_frame
-      5, 20,    -- 203: get_slot_direct(20)
+      5, 26,    -- 203: get_slot_direct(26)
       15,       -- 205: dup
-      7, 397,   -- 206: get_slot_direct_check(397)
+      7, 451,   -- 206: get_slot_direct_check(451)
       19,       -- 208: swap
-      1, 54,    -- 209: push_literal(54)
+      1, 71,    -- 209: push_literal(71)
       10, 1,    -- 211: invoke(1)
       14,       -- 213: pop
       0,        -- 214: push_frame
-      5, 374,   -- 215: get_slot_direct(374)
+      5, 429,   -- 215: get_slot_direct(429)
       0,        -- 217: push_frame
-      5, 20,    -- 218: get_slot_direct(20)
+      5, 26,    -- 218: get_slot_direct(26)
       0,        -- 220: push_frame
-      5, 304,   -- 221: get_slot_direct(304)
-      5, 395,   -- 223: get_slot_direct(395)
-      5, 390,   -- 225: get_slot_direct(390)
-      1, 6,     -- 227: push_literal(6)
+      5, 359,   -- 221: get_slot_direct(359)
+      5, 449,   -- 223: get_slot_direct(449)
+      5, 444,   -- 225: get_slot_direct(444)
+      1, 18,    -- 227: push_literal(18)
       23,       -- 229: bi_eq
       0,        -- 230: push_frame
-      5, 310,   -- 231: get_slot_direct(310)
+      5, 365,   -- 231: get_slot_direct(365)
       10, 2,    -- 233: invoke(2)
       14,       -- 235: pop
       1, 0,     -- 236: push_literal(0)
@@ -10804,138 +11701,138 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".bcompile_expr"
     name = jsval.newString(".bcompile_expr"),
-    id = 108,
+    id = 114,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 310,   -- 8: set_slot_direct(310)
+      8, 365,   -- 8: set_slot_direct(365)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 374,   -- 12: get_slot_direct(374)
+      5, 429,   -- 12: get_slot_direct(429)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 375,   -- 18: get_slot_direct(375)
+      5, 430,   -- 18: get_slot_direct(430)
       0,        -- 20: push_frame
-      5, 310,   -- 21: get_slot_direct(310)
-      5, 222,   -- 23: get_slot_direct(222)
+      5, 365,   -- 21: get_slot_direct(365)
+      5, 283,   -- 23: get_slot_direct(283)
       6,        -- 25: get_slot_indirect
       0,        -- 26: push_frame
-      5, 310,   -- 27: get_slot_direct(310)
+      5, 365,   -- 27: get_slot_direct(365)
       10, 2,    -- 29: invoke(2)
       14,       -- 31: pop
       0,        -- 32: push_frame
-      5, 375,   -- 33: get_slot_direct(375)
+      5, 430,   -- 33: get_slot_direct(430)
       0,        -- 35: push_frame
-      5, 310,   -- 36: get_slot_direct(310)
-      5, 222,   -- 38: get_slot_direct(222)
+      5, 365,   -- 36: get_slot_direct(365)
+      5, 283,   -- 38: get_slot_direct(283)
       6,        -- 40: get_slot_indirect
       15,       -- 41: dup
-      7, 74,    -- 42: get_slot_direct_check(74)
+      7, 93,    -- 42: get_slot_direct_check(93)
       19,       -- 44: swap
       0,        -- 45: push_frame
-      5, 310,   -- 46: get_slot_direct(310)
+      5, 365,   -- 46: get_slot_direct(365)
       0,        -- 48: push_frame
-      5, 20,    -- 49: get_slot_direct(20)
+      5, 26,    -- 49: get_slot_direct(26)
       10, 2,    -- 51: invoke(2)
       11        -- 53: return
     }
   },
   ifunc.Function:new{ -- ".name"
     name = jsval.newString(".name"),
-    id = 109,
+    id = 115,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 37,    -- 14: set_slot_direct(37)
+      8, 53,    -- 14: set_slot_direct(53)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 424,   -- 19: set_slot_direct(424)
+      8, 474,   -- 19: set_slot_direct(474)
       0,        -- 21: push_frame
-      1, 6,     -- 22: push_literal(6)
-      8, 37,    -- 24: set_slot_direct(37)
+      1, 18,    -- 22: push_literal(18)
+      8, 53,    -- 24: set_slot_direct(53)
       0,        -- 26: push_frame
       0,        -- 27: push_frame
-      5, 304,   -- 28: get_slot_direct(304)
-      5, 190,   -- 30: get_slot_direct(190)
+      5, 359,   -- 28: get_slot_direct(359)
+      5, 251,   -- 30: get_slot_direct(251)
       0,        -- 32: push_frame
-      5, 20,    -- 33: get_slot_direct(20)
-      5, 190,   -- 35: get_slot_direct(190)
-      5, 225,   -- 37: get_slot_direct(225)
+      5, 26,    -- 33: get_slot_direct(26)
+      5, 251,   -- 35: get_slot_direct(251)
+      5, 286,   -- 37: get_slot_direct(286)
       27,       -- 39: bi_sub
-      8, 424,   -- 40: set_slot_direct(424)
+      8, 474,   -- 40: set_slot_direct(474)
       0,        -- 42: push_frame
-      5, 304,   -- 43: get_slot_direct(304)
+      5, 359,   -- 43: get_slot_direct(359)
       15,       -- 45: dup
-      7, 397,   -- 46: get_slot_direct_check(397)
+      7, 451,   -- 46: get_slot_direct_check(451)
       19,       -- 48: swap
-      1, 337,   -- 49: push_literal(337)
+      1, 392,   -- 49: push_literal(392)
       10, 1,    -- 51: invoke(1)
       14,       -- 53: pop
       0,        -- 54: push_frame
-      5, 304,   -- 55: get_slot_direct(304)
-      5, 384,   -- 57: get_slot_direct(384)
+      5, 359,   -- 55: get_slot_direct(359)
+      5, 439,   -- 57: get_slot_direct(439)
       13, 106,  -- 59: jmp_unless(106)
       12, 95,   -- 61: jmp(95)
       0,        -- 63: push_frame
-      5, 304,   -- 64: get_slot_direct(304)
+      5, 359,   -- 64: get_slot_direct(359)
       15,       -- 66: dup
-      7, 397,   -- 67: get_slot_direct_check(397)
+      7, 451,   -- 67: get_slot_direct_check(451)
       19,       -- 69: swap
-      1, 342,   -- 70: push_literal(342)
+      1, 397,   -- 70: push_literal(397)
       0,        -- 72: push_frame
-      5, 304,   -- 73: get_slot_direct(304)
+      5, 359,   -- 73: get_slot_direct(359)
       15,       -- 75: dup
-      7, 232,   -- 76: get_slot_direct_check(232)
+      7, 293,   -- 76: get_slot_direct_check(293)
       19,       -- 78: swap
-      1, 93,    -- 79: push_literal(93)
+      1, 114,   -- 79: push_literal(114)
       10, 1,    -- 81: invoke(1)
       10, 2,    -- 83: invoke(2)
       14,       -- 85: pop
       0,        -- 86: push_frame
       15,       -- 87: dup
-      5, 37,    -- 88: get_slot_direct(37)
-      1, 8,     -- 90: push_literal(8)
+      5, 53,    -- 88: get_slot_direct(53)
+      1, 31,    -- 90: push_literal(31)
       26,       -- 92: bi_add
-      8, 37,    -- 93: set_slot_direct(37)
+      8, 53,    -- 93: set_slot_direct(53)
       0,        -- 95: push_frame
-      5, 37,    -- 96: get_slot_direct(37)
+      5, 53,    -- 96: get_slot_direct(53)
       0,        -- 98: push_frame
-      5, 424,   -- 99: get_slot_direct(424)
+      5, 474,   -- 99: get_slot_direct(474)
       19,       -- 101: swap
       24,       -- 102: bi_gt
       20,       -- 103: un_not
       13, 63,   -- 104: jmp_unless(63)
       0,        -- 106: push_frame
-      5, 304,   -- 107: get_slot_direct(304)
+      5, 359,   -- 107: get_slot_direct(359)
       15,       -- 109: dup
-      7, 397,   -- 110: get_slot_direct_check(397)
+      7, 451,   -- 110: get_slot_direct_check(451)
       19,       -- 112: swap
-      1, 342,   -- 113: push_literal(342)
+      1, 397,   -- 113: push_literal(397)
       0,        -- 115: push_frame
-      5, 304,   -- 116: get_slot_direct(304)
+      5, 359,   -- 116: get_slot_direct(359)
       15,       -- 118: dup
-      7, 232,   -- 119: get_slot_direct_check(232)
+      7, 293,   -- 119: get_slot_direct_check(293)
       19,       -- 121: swap
       0,        -- 122: push_frame
-      5, 20,    -- 123: get_slot_direct(20)
-      5, 139,   -- 125: get_slot_direct(139)
+      5, 26,    -- 123: get_slot_direct(26)
+      5, 209,   -- 125: get_slot_direct(209)
       10, 1,    -- 127: invoke(1)
       10, 2,    -- 129: invoke(2)
       14,       -- 131: pop
@@ -10945,34 +11842,34 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".literal"
     name = jsval.newString(".literal"),
-    id = 110,
+    id = 116,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      5, 139,   -- 14: get_slot_direct(139)
+      5, 26,    -- 12: get_slot_direct(26)
+      5, 209,   -- 14: get_slot_direct(209)
       1, 0,     -- 16: push_literal(0)
       23,       -- 18: bi_eq
       13, 47,   -- 19: jmp_unless(47)
       0,        -- 21: push_frame
-      5, 304,   -- 22: get_slot_direct(304)
+      5, 359,   -- 22: get_slot_direct(359)
       15,       -- 24: dup
-      7, 397,   -- 25: get_slot_direct_check(397)
+      7, 451,   -- 25: get_slot_direct_check(451)
       19,       -- 27: swap
-      1, 338,   -- 28: push_literal(338)
+      1, 393,   -- 28: push_literal(393)
       0,        -- 30: push_frame
-      5, 304,   -- 31: get_slot_direct(304)
+      5, 359,   -- 31: get_slot_direct(359)
       15,       -- 33: dup
-      7, 232,   -- 34: get_slot_direct_check(232)
+      7, 293,   -- 34: get_slot_direct_check(293)
       19,       -- 36: swap
       1, 0,     -- 37: push_literal(0)
       10, 1,    -- 39: invoke(1)
@@ -10981,155 +11878,155 @@ startup.functions = {
       1, 0,     -- 44: push_literal(0)
       11,       -- 46: return
       0,        -- 47: push_frame
-      5, 20,    -- 48: get_slot_direct(20)
-      5, 139,   -- 50: get_slot_direct(139)
-      1, 21,    -- 52: push_literal(21)
+      5, 26,    -- 48: get_slot_direct(26)
+      5, 209,   -- 50: get_slot_direct(209)
+      1, 41,    -- 52: push_literal(41)
       23,       -- 54: bi_eq
       13, 83,   -- 55: jmp_unless(83)
       0,        -- 57: push_frame
-      5, 304,   -- 58: get_slot_direct(304)
+      5, 359,   -- 58: get_slot_direct(359)
       15,       -- 60: dup
-      7, 397,   -- 61: get_slot_direct_check(397)
+      7, 451,   -- 61: get_slot_direct_check(451)
       19,       -- 63: swap
-      1, 338,   -- 64: push_literal(338)
+      1, 393,   -- 64: push_literal(393)
       0,        -- 66: push_frame
-      5, 304,   -- 67: get_slot_direct(304)
+      5, 359,   -- 67: get_slot_direct(359)
       15,       -- 69: dup
-      7, 232,   -- 70: get_slot_direct_check(232)
+      7, 293,   -- 70: get_slot_direct_check(293)
       19,       -- 72: swap
-      1, 21,    -- 73: push_literal(21)
+      1, 41,    -- 73: push_literal(41)
       10, 1,    -- 75: invoke(1)
       10, 2,    -- 77: invoke(2)
       14,       -- 79: pop
       1, 0,     -- 80: push_literal(0)
       11,       -- 82: return
       0,        -- 83: push_frame
-      5, 20,    -- 84: get_slot_direct(20)
-      5, 139,   -- 86: get_slot_direct(139)
+      5, 26,    -- 84: get_slot_direct(26)
+      5, 209,   -- 86: get_slot_direct(209)
       22,       -- 88: un_typeof
-      1, 69,    -- 89: push_literal(69)
+      1, 88,    -- 89: push_literal(88)
       23,       -- 91: bi_eq
       13, 160,  -- 92: jmp_unless(160)
       0,        -- 94: push_frame
       1, 0,     -- 95: push_literal(0)
-      8, 425,   -- 97: set_slot_direct(425)
+      8, 475,   -- 97: set_slot_direct(475)
       0,        -- 99: push_frame
-      1, 4,     -- 100: push_literal(4)
-      8, 425,   -- 102: set_slot_direct(425)
+      1, 15,    -- 100: push_literal(15)
+      8, 475,   -- 102: set_slot_direct(475)
       0,        -- 104: push_frame
-      5, 20,    -- 105: get_slot_direct(20)
-      5, 139,   -- 107: get_slot_direct(139)
-      5, 24,    -- 109: get_slot_direct(24)
-      1, 6,     -- 111: push_literal(6)
+      5, 26,    -- 105: get_slot_direct(26)
+      5, 209,   -- 107: get_slot_direct(209)
+      5, 55,    -- 109: get_slot_direct(55)
+      1, 18,    -- 111: push_literal(18)
       23,       -- 113: bi_eq
       13, 121,  -- 114: jmp_unless(121)
       0,        -- 116: push_frame
-      1, 51,    -- 117: push_literal(51)
-      8, 425,   -- 119: set_slot_direct(425)
+      1, 68,    -- 117: push_literal(68)
+      8, 475,   -- 119: set_slot_direct(475)
       0,        -- 121: push_frame
-      5, 304,   -- 122: get_slot_direct(304)
+      5, 359,   -- 122: get_slot_direct(359)
       15,       -- 124: dup
-      7, 397,   -- 125: get_slot_direct_check(397)
+      7, 451,   -- 125: get_slot_direct_check(451)
       19,       -- 127: swap
-      1, 337,   -- 128: push_literal(337)
+      1, 392,   -- 128: push_literal(392)
       10, 1,    -- 130: invoke(1)
       14,       -- 132: pop
       0,        -- 133: push_frame
-      5, 304,   -- 134: get_slot_direct(304)
+      5, 359,   -- 134: get_slot_direct(359)
       15,       -- 136: dup
-      7, 397,   -- 137: get_slot_direct_check(397)
+      7, 451,   -- 137: get_slot_direct_check(451)
       19,       -- 139: swap
-      1, 342,   -- 140: push_literal(342)
+      1, 397,   -- 140: push_literal(397)
       0,        -- 142: push_frame
-      5, 304,   -- 143: get_slot_direct(304)
+      5, 359,   -- 143: get_slot_direct(359)
       15,       -- 145: dup
-      7, 232,   -- 146: get_slot_direct_check(232)
+      7, 293,   -- 146: get_slot_direct_check(293)
       19,       -- 148: swap
       0,        -- 149: push_frame
-      5, 425,   -- 150: get_slot_direct(425)
+      5, 475,   -- 150: get_slot_direct(475)
       10, 1,    -- 152: invoke(1)
       10, 2,    -- 154: invoke(2)
       14,       -- 156: pop
       1, 0,     -- 157: push_literal(0)
       11,       -- 159: return
       0,        -- 160: push_frame
-      5, 20,    -- 161: get_slot_direct(20)
-      5, 139,   -- 163: get_slot_direct(139)
+      5, 26,    -- 161: get_slot_direct(26)
+      5, 209,   -- 163: get_slot_direct(209)
       22,       -- 165: un_typeof
-      1, 15,    -- 166: push_literal(15)
+      1, 38,    -- 166: push_literal(38)
       23,       -- 168: bi_eq
       13, 200,  -- 169: jmp_unless(200)
       0,        -- 171: push_frame
-      5, 304,   -- 172: get_slot_direct(304)
+      5, 359,   -- 172: get_slot_direct(359)
       15,       -- 174: dup
-      7, 397,   -- 175: get_slot_direct_check(397)
+      7, 451,   -- 175: get_slot_direct_check(451)
       19,       -- 177: swap
-      1, 338,   -- 178: push_literal(338)
+      1, 393,   -- 178: push_literal(393)
       0,        -- 180: push_frame
-      5, 304,   -- 181: get_slot_direct(304)
+      5, 359,   -- 181: get_slot_direct(359)
       15,       -- 183: dup
-      7, 232,   -- 184: get_slot_direct_check(232)
+      7, 293,   -- 184: get_slot_direct_check(293)
       19,       -- 186: swap
       0,        -- 187: push_frame
-      5, 20,    -- 188: get_slot_direct(20)
-      5, 139,   -- 190: get_slot_direct(139)
+      5, 26,    -- 188: get_slot_direct(26)
+      5, 209,   -- 190: get_slot_direct(209)
       10, 1,    -- 192: invoke(1)
       10, 2,    -- 194: invoke(2)
       14,       -- 196: pop
       1, 0,     -- 197: push_literal(0)
       11,       -- 199: return
       0,        -- 200: push_frame
-      5, 20,    -- 201: get_slot_direct(20)
-      5, 139,   -- 203: get_slot_direct(139)
+      5, 26,    -- 201: get_slot_direct(26)
+      5, 209,   -- 203: get_slot_direct(209)
       22,       -- 205: un_typeof
-      1, 408,   -- 206: push_literal(408)
+      1, 460,   -- 206: push_literal(460)
       23,       -- 208: bi_eq
       13, 240,  -- 209: jmp_unless(240)
       0,        -- 211: push_frame
-      5, 304,   -- 212: get_slot_direct(304)
+      5, 359,   -- 212: get_slot_direct(359)
       15,       -- 214: dup
-      7, 397,   -- 215: get_slot_direct_check(397)
+      7, 451,   -- 215: get_slot_direct_check(451)
       19,       -- 217: swap
-      1, 338,   -- 218: push_literal(338)
+      1, 393,   -- 218: push_literal(393)
       0,        -- 220: push_frame
-      5, 304,   -- 221: get_slot_direct(304)
+      5, 359,   -- 221: get_slot_direct(359)
       15,       -- 223: dup
-      7, 232,   -- 224: get_slot_direct_check(232)
+      7, 293,   -- 224: get_slot_direct_check(293)
       19,       -- 226: swap
       0,        -- 227: push_frame
-      5, 20,    -- 228: get_slot_direct(20)
-      5, 139,   -- 230: get_slot_direct(139)
+      5, 26,    -- 228: get_slot_direct(26)
+      5, 209,   -- 230: get_slot_direct(209)
       10, 1,    -- 232: invoke(1)
       10, 2,    -- 234: invoke(2)
       14,       -- 236: pop
       1, 0,     -- 237: push_literal(0)
       11,       -- 239: return
       0,        -- 240: push_frame
-      5, 374,   -- 241: get_slot_direct(374)
+      5, 429,   -- 241: get_slot_direct(429)
       0,        -- 243: push_frame
-      5, 20,    -- 244: get_slot_direct(20)
+      5, 26,    -- 244: get_slot_direct(26)
       0,        -- 246: push_frame
-      5, 20,    -- 247: get_slot_direct(20)
-      5, 139,   -- 249: get_slot_direct(139)
+      5, 26,    -- 247: get_slot_direct(26)
+      5, 209,   -- 249: get_slot_direct(209)
       22,       -- 251: un_typeof
-      1, 67,    -- 252: push_literal(67)
+      1, 86,    -- 252: push_literal(86)
       23,       -- 254: bi_eq
       10, 1,    -- 255: invoke(1)
       14,       -- 257: pop
       0,        -- 258: push_frame
-      5, 304,   -- 259: get_slot_direct(304)
+      5, 359,   -- 259: get_slot_direct(359)
       15,       -- 261: dup
-      7, 397,   -- 262: get_slot_direct_check(397)
+      7, 451,   -- 262: get_slot_direct_check(451)
       19,       -- 264: swap
-      1, 338,   -- 265: push_literal(338)
+      1, 393,   -- 265: push_literal(393)
       0,        -- 267: push_frame
-      5, 304,   -- 268: get_slot_direct(304)
+      5, 359,   -- 268: get_slot_direct(359)
       15,       -- 270: dup
-      7, 232,   -- 271: get_slot_direct_check(232)
+      7, 293,   -- 271: get_slot_direct_check(293)
       19,       -- 273: swap
       0,        -- 274: push_frame
-      5, 20,    -- 275: get_slot_direct(20)
-      5, 139,   -- 277: get_slot_direct(139)
+      5, 26,    -- 275: get_slot_direct(26)
+      5, 209,   -- 277: get_slot_direct(209)
       10, 1,    -- 279: invoke(1)
       10, 2,    -- 281: invoke(2)
       14,       -- 283: pop
@@ -11139,47 +12036,47 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".unary"
     name = jsval.newString(".unary"),
-    id = 111,
+    id = 117,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 374,   -- 12: get_slot_direct(374)
+      5, 429,   -- 12: get_slot_direct(429)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 375,   -- 18: get_slot_direct(375)
-      5, 252,   -- 20: get_slot_direct(252)
+      5, 430,   -- 18: get_slot_direct(430)
+      5, 311,   -- 20: get_slot_direct(311)
       0,        -- 22: push_frame
-      5, 20,    -- 23: get_slot_direct(20)
-      5, 139,   -- 25: get_slot_direct(139)
+      5, 26,    -- 23: get_slot_direct(26)
+      5, 209,   -- 25: get_slot_direct(209)
       6,        -- 27: get_slot_indirect
       0,        -- 28: push_frame
-      5, 20,    -- 29: get_slot_direct(20)
+      5, 26,    -- 29: get_slot_direct(26)
       10, 2,    -- 31: invoke(2)
       14,       -- 33: pop
       0,        -- 34: push_frame
-      5, 375,   -- 35: get_slot_direct(375)
-      5, 252,   -- 37: get_slot_direct(252)
+      5, 430,   -- 35: get_slot_direct(430)
+      5, 311,   -- 37: get_slot_direct(311)
       0,        -- 39: push_frame
-      5, 20,    -- 40: get_slot_direct(20)
-      5, 139,   -- 42: get_slot_direct(139)
+      5, 26,    -- 40: get_slot_direct(26)
+      5, 209,   -- 42: get_slot_direct(209)
       6,        -- 44: get_slot_indirect
       15,       -- 45: dup
-      7, 74,    -- 46: get_slot_direct_check(74)
+      7, 93,    -- 46: get_slot_direct_check(93)
       19,       -- 48: swap
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
+      5, 26,    -- 50: get_slot_direct(26)
       0,        -- 52: push_frame
-      5, 304,   -- 53: get_slot_direct(304)
+      5, 359,   -- 53: get_slot_direct(359)
       10, 2,    -- 55: invoke(2)
       14,       -- 57: pop
       1, 0,     -- 58: push_literal(0)
@@ -11188,44 +12085,44 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "unary"
     name = jsval.newString("unary"),
-    id = 112,
+    id = 118,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 393,   -- 8: set_slot_direct(393)
+      8, 447,   -- 8: set_slot_direct(447)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 85,    -- 15: set_slot_direct(85)
+      8, 106,   -- 15: set_slot_direct(106)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 85,    -- 19: get_slot_direct(85)
+      5, 106,   -- 19: get_slot_direct(106)
       22,       -- 21: un_typeof
-      1, 15,    -- 22: push_literal(15)
+      1, 38,    -- 22: push_literal(38)
       23,       -- 24: bi_eq
       13, 40,   -- 25: jmp_unless(40)
       0,        -- 27: push_frame
-      5, 375,   -- 28: get_slot_direct(375)
-      5, 252,   -- 30: get_slot_direct(252)
+      5, 430,   -- 28: get_slot_direct(430)
+      5, 311,   -- 30: get_slot_direct(311)
       0,        -- 32: push_frame
-      5, 393,   -- 33: get_slot_direct(393)
-      4, 113,   -- 35: new_function(113)
+      5, 447,   -- 33: get_slot_direct(447)
+      4, 119,   -- 35: new_function(119)
       9,        -- 37: set_slot_indirect
       12, 52,   -- 38: jmp(52)
       0,        -- 40: push_frame
-      5, 375,   -- 41: get_slot_direct(375)
-      5, 252,   -- 43: get_slot_direct(252)
+      5, 430,   -- 41: get_slot_direct(430)
+      5, 311,   -- 43: get_slot_direct(311)
       0,        -- 45: push_frame
-      5, 393,   -- 46: get_slot_direct(393)
+      5, 447,   -- 46: get_slot_direct(447)
       0,        -- 48: push_frame
-      5, 85,    -- 49: get_slot_direct(85)
+      5, 106,   -- 49: get_slot_direct(106)
       9,        -- 51: set_slot_indirect
       1, 0,     -- 52: push_literal(0)
       11        -- 54: return
@@ -11233,354 +12130,39 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 113,
+    id = 119,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 304,   -- 27: get_slot_direct(304)
+      5, 359,   -- 27: get_slot_direct(359)
       15,       -- 29: dup
-      7, 397,   -- 30: get_slot_direct_check(397)
+      7, 451,   -- 30: get_slot_direct_check(451)
       19,       -- 32: swap
       0,        -- 33: push_frame
-      5, 85,    -- 34: get_slot_direct(85)
+      5, 106,   -- 34: get_slot_direct(106)
       10, 1,    -- 36: invoke(1)
       14,       -- 38: pop
       1, 0,     -- 39: push_literal(0)
       11        -- 41: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 114,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      1, 0,     -- 12: push_literal(0)
-      8, 37,    -- 14: set_slot_direct(37)
-      0,        -- 16: push_frame
-      1, 6,     -- 17: push_literal(6)
-      8, 37,    -- 19: set_slot_direct(37)
-      0,        -- 21: push_frame
-      5, 304,   -- 22: get_slot_direct(304)
-      15,       -- 24: dup
-      7, 397,   -- 25: get_slot_direct_check(397)
-      19,       -- 27: swap
-      1, 340,   -- 28: push_literal(340)
-      10, 1,    -- 30: invoke(1)
-      14,       -- 32: pop
-      0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      5, 18,    -- 36: get_slot_direct(18)
-      15,       -- 38: dup
-      7, 75,    -- 39: get_slot_direct_check(75)
-      19,       -- 41: swap
-      4, 115,   -- 42: new_function(115)
-      10, 1,    -- 44: invoke(1)
-      14,       -- 46: pop
-      1, 0,     -- 47: push_literal(0)
-      11        -- 49: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 115,
-    nargs = 2,
-    max_stack = 6,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
-      15,       -- 21: dup
-      7, 397,   -- 22: get_slot_direct_check(397)
-      19,       -- 24: swap
-      1, 352,   -- 25: push_literal(352)
-      10, 1,    -- 27: invoke(1)
-      14,       -- 29: pop
-      0,        -- 30: push_frame
-      5, 304,   -- 31: get_slot_direct(304)
-      15,       -- 33: dup
-      7, 423,   -- 34: get_slot_direct_check(423)
-      19,       -- 36: swap
-      0,        -- 37: push_frame
-      5, 68,    -- 38: get_slot_direct(68)
-      10, 1,    -- 40: invoke(1)
-      14,       -- 42: pop
-      0,        -- 43: push_frame
-      5, 304,   -- 44: get_slot_direct(304)
-      15,       -- 46: dup
-      7, 397,   -- 47: get_slot_direct_check(397)
-      19,       -- 49: swap
-      1, 345,   -- 50: push_literal(345)
-      0,        -- 52: push_frame
-      5, 304,   -- 53: get_slot_direct(304)
-      15,       -- 55: dup
-      7, 232,   -- 56: get_slot_direct_check(232)
-      19,       -- 58: swap
-      0,        -- 59: push_frame
-      5, 37,    -- 60: get_slot_direct(37)
-      10, 1,    -- 62: invoke(1)
-      10, 2,    -- 64: invoke(2)
-      14,       -- 66: pop
-      1, 0,     -- 67: push_literal(0)
-      11        -- 69: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 116,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      1, 0,     -- 12: push_literal(0)
-      8, 37,    -- 14: set_slot_direct(37)
-      0,        -- 16: push_frame
-      1, 6,     -- 17: push_literal(6)
-      8, 37,    -- 19: set_slot_direct(37)
-      0,        -- 21: push_frame
-      5, 304,   -- 22: get_slot_direct(304)
-      15,       -- 24: dup
-      7, 397,   -- 25: get_slot_direct_check(397)
-      19,       -- 27: swap
-      1, 339,   -- 28: push_literal(339)
-      10, 1,    -- 30: invoke(1)
-      14,       -- 32: pop
-      0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      5, 18,    -- 36: get_slot_direct(18)
-      15,       -- 38: dup
-      7, 75,    -- 39: get_slot_direct_check(75)
-      19,       -- 41: swap
-      4, 117,   -- 42: new_function(117)
-      10, 1,    -- 44: invoke(1)
-      14,       -- 46: pop
-      1, 0,     -- 47: push_literal(0)
-      11        -- 49: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 117,
-    nargs = 2,
-    max_stack = 6,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
-      15,       -- 21: dup
-      7, 397,   -- 22: get_slot_direct_check(397)
-      19,       -- 24: swap
-      1, 352,   -- 25: push_literal(352)
-      10, 1,    -- 27: invoke(1)
-      14,       -- 29: pop
-      0,        -- 30: push_frame
-      5, 68,    -- 31: get_slot_direct(68)
-      5, 222,   -- 33: get_slot_direct(222)
-      1, 237,   -- 35: push_literal(237)
-      23,       -- 37: bi_eq
-      13, 53,   -- 38: jmp_unless(53)
-      0,        -- 40: push_frame
-      5, 68,    -- 41: get_slot_direct(68)
-      0,        -- 43: push_frame
-      5, 68,    -- 44: get_slot_direct(68)
-      5, 293,   -- 46: get_slot_direct(293)
-      1, 253,   -- 48: push_literal(253)
-      26,       -- 50: bi_add
-      8, 426,   -- 51: set_slot_direct(426)
-      0,        -- 53: push_frame
-      5, 304,   -- 54: get_slot_direct(304)
-      15,       -- 56: dup
-      7, 423,   -- 57: get_slot_direct_check(423)
-      19,       -- 59: swap
-      0,        -- 60: push_frame
-      5, 68,    -- 61: get_slot_direct(68)
-      10, 1,    -- 63: invoke(1)
-      14,       -- 65: pop
-      0,        -- 66: push_frame
-      5, 304,   -- 67: get_slot_direct(304)
-      15,       -- 69: dup
-      7, 397,   -- 70: get_slot_direct_check(397)
-      19,       -- 72: swap
-      1, 345,   -- 73: push_literal(345)
-      0,        -- 75: push_frame
-      5, 304,   -- 76: get_slot_direct(304)
-      15,       -- 78: dup
-      7, 232,   -- 79: get_slot_direct_check(232)
-      19,       -- 81: swap
-      0,        -- 82: push_frame
-      5, 68,    -- 83: get_slot_direct(68)
-      5, 293,   -- 85: get_slot_direct(293)
-      10, 1,    -- 87: invoke(1)
-      10, 2,    -- 89: invoke(2)
-      14,       -- 91: pop
-      1, 0,     -- 92: push_literal(0)
-      11        -- 94: return
-    }
-  },
-  ifunc.Function:new{ -- ".binary"
-    name = jsval.newString(".binary"),
-    id = 118,
-    nargs = 2,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 427,   -- 15: set_slot_direct(427)
-      14,       -- 17: pop
-      0,        -- 18: push_frame
-      5, 374,   -- 19: get_slot_direct(374)
-      0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
-      0,        -- 24: push_frame
-      5, 375,   -- 25: get_slot_direct(375)
-      5, 247,   -- 27: get_slot_direct(247)
-      0,        -- 29: push_frame
-      5, 20,    -- 30: get_slot_direct(20)
-      5, 139,   -- 32: get_slot_direct(139)
-      6,        -- 34: get_slot_indirect
-      0,        -- 35: push_frame
-      5, 20,    -- 36: get_slot_direct(20)
-      10, 2,    -- 38: invoke(2)
-      14,       -- 40: pop
-      0,        -- 41: push_frame
-      5, 375,   -- 42: get_slot_direct(375)
-      5, 247,   -- 44: get_slot_direct(247)
-      0,        -- 46: push_frame
-      5, 20,    -- 47: get_slot_direct(20)
-      5, 139,   -- 49: get_slot_direct(139)
-      6,        -- 51: get_slot_indirect
-      15,       -- 52: dup
-      7, 74,    -- 53: get_slot_direct_check(74)
-      19,       -- 55: swap
-      0,        -- 56: push_frame
-      5, 20,    -- 57: get_slot_direct(20)
-      0,        -- 59: push_frame
-      5, 304,   -- 60: get_slot_direct(304)
-      0,        -- 62: push_frame
-      5, 427,   -- 63: get_slot_direct(427)
-      10, 3,    -- 65: invoke(3)
-      14,       -- 67: pop
-      1, 0,     -- 68: push_literal(0)
-      11        -- 70: return
-    }
-  },
-  ifunc.Function:new{ -- "binary"
-    name = jsval.newString("binary"),
-    id = 119,
-    nargs = 3,
-    max_stack = 3,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 393,   -- 8: set_slot_direct(393)
-      15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
-      0,        -- 13: push_frame
-      19,       -- 14: swap
-      8, 85,    -- 15: set_slot_direct(85)
-      15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
-      0,        -- 20: push_frame
-      19,       -- 21: swap
-      8, 356,   -- 22: set_slot_direct(356)
-      14,       -- 24: pop
-      0,        -- 25: push_frame
-      5, 85,    -- 26: get_slot_direct(85)
-      22,       -- 28: un_typeof
-      1, 15,    -- 29: push_literal(15)
-      23,       -- 31: bi_eq
-      13, 47,   -- 32: jmp_unless(47)
-      0,        -- 34: push_frame
-      5, 375,   -- 35: get_slot_direct(375)
-      5, 247,   -- 37: get_slot_direct(247)
-      0,        -- 39: push_frame
-      5, 393,   -- 40: get_slot_direct(393)
-      4, 120,   -- 42: new_function(120)
-      9,        -- 44: set_slot_indirect
-      12, 59,   -- 45: jmp(59)
-      0,        -- 47: push_frame
-      5, 375,   -- 48: get_slot_direct(375)
-      5, 247,   -- 50: get_slot_direct(247)
-      0,        -- 52: push_frame
-      5, 393,   -- 53: get_slot_direct(393)
-      0,        -- 55: push_frame
-      5, 85,    -- 56: get_slot_direct(85)
-      9,        -- 58: set_slot_indirect
-      1, 0,     -- 59: push_literal(0)
-      11        -- 61: return
     }
   },
   ifunc.Function:new{
@@ -11592,49 +12174,364 @@ startup.functions = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      1, 0,     -- 12: push_literal(0)
+      8, 53,    -- 14: set_slot_direct(53)
+      0,        -- 16: push_frame
+      1, 18,    -- 17: push_literal(18)
+      8, 53,    -- 19: set_slot_direct(53)
+      0,        -- 21: push_frame
+      5, 359,   -- 22: get_slot_direct(359)
+      15,       -- 24: dup
+      7, 451,   -- 25: get_slot_direct_check(451)
+      19,       -- 27: swap
+      1, 395,   -- 28: push_literal(395)
+      10, 1,    -- 30: invoke(1)
+      14,       -- 32: pop
+      0,        -- 33: push_frame
+      5, 26,    -- 34: get_slot_direct(26)
+      5, 39,    -- 36: get_slot_direct(39)
+      15,       -- 38: dup
+      7, 94,    -- 39: get_slot_direct_check(94)
+      19,       -- 41: swap
+      4, 121,   -- 42: new_function(121)
+      10, 1,    -- 44: invoke(1)
+      14,       -- 46: pop
+      1, 0,     -- 47: push_literal(0)
+      11        -- 49: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 121,
+    nargs = 2,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 87,    -- 8: set_slot_direct(87)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 53,    -- 15: set_slot_direct(53)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      5, 359,   -- 19: get_slot_direct(359)
+      15,       -- 21: dup
+      7, 451,   -- 22: get_slot_direct_check(451)
+      19,       -- 24: swap
+      1, 407,   -- 25: push_literal(407)
+      10, 1,    -- 27: invoke(1)
+      14,       -- 29: pop
+      0,        -- 30: push_frame
+      5, 359,   -- 31: get_slot_direct(359)
+      15,       -- 33: dup
+      7, 473,   -- 34: get_slot_direct_check(473)
+      19,       -- 36: swap
+      0,        -- 37: push_frame
+      5, 87,    -- 38: get_slot_direct(87)
+      10, 1,    -- 40: invoke(1)
+      14,       -- 42: pop
+      0,        -- 43: push_frame
+      5, 359,   -- 44: get_slot_direct(359)
+      15,       -- 46: dup
+      7, 451,   -- 47: get_slot_direct_check(451)
+      19,       -- 49: swap
+      1, 400,   -- 50: push_literal(400)
+      0,        -- 52: push_frame
+      5, 359,   -- 53: get_slot_direct(359)
+      15,       -- 55: dup
+      7, 293,   -- 56: get_slot_direct_check(293)
+      19,       -- 58: swap
+      0,        -- 59: push_frame
+      5, 53,    -- 60: get_slot_direct(53)
+      10, 1,    -- 62: invoke(1)
+      10, 2,    -- 64: invoke(2)
+      14,       -- 66: pop
+      1, 0,     -- 67: push_literal(0)
+      11        -- 69: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 122,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 53,    -- 14: set_slot_direct(53)
+      0,        -- 16: push_frame
+      1, 18,    -- 17: push_literal(18)
+      8, 53,    -- 19: set_slot_direct(53)
+      0,        -- 21: push_frame
+      5, 359,   -- 22: get_slot_direct(359)
+      15,       -- 24: dup
+      7, 451,   -- 25: get_slot_direct_check(451)
+      19,       -- 27: swap
+      1, 394,   -- 28: push_literal(394)
+      10, 1,    -- 30: invoke(1)
+      14,       -- 32: pop
+      0,        -- 33: push_frame
+      5, 26,    -- 34: get_slot_direct(26)
+      5, 39,    -- 36: get_slot_direct(39)
+      15,       -- 38: dup
+      7, 94,    -- 39: get_slot_direct_check(94)
+      19,       -- 41: swap
+      4, 123,   -- 42: new_function(123)
+      10, 1,    -- 44: invoke(1)
+      14,       -- 46: pop
+      1, 0,     -- 47: push_literal(0)
+      11        -- 49: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 123,
+    nargs = 2,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 87,    -- 8: set_slot_direct(87)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 53,    -- 15: set_slot_direct(53)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      5, 359,   -- 19: get_slot_direct(359)
+      15,       -- 21: dup
+      7, 451,   -- 22: get_slot_direct_check(451)
+      19,       -- 24: swap
+      1, 407,   -- 25: push_literal(407)
+      10, 1,    -- 27: invoke(1)
+      14,       -- 29: pop
+      0,        -- 30: push_frame
+      5, 87,    -- 31: get_slot_direct(87)
+      5, 283,   -- 33: get_slot_direct(283)
+      1, 25,    -- 35: push_literal(25)
+      23,       -- 37: bi_eq
+      13, 53,   -- 38: jmp_unless(53)
+      0,        -- 40: push_frame
+      5, 87,    -- 41: get_slot_direct(87)
+      0,        -- 43: push_frame
+      5, 87,    -- 44: get_slot_direct(87)
+      5, 348,   -- 46: get_slot_direct(348)
+      1, 312,   -- 48: push_literal(312)
+      26,       -- 50: bi_add
+      8, 476,   -- 51: set_slot_direct(476)
+      0,        -- 53: push_frame
+      5, 359,   -- 54: get_slot_direct(359)
+      15,       -- 56: dup
+      7, 473,   -- 57: get_slot_direct_check(473)
+      19,       -- 59: swap
+      0,        -- 60: push_frame
+      5, 87,    -- 61: get_slot_direct(87)
+      10, 1,    -- 63: invoke(1)
+      14,       -- 65: pop
+      0,        -- 66: push_frame
+      5, 359,   -- 67: get_slot_direct(359)
+      15,       -- 69: dup
+      7, 451,   -- 70: get_slot_direct_check(451)
+      19,       -- 72: swap
+      1, 400,   -- 73: push_literal(400)
+      0,        -- 75: push_frame
+      5, 359,   -- 76: get_slot_direct(359)
+      15,       -- 78: dup
+      7, 293,   -- 79: get_slot_direct_check(293)
+      19,       -- 81: swap
+      0,        -- 82: push_frame
+      5, 87,    -- 83: get_slot_direct(87)
+      5, 348,   -- 85: get_slot_direct(348)
+      10, 1,    -- 87: invoke(1)
+      10, 2,    -- 89: invoke(2)
+      14,       -- 91: pop
+      1, 0,     -- 92: push_literal(0)
+      11        -- 94: return
+    }
+  },
+  ifunc.Function:new{ -- ".binary"
+    name = jsval.newString(".binary"),
+    id = 124,
+    nargs = 2,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 477,   -- 15: set_slot_direct(477)
+      14,       -- 17: pop
+      0,        -- 18: push_frame
+      5, 429,   -- 19: get_slot_direct(429)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      0,        -- 24: push_frame
+      5, 430,   -- 25: get_slot_direct(430)
+      5, 307,   -- 27: get_slot_direct(307)
+      0,        -- 29: push_frame
+      5, 26,    -- 30: get_slot_direct(26)
+      5, 209,   -- 32: get_slot_direct(209)
+      6,        -- 34: get_slot_indirect
+      0,        -- 35: push_frame
+      5, 26,    -- 36: get_slot_direct(26)
+      10, 2,    -- 38: invoke(2)
+      14,       -- 40: pop
+      0,        -- 41: push_frame
+      5, 430,   -- 42: get_slot_direct(430)
+      5, 307,   -- 44: get_slot_direct(307)
+      0,        -- 46: push_frame
+      5, 26,    -- 47: get_slot_direct(26)
+      5, 209,   -- 49: get_slot_direct(209)
+      6,        -- 51: get_slot_indirect
+      15,       -- 52: dup
+      7, 93,    -- 53: get_slot_direct_check(93)
+      19,       -- 55: swap
+      0,        -- 56: push_frame
+      5, 26,    -- 57: get_slot_direct(26)
+      0,        -- 59: push_frame
+      5, 359,   -- 60: get_slot_direct(359)
+      0,        -- 62: push_frame
+      5, 477,   -- 63: get_slot_direct(477)
+      10, 3,    -- 65: invoke(3)
+      14,       -- 67: pop
+      1, 0,     -- 68: push_literal(0)
+      11        -- 70: return
+    }
+  },
+  ifunc.Function:new{ -- "binary"
+    name = jsval.newString("binary"),
+    id = 125,
+    nargs = 3,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 447,   -- 8: set_slot_direct(447)
+      15,       -- 10: dup
+      5, 31,    -- 11: get_slot_direct(31)
+      0,        -- 13: push_frame
+      19,       -- 14: swap
+      8, 106,   -- 15: set_slot_direct(106)
+      15,       -- 17: dup
+      5, 130,   -- 18: get_slot_direct(130)
+      0,        -- 20: push_frame
+      19,       -- 21: swap
+      8, 411,   -- 22: set_slot_direct(411)
+      14,       -- 24: pop
+      0,        -- 25: push_frame
+      5, 106,   -- 26: get_slot_direct(106)
+      22,       -- 28: un_typeof
+      1, 38,    -- 29: push_literal(38)
+      23,       -- 31: bi_eq
+      13, 47,   -- 32: jmp_unless(47)
+      0,        -- 34: push_frame
+      5, 430,   -- 35: get_slot_direct(430)
+      5, 307,   -- 37: get_slot_direct(307)
+      0,        -- 39: push_frame
+      5, 447,   -- 40: get_slot_direct(447)
+      4, 126,   -- 42: new_function(126)
+      9,        -- 44: set_slot_indirect
+      12, 59,   -- 45: jmp(59)
+      0,        -- 47: push_frame
+      5, 430,   -- 48: get_slot_direct(430)
+      5, 307,   -- 50: get_slot_direct(307)
+      0,        -- 52: push_frame
+      5, 447,   -- 53: get_slot_direct(447)
+      0,        -- 55: push_frame
+      5, 106,   -- 56: get_slot_direct(106)
+      9,        -- 58: set_slot_indirect
+      1, 0,     -- 59: push_literal(0)
+      11        -- 61: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 126,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 304,   -- 27: get_slot_direct(304)
+      5, 359,   -- 27: get_slot_direct(359)
       15,       -- 29: dup
-      7, 423,   -- 30: get_slot_direct_check(423)
+      7, 473,   -- 30: get_slot_direct_check(473)
       19,       -- 32: swap
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      5, 19,    -- 36: get_slot_direct(19)
+      5, 26,    -- 34: get_slot_direct(26)
+      5, 40,    -- 36: get_slot_direct(40)
       10, 1,    -- 38: invoke(1)
       14,       -- 40: pop
       0,        -- 41: push_frame
-      5, 356,   -- 42: get_slot_direct(356)
+      5, 411,   -- 42: get_slot_direct(411)
       13, 58,   -- 44: jmp_unless(58)
       0,        -- 46: push_frame
-      5, 304,   -- 47: get_slot_direct(304)
+      5, 359,   -- 47: get_slot_direct(359)
       15,       -- 49: dup
-      7, 397,   -- 50: get_slot_direct_check(397)
+      7, 451,   -- 50: get_slot_direct_check(451)
       19,       -- 52: swap
-      1, 356,   -- 53: push_literal(356)
+      1, 411,   -- 53: push_literal(411)
       10, 1,    -- 55: invoke(1)
       14,       -- 57: pop
       0,        -- 58: push_frame
-      5, 304,   -- 59: get_slot_direct(304)
+      5, 359,   -- 59: get_slot_direct(359)
       15,       -- 61: dup
-      7, 397,   -- 62: get_slot_direct_check(397)
+      7, 451,   -- 62: get_slot_direct_check(451)
       19,       -- 64: swap
       0,        -- 65: push_frame
-      5, 85,    -- 66: get_slot_direct(85)
+      5, 106,   -- 66: get_slot_direct(106)
       10, 1,    -- 68: invoke(1)
       14,       -- 70: pop
       1, 0,     -- 71: push_literal(0)
@@ -11643,456 +12540,456 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "assignment"
     name = jsval.newString("assignment"),
-    id = 121,
+    id = 127,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 428,   -- 8: set_slot_direct(428)
+      8, 478,   -- 8: set_slot_direct(478)
       14,       -- 10: pop
-      4, 122,   -- 11: new_function(122)
+      4, 128,   -- 11: new_function(128)
       11        -- 13: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 122,
+    id = 128,
     nargs = 2,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 427,   -- 15: set_slot_direct(427)
+      8, 477,   -- 15: set_slot_direct(477)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
-      5, 222,   -- 23: get_slot_direct(222)
-      1, 9,     -- 25: push_literal(9)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
+      5, 283,   -- 23: get_slot_direct(283)
+      1, 19,    -- 25: push_literal(19)
       23,       -- 27: bi_eq
       13, 273,  -- 28: jmp_unless(273)
       0,        -- 30: push_frame
       1, 0,     -- 31: push_literal(0)
-      8, 37,    -- 33: set_slot_direct(37)
+      8, 53,    -- 33: set_slot_direct(53)
       0,        -- 35: push_frame
       1, 0,     -- 36: push_literal(0)
-      8, 424,   -- 38: set_slot_direct(424)
+      8, 474,   -- 38: set_slot_direct(474)
       0,        -- 40: push_frame
-      1, 6,     -- 41: push_literal(6)
-      8, 37,    -- 43: set_slot_direct(37)
+      1, 18,    -- 41: push_literal(18)
+      8, 53,    -- 43: set_slot_direct(53)
       0,        -- 45: push_frame
       0,        -- 46: push_frame
-      5, 304,   -- 47: get_slot_direct(304)
-      5, 190,   -- 49: get_slot_direct(190)
+      5, 359,   -- 47: get_slot_direct(359)
+      5, 251,   -- 49: get_slot_direct(251)
       0,        -- 51: push_frame
-      5, 20,    -- 52: get_slot_direct(20)
-      5, 18,    -- 54: get_slot_direct(18)
-      5, 190,   -- 56: get_slot_direct(190)
-      5, 225,   -- 58: get_slot_direct(225)
+      5, 26,    -- 52: get_slot_direct(26)
+      5, 39,    -- 54: get_slot_direct(39)
+      5, 251,   -- 56: get_slot_direct(251)
+      5, 286,   -- 58: get_slot_direct(286)
       27,       -- 60: bi_sub
-      8, 424,   -- 61: set_slot_direct(424)
+      8, 474,   -- 61: set_slot_direct(474)
       0,        -- 63: push_frame
-      5, 304,   -- 64: get_slot_direct(304)
+      5, 359,   -- 64: get_slot_direct(359)
       15,       -- 66: dup
-      7, 397,   -- 67: get_slot_direct_check(397)
+      7, 451,   -- 67: get_slot_direct_check(451)
       19,       -- 69: swap
-      1, 337,   -- 70: push_literal(337)
+      1, 392,   -- 70: push_literal(392)
       10, 1,    -- 72: invoke(1)
       14,       -- 74: pop
       12, 109,  -- 75: jmp(109)
       0,        -- 77: push_frame
-      5, 304,   -- 78: get_slot_direct(304)
+      5, 359,   -- 78: get_slot_direct(359)
       15,       -- 80: dup
-      7, 397,   -- 81: get_slot_direct_check(397)
+      7, 451,   -- 81: get_slot_direct_check(451)
       19,       -- 83: swap
-      1, 342,   -- 84: push_literal(342)
+      1, 397,   -- 84: push_literal(397)
       0,        -- 86: push_frame
-      5, 304,   -- 87: get_slot_direct(304)
+      5, 359,   -- 87: get_slot_direct(359)
       15,       -- 89: dup
-      7, 232,   -- 90: get_slot_direct_check(232)
+      7, 293,   -- 90: get_slot_direct_check(293)
       19,       -- 92: swap
-      1, 93,    -- 93: push_literal(93)
+      1, 114,   -- 93: push_literal(114)
       10, 1,    -- 95: invoke(1)
       10, 2,    -- 97: invoke(2)
       14,       -- 99: pop
       0,        -- 100: push_frame
       15,       -- 101: dup
-      5, 37,    -- 102: get_slot_direct(37)
-      1, 8,     -- 104: push_literal(8)
+      5, 53,    -- 102: get_slot_direct(53)
+      1, 31,    -- 104: push_literal(31)
       26,       -- 106: bi_add
-      8, 37,    -- 107: set_slot_direct(37)
+      8, 53,    -- 107: set_slot_direct(53)
       0,        -- 109: push_frame
-      5, 37,    -- 110: get_slot_direct(37)
+      5, 53,    -- 110: get_slot_direct(53)
       0,        -- 112: push_frame
-      5, 424,   -- 113: get_slot_direct(424)
+      5, 474,   -- 113: get_slot_direct(474)
       19,       -- 115: swap
       24,       -- 116: bi_gt
       20,       -- 117: un_not
       13, 77,   -- 118: jmp_unless(77)
       0,        -- 120: push_frame
-      5, 428,   -- 121: get_slot_direct(428)
+      5, 478,   -- 121: get_slot_direct(478)
       13, 165,  -- 123: jmp_unless(165)
       0,        -- 125: push_frame
-      5, 304,   -- 126: get_slot_direct(304)
+      5, 359,   -- 126: get_slot_direct(359)
       15,       -- 128: dup
-      7, 397,   -- 129: get_slot_direct_check(397)
+      7, 451,   -- 129: get_slot_direct_check(451)
       19,       -- 131: swap
-      1, 352,   -- 132: push_literal(352)
+      1, 407,   -- 132: push_literal(407)
       10, 1,    -- 134: invoke(1)
       14,       -- 136: pop
       0,        -- 137: push_frame
-      5, 304,   -- 138: get_slot_direct(304)
+      5, 359,   -- 138: get_slot_direct(359)
       15,       -- 140: dup
-      7, 397,   -- 141: get_slot_direct_check(397)
+      7, 451,   -- 141: get_slot_direct_check(451)
       19,       -- 143: swap
-      1, 342,   -- 144: push_literal(342)
+      1, 397,   -- 144: push_literal(397)
       0,        -- 146: push_frame
-      5, 304,   -- 147: get_slot_direct(304)
+      5, 359,   -- 147: get_slot_direct(359)
       15,       -- 149: dup
-      7, 232,   -- 150: get_slot_direct_check(232)
+      7, 293,   -- 150: get_slot_direct_check(293)
       19,       -- 152: swap
       0,        -- 153: push_frame
-      5, 20,    -- 154: get_slot_direct(20)
-      5, 18,    -- 156: get_slot_direct(18)
-      5, 139,   -- 158: get_slot_direct(139)
+      5, 26,    -- 154: get_slot_direct(26)
+      5, 39,    -- 156: get_slot_direct(39)
+      5, 209,   -- 158: get_slot_direct(209)
       10, 1,    -- 160: invoke(1)
       10, 2,    -- 162: invoke(2)
       14,       -- 164: pop
       0,        -- 165: push_frame
-      5, 20,    -- 166: get_slot_direct(20)
-      5, 19,    -- 168: get_slot_direct(19)
-      5, 222,   -- 170: get_slot_direct(222)
-      1, 237,   -- 172: push_literal(237)
+      5, 26,    -- 166: get_slot_direct(26)
+      5, 40,    -- 168: get_slot_direct(40)
+      5, 283,   -- 170: get_slot_direct(283)
+      1, 25,    -- 172: push_literal(25)
       23,       -- 174: bi_eq
       13, 191,  -- 175: jmp_unless(191)
       0,        -- 177: push_frame
-      5, 20,    -- 178: get_slot_direct(20)
-      5, 19,    -- 180: get_slot_direct(19)
+      5, 26,    -- 178: get_slot_direct(26)
+      5, 40,    -- 180: get_slot_direct(40)
       0,        -- 182: push_frame
-      5, 20,    -- 183: get_slot_direct(20)
-      5, 18,    -- 185: get_slot_direct(18)
-      5, 139,   -- 187: get_slot_direct(139)
-      8, 426,   -- 189: set_slot_direct(426)
+      5, 26,    -- 183: get_slot_direct(26)
+      5, 39,    -- 185: get_slot_direct(39)
+      5, 209,   -- 187: get_slot_direct(209)
+      8, 476,   -- 189: set_slot_direct(476)
       0,        -- 191: push_frame
-      5, 304,   -- 192: get_slot_direct(304)
+      5, 359,   -- 192: get_slot_direct(359)
       15,       -- 194: dup
-      7, 423,   -- 195: get_slot_direct_check(423)
+      7, 473,   -- 195: get_slot_direct_check(473)
       19,       -- 197: swap
       0,        -- 198: push_frame
-      5, 20,    -- 199: get_slot_direct(20)
-      5, 19,    -- 201: get_slot_direct(19)
+      5, 26,    -- 199: get_slot_direct(26)
+      5, 40,    -- 201: get_slot_direct(40)
       10, 1,    -- 203: invoke(1)
       14,       -- 205: pop
       0,        -- 206: push_frame
-      5, 428,   -- 207: get_slot_direct(428)
+      5, 478,   -- 207: get_slot_direct(478)
       13, 224,  -- 209: jmp_unless(224)
       0,        -- 211: push_frame
-      5, 304,   -- 212: get_slot_direct(304)
+      5, 359,   -- 212: get_slot_direct(359)
       15,       -- 214: dup
-      7, 397,   -- 215: get_slot_direct_check(397)
+      7, 451,   -- 215: get_slot_direct_check(451)
       19,       -- 217: swap
       0,        -- 218: push_frame
-      5, 428,   -- 219: get_slot_direct(428)
+      5, 478,   -- 219: get_slot_direct(478)
       10, 1,    -- 221: invoke(1)
       14,       -- 223: pop
       0,        -- 224: push_frame
-      5, 427,   -- 225: get_slot_direct(427)
+      5, 477,   -- 225: get_slot_direct(477)
       20,       -- 227: un_not
       13, 242,  -- 228: jmp_unless(242)
       0,        -- 230: push_frame
-      5, 304,   -- 231: get_slot_direct(304)
+      5, 359,   -- 231: get_slot_direct(359)
       15,       -- 233: dup
-      7, 397,   -- 234: get_slot_direct_check(397)
+      7, 451,   -- 234: get_slot_direct_check(451)
       19,       -- 236: swap
-      1, 354,   -- 237: push_literal(354)
+      1, 409,   -- 237: push_literal(409)
       10, 1,    -- 239: invoke(1)
       14,       -- 241: pop
       0,        -- 242: push_frame
-      5, 304,   -- 243: get_slot_direct(304)
+      5, 359,   -- 243: get_slot_direct(359)
       15,       -- 245: dup
-      7, 397,   -- 246: get_slot_direct_check(397)
+      7, 451,   -- 246: get_slot_direct_check(451)
       19,       -- 248: swap
-      1, 345,   -- 249: push_literal(345)
+      1, 400,   -- 249: push_literal(400)
       0,        -- 251: push_frame
-      5, 304,   -- 252: get_slot_direct(304)
+      5, 359,   -- 252: get_slot_direct(359)
       15,       -- 254: dup
-      7, 232,   -- 255: get_slot_direct_check(232)
+      7, 293,   -- 255: get_slot_direct_check(293)
       19,       -- 257: swap
       0,        -- 258: push_frame
-      5, 20,    -- 259: get_slot_direct(20)
-      5, 18,    -- 261: get_slot_direct(18)
-      5, 139,   -- 263: get_slot_direct(139)
+      5, 26,    -- 259: get_slot_direct(26)
+      5, 39,    -- 261: get_slot_direct(39)
+      5, 209,   -- 263: get_slot_direct(209)
       10, 1,    -- 265: invoke(1)
       10, 2,    -- 267: invoke(2)
       14,       -- 269: pop
       1, 0,     -- 270: push_literal(0)
       11,       -- 272: return
       0,        -- 273: push_frame
-      5, 374,   -- 274: get_slot_direct(374)
+      5, 429,   -- 274: get_slot_direct(429)
       0,        -- 276: push_frame
-      5, 20,    -- 277: get_slot_direct(20)
+      5, 26,    -- 277: get_slot_direct(26)
       0,        -- 279: push_frame
-      5, 20,    -- 280: get_slot_direct(20)
-      5, 18,    -- 282: get_slot_direct(18)
-      5, 222,   -- 284: get_slot_direct(222)
-      1, 247,   -- 286: push_literal(247)
+      5, 26,    -- 280: get_slot_direct(26)
+      5, 39,    -- 282: get_slot_direct(39)
+      5, 283,   -- 284: get_slot_direct(283)
+      1, 307,   -- 286: push_literal(307)
       23,       -- 288: bi_eq
       0,        -- 289: push_frame
-      5, 20,    -- 290: get_slot_direct(20)
-      5, 18,    -- 292: get_slot_direct(18)
+      5, 26,    -- 290: get_slot_direct(26)
+      5, 39,    -- 292: get_slot_direct(39)
       10, 2,    -- 294: invoke(2)
       14,       -- 296: pop
       0,        -- 297: push_frame
-      5, 20,    -- 298: get_slot_direct(20)
-      5, 18,    -- 300: get_slot_direct(18)
-      5, 139,   -- 302: get_slot_direct(139)
-      1, 151,   -- 304: push_literal(151)
+      5, 26,    -- 298: get_slot_direct(26)
+      5, 39,    -- 300: get_slot_direct(39)
+      5, 209,   -- 302: get_slot_direct(209)
+      1, 143,   -- 304: push_literal(143)
       23,       -- 306: bi_eq
       13, 514,  -- 307: jmp_unless(514)
       0,        -- 309: push_frame
-      5, 374,   -- 310: get_slot_direct(374)
+      5, 429,   -- 310: get_slot_direct(429)
       0,        -- 312: push_frame
-      5, 20,    -- 313: get_slot_direct(20)
+      5, 26,    -- 313: get_slot_direct(26)
       0,        -- 315: push_frame
-      5, 20,    -- 316: get_slot_direct(20)
-      5, 18,    -- 318: get_slot_direct(18)
-      5, 19,    -- 320: get_slot_direct(19)
-      5, 222,   -- 322: get_slot_direct(222)
-      1, 232,   -- 324: push_literal(232)
+      5, 26,    -- 316: get_slot_direct(26)
+      5, 39,    -- 318: get_slot_direct(39)
+      5, 40,    -- 320: get_slot_direct(40)
+      5, 283,   -- 322: get_slot_direct(283)
+      1, 293,   -- 324: push_literal(293)
       23,       -- 326: bi_eq
       0,        -- 327: push_frame
-      5, 20,    -- 328: get_slot_direct(20)
-      5, 18,    -- 330: get_slot_direct(18)
+      5, 26,    -- 328: get_slot_direct(26)
+      5, 39,    -- 330: get_slot_direct(39)
       10, 2,    -- 332: invoke(2)
       14,       -- 334: pop
       0,        -- 335: push_frame
-      5, 304,   -- 336: get_slot_direct(304)
+      5, 359,   -- 336: get_slot_direct(359)
       15,       -- 338: dup
-      7, 423,   -- 339: get_slot_direct_check(423)
+      7, 473,   -- 339: get_slot_direct_check(473)
       19,       -- 341: swap
       0,        -- 342: push_frame
-      5, 20,    -- 343: get_slot_direct(20)
-      5, 18,    -- 345: get_slot_direct(18)
-      5, 18,    -- 347: get_slot_direct(18)
+      5, 26,    -- 343: get_slot_direct(26)
+      5, 39,    -- 345: get_slot_direct(39)
+      5, 39,    -- 347: get_slot_direct(39)
       10, 1,    -- 349: invoke(1)
       14,       -- 351: pop
       0,        -- 352: push_frame
-      5, 428,   -- 353: get_slot_direct(428)
+      5, 478,   -- 353: get_slot_direct(478)
       13, 399,  -- 355: jmp_unless(399)
       0,        -- 357: push_frame
-      5, 304,   -- 358: get_slot_direct(304)
+      5, 359,   -- 358: get_slot_direct(359)
       15,       -- 360: dup
-      7, 397,   -- 361: get_slot_direct_check(397)
+      7, 451,   -- 361: get_slot_direct_check(451)
       19,       -- 363: swap
-      1, 352,   -- 364: push_literal(352)
+      1, 407,   -- 364: push_literal(407)
       10, 1,    -- 366: invoke(1)
       14,       -- 368: pop
       0,        -- 369: push_frame
-      5, 304,   -- 370: get_slot_direct(304)
+      5, 359,   -- 370: get_slot_direct(359)
       15,       -- 372: dup
-      7, 397,   -- 373: get_slot_direct_check(397)
+      7, 451,   -- 373: get_slot_direct_check(451)
       19,       -- 375: swap
-      1, 342,   -- 376: push_literal(342)
+      1, 397,   -- 376: push_literal(397)
       0,        -- 378: push_frame
-      5, 304,   -- 379: get_slot_direct(304)
+      5, 359,   -- 379: get_slot_direct(359)
       15,       -- 381: dup
-      7, 232,   -- 382: get_slot_direct_check(232)
+      7, 293,   -- 382: get_slot_direct_check(293)
       19,       -- 384: swap
       0,        -- 385: push_frame
-      5, 20,    -- 386: get_slot_direct(20)
-      5, 18,    -- 388: get_slot_direct(18)
-      5, 19,    -- 390: get_slot_direct(19)
-      5, 139,   -- 392: get_slot_direct(139)
+      5, 26,    -- 386: get_slot_direct(26)
+      5, 39,    -- 388: get_slot_direct(39)
+      5, 40,    -- 390: get_slot_direct(40)
+      5, 209,   -- 392: get_slot_direct(209)
       10, 1,    -- 394: invoke(1)
       10, 2,    -- 396: invoke(2)
       14,       -- 398: pop
       0,        -- 399: push_frame
-      5, 20,    -- 400: get_slot_direct(20)
-      5, 19,    -- 402: get_slot_direct(19)
-      5, 222,   -- 404: get_slot_direct(222)
-      1, 237,   -- 406: push_literal(237)
+      5, 26,    -- 400: get_slot_direct(26)
+      5, 40,    -- 402: get_slot_direct(40)
+      5, 283,   -- 404: get_slot_direct(283)
+      1, 25,    -- 406: push_literal(25)
       23,       -- 408: bi_eq
       13, 430,  -- 409: jmp_unless(430)
       0,        -- 411: push_frame
-      5, 20,    -- 412: get_slot_direct(20)
-      5, 19,    -- 414: get_slot_direct(19)
-      1, 151,   -- 416: push_literal(151)
+      5, 26,    -- 412: get_slot_direct(26)
+      5, 40,    -- 414: get_slot_direct(40)
+      1, 143,   -- 416: push_literal(143)
       0,        -- 418: push_frame
-      5, 20,    -- 419: get_slot_direct(20)
-      5, 18,    -- 421: get_slot_direct(18)
-      5, 19,    -- 423: get_slot_direct(19)
-      5, 139,   -- 425: get_slot_direct(139)
+      5, 26,    -- 419: get_slot_direct(26)
+      5, 39,    -- 421: get_slot_direct(39)
+      5, 40,    -- 423: get_slot_direct(40)
+      5, 209,   -- 425: get_slot_direct(209)
       26,       -- 427: bi_add
-      8, 426,   -- 428: set_slot_direct(426)
+      8, 476,   -- 428: set_slot_direct(476)
       0,        -- 430: push_frame
-      5, 304,   -- 431: get_slot_direct(304)
+      5, 359,   -- 431: get_slot_direct(359)
       15,       -- 433: dup
-      7, 423,   -- 434: get_slot_direct_check(423)
+      7, 473,   -- 434: get_slot_direct_check(473)
       19,       -- 436: swap
       0,        -- 437: push_frame
-      5, 20,    -- 438: get_slot_direct(20)
-      5, 19,    -- 440: get_slot_direct(19)
+      5, 26,    -- 438: get_slot_direct(26)
+      5, 40,    -- 440: get_slot_direct(40)
       10, 1,    -- 442: invoke(1)
       14,       -- 444: pop
       0,        -- 445: push_frame
-      5, 428,   -- 446: get_slot_direct(428)
+      5, 478,   -- 446: get_slot_direct(478)
       13, 463,  -- 448: jmp_unless(463)
       0,        -- 450: push_frame
-      5, 304,   -- 451: get_slot_direct(304)
+      5, 359,   -- 451: get_slot_direct(359)
       15,       -- 453: dup
-      7, 397,   -- 454: get_slot_direct_check(397)
+      7, 451,   -- 454: get_slot_direct_check(451)
       19,       -- 456: swap
       0,        -- 457: push_frame
-      5, 428,   -- 458: get_slot_direct(428)
+      5, 478,   -- 458: get_slot_direct(478)
       10, 1,    -- 460: invoke(1)
       14,       -- 462: pop
       0,        -- 463: push_frame
-      5, 427,   -- 464: get_slot_direct(427)
+      5, 477,   -- 464: get_slot_direct(477)
       20,       -- 466: un_not
       13, 481,  -- 467: jmp_unless(481)
       0,        -- 469: push_frame
-      5, 304,   -- 470: get_slot_direct(304)
+      5, 359,   -- 470: get_slot_direct(359)
       15,       -- 472: dup
-      7, 397,   -- 473: get_slot_direct_check(397)
+      7, 451,   -- 473: get_slot_direct_check(451)
       19,       -- 475: swap
-      1, 354,   -- 476: push_literal(354)
+      1, 409,   -- 476: push_literal(409)
       10, 1,    -- 478: invoke(1)
       14,       -- 480: pop
       0,        -- 481: push_frame
-      5, 304,   -- 482: get_slot_direct(304)
+      5, 359,   -- 482: get_slot_direct(359)
       15,       -- 484: dup
-      7, 397,   -- 485: get_slot_direct_check(397)
+      7, 451,   -- 485: get_slot_direct_check(451)
       19,       -- 487: swap
-      1, 345,   -- 488: push_literal(345)
+      1, 400,   -- 488: push_literal(400)
       0,        -- 490: push_frame
-      5, 304,   -- 491: get_slot_direct(304)
+      5, 359,   -- 491: get_slot_direct(359)
       15,       -- 493: dup
-      7, 232,   -- 494: get_slot_direct_check(232)
+      7, 293,   -- 494: get_slot_direct_check(293)
       19,       -- 496: swap
       0,        -- 497: push_frame
-      5, 20,    -- 498: get_slot_direct(20)
-      5, 18,    -- 500: get_slot_direct(18)
-      5, 19,    -- 502: get_slot_direct(19)
-      5, 139,   -- 504: get_slot_direct(139)
+      5, 26,    -- 498: get_slot_direct(26)
+      5, 39,    -- 500: get_slot_direct(39)
+      5, 40,    -- 502: get_slot_direct(40)
+      5, 209,   -- 504: get_slot_direct(209)
       10, 1,    -- 506: invoke(1)
       10, 2,    -- 508: invoke(2)
       14,       -- 510: pop
       1, 0,     -- 511: push_literal(0)
       11,       -- 513: return
       0,        -- 514: push_frame
-      5, 20,    -- 515: get_slot_direct(20)
-      5, 18,    -- 517: get_slot_direct(18)
-      5, 139,   -- 519: get_slot_direct(139)
-      1, 248,   -- 521: push_literal(248)
+      5, 26,    -- 515: get_slot_direct(26)
+      5, 39,    -- 517: get_slot_direct(39)
+      5, 209,   -- 519: get_slot_direct(209)
+      1, 308,   -- 521: push_literal(308)
       23,       -- 523: bi_eq
       13, 655,  -- 524: jmp_unless(655)
       0,        -- 526: push_frame
-      5, 304,   -- 527: get_slot_direct(304)
+      5, 359,   -- 527: get_slot_direct(359)
       15,       -- 529: dup
-      7, 423,   -- 530: get_slot_direct_check(423)
+      7, 473,   -- 530: get_slot_direct_check(473)
       19,       -- 532: swap
       0,        -- 533: push_frame
-      5, 20,    -- 534: get_slot_direct(20)
-      5, 18,    -- 536: get_slot_direct(18)
-      5, 18,    -- 538: get_slot_direct(18)
+      5, 26,    -- 534: get_slot_direct(26)
+      5, 39,    -- 536: get_slot_direct(39)
+      5, 39,    -- 538: get_slot_direct(39)
       10, 1,    -- 540: invoke(1)
       14,       -- 542: pop
       0,        -- 543: push_frame
-      5, 304,   -- 544: get_slot_direct(304)
+      5, 359,   -- 544: get_slot_direct(359)
       15,       -- 546: dup
-      7, 423,   -- 547: get_slot_direct_check(423)
+      7, 473,   -- 547: get_slot_direct_check(473)
       19,       -- 549: swap
       0,        -- 550: push_frame
-      5, 20,    -- 551: get_slot_direct(20)
-      5, 18,    -- 553: get_slot_direct(18)
-      5, 19,    -- 555: get_slot_direct(19)
+      5, 26,    -- 551: get_slot_direct(26)
+      5, 39,    -- 553: get_slot_direct(39)
+      5, 40,    -- 555: get_slot_direct(40)
       10, 1,    -- 557: invoke(1)
       14,       -- 559: pop
       0,        -- 560: push_frame
-      5, 428,   -- 561: get_slot_direct(428)
+      5, 478,   -- 561: get_slot_direct(478)
       13, 589,  -- 563: jmp_unless(589)
       0,        -- 565: push_frame
-      5, 304,   -- 566: get_slot_direct(304)
+      5, 359,   -- 566: get_slot_direct(359)
       15,       -- 568: dup
-      7, 397,   -- 569: get_slot_direct_check(397)
+      7, 451,   -- 569: get_slot_direct_check(451)
       19,       -- 571: swap
-      1, 353,   -- 572: push_literal(353)
+      1, 408,   -- 572: push_literal(408)
       10, 1,    -- 574: invoke(1)
       14,       -- 576: pop
       0,        -- 577: push_frame
-      5, 304,   -- 578: get_slot_direct(304)
+      5, 359,   -- 578: get_slot_direct(359)
       15,       -- 580: dup
-      7, 397,   -- 581: get_slot_direct_check(397)
+      7, 451,   -- 581: get_slot_direct_check(451)
       19,       -- 583: swap
-      1, 343,   -- 584: push_literal(343)
+      1, 398,   -- 584: push_literal(398)
       10, 1,    -- 586: invoke(1)
       14,       -- 588: pop
       0,        -- 589: push_frame
-      5, 304,   -- 590: get_slot_direct(304)
+      5, 359,   -- 590: get_slot_direct(359)
       15,       -- 592: dup
-      7, 423,   -- 593: get_slot_direct_check(423)
+      7, 473,   -- 593: get_slot_direct_check(473)
       19,       -- 595: swap
       0,        -- 596: push_frame
-      5, 20,    -- 597: get_slot_direct(20)
-      5, 19,    -- 599: get_slot_direct(19)
+      5, 26,    -- 597: get_slot_direct(26)
+      5, 40,    -- 599: get_slot_direct(40)
       10, 1,    -- 601: invoke(1)
       14,       -- 603: pop
       0,        -- 604: push_frame
-      5, 428,   -- 605: get_slot_direct(428)
+      5, 478,   -- 605: get_slot_direct(478)
       13, 622,  -- 607: jmp_unless(622)
       0,        -- 609: push_frame
-      5, 304,   -- 610: get_slot_direct(304)
+      5, 359,   -- 610: get_slot_direct(359)
       15,       -- 612: dup
-      7, 397,   -- 613: get_slot_direct_check(397)
+      7, 451,   -- 613: get_slot_direct_check(451)
       19,       -- 615: swap
       0,        -- 616: push_frame
-      5, 428,   -- 617: get_slot_direct(428)
+      5, 478,   -- 617: get_slot_direct(478)
       10, 1,    -- 619: invoke(1)
       14,       -- 621: pop
       0,        -- 622: push_frame
-      5, 427,   -- 623: get_slot_direct(427)
+      5, 477,   -- 623: get_slot_direct(477)
       20,       -- 625: un_not
       13, 640,  -- 626: jmp_unless(640)
       0,        -- 628: push_frame
-      5, 304,   -- 629: get_slot_direct(304)
+      5, 359,   -- 629: get_slot_direct(359)
       15,       -- 631: dup
-      7, 397,   -- 632: get_slot_direct_check(397)
+      7, 451,   -- 632: get_slot_direct_check(451)
       19,       -- 634: swap
-      1, 355,   -- 635: push_literal(355)
+      1, 410,   -- 635: push_literal(410)
       10, 1,    -- 637: invoke(1)
       14,       -- 639: pop
       0,        -- 640: push_frame
-      5, 304,   -- 641: get_slot_direct(304)
+      5, 359,   -- 641: get_slot_direct(359)
       15,       -- 643: dup
-      7, 397,   -- 644: get_slot_direct_check(397)
+      7, 451,   -- 644: get_slot_direct_check(451)
       19,       -- 646: swap
-      1, 346,   -- 647: push_literal(346)
+      1, 401,   -- 647: push_literal(401)
       10, 1,    -- 649: invoke(1)
       14,       -- 651: pop
       1, 0,     -- 652: push_literal(0)
       11,       -- 654: return
       0,        -- 655: push_frame
-      5, 374,   -- 656: get_slot_direct(374)
+      5, 429,   -- 656: get_slot_direct(429)
       0,        -- 658: push_frame
-      5, 20,    -- 659: get_slot_direct(20)
-      1, 10,    -- 661: push_literal(10)
+      5, 26,    -- 659: get_slot_direct(26)
+      1, 32,    -- 661: push_literal(32)
       0,        -- 663: push_frame
-      5, 20,    -- 664: get_slot_direct(20)
-      5, 18,    -- 666: get_slot_direct(18)
+      5, 26,    -- 664: get_slot_direct(26)
+      5, 39,    -- 666: get_slot_direct(39)
       10, 2,    -- 668: invoke(2)
       14,       -- 670: pop
       1, 0,     -- 671: push_literal(0)
@@ -12101,121 +12998,121 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 123,
+    id = 129,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 429,   -- 14: set_slot_direct(429)
+      8, 479,   -- 14: set_slot_direct(479)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 430,   -- 19: set_slot_direct(430)
+      8, 480,   -- 19: set_slot_direct(480)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 431,   -- 24: set_slot_direct(431)
+      8, 481,   -- 24: set_slot_direct(481)
       0,        -- 26: push_frame
       0,        -- 27: push_frame
-      5, 304,   -- 28: get_slot_direct(304)
+      5, 359,   -- 28: get_slot_direct(359)
       15,       -- 30: dup
-      7, 414,   -- 31: get_slot_direct_check(414)
+      7, 464,   -- 31: get_slot_direct_check(464)
       19,       -- 33: swap
       10, 0,    -- 34: invoke(0)
-      8, 431,   -- 36: set_slot_direct(431)
+      8, 481,   -- 36: set_slot_direct(481)
       0,        -- 38: push_frame
-      5, 304,   -- 39: get_slot_direct(304)
+      5, 359,   -- 39: get_slot_direct(359)
       15,       -- 41: dup
-      7, 423,   -- 42: get_slot_direct_check(423)
+      7, 473,   -- 42: get_slot_direct_check(473)
       19,       -- 44: swap
       0,        -- 45: push_frame
-      5, 20,    -- 46: get_slot_direct(20)
-      5, 18,    -- 48: get_slot_direct(18)
+      5, 26,    -- 46: get_slot_direct(26)
+      5, 39,    -- 48: get_slot_direct(39)
       10, 1,    -- 50: invoke(1)
       14,       -- 52: pop
       0,        -- 53: push_frame
-      5, 304,   -- 54: get_slot_direct(304)
+      5, 359,   -- 54: get_slot_direct(359)
       15,       -- 56: dup
-      7, 397,   -- 57: get_slot_direct_check(397)
+      7, 451,   -- 57: get_slot_direct_check(451)
       19,       -- 59: swap
-      1, 352,   -- 60: push_literal(352)
+      1, 407,   -- 60: push_literal(407)
       10, 1,    -- 62: invoke(1)
       14,       -- 64: pop
       0,        -- 65: push_frame
-      5, 304,   -- 66: get_slot_direct(304)
+      5, 359,   -- 66: get_slot_direct(359)
       15,       -- 68: dup
-      7, 397,   -- 69: get_slot_direct_check(397)
+      7, 451,   -- 69: get_slot_direct_check(451)
       19,       -- 71: swap
-      1, 357,   -- 72: push_literal(357)
+      1, 412,   -- 72: push_literal(412)
       10, 1,    -- 74: invoke(1)
       14,       -- 76: pop
       0,        -- 77: push_frame
-      5, 304,   -- 78: get_slot_direct(304)
+      5, 359,   -- 78: get_slot_direct(359)
       15,       -- 80: dup
-      7, 397,   -- 81: get_slot_direct_check(397)
+      7, 451,   -- 81: get_slot_direct_check(451)
       19,       -- 83: swap
-      1, 351,   -- 84: push_literal(351)
+      1, 406,   -- 84: push_literal(406)
       0,        -- 86: push_frame
-      5, 431,   -- 87: get_slot_direct(431)
+      5, 481,   -- 87: get_slot_direct(481)
       10, 2,    -- 89: invoke(2)
       14,       -- 91: pop
       0,        -- 92: push_frame
       0,        -- 93: push_frame
-      5, 304,   -- 94: get_slot_direct(304)
-      5, 395,   -- 96: get_slot_direct(395)
-      5, 390,   -- 98: get_slot_direct(390)
-      8, 429,   -- 100: set_slot_direct(429)
+      5, 359,   -- 94: get_slot_direct(359)
+      5, 449,   -- 96: get_slot_direct(449)
+      5, 444,   -- 98: get_slot_direct(444)
+      8, 479,   -- 100: set_slot_direct(479)
       0,        -- 102: push_frame
-      5, 304,   -- 103: get_slot_direct(304)
+      5, 359,   -- 103: get_slot_direct(359)
       15,       -- 105: dup
-      7, 397,   -- 106: get_slot_direct_check(397)
+      7, 451,   -- 106: get_slot_direct_check(451)
       19,       -- 108: swap
-      1, 54,    -- 109: push_literal(54)
+      1, 71,    -- 109: push_literal(71)
       10, 1,    -- 111: invoke(1)
       14,       -- 113: pop
       0,        -- 114: push_frame
-      5, 304,   -- 115: get_slot_direct(304)
+      5, 359,   -- 115: get_slot_direct(359)
       15,       -- 117: dup
-      7, 423,   -- 118: get_slot_direct_check(423)
+      7, 473,   -- 118: get_slot_direct_check(473)
       19,       -- 120: swap
       0,        -- 121: push_frame
-      5, 20,    -- 122: get_slot_direct(20)
-      5, 19,    -- 124: get_slot_direct(19)
+      5, 26,    -- 122: get_slot_direct(26)
+      5, 40,    -- 124: get_slot_direct(40)
       10, 1,    -- 126: invoke(1)
       14,       -- 128: pop
       0,        -- 129: push_frame
-      5, 304,   -- 130: get_slot_direct(304)
+      5, 359,   -- 130: get_slot_direct(359)
       15,       -- 132: dup
-      7, 415,   -- 133: get_slot_direct_check(415)
+      7, 465,   -- 133: get_slot_direct_check(465)
       19,       -- 135: swap
       0,        -- 136: push_frame
-      5, 431,   -- 137: get_slot_direct(431)
+      5, 481,   -- 137: get_slot_direct(481)
       10, 1,    -- 139: invoke(1)
       14,       -- 141: pop
       0,        -- 142: push_frame
       0,        -- 143: push_frame
-      5, 304,   -- 144: get_slot_direct(304)
-      5, 395,   -- 146: get_slot_direct(395)
-      5, 390,   -- 148: get_slot_direct(390)
-      8, 430,   -- 150: set_slot_direct(430)
+      5, 359,   -- 144: get_slot_direct(359)
+      5, 449,   -- 146: get_slot_direct(449)
+      5, 444,   -- 148: get_slot_direct(444)
+      8, 480,   -- 150: set_slot_direct(480)
       0,        -- 152: push_frame
-      5, 374,   -- 153: get_slot_direct(374)
+      5, 429,   -- 153: get_slot_direct(429)
       0,        -- 155: push_frame
-      5, 20,    -- 156: get_slot_direct(20)
+      5, 26,    -- 156: get_slot_direct(26)
       0,        -- 158: push_frame
-      5, 429,   -- 159: get_slot_direct(429)
+      5, 479,   -- 159: get_slot_direct(479)
       0,        -- 161: push_frame
-      5, 430,   -- 162: get_slot_direct(430)
+      5, 480,   -- 162: get_slot_direct(480)
       23,       -- 164: bi_eq
       0,        -- 165: push_frame
-      5, 20,    -- 166: get_slot_direct(20)
+      5, 26,    -- 166: get_slot_direct(26)
       10, 2,    -- 168: invoke(2)
       14,       -- 170: pop
       1, 0,     -- 171: push_literal(0)
@@ -12224,113 +13121,113 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 124,
+    id = 130,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 429,   -- 14: set_slot_direct(429)
+      8, 479,   -- 14: set_slot_direct(479)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 430,   -- 19: set_slot_direct(430)
+      8, 480,   -- 19: set_slot_direct(480)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 431,   -- 24: set_slot_direct(431)
+      8, 481,   -- 24: set_slot_direct(481)
       0,        -- 26: push_frame
       0,        -- 27: push_frame
-      5, 304,   -- 28: get_slot_direct(304)
+      5, 359,   -- 28: get_slot_direct(359)
       15,       -- 30: dup
-      7, 414,   -- 31: get_slot_direct_check(414)
+      7, 464,   -- 31: get_slot_direct_check(464)
       19,       -- 33: swap
       10, 0,    -- 34: invoke(0)
-      8, 431,   -- 36: set_slot_direct(431)
+      8, 481,   -- 36: set_slot_direct(481)
       0,        -- 38: push_frame
-      5, 304,   -- 39: get_slot_direct(304)
+      5, 359,   -- 39: get_slot_direct(359)
       15,       -- 41: dup
-      7, 423,   -- 42: get_slot_direct_check(423)
+      7, 473,   -- 42: get_slot_direct_check(473)
       19,       -- 44: swap
       0,        -- 45: push_frame
-      5, 20,    -- 46: get_slot_direct(20)
-      5, 18,    -- 48: get_slot_direct(18)
+      5, 26,    -- 46: get_slot_direct(26)
+      5, 39,    -- 48: get_slot_direct(39)
       10, 1,    -- 50: invoke(1)
       14,       -- 52: pop
       0,        -- 53: push_frame
-      5, 304,   -- 54: get_slot_direct(304)
+      5, 359,   -- 54: get_slot_direct(359)
       15,       -- 56: dup
-      7, 397,   -- 57: get_slot_direct_check(397)
+      7, 451,   -- 57: get_slot_direct_check(451)
       19,       -- 59: swap
-      1, 352,   -- 60: push_literal(352)
+      1, 407,   -- 60: push_literal(407)
       10, 1,    -- 62: invoke(1)
       14,       -- 64: pop
       0,        -- 65: push_frame
-      5, 304,   -- 66: get_slot_direct(304)
+      5, 359,   -- 66: get_slot_direct(359)
       15,       -- 68: dup
-      7, 397,   -- 69: get_slot_direct_check(397)
+      7, 451,   -- 69: get_slot_direct_check(451)
       19,       -- 71: swap
-      1, 351,   -- 72: push_literal(351)
+      1, 406,   -- 72: push_literal(406)
       0,        -- 74: push_frame
-      5, 431,   -- 75: get_slot_direct(431)
+      5, 481,   -- 75: get_slot_direct(481)
       10, 2,    -- 77: invoke(2)
       14,       -- 79: pop
       0,        -- 80: push_frame
       0,        -- 81: push_frame
-      5, 304,   -- 82: get_slot_direct(304)
-      5, 395,   -- 84: get_slot_direct(395)
-      5, 390,   -- 86: get_slot_direct(390)
-      8, 429,   -- 88: set_slot_direct(429)
+      5, 359,   -- 82: get_slot_direct(359)
+      5, 449,   -- 84: get_slot_direct(449)
+      5, 444,   -- 86: get_slot_direct(444)
+      8, 479,   -- 88: set_slot_direct(479)
       0,        -- 90: push_frame
-      5, 304,   -- 91: get_slot_direct(304)
+      5, 359,   -- 91: get_slot_direct(359)
       15,       -- 93: dup
-      7, 397,   -- 94: get_slot_direct_check(397)
+      7, 451,   -- 94: get_slot_direct_check(451)
       19,       -- 96: swap
-      1, 54,    -- 97: push_literal(54)
+      1, 71,    -- 97: push_literal(71)
       10, 1,    -- 99: invoke(1)
       14,       -- 101: pop
       0,        -- 102: push_frame
-      5, 304,   -- 103: get_slot_direct(304)
+      5, 359,   -- 103: get_slot_direct(359)
       15,       -- 105: dup
-      7, 423,   -- 106: get_slot_direct_check(423)
+      7, 473,   -- 106: get_slot_direct_check(473)
       19,       -- 108: swap
       0,        -- 109: push_frame
-      5, 20,    -- 110: get_slot_direct(20)
-      5, 19,    -- 112: get_slot_direct(19)
+      5, 26,    -- 110: get_slot_direct(26)
+      5, 40,    -- 112: get_slot_direct(40)
       10, 1,    -- 114: invoke(1)
       14,       -- 116: pop
       0,        -- 117: push_frame
-      5, 304,   -- 118: get_slot_direct(304)
+      5, 359,   -- 118: get_slot_direct(359)
       15,       -- 120: dup
-      7, 415,   -- 121: get_slot_direct_check(415)
+      7, 465,   -- 121: get_slot_direct_check(465)
       19,       -- 123: swap
       0,        -- 124: push_frame
-      5, 431,   -- 125: get_slot_direct(431)
+      5, 481,   -- 125: get_slot_direct(481)
       10, 1,    -- 127: invoke(1)
       14,       -- 129: pop
       0,        -- 130: push_frame
       0,        -- 131: push_frame
-      5, 304,   -- 132: get_slot_direct(304)
-      5, 395,   -- 134: get_slot_direct(395)
-      5, 390,   -- 136: get_slot_direct(390)
-      8, 430,   -- 138: set_slot_direct(430)
+      5, 359,   -- 132: get_slot_direct(359)
+      5, 449,   -- 134: get_slot_direct(449)
+      5, 444,   -- 136: get_slot_direct(444)
+      8, 480,   -- 138: set_slot_direct(480)
       0,        -- 140: push_frame
-      5, 374,   -- 141: get_slot_direct(374)
+      5, 429,   -- 141: get_slot_direct(429)
       0,        -- 143: push_frame
-      5, 20,    -- 144: get_slot_direct(20)
+      5, 26,    -- 144: get_slot_direct(26)
       0,        -- 146: push_frame
-      5, 429,   -- 147: get_slot_direct(429)
+      5, 479,   -- 147: get_slot_direct(479)
       0,        -- 149: push_frame
-      5, 430,   -- 150: get_slot_direct(430)
+      5, 480,   -- 150: get_slot_direct(480)
       23,       -- 152: bi_eq
       0,        -- 153: push_frame
-      5, 20,    -- 154: get_slot_direct(20)
+      5, 26,    -- 154: get_slot_direct(26)
       10, 2,    -- 156: invoke(2)
       14,       -- 158: pop
       1, 0,     -- 159: push_literal(0)
@@ -12339,49 +13236,49 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 125,
+    id = 131,
     nargs = 1,
     max_stack = 7,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       2,        -- 18: new_object
       15,       -- 19: dup
-      1, 288,   -- 20: push_literal(288)
-      8, 139,   -- 22: set_slot_direct(139)
+      1, 343,   -- 20: push_literal(343)
+      8, 209,   -- 22: set_slot_direct(209)
       15,       -- 24: dup
-      1, 252,   -- 25: push_literal(252)
-      8, 222,   -- 27: set_slot_direct(222)
+      1, 311,   -- 25: push_literal(311)
+      8, 283,   -- 27: set_slot_direct(283)
       15,       -- 29: dup
       2,        -- 30: new_object
       15,       -- 31: dup
-      1, 274,   -- 32: push_literal(274)
-      8, 139,   -- 34: set_slot_direct(139)
+      1, 329,   -- 32: push_literal(329)
+      8, 209,   -- 34: set_slot_direct(209)
       15,       -- 36: dup
-      1, 247,   -- 37: push_literal(247)
-      8, 222,   -- 39: set_slot_direct(222)
+      1, 307,   -- 37: push_literal(307)
+      8, 283,   -- 39: set_slot_direct(283)
       15,       -- 41: dup
       0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
-      5, 18,    -- 45: get_slot_direct(18)
-      8, 18,    -- 47: set_slot_direct(18)
+      5, 26,    -- 43: get_slot_direct(26)
+      5, 39,    -- 45: get_slot_direct(39)
+      8, 39,    -- 47: set_slot_direct(39)
       15,       -- 49: dup
       0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
-      5, 19,    -- 53: get_slot_direct(19)
-      8, 19,    -- 55: set_slot_direct(19)
-      8, 18,    -- 57: set_slot_direct(18)
+      5, 26,    -- 51: get_slot_direct(26)
+      5, 40,    -- 53: get_slot_direct(40)
+      8, 40,    -- 55: set_slot_direct(40)
+      8, 39,    -- 57: set_slot_direct(39)
       10, 1,    -- 59: invoke(1)
       14,       -- 61: pop
       1, 0,     -- 62: push_literal(0)
@@ -12390,58 +13287,58 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 126,
+    id = 132,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 374,   -- 27: get_slot_direct(374)
+      5, 429,   -- 27: get_slot_direct(429)
       0,        -- 29: push_frame
-      5, 20,    -- 30: get_slot_direct(20)
+      5, 26,    -- 30: get_slot_direct(26)
       0,        -- 32: push_frame
-      5, 20,    -- 33: get_slot_direct(20)
-      5, 19,    -- 35: get_slot_direct(19)
-      5, 222,   -- 37: get_slot_direct(222)
-      1, 232,   -- 39: push_literal(232)
+      5, 26,    -- 33: get_slot_direct(26)
+      5, 40,    -- 35: get_slot_direct(40)
+      5, 283,   -- 37: get_slot_direct(283)
+      1, 293,   -- 39: push_literal(293)
       23,       -- 41: bi_eq
       0,        -- 42: push_frame
-      5, 20,    -- 43: get_slot_direct(20)
-      5, 19,    -- 45: get_slot_direct(19)
+      5, 26,    -- 43: get_slot_direct(26)
+      5, 40,    -- 45: get_slot_direct(40)
       10, 2,    -- 47: invoke(2)
       14,       -- 49: pop
       0,        -- 50: push_frame
-      5, 304,   -- 51: get_slot_direct(304)
+      5, 359,   -- 51: get_slot_direct(359)
       15,       -- 53: dup
-      7, 397,   -- 54: get_slot_direct_check(397)
+      7, 451,   -- 54: get_slot_direct_check(451)
       19,       -- 56: swap
-      1, 342,   -- 57: push_literal(342)
+      1, 397,   -- 57: push_literal(397)
       0,        -- 59: push_frame
-      5, 304,   -- 60: get_slot_direct(304)
+      5, 359,   -- 60: get_slot_direct(359)
       15,       -- 62: dup
-      7, 232,   -- 63: get_slot_direct_check(232)
+      7, 293,   -- 63: get_slot_direct_check(293)
       19,       -- 65: swap
       0,        -- 66: push_frame
-      5, 20,    -- 67: get_slot_direct(20)
-      5, 19,    -- 69: get_slot_direct(19)
-      5, 139,   -- 71: get_slot_direct(139)
+      5, 26,    -- 67: get_slot_direct(26)
+      5, 40,    -- 69: get_slot_direct(40)
+      5, 209,   -- 71: get_slot_direct(209)
       10, 1,    -- 73: invoke(1)
       10, 2,    -- 75: invoke(2)
       14,       -- 77: pop
@@ -12451,44 +13348,44 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 127,
+    id = 133,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 304,   -- 27: get_slot_direct(304)
+      5, 359,   -- 27: get_slot_direct(359)
       15,       -- 29: dup
-      7, 423,   -- 30: get_slot_direct_check(423)
+      7, 473,   -- 30: get_slot_direct_check(473)
       19,       -- 32: swap
       0,        -- 33: push_frame
-      5, 20,    -- 34: get_slot_direct(20)
-      5, 19,    -- 36: get_slot_direct(19)
+      5, 26,    -- 34: get_slot_direct(26)
+      5, 40,    -- 36: get_slot_direct(40)
       10, 1,    -- 38: invoke(1)
       14,       -- 40: pop
       0,        -- 41: push_frame
-      5, 304,   -- 42: get_slot_direct(304)
+      5, 359,   -- 42: get_slot_direct(359)
       15,       -- 44: dup
-      7, 397,   -- 45: get_slot_direct_check(397)
+      7, 451,   -- 45: get_slot_direct_check(451)
       19,       -- 47: swap
-      1, 343,   -- 48: push_literal(343)
+      1, 398,   -- 48: push_literal(398)
       10, 1,    -- 50: invoke(1)
       14,       -- 52: pop
       1, 0,     -- 53: push_literal(0)
@@ -12497,61 +13394,61 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 128,
+    id = 134,
     nargs = 1,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 304,   -- 27: get_slot_direct(304)
+      5, 359,   -- 27: get_slot_direct(359)
       15,       -- 29: dup
-      7, 423,   -- 30: get_slot_direct_check(423)
+      7, 473,   -- 30: get_slot_direct_check(473)
       19,       -- 32: swap
       2,        -- 33: new_object
       15,       -- 34: dup
-      1, 20,    -- 35: push_literal(20)
-      8, 139,   -- 37: set_slot_direct(139)
+      1, 26,    -- 35: push_literal(26)
+      8, 209,   -- 37: set_slot_direct(209)
       15,       -- 39: dup
-      1, 20,    -- 40: push_literal(20)
-      8, 222,   -- 42: set_slot_direct(222)
+      1, 26,    -- 40: push_literal(26)
+      8, 283,   -- 42: set_slot_direct(283)
       10, 1,    -- 44: invoke(1)
       14,       -- 46: pop
       0,        -- 47: push_frame
-      5, 20,    -- 48: get_slot_direct(20)
-      5, 19,    -- 50: get_slot_direct(19)
+      5, 26,    -- 48: get_slot_direct(26)
+      5, 40,    -- 50: get_slot_direct(40)
       15,       -- 52: dup
-      7, 75,    -- 53: get_slot_direct_check(75)
+      7, 94,    -- 53: get_slot_direct_check(94)
       19,       -- 55: swap
-      4, 129,   -- 56: new_function(129)
+      4, 135,   -- 56: new_function(135)
       10, 1,    -- 58: invoke(1)
       14,       -- 60: pop
       0,        -- 61: push_frame
-      5, 304,   -- 62: get_slot_direct(304)
+      5, 359,   -- 62: get_slot_direct(359)
       15,       -- 64: dup
-      7, 397,   -- 65: get_slot_direct_check(397)
+      7, 451,   -- 65: get_slot_direct_check(451)
       19,       -- 67: swap
-      1, 347,   -- 68: push_literal(347)
+      1, 402,   -- 68: push_literal(402)
       0,        -- 70: push_frame
-      5, 20,    -- 71: get_slot_direct(20)
-      5, 19,    -- 73: get_slot_direct(19)
-      5, 24,    -- 75: get_slot_direct(24)
+      5, 26,    -- 71: get_slot_direct(26)
+      5, 40,    -- 73: get_slot_direct(40)
+      5, 55,    -- 75: get_slot_direct(55)
       10, 2,    -- 77: invoke(2)
       14,       -- 79: pop
       1, 0,     -- 80: push_literal(0)
@@ -12560,30 +13457,30 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 129,
+    id = 135,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
+      8, 87,    -- 8: set_slot_direct(87)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
+      8, 53,    -- 15: set_slot_direct(53)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
+      5, 359,   -- 19: get_slot_direct(359)
       15,       -- 21: dup
-      7, 423,   -- 22: get_slot_direct_check(423)
+      7, 473,   -- 22: get_slot_direct_check(473)
       19,       -- 24: swap
       0,        -- 25: push_frame
-      5, 68,    -- 26: get_slot_direct(68)
+      5, 87,    -- 26: get_slot_direct(87)
       10, 1,    -- 28: invoke(1)
       14,       -- 30: pop
       1, 0,     -- 31: push_literal(0)
@@ -12592,47 +13489,47 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".ternary"
     name = jsval.newString(".ternary"),
-    id = 130,
+    id = 136,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 374,   -- 12: get_slot_direct(374)
+      5, 429,   -- 12: get_slot_direct(429)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 375,   -- 18: get_slot_direct(375)
-      5, 269,   -- 20: get_slot_direct(269)
+      5, 430,   -- 18: get_slot_direct(430)
+      5, 324,   -- 20: get_slot_direct(324)
       0,        -- 22: push_frame
-      5, 20,    -- 23: get_slot_direct(20)
-      5, 139,   -- 25: get_slot_direct(139)
+      5, 26,    -- 23: get_slot_direct(26)
+      5, 209,   -- 25: get_slot_direct(209)
       6,        -- 27: get_slot_indirect
       0,        -- 28: push_frame
-      5, 20,    -- 29: get_slot_direct(20)
+      5, 26,    -- 29: get_slot_direct(26)
       10, 2,    -- 31: invoke(2)
       14,       -- 33: pop
       0,        -- 34: push_frame
-      5, 375,   -- 35: get_slot_direct(375)
-      5, 269,   -- 37: get_slot_direct(269)
+      5, 430,   -- 35: get_slot_direct(430)
+      5, 324,   -- 37: get_slot_direct(324)
       0,        -- 39: push_frame
-      5, 20,    -- 40: get_slot_direct(20)
-      5, 139,   -- 42: get_slot_direct(139)
+      5, 26,    -- 40: get_slot_direct(26)
+      5, 209,   -- 42: get_slot_direct(209)
       6,        -- 44: get_slot_indirect
       15,       -- 45: dup
-      7, 74,    -- 46: get_slot_direct_check(74)
+      7, 93,    -- 46: get_slot_direct_check(93)
       19,       -- 48: swap
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
+      5, 26,    -- 50: get_slot_direct(26)
       0,        -- 52: push_frame
-      5, 304,   -- 53: get_slot_direct(304)
+      5, 359,   -- 53: get_slot_direct(359)
       10, 2,    -- 55: invoke(2)
       14,       -- 57: pop
       1, 0,     -- 58: push_literal(0)
@@ -12641,30 +13538,30 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "ternary"
     name = jsval.newString("ternary"),
-    id = 131,
+    id = 137,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 393,   -- 8: set_slot_direct(393)
+      8, 447,   -- 8: set_slot_direct(447)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 85,    -- 15: set_slot_direct(85)
+      8, 106,   -- 15: set_slot_direct(106)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 375,   -- 19: get_slot_direct(375)
-      5, 269,   -- 21: get_slot_direct(269)
+      5, 430,   -- 19: get_slot_direct(430)
+      5, 324,   -- 21: get_slot_direct(324)
       0,        -- 23: push_frame
-      5, 393,   -- 24: get_slot_direct(393)
+      5, 447,   -- 24: get_slot_direct(447)
       0,        -- 26: push_frame
-      5, 85,    -- 27: get_slot_direct(85)
+      5, 106,   -- 27: get_slot_direct(106)
       9,        -- 29: set_slot_indirect
       1, 0,     -- 30: push_literal(0)
       11        -- 32: return
@@ -12672,145 +13569,145 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 132,
+    id = 138,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 429,   -- 14: set_slot_direct(429)
+      8, 479,   -- 14: set_slot_direct(479)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 430,   -- 19: set_slot_direct(430)
+      8, 480,   -- 19: set_slot_direct(480)
       0,        -- 21: push_frame
       1, 0,     -- 22: push_literal(0)
-      8, 432,   -- 24: set_slot_direct(432)
+      8, 482,   -- 24: set_slot_direct(482)
       0,        -- 26: push_frame
       1, 0,     -- 27: push_literal(0)
-      8, 431,   -- 29: set_slot_direct(431)
+      8, 481,   -- 29: set_slot_direct(481)
       0,        -- 31: push_frame
       0,        -- 32: push_frame
-      5, 304,   -- 33: get_slot_direct(304)
+      5, 359,   -- 33: get_slot_direct(359)
       15,       -- 35: dup
-      7, 414,   -- 36: get_slot_direct_check(414)
+      7, 464,   -- 36: get_slot_direct_check(464)
       19,       -- 38: swap
       10, 0,    -- 39: invoke(0)
-      8, 432,   -- 41: set_slot_direct(432)
+      8, 482,   -- 41: set_slot_direct(482)
       0,        -- 43: push_frame
       0,        -- 44: push_frame
-      5, 304,   -- 45: get_slot_direct(304)
+      5, 359,   -- 45: get_slot_direct(359)
       15,       -- 47: dup
-      7, 414,   -- 48: get_slot_direct_check(414)
+      7, 464,   -- 48: get_slot_direct_check(464)
       19,       -- 50: swap
       10, 0,    -- 51: invoke(0)
-      8, 431,   -- 53: set_slot_direct(431)
+      8, 481,   -- 53: set_slot_direct(481)
       0,        -- 55: push_frame
-      5, 304,   -- 56: get_slot_direct(304)
+      5, 359,   -- 56: get_slot_direct(359)
       15,       -- 58: dup
-      7, 423,   -- 59: get_slot_direct_check(423)
+      7, 473,   -- 59: get_slot_direct_check(473)
       19,       -- 61: swap
       0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
-      5, 18,    -- 65: get_slot_direct(18)
+      5, 26,    -- 63: get_slot_direct(26)
+      5, 39,    -- 65: get_slot_direct(39)
       10, 1,    -- 67: invoke(1)
       14,       -- 69: pop
       0,        -- 70: push_frame
-      5, 304,   -- 71: get_slot_direct(304)
+      5, 359,   -- 71: get_slot_direct(359)
       15,       -- 73: dup
-      7, 397,   -- 74: get_slot_direct_check(397)
+      7, 451,   -- 74: get_slot_direct_check(451)
       19,       -- 76: swap
-      1, 351,   -- 77: push_literal(351)
+      1, 406,   -- 77: push_literal(406)
       0,        -- 79: push_frame
-      5, 432,   -- 80: get_slot_direct(432)
+      5, 482,   -- 80: get_slot_direct(482)
       10, 2,    -- 82: invoke(2)
       14,       -- 84: pop
       0,        -- 85: push_frame
       0,        -- 86: push_frame
-      5, 304,   -- 87: get_slot_direct(304)
-      5, 395,   -- 89: get_slot_direct(395)
-      5, 390,   -- 91: get_slot_direct(390)
-      8, 429,   -- 93: set_slot_direct(429)
+      5, 359,   -- 87: get_slot_direct(359)
+      5, 449,   -- 89: get_slot_direct(449)
+      5, 444,   -- 91: get_slot_direct(444)
+      8, 479,   -- 93: set_slot_direct(479)
       0,        -- 95: push_frame
-      5, 304,   -- 96: get_slot_direct(304)
+      5, 359,   -- 96: get_slot_direct(359)
       15,       -- 98: dup
-      7, 423,   -- 99: get_slot_direct_check(423)
+      7, 473,   -- 99: get_slot_direct_check(473)
       19,       -- 101: swap
       0,        -- 102: push_frame
-      5, 20,    -- 103: get_slot_direct(20)
-      5, 19,    -- 105: get_slot_direct(19)
+      5, 26,    -- 103: get_slot_direct(26)
+      5, 40,    -- 105: get_slot_direct(40)
       10, 1,    -- 107: invoke(1)
       14,       -- 109: pop
       0,        -- 110: push_frame
-      5, 304,   -- 111: get_slot_direct(304)
+      5, 359,   -- 111: get_slot_direct(359)
       15,       -- 113: dup
-      7, 397,   -- 114: get_slot_direct_check(397)
+      7, 451,   -- 114: get_slot_direct_check(451)
       19,       -- 116: swap
-      1, 350,   -- 117: push_literal(350)
+      1, 405,   -- 117: push_literal(405)
       0,        -- 119: push_frame
-      5, 431,   -- 120: get_slot_direct(431)
+      5, 481,   -- 120: get_slot_direct(481)
       10, 2,    -- 122: invoke(2)
       14,       -- 124: pop
       0,        -- 125: push_frame
       0,        -- 126: push_frame
-      5, 304,   -- 127: get_slot_direct(304)
-      5, 395,   -- 129: get_slot_direct(395)
-      5, 390,   -- 131: get_slot_direct(390)
-      8, 430,   -- 133: set_slot_direct(430)
+      5, 359,   -- 127: get_slot_direct(359)
+      5, 449,   -- 129: get_slot_direct(449)
+      5, 444,   -- 131: get_slot_direct(444)
+      8, 480,   -- 133: set_slot_direct(480)
       0,        -- 135: push_frame
-      5, 304,   -- 136: get_slot_direct(304)
-      5, 395,   -- 138: get_slot_direct(395)
+      5, 359,   -- 136: get_slot_direct(359)
+      5, 449,   -- 138: get_slot_direct(449)
       0,        -- 140: push_frame
-      5, 429,   -- 141: get_slot_direct(429)
-      8, 390,   -- 143: set_slot_direct(390)
+      5, 479,   -- 141: get_slot_direct(479)
+      8, 444,   -- 143: set_slot_direct(444)
       0,        -- 145: push_frame
-      5, 304,   -- 146: get_slot_direct(304)
+      5, 359,   -- 146: get_slot_direct(359)
       15,       -- 148: dup
-      7, 415,   -- 149: get_slot_direct_check(415)
+      7, 465,   -- 149: get_slot_direct_check(465)
       19,       -- 151: swap
       0,        -- 152: push_frame
-      5, 432,   -- 153: get_slot_direct(432)
+      5, 482,   -- 153: get_slot_direct(482)
       10, 1,    -- 155: invoke(1)
       14,       -- 157: pop
       0,        -- 158: push_frame
-      5, 304,   -- 159: get_slot_direct(304)
+      5, 359,   -- 159: get_slot_direct(359)
       15,       -- 161: dup
-      7, 423,   -- 162: get_slot_direct_check(423)
+      7, 473,   -- 162: get_slot_direct_check(473)
       19,       -- 164: swap
       0,        -- 165: push_frame
-      5, 20,    -- 166: get_slot_direct(20)
-      5, 268,   -- 168: get_slot_direct(268)
+      5, 26,    -- 166: get_slot_direct(26)
+      5, 323,   -- 168: get_slot_direct(323)
       10, 1,    -- 170: invoke(1)
       14,       -- 172: pop
       0,        -- 173: push_frame
-      5, 304,   -- 174: get_slot_direct(304)
+      5, 359,   -- 174: get_slot_direct(359)
       15,       -- 176: dup
-      7, 415,   -- 177: get_slot_direct_check(415)
+      7, 465,   -- 177: get_slot_direct_check(465)
       19,       -- 179: swap
       0,        -- 180: push_frame
-      5, 431,   -- 181: get_slot_direct(431)
+      5, 481,   -- 181: get_slot_direct(481)
       10, 1,    -- 183: invoke(1)
       14,       -- 185: pop
       0,        -- 186: push_frame
-      5, 374,   -- 187: get_slot_direct(374)
+      5, 429,   -- 187: get_slot_direct(429)
       0,        -- 189: push_frame
-      5, 20,    -- 190: get_slot_direct(20)
+      5, 26,    -- 190: get_slot_direct(26)
       0,        -- 192: push_frame
-      5, 304,   -- 193: get_slot_direct(304)
-      5, 395,   -- 195: get_slot_direct(395)
-      5, 390,   -- 197: get_slot_direct(390)
+      5, 359,   -- 193: get_slot_direct(359)
+      5, 449,   -- 195: get_slot_direct(449)
+      5, 444,   -- 197: get_slot_direct(444)
       0,        -- 199: push_frame
-      5, 430,   -- 200: get_slot_direct(430)
+      5, 480,   -- 200: get_slot_direct(480)
       23,       -- 202: bi_eq
       0,        -- 203: push_frame
-      5, 20,    -- 204: get_slot_direct(20)
+      5, 26,    -- 204: get_slot_direct(26)
       10, 2,    -- 206: invoke(2)
       14,       -- 208: pop
       1, 0,     -- 209: push_literal(0)
@@ -12819,117 +13716,117 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 133,
+    id = 139,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
+      5, 359,   -- 12: get_slot_direct(359)
       15,       -- 14: dup
-      7, 423,   -- 15: get_slot_direct_check(423)
+      7, 473,   -- 15: get_slot_direct_check(473)
       19,       -- 17: swap
       0,        -- 18: push_frame
-      5, 20,    -- 19: get_slot_direct(20)
-      5, 18,    -- 21: get_slot_direct(18)
+      5, 26,    -- 19: get_slot_direct(26)
+      5, 39,    -- 21: get_slot_direct(39)
       10, 1,    -- 23: invoke(1)
       14,       -- 25: pop
       0,        -- 26: push_frame
-      5, 304,   -- 27: get_slot_direct(304)
+      5, 359,   -- 27: get_slot_direct(359)
       15,       -- 29: dup
-      7, 397,   -- 30: get_slot_direct_check(397)
+      7, 451,   -- 30: get_slot_direct_check(451)
       19,       -- 32: swap
-      1, 352,   -- 33: push_literal(352)
+      1, 407,   -- 33: push_literal(407)
       10, 1,    -- 35: invoke(1)
       14,       -- 37: pop
       0,        -- 38: push_frame
-      5, 20,    -- 39: get_slot_direct(20)
-      5, 19,    -- 41: get_slot_direct(19)
-      5, 222,   -- 43: get_slot_direct(222)
-      1, 232,   -- 45: push_literal(232)
+      5, 26,    -- 39: get_slot_direct(26)
+      5, 40,    -- 41: get_slot_direct(40)
+      5, 283,   -- 43: get_slot_direct(283)
+      1, 293,   -- 45: push_literal(293)
       23,       -- 47: bi_eq
       15,       -- 48: dup
       13, 63,   -- 49: jmp_unless(63)
       14,       -- 51: pop
       0,        -- 52: push_frame
-      5, 20,    -- 53: get_slot_direct(20)
-      5, 19,    -- 55: get_slot_direct(19)
-      5, 139,   -- 57: get_slot_direct(139)
+      5, 26,    -- 53: get_slot_direct(26)
+      5, 40,    -- 55: get_slot_direct(40)
+      5, 209,   -- 57: get_slot_direct(209)
       22,       -- 59: un_typeof
-      1, 15,    -- 60: push_literal(15)
+      1, 38,    -- 60: push_literal(38)
       23,       -- 62: bi_eq
       13, 95,   -- 63: jmp_unless(95)
       0,        -- 65: push_frame
-      5, 304,   -- 66: get_slot_direct(304)
+      5, 359,   -- 66: get_slot_direct(359)
       15,       -- 68: dup
-      7, 397,   -- 69: get_slot_direct_check(397)
+      7, 451,   -- 69: get_slot_direct_check(451)
       19,       -- 71: swap
-      1, 344,   -- 72: push_literal(344)
+      1, 399,   -- 72: push_literal(399)
       0,        -- 74: push_frame
-      5, 304,   -- 75: get_slot_direct(304)
+      5, 359,   -- 75: get_slot_direct(359)
       15,       -- 77: dup
-      7, 232,   -- 78: get_slot_direct_check(232)
+      7, 293,   -- 78: get_slot_direct_check(293)
       19,       -- 80: swap
       0,        -- 81: push_frame
-      5, 20,    -- 82: get_slot_direct(20)
-      5, 19,    -- 84: get_slot_direct(19)
-      5, 139,   -- 86: get_slot_direct(139)
+      5, 26,    -- 82: get_slot_direct(26)
+      5, 40,    -- 84: get_slot_direct(40)
+      5, 209,   -- 86: get_slot_direct(209)
       10, 1,    -- 88: invoke(1)
       10, 2,    -- 90: invoke(2)
       14,       -- 92: pop
       12, 122,  -- 93: jmp(122)
       0,        -- 95: push_frame
-      5, 304,   -- 96: get_slot_direct(304)
+      5, 359,   -- 96: get_slot_direct(359)
       15,       -- 98: dup
-      7, 423,   -- 99: get_slot_direct_check(423)
+      7, 473,   -- 99: get_slot_direct_check(473)
       19,       -- 101: swap
       0,        -- 102: push_frame
-      5, 20,    -- 103: get_slot_direct(20)
-      5, 19,    -- 105: get_slot_direct(19)
+      5, 26,    -- 103: get_slot_direct(26)
+      5, 40,    -- 105: get_slot_direct(40)
       10, 1,    -- 107: invoke(1)
       14,       -- 109: pop
       0,        -- 110: push_frame
-      5, 304,   -- 111: get_slot_direct(304)
+      5, 359,   -- 111: get_slot_direct(359)
       15,       -- 113: dup
-      7, 397,   -- 114: get_slot_direct_check(397)
+      7, 451,   -- 114: get_slot_direct_check(451)
       19,       -- 116: swap
-      1, 343,   -- 117: push_literal(343)
+      1, 398,   -- 117: push_literal(398)
       10, 1,    -- 119: invoke(1)
       14,       -- 121: pop
       0,        -- 122: push_frame
-      5, 304,   -- 123: get_slot_direct(304)
+      5, 359,   -- 123: get_slot_direct(359)
       15,       -- 125: dup
-      7, 397,   -- 126: get_slot_direct_check(397)
+      7, 451,   -- 126: get_slot_direct_check(451)
       19,       -- 128: swap
-      1, 356,   -- 129: push_literal(356)
+      1, 411,   -- 129: push_literal(411)
       10, 1,    -- 131: invoke(1)
       14,       -- 133: pop
       0,        -- 134: push_frame
-      5, 20,    -- 135: get_slot_direct(20)
-      5, 268,   -- 137: get_slot_direct(268)
+      5, 26,    -- 135: get_slot_direct(26)
+      5, 323,   -- 137: get_slot_direct(323)
       15,       -- 139: dup
-      7, 75,    -- 140: get_slot_direct_check(75)
+      7, 94,    -- 140: get_slot_direct_check(94)
       19,       -- 142: swap
-      4, 134,   -- 143: new_function(134)
+      4, 140,   -- 143: new_function(140)
       10, 1,    -- 145: invoke(1)
       14,       -- 147: pop
       0,        -- 148: push_frame
-      5, 304,   -- 149: get_slot_direct(304)
+      5, 359,   -- 149: get_slot_direct(359)
       15,       -- 151: dup
-      7, 397,   -- 152: get_slot_direct_check(397)
+      7, 451,   -- 152: get_slot_direct_check(451)
       19,       -- 154: swap
-      1, 347,   -- 155: push_literal(347)
+      1, 402,   -- 155: push_literal(402)
       0,        -- 157: push_frame
-      5, 20,    -- 158: get_slot_direct(20)
-      5, 268,   -- 160: get_slot_direct(268)
-      5, 24,    -- 162: get_slot_direct(24)
+      5, 26,    -- 158: get_slot_direct(26)
+      5, 323,   -- 160: get_slot_direct(323)
+      5, 55,    -- 162: get_slot_direct(55)
       10, 2,    -- 164: invoke(2)
       14,       -- 166: pop
       1, 0,     -- 167: push_literal(0)
@@ -12938,30 +13835,30 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 134,
+    id = 140,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
+      8, 87,    -- 8: set_slot_direct(87)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
+      8, 53,    -- 15: set_slot_direct(53)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
+      5, 359,   -- 19: get_slot_direct(359)
       15,       -- 21: dup
-      7, 423,   -- 22: get_slot_direct_check(423)
+      7, 473,   -- 22: get_slot_direct_check(473)
       19,       -- 24: swap
       0,        -- 25: push_frame
-      5, 68,    -- 26: get_slot_direct(68)
+      5, 87,    -- 26: get_slot_direct(87)
       10, 1,    -- 28: invoke(1)
       14,       -- 30: pop
       1, 0,     -- 31: push_literal(0)
@@ -12970,47 +13867,47 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".statement"
     name = jsval.newString(".statement"),
-    id = 135,
+    id = 141,
     nargs = 1,
     max_stack = 4,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 374,   -- 12: get_slot_direct(374)
+      5, 429,   -- 12: get_slot_direct(429)
       0,        -- 14: push_frame
-      5, 20,    -- 15: get_slot_direct(20)
+      5, 26,    -- 15: get_slot_direct(26)
       0,        -- 17: push_frame
-      5, 375,   -- 18: get_slot_direct(375)
-      5, 200,   -- 20: get_slot_direct(200)
+      5, 430,   -- 18: get_slot_direct(430)
+      5, 261,   -- 20: get_slot_direct(261)
       0,        -- 22: push_frame
-      5, 20,    -- 23: get_slot_direct(20)
-      5, 139,   -- 25: get_slot_direct(139)
+      5, 26,    -- 23: get_slot_direct(26)
+      5, 209,   -- 25: get_slot_direct(209)
       6,        -- 27: get_slot_indirect
       0,        -- 28: push_frame
-      5, 20,    -- 29: get_slot_direct(20)
+      5, 26,    -- 29: get_slot_direct(26)
       10, 2,    -- 31: invoke(2)
       14,       -- 33: pop
       0,        -- 34: push_frame
-      5, 375,   -- 35: get_slot_direct(375)
-      5, 200,   -- 37: get_slot_direct(200)
+      5, 430,   -- 35: get_slot_direct(430)
+      5, 261,   -- 37: get_slot_direct(261)
       0,        -- 39: push_frame
-      5, 20,    -- 40: get_slot_direct(20)
-      5, 139,   -- 42: get_slot_direct(139)
+      5, 26,    -- 40: get_slot_direct(26)
+      5, 209,   -- 42: get_slot_direct(209)
       6,        -- 44: get_slot_indirect
       15,       -- 45: dup
-      7, 74,    -- 46: get_slot_direct_check(74)
+      7, 93,    -- 46: get_slot_direct_check(93)
       19,       -- 48: swap
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
+      5, 26,    -- 50: get_slot_direct(26)
       0,        -- 52: push_frame
-      5, 304,   -- 53: get_slot_direct(304)
+      5, 359,   -- 53: get_slot_direct(359)
       10, 2,    -- 55: invoke(2)
       14,       -- 57: pop
       1, 0,     -- 58: push_literal(0)
@@ -13019,30 +13916,30 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "stmt"
     name = jsval.newString("stmt"),
-    id = 136,
+    id = 142,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 139,   -- 8: set_slot_direct(139)
+      8, 209,   -- 8: set_slot_direct(209)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 85,    -- 15: set_slot_direct(85)
+      8, 106,   -- 15: set_slot_direct(106)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 375,   -- 19: get_slot_direct(375)
-      5, 200,   -- 21: get_slot_direct(200)
+      5, 430,   -- 19: get_slot_direct(430)
+      5, 261,   -- 21: get_slot_direct(261)
       0,        -- 23: push_frame
-      5, 139,   -- 24: get_slot_direct(139)
+      5, 209,   -- 24: get_slot_direct(209)
       0,        -- 26: push_frame
-      5, 85,    -- 27: get_slot_direct(85)
+      5, 106,   -- 27: get_slot_direct(106)
       9,        -- 29: set_slot_indirect
       1, 0,     -- 30: push_literal(0)
       11        -- 32: return
@@ -13050,25 +13947,25 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 137,
+    id = 143,
     nargs = 1,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      5, 18,    -- 14: get_slot_direct(18)
+      5, 26,    -- 12: get_slot_direct(26)
+      5, 39,    -- 14: get_slot_direct(39)
       15,       -- 16: dup
-      7, 75,    -- 17: get_slot_direct_check(75)
+      7, 94,    -- 17: get_slot_direct_check(94)
       19,       -- 19: swap
-      4, 138,   -- 20: new_function(138)
+      4, 144,   -- 20: new_function(144)
       10, 1,    -- 22: invoke(1)
       14,       -- 24: pop
       1, 0,     -- 25: push_literal(0)
@@ -13077,478 +13974,34 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 138,
+    id = 144,
     nargs = 2,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
+      8, 87,    -- 8: set_slot_direct(87)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
+      8, 53,    -- 15: set_slot_direct(53)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
+      5, 359,   -- 19: get_slot_direct(359)
       15,       -- 21: dup
-      7, 421,   -- 22: get_slot_direct_check(421)
+      7, 471,   -- 22: get_slot_direct_check(471)
       19,       -- 24: swap
       0,        -- 25: push_frame
-      5, 68,    -- 26: get_slot_direct(68)
+      5, 87,    -- 26: get_slot_direct(87)
       10, 1,    -- 28: invoke(1)
       14,       -- 30: pop
       1, 0,     -- 31: push_literal(0)
       11        -- 33: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 139,
-    nargs = 1,
-    max_stack = 7,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
-      15,       -- 14: dup
-      7, 421,   -- 15: get_slot_direct_check(421)
-      19,       -- 17: swap
-      2,        -- 18: new_object
-      15,       -- 19: dup
-      1, 247,   -- 20: push_literal(247)
-      8, 222,   -- 22: set_slot_direct(222)
-      15,       -- 24: dup
-      1, 261,   -- 25: push_literal(261)
-      8, 139,   -- 27: set_slot_direct(139)
-      15,       -- 29: dup
-      0,        -- 30: push_frame
-      5, 20,    -- 31: get_slot_direct(20)
-      5, 18,    -- 33: get_slot_direct(18)
-      8, 18,    -- 35: set_slot_direct(18)
-      15,       -- 37: dup
-      2,        -- 38: new_object
-      15,       -- 39: dup
-      1, 232,   -- 40: push_literal(232)
-      8, 222,   -- 42: set_slot_direct(222)
-      15,       -- 44: dup
-      1, 0,     -- 45: push_literal(0)
-      8, 139,   -- 47: set_slot_direct(139)
-      8, 19,    -- 49: set_slot_direct(19)
-      10, 1,    -- 51: invoke(1)
-      14,       -- 53: pop
-      1, 0,     -- 54: push_literal(0)
-      11        -- 56: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 140,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      1, 0,     -- 12: push_literal(0)
-      8, 432,   -- 14: set_slot_direct(432)
-      0,        -- 16: push_frame
-      0,        -- 17: push_frame
-      5, 304,   -- 18: get_slot_direct(304)
-      15,       -- 20: dup
-      7, 414,   -- 21: get_slot_direct_check(414)
-      19,       -- 23: swap
-      10, 0,    -- 24: invoke(0)
-      8, 432,   -- 26: set_slot_direct(432)
-      0,        -- 28: push_frame
-      5, 304,   -- 29: get_slot_direct(304)
-      15,       -- 31: dup
-      7, 423,   -- 32: get_slot_direct_check(423)
-      19,       -- 34: swap
-      0,        -- 35: push_frame
-      5, 20,    -- 36: get_slot_direct(20)
-      5, 18,    -- 38: get_slot_direct(18)
-      10, 1,    -- 40: invoke(1)
-      14,       -- 42: pop
-      0,        -- 43: push_frame
-      5, 304,   -- 44: get_slot_direct(304)
-      15,       -- 46: dup
-      7, 397,   -- 47: get_slot_direct_check(397)
-      19,       -- 49: swap
-      1, 351,   -- 50: push_literal(351)
-      0,        -- 52: push_frame
-      5, 432,   -- 53: get_slot_direct(432)
-      10, 2,    -- 55: invoke(2)
-      14,       -- 57: pop
-      0,        -- 58: push_frame
-      5, 304,   -- 59: get_slot_direct(304)
-      15,       -- 61: dup
-      7, 421,   -- 62: get_slot_direct_check(421)
-      19,       -- 64: swap
-      0,        -- 65: push_frame
-      5, 20,    -- 66: get_slot_direct(20)
-      5, 19,    -- 68: get_slot_direct(19)
-      10, 1,    -- 70: invoke(1)
-      14,       -- 72: pop
-      0,        -- 73: push_frame
-      5, 20,    -- 74: get_slot_direct(20)
-      5, 268,   -- 76: get_slot_direct(268)
-      13, 155,  -- 78: jmp_unless(155)
-      0,        -- 80: push_frame
-      1, 0,     -- 81: push_literal(0)
-      8, 431,   -- 83: set_slot_direct(431)
-      0,        -- 85: push_frame
-      0,        -- 86: push_frame
-      5, 304,   -- 87: get_slot_direct(304)
-      15,       -- 89: dup
-      7, 414,   -- 90: get_slot_direct_check(414)
-      19,       -- 92: swap
-      10, 0,    -- 93: invoke(0)
-      8, 431,   -- 95: set_slot_direct(431)
-      0,        -- 97: push_frame
-      5, 304,   -- 98: get_slot_direct(304)
-      15,       -- 100: dup
-      7, 397,   -- 101: get_slot_direct_check(397)
-      19,       -- 103: swap
-      1, 350,   -- 104: push_literal(350)
-      0,        -- 106: push_frame
-      5, 431,   -- 107: get_slot_direct(431)
-      10, 2,    -- 109: invoke(2)
-      14,       -- 111: pop
-      0,        -- 112: push_frame
-      5, 304,   -- 113: get_slot_direct(304)
-      15,       -- 115: dup
-      7, 415,   -- 116: get_slot_direct_check(415)
-      19,       -- 118: swap
-      0,        -- 119: push_frame
-      5, 432,   -- 120: get_slot_direct(432)
-      10, 1,    -- 122: invoke(1)
-      14,       -- 124: pop
-      0,        -- 125: push_frame
-      5, 304,   -- 126: get_slot_direct(304)
-      15,       -- 128: dup
-      7, 421,   -- 129: get_slot_direct_check(421)
-      19,       -- 131: swap
-      0,        -- 132: push_frame
-      5, 20,    -- 133: get_slot_direct(20)
-      5, 268,   -- 135: get_slot_direct(268)
-      10, 1,    -- 137: invoke(1)
-      14,       -- 139: pop
-      0,        -- 140: push_frame
-      5, 304,   -- 141: get_slot_direct(304)
-      15,       -- 143: dup
-      7, 415,   -- 144: get_slot_direct_check(415)
-      19,       -- 146: swap
-      0,        -- 147: push_frame
-      5, 431,   -- 148: get_slot_direct(431)
-      10, 1,    -- 150: invoke(1)
-      14,       -- 152: pop
-      12, 168,  -- 153: jmp(168)
-      0,        -- 155: push_frame
-      5, 304,   -- 156: get_slot_direct(304)
-      15,       -- 158: dup
-      7, 415,   -- 159: get_slot_direct_check(415)
-      19,       -- 161: swap
-      0,        -- 162: push_frame
-      5, 432,   -- 163: get_slot_direct(432)
-      10, 1,    -- 165: invoke(1)
-      14,       -- 167: pop
-      1, 0,     -- 168: push_literal(0)
-      11        -- 170: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 141,
-    nargs = 1,
-    max_stack = 6,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 20,    -- 12: get_slot_direct(20)
-      5, 18,    -- 14: get_slot_direct(18)
-      13, 35,   -- 16: jmp_unless(35)
-      0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
-      15,       -- 21: dup
-      7, 423,   -- 22: get_slot_direct_check(423)
-      19,       -- 24: swap
-      0,        -- 25: push_frame
-      5, 20,    -- 26: get_slot_direct(20)
-      5, 18,    -- 28: get_slot_direct(18)
-      10, 1,    -- 30: invoke(1)
-      14,       -- 32: pop
-      12, 58,   -- 33: jmp(58)
-      0,        -- 35: push_frame
-      5, 304,   -- 36: get_slot_direct(304)
-      15,       -- 38: dup
-      7, 397,   -- 39: get_slot_direct_check(397)
-      19,       -- 41: swap
-      1, 338,   -- 42: push_literal(338)
-      0,        -- 44: push_frame
-      5, 304,   -- 45: get_slot_direct(304)
-      15,       -- 47: dup
-      7, 232,   -- 48: get_slot_direct_check(232)
-      19,       -- 50: swap
-      1, 0,     -- 51: push_literal(0)
-      10, 1,    -- 53: invoke(1)
-      10, 2,    -- 55: invoke(2)
-      14,       -- 57: pop
-      0,        -- 58: push_frame
-      5, 304,   -- 59: get_slot_direct(304)
-      15,       -- 61: dup
-      7, 397,   -- 62: get_slot_direct_check(397)
-      19,       -- 64: swap
-      1, 296,   -- 65: push_literal(296)
-      10, 1,    -- 67: invoke(1)
-      14,       -- 69: pop
-      0,        -- 70: push_frame
-      5, 304,   -- 71: get_slot_direct(304)
-      5, 395,   -- 73: get_slot_direct(395)
-      1, 10,    -- 75: push_literal(10)
-      8, 396,   -- 77: set_slot_direct(396)
-      1, 0,     -- 79: push_literal(0)
-      11        -- 81: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 142,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
-      15,       -- 14: dup
-      7, 397,   -- 15: get_slot_direct_check(397)
-      19,       -- 17: swap
-      1, 350,   -- 18: push_literal(350)
-      0,        -- 20: push_frame
-      5, 304,   -- 21: get_slot_direct(304)
-      15,       -- 23: dup
-      7, 417,   -- 24: get_slot_direct_check(417)
-      19,       -- 26: swap
-      10, 0,    -- 27: invoke(0)
-      10, 2,    -- 29: invoke(2)
-      14,       -- 31: pop
-      1, 0,     -- 32: push_literal(0)
-      11        -- 34: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 143,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      1, 0,     -- 12: push_literal(0)
-      8, 433,   -- 14: set_slot_direct(433)
-      0,        -- 16: push_frame
-      1, 0,     -- 17: push_literal(0)
-      8, 434,   -- 19: set_slot_direct(434)
-      0,        -- 21: push_frame
-      1, 0,     -- 22: push_literal(0)
-      8, 435,   -- 24: set_slot_direct(435)
-      0,        -- 26: push_frame
-      0,        -- 27: push_frame
-      5, 304,   -- 28: get_slot_direct(304)
-      15,       -- 30: dup
-      7, 414,   -- 31: get_slot_direct_check(414)
-      19,       -- 33: swap
-      10, 0,    -- 34: invoke(0)
-      8, 433,   -- 36: set_slot_direct(433)
-      0,        -- 38: push_frame
-      0,        -- 39: push_frame
-      5, 304,   -- 40: get_slot_direct(304)
-      15,       -- 42: dup
-      7, 414,   -- 43: get_slot_direct_check(414)
-      19,       -- 45: swap
-      10, 0,    -- 46: invoke(0)
-      8, 434,   -- 48: set_slot_direct(434)
-      0,        -- 50: push_frame
-      0,        -- 51: push_frame
-      5, 304,   -- 52: get_slot_direct(304)
-      15,       -- 54: dup
-      7, 414,   -- 55: get_slot_direct_check(414)
-      19,       -- 57: swap
-      10, 0,    -- 58: invoke(0)
-      8, 435,   -- 60: set_slot_direct(435)
-      0,        -- 62: push_frame
-      5, 304,   -- 63: get_slot_direct(304)
-      15,       -- 65: dup
-      7, 419,   -- 66: get_slot_direct_check(419)
-      19,       -- 68: swap
-      0,        -- 69: push_frame
-      5, 435,   -- 70: get_slot_direct(435)
-      10, 1,    -- 72: invoke(1)
-      14,       -- 74: pop
-      0,        -- 75: push_frame
-      5, 304,   -- 76: get_slot_direct(304)
-      15,       -- 78: dup
-      7, 397,   -- 79: get_slot_direct_check(397)
-      19,       -- 81: swap
-      1, 350,   -- 82: push_literal(350)
-      0,        -- 84: push_frame
-      5, 434,   -- 85: get_slot_direct(434)
-      10, 2,    -- 87: invoke(2)
-      14,       -- 89: pop
-      0,        -- 90: push_frame
-      5, 304,   -- 91: get_slot_direct(304)
-      15,       -- 93: dup
-      7, 415,   -- 94: get_slot_direct_check(415)
-      19,       -- 96: swap
-      0,        -- 97: push_frame
-      5, 433,   -- 98: get_slot_direct(433)
-      10, 1,    -- 100: invoke(1)
-      14,       -- 102: pop
-      0,        -- 103: push_frame
-      5, 304,   -- 104: get_slot_direct(304)
-      15,       -- 106: dup
-      7, 421,   -- 107: get_slot_direct_check(421)
-      19,       -- 109: swap
-      0,        -- 110: push_frame
-      5, 20,    -- 111: get_slot_direct(20)
-      5, 19,    -- 113: get_slot_direct(19)
-      10, 1,    -- 115: invoke(1)
-      14,       -- 117: pop
-      0,        -- 118: push_frame
-      5, 304,   -- 119: get_slot_direct(304)
-      15,       -- 121: dup
-      7, 415,   -- 122: get_slot_direct_check(415)
-      19,       -- 124: swap
-      0,        -- 125: push_frame
-      5, 434,   -- 126: get_slot_direct(434)
-      10, 1,    -- 128: invoke(1)
-      14,       -- 130: pop
-      0,        -- 131: push_frame
-      5, 304,   -- 132: get_slot_direct(304)
-      15,       -- 134: dup
-      7, 423,   -- 135: get_slot_direct_check(423)
-      19,       -- 137: swap
-      0,        -- 138: push_frame
-      5, 20,    -- 139: get_slot_direct(20)
-      5, 18,    -- 141: get_slot_direct(18)
-      10, 1,    -- 143: invoke(1)
-      14,       -- 145: pop
-      0,        -- 146: push_frame
-      5, 304,   -- 147: get_slot_direct(304)
-      15,       -- 149: dup
-      7, 397,   -- 150: get_slot_direct_check(397)
-      19,       -- 152: swap
-      1, 357,   -- 153: push_literal(357)
-      10, 1,    -- 155: invoke(1)
-      14,       -- 157: pop
-      0,        -- 158: push_frame
-      5, 304,   -- 159: get_slot_direct(304)
-      15,       -- 161: dup
-      7, 397,   -- 162: get_slot_direct_check(397)
-      19,       -- 164: swap
-      1, 351,   -- 165: push_literal(351)
-      0,        -- 167: push_frame
-      5, 433,   -- 168: get_slot_direct(433)
-      10, 2,    -- 170: invoke(2)
-      14,       -- 172: pop
-      0,        -- 173: push_frame
-      5, 304,   -- 174: get_slot_direct(304)
-      15,       -- 176: dup
-      7, 415,   -- 177: get_slot_direct_check(415)
-      19,       -- 179: swap
-      0,        -- 180: push_frame
-      5, 435,   -- 181: get_slot_direct(435)
-      10, 1,    -- 183: invoke(1)
-      14,       -- 185: pop
-      0,        -- 186: push_frame
-      5, 304,   -- 187: get_slot_direct(304)
-      15,       -- 189: dup
-      7, 418,   -- 190: get_slot_direct_check(418)
-      19,       -- 192: swap
-      10, 0,    -- 193: invoke(0)
-      14,       -- 195: pop
-      1, 0,     -- 196: push_literal(0)
-      11        -- 198: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 144,
-    nargs = 1,
-    max_stack = 6,
-    bytecode = {
-      0,        -- 0: push_frame
-      5, 2,     -- 1: get_slot_direct(2)
-      15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
-      0,        -- 6: push_frame
-      19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
-      14,       -- 10: pop
-      0,        -- 11: push_frame
-      5, 304,   -- 12: get_slot_direct(304)
-      15,       -- 14: dup
-      7, 397,   -- 15: get_slot_direct_check(397)
-      19,       -- 17: swap
-      1, 337,   -- 18: push_literal(337)
-      10, 1,    -- 20: invoke(1)
-      14,       -- 22: pop
-      0,        -- 23: push_frame
-      5, 304,   -- 24: get_slot_direct(304)
-      15,       -- 26: dup
-      7, 397,   -- 27: get_slot_direct_check(397)
-      19,       -- 29: swap
-      1, 342,   -- 30: push_literal(342)
-      0,        -- 32: push_frame
-      5, 304,   -- 33: get_slot_direct(304)
-      15,       -- 35: dup
-      7, 232,   -- 36: get_slot_direct_check(232)
-      19,       -- 38: swap
-      1, 20,    -- 39: push_literal(20)
-      10, 1,    -- 41: invoke(1)
-      10, 2,    -- 43: invoke(2)
-      14,       -- 45: pop
-      1, 0,     -- 46: push_literal(0)
-      11        -- 48: return
     }
   },
   ifunc.Function:new{
@@ -13560,206 +14013,650 @@ startup.functions = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 304,   -- 8: set_slot_direct(304)
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 359,   -- 12: get_slot_direct(359)
+      15,       -- 14: dup
+      7, 471,   -- 15: get_slot_direct_check(471)
+      19,       -- 17: swap
+      2,        -- 18: new_object
+      15,       -- 19: dup
+      1, 307,   -- 20: push_literal(307)
+      8, 283,   -- 22: set_slot_direct(283)
+      15,       -- 24: dup
+      1, 316,   -- 25: push_literal(316)
+      8, 209,   -- 27: set_slot_direct(209)
+      15,       -- 29: dup
+      0,        -- 30: push_frame
+      5, 26,    -- 31: get_slot_direct(26)
+      5, 39,    -- 33: get_slot_direct(39)
+      8, 39,    -- 35: set_slot_direct(39)
+      15,       -- 37: dup
+      2,        -- 38: new_object
+      15,       -- 39: dup
+      1, 293,   -- 40: push_literal(293)
+      8, 283,   -- 42: set_slot_direct(283)
+      15,       -- 44: dup
+      1, 0,     -- 45: push_literal(0)
+      8, 209,   -- 47: set_slot_direct(209)
+      8, 40,    -- 49: set_slot_direct(40)
+      10, 1,    -- 51: invoke(1)
+      14,       -- 53: pop
+      1, 0,     -- 54: push_literal(0)
+      11        -- 56: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 146,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 436,   -- 14: set_slot_direct(436)
+      8, 482,   -- 14: set_slot_direct(482)
+      0,        -- 16: push_frame
+      0,        -- 17: push_frame
+      5, 359,   -- 18: get_slot_direct(359)
+      15,       -- 20: dup
+      7, 464,   -- 21: get_slot_direct_check(464)
+      19,       -- 23: swap
+      10, 0,    -- 24: invoke(0)
+      8, 482,   -- 26: set_slot_direct(482)
+      0,        -- 28: push_frame
+      5, 359,   -- 29: get_slot_direct(359)
+      15,       -- 31: dup
+      7, 473,   -- 32: get_slot_direct_check(473)
+      19,       -- 34: swap
+      0,        -- 35: push_frame
+      5, 26,    -- 36: get_slot_direct(26)
+      5, 39,    -- 38: get_slot_direct(39)
+      10, 1,    -- 40: invoke(1)
+      14,       -- 42: pop
+      0,        -- 43: push_frame
+      5, 359,   -- 44: get_slot_direct(359)
+      15,       -- 46: dup
+      7, 451,   -- 47: get_slot_direct_check(451)
+      19,       -- 49: swap
+      1, 406,   -- 50: push_literal(406)
+      0,        -- 52: push_frame
+      5, 482,   -- 53: get_slot_direct(482)
+      10, 2,    -- 55: invoke(2)
+      14,       -- 57: pop
+      0,        -- 58: push_frame
+      5, 359,   -- 59: get_slot_direct(359)
+      15,       -- 61: dup
+      7, 471,   -- 62: get_slot_direct_check(471)
+      19,       -- 64: swap
+      0,        -- 65: push_frame
+      5, 26,    -- 66: get_slot_direct(26)
+      5, 40,    -- 68: get_slot_direct(40)
+      10, 1,    -- 70: invoke(1)
+      14,       -- 72: pop
+      0,        -- 73: push_frame
+      5, 26,    -- 74: get_slot_direct(26)
+      5, 323,   -- 76: get_slot_direct(323)
+      13, 155,  -- 78: jmp_unless(155)
+      0,        -- 80: push_frame
+      1, 0,     -- 81: push_literal(0)
+      8, 481,   -- 83: set_slot_direct(481)
+      0,        -- 85: push_frame
+      0,        -- 86: push_frame
+      5, 359,   -- 87: get_slot_direct(359)
+      15,       -- 89: dup
+      7, 464,   -- 90: get_slot_direct_check(464)
+      19,       -- 92: swap
+      10, 0,    -- 93: invoke(0)
+      8, 481,   -- 95: set_slot_direct(481)
+      0,        -- 97: push_frame
+      5, 359,   -- 98: get_slot_direct(359)
+      15,       -- 100: dup
+      7, 451,   -- 101: get_slot_direct_check(451)
+      19,       -- 103: swap
+      1, 405,   -- 104: push_literal(405)
+      0,        -- 106: push_frame
+      5, 481,   -- 107: get_slot_direct(481)
+      10, 2,    -- 109: invoke(2)
+      14,       -- 111: pop
+      0,        -- 112: push_frame
+      5, 359,   -- 113: get_slot_direct(359)
+      15,       -- 115: dup
+      7, 465,   -- 116: get_slot_direct_check(465)
+      19,       -- 118: swap
+      0,        -- 119: push_frame
+      5, 482,   -- 120: get_slot_direct(482)
+      10, 1,    -- 122: invoke(1)
+      14,       -- 124: pop
+      0,        -- 125: push_frame
+      5, 359,   -- 126: get_slot_direct(359)
+      15,       -- 128: dup
+      7, 471,   -- 129: get_slot_direct_check(471)
+      19,       -- 131: swap
+      0,        -- 132: push_frame
+      5, 26,    -- 133: get_slot_direct(26)
+      5, 323,   -- 135: get_slot_direct(323)
+      10, 1,    -- 137: invoke(1)
+      14,       -- 139: pop
+      0,        -- 140: push_frame
+      5, 359,   -- 141: get_slot_direct(359)
+      15,       -- 143: dup
+      7, 465,   -- 144: get_slot_direct_check(465)
+      19,       -- 146: swap
+      0,        -- 147: push_frame
+      5, 481,   -- 148: get_slot_direct(481)
+      10, 1,    -- 150: invoke(1)
+      14,       -- 152: pop
+      12, 168,  -- 153: jmp(168)
+      0,        -- 155: push_frame
+      5, 359,   -- 156: get_slot_direct(359)
+      15,       -- 158: dup
+      7, 465,   -- 159: get_slot_direct_check(465)
+      19,       -- 161: swap
+      0,        -- 162: push_frame
+      5, 482,   -- 163: get_slot_direct(482)
+      10, 1,    -- 165: invoke(1)
+      14,       -- 167: pop
+      1, 0,     -- 168: push_literal(0)
+      11        -- 170: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 147,
+    nargs = 1,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 26,    -- 12: get_slot_direct(26)
+      5, 39,    -- 14: get_slot_direct(39)
+      13, 35,   -- 16: jmp_unless(35)
+      0,        -- 18: push_frame
+      5, 359,   -- 19: get_slot_direct(359)
+      15,       -- 21: dup
+      7, 473,   -- 22: get_slot_direct_check(473)
+      19,       -- 24: swap
+      0,        -- 25: push_frame
+      5, 26,    -- 26: get_slot_direct(26)
+      5, 39,    -- 28: get_slot_direct(39)
+      10, 1,    -- 30: invoke(1)
+      14,       -- 32: pop
+      12, 58,   -- 33: jmp(58)
+      0,        -- 35: push_frame
+      5, 359,   -- 36: get_slot_direct(359)
+      15,       -- 38: dup
+      7, 451,   -- 39: get_slot_direct_check(451)
+      19,       -- 41: swap
+      1, 393,   -- 42: push_literal(393)
+      0,        -- 44: push_frame
+      5, 359,   -- 45: get_slot_direct(359)
+      15,       -- 47: dup
+      7, 293,   -- 48: get_slot_direct_check(293)
+      19,       -- 50: swap
+      1, 0,     -- 51: push_literal(0)
+      10, 1,    -- 53: invoke(1)
+      10, 2,    -- 55: invoke(2)
+      14,       -- 57: pop
+      0,        -- 58: push_frame
+      5, 359,   -- 59: get_slot_direct(359)
+      15,       -- 61: dup
+      7, 451,   -- 62: get_slot_direct_check(451)
+      19,       -- 64: swap
+      1, 351,   -- 65: push_literal(351)
+      10, 1,    -- 67: invoke(1)
+      14,       -- 69: pop
+      0,        -- 70: push_frame
+      5, 359,   -- 71: get_slot_direct(359)
+      5, 449,   -- 73: get_slot_direct(449)
+      1, 32,    -- 75: push_literal(32)
+      8, 450,   -- 77: set_slot_direct(450)
+      1, 0,     -- 79: push_literal(0)
+      11        -- 81: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 148,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 359,   -- 12: get_slot_direct(359)
+      15,       -- 14: dup
+      7, 451,   -- 15: get_slot_direct_check(451)
+      19,       -- 17: swap
+      1, 405,   -- 18: push_literal(405)
+      0,        -- 20: push_frame
+      5, 359,   -- 21: get_slot_direct(359)
+      15,       -- 23: dup
+      7, 467,   -- 24: get_slot_direct_check(467)
+      19,       -- 26: swap
+      10, 0,    -- 27: invoke(0)
+      10, 2,    -- 29: invoke(2)
+      14,       -- 31: pop
+      1, 0,     -- 32: push_literal(0)
+      11        -- 34: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 149,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 483,   -- 14: set_slot_direct(483)
       0,        -- 16: push_frame
       1, 0,     -- 17: push_literal(0)
-      8, 437,   -- 19: set_slot_direct(437)
+      8, 484,   -- 19: set_slot_direct(484)
       0,        -- 21: push_frame
-      5, 20,    -- 22: get_slot_direct(20)
-      5, 9,     -- 24: get_slot_direct(9)
+      1, 0,     -- 22: push_literal(0)
+      8, 485,   -- 24: set_slot_direct(485)
+      0,        -- 26: push_frame
+      0,        -- 27: push_frame
+      5, 359,   -- 28: get_slot_direct(359)
+      15,       -- 30: dup
+      7, 464,   -- 31: get_slot_direct_check(464)
+      19,       -- 33: swap
+      10, 0,    -- 34: invoke(0)
+      8, 483,   -- 36: set_slot_direct(483)
+      0,        -- 38: push_frame
+      0,        -- 39: push_frame
+      5, 359,   -- 40: get_slot_direct(359)
+      15,       -- 42: dup
+      7, 464,   -- 43: get_slot_direct_check(464)
+      19,       -- 45: swap
+      10, 0,    -- 46: invoke(0)
+      8, 484,   -- 48: set_slot_direct(484)
+      0,        -- 50: push_frame
+      0,        -- 51: push_frame
+      5, 359,   -- 52: get_slot_direct(359)
+      15,       -- 54: dup
+      7, 464,   -- 55: get_slot_direct_check(464)
+      19,       -- 57: swap
+      10, 0,    -- 58: invoke(0)
+      8, 485,   -- 60: set_slot_direct(485)
+      0,        -- 62: push_frame
+      5, 359,   -- 63: get_slot_direct(359)
+      15,       -- 65: dup
+      7, 469,   -- 66: get_slot_direct_check(469)
+      19,       -- 68: swap
+      0,        -- 69: push_frame
+      5, 485,   -- 70: get_slot_direct(485)
+      10, 1,    -- 72: invoke(1)
+      14,       -- 74: pop
+      0,        -- 75: push_frame
+      5, 359,   -- 76: get_slot_direct(359)
+      15,       -- 78: dup
+      7, 451,   -- 79: get_slot_direct_check(451)
+      19,       -- 81: swap
+      1, 405,   -- 82: push_literal(405)
+      0,        -- 84: push_frame
+      5, 484,   -- 85: get_slot_direct(484)
+      10, 2,    -- 87: invoke(2)
+      14,       -- 89: pop
+      0,        -- 90: push_frame
+      5, 359,   -- 91: get_slot_direct(359)
+      15,       -- 93: dup
+      7, 465,   -- 94: get_slot_direct_check(465)
+      19,       -- 96: swap
+      0,        -- 97: push_frame
+      5, 483,   -- 98: get_slot_direct(483)
+      10, 1,    -- 100: invoke(1)
+      14,       -- 102: pop
+      0,        -- 103: push_frame
+      5, 359,   -- 104: get_slot_direct(359)
+      15,       -- 106: dup
+      7, 471,   -- 107: get_slot_direct_check(471)
+      19,       -- 109: swap
+      0,        -- 110: push_frame
+      5, 26,    -- 111: get_slot_direct(26)
+      5, 40,    -- 113: get_slot_direct(40)
+      10, 1,    -- 115: invoke(1)
+      14,       -- 117: pop
+      0,        -- 118: push_frame
+      5, 359,   -- 119: get_slot_direct(359)
+      15,       -- 121: dup
+      7, 465,   -- 122: get_slot_direct_check(465)
+      19,       -- 124: swap
+      0,        -- 125: push_frame
+      5, 484,   -- 126: get_slot_direct(484)
+      10, 1,    -- 128: invoke(1)
+      14,       -- 130: pop
+      0,        -- 131: push_frame
+      5, 359,   -- 132: get_slot_direct(359)
+      15,       -- 134: dup
+      7, 473,   -- 135: get_slot_direct_check(473)
+      19,       -- 137: swap
+      0,        -- 138: push_frame
+      5, 26,    -- 139: get_slot_direct(26)
+      5, 39,    -- 141: get_slot_direct(39)
+      10, 1,    -- 143: invoke(1)
+      14,       -- 145: pop
+      0,        -- 146: push_frame
+      5, 359,   -- 147: get_slot_direct(359)
+      15,       -- 149: dup
+      7, 451,   -- 150: get_slot_direct_check(451)
+      19,       -- 152: swap
+      1, 412,   -- 153: push_literal(412)
+      10, 1,    -- 155: invoke(1)
+      14,       -- 157: pop
+      0,        -- 158: push_frame
+      5, 359,   -- 159: get_slot_direct(359)
+      15,       -- 161: dup
+      7, 451,   -- 162: get_slot_direct_check(451)
+      19,       -- 164: swap
+      1, 406,   -- 165: push_literal(406)
+      0,        -- 167: push_frame
+      5, 483,   -- 168: get_slot_direct(483)
+      10, 2,    -- 170: invoke(2)
+      14,       -- 172: pop
+      0,        -- 173: push_frame
+      5, 359,   -- 174: get_slot_direct(359)
+      15,       -- 176: dup
+      7, 465,   -- 177: get_slot_direct_check(465)
+      19,       -- 179: swap
+      0,        -- 180: push_frame
+      5, 485,   -- 181: get_slot_direct(485)
+      10, 1,    -- 183: invoke(1)
+      14,       -- 185: pop
+      0,        -- 186: push_frame
+      5, 359,   -- 187: get_slot_direct(359)
+      15,       -- 189: dup
+      7, 468,   -- 190: get_slot_direct_check(468)
+      19,       -- 192: swap
+      10, 0,    -- 193: invoke(0)
+      14,       -- 195: pop
+      1, 0,     -- 196: push_literal(0)
+      11        -- 198: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 150,
+    nargs = 1,
+    max_stack = 6,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      5, 359,   -- 12: get_slot_direct(359)
+      15,       -- 14: dup
+      7, 451,   -- 15: get_slot_direct_check(451)
+      19,       -- 17: swap
+      1, 392,   -- 18: push_literal(392)
+      10, 1,    -- 20: invoke(1)
+      14,       -- 22: pop
+      0,        -- 23: push_frame
+      5, 359,   -- 24: get_slot_direct(359)
+      15,       -- 26: dup
+      7, 451,   -- 27: get_slot_direct_check(451)
+      19,       -- 29: swap
+      1, 397,   -- 30: push_literal(397)
+      0,        -- 32: push_frame
+      5, 359,   -- 33: get_slot_direct(359)
+      15,       -- 35: dup
+      7, 293,   -- 36: get_slot_direct_check(293)
+      19,       -- 38: swap
+      1, 26,    -- 39: push_literal(26)
+      10, 1,    -- 41: invoke(1)
+      10, 2,    -- 43: invoke(2)
+      14,       -- 45: pop
+      1, 0,     -- 46: push_literal(0)
+      11        -- 48: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 151,
+    nargs = 1,
+    max_stack = 7,
+    bytecode = {
+      0,        -- 0: push_frame
+      5, 2,     -- 1: get_slot_direct(2)
+      15,       -- 3: dup
+      5, 18,    -- 4: get_slot_direct(18)
+      0,        -- 6: push_frame
+      19,       -- 7: swap
+      8, 359,   -- 8: set_slot_direct(359)
+      14,       -- 10: pop
+      0,        -- 11: push_frame
+      1, 0,     -- 12: push_literal(0)
+      8, 486,   -- 14: set_slot_direct(486)
+      0,        -- 16: push_frame
+      1, 0,     -- 17: push_literal(0)
+      8, 487,   -- 19: set_slot_direct(487)
+      0,        -- 21: push_frame
+      5, 26,    -- 22: get_slot_direct(26)
+      5, 19,    -- 24: get_slot_direct(19)
       13, 115,  -- 26: jmp_unless(115)
       0,        -- 28: push_frame
-      5, 304,   -- 29: get_slot_direct(304)
+      5, 359,   -- 29: get_slot_direct(359)
       15,       -- 31: dup
-      7, 423,   -- 32: get_slot_direct_check(423)
+      7, 473,   -- 32: get_slot_direct_check(473)
       19,       -- 34: swap
       2,        -- 35: new_object
       15,       -- 36: dup
-      1, 261,   -- 37: push_literal(261)
-      8, 139,   -- 39: set_slot_direct(139)
+      1, 316,   -- 37: push_literal(316)
+      8, 209,   -- 39: set_slot_direct(209)
       15,       -- 41: dup
-      1, 247,   -- 42: push_literal(247)
-      8, 222,   -- 44: set_slot_direct(222)
+      1, 307,   -- 42: push_literal(307)
+      8, 283,   -- 44: set_slot_direct(283)
       15,       -- 46: dup
       2,        -- 47: new_object
       15,       -- 48: dup
       0,        -- 49: push_frame
-      5, 20,    -- 50: get_slot_direct(20)
-      5, 9,     -- 52: get_slot_direct(9)
-      8, 139,   -- 54: set_slot_direct(139)
+      5, 26,    -- 50: get_slot_direct(26)
+      5, 19,    -- 52: get_slot_direct(19)
+      8, 209,   -- 54: set_slot_direct(209)
       15,       -- 56: dup
-      1, 9,     -- 57: push_literal(9)
-      8, 222,   -- 59: set_slot_direct(222)
+      1, 19,    -- 57: push_literal(19)
+      8, 283,   -- 59: set_slot_direct(283)
       15,       -- 61: dup
       0,        -- 62: push_frame
-      5, 20,    -- 63: get_slot_direct(20)
-      5, 190,   -- 65: get_slot_direct(190)
-      8, 190,   -- 67: set_slot_direct(190)
-      8, 18,    -- 69: set_slot_direct(18)
+      5, 26,    -- 63: get_slot_direct(26)
+      5, 251,   -- 65: get_slot_direct(251)
+      8, 251,   -- 67: set_slot_direct(251)
+      8, 39,    -- 69: set_slot_direct(39)
       15,       -- 71: dup
       2,        -- 72: new_object
       15,       -- 73: dup
-      1, 237,   -- 74: push_literal(237)
-      8, 139,   -- 76: set_slot_direct(139)
+      1, 25,    -- 74: push_literal(25)
+      8, 209,   -- 76: set_slot_direct(209)
       15,       -- 78: dup
-      1, 237,   -- 79: push_literal(237)
-      8, 222,   -- 81: set_slot_direct(222)
+      1, 25,    -- 79: push_literal(25)
+      8, 283,   -- 81: set_slot_direct(283)
       15,       -- 83: dup
       0,        -- 84: push_frame
-      5, 20,    -- 85: get_slot_direct(20)
-      5, 18,    -- 87: get_slot_direct(18)
-      8, 18,    -- 89: set_slot_direct(18)
+      5, 26,    -- 85: get_slot_direct(26)
+      5, 39,    -- 87: get_slot_direct(39)
+      8, 39,    -- 89: set_slot_direct(39)
       15,       -- 91: dup
       0,        -- 92: push_frame
-      5, 20,    -- 93: get_slot_direct(20)
-      5, 19,    -- 95: get_slot_direct(19)
-      8, 19,    -- 97: set_slot_direct(19)
+      5, 26,    -- 93: get_slot_direct(26)
+      5, 40,    -- 95: get_slot_direct(40)
+      8, 40,    -- 97: set_slot_direct(40)
       15,       -- 99: dup
       0,        -- 100: push_frame
-      5, 20,    -- 101: get_slot_direct(20)
-      5, 9,     -- 103: get_slot_direct(9)
-      8, 426,   -- 105: set_slot_direct(426)
-      8, 19,    -- 107: set_slot_direct(19)
+      5, 26,    -- 101: get_slot_direct(26)
+      5, 19,    -- 103: get_slot_direct(19)
+      8, 476,   -- 105: set_slot_direct(476)
+      8, 40,    -- 107: set_slot_direct(40)
       10, 1,    -- 109: invoke(1)
       14,       -- 111: pop
       1, 0,     -- 112: push_literal(0)
       11,       -- 114: return
       0,        -- 115: push_frame
       0,        -- 116: push_frame
-      5, 304,   -- 117: get_slot_direct(304)
-      5, 395,   -- 119: get_slot_direct(395)
-      8, 436,   -- 121: set_slot_direct(436)
+      5, 359,   -- 117: get_slot_direct(359)
+      5, 449,   -- 119: get_slot_direct(449)
+      8, 486,   -- 121: set_slot_direct(486)
       0,        -- 123: push_frame
       0,        -- 124: push_frame
-      5, 304,   -- 125: get_slot_direct(304)
+      5, 359,   -- 125: get_slot_direct(359)
       15,       -- 127: dup
-      7, 341,   -- 128: get_slot_direct_check(341)
+      7, 396,   -- 128: get_slot_direct_check(396)
       19,       -- 130: swap
       0,        -- 131: push_frame
-      5, 20,    -- 132: get_slot_direct(20)
-      5, 18,    -- 134: get_slot_direct(18)
-      5, 24,    -- 136: get_slot_direct(24)
+      5, 26,    -- 132: get_slot_direct(26)
+      5, 39,    -- 134: get_slot_direct(39)
+      5, 55,    -- 136: get_slot_direct(55)
       10, 1,    -- 138: invoke(1)
-      8, 437,   -- 140: set_slot_direct(437)
+      8, 487,   -- 140: set_slot_direct(487)
       0,        -- 142: push_frame
-      5, 20,    -- 143: get_slot_direct(20)
-      5, 426,   -- 145: get_slot_direct(426)
+      5, 26,    -- 143: get_slot_direct(26)
+      5, 476,   -- 145: get_slot_direct(476)
       13, 159,  -- 147: jmp_unless(159)
       0,        -- 149: push_frame
-      5, 437,   -- 150: get_slot_direct(437)
+      5, 487,   -- 150: get_slot_direct(487)
       0,        -- 152: push_frame
-      5, 20,    -- 153: get_slot_direct(20)
-      5, 426,   -- 155: get_slot_direct(426)
-      8, 9,     -- 157: set_slot_direct(9)
+      5, 26,    -- 153: get_slot_direct(26)
+      5, 476,   -- 155: get_slot_direct(476)
+      8, 19,    -- 157: set_slot_direct(19)
       0,        -- 159: push_frame
-      5, 304,   -- 160: get_slot_direct(304)
+      5, 359,   -- 160: get_slot_direct(359)
       0,        -- 162: push_frame
-      5, 437,   -- 163: get_slot_direct(437)
-      8, 395,   -- 165: set_slot_direct(395)
+      5, 487,   -- 163: get_slot_direct(487)
+      8, 449,   -- 165: set_slot_direct(449)
       0,        -- 167: push_frame
-      5, 304,   -- 168: get_slot_direct(304)
+      5, 359,   -- 168: get_slot_direct(359)
       15,       -- 170: dup
-      5, 190,   -- 171: get_slot_direct(190)
-      1, 8,     -- 173: push_literal(8)
+      5, 251,   -- 171: get_slot_direct(251)
+      1, 31,    -- 173: push_literal(31)
       26,       -- 175: bi_add
-      8, 190,   -- 176: set_slot_direct(190)
+      8, 251,   -- 176: set_slot_direct(251)
       0,        -- 178: push_frame
-      5, 304,   -- 179: get_slot_direct(304)
+      5, 359,   -- 179: get_slot_direct(359)
       15,       -- 181: dup
-      7, 397,   -- 182: get_slot_direct_check(397)
+      7, 451,   -- 182: get_slot_direct_check(451)
       19,       -- 184: swap
-      1, 337,   -- 185: push_literal(337)
+      1, 392,   -- 185: push_literal(392)
       10, 1,    -- 187: invoke(1)
       14,       -- 189: pop
       0,        -- 190: push_frame
-      5, 304,   -- 191: get_slot_direct(304)
+      5, 359,   -- 191: get_slot_direct(359)
       15,       -- 193: dup
-      7, 397,   -- 194: get_slot_direct_check(397)
+      7, 451,   -- 194: get_slot_direct_check(451)
       19,       -- 196: swap
-      1, 342,   -- 197: push_literal(342)
+      1, 397,   -- 197: push_literal(397)
       0,        -- 199: push_frame
-      5, 304,   -- 200: get_slot_direct(304)
+      5, 359,   -- 200: get_slot_direct(359)
       15,       -- 202: dup
-      7, 232,   -- 203: get_slot_direct_check(232)
+      7, 293,   -- 203: get_slot_direct_check(293)
       19,       -- 205: swap
       1, 2,     -- 206: push_literal(2)
       10, 1,    -- 208: invoke(1)
       10, 2,    -- 210: invoke(2)
       14,       -- 212: pop
       0,        -- 213: push_frame
-      5, 20,    -- 214: get_slot_direct(20)
-      5, 18,    -- 216: get_slot_direct(18)
+      5, 26,    -- 214: get_slot_direct(26)
+      5, 39,    -- 216: get_slot_direct(39)
       15,       -- 218: dup
-      7, 75,    -- 219: get_slot_direct_check(75)
+      7, 94,    -- 219: get_slot_direct_check(94)
       19,       -- 221: swap
-      4, 146,   -- 222: new_function(146)
+      4, 152,   -- 222: new_function(152)
       10, 1,    -- 224: invoke(1)
       14,       -- 226: pop
       0,        -- 227: push_frame
-      5, 304,   -- 228: get_slot_direct(304)
+      5, 359,   -- 228: get_slot_direct(359)
       15,       -- 230: dup
-      7, 397,   -- 231: get_slot_direct_check(397)
+      7, 451,   -- 231: get_slot_direct_check(451)
       19,       -- 233: swap
-      1, 54,    -- 234: push_literal(54)
+      1, 71,    -- 234: push_literal(71)
       10, 1,    -- 236: invoke(1)
       14,       -- 238: pop
       0,        -- 239: push_frame
-      5, 304,   -- 240: get_slot_direct(304)
+      5, 359,   -- 240: get_slot_direct(359)
       15,       -- 242: dup
-      7, 422,   -- 243: get_slot_direct_check(422)
+      7, 472,   -- 243: get_slot_direct_check(472)
       19,       -- 245: swap
       0,        -- 246: push_frame
-      5, 20,    -- 247: get_slot_direct(20)
-      5, 19,    -- 249: get_slot_direct(19)
+      5, 26,    -- 247: get_slot_direct(26)
+      5, 40,    -- 249: get_slot_direct(40)
       10, 1,    -- 251: invoke(1)
       14,       -- 253: pop
       0,        -- 254: push_frame
-      5, 304,   -- 255: get_slot_direct(304)
-      5, 395,   -- 257: get_slot_direct(395)
-      5, 396,   -- 259: get_slot_direct(396)
+      5, 359,   -- 255: get_slot_direct(359)
+      5, 449,   -- 257: get_slot_direct(449)
+      5, 450,   -- 259: get_slot_direct(450)
       13, 284,  -- 261: jmp_unless(284)
       0,        -- 263: push_frame
-      5, 304,   -- 264: get_slot_direct(304)
+      5, 359,   -- 264: get_slot_direct(359)
       15,       -- 266: dup
-      7, 421,   -- 267: get_slot_direct_check(421)
+      7, 471,   -- 267: get_slot_direct_check(471)
       19,       -- 269: swap
       2,        -- 270: new_object
       15,       -- 271: dup
-      1, 296,   -- 272: push_literal(296)
-      8, 139,   -- 274: set_slot_direct(139)
+      1, 351,   -- 272: push_literal(351)
+      8, 209,   -- 274: set_slot_direct(209)
       15,       -- 276: dup
-      1, 200,   -- 277: push_literal(200)
-      8, 222,   -- 279: set_slot_direct(222)
+      1, 261,   -- 277: push_literal(261)
+      8, 283,   -- 279: set_slot_direct(283)
       10, 1,    -- 281: invoke(1)
       14,       -- 283: pop
       0,        -- 284: push_frame
-      5, 304,   -- 285: get_slot_direct(304)
+      5, 359,   -- 285: get_slot_direct(359)
       0,        -- 287: push_frame
-      5, 436,   -- 288: get_slot_direct(436)
-      8, 395,   -- 290: set_slot_direct(395)
+      5, 486,   -- 288: get_slot_direct(486)
+      8, 449,   -- 290: set_slot_direct(449)
       0,        -- 292: push_frame
-      5, 304,   -- 293: get_slot_direct(304)
+      5, 359,   -- 293: get_slot_direct(359)
       15,       -- 295: dup
-      5, 190,   -- 296: get_slot_direct(190)
-      1, 8,     -- 298: push_literal(8)
+      5, 251,   -- 296: get_slot_direct(251)
+      1, 31,    -- 298: push_literal(31)
       27,       -- 300: bi_sub
-      8, 190,   -- 301: set_slot_direct(190)
+      8, 251,   -- 301: set_slot_direct(251)
       0,        -- 303: push_frame
-      5, 304,   -- 304: get_slot_direct(304)
+      5, 359,   -- 304: get_slot_direct(359)
       15,       -- 306: dup
-      7, 397,   -- 307: get_slot_direct_check(397)
+      7, 451,   -- 307: get_slot_direct_check(451)
       19,       -- 309: swap
-      1, 341,   -- 310: push_literal(341)
+      1, 396,   -- 310: push_literal(396)
       0,        -- 312: push_frame
-      5, 437,   -- 313: get_slot_direct(437)
-      5, 226,   -- 315: get_slot_direct(226)
+      5, 487,   -- 313: get_slot_direct(487)
+      5, 287,   -- 315: get_slot_direct(287)
       10, 2,    -- 317: invoke(2)
       14,       -- 319: pop
       1, 0,     -- 320: push_literal(0)
@@ -13768,77 +14665,77 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 146,
+    id = 152,
     nargs = 2,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 68,    -- 8: set_slot_direct(68)
+      8, 87,    -- 8: set_slot_direct(87)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 37,    -- 15: set_slot_direct(37)
+      8, 53,    -- 15: set_slot_direct(53)
       14,       -- 17: pop
       0,        -- 18: push_frame
-      5, 304,   -- 19: get_slot_direct(304)
+      5, 359,   -- 19: get_slot_direct(359)
       15,       -- 21: dup
-      7, 397,   -- 22: get_slot_direct_check(397)
+      7, 451,   -- 22: get_slot_direct_check(451)
       19,       -- 24: swap
-      1, 352,   -- 25: push_literal(352)
+      1, 407,   -- 25: push_literal(407)
       10, 1,    -- 27: invoke(1)
       14,       -- 29: pop
       0,        -- 30: push_frame
-      5, 304,   -- 31: get_slot_direct(304)
+      5, 359,   -- 31: get_slot_direct(359)
       15,       -- 33: dup
-      7, 397,   -- 34: get_slot_direct_check(397)
+      7, 451,   -- 34: get_slot_direct_check(451)
       19,       -- 36: swap
-      1, 342,   -- 37: push_literal(342)
+      1, 397,   -- 37: push_literal(397)
       0,        -- 39: push_frame
-      5, 304,   -- 40: get_slot_direct(304)
+      5, 359,   -- 40: get_slot_direct(359)
       15,       -- 42: dup
-      7, 232,   -- 43: get_slot_direct_check(232)
+      7, 293,   -- 43: get_slot_direct_check(293)
       19,       -- 45: swap
       0,        -- 46: push_frame
-      5, 37,    -- 47: get_slot_direct(37)
+      5, 53,    -- 47: get_slot_direct(53)
       10, 1,    -- 49: invoke(1)
       10, 2,    -- 51: invoke(2)
       14,       -- 53: pop
       0,        -- 54: push_frame
-      5, 304,   -- 55: get_slot_direct(304)
+      5, 359,   -- 55: get_slot_direct(359)
       15,       -- 57: dup
-      7, 397,   -- 58: get_slot_direct_check(397)
+      7, 451,   -- 58: get_slot_direct_check(451)
       19,       -- 60: swap
-      1, 337,   -- 61: push_literal(337)
+      1, 392,   -- 61: push_literal(392)
       10, 1,    -- 63: invoke(1)
       14,       -- 65: pop
       0,        -- 66: push_frame
-      5, 304,   -- 67: get_slot_direct(304)
+      5, 359,   -- 67: get_slot_direct(359)
       15,       -- 69: dup
-      7, 397,   -- 70: get_slot_direct_check(397)
+      7, 451,   -- 70: get_slot_direct_check(451)
       19,       -- 72: swap
-      1, 356,   -- 73: push_literal(356)
+      1, 411,   -- 73: push_literal(411)
       10, 1,    -- 75: invoke(1)
       14,       -- 77: pop
       0,        -- 78: push_frame
-      5, 304,   -- 79: get_slot_direct(304)
+      5, 359,   -- 79: get_slot_direct(359)
       15,       -- 81: dup
-      7, 397,   -- 82: get_slot_direct_check(397)
+      7, 451,   -- 82: get_slot_direct_check(451)
       19,       -- 84: swap
-      1, 345,   -- 85: push_literal(345)
+      1, 400,   -- 85: push_literal(400)
       0,        -- 87: push_frame
-      5, 304,   -- 88: get_slot_direct(304)
+      5, 359,   -- 88: get_slot_direct(359)
       15,       -- 90: dup
-      7, 232,   -- 91: get_slot_direct_check(232)
+      7, 293,   -- 91: get_slot_direct_check(293)
       19,       -- 93: swap
       0,        -- 94: push_frame
-      5, 68,    -- 95: get_slot_direct(68)
-      5, 139,   -- 97: get_slot_direct(139)
+      5, 87,    -- 95: get_slot_direct(87)
+      5, 209,   -- 97: get_slot_direct(209)
       10, 1,    -- 99: invoke(1)
       10, 2,    -- 101: invoke(2)
       14,       -- 103: pop
@@ -13848,210 +14745,210 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "bcompile"
     name = jsval.newString("bcompile"),
-    id = 147,
+    id = 153,
     nargs = 2,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 438,   -- 8: set_slot_direct(438)
+      8, 488,   -- 8: set_slot_direct(488)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 380,   -- 15: set_slot_direct(380)
+      8, 435,   -- 15: set_slot_direct(435)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 304,   -- 21: set_slot_direct(304)
+      8, 359,   -- 21: set_slot_direct(359)
       0,        -- 23: push_frame
       0,        -- 24: push_frame
-      5, 376,   -- 25: get_slot_direct(376)
+      5, 431,   -- 25: get_slot_direct(431)
       0,        -- 27: push_frame
-      5, 20,    -- 28: get_slot_direct(20)
+      5, 26,    -- 28: get_slot_direct(26)
       0,        -- 30: push_frame
-      5, 380,   -- 31: get_slot_direct(380)
+      5, 435,   -- 31: get_slot_direct(435)
       10, 1,    -- 33: invoke(1)
-      8, 304,   -- 35: set_slot_direct(304)
+      8, 359,   -- 35: set_slot_direct(359)
       0,        -- 37: push_frame
-      5, 304,   -- 38: get_slot_direct(304)
+      5, 359,   -- 38: get_slot_direct(359)
       0,        -- 40: push_frame
-      5, 304,   -- 41: get_slot_direct(304)
+      5, 359,   -- 41: get_slot_direct(359)
       15,       -- 43: dup
-      7, 341,   -- 44: get_slot_direct_check(341)
+      7, 396,   -- 44: get_slot_direct_check(396)
       19,       -- 46: swap
-      1, 6,     -- 47: push_literal(6)
+      1, 18,    -- 47: push_literal(18)
       10, 1,    -- 49: invoke(1)
-      8, 395,   -- 51: set_slot_direct(395)
+      8, 449,   -- 51: set_slot_direct(449)
       0,        -- 53: push_frame
-      5, 304,   -- 54: get_slot_direct(304)
+      5, 359,   -- 54: get_slot_direct(359)
       15,       -- 56: dup
-      7, 422,   -- 57: get_slot_direct_check(422)
+      7, 472,   -- 57: get_slot_direct_check(472)
       19,       -- 59: swap
       0,        -- 60: push_frame
-      5, 438,   -- 61: get_slot_direct(438)
+      5, 488,   -- 61: get_slot_direct(488)
       10, 1,    -- 63: invoke(1)
       14,       -- 65: pop
       0,        -- 66: push_frame
-      5, 304,   -- 67: get_slot_direct(304)
-      5, 395,   -- 69: get_slot_direct(395)
-      5, 396,   -- 71: get_slot_direct(396)
+      5, 359,   -- 67: get_slot_direct(359)
+      5, 449,   -- 69: get_slot_direct(449)
+      5, 450,   -- 71: get_slot_direct(450)
       13, 96,   -- 73: jmp_unless(96)
       0,        -- 75: push_frame
-      5, 304,   -- 76: get_slot_direct(304)
+      5, 359,   -- 76: get_slot_direct(359)
       15,       -- 78: dup
-      7, 421,   -- 79: get_slot_direct_check(421)
+      7, 471,   -- 79: get_slot_direct_check(471)
       19,       -- 81: swap
       2,        -- 82: new_object
       15,       -- 83: dup
-      1, 296,   -- 84: push_literal(296)
-      8, 139,   -- 86: set_slot_direct(139)
+      1, 351,   -- 84: push_literal(351)
+      8, 209,   -- 86: set_slot_direct(209)
       15,       -- 88: dup
-      1, 200,   -- 89: push_literal(200)
-      8, 222,   -- 91: set_slot_direct(222)
+      1, 261,   -- 89: push_literal(261)
+      8, 283,   -- 91: set_slot_direct(283)
       10, 1,    -- 93: invoke(1)
       14,       -- 95: pop
       0,        -- 96: push_frame
-      5, 304,   -- 97: get_slot_direct(304)
+      5, 359,   -- 97: get_slot_direct(359)
       11        -- 99: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 148,
+    id = 154,
     nargs = 0,
     max_stack = 1,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       14,       -- 3: pop
-      1, 441,   -- 4: push_literal(441)
+      1, 491,   -- 4: push_literal(491)
       11        -- 6: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 149,
+    id = 155,
     nargs = 3,
     max_stack = 3,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 187,   -- 8: set_slot_direct(187)
+      8, 248,   -- 8: set_slot_direct(248)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 370,   -- 15: set_slot_direct(370)
+      8, 425,   -- 15: set_slot_direct(425)
       15,       -- 17: dup
-      5, 108,   -- 18: get_slot_direct(108)
+      5, 130,   -- 18: get_slot_direct(130)
       0,        -- 20: push_frame
       19,       -- 21: swap
-      8, 443,   -- 22: set_slot_direct(443)
+      8, 493,   -- 22: set_slot_direct(493)
       14,       -- 24: pop
       0,        -- 25: push_frame
       1, 0,     -- 26: push_literal(0)
-      8, 442,   -- 28: set_slot_direct(442)
+      8, 492,   -- 28: set_slot_direct(492)
       0,        -- 30: push_frame
-      4, 150,   -- 31: new_function(150)
-      8, 442,   -- 33: set_slot_direct(442)
+      4, 156,   -- 31: new_function(156)
+      8, 492,   -- 33: set_slot_direct(492)
       0,        -- 35: push_frame
-      5, 442,   -- 36: get_slot_direct(442)
-      4, 151,   -- 38: new_function(151)
-      8, 447,   -- 40: set_slot_direct(447)
+      5, 492,   -- 36: get_slot_direct(492)
+      4, 157,   -- 38: new_function(157)
+      8, 497,   -- 40: set_slot_direct(497)
       0,        -- 42: push_frame
-      5, 442,   -- 43: get_slot_direct(442)
+      5, 492,   -- 43: get_slot_direct(492)
       11        -- 45: return
     }
   },
   ifunc.Function:new{ -- "compile_from_source"
     name = jsval.newString("compile_from_source"),
-    id = 150,
+    id = 156,
     nargs = 2,
     max_stack = 5,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 299,   -- 8: set_slot_direct(299)
+      8, 354,   -- 8: set_slot_direct(354)
       15,       -- 10: dup
-      5, 8,     -- 11: get_slot_direct(8)
+      5, 31,    -- 11: get_slot_direct(31)
       0,        -- 13: push_frame
       19,       -- 14: swap
-      8, 444,   -- 15: set_slot_direct(444)
+      8, 494,   -- 15: set_slot_direct(494)
       14,       -- 17: pop
       0,        -- 18: push_frame
       1, 0,     -- 19: push_literal(0)
-      8, 310,   -- 21: set_slot_direct(310)
+      8, 365,   -- 21: set_slot_direct(365)
       0,        -- 23: push_frame
       1, 0,     -- 24: push_literal(0)
-      8, 321,   -- 26: set_slot_direct(321)
+      8, 376,   -- 26: set_slot_direct(376)
       0,        -- 28: push_frame
       1, 0,     -- 29: push_literal(0)
-      8, 57,    -- 31: set_slot_direct(57)
+      8, 75,    -- 31: set_slot_direct(75)
       0,        -- 33: push_frame
       0,        -- 34: push_frame
-      5, 299,   -- 35: get_slot_direct(299)
+      5, 354,   -- 35: get_slot_direct(354)
       15,       -- 37: dup
       20,       -- 38: un_not
       13, 44,   -- 39: jmp_unless(44)
       14,       -- 41: pop
-      1, 445,   -- 42: push_literal(445)
-      8, 299,   -- 44: set_slot_direct(299)
+      1, 495,   -- 42: push_literal(495)
+      8, 354,   -- 44: set_slot_direct(354)
       0,        -- 46: push_frame
       0,        -- 47: push_frame
-      5, 187,   -- 48: get_slot_direct(187)
+      5, 248,   -- 48: get_slot_direct(248)
       0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
+      5, 26,    -- 51: get_slot_direct(26)
       0,        -- 53: push_frame
-      5, 299,   -- 54: get_slot_direct(299)
+      5, 354,   -- 54: get_slot_direct(354)
       0,        -- 56: push_frame
-      5, 443,   -- 57: get_slot_direct(443)
+      5, 493,   -- 57: get_slot_direct(493)
       10, 2,    -- 59: invoke(2)
-      8, 310,   -- 61: set_slot_direct(310)
+      8, 365,   -- 61: set_slot_direct(365)
       0,        -- 63: push_frame
       0,        -- 64: push_frame
-      5, 370,   -- 65: get_slot_direct(370)
+      5, 425,   -- 65: get_slot_direct(425)
       0,        -- 67: push_frame
-      5, 20,    -- 68: get_slot_direct(20)
+      5, 26,    -- 68: get_slot_direct(26)
       0,        -- 70: push_frame
-      5, 310,   -- 71: get_slot_direct(310)
-      1, 94,    -- 73: push_literal(94)
+      5, 365,   -- 71: get_slot_direct(365)
+      1, 115,   -- 73: push_literal(115)
       10, 2,    -- 75: invoke(2)
-      8, 321,   -- 77: set_slot_direct(321)
+      8, 376,   -- 77: set_slot_direct(376)
       0,        -- 79: push_frame
       0,        -- 80: push_frame
-      5, 444,   -- 81: get_slot_direct(444)
+      5, 494,   -- 81: get_slot_direct(494)
       13, 90,   -- 83: jmp_unless(90)
       0,        -- 85: push_frame
-      5, 321,   -- 86: get_slot_direct(321)
+      5, 376,   -- 86: get_slot_direct(376)
       12, 99,   -- 88: jmp(99)
       0,        -- 90: push_frame
-      5, 321,   -- 91: get_slot_direct(321)
+      5, 376,   -- 91: get_slot_direct(376)
       15,       -- 93: dup
-      7, 412,   -- 94: get_slot_direct_check(412)
+      7, 462,   -- 94: get_slot_direct_check(462)
       19,       -- 96: swap
       10, 0,    -- 97: invoke(0)
-      8, 57,    -- 99: set_slot_direct(57)
+      8, 75,    -- 99: set_slot_direct(75)
       0,        -- 101: push_frame
-      5, 57,    -- 102: get_slot_direct(57)
+      5, 75,    -- 102: get_slot_direct(75)
       11        -- 104: return
     }
   },
   ifunc.Function:new{ -- ".make_repl"
     name = jsval.newString(".make_repl"),
-    id = 151,
+    id = 157,
     nargs = 0,
     max_stack = 2,
     bytecode = {
@@ -14060,61 +14957,61 @@ startup.functions = {
       14,       -- 3: pop
       0,        -- 4: push_frame
       1, 0,     -- 5: push_literal(0)
-      8, 304,   -- 7: set_slot_direct(304)
+      8, 359,   -- 7: set_slot_direct(359)
       0,        -- 9: push_frame
-      1, 21,    -- 10: push_literal(21)
-      8, 304,   -- 12: set_slot_direct(304)
-      4, 152,   -- 14: new_function(152)
+      1, 41,    -- 10: push_literal(41)
+      8, 359,   -- 12: set_slot_direct(359)
+      4, 158,   -- 14: new_function(158)
       11        -- 16: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 152,
+    id = 158,
     nargs = 1,
     max_stack = 6,
     bytecode = {
       0,        -- 0: push_frame
       5, 2,     -- 1: get_slot_direct(2)
       15,       -- 3: dup
-      5, 6,     -- 4: get_slot_direct(6)
+      5, 18,    -- 4: get_slot_direct(18)
       0,        -- 6: push_frame
       19,       -- 7: swap
-      8, 299,   -- 8: set_slot_direct(299)
+      8, 354,   -- 8: set_slot_direct(354)
       14,       -- 10: pop
       0,        -- 11: push_frame
       1, 0,     -- 12: push_literal(0)
-      8, 446,   -- 14: set_slot_direct(446)
+      8, 496,   -- 14: set_slot_direct(496)
       0,        -- 16: push_frame
       0,        -- 17: push_frame
-      5, 187,   -- 18: get_slot_direct(187)
+      5, 248,   -- 18: get_slot_direct(248)
       15,       -- 20: dup
-      7, 315,   -- 21: get_slot_direct_check(315)
+      7, 370,   -- 21: get_slot_direct_check(370)
       19,       -- 23: swap
       0,        -- 24: push_frame
-      5, 304,   -- 25: get_slot_direct(304)
+      5, 359,   -- 25: get_slot_direct(359)
       0,        -- 27: push_frame
-      5, 299,   -- 28: get_slot_direct(299)
+      5, 354,   -- 28: get_slot_direct(354)
       0,        -- 30: push_frame
-      5, 443,   -- 31: get_slot_direct(443)
+      5, 493,   -- 31: get_slot_direct(493)
       10, 3,    -- 33: invoke(3)
-      8, 446,   -- 35: set_slot_direct(446)
+      8, 496,   -- 35: set_slot_direct(496)
       0,        -- 37: push_frame
-      5, 93,    -- 38: get_slot_direct(93)
+      5, 114,   -- 38: get_slot_direct(114)
       0,        -- 40: push_frame
-      5, 446,   -- 41: get_slot_direct(446)
-      5, 304,   -- 43: get_slot_direct(304)
-      8, 304,   -- 45: set_slot_direct(304)
+      5, 496,   -- 41: get_slot_direct(496)
+      5, 359,   -- 43: get_slot_direct(359)
+      8, 359,   -- 45: set_slot_direct(359)
       0,        -- 47: push_frame
-      5, 370,   -- 48: get_slot_direct(370)
+      5, 425,   -- 48: get_slot_direct(425)
       0,        -- 50: push_frame
-      5, 20,    -- 51: get_slot_direct(20)
+      5, 26,    -- 51: get_slot_direct(26)
       0,        -- 53: push_frame
-      5, 446,   -- 54: get_slot_direct(446)
-      5, 310,   -- 56: get_slot_direct(310)
+      5, 496,   -- 54: get_slot_direct(496)
+      5, 365,   -- 56: get_slot_direct(365)
       10, 1,    -- 58: invoke(1)
       15,       -- 60: dup
-      7, 412,   -- 61: get_slot_direct_check(412)
+      7, 462,   -- 61: get_slot_direct_check(462)
       19,       -- 63: swap
       10, 0,    -- 64: invoke(0)
       11        -- 66: return
@@ -14126,451 +15023,501 @@ startup.literals = {
   jsval.Undefined, -- 0
   jsval.newString("__modules__"), -- 1
   jsval.newString("arguments"), -- 2
-  jsval.newString("makeNonEnumerable"), -- 3
-  jsval.newString("Object"), -- 4
-  jsval.newString("defineProperty"), -- 5
-  jsval.newNumber(0), -- 6
-  jsval.newString("obj"), -- 7
-  jsval.newNumber(1), -- 8
-  jsval.newString("name"), -- 9
-  jsval.False, -- 10
-  jsval.newString("enumerable"), -- 11
-  jsval.newString("String"), -- 12
-  jsval.newString("prototype"), -- 13
-  jsval.newString("position"), -- 14
-  jsval.newString("string"), -- 15
-  jsval.newString("size"), -- 16
-  jsval.newString("index"), -- 17
-  jsval.newString("first"), -- 18
-  jsval.newString("second"), -- 19
-  jsval.newString("this"), -- 20
-  jsval.Null, -- 21
-  jsval.newString("Throw"), -- 22
-  jsval.newString("TypeError"), -- 23
-  jsval.newString("length"), -- 24
-  jsval.newString("Number"), -- 25
-  jsval.newString("isNaN"), -- 26
-  jsval.newString("charCodeAt"), -- 27
-  jsval.newNumber(55296), -- 28
-  jsval.newNumber(56319), -- 29
-  jsval.newNumber(56320), -- 30
-  jsval.newNumber(57343), -- 31
-  jsval.newNumber(1024), -- 32
-  jsval.newNumber(65536), -- 33
-  jsval.newString("codePointAt"), -- 34
-  jsval.newString("searchValue"), -- 35
-  jsval.newString("from"), -- 36
-  jsval.newString("i"), -- 37
-  jsval.newString("j"), -- 38
-  jsval.newString("charAt"), -- 39
-  jsval.newString("indexOf"), -- 40
-  jsval.newString("beginIndex"), -- 41
-  jsval.newString("endIndex"), -- 42
-  jsval.newString("len"), -- 43
-  jsval.newString("substring"), -- 44
-  jsval.newString("slice"), -- 45
-  jsval.newString("str"), -- 46
-  jsval.newString("whitespace"), -- 47
-  jsval.newString(" \010\013\009\012\011\194\160\226\128\128\226\128\129\226\128\130\226\128\131\226\128\132\226\128\133\226\128\134\226\128\135\226\128\136\226\128\137\226\128\138\226\128\139\226\128\168\226\128\169\227\128\128"), -- 48
-  jsval.newString(""), -- 49
-  jsval.newString("trim"), -- 50
-  jsval.newString("Array"), -- 51
-  jsval.newString("push"), -- 52
-  jsval.newString("last"), -- 53
-  jsval.newString("pop"), -- 54
-  jsval.newString("sep"), -- 55
-  jsval.newString("k"), -- 56
-  jsval.newString("result"), -- 57
-  jsval.newString(","), -- 58
-  jsval.newString("elem"), -- 59
-  jsval.newString("join"), -- 60
-  jsval.newString("begin"), -- 61
-  jsval.newString("end"), -- 62
-  jsval.newString("upTo"), -- 63
-  jsval.newString("cloned"), -- 64
-  jsval.newString("start"), -- 65
-  jsval.newString("undefined"), -- 66
-  jsval.newString("number"), -- 67
-  jsval.newString("e"), -- 68
-  jsval.newString("object"), -- 69
-  jsval.newString("hasOwnProperty"), -- 70
-  jsval.newString("concat"), -- 71
-  jsval.newString("block"), -- 72
-  jsval.newString("thisObject"), -- 73
-  jsval.newString("call"), -- 74
-  jsval.newString("forEach"), -- 75
-  jsval.newString("fun"), -- 76
-  jsval.newString("res"), -- 77
-  jsval.newString("thisp"), -- 78
-  jsval.newString("map"), -- 79
-  jsval.newString("Function"), -- 80
-  jsval.newString("method"), -- 81
-  jsval.newString("addHasInstance"), -- 82
-  jsval.newString("nthis"), -- 83
-  jsval.newString("nargs"), -- 84
-  jsval.newString("f"), -- 85
-  jsval.newString("v"), -- 86
-  jsval.newString("hasInstance"), -- 87
-  jsval.newString("apply"), -- 88
-  jsval.newString("bind0"), -- 89
-  jsval.newString("bindN"), -- 90
-  jsval.newString("bind"), -- 91
-  jsval.newString("o"), -- 92
-  jsval.newString("__proto__"), -- 93
-  jsval.True, -- 94
-  jsval.newString("New"), -- 95
-  jsval.newString("create"), -- 96
-  jsval.newString("function "), -- 97
-  jsval.newString("() { [native code] }"), -- 98
-  jsval.newString("toString"), -- 99
-  jsval.newString("Boolean"), -- 100
-  jsval.newString("valueOf"), -- 101
-  jsval.newString("true"), -- 102
-  jsval.newString("false"), -- 103
-  jsval.newString("toLocaleString"), -- 104
-  jsval.newString("while"), -- 105
-  jsval.newString("_this_"), -- 106
-  jsval.newString("cond"), -- 107
-  jsval.newNumber(2), -- 108
-  jsval.newString("body"), -- 109
-  jsval.newString("ifElse"), -- 110
-  jsval.newString("ifTrue"), -- 111
-  jsval.newString("ifFalse"), -- 112
-  jsval.newString("deps"), -- 113
-  jsval.newString("init_func"), -- 114
-  jsval.newString("d"), -- 115
-  jsval.newString("m"), -- 116
-  jsval.newString("_define"), -- 117
-  jsval.newString("define"), -- 118
-  jsval.newString("tokenize"), -- 119
-  jsval.newString("text!tokenize.js"), -- 120
-  jsval.newString("tokenize_source"), -- 121
-  jsval.newString("prefix"), -- 122
-  jsval.newString("suffix"), -- 123
-  jsval.newNumber(3), -- 124
-  jsval.newString("DEBUG"), -- 125
-  jsval.newString("c"), -- 126
-  jsval.newString("n"), -- 127
-  jsval.newString("q"), -- 128
-  jsval.newString("error"), -- 129
-  jsval.newString("make"), -- 130
-  jsval.newString("message"), -- 131
-  jsval.newString("t"), -- 132
-  jsval.newString("Syntax Error"), -- 133
-  jsval.newString("to"), -- 134
-  jsval.newString(" ["), -- 135
-  jsval.newString("-"), -- 136
-  jsval.newString("]"), -- 137
-  jsval.newString("type"), -- 138
-  jsval.newString("value"), -- 139
-  jsval.newString("<>+-&"), -- 140
-  jsval.newString("=>&:"), -- 141
-  jsval.newString(" "), -- 142
-  jsval.newString("a"), -- 143
-  jsval.newString("z"), -- 144
-  jsval.newString("A"), -- 145
-  jsval.newString("Z"), -- 146
-  jsval.newString("$"), -- 147
-  jsval.newString("_"), -- 148
-  jsval.newString("0"), -- 149
-  jsval.newString("9"), -- 150
-  jsval.newString("."), -- 151
-  jsval.newString("isHex"), -- 152
-  jsval.newString("x"), -- 153
-  jsval.newString("F"), -- 154
-  jsval.newString("E"), -- 155
-  jsval.newString("+"), -- 156
-  jsval.newString("Bad exponent"), -- 157
-  jsval.newString("Bad number"), -- 158
-  jsval.newString("isFinite"), -- 159
-  jsval.newNumber(16), -- 160
-  jsval.newNumber(10), -- 161
-  jsval.newString("base"), -- 162
-  jsval.newString("'"), -- 163
-  jsval.newString("\034"), -- 164
-  jsval.newString("\010"), -- 165
-  jsval.newString("\013"), -- 166
-  jsval.newString("Unterminated string."), -- 167
-  jsval.newString("Control character in string."), -- 168
-  jsval.newString("\092"), -- 169
-  jsval.newString("Unterminated string"), -- 170
-  jsval.newString("b"), -- 171
-  jsval.newString("\008"), -- 172
-  jsval.newString("\012"), -- 173
-  jsval.newString("r"), -- 174
-  jsval.newString("\009"), -- 175
-  jsval.newString("u"), -- 176
-  jsval.newString("parseInt"), -- 177
-  jsval.newNumber(4), -- 178
-  jsval.newString("fromCharCode"), -- 179
-  jsval.newString("/"), -- 180
-  jsval.newString("*"), -- 181
-  jsval.newString("operator"), -- 182
-  jsval.newString("__module_name__"), -- 183
-  jsval.newString("make_tokenize"), -- 184
-  jsval.newString("__module_init__"), -- 185
-  jsval.newString("__module_source__"), -- 186
-  jsval.newString("parse"), -- 187
-  jsval.newString("text!parse.js"), -- 188
-  jsval.newString("parse_source"), -- 189
-  jsval.newString("scope"), -- 190
-  jsval.newString("symbol_table"), -- 191
-  jsval.newString("token"), -- 192
-  jsval.newString("tokens"), -- 193
-  jsval.newString("token_nr"), -- 194
-  jsval.newString("itself"), -- 195
-  jsval.newString("original_scope"), -- 196
-  jsval.newString("new_scope"), -- 197
-  jsval.newString("advance"), -- 198
-  jsval.newString("expression"), -- 199
-  jsval.newString("statement"), -- 200
-  jsval.newString("hoist_var"), -- 201
-  jsval.newString("statements"), -- 202
-  jsval.newString("original_symbol"), -- 203
-  jsval.newString("symbol"), -- 204
-  jsval.newString("constant"), -- 205
-  jsval.newString("infix"), -- 206
-  jsval.newString("infixr"), -- 207
-  jsval.newString("assignment"), -- 208
-  jsval.newString("stmt"), -- 209
-  jsval.newString("parse_repl"), -- 210
-  jsval.newString("def"), -- 211
-  jsval.newString("reserved"), -- 212
-  jsval.newString("Already reserved."), -- 213
-  jsval.newString("Already defined."), -- 214
-  jsval.newString("nud"), -- 215
-  jsval.newString("led"), -- 216
-  jsval.newString("std"), -- 217
-  jsval.newString("lbp"), -- 218
-  jsval.newString("parent"), -- 219
-  jsval.newString("(name)"), -- 220
-  jsval.newString("find"), -- 221
-  jsval.newString("arity"), -- 222
-  jsval.newString("reserve"), -- 223
-  jsval.newString("s"), -- 224
-  jsval.newString("level"), -- 225
-  jsval.newString("id"), -- 226
-  jsval.newString("Expected '"), -- 227
-  jsval.newString("'."), -- 228
-  jsval.newString("(end)"), -- 229
-  jsval.newString("Unknown operator: "), -- 230
-  jsval.newString("(literal)"), -- 231
-  jsval.newString("literal"), -- 232
-  jsval.newString("Unexpected token."), -- 233
-  jsval.newString("rbp"), -- 234
-  jsval.newString("left"), -- 235
-  jsval.newString("("), -- 236
-  jsval.newString("function"), -- 237
-  jsval.newString("Bad expression statement."), -- 238
-  jsval.newString(";"), -- 239
-  jsval.newString("stmt_list"), -- 240
-  jsval.newString("var"), -- 241
-  jsval.newString("}"), -- 242
-  jsval.newString("{"), -- 243
-  jsval.newString("Undefined: "), -- 244
-  jsval.newString("Missing operator."), -- 245
-  jsval.newString("bp"), -- 246
-  jsval.newString("binary"), -- 247
-  jsval.newString("["), -- 248
-  jsval.newString("Bad lvalue."), -- 249
-  jsval.newNumber(9), -- 250
-  jsval.newNumber(70), -- 251
-  jsval.newString("unary"), -- 252
-  jsval.newString(":"), -- 253
-  jsval.newString(")"), -- 254
-  jsval.newString("else"), -- 255
-  jsval.newString("null"), -- 256
-  jsval.newString("NaN"), -- 257
-  jsval.newNumber(0/0), -- 258
-  jsval.newString("Infinity"), -- 259
-  jsval.newNumber(1/0), -- 260
-  jsval.newString("="), -- 261
-  jsval.newString("+="), -- 262
-  jsval.newString("-="), -- 263
-  jsval.newString("*="), -- 264
-  jsval.newString("/="), -- 265
-  jsval.newString("?"), -- 266
-  jsval.newNumber(20), -- 267
-  jsval.newString("third"), -- 268
-  jsval.newString("ternary"), -- 269
-  jsval.newString("||"), -- 270
-  jsval.newNumber(30), -- 271
-  jsval.newString("&&"), -- 272
-  jsval.newNumber(35), -- 273
-  jsval.newString("==="), -- 274
-  jsval.newNumber(40), -- 275
-  jsval.newString("!=="), -- 276
-  jsval.newString("<"), -- 277
-  jsval.newNumber(45), -- 278
-  jsval.newString("<="), -- 279
-  jsval.newString(">"), -- 280
-  jsval.newString(">="), -- 281
-  jsval.newNumber(50), -- 282
-  jsval.newNumber(60), -- 283
-  jsval.newNumber(80), -- 284
-  jsval.newString("Expected a property name."), -- 285
-  jsval.newNumber(75), -- 286
-  jsval.newString("Expected a variable name."), -- 287
-  jsval.newString("!"), -- 288
-  jsval.newString("typeof"), -- 289
-  jsval.newString("Expected a parameter name."), -- 290
-  jsval.newString("use strict"), -- 291
-  jsval.newString("Bad property name."), -- 292
-  jsval.newString("key"), -- 293
-  jsval.newString("Expected a new variable name."), -- 294
-  jsval.newString("if"), -- 295
-  jsval.newString("return"), -- 296
-  jsval.newString("Unreachable statement."), -- 297
-  jsval.newString("break"), -- 298
-  jsval.newString("source"), -- 299
-  jsval.newString("top_level"), -- 300
-  jsval.newString("debug"), -- 301
-  jsval.newString("=<>!+-*&|/%^"), -- 302
-  jsval.newString("=<>&|"), -- 303
-  jsval.newString("state"), -- 304
-  jsval.newString("TOKEN_PREFIX"), -- 305
-  jsval.newString("TOKEN_SUFFIX"), -- 306
-  jsval.newString("old_scope"), -- 307
-  jsval.newString("nstate"), -- 308
-  jsval.newString("repl_tokens"), -- 309
-  jsval.newString("tree"), -- 310
-  jsval.newString("Try"), -- 311
-  jsval.newString("ee"), -- 312
-  jsval.newString("make_parse"), -- 313
-  jsval.newString("__module_deps__"), -- 314
-  jsval.newString("repl"), -- 315
-  jsval.newString("bytecode-table"), -- 316
-  jsval.newString("text!bytecode-table.js"), -- 317
-  jsval.newString("bytecode_table_source"), -- 318
-  jsval.newString("bytecodes_by_num"), -- 319
-  jsval.newString("bytecodes_by_name"), -- 320
-  jsval.newString("bc"), -- 321
-  jsval.newString("print_literal"), -- 322
-  jsval.newString("print_label"), -- 323
-  jsval.newString("args"), -- 324
-  jsval.newString("stackpop"), -- 325
-  jsval.newString("stackpush"), -- 326
-  jsval.newString("printargs"), -- 327
-  jsval.newString("nbc"), -- 328
-  jsval.newString("bytecode"), -- 329
-  jsval.newString("pc"), -- 330
-  jsval.newString("idx"), -- 331
-  jsval.newString(" /* "), -- 332
-  jsval.newString("literals"), -- 333
-  jsval.newString(" */"), -- 334
-  jsval.newString("lbl"), -- 335
-  jsval.newString("label"), -- 336
-  jsval.newString("push_frame"), -- 337
-  jsval.newString("push_literal"), -- 338
-  jsval.newString("new_object"), -- 339
-  jsval.newString("new_array"), -- 340
-  jsval.newString("new_function"), -- 341
-  jsval.newString("get_slot_direct"), -- 342
-  jsval.newString("get_slot_indirect"), -- 343
-  jsval.newString("get_slot_direct_check"), -- 344
-  jsval.newString("set_slot_direct"), -- 345
-  jsval.newString("set_slot_indirect"), -- 346
-  jsval.newString("invoke"), -- 347
-  jsval.newString("opname"), -- 348
-  jsval.newString("arg0"), -- 349
-  jsval.newString("jmp"), -- 350
-  jsval.newString("jmp_unless"), -- 351
-  jsval.newString("dup"), -- 352
-  jsval.newString("2dup"), -- 353
-  jsval.newString("over"), -- 354
-  jsval.newString("over2"), -- 355
-  jsval.newString("swap"), -- 356
-  jsval.newString("un_not"), -- 357
-  jsval.newString("un_minus"), -- 358
-  jsval.newString("un_typeof"), -- 359
-  jsval.newString("bi_eq"), -- 360
-  jsval.newString("bi_gt"), -- 361
-  jsval.newString("bi_gte"), -- 362
-  jsval.newString("bi_add"), -- 363
-  jsval.newString("bi_sub"), -- 364
-  jsval.newString("bi_mul"), -- 365
-  jsval.newString("bi_div"), -- 366
-  jsval.newString("make_bytecode_table"), -- 367
-  jsval.newString("for_num"), -- 368
-  jsval.newString("for_name"), -- 369
-  jsval.newString("bcompile"), -- 370
-  jsval.newString("text!bcompile.js"), -- 371
-  jsval.newString("bcompile_source"), -- 372
-  jsval.newString("bytecode_table"), -- 373
-  jsval.newString("assert"), -- 374
-  jsval.newString("dispatch"), -- 375
-  jsval.newString("mkstate"), -- 376
-  jsval.newString("console"), -- 377
-  jsval.newString("log"), -- 378
-  jsval.newString("ASSERTION FAILURE"), -- 379
-  jsval.newString("dont_desugar_frame_get"), -- 380
-  jsval.newString("encode_uint"), -- 381
-  jsval.newString("encode_str"), -- 382
-  jsval.newString("functions"), -- 383
-  jsval.newString("desugar_frame_get"), -- 384
-  jsval.newString("val"), -- 385
-  jsval.newString("nn"), -- 386
-  jsval.newString("l"), -- 387
-  jsval.newString("newf"), -- 388
-  jsval.newString("max_stack"), -- 389
-  jsval.newString("stack_depth"), -- 390
-  jsval.newString("loop_label_stack"), -- 391
-  jsval.newString("bytecode_op"), -- 392
-  jsval.newString("op"), -- 393
-  jsval.newString("cf"), -- 394
-  jsval.newString("current_func"), -- 395
-  jsval.newString("can_fall_off"), -- 396
-  jsval.newString("emit"), -- 397
-  jsval.newString("func_id"), -- 398
-  jsval.newString(": "), -- 399
-  jsval.newString("decompile"), -- 400
-  jsval.newString("out"), -- 401
-  jsval.newString("msb"), -- 402
-  jsval.newString("lsb"), -- 403
-  jsval.newNumber(128), -- 404
-  jsval.newString("Math"), -- 405
-  jsval.newString("floor"), -- 406
-  jsval.newString("lv"), -- 407
-  jsval.newString("boolean"), -- 408
-  jsval.newNumber(5), -- 409
-  jsval.newString("UNKNOWN LITERAL TYPE"), -- 410
-  jsval.newNumber(6), -- 411
-  jsval.newString("encode"), -- 412
-  jsval.newString("<undefined>"), -- 413
-  jsval.newString("new_label"), -- 414
-  jsval.newString("set_label"), -- 415
-  jsval.newString("lls"), -- 416
-  jsval.newString("peek_loop_label"), -- 417
-  jsval.newString("pop_loop_label"), -- 418
-  jsval.newString("push_loop_label"), -- 419
-  jsval.newString("tree_lst"), -- 420
-  jsval.newString("bcompile_stmt"), -- 421
-  jsval.newString("bcompile_stmts"), -- 422
-  jsval.newString("bcompile_expr"), -- 423
-  jsval.newString("depth"), -- 424
-  jsval.newString("which"), -- 425
-  jsval.newString("extra_name"), -- 426
-  jsval.newString("is_stmt"), -- 427
-  jsval.newString("mode"), -- 428
-  jsval.newString("sd_before"), -- 429
-  jsval.newString("sd_after"), -- 430
-  jsval.newString("mergeLabel"), -- 431
-  jsval.newString("falseLabel"), -- 432
-  jsval.newString("startLabel"), -- 433
-  jsval.newString("testLabel"), -- 434
-  jsval.newString("endLabel"), -- 435
-  jsval.newString("this_func"), -- 436
-  jsval.newString("new_func"), -- 437
-  jsval.newString("parse_tree"), -- 438
-  jsval.newString("make_bcompile"), -- 439
-  jsval.newString("top-level"), -- 440
-  jsval.newString("isFinite parseInt parseFloat isNaN Boolean String Function Math Number JSON RegExp SyntaxError console arguments now define document eval"), -- 441
-  jsval.newString("compile_from_source"), -- 442
-  jsval.newString("TOP_LEVEL"), -- 443
-  jsval.newString("as_object"), -- 444
-  jsval.newString("{ return 1+2; }"), -- 445
-  jsval.newString("rv"), -- 446
-  jsval.newString("make_repl") -- 447
+  jsval.newString("BooleanPrototypeValueOf"), -- 3
+  jsval.newString("NumberPrototypeValueOf"), -- 4
+  jsval.newString("ObjectPrototypeToString"), -- 5
+  jsval.newString("ObjectDefineProperty"), -- 6
+  jsval.newString("Throw"), -- 7
+  jsval.newString("ToInteger"), -- 8
+  jsval.newString("makeNonEnumerable"), -- 9
+  jsval.newString("makeFrozen"), -- 10
+  jsval.newString("Boolean"), -- 11
+  jsval.newString("prototype"), -- 12
+  jsval.newString("valueOf"), -- 13
+  jsval.newString("Number"), -- 14
+  jsval.newString("Object"), -- 15
+  jsval.newString("toString"), -- 16
+  jsval.newString("defineProperty"), -- 17
+  jsval.newNumber(0), -- 18
+  jsval.newString("name"), -- 19
+  jsval.newString("ex"), -- 20
+  jsval.newString("globalThis"), -- 21
+  jsval.newString("New"), -- 22
+  jsval.newString("n"), -- 23
+  jsval.newString("negate"), -- 24
+  jsval.newString("function"), -- 25
+  jsval.newString("this"), -- 26
+  jsval.newNumber(1/0), -- 27
+  jsval.newString("Math"), -- 28
+  jsval.newString("floor"), -- 29
+  jsval.newString("obj"), -- 30
+  jsval.newNumber(1), -- 31
+  jsval.False, -- 32
+  jsval.newString("enumerable"), -- 33
+  jsval.newString("writable"), -- 34
+  jsval.newString("configurable"), -- 35
+  jsval.newString("String"), -- 36
+  jsval.newString("position"), -- 37
+  jsval.newString("string"), -- 38
+  jsval.newString("first"), -- 39
+  jsval.newString("second"), -- 40
+  jsval.Null, -- 41
+  jsval.newString("TypeError"), -- 42
+  jsval.newString("charCodeAt"), -- 43
+  jsval.newNumber(55296), -- 44
+  jsval.newNumber(56319), -- 45
+  jsval.newNumber(56320), -- 46
+  jsval.newNumber(57343), -- 47
+  jsval.newNumber(1024), -- 48
+  jsval.newNumber(65536), -- 49
+  jsval.newString("codePointAt"), -- 50
+  jsval.newString("searchValue"), -- 51
+  jsval.newString("from"), -- 52
+  jsval.newString("i"), -- 53
+  jsval.newString("j"), -- 54
+  jsval.newString("length"), -- 55
+  jsval.newString("charAt"), -- 56
+  jsval.newString("indexOf"), -- 57
+  jsval.newString("beginIndex"), -- 58
+  jsval.newString("endIndex"), -- 59
+  jsval.newString("len"), -- 60
+  jsval.newString("substring"), -- 61
+  jsval.newString("slice"), -- 62
+  jsval.newString("str"), -- 63
+  jsval.newString("whitespace"), -- 64
+  jsval.newString(" \010\013\009\012\011\194\160\226\128\128\226\128\129\226\128\130\226\128\131\226\128\132\226\128\133\226\128\134\226\128\135\226\128\136\226\128\137\226\128\138\226\128\139\226\128\168\226\128\169\227\128\128"), -- 65
+  jsval.newString(""), -- 66
+  jsval.newString("trim"), -- 67
+  jsval.newString("Array"), -- 68
+  jsval.newString("push"), -- 69
+  jsval.newString("last"), -- 70
+  jsval.newString("pop"), -- 71
+  jsval.newString("sep"), -- 72
+  jsval.newString("O"), -- 73
+  jsval.newString("k"), -- 74
+  jsval.newString("result"), -- 75
+  jsval.newString(","), -- 76
+  jsval.newString("elem"), -- 77
+  jsval.newString("join"), -- 78
+  jsval.newString("begin"), -- 79
+  jsval.newString("end"), -- 80
+  jsval.newString("upTo"), -- 81
+  jsval.newString("size"), -- 82
+  jsval.newString("cloned"), -- 83
+  jsval.newString("start"), -- 84
+  jsval.newString("undefined"), -- 85
+  jsval.newString("number"), -- 86
+  jsval.newString("e"), -- 87
+  jsval.newString("object"), -- 88
+  jsval.newString("hasOwnProperty"), -- 89
+  jsval.newString("concat"), -- 90
+  jsval.newString("block"), -- 91
+  jsval.newString("thisObject"), -- 92
+  jsval.newString("call"), -- 93
+  jsval.newString("forEach"), -- 94
+  jsval.newString("fun"), -- 95
+  jsval.newString("res"), -- 96
+  jsval.newString("thisp"), -- 97
+  jsval.newString("map"), -- 98
+  jsval.newString("array"), -- 99
+  jsval.newString("func"), -- 100
+  jsval.newString("Function"), -- 101
+  jsval.newString("method"), -- 102
+  jsval.newString("addHasInstance"), -- 103
+  jsval.newString("nthis"), -- 104
+  jsval.newString("nargs"), -- 105
+  jsval.newString("f"), -- 106
+  jsval.newString("v"), -- 107
+  jsval.newString("hasInstance"), -- 108
+  jsval.newString("apply"), -- 109
+  jsval.newString("bind0"), -- 110
+  jsval.newString("bindN"), -- 111
+  jsval.newString("bind"), -- 112
+  jsval.newString("o"), -- 113
+  jsval.newString("__proto__"), -- 114
+  jsval.True, -- 115
+  jsval.newString("create"), -- 116
+  jsval.newString("function "), -- 117
+  jsval.newString("() { [native code] }"), -- 118
+  jsval.newString("true"), -- 119
+  jsval.newString("false"), -- 120
+  jsval.newString("radix"), -- 121
+  jsval.newString("x"), -- 122
+  jsval.newString("radixNumber"), -- 123
+  jsval.newString("minus"), -- 124
+  jsval.newString("intPart"), -- 125
+  jsval.newString("floatPart"), -- 126
+  jsval.newString("r"), -- 127
+  jsval.newString("ACCURACY"), -- 128
+  jsval.newNumber(10), -- 129
+  jsval.newNumber(2), -- 130
+  jsval.newNumber(36), -- 131
+  jsval.newString("RangeError"), -- 132
+  jsval.newString("NaN"), -- 133
+  jsval.newString("0"), -- 134
+  jsval.newString("-"), -- 135
+  jsval.newString("Infinity"), -- 136
+  jsval.newString("nextIntPart"), -- 137
+  jsval.newString("digit"), -- 138
+  jsval.newString("fromCharCode"), -- 139
+  jsval.newNumber(48), -- 140
+  jsval.newNumber(97), -- 141
+  jsval.newNumber(0.00001), -- 142
+  jsval.newString("."), -- 143
+  jsval.newString("toLocaleString"), -- 144
+  jsval.newString("E"), -- 145
+  jsval.newNumber(2.718281828459045), -- 146
+  jsval.newString("LN10"), -- 147
+  jsval.newNumber(2.302585092994046), -- 148
+  jsval.newString("LN2"), -- 149
+  jsval.newNumber(0.6931471805599453), -- 150
+  jsval.newString("LOG10E"), -- 151
+  jsval.newNumber(0.4342944819032518), -- 152
+  jsval.newNumber(3), -- 153
+  jsval.newString("LOG2E"), -- 154
+  jsval.newNumber(1.4426950408889634), -- 155
+  jsval.newNumber(4), -- 156
+  jsval.newString("PI"), -- 157
+  jsval.newNumber(3.141592653589793), -- 158
+  jsval.newNumber(5), -- 159
+  jsval.newString("SQRT1_2"), -- 160
+  jsval.newNumber(0.7071067811865476), -- 161
+  jsval.newNumber(6), -- 162
+  jsval.newString("SQRT2"), -- 163
+  jsval.newNumber(1.4142135623730951), -- 164
+  jsval.newNumber(7), -- 165
+  jsval.newString("MAX_SAFE_INTEGER"), -- 166
+  jsval.newNumber(9007199254740991), -- 167
+  jsval.newNumber(8), -- 168
+  jsval.newString("MIN_SAFE_INTEGER"), -- 169
+  jsval.newNumber(9), -- 170
+  jsval.newNumber(0/0), -- 171
+  jsval.newString("NEGATIVE_INFINITY"), -- 172
+  jsval.newNumber(11), -- 173
+  jsval.newString("POSITIVE_INFINITY"), -- 174
+  jsval.newNumber(12), -- 175
+  jsval.newString("cnst"), -- 176
+  jsval.newString("base"), -- 177
+  jsval.newString("val"), -- 178
+  jsval.newString("while"), -- 179
+  jsval.newString("_this_"), -- 180
+  jsval.newString("cond"), -- 181
+  jsval.newString("body"), -- 182
+  jsval.newString("ifElse"), -- 183
+  jsval.newString("ifTrue"), -- 184
+  jsval.newString("ifFalse"), -- 185
+  jsval.newString("deps"), -- 186
+  jsval.newString("init_func"), -- 187
+  jsval.newString("d"), -- 188
+  jsval.newString("m"), -- 189
+  jsval.newString("_define"), -- 190
+  jsval.newString("define"), -- 191
+  jsval.newString("tokenize"), -- 192
+  jsval.newString("text!tokenize.js"), -- 193
+  jsval.newString("tokenize_source"), -- 194
+  jsval.newString("prefix"), -- 195
+  jsval.newString("suffix"), -- 196
+  jsval.newString("DEBUG"), -- 197
+  jsval.newString("c"), -- 198
+  jsval.newString("q"), -- 199
+  jsval.newString("error"), -- 200
+  jsval.newString("make"), -- 201
+  jsval.newString("message"), -- 202
+  jsval.newString("t"), -- 203
+  jsval.newString("Syntax Error"), -- 204
+  jsval.newString("to"), -- 205
+  jsval.newString(" ["), -- 206
+  jsval.newString("]"), -- 207
+  jsval.newString("type"), -- 208
+  jsval.newString("value"), -- 209
+  jsval.newString("<>+-&"), -- 210
+  jsval.newString("=>&:"), -- 211
+  jsval.newString(" "), -- 212
+  jsval.newString("a"), -- 213
+  jsval.newString("z"), -- 214
+  jsval.newString("A"), -- 215
+  jsval.newString("Z"), -- 216
+  jsval.newString("$"), -- 217
+  jsval.newString("_"), -- 218
+  jsval.newString("9"), -- 219
+  jsval.newString("isHex"), -- 220
+  jsval.newString("F"), -- 221
+  jsval.newString("+"), -- 222
+  jsval.newString("Bad exponent"), -- 223
+  jsval.newString("Bad number"), -- 224
+  jsval.newString("isFinite"), -- 225
+  jsval.newNumber(16), -- 226
+  jsval.newString("'"), -- 227
+  jsval.newString("\034"), -- 228
+  jsval.newString("\010"), -- 229
+  jsval.newString("\013"), -- 230
+  jsval.newString("Unterminated string."), -- 231
+  jsval.newString("Control character in string."), -- 232
+  jsval.newString("\092"), -- 233
+  jsval.newString("Unterminated string"), -- 234
+  jsval.newString("b"), -- 235
+  jsval.newString("\008"), -- 236
+  jsval.newString("\012"), -- 237
+  jsval.newString("\009"), -- 238
+  jsval.newString("u"), -- 239
+  jsval.newString("parseInt"), -- 240
+  jsval.newString("/"), -- 241
+  jsval.newString("*"), -- 242
+  jsval.newString("operator"), -- 243
+  jsval.newString("__module_name__"), -- 244
+  jsval.newString("make_tokenize"), -- 245
+  jsval.newString("__module_init__"), -- 246
+  jsval.newString("__module_source__"), -- 247
+  jsval.newString("parse"), -- 248
+  jsval.newString("text!parse.js"), -- 249
+  jsval.newString("parse_source"), -- 250
+  jsval.newString("scope"), -- 251
+  jsval.newString("symbol_table"), -- 252
+  jsval.newString("token"), -- 253
+  jsval.newString("tokens"), -- 254
+  jsval.newString("token_nr"), -- 255
+  jsval.newString("itself"), -- 256
+  jsval.newString("original_scope"), -- 257
+  jsval.newString("new_scope"), -- 258
+  jsval.newString("advance"), -- 259
+  jsval.newString("expression"), -- 260
+  jsval.newString("statement"), -- 261
+  jsval.newString("hoist_var"), -- 262
+  jsval.newString("statements"), -- 263
+  jsval.newString("original_symbol"), -- 264
+  jsval.newString("symbol"), -- 265
+  jsval.newString("constant"), -- 266
+  jsval.newString("infix"), -- 267
+  jsval.newString("infixr"), -- 268
+  jsval.newString("assignment"), -- 269
+  jsval.newString("stmt"), -- 270
+  jsval.newString("parse_repl"), -- 271
+  jsval.newString("def"), -- 272
+  jsval.newString("reserved"), -- 273
+  jsval.newString("Already reserved."), -- 274
+  jsval.newString("Already defined."), -- 275
+  jsval.newString("nud"), -- 276
+  jsval.newString("led"), -- 277
+  jsval.newString("std"), -- 278
+  jsval.newString("lbp"), -- 279
+  jsval.newString("parent"), -- 280
+  jsval.newString("(name)"), -- 281
+  jsval.newString("find"), -- 282
+  jsval.newString("arity"), -- 283
+  jsval.newString("reserve"), -- 284
+  jsval.newString("s"), -- 285
+  jsval.newString("level"), -- 286
+  jsval.newString("id"), -- 287
+  jsval.newString("Expected '"), -- 288
+  jsval.newString("'."), -- 289
+  jsval.newString("(end)"), -- 290
+  jsval.newString("Unknown operator: "), -- 291
+  jsval.newString("(literal)"), -- 292
+  jsval.newString("literal"), -- 293
+  jsval.newString("Unexpected token."), -- 294
+  jsval.newString("rbp"), -- 295
+  jsval.newString("left"), -- 296
+  jsval.newString("("), -- 297
+  jsval.newString("Bad expression statement."), -- 298
+  jsval.newString(";"), -- 299
+  jsval.newString("stmt_list"), -- 300
+  jsval.newString("var"), -- 301
+  jsval.newString("}"), -- 302
+  jsval.newString("{"), -- 303
+  jsval.newString("Undefined: "), -- 304
+  jsval.newString("Missing operator."), -- 305
+  jsval.newString("bp"), -- 306
+  jsval.newString("binary"), -- 307
+  jsval.newString("["), -- 308
+  jsval.newString("Bad lvalue."), -- 309
+  jsval.newNumber(70), -- 310
+  jsval.newString("unary"), -- 311
+  jsval.newString(":"), -- 312
+  jsval.newString(")"), -- 313
+  jsval.newString("else"), -- 314
+  jsval.newString("null"), -- 315
+  jsval.newString("="), -- 316
+  jsval.newString("+="), -- 317
+  jsval.newString("-="), -- 318
+  jsval.newString("*="), -- 319
+  jsval.newString("/="), -- 320
+  jsval.newString("?"), -- 321
+  jsval.newNumber(20), -- 322
+  jsval.newString("third"), -- 323
+  jsval.newString("ternary"), -- 324
+  jsval.newString("||"), -- 325
+  jsval.newNumber(30), -- 326
+  jsval.newString("&&"), -- 327
+  jsval.newNumber(35), -- 328
+  jsval.newString("==="), -- 329
+  jsval.newNumber(40), -- 330
+  jsval.newString("!=="), -- 331
+  jsval.newString("<"), -- 332
+  jsval.newNumber(45), -- 333
+  jsval.newString("<="), -- 334
+  jsval.newString(">"), -- 335
+  jsval.newString(">="), -- 336
+  jsval.newNumber(50), -- 337
+  jsval.newNumber(60), -- 338
+  jsval.newNumber(80), -- 339
+  jsval.newString("Expected a property name."), -- 340
+  jsval.newNumber(75), -- 341
+  jsval.newString("Expected a variable name."), -- 342
+  jsval.newString("!"), -- 343
+  jsval.newString("typeof"), -- 344
+  jsval.newString("Expected a parameter name."), -- 345
+  jsval.newString("use strict"), -- 346
+  jsval.newString("Bad property name."), -- 347
+  jsval.newString("key"), -- 348
+  jsval.newString("Expected a new variable name."), -- 349
+  jsval.newString("if"), -- 350
+  jsval.newString("return"), -- 351
+  jsval.newString("Unreachable statement."), -- 352
+  jsval.newString("break"), -- 353
+  jsval.newString("source"), -- 354
+  jsval.newString("top_level"), -- 355
+  jsval.newString("debug"), -- 356
+  jsval.newString("=<>!+-*&|/%^"), -- 357
+  jsval.newString("=<>&|"), -- 358
+  jsval.newString("state"), -- 359
+  jsval.newString("TOKEN_PREFIX"), -- 360
+  jsval.newString("TOKEN_SUFFIX"), -- 361
+  jsval.newString("old_scope"), -- 362
+  jsval.newString("nstate"), -- 363
+  jsval.newString("repl_tokens"), -- 364
+  jsval.newString("tree"), -- 365
+  jsval.newString("Try"), -- 366
+  jsval.newString("ee"), -- 367
+  jsval.newString("make_parse"), -- 368
+  jsval.newString("__module_deps__"), -- 369
+  jsval.newString("repl"), -- 370
+  jsval.newString("bytecode-table"), -- 371
+  jsval.newString("text!bytecode-table.js"), -- 372
+  jsval.newString("bytecode_table_source"), -- 373
+  jsval.newString("bytecodes_by_num"), -- 374
+  jsval.newString("bytecodes_by_name"), -- 375
+  jsval.newString("bc"), -- 376
+  jsval.newString("print_literal"), -- 377
+  jsval.newString("print_label"), -- 378
+  jsval.newString("args"), -- 379
+  jsval.newString("stackpop"), -- 380
+  jsval.newString("stackpush"), -- 381
+  jsval.newString("printargs"), -- 382
+  jsval.newString("nbc"), -- 383
+  jsval.newString("bytecode"), -- 384
+  jsval.newString("pc"), -- 385
+  jsval.newString("idx"), -- 386
+  jsval.newString(" /* "), -- 387
+  jsval.newString("literals"), -- 388
+  jsval.newString(" */"), -- 389
+  jsval.newString("lbl"), -- 390
+  jsval.newString("label"), -- 391
+  jsval.newString("push_frame"), -- 392
+  jsval.newString("push_literal"), -- 393
+  jsval.newString("new_object"), -- 394
+  jsval.newString("new_array"), -- 395
+  jsval.newString("new_function"), -- 396
+  jsval.newString("get_slot_direct"), -- 397
+  jsval.newString("get_slot_indirect"), -- 398
+  jsval.newString("get_slot_direct_check"), -- 399
+  jsval.newString("set_slot_direct"), -- 400
+  jsval.newString("set_slot_indirect"), -- 401
+  jsval.newString("invoke"), -- 402
+  jsval.newString("opname"), -- 403
+  jsval.newString("arg0"), -- 404
+  jsval.newString("jmp"), -- 405
+  jsval.newString("jmp_unless"), -- 406
+  jsval.newString("dup"), -- 407
+  jsval.newString("2dup"), -- 408
+  jsval.newString("over"), -- 409
+  jsval.newString("over2"), -- 410
+  jsval.newString("swap"), -- 411
+  jsval.newString("un_not"), -- 412
+  jsval.newString("un_minus"), -- 413
+  jsval.newString("un_typeof"), -- 414
+  jsval.newString("bi_eq"), -- 415
+  jsval.newString("bi_gt"), -- 416
+  jsval.newString("bi_gte"), -- 417
+  jsval.newString("bi_add"), -- 418
+  jsval.newString("bi_sub"), -- 419
+  jsval.newString("bi_mul"), -- 420
+  jsval.newString("bi_div"), -- 421
+  jsval.newString("make_bytecode_table"), -- 422
+  jsval.newString("for_num"), -- 423
+  jsval.newString("for_name"), -- 424
+  jsval.newString("bcompile"), -- 425
+  jsval.newString("text!bcompile.js"), -- 426
+  jsval.newString("bcompile_source"), -- 427
+  jsval.newString("bytecode_table"), -- 428
+  jsval.newString("assert"), -- 429
+  jsval.newString("dispatch"), -- 430
+  jsval.newString("mkstate"), -- 431
+  jsval.newString("console"), -- 432
+  jsval.newString("log"), -- 433
+  jsval.newString("ASSERTION FAILURE"), -- 434
+  jsval.newString("dont_desugar_frame_get"), -- 435
+  jsval.newString("encode_uint"), -- 436
+  jsval.newString("encode_str"), -- 437
+  jsval.newString("functions"), -- 438
+  jsval.newString("desugar_frame_get"), -- 439
+  jsval.newString("nn"), -- 440
+  jsval.newString("l"), -- 441
+  jsval.newString("newf"), -- 442
+  jsval.newString("max_stack"), -- 443
+  jsval.newString("stack_depth"), -- 444
+  jsval.newString("loop_label_stack"), -- 445
+  jsval.newString("bytecode_op"), -- 446
+  jsval.newString("op"), -- 447
+  jsval.newString("cf"), -- 448
+  jsval.newString("current_func"), -- 449
+  jsval.newString("can_fall_off"), -- 450
+  jsval.newString("emit"), -- 451
+  jsval.newString("func_id"), -- 452
+  jsval.newString(": "), -- 453
+  jsval.newString("decompile"), -- 454
+  jsval.newString("out"), -- 455
+  jsval.newString("msb"), -- 456
+  jsval.newString("lsb"), -- 457
+  jsval.newNumber(128), -- 458
+  jsval.newString("lv"), -- 459
+  jsval.newString("boolean"), -- 460
+  jsval.newString("UNKNOWN LITERAL TYPE"), -- 461
+  jsval.newString("encode"), -- 462
+  jsval.newString("<undefined>"), -- 463
+  jsval.newString("new_label"), -- 464
+  jsval.newString("set_label"), -- 465
+  jsval.newString("lls"), -- 466
+  jsval.newString("peek_loop_label"), -- 467
+  jsval.newString("pop_loop_label"), -- 468
+  jsval.newString("push_loop_label"), -- 469
+  jsval.newString("tree_lst"), -- 470
+  jsval.newString("bcompile_stmt"), -- 471
+  jsval.newString("bcompile_stmts"), -- 472
+  jsval.newString("bcompile_expr"), -- 473
+  jsval.newString("depth"), -- 474
+  jsval.newString("which"), -- 475
+  jsval.newString("extra_name"), -- 476
+  jsval.newString("is_stmt"), -- 477
+  jsval.newString("mode"), -- 478
+  jsval.newString("sd_before"), -- 479
+  jsval.newString("sd_after"), -- 480
+  jsval.newString("mergeLabel"), -- 481
+  jsval.newString("falseLabel"), -- 482
+  jsval.newString("startLabel"), -- 483
+  jsval.newString("testLabel"), -- 484
+  jsval.newString("endLabel"), -- 485
+  jsval.newString("this_func"), -- 486
+  jsval.newString("new_func"), -- 487
+  jsval.newString("parse_tree"), -- 488
+  jsval.newString("make_bcompile"), -- 489
+  jsval.newString("top-level"), -- 490
+  jsval.newString("isFinite parseInt parseFloat isNaN Array Boolean String Function Math Number Object JSON RegExp SyntaxError console arguments now define document eval globalThis"), -- 491
+  jsval.newString("compile_from_source"), -- 492
+  jsval.newString("TOP_LEVEL"), -- 493
+  jsval.newString("as_object"), -- 494
+  jsval.newString("{ return 1+2; }"), -- 495
+  jsval.newString("rv"), -- 496
+  jsval.newString("make_repl") -- 497
 }
 
 return startup

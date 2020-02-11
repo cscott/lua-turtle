@@ -15,13 +15,17 @@ local DEFAULTENV = mkPrivateSlot('@DEFAULTENV@')
 local PARENTFRAME = mkPrivateSlot('@PARENTFRAME@')
 local VALUE = mkPrivateSlot('@VALUE@')
 local ISAPPLY = mkPrivateSlot('@ISAPPLY@')
+local DEBUGNAME = mkPrivateSlot('@DEBUGNAME@')
 -- private slots in the JS standard
 local PROTOTYPE = mkPrivateSlot('[[Prototype]]')
 local EXTENSIBLE = mkPrivateSlot('[[Extensible]]')
 local BOOLEANDATA = mkPrivateSlot('[[BooleanData]]')
+local ERRORDATA = mkPrivateSlot('[[ErrorData]]')
 local NUMBERDATA = mkPrivateSlot('[[NumberData]]')
-local SYMBOLDATA = mkPrivateSlot('[[SymbolData]]')
 local STRINGDATA = mkPrivateSlot('[[StringData]]')
+local SYMBOLDATA = mkPrivateSlot('[[SymbolData]]')
+local CALL = mkPrivateSlot('[[Call]]')
+local PARAMETERMAP = mkPrivateSlot('[[ParameterMap]]')
 
 -- helper to call 'hidden' functions on metatable
 local function mt(env, v, name, ...)
@@ -46,7 +50,7 @@ local function ThrowTypeError(env, msg)
 end
 
 local function nyi(msg)
-   return function() error('not yet implemented: ' + msg) end
+   return function() error('not yet implemented: ' .. msg) end
 end
 
 -- PropertyDescriptor describes a slot in the JavaScript object
@@ -332,7 +336,7 @@ function StringMT.typeof() return StringMT:intern('string') end
 function SymbolMT.typeof() return StringMT:intern('symbol') end
 function BigIntMT.typeof() return StringMT:intern('bigint') end
 function ObjectMT.typeof(env, obj)
-   if getmetatable(obj)['[[Call]]'] == nil then
+   if rawget(obj, CALL) == nil then
       return StringMT:intern('object')
    else
       return StringMT:intern('function')
@@ -365,7 +369,7 @@ function StringMT.ToObject(env, s)
    local O = ObjectMT:create(env, env.realm.StringPrototype)
    rawset(O, STRINGDATA, s)
    mt(env, O, 'DefinePropertyOrThrow', StringMT:intern('length'),
-      PropertyDescriptor:newData{ value = Number:from(#s) } )
+      PropertyDescriptor:newData{ value = NumberMT:from(#s) } )
    setmetatable(O, getmetatable(env.realm.StringPrototype))
    return O
 end
@@ -390,13 +394,15 @@ end
 function ObjectMT.ToPrimitive(env, input, hint)
    hint = hint or 'default'
    if env == nil then env = rawget(input, DEFAULTENV) end -- support for lua interop
-   local exoticToPrim = mt(env, input, 'GetMethod', env.symbols.toPrimitive)
-   if not rawequal(exoticToPrim, Undefined) then
-      local result = mt(env, exoticToPrim, 'Call', StringMT:intern(hint))
-      if mt(env, result, 'IsObject') then
-         ThrowTypeError(env, 'exotic ToPrimitive not primitive')
+   if env.symbols.toPrimitive ~= nil then -- XXX symbols NYI
+      local exoticToPrim = mt(env, input, 'GetMethod', env.symbols.toPrimitive)
+      if not rawequal(exoticToPrim, Undefined) then
+         local result = mt(env, exoticToPrim, 'Call', StringMT:intern(hint))
+         if mt(env, result, 'IsObject') then
+            ThrowTypeError(env, 'exotic ToPrimitive not primitive')
+         end
+         return result
       end
-      return result
    end
    if hint == 'default' then
       hint = 'number'
@@ -406,6 +412,7 @@ end
 
 function ObjectMT.OrdinaryToPrimitive(env, O, hint)
    local methodNames
+   assert(isJsVal(O))
    if hint == 'string' then
       methodNames = { 'toString', 'valueOf' }
    else
@@ -414,7 +421,8 @@ function ObjectMT.OrdinaryToPrimitive(env, O, hint)
    for i=1,2 do
       local method = mt(env, O, 'Get', StringMT:intern(methodNames[i]))
       if mt(env, method, 'IsCallable') then
-         local result = mt(env, method, 'Call', O)
+         local status,result = env:interpretFunction(method, O, {})
+         if (not status) then error(result) end -- rethrow
          if not mt(env, result, 'IsObject') then
             return result
          end
@@ -454,10 +462,28 @@ function NullMT.ToNumber() return NumberMT:from(0) end
 function BooleanMT.ToNumber(env, b) return b.number end
 function NumberMT.ToNumber(env, n) return n end
 function StringMT.ToNumber(env, s)
-   -- XXX this isn't fully spec-compliant
-   local n = tonumber(tostring(s))
+   -- convert from UTF16 to UTF8
+   s = tostring(s)
+   -- start by trimming whitespace
+   s = string.gsub(s, '^%s+', '')
+   s = string.gsub(s, '%s+$', '')
+   if #s == 0 then return NumberMT:from(0) end -- empty string is +0
+   local minus = 1
+   local pm = string.sub(s, 1, 1)
+   if pm == '+' then
+      s = string.sub(s, 2)
+   elseif pm == '-' then
+      minus = -1
+      s = string.sub(s, 2)
+   end
+   if s == 'Infinity' then return NumberMT:from(minus/0) end -- +/-Infinity
+   local prefix = string.lower(string.sub(s, 1, 2))
+   if prefix == '0b' or prefix == '0o' then
+      nyi(prefix .. ' number parsing')()
+   end
+   local n = tonumber(s)
    if n == nil then n = (0/0) end
-   return NumberMT:from(n)
+   return NumberMT:from(minus * n)
 end
 function SymbolMT.ToNumber(env)
    ThrowTypeError(env, 'Symbol#toNumber')
@@ -505,6 +531,24 @@ function NumberMT.ToUint32(env, argument)
    return NumberMT:from(number & 0xFFFFFFFF)
 end
 
+function JsValMT.ToUint16(env, argument)
+   local number = mt(env, argument, 'ToNumber')
+   assert(mt(env, number, 'Type') == 'Number')
+   return NumberMT.ToUint16(env, number)
+end
+function NumberMT.ToUint16(env, argument)
+   local number = argument.value
+   if (number ~= number or -- NaN
+       number == 0 or -- +0.0 and -0.0
+       number == (1/0) or number == (-1/0)) then -- Infinities
+      return NumberMT:from(0)
+   end
+   local minus = (number < 0)
+   number = math.floor(math.abs(number))
+   if minus then number = -number end
+   return NumberMT:from(number & 0xFFFF)
+end
+
 -- ToString
 local toStringVals = {
    [Undefined] = StringMT:intern('undefined'),
@@ -513,9 +557,13 @@ local toStringVals = {
    [False] = StringMT:intern('false'),
 }
 function JsValMT.ToString(env, val) return toStringVals[val] end
-function NumberMT.ToString(env, val)
-   -- XXX not entirely spec compliant
-   local s = StringMT:fromUTF8(tostring(val.value))
+function NumberMT.ToString(env, n)
+   local val = n.value
+   if val ~= val then return StringMT:intern('NaN') end -- NaN
+   if val == 0 then return StringMT:intern('0') end -- +0 and -0
+   if val == 1/0 then return StringMT:intern('Infinity') end -- +Infinity
+   if val == -1/0 then return StringMT:intern('-Infinity') end -- -Infinity
+   local s = StringMT:fromUTF8(tostring(val))
    -- fast-ish path for converting back to number for array index, etc
    rawset(s, 'number', val)
    return s
@@ -529,13 +577,6 @@ function ObjectMT.ToString(env, val)
    local primValue = mt(env, val, 'ToPrimitive', 'string')
    return mt(env, primValue, 'ToString')
 end
-
--- ToObject
-function JsValMT.ToString(env, val)
-   ThrowTypeError(env, "can't convert to object")
-end
--- XXX Boolean/Number/String/Symbol/BigInt; see 7.1.18
-function ObjectMT.ToString(env, val) return val end
 
 -- ToPropertyKey
 function JsValMT.ToPropertyKey(env, val)
@@ -605,10 +646,38 @@ function ObjectMT.thisNumberValue(env, obj)
    return n
 end
 
+-- thisStringValue (21.1.3)
+function JsValMT.thisStringValue(env, val)
+   ThrowTypeError(env, 'Not a string value!')
+end
+function StringMT.thisStringValue(env, value)
+   return value
+end
+function ObjectMT.thisStringValue(env, obj)
+   local s = rawget(obj, STRINGDATA)
+   if s == nil then
+      ThrowTypeError(env, 'Not a string value!')
+   end
+   assert(mt(env, s, 'Type') == 'String')
+   return s
+end
+
+-- IsArray (returns lua boolean, not Js boolean)
+function JsValMT.IsArray(env) return false end
+function ObjectMT.IsArray(env, argument)
+   -- If argument is an Array exotic object, return true
+   local mt = getmetatable(argument)
+   if mt ~= nil and mt['[[DefineOwnProperty]]'] == ObjectMT.ArrayDefineOwnProperty then
+      return true
+   end
+   -- If argument is a Proxy exotic object, then... XXX NYI
+   return false
+end
+
 -- IsCallable (returns lua boolean, not Js boolean)
 function JsValMT.IsCallable(env) return false end
 function ObjectMT.IsCallable(env, argument)
-   return (getmetatable(argument)['[[Call]]'] ~= nil)
+   return (rawget(argument, CALL) ~= nil)
 end
 
 -- IsConstructor (returns lua boolean, not Js boolean)
@@ -628,6 +697,18 @@ function ObjectMT.DefinePropertyOrThrow(env, O, P, desc)
    local success = mt(env, O, '[[DefineOwnProperty]]', P, desc)
    if not success then ThrowTypeError(env, "Can't define property") end
    return success
+end
+
+-- GetMethod (7.3.10)
+function JsValMT.GetMethod(env, V, P)
+   local func = mt(env, V, 'GetV', P)
+   if rawequal(func, Undefined) or rawequal(func, Null) then
+      return Undefined
+   end
+   if not mt(env, func, 'IsCallable') then
+      ThrowTypeError(env, 'method not callable')
+   end
+   return func
 end
 
 -- HasProperty (7.3.11)
@@ -1177,6 +1258,23 @@ function NumberMT.__sub(l, r, env)
    return NumberMT:from(l.value - r.value)
 end
 
+function JsValMT.__div(lval, rval, env) -- note optional env!
+   local lnum = mt(env, lval, 'ToNumeric')
+   local rnum = mt(env, rval, 'ToNumeric')
+   if mt(env, lnum, 'Type') ~= mt(env, rnum, 'Type') then
+      ThrowTypeError(env, 'bad types for division')
+   end
+   assert(getmetatable(lnum) == NumberMT)
+   return NumberMT:from(lnum.value / rnum.value)
+end
+copyToAll('__div')
+function NumberMT.__div(l, r, env)
+   if getmetatable(r) ~= NumberMT then
+      r = mt(env, r, 'ToNumeric')
+   end
+   return NumberMT:from(l.value / r.value)
+end
+
 function JsValMT.__mul(lval, rval, env) -- note optional env!
    local lnum = mt(env, lval, 'ToNumeric')
    local rnum = mt(env, rval, 'ToNumeric')
@@ -1192,6 +1290,20 @@ function NumberMT.__mul(l, r, env)
       r = mt(env, r, 'ToNumeric')
    end
    return NumberMT:from(l.value * r.value)
+end
+
+function JsValMT.__unm(val, _, env) -- note optional env!
+   local num = mt(env, val, 'ToNumeric')
+   assert(getmetatable(num) == NumberMT)
+   return NumberMT.__unm(num, num, env)
+end
+copyToAll('__unm')
+function NumberMT.__unm(n, _, env)
+   -- special case for -0
+   if n.value == 0 and 1/n.value == 1/0 then
+      return NumberMT:from(-1/(1/0))
+   end
+   return NumberMT:from(-n.value)
 end
 
 -- Note that the order in which we call 'ToPrimitive' is a slight variance
@@ -1423,12 +1535,15 @@ return {
       mt(env, f, 'OrdinaryDefineOwnProperty', StringMT:intern('length'),
          PropertyDescriptor:newData{value = NumberMT:from(fields.func.nargs), configurable=true}
       )
+      -- spec-defined marker field: this is callable
+      rawset(f, CALL, true)
       return f
    end,
    newFrame = function(env, parentFrame, this, arguments)
       local nFrame = ObjectMT:create(env, parentFrame)
       mt(env, nFrame, '[[Set]]', StringMT:intern('this'), this, nFrame)
       mt(env, nFrame, '[[Set]]', StringMT:intern('arguments'), arguments, nFrame)
+      assert(rawget(arguments, PARAMETERMAP) ~= nil, 'Should be arguments array')
       -- this is used by the binterp compiler to avoid actual inheritance of
       -- frame objects, but we don't support the __proto__ field yet (although
       -- we do support actual inheritance of frame objects!).  Anyway, fake
@@ -1436,12 +1551,18 @@ return {
       mt(env, nFrame, '[[Set]]', StringMT:intern('__proto__'), parentFrame, nFrame)
       return nFrame
    end,
-   privateFields = {
+   privateSlots = {
       PARENTFRAME = PARENTFRAME,
       VALUE = VALUE,
       ISAPPLY = ISAPPLY,
-      STRINGDATA = STRINGDATA,
+      DEBUGNAME = DEBUGNAME,
+
+      CALL = CALL,
+      PARAMETERMAP = PARAMETERMAP,
       BOOLEANDATA = BOOLEANDATA,
+      ERRORDATA = ERRORDATA,
       NUMBERDATA = NUMBERDATA,
+      STRINGDATA = STRINGDATA,
+      SYMBOLDATA = SYMBOLDATA,
    }
 }

@@ -63,48 +63,84 @@ function Env:new()
    }
    setmetatable(env, self)
 
+   local function setRealm(name, debugName, obj)
+      rawset(obj, jsval.privateSlots.DEBUGNAME, debugName)
+      env.realm[name] = obj
+   end
+
    -- %ObjectPrototype%, the parent of all Objects
    local ObjectPrototype = jsval.newObject(env, jsval.Null)
    jsval.extendObj(ObjectPrototype)
    getmetatable(ObjectPrototype)['[[SetPrototypeOf]]'] =
       getmetatable(ObjectPrototype)['SetImmutablePrototype']
-   env.realm.ObjectPrototype = ObjectPrototype
+   setRealm('ObjectPrototype', '%ObjectPrototype%', ObjectPrototype)
 
    -- 19.1.1 The Object Constructor
    local Object = jsval.newObject(env, FunctionPrototype)
    env:mkDataDesc(Object, 'name', { value = 'Object', configurable = true })
    env:mkDataDesc(Object, 'length', { value = 1, configurable = true })
    env:mkFrozen(Object, 'prototype', ObjectPrototype)
-   env.realm.Object = Object
+   setRealm('Object', '%Object%', Object)
 
    local FunctionPrototype = jsval.newObject(env, ObjectPrototype)
    env:mkDataDesc(FunctionPrototype, 'name', { value = '', configurable = true })
    env:mkDataDesc(FunctionPrototype, 'length', { value = 0, configurable = true })
-   env.realm.FunctionPrototype = FunctionPrototype
+   setRealm('FunctionPrototype', '%Function.prototype%', FunctionPrototype)
 
    -- 19.2.1 The Function Constructor
    local Function = jsval.newObject(env, FunctionPrototype)
    env:mkDataDesc(Function, 'name', { value = 'Function', configurable = true })
    env:mkDataDesc(Function, 'length', { value = 1, configurable = true })
    env:mkFrozen(Function, 'prototype', FunctionPrototype)
-   env.realm.Function = Function
+   setRealm('Function', '%Function%', Function)
 
    -- 19.3 Boolean Objects
    local BooleanPrototype = jsval.newObject(env, ObjectPrototype)
-   rawset(BooleanPrototype, jsval.privateFields.BOOLEANDATA, jsval.False)
-   env.realm.BooleanPrototype = BooleanPrototype
+   rawset(BooleanPrototype, jsval.privateSlots.BOOLEANDATA, jsval.False)
+   setRealm('BooleanPrototype', '%BooleanPrototype%', BooleanPrototype)
 
    local Boolean = jsval.newObject(env, FunctionPrototype)
    env:mkDataDesc(Boolean, 'name', { value = 'Boolean', configurable = true })
    env:mkDataDesc(Boolean, 'length', { value = 1, configurable = true })
    env:mkFrozen(Boolean, 'prototype', BooleanPrototype)
    env:mkHidden(BooleanPrototype, 'constructor', Boolean) -- cycles, whee!
-   env.realm.Boolean = Boolean
+   setRealm('Boolean', '%Boolean%', Boolean)
+
+   -- 19.5 Error objects
+   local ErrorPrototype = jsval.newObject(env, ObjectPrototype)
+   env:mkHidden(ErrorPrototype, 'name', 'Error')
+   env:mkHidden(ErrorPrototype, 'message', '')
+   setRealm('ErrorPrototype', '%ErrorPrototype%', ErrorPrototype)
+
+   local Error = jsval.newObject(env, FunctionPrototype)
+   env:mkDataDesc(Error, 'name', { value = 'Error', configurable = true })
+   env:mkDataDesc(Error, 'length', { value = 1, configurable = true })
+   env:mkFrozen(Error, 'prototype', ErrorPrototype)
+   env:mkHidden(ErrorPrototype, 'constructor', Error) -- cycles, whee!
+   setRealm('Error', '%Error%', Error)
+
+   local nativeErrors = {
+      'EvalError', 'RangeError', 'ReferenceError', 'SyntaxError',
+      'TypeError', 'URIError'
+   }
+   for _,nativeErrorName in ipairs(nativeErrors) do
+      local NativeErrorPrototype = jsval.newObject(env, ErrorPrototype)
+      env:mkHidden(NativeErrorPrototype, 'name', nativeErrorName)
+      env:mkHidden(NativeErrorPrototype, 'message', '')
+      setRealm(nativeErrorName .. 'Prototype', '%' .. nativeErrorName .. 'Prototype%', NativeErrorPrototype)
+
+      local NativeError = jsval.newObject(env, FunctionPrototype)
+      env:mkDataDesc(NativeError, 'name', { value = nativeErrorName, configurable = true })
+      env:mkDataDesc(NativeError, 'length', { value = 1, configurable = true })
+      env:mkFrozen(NativeError, 'prototype', NativeErrorPrototype)
+      env:mkHidden(NativeErrorPrototype, 'constructor', NativeError) -- cycles, whee!
+      setRealm(nativeErrorName, '%' .. nativeErrorName .. '%', NativeError)
+   end
 
    -- 20.1.3 Properties of the Number Prototype Object
    local NumberPrototype = jsval.newObject(env, ObjectPrototype)
-   rawset(NumberPrototype, jsval.privateFields.NUMBERDATA, jsval.newNumber(0))
-   env.realm.NumberPrototype = NumberPrototype
+   rawset(NumberPrototype, jsval.privateSlots.NUMBERDATA, jsval.newNumber(0))
+   setRealm('NumberPrototype', '%NumberPrototype%', NumberPrototype)
 
    -- 20.1.1 The Number Constructor
    local Number = jsval.newObject(env, FunctionPrototype)
@@ -112,12 +148,16 @@ function Env:new()
    env:mkDataDesc(Number, 'length', { value = 1, configurable = true })
    env:mkFrozen(Number, 'prototype', NumberPrototype)
    env:mkHidden(NumberPrototype, 'constructor', Number) -- cycles, whee!
-   env.realm.Number = Number
+   setRealm('Number', '%Number%', Number)
+
+   -- 20.3 The Math object
+   local Math = jsval.newObject(env, ObjectPrototype)
+   setRealm('Math', '%Math%', Math)
 
    -- 21.1.3 Properties of the String Prototype Object
    local StringPrototype = jsval.newObject(env, ObjectPrototype)
    jsval.extendObj(StringPrototype)
-   rawset(StringPrototype, jsval.privateFields.STRINGDATA, jsval.newStringIntern(''))
+   rawset(StringPrototype, jsval.privateSlots.STRINGDATA, jsval.newStringIntern(''))
    env:mkFrozen(StringPrototype, 'length', 0)
    getmetatable(StringPrototype)['[[GetOwnProperty]]'] = function(env, S, P)
       local desc = jsval.invokePrivate(env, S, 'OrdinaryGetOwnProperty', P)
@@ -133,14 +173,14 @@ function Env:new()
       return jsval.invokePrivate(env, S, 'OrdinaryDefineOwnProperty', P, desc)
    end
    getmetatable(StringPrototype)['[[OwnPropertyKeys]]'] = nyi('9.4.3.3')
-   env.realm.StringPrototype = StringPrototype
+   setRealm('StringPrototype', '%StringPrototype%', StringPrototype)
 
    -- 21.1.1 The String constructor
    local String = jsval.newObject(env, FunctionPrototype)
    env:mkFrozen(String, 'prototype', StringPrototype)
    env:mkDataDesc(String, 'name', { value = 'String', configurable = true })
    env:mkDataDesc(String, 'length', { value = 1, configurable = true })
-   env.realm.String = String
+   setRealm('String', '%String%', String)
 
    -- 22.1.3 Properties of the Array Prototype object
    local ArrayPrototype = jsval.newObject(env, ObjectPrototype)
@@ -148,20 +188,20 @@ function Env:new()
    env:mkDataDesc(ArrayPrototype, 'length', { value = 0, writable = true })
    getmetatable(ArrayPrototype)['[[DefineOwnProperty]]'] =
       getmetatable(ArrayPrototype)['ArrayDefineOwnProperty']
-   env.realm.ArrayPrototype = ArrayPrototype
+   setRealm('ArrayPrototype', '%ArrayPrototype%', ArrayPrototype)
 
    -- 22.1.1 The Array constructor
    local Array = jsval.newObject(env, FunctionPrototype)
    env:mkFrozen(Array, 'prototype', ArrayPrototype)
    env:mkDataDesc(Array, 'name', { value = 'Array', configurable = true })
    env:mkDataDesc(Array, 'length', { value = 1, configurable = true })
-   env.realm.Array = Array
+   setRealm('Array', '%Array%', Array)
 
    -- Not in ECMAScript but useful: console!
    local ConsolePrototype = jsval.newObject(env, ObjectPrototype)
    env.realm.ConsolePrototype = ConsolePrototype
    local Console = jsval.newObject(env, ConsolePrototype)
-   env.realm.Console = Console
+   setRealm('Console', '%Console%', Console)
 
    -- Native methods
    local function RequireObjectCoercible(arg)
@@ -170,6 +210,9 @@ function Env:new()
       end
       return arg
    end
+   env:addNativeFunc(BooleanPrototype, 'valueOf', 0, function(this, args)
+      return jsval.invokePrivate(env, this, 'thisBooleanValue')
+   end)
    env:addNativeFunc(ConsolePrototype, 'log', 0, function(this, args)
       local sargs = {}
       for _,v in ipairs(args) do
@@ -177,6 +220,45 @@ function Env:new()
       end
       print(table.concat(sargs, ' '))
       return jsval.Undefined
+   end)
+   env:addNativeFunc(ErrorPrototype, 'toString', 0, function(this, args)
+      local O = this
+      if jsval.Type(O) ~= 'Object' then
+         error(env:newTypeError('not object'))
+      end
+      local name = jsval.invokePrivate(env, O, 'Get', jsval.newStringIntern('name'))
+      if rawequal(name, jsval.Undefined) then
+         name = jsval.newStringIntern('Error')
+      else
+         name = jsval.invokePrivate(env, name, 'ToString')
+      end
+      local msg = jsval.invokePrivate(env, O, 'Get', jsval.newStringIntern('message'))
+      if rawequal(msg, jsval.Undefined) then
+         msg = jsval.newStringIntern('')
+      else
+         msg = jsval.invokePrivate(env, msg, 'ToString')
+      end
+      if rawequal(jsval.invokePrivate(env, name, 'ToBoolean'), jsval.False) then
+         return msg
+      end
+      if rawequal(jsval.invokePrivate(env, msg, 'ToBoolean'), jsval.False) then
+         return name
+      end
+      return name + jsval.newStringIntern(': ') + msg
+   end)
+   env:addNativeFunc(Math, 'abs', 1, function(this, args)
+      local n = jsval.invokePrivate(env, args[1] or jsval.Undefined, 'ToNumber')
+      return jsval.newNumber(math.abs(jsval.toLua(env, n)))
+   end)
+   env:addNativeFunc(Math, 'floor', 1, function(this, args)
+      local n = jsval.invokePrivate(env, args[1] or jsval.Undefined, 'ToNumber')
+      n = jsval.toLua(env, n)
+      -- special case for -0.0
+      if n == 0 and (1/n) == (-1/0) then return jsval.newNumber(n) end
+      return jsval.newNumber(math.floor(n))
+   end)
+   env:addNativeFunc(NumberPrototype, 'valueOf', 0, function(this, args)
+      return jsval.invokePrivate(env, this, 'thisNumberValue')
    end)
    env:addNativeFunc(Object, 'create', 2, function(this, args)
      local O = args[1] or jsval.Undefined
@@ -239,6 +321,43 @@ function Env:new()
      local O = jsval.invokePrivate(env, this, 'ToObject')
      return jsval.invokePrivate(env, O, 'HasOwnProperty', P)
    end)
+   env:addNativeFunc(ObjectPrototype, 'toString', 0, function(this, args)
+     if rawequal(this, jsval.Undefined) then
+        return jsval.newStringIntern('[object Undefined]')
+     elseif rawequal(this, jsval.Null) then
+        return jsval.newStringIntern('[object Null]')
+     end
+     local O = jsval.invokePrivate(env, this, 'ToObject')
+     local isArray = jsval.invokePrivate(env, O, 'IsArray')
+     local builtinTag
+     if isArray then
+        builtinTag = 'Array'
+     elseif rawget(O, jsval.privateSlots.PARAMETERMAP) ~= nil then
+        builtinTag = 'Arguments'
+     elseif rawget(O, jsval.privateSlots.CALL) ~= nil then
+        builtinTag = 'Function'
+     elseif rawget(O, jsval.privateSlots.ERRORDATA) ~= nil then
+        builtinTag = 'Error'
+     elseif rawget(O, jsval.privateSlots.BOOLEANDATA) ~= nil then
+        builtinTag = 'Boolean'
+     elseif rawget(O, jsval.privateSlots.NUMBERDATA) ~= nil then
+        builtinTag = 'Number'
+     elseif rawget(O, jsval.privateSlots.STRINGDATA) ~= nil then
+        builtinTag = 'String'
+     -- XXX Date and RegExp, too
+     else
+        builtinTag = 'Object'
+     end
+     local tag = jsval.Undefined
+     if env.symbols.toStringTag ~= nil then -- XXX symbols NYI
+        tag = mt(env, O, 'Get', env.symbols.toStringTag)
+     end
+     if jsval.Type(tag) ~= 'String' then tag = jsval.newString(builtinTag) end
+     return jsval.newStringIntern('[object ') + tag + jsval.newStringIntern(']')
+   end)
+   env:addNativeFunc(ObjectPrototype, 'valueOf', 0, function(this, args)
+     return jsval.invokePrivate(env, this, 'ToObject')
+   end)
 
    rawset(env:addNativeFunc(FunctionPrototype, 'call', 1, function(this, args)
      -- push arguments on stack and use 'invoke' bytecode op
@@ -256,7 +375,7 @@ function Env:new()
         end
      end
      return nargs
-   end), jsval.privateFields.ISAPPLY, true)
+   end), jsval.privateSlots.ISAPPLY, true)
    rawset(env:addNativeFunc(FunctionPrototype, 'apply', 2, function(this, args)
      -- push arguments on stack and use 'invoke' bytecode op
      -- arg #0 is the function itself ('this')
@@ -267,7 +386,7 @@ function Env:new()
         env:arrayEach(args[2], function(v) table.insert(nargs, v) end)
      end
      return nargs
-   end), jsval.privateFields.ISAPPLY, true)
+   end), jsval.privateSlots.ISAPPLY, true)
 
    env:addNativeFunc(StringPrototype, 'charAt', 1, function(this, args)
      local O = RequireObjectCoercible(this)
@@ -282,16 +401,57 @@ function Env:new()
      local resultStr = string.sub(jsval.stringToUtf16(S), start, start + 1)
      return jsval.newStringFromUtf16(resultStr)
    end)
-
+   env:addNativeFunc(StringPrototype, 'charCodeAt', 1, function(this, args)
+     local O = RequireObjectCoercible(this)
+     local S = jsval.invokePrivate(env, O, 'ToString')
+     local pos = args[1] or jsval.Undefined
+     local position = jsval.toLua(env, jsval.invokePrivate(env, pos, 'ToInteger'))
+     local size = #S
+     if position < 0 or position >= size then
+        return jsval.newNumber(0/0) -- NaN
+     end
+     local start = (position << 1) + 1 -- 1-based indexing!
+     local high,lo = string.byte(jsval.stringToUtf16(S), start, start + 1)
+     return jsval.newNumber((high<<8) | lo)
+   end)
+   env:addNativeFunc(String, 'fromCharCode', 1, function(this, args)
+     local length = #args
+     local elements = {}
+     local nextIndex = 0
+     while nextIndex < length do
+        local next = args[1 + nextIndex]
+        local nextCU = jsval.toLua(env, jsval.invokePrivate(env, next, 'ToUint16'))
+        table.insert(elements, string.char(nextCU >> 8, nextCU & 0xFF))
+        nextIndex = nextIndex + 1
+     end
+     return jsval.newStringFromUtf16(table.concat(elements))
+   end)
+   env:addNativeFunc(StringPrototype, 'valueOf', 0, function(this, args)
+      return jsval.invokePrivate(env, this, 'thisStringValue')
+   end)
    return env
 end
 
-function Env:arrayCreate(luaArray)
+function Env:prettyPrint(jsv)
+   if jsv == nil then return 'nil' end
+   assert(jsval.isJsVal(jsv))
+   local debugName = rawget(jsv, jsval.privateSlots.DEBUGNAME)
+   if debugName ~= nil then return debugName end
+   local s = jsval.invokePrivate(env, jsv, 'ToString')
+   return tostring(s)
+end
+
+function Env:arrayCreate(luaArray, isArguments)
    local arr = jsval.newObject(self, self.realm.ArrayPrototype)
    self:mkDataDesc(arr, 'length', { value = 0, writable = true })
    setmetatable(arr, getmetatable(self.realm.ArrayPrototype))
    for i,v in ipairs(luaArray) do
       arr[i-1] = v
+   end
+   if isArguments == true then
+      -- Mark this array as a special 'arguments array'
+      -- Affects 'toString' mostly.
+      rawset(arr, jsval.privateSlots.PARAMETERMAP, true)
    end
    return arr
 end
@@ -310,6 +470,16 @@ function Env:arrayEach(arr, func)
       )
       func(val)
    end
+end
+
+function Env.newTypeError(env, msg)
+   local O = jsval.newObject(env, env.realm.TypeErrorPrototype)
+   rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
+   if msg ~= nil then
+      msg = jsval.invokePrivate(env, jsval.fromLua(env, msg), 'ToString')
+      env:mkHidden(O, 'message', msg)
+   end
+   return O
 end
 
 -- helper functions to create properties
@@ -345,15 +515,16 @@ function Env:addNativeFunc(obj, name, len, f)
    local myFunc = jsval.newObject(self, self.realm.FunctionPrototype)
    self:mkDataDesc(myFunc, 'name', { value = name, configurable = true })
    self:mkDataDesc(myFunc, 'length', { value = len, configurable = true })
-   rawset(myFunc, jsval.privateFields.PARENTFRAME, jsval.Null)
-   rawset(myFunc, jsval.privateFields.VALUE, f)
+   rawset(myFunc, jsval.privateSlots.PARENTFRAME, jsval.Null)
+   rawset(myFunc, jsval.privateSlots.VALUE, f)
    self:mkHidden(obj, name, myFunc)
+   rawset(myFunc, jsval.privateSlots.CALL, true) -- mark as callable
    return myFunc
 end
 
 function Env:makeTopLevelFrame(context, arguments)
    local frame = jsval.newFrame(
-      self, jsval.Null, context, self:arrayCreate(arguments)
+      self, jsval.Null, context, self:arrayCreate(arguments, true)
    )
 
    -- value properties of the global object
@@ -381,10 +552,14 @@ function Env:makeTopLevelFrame(context, arguments)
    -- constructors
    self:mkHidden(frame, 'Array', self.realm.Array)
    self:mkHidden(frame, 'Boolean', self.realm.Boolean)
+   self:mkHidden(frame, 'Error', self.realm.Error)
    self:mkHidden(frame, 'Function', self.realm.Function)
+   self:mkHidden(frame, 'Math', self.realm.Math)
    self:mkHidden(frame, 'Number', self.realm.Number)
    self:mkHidden(frame, 'Object', self.realm.Object)
+   self:mkHidden(frame, 'RangeError', self.realm.RangeError)
    self:mkHidden(frame, 'String', self.realm.String)
+   self:mkHidden(frame, 'TypeError', self.realm.TypeError)
 
    return frame
 end
@@ -426,7 +601,7 @@ local one_step = {
       local result = jsval.invokePrivate(env, obj, 'GetV', name)
       if jsval.Type(result) ~= 'Object' then
          -- warn about unimplemented (probably library) functions
-         print('Failing lookup of method ' .. tostring(name) .. "\n")
+         print('Failing lookup of method ' .. env:prettyPrint(obj) .. '.' .. tostring(name) .. "\n")
       end
       state:push(result)
    end,
@@ -612,22 +787,22 @@ function Env:invoke(state, nargs)
    if jsval.Type(func) == 'Object' then
       return self:invokeInternal( state, func, myThis, nativeArgs )
    end
-   error('Not a function at '..tostring(state.pc)..' function '..tostring(state.func.id))
+   error('Not a function at '..tostring(state.pc - 1)..' function '..tostring(state.func.id))
 end
 
 -- Invoke a function from the stack (after function object, context, and
 -- arguments have been popped off the stack)
 function Env:invokeInternal(state, func, myThis, args)
    -- assert that func is a function
-   local parentFrame = rawget(func, jsval.privateFields.PARENTFRAME)
+   local parentFrame = rawget(func, jsval.privateSlots.PARENTFRAME)
    if parentFrame == nil then
-      error(env:newTypeError('Not a function at ' .. state.pc))
+      error(self:newTypeError('Not a function at ' .. state.pc))
    end
-   local f = rawget(func, jsval.privateFields.VALUE)
+   local f = rawget(func, jsval.privateSlots.VALUE)
    if type(f) == 'function' then -- native function
       local rv = f(myThis, args)
       -- handle "apply-like" natives
-      if rawget(func, jsval.privateFields.ISAPPLY) == true then
+      if rawget(func, jsval.privateSlots.ISAPPLY) == true then
          local nargs = 0
          for i,val in ipairs(rv) do
             state:push(val)
@@ -643,7 +818,7 @@ function Env:invokeInternal(state, func, myThis, args)
       -- create new frame
       assert(jsval.Type(parentFrame) == 'Object')
       local nFrame = jsval.newFrame(
-         env, parentFrame, myThis, self:arrayCreate(args)
+         self, parentFrame, myThis, self:arrayCreate(args, true)
       )
       -- construct new child state
       return State:new(state, nFrame, f.modul, f.func)
@@ -655,15 +830,15 @@ end
 -- status is false if an exception was thrown (and result is the exception)
 function Env:interpretFunction(func, this, args)
    -- assert that func is a function
-   local parentFrame = rawget(func, jsval.privateFields.PARENTFRAME)
+   local parentFrame = rawget(func, jsval.privateSlots.PARENTFRAME)
    if parentFrame == nil then
       error(self:newTypeError('Not a function'))
    end
-   local f = rawget(func, jsval.privateFields.VALUE)
+   local f = rawget(func, jsval.privateSlots.VALUE)
    if type(f) == 'function' then -- native function
-      local rv = f(myThis, args)
+      local rv = f(this, args)
       -- handle "apply-like" natives
-      if rawget(func, jsval.privateFields.ISAPPLY) == true then
+      if rawget(func, jsval.privateSlots.ISAPPLY) == true then
          local nArgs = {}
          for i,val in ipairs(rv) do
             table.insert(nArgs, val)
@@ -678,7 +853,7 @@ function Env:interpretFunction(func, this, args)
       assert(jsval.Type(parentFrame) == 'Object')
       -- Make a frame for the function invocation
       local nFrame = jsval.newFrame(
-         self, parentFrame, this, self:arrayCreate(args)
+         self, parentFrame, this, self:arrayCreate(args, true)
       )
       -- Set up error-handling
       return xpcall(
