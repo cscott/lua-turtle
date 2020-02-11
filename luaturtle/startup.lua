@@ -15637,7 +15637,7 @@ startup.literals = {
   jsval.newString("parse_tree"), -- 489
   jsval.newString("make_bcompile"), -- 490
   jsval.newString("top-level"), -- 491
-  jsval.newString("isFinite parseInt parseFloat isNaN Array Boolean String Function Math Number Object JSON RegExp SyntaxError console arguments now define document eval globalThis"), -- 492
+  jsval.newString("isFinite parseInt parseFloat isNaN Array Boolean Error Function Math Number Object JSON RangeError RegExp String SyntaxError TypeError console arguments now define document eval globalThis"), -- 492
   jsval.newString("compile_from_source"), -- 493
   jsval.newString("TOP_LEVEL"), -- 494
   jsval.newString("as_object"), -- 495
