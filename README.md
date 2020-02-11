@@ -16,23 +16,23 @@ in the repo.
 To run a TurtleScript
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop):
 ```
-$ bin/luaturtle
+$ ./repl.lua
 >>> 2+3
 5
 >>> var fact = function(x) { return (x<2) ? x : (x * fact(x-1)) ; };
 undefined
 >>> fact(42)
-1.4050061177529E+51
+7538058755741581312
 >>>
 ```
 Use Control-D (or Control-C) to exit the REPL.  You can also evaluate entire
 TurtleScript scripts by passing the name on the command line:
 ```
-$ bin/luaturtle foo.js
+$ ./repl.lua foo.js
 ```
 
 ## Testing
-You can run the unit tests with `lua run_tests.lua` from the top-level
+You can run the unit tests with `./run_tests.lua` from the top-level
 directory. See `tests/test_interp.lua` for a set of script-based tests,
 which you could manually reproduce in the REPL (if you were so inclined).
 

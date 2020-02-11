@@ -112,27 +112,27 @@ end
 
 function TestInterp.testNumber_toString()
    doScriptTest( {
-         { "Infinity.toString()", "Infinity" },
-         { "Infinity.toString(16)", "Infinity" },
+         { "Infinity.toString()", '"Infinity"' },
+         { "Infinity.toString(16)", '"Infinity"' },
          { "NaN", "NaN" },
-         { "NaN.toString(16)", "NaN" },
-         { "(1234).toString()", "1234" },
-         { "(255).toString(16)", "ff" },
-         { "(255.5).toString(2)", "11111111.1" },
-         { "(3645876087603217).toString(36)", "zwcscott01" },
+         { "NaN.toString(16)", '"NaN"' },
+         { "(1234).toString()", '"1234"' },
+         { "(255).toString(16)", '"ff"' },
+         { "(255.5).toString(2)", '"11111111.1"' },
+         { "(3645876087603217).toString(36)", '"zwcscott01"' },
    } )
 end
 
 function TestInterp.testString_charAt()
    doScriptTest( {
-         { "'abc'.charAt()", "a" },
-         { "'abc'.charAt(-1)", "" },
-         { "'abc'.charAt(1)", "b" },
-         { "'abc'.charAt(4)", "" },
-         { "'abc'.charAt(NaN)", "a" },
-         { "'abc'.charAt('a')", "a" },
-         { "'abc'.charAt(1.2)", "b" },
-         { "'abc'.charAt(2.9)", "c" },
+         { "'abc'.charAt()", '"a"' },
+         { "'abc'.charAt(-1)", '""' },
+         { "'abc'.charAt(1)", '"b"' },
+         { "'abc'.charAt(4)", '""' },
+         { "'abc'.charAt(NaN)", '"a"' },
+         { "'abc'.charAt('a')", '"a"' },
+         { "'abc'.charAt(1.2)", '"b"' },
+         { "'abc'.charAt(2.9)", '"c"' },
    } )
 end
 
@@ -151,7 +151,7 @@ function TestInterp.testMath_floor()
          { "Math.floor(' 10 ')", "10" },
          { "Math.floor()", "NaN" },
          { "Math.floor(NaN)", "NaN" },
-         { "Math.floor(-0)", "0" }, -- actually -0 but it doesn't get printed
+         { "Math.floor(-0)", "-0" }, -- we pretty print this, toString() is '0'
          { "1/Math.floor(-0)", "-Infinity" }, -- see?
          { "Math.floor(Infinity)", "Infinity" },
          { "Math.floor(-Infinity)", "-Infinity" },
@@ -210,8 +210,8 @@ end
 function TestInterp.testString_valueOf()
    doScriptTest( {
          { "var x = 'abc';", "undefined" },
-         { "x.valueOf()", "abc" },
-         { "x.toString()", "abc" },
+         { "x.valueOf()", '"abc"' },
+         { "x.toString()", '"abc"' },
          { "x === x.valueOf()", "true" },
          { "x === x.toString()", "true" },
          { "x === x", "true" },
@@ -219,8 +219,8 @@ function TestInterp.testString_valueOf()
          { "x.foo", "undefined" },
          -- now with a wrapped string object
          { "var y = Object(x);", "undefined" },
-         { "y.valueOf()", "abc" },
-         { "y.toString()", "abc" },
+         { "y.valueOf()", '"abc"' },
+         { "y.toString()", '"abc"' },
          { "y === y.valueOf()", "false" },
          { "y === y.toString()", "false" },
          { "y === y", "true" },
@@ -232,9 +232,9 @@ end
 function TestInterp.testArray_join()
    doScriptTest( {
          { "var a = [1,2,3];", "undefined" },
-         { "a.toString()", "1,2,3" },
-         { "a.join(':')", "1:2:3" },
-         { "a.join(4)", "14243" },
+         { "a.toString()", '"1,2,3"' },
+         { "a.join(':')", '"1:2:3"' },
+         { "a.join(4)", '"14243"' },
    } )
 end
 

@@ -543,8 +543,40 @@ function Env:prettyPrint(jsv)
    assert(jsval.isJsVal(jsv))
    local debugName = rawget(jsv, jsval.privateSlots.DEBUGNAME)
    if debugName ~= nil then return debugName end
-   local s = jsval.invokePrivate(env, jsv, 'ToString')
-   return tostring(s)
+   if jsval.Type(jsv) == 'Number' and jsv.value == 0 and 1/jsv.value == -1/0 then
+      -- special case! (node's REPL does this as well)
+      -- normally, (-0).toString() == '0'
+      return '-0'
+   end
+   if jsval.Type(jsv) == 'String' then
+      -- XXX not quite right, since the escapes are UTF-8 not UTF-16,
+      -- but it's close
+      return string.format('%q', tostring(jsv))
+   end
+   if jsval.invokePrivate(self, jsv, 'IsArray') then
+      local result = {}
+      self:arrayEach(jsv, function(v)
+        table.insert(result, self:prettyPrint(v))
+      end)
+      if #result == 0 then return '[]' end
+      return '[ '..table.concat(result, ', ')..' ]'
+   end
+   local s = tostring(jsval.invokePrivate(self, jsv, 'ToString'))
+   if jsval.Type(jsv) == 'Object' and s == '[object Object]' then
+      -- special case (again, node's REPL works like this too)
+      local result = {}
+      local ZERO = jsval.newStringIntern('0')
+      local ONE = jsval.newStringIntern('1')
+      local entries = jsval.invokePrivate(self, jsv, 'EnumerableOwnPropertyNames', 'key+value')
+      for _,e in ipairs(entries) do
+         local prop = jsval.invokePrivate(self, e, 'Get', ZERO)
+         local value = jsval.invokePrivate(self, e, 'Get', ONE)
+         -- XXX prop should be quoted iff it contains unusual characters
+         table.insert(result, tostring(prop)..': '..self:prettyPrint(value))
+      end
+      return '{ ' .. table.concat(result, ', ') .. ' }'
+   end
+   return s
 end
 
 function Env:arrayCreate(luaArray, isArguments)
