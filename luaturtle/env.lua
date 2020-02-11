@@ -76,10 +76,18 @@ function Env:new()
    setRealm('ObjectPrototype', '%ObjectPrototype%', ObjectPrototype)
 
    -- 19.1.1 The Object Constructor
-   local Object = jsval.newObject(env, FunctionPrototype)
-   env:mkDataDesc(Object, 'name', { value = 'Object', configurable = true })
-   env:mkDataDesc(Object, 'length', { value = 1, configurable = true })
+   local Object = env:addNativeFunc(nil, 'Object', 1, function(this, args, newTarget, activeFunc)
+     if newTarget ~= nil and newTarget ~= activeFunc then
+        return jsval.invokePrivate(env, newTarget, 'OrdinaryCreateFromConstructor', ObjectPrototype)
+     end
+     local value = args[1]
+     if rawequal(value, jsval.Undefined) or rawequal(value, jsval.Null) then
+        return jsval.newObject(env, ObjectPrototype)
+     end
+     return jsval.invokePrivate(env, value, 'ToObject')
+   end)
    env:mkFrozen(Object, 'prototype', ObjectPrototype)
+   env:mkHidden(ObjectPrototype, 'constructor', Object) -- cycles, whee!
    setRealm('Object', '%Object%', Object)
 
    local FunctionPrototype = jsval.newObject(env, ObjectPrototype)
@@ -99,9 +107,12 @@ function Env:new()
    rawset(BooleanPrototype, jsval.privateSlots.BOOLEANDATA, jsval.False)
    setRealm('BooleanPrototype', '%BooleanPrototype%', BooleanPrototype)
 
-   local Boolean = jsval.newObject(env, FunctionPrototype)
-   env:mkDataDesc(Boolean, 'name', { value = 'Boolean', configurable = true })
-   env:mkDataDesc(Boolean, 'length', { value = 1, configurable = true })
+   local Boolean = env:addNativeFunc(nil, 'Boolean', 1, function(this, args, newTarget)
+     local b = jsval.invokePrivate(env, args[1] or jsdef.Undefined, 'ToBoolean')
+     if newTarget == nil then return b end
+     local proto = jsval.invokePrivate(env, newTarget, 'GetPrototypeFromConstructor', BooleanPrototype)
+     return jsval.invokePrivate(env, b, 'ToObject', proto)
+   end)
    env:mkFrozen(Boolean, 'prototype', BooleanPrototype)
    env:mkHidden(BooleanPrototype, 'constructor', Boolean) -- cycles, whee!
    setRealm('Boolean', '%Boolean%', Boolean)
@@ -112,9 +123,16 @@ function Env:new()
    env:mkHidden(ErrorPrototype, 'message', '')
    setRealm('ErrorPrototype', '%ErrorPrototype%', ErrorPrototype)
 
-   local Error = jsval.newObject(env, FunctionPrototype)
-   env:mkDataDesc(Error, 'name', { value = 'Error', configurable = true })
-   env:mkDataDesc(Error, 'length', { value = 1, configurable = true })
+   local Error = env:addNativeFunc(nil, 'Error', 1, function(this, args, newTarget, activeFunc)
+     local newTarget = newTarget or activeFunc or jsval.Undefined
+     local O = jsval.invokePrivate(env, newTarget, 'OrdinaryCreateFromConstructor', ErrorPrototype)
+     rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
+     if args[1] ~= nil then
+        local msg = mt(env, args[1], 'ToString')
+        env:mkHidden(O, 'message', msg)
+     end
+     return O
+   end)
    env:mkFrozen(Error, 'prototype', ErrorPrototype)
    env:mkHidden(ErrorPrototype, 'constructor', Error) -- cycles, whee!
    setRealm('Error', '%Error%', Error)
@@ -129,9 +147,16 @@ function Env:new()
       env:mkHidden(NativeErrorPrototype, 'message', '')
       setRealm(nativeErrorName .. 'Prototype', '%' .. nativeErrorName .. 'Prototype%', NativeErrorPrototype)
 
-      local NativeError = jsval.newObject(env, FunctionPrototype)
-      env:mkDataDesc(NativeError, 'name', { value = nativeErrorName, configurable = true })
-      env:mkDataDesc(NativeError, 'length', { value = 1, configurable = true })
+      local NativeError = env:addNativeFunc(nil, nativeErrorName, 1, function(this, args, newTarget, activeFunc)
+        local newTarget = newTarget or activeFunc or jsval.Undefined
+        local O = jsval.invokePrivate(env, newTarget, 'OrdinaryCreateFromConstructor', NativeErrorPrototype)
+        rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
+        if args[1] ~= nil then
+           local msg = mt(env, args[1], 'ToString')
+           env:mkHidden(O, 'message', msg)
+        end
+        return O
+      end)
       env:mkFrozen(NativeError, 'prototype', NativeErrorPrototype)
       env:mkHidden(NativeErrorPrototype, 'constructor', NativeError) -- cycles, whee!
       setRealm(nativeErrorName, '%' .. nativeErrorName .. '%', NativeError)
@@ -143,9 +168,14 @@ function Env:new()
    setRealm('NumberPrototype', '%NumberPrototype%', NumberPrototype)
 
    -- 20.1.1 The Number Constructor
-   local Number = jsval.newObject(env, FunctionPrototype)
-   env:mkDataDesc(Number, 'name', { value = 'Number', configurable = true })
-   env:mkDataDesc(Number, 'length', { value = 1, configurable = true })
+   local Number = env:addNativeFunc(nil, 'Number', 1, function(this, args, newTarget)
+     local value = args[1] or jsval.newNumber(0)
+     local n = jsval.invokePrivate(env, value, 'ToNumeric')
+     -- XXX BigInt support
+     if newTarget == nil then return n end
+     local proto = jsval.invokePrivate(env, newTarget, 'GetPrototypeFromConstructor', NumberPrototype)
+     return jsval.invokePrivate(env, n, 'ToObject', proto)
+   end)
    env:mkFrozen(Number, 'prototype', NumberPrototype)
    env:mkHidden(NumberPrototype, 'constructor', Number) -- cycles, whee!
    setRealm('Number', '%Number%', Number)
@@ -176,10 +206,22 @@ function Env:new()
    setRealm('StringPrototype', '%StringPrototype%', StringPrototype)
 
    -- 21.1.1 The String constructor
-   local String = jsval.newObject(env, FunctionPrototype)
+   local String = env:addNativeFunc(nil, 'String', 1, function(this, args, newTarget)
+     local value = args[1]
+     local s
+     if value == nil then
+        s = jsval.newStringIntern('')
+     elseif newTarget == nil and jsval.Type(value) == 'Symbol' then
+        return jsval.invokePrivate(env, value, 'SymbolDescriptiveString')
+     else
+        s = jsval.invokePrivate(env, value, 'ToString')
+     end
+     if newTarget == nil then return s end
+     local proto = jsval.invokePrivate(env, newTarget, 'GetPrototypeFromConstructor', StringPrototype)
+     return jsval.invokePrivate(env, s, 'StringCreate', proto)
+   end)
    env:mkFrozen(String, 'prototype', StringPrototype)
-   env:mkDataDesc(String, 'name', { value = 'String', configurable = true })
-   env:mkDataDesc(String, 'length', { value = 1, configurable = true })
+   env:mkHidden(StringPrototype, 'constructor', String) -- cycles, whee!
    setRealm('String', '%String%', String)
 
    -- 22.1.3 Properties of the Array Prototype object
@@ -517,7 +559,7 @@ function Env:addNativeFunc(obj, name, len, f)
    self:mkDataDesc(myFunc, 'length', { value = len, configurable = true })
    rawset(myFunc, jsval.privateSlots.PARENTFRAME, jsval.Null)
    rawset(myFunc, jsval.privateSlots.VALUE, f)
-   self:mkHidden(obj, name, myFunc)
+   if obj ~= nil then self:mkHidden(obj, name, myFunc) end
    rawset(myFunc, jsval.privateSlots.CALL, true) -- mark as callable
    return myFunc
 end

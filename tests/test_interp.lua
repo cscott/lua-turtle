@@ -128,7 +128,6 @@ function TestInterp.testMath_floor()
    } )
 end
 
---[[
 function TestInterp.testBoolean()
    doScriptTest( {
          { "Boolean(true)", "true" },
@@ -140,7 +139,6 @@ function TestInterp.testBoolean()
          { "Boolean(123)", "true" },
    } )
 end
-]]
 
 function TestInterp.testToNumber()
    doScriptTest( {
@@ -185,7 +183,17 @@ function TestInterp.testString_valueOf()
          { "x === x.valueOf()", "true" },
          { "x === x.toString()", "true" },
          { "x === x", "true" },
-         -- XXX: now with a wrapped string object
+         { "x.foo = 3", "3" },
+         { "x.foo", "undefined" },
+         -- now with a wrapped string object
+         { "var y = Object(x);", "undefined" },
+         { "y.valueOf()", "abc" },
+         { "y.toString()", "abc" },
+         { "y === y.valueOf()", "false" },
+         { "y === y.toString()", "false" },
+         { "y === y", "true" },
+         { "y.foo = 3", "3" },
+         { "y.foo", "3" },
    } )
 end
 

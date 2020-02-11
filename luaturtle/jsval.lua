@@ -359,27 +359,28 @@ end
 function NullMT.ToObject(env, undef)
    return ThrowTypeError(env, 'ToObject on null')
 end
-function BooleanMT.ToObject(env, b)
-   local O = ObjectMT:create(env, env.realm.BooleanPrototype)
+function BooleanMT.ToObject(env, b, proto)
+   local O = ObjectMT:create(env, proto or env.realm.BooleanPrototype)
    rawset(O, BOOLEANDATA, b)
    return O
 end
-function StringMT.ToObject(env, s)
+function StringMT.ToObject(env, s, proto)
    -- StringCreate 9.4.3.4
-   local O = ObjectMT:create(env, env.realm.StringPrototype)
+   local O = ObjectMT:create(env, proto or env.realm.StringPrototype)
    rawset(O, STRINGDATA, s)
    mt(env, O, 'DefinePropertyOrThrow', StringMT:intern('length'),
       PropertyDescriptor:newData{ value = NumberMT:from(#s) } )
    setmetatable(O, getmetatable(env.realm.StringPrototype))
    return O
 end
+StringMT.StringCreate = StringMT.ToObject
 function SymbolMT.ToObject(env, s)
    local O = ObjectMT:create(env, env.realm.SymbolPrototype)
    rawset(O, SYMBOLDATA, s)
    return O
 end
-function NumberMT.ToObject(env, num)
-   local O = ObjectMT:create(env, env.realm.NumberPrototype)
+function NumberMT.ToObject(env, num, proto)
+   local O = ObjectMT:create(env, proto or env.realm.NumberPrototype)
    rawset(O, NUMBERDATA, num)
    return O
 end
@@ -1137,6 +1138,26 @@ function ObjectMT.ArraySetLength(env, A, desc)
                 PropertyDescriptor:new{ writable = false })
    end
    return true
+end
+
+-- 9.1.13 OrdinaryCreateFromConstructor
+function JsValMT.OrdinaryCreateFromConstructor(env, constructor, defaultProto)
+   return ObjectMT:create(env, defaultProto)
+end
+function ObjectMT.OrdinaryCreateFromConstructor(env, constructor, defaultProto)
+   local proto = mt(env, constructor, 'GetPrototypeFromConstructor', defaultProto)
+   return ObjectMT:create(env, proto)
+end
+
+-- 9.1.14 GetPrototypeFromConstructor
+function JsValMT.GetPrototypeFromConstructor(env, constructor, defaultProto)
+   return defaultProto
+end
+function ObjectMT.GetPrototypeFromConstructor(env, constructor, defaultProto)
+   assert(mt(env, constructor, 'IsCallable'))
+   local proto = mt(env, constructor, 'Get', StringMT:intern('prototype'))
+   if mt(env, proto, 'Type') == 'Object' then return proto end
+   return defaultProto
 end
 
 -- Additional methods on PropertyDescriptor
