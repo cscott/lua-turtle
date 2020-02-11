@@ -54,6 +54,40 @@ function TestInterp.testParseInt()
    } )
 end
 
+function TestInterp.testIsFinite()
+   doScriptTest({
+         { "Number.isFinite(NaN)", "false" },
+         { "Number.isFinite(1)", "true" },
+         { "Number.isFinite('1')", "false" },
+         { "Number.isFinite(Infinity)", "false" },
+         { "Number.isFinite('Infinity')", "false" },
+
+         { "isFinite(NaN)", "false" },
+         { "isFinite(1)", "true" },
+         { "isFinite('1')", "true" },
+         { "isFinite(Infinity)", "false" },
+         { "isFinite('Infinity')", "false" },
+   } )
+end
+
+function TestInterp.testIsNaN()
+   doScriptTest({
+         { "Number.isNaN(NaN)", "true" },
+         { "Number.isNaN('a')", "false" },
+         { "Number.isNaN(0)", "false" },
+         { "Number.isNaN('0')", "false" },
+         { "Number.isNaN(Infinity)", "false" },
+         { "Number.isNaN('NaN')", "false" },
+
+         { "isNaN(NaN)", "true" },
+         { "isNaN('a')", "true" },
+         { "isNaN(0)", "false" },
+         { "isNaN('0')", "false" },
+         { "isNaN(Infinity)", "false" },
+         { "isNaN('NaN')", "true" },
+   } )
+end
+
 function TestInterp.testCmp()
    doScriptTest( {
          { "'2' > '10'", "true" },
