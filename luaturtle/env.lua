@@ -128,7 +128,7 @@ function Env:new()
      local O = jsval.invokePrivate(env, newTarget, 'OrdinaryCreateFromConstructor', ErrorPrototype)
      rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
      if args[1] ~= nil then
-        local msg = mt(env, args[1], 'ToString')
+        local msg = jsval.invokePrivate(env, args[1], 'ToString')
         env:mkHidden(O, 'message', msg)
      end
      return O
@@ -152,7 +152,7 @@ function Env:new()
         local O = jsval.invokePrivate(env, newTarget, 'OrdinaryCreateFromConstructor', NativeErrorPrototype)
         rawset(O, jsval.privateSlots.ERRORDATA, jsval.Undefined)
         if args[1] ~= nil then
-           local msg = mt(env, args[1], 'ToString')
+           local msg = jsval.invokePrivate(env, args[1], 'ToString')
            env:mkHidden(O, 'message', msg)
         end
         return O
@@ -438,7 +438,7 @@ function Env:new()
      end
      local tag = jsval.Undefined
      if env.symbols.toStringTag ~= nil then -- XXX symbols NYI
-        tag = mt(env, O, 'Get', env.symbols.toStringTag)
+        tag = jsval.invokePrivate(env, O, 'Get', env.symbols.toStringTag)
      end
      if jsval.Type(tag) ~= 'String' then tag = jsval.newString(builtinTag) end
      return jsval.newStringIntern('[object ') + tag + jsval.newStringIntern(']')

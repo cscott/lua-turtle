@@ -238,4 +238,10 @@ function TestInterp.testArray_join()
    } )
 end
 
+function TestInterp.testTypeError()
+   doScriptTest({
+         { "globalThis.TypeError.New('foo')", "TypeError: foo" },
+   } )
+end
+
 return TestInterp
