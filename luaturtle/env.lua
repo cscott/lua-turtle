@@ -375,6 +375,24 @@ function Env:new()
      jsval.invokePrivate(env, O, 'DefinePropertyOrThrow', key, desc)
      return O
    end)
+   env:addNativeFunc(Object, 'entries', 1, function(this, args)
+     local O = args[1] or jsval.Undefined
+     local obj = jsval.invokePrivate(env, O, 'ToObject')
+     local nameList = jsval.invokePrivate(env, obj, 'EnumerableOwnPropertyNames', 'key+value')
+     return env:arrayCreate(nameList)
+   end)
+   env:addNativeFunc(Object, 'keys', 1, function(this, args)
+     local O = args[1] or jsval.Undefined
+     local obj = jsval.invokePrivate(env, O, 'ToObject')
+     local nameList = jsval.invokePrivate(env, obj, 'EnumerableOwnPropertyNames', 'key')
+     return env:arrayCreate(nameList)
+   end)
+   env:addNativeFunc(Object, 'values', 1, function(this, args)
+     local O = args[1] or jsval.Undefined
+     local obj = jsval.invokePrivate(env, O, 'ToObject')
+     local nameList = jsval.invokePrivate(env, obj, 'EnumerableOwnPropertyNames', 'value')
+     return env:arrayCreate(nameList)
+   end)
    -- Object.Try / Object.Throw -- turtlescript extension!
    env:addNativeFunc(Object, 'Try', 4, function(this, args)
      local innerThis = args[1] or jsval.Undefined

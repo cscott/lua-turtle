@@ -744,6 +744,30 @@ function ObjectMT.HasOwnProperty(env, O, P)
    return True
 end
 
+-- EnumerableOwnPropertyNames (7.3.23)
+function ObjectMT.EnumerableOwnPropertyNames(env, O, kind)
+   local ownKeys = mt(env, O, '[[OwnPropertyKeys]]')
+   local properties = {}
+   for _,key in ipairs(ownKeys) do
+      if mt(env, key, 'Type') == 'String' then
+         local desc = mt(env, O, '[[GetOwnProperty]]', key)
+         if desc ~= nil and desc.enumerable == true then
+            if kind == 'key' then
+               table.insert(properties, key)
+            else
+               local value = mt(env, O, '[[Get]]', key)
+               if kind == 'value' then
+                  table.insert(properties, value)
+               else
+                  table.insert(properties, env:arrayCreate{ key, value })
+               end
+            end
+         end
+      end
+   end
+   return properties
+end
+
 -- Get/GetV
 function JsValMT.GetV(env, V, P)
    local O = mt(env, V, 'ToObject')
@@ -1159,6 +1183,36 @@ function ObjectMT.ArraySetLength(env, A, desc)
    end
    return true
 end
+
+-- 9.1.11 [[OrdinaryOwnPropertyKeys]]
+function ObjectMT.OrdinaryOwnPropertyKeys(env, O)
+   local keys = {}
+   -- this is a little hacky! and order is not preserved according to JS spec
+   for k,v in pairs(O) do
+      if type(k)=='number' then
+         table.insert(keys, k-1)
+      end
+   end
+   -- sort in ascending numeric index order
+   table.sort(keys)
+   for i=1,#keys do
+      keys[i] = tostring(keys[i])
+   end
+   -- now add the non-numeric keys
+   for k,v in pairs(O) do
+      if type(k)=='string' then
+         -- XXX hack, strip off the prefix
+         table.insert(keys, string.sub(k, 4))
+      end
+   end
+   -- Convert everything to a JS string
+   for i=1,#keys do
+      keys[i] = StringMT:fromUTF8(keys[i])
+   end
+   -- XXX now add the symbol keys
+   return keys
+end
+ObjectMT['[[OwnPropertyKeys]]'] = ObjectMT.OrdinaryOwnPropertyKeys
 
 -- 9.1.13 OrdinaryCreateFromConstructor
 function JsValMT.OrdinaryCreateFromConstructor(env, constructor, defaultProto)
