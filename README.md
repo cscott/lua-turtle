@@ -6,12 +6,12 @@ Lua.  TurtleScript is a syntactic
 (but not semantic) subset of JavaScript, originally created for
 the One Laptop per Child project.  This implementation especially
 takes pains to match the official EcmaScript runtime semantics from
-https://tc39.es/ecma262 probably at the expense of exection speed.
+https://tc39.es/ecma262 -- probably at the expense of some exection
+speed.
 
 ## Install, and Run
 
-This installation is standalone, although there is a luarocks spec file
-in the repo.
+This installation is standalone.
 
 To run a TurtleScript
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop):
@@ -40,16 +40,21 @@ which you could manually reproduce in the REPL (if you were so inclined).
 `lua-turtle` is an interpreter for the bytecode emitted by
 `bcompile.js` from the TurtleScript project.  It is heavily based on
 `binterp.js` from that project, which is a TurtleScript interpreter written
-in TurtleScript, as well as on `rusty-turtle` and `php-turtle`, my previous
+in TurtleScript, as well as on
+[`rusty-turtle`](https://github.com/cscott/rusty-turtle) and
+[`php-turtle`](https://github.com/cscott/php-turtle), my previous
 implementations of TurtleScript runtimes in Rust and PHP, respectively.
 The `luaturtle/startup.lua` file contains the bytecode for the
 TurtleScript standard library implementation (from `binterp.js`) as
 well as the tokenizer, parser, and bytecode compiler itself (emitted
-by `write-lua-bytecode.js` in the TurtleScript project).  This allows
-the `lua-turtle` REPL to parse and compile the expressions you type
-at it into bytecode modules which it can interpret.
+by `write-lua-bytecode.js` in the
+[TurtleScript](https://github.com/cscott/TurtleScript)
+project).  This allows the `lua-turtle` REPL to parse and compile the
+expressions you type at it into bytecode modules which it can interpret.
 
-The JavaScript object model has been implemented in Lua in a way which
+The JavaScript object model in
+[`luaturtle/jsval.lua`](https://github.com/cscott/lua-turtle/blob/master/luaturtle/jsval.lua)
+has been implemented in Lua in a way which
 tries to make Lua access to and operations on JavaScript objects feel
 natural.  Although this is mostly straightforward for (say) arithmetic
 operators on numeric types, some performance compromises were
@@ -66,7 +71,8 @@ We've implemented fast paths through `[[Get]]` and `[[Set]]`
 for the most typical cases: read/write of plain properties (writable,
 enumerable, configurable) and "modern method" invocation (reads of
 function objects from not writable/not enumerable/not configurable
-properties).
+properties).  Plain properties are stored directly in the lua
+table; descriptors are stored for other properties.
 
 We do not currently wrap any Lua objects for insertion into the JavaScript
 environment, but it would not be too hard to do so given the EcmaScript
@@ -110,9 +116,11 @@ index backing storage, instead of (slow) conversion to a string.
 We'd transparently convert back and forth from "integer string" to
 "real string" in the corner cases (plain object access using integer
 index / array access using a string).  Alternatively we could
-break from the ECMAScript standard and allow numbers to be "Property
-Keys" (in the language of the spec) and only convert once we'd passed
-the possible dispatch to `ArrayDefineOwnProperty`.
+break from the ECMAScript standard and allow numbers to be
+[Property Keys](https://tc39.es/ecma262/#sec-topropertykey)
+(in the language of the spec) and only convert once we'd passed
+the possible dispatch to Array's
+[`DefineOwnProperty`](https://tc39.es/ecma262/#sec-array-exotic-objects-defineownproperty-p-desc).
 
 Currently bytecode is interpreted; a logical next step would be to
 compile directly to Lua code and eliminate the overhead of the
@@ -168,8 +176,10 @@ unused (for example, we've just substituted their values in the call
 to `object_meta.Set`); I've written assignments for them above just
 for clarity.
 
-We may have to introduce PHI and SIGMA functions in the bytecode to facilitate
-the representation of the analysis results to the code generator.
+We may have to introduce explicit
+[PHI and SIGMA](https://en.wikipedia.org/wiki/Static_single_assignment_form)
+functions in the bytecode to facilitate the representation of the analysis
+results to the code generator.
 
 ## Future research
 
