@@ -2,6 +2,7 @@ local lu = require('luaunit')
 local jsval = require('luaturtle.jsval')
 local ifunc = require('luaturtle.ifunc')
 local modul = require('luaturtle.module')
+local ops = require('luaturtle.ops')
 local Env = require('luaturtle.env')
 
 local TestEnv = {}
@@ -16,10 +17,10 @@ function TestEnv.testBasic()
          nargs = 0,
          max_stack = 2,
          bytecode = {
-            1, 0,     -- 0: push_literal(0)
-            1, 1,     -- 2: push_literal(1)
-            26,       -- 4: bi_add
-            11        -- 5: return
+            ops.PUSH_LITERAL, 0,     -- 0: push_literal(0)
+            ops.PUSH_LITERAL, 1,     -- 2: push_literal(1)
+            ops.BI_ADD,       -- 4: bi_add
+            ops.RETURN        -- 5: return
          }
       }
    }
@@ -44,10 +45,10 @@ function TestEnv.testMixedTypes()
          nargs = 0,
          max_stack = 2,
          bytecode = {
-            1, 0,     -- 0: push_literal(0)
-            1, 1,     -- 2: push_literal(1)
-            26,       -- 4: bi_add
-            11        -- 5: return
+            ops.PUSH_LITERAL, 0,     -- 0: push_literal(0)
+            ops.PUSH_LITERAL, 1,     -- 2: push_literal(1)
+            ops.BI_ADD,       -- 4: bi_add
+            ops.RETURN        -- 5: return
          }
       }
    }
@@ -73,19 +74,19 @@ function TestEnv.testFib()
          nargs = 0,
          max_stack = 3,
          bytecode = {
-            0,        -- 0: push_frame
-            1, 0,     -- 1: push_literal(0)
-            8, 1,     -- 3: set_slot_direct(1) frame.fib = undefined
-            0,        -- 5: push_frame
-            4, 1,     -- 6: new_function(1)
-            8, 1,     -- 8: set_slot_direct(1) frame.fib = function(..){...}
-            0,        -- 10: push_frame
-            5, 1,     -- 11: get_slot_direct(1) fib
-            0,        -- 13: push_frame
-            5, 8,     -- 14: get_slot_direct(8) this
-            1, 9,     -- 16: push_literal(9)    10
-            10, 1,    -- 18: invoke(1)
-            11        -- 20: return             return fib.call(this, 10)
+            ops.PUSH_FRAME,        -- 0: push_frame
+            ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
+            ops.SET_SLOT_DIRECT, 1,     -- 3: set_slot_direct(1)
+            ops.PUSH_FRAME,        -- 5: push_frame
+            ops.NEW_FUNCTION, 1,     -- 6: new_function(1)
+            ops.SET_SLOT_DIRECT, 1,     -- 8: set_slot_direct(1)
+            ops.PUSH_FRAME,        -- 10: push_frame
+            ops.GET_SLOT_DIRECT, 1,     -- 11: get_slot_direct(1)
+            ops.PUSH_FRAME,        -- 13: push_frame
+            ops.GET_SLOT_DIRECT, 8,     -- 14: get_slot_direct(8)
+            ops.PUSH_LITERAL, 9,     -- 16: push_literal(9)
+            ops.INVOKE, 1,    -- 18: invoke(1)
+            ops.RETURN        -- 20: return
          }
       },
       ifunc.Function:new{ -- "fib"
@@ -94,44 +95,44 @@ function TestEnv.testFib()
          nargs = 1,
          max_stack = 5,
          bytecode = {
-            0,        -- 0: push_frame
-            5, 2,     -- 1: get_slot_direct(2)
-            15,       -- 3: dup
-            5, 3,     -- 4: get_slot_direct(3) arguments[0]
-            0,        -- 6: push_frame
-            19,       -- 7: swap
-            8, 4,     -- 8: set_slot_direct(4) n = arguments[0]
-            14,       -- 10: pop
-            0,        -- 11: push_frame
-            5, 4,     -- 12: get_slot_direct(4) n
-            1, 5,     -- 14: push_literal(5)    2
-            19,       -- 16: swap
-            24,       -- 17: bi_gt              n < 2
-            13, 24,   -- 18: jmp_unless(24)     jmp if n > 2
-            1, 6,     -- 20: push_literal(6)
-            12, 57,   -- 22: jmp(57)            return 1
-            0,        -- 24: push_frame
-            5, 7,     -- 25: get_slot_direct(7) frame.__proto__
-            5, 1,     -- 27: get_slot_direct(1) frame.__proto__.fib
-            0,        -- 29: push_frame
-            5, 8,     -- 30: get_slot_direct(8)
-            0,        -- 32: push_frame
-            5, 4,     -- 33: get_slot_direct(4)
-            1, 6,     -- 35: push_literal(6)
-            27,       -- 37: bi_sub
-            10, 1,    -- 38: invoke(1)
-            0,        -- 40: push_frame
-            5, 7,     -- 41: get_slot_direct(7)
-            5, 1,     -- 43: get_slot_direct(1)
-            0,        -- 45: push_frame
-            5, 8,     -- 46: get_slot_direct(8)
-            0,        -- 48: push_frame
-            5, 4,     -- 49: get_slot_direct(4)
-            1, 5,     -- 51: push_literal(5)
-            27,       -- 53: bi_sub
-            10, 1,    -- 54: invoke(1)
-            26,       -- 56: bi_add
-            11        -- 57: return
+            ops.PUSH_FRAME,        -- 0: push_frame
+            ops.GET_SLOT_DIRECT, 2,     -- 1: get_slot_direct(2)
+            ops.DUP,       -- 3: dup
+            ops.GET_SLOT_DIRECT, 3,     -- 4: get_slot_direct(3)
+            ops.PUSH_FRAME,        -- 6: push_frame
+            ops.SWAP,       -- 7: swap
+            ops.SET_SLOT_DIRECT, 4,     -- 8: set_slot_direct(4)
+            ops.POP,       -- 10: pop
+            ops.PUSH_FRAME,        -- 11: push_frame
+            ops.GET_SLOT_DIRECT, 4,     -- 12: get_slot_direct(4)
+            ops.PUSH_LITERAL, 5,     -- 14: push_literal(5)
+            ops.SWAP,       -- 16: swap
+            ops.BI_GT,       -- 17: bi_gt
+            ops.JMP_UNLESS, 24,   -- 18: jmp_unless(24)
+            ops.PUSH_LITERAL, 6,     -- 20: push_literal(6)
+            ops.JMP, 57,   -- 22: jmp(57)
+            ops.PUSH_FRAME,        -- 24: push_frame
+            ops.GET_SLOT_DIRECT, 7,     -- 25: get_slot_direct(7)
+            ops.GET_SLOT_DIRECT, 1,     -- 27: get_slot_direct(1)
+            ops.PUSH_FRAME,        -- 29: push_frame
+            ops.GET_SLOT_DIRECT, 8,     -- 30: get_slot_direct(8)
+            ops.PUSH_FRAME,        -- 32: push_frame
+            ops.GET_SLOT_DIRECT, 4,     -- 33: get_slot_direct(4)
+            ops.PUSH_LITERAL, 6,     -- 35: push_literal(6)
+            ops.BI_SUB,       -- 37: bi_sub
+            ops.INVOKE, 1,    -- 38: invoke(1)
+            ops.PUSH_FRAME,        -- 40: push_frame
+            ops.GET_SLOT_DIRECT, 7,     -- 41: get_slot_direct(7)
+            ops.GET_SLOT_DIRECT, 1,     -- 43: get_slot_direct(1)
+            ops.PUSH_FRAME,        -- 45: push_frame
+            ops.GET_SLOT_DIRECT, 8,     -- 46: get_slot_direct(8)
+            ops.PUSH_FRAME,        -- 48: push_frame
+            ops.GET_SLOT_DIRECT, 4,     -- 49: get_slot_direct(4)
+            ops.PUSH_LITERAL, 5,     -- 51: push_literal(5)
+            ops.BI_SUB,       -- 53: bi_sub
+            ops.INVOKE, 1,    -- 54: invoke(1)
+            ops.BI_ADD,       -- 56: bi_add
+            ops.RETURN        -- 57: return
          }
       }
    }

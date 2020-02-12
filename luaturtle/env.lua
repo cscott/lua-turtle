@@ -410,9 +410,13 @@ function Env:new()
         end
      end
      if jsval.Type(finallyBlock)=='Object' then
-        nyi('finally block')()
+        local finalStatus, finalResult =
+           env:interpretFunction( finallyBlock, innerThis, {} )
+        if not finalStatus then -- exceptions propagate out from finally
+           status, rv = finalStatus, finalResult
+        end
      end
-     -- rethrow if exception uncaught (or thrown during catch)
+     -- rethrow if exception uncaught (or thrown during catch/finally)
      if not status then error(rv) end
      return rv
    end)
@@ -719,6 +723,11 @@ end
 
 local one_step = {
    [ops.PUSH_FRAME] = function(env, state)
+      state:push(state.frame)
+   end,
+   [ops.PUSH_LOCAL_FRAME] = function(env, state)
+      -- This is a lame implementation, but it works for now.
+      -- We could do better!
       state:push(state.frame)
    end,
    [ops.PUSH_LITERAL] = function(env, state)
