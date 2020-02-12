@@ -5,13 +5,14 @@
 Lua.  TurtleScript is a syntactic
 (but not semantic) subset of JavaScript, originally created for
 the One Laptop per Child project.  This implementation especially
-takes pains to match the official EcmaScript runtime semantics from
-https://tc39.es/ecma262 -- probably at the expense of some exection
+takes pains to match the official ECMAScript runtime semantics from
+https://tc39.es/ecma262 -- probably at the expense of some execution
 speed.
 
 ## Install, and Run
 
-This installation is standalone.
+This installation is standalone.  I developed this code using Lua 5.3.3
+but it will probably run on other versions of Lua.
 
 To run a TurtleScript
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop):
@@ -58,25 +59,25 @@ has been implemented in Lua in a way which
 tries to make Lua access to and operations on JavaScript objects feel
 natural.  Although this is mostly straightforward for (say) arithmetic
 operators on numeric types, some performance compromises were
-required.  In particular JS properties are renamed and 'hidden' in the
+required.  In particular JS properties are renamed and "hidden" in the
 Lua object in order to ensure that direct property access in Lua
 doesn't hit in the table but instead goes through the `__index`
 method.  It's possible we could dial this back a bit and use the
 UTF-16 JS field names directly: since this effectively prepends a `\0`
 in front of most ASCII field names this would still ensure that
-`__index` is used for most natural human acceses.  Arrays would
+`__index` is used for most natural human accesses.  Arrays would
 require special treatment (see below).
 
 We've implemented fast paths through `[[Get]]` and `[[Set]]`
 for the most typical cases: read/write of plain properties (writable,
 enumerable, configurable) and "modern method" invocation (reads of
 function objects from not writable/not enumerable/not configurable
-properties).  Plain properties are stored directly in the lua
+properties).  Plain properties are stored directly in the Lua
 table; descriptors are stored for other properties.
 
 We do not currently wrap any Lua objects for insertion into the JavaScript
-environment, but it would not be too hard to do so given the EcmaScript
-standard's support for 'Exotic' objects.
+environment, but it would not be too hard to do so given the ECMAScript
+standard's support for "Exotic" and Proxy objects.
 
 Generally we've tried to use dynamic method dispatch through the
 metatable as often as possible to replace explicit
@@ -107,7 +108,8 @@ above, this ensures that `foo.bar` from Lua will invoke `__index` from
 the metatable and not accidentally hit the backing storage for
 property `bar`, but it's possible that we could improve performance by
 using the UTF-16 strings directly as keys.  We don't use `__index`
-inside the bytecode interpreter, so this only affects Lua interop.
+inside the bytecode interpreter, so this only affects Lua
+interoperability.
 
 We probably want to introduce a "integer string" type, to represent
 property accesses using numerical indexes.  In the common case that
@@ -164,7 +166,7 @@ If right_meta is also known to be NumberMT the first line can become:
 result_meta, result = NumberMT, NumberMT:from(5 + right.value)
 ```
 Finally, we can 'unbox' primitive types when they are stored in registers
-and rebox on storage (or when the types become unknown at a merge point)
+and re-box on storage (or when the types become unknown at a merge point)
 to get:
 ```
 prop_meta, prop = StringMT, '\0f\0o\0o'
