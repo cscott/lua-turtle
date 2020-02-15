@@ -803,13 +803,22 @@ local one_step = {
    [ops.JMP] = function(env, state)
       state.pc = state:getnext() + 1 -- convert to 1-based indexing
    end,
+   [ops.JMP_INTO_LOOP] = function(env, state)
+      local dest = state:getnext()
+      local loopexit = state:getnext()
+      state.pc = dest + 1 -- convert to 1-based indexing
+   end,
    [ops.JMP_UNLESS] = function(env, state)
-      local arg1 = state:getnext()
+      local dest = state:getnext()
+      local mergepoint = state:getnext()
       local cond = state:pop()
       cond = jsval.invokePrivate(env, cond, 'ToBoolean')
       if rawequal(cond, jsval.False) then
-         state.pc = arg1 + 1 -- convert to 1-based indexing
+         state.pc = dest + 1 -- convert to 1-based indexing
       end
+   end,
+   [ops.PHI] = function(env, state)
+      -- no op
    end,
    -- stack manipulation
    [ops.POP] = function(env, state)
