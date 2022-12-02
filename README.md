@@ -193,6 +193,51 @@ There are some thoughts in
 For that matter, multilingual Lua might be a better first step, the
 Lua language is extremely compact!
 
+NOTES:
+In lua, any type can be a table key, but there is syntactic sugar for using
+strings as keys:
+```
+point = { x = 10, y = 20 }   -- Create new table
+print(point["x"])            -- Prints 10
+print(point.x)               -- Has exactly the same meaning as line above. The easier-to-read dot notation is just syntactic sugar.
+```
+In Multilinugal lua, the 'sugar' would be internationalized: "symbols"
+are the default keys, and the `_("xxx")` constructor makes a symbol out
+of a string.
+```
+point = { _("x") = 10, _("y") = 20 }
+print(point[_("x")])            -- Prints 10
+print(point.x)               -- Has exactly the same meaning as line above.
+```
+
+(Note that `point` is also effectively _("point") as well.)
+Two issues:
+1. How does _("x") know what the "current language" is?
+2. How to disambiguate if foo.x and bar.x are actually translated differently?
+(ie `fish.net` vs `ether.net` -- although in spanish these are both `red`.)
+
+In multilingual JS, we had a special import statement and #foo syntax to
+mark "symbols" as a separate type.
+```
+point = { #x = 10, #y = 20 }
+print(point[#x])            -- Prints 10
+print(point.x)               -- Has exactly the same meaning as line above.
+```
+(do we need declare #x and point, etc?) (also #foo is already used in lua
+for 'length' operator)
+
+Lua has the meta table function __index which could help:
+```
+__index = function(values, n)
+  return values[_(n)]
+end
+```
+-- or maybe this goes the other way, in the sense that __index can be used
+to convert from symbols to strings or integer indexes so you can get
+fastpath behavior from the lua jit.
+
+
+
 ## License
 
 TurtleScript and `lua-turtle` are (c) 2020 C. Scott Ananian and
