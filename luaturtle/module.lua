@@ -1,7 +1,7 @@
 -- A compilation unit (which can be as small as a single function)
 local startup = require('luaturtle.startup')
 local jsval = require('luaturtle.jsval')
-local ifunc = require("luaturtle.ifunc")
+local ifunc = require('luaturtle.ifunc')
 
 -- Helper class to read the bytecode format
 local ModuleReader = {}
