@@ -12,7 +12,13 @@ speed.
 ## Install, and Run
 
 This installation is standalone.  I developed this code using Lua 5.3.3
-but it will probably run on other versions of Lua.
+but it will probably run on later versions of Lua.
+
+It uses the bitwise >> operator, which was introduced in Lua 5.3 and
+is not present in earlier versions.
+
+It also uses the 'utf8' standard library module, which was added in Lua
+5.3 and is not present in earlier versions.
 
 To run a TurtleScript
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop):
