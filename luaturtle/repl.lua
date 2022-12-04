@@ -19,9 +19,22 @@ function repl(line)
    end
 end
 
+function eval(line)
+   local status, result = i:repl(line)
+   if status then
+      return i.env:prettyPrint(result)
+   elseif jsval.isJsVal(result) then
+      local msg = i.env:prettyPrint(result)
+      return '* ' .. msg
+   else
+      return result
+   end
+end
+
 reset()
 
 return {
    reset = reset,
    repl = repl,
+   eval = eval,
 }
