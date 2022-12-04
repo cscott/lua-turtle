@@ -2,6 +2,7 @@
 local startup = require('luaturtle.startup')
 local jsval = require('luaturtle.jsval')
 local ifunc = require('luaturtle.ifunc')
+local compat = require('luaturtle.compat')
 
 -- Helper class to read the bytecode format
 local ModuleReader = {}
@@ -24,7 +25,8 @@ function ModuleReader:decodeUtf16Str()
    local s = {}
    for i = 1, len do
       local c = self:decodeUint()
-      table.insert(s, string.char(c >> 8, c & 0xFF))
+      local msb, lsb = compat.splitBytes(c)
+      table.insert(s, string.char(msb, lsb))
    end
    return table.concat(s)
 end

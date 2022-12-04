@@ -2,6 +2,7 @@
 -- Consists of a realm, well-known symbols, etc
 local ops = require('luaturtle.ops')
 local jsval = require('luaturtle.jsval')
+local compat = require('luaturtle.compat')
 
 function nyi(which)
    return function()
@@ -507,7 +508,7 @@ function Env:new()
      if position < 0 or position >= size then
         return jsval.newStringIntern('')
      end
-     local start = (position << 1) + 1 -- 1-based indexing!
+     local start = (position * 2) + 1 -- 1-based indexing!
      local resultStr = string.sub(jsval.stringToUtf16(S), start, start + 1)
      return jsval.newStringFromUtf16(resultStr)
    end)
@@ -520,9 +521,9 @@ function Env:new()
      if position < 0 or position >= size then
         return jsval.newNumber(0/0) -- NaN
      end
-     local start = (position << 1) + 1 -- 1-based indexing!
+     local start = (position * 2) + 1 -- 1-based indexing!
      local high,lo = string.byte(jsval.stringToUtf16(S), start, start + 1)
-     return jsval.newNumber((high<<8) | lo)
+     return jsval.newNumber(compat.combineBytes(high, lo))
    end)
    env:addNativeFunc(String, 'fromCharCode', 1, function(this, args)
      local length = #args
@@ -531,7 +532,8 @@ function Env:new()
      while nextIndex < length do
         local next = args[1 + nextIndex]
         local nextCU = jsval.toLua(env, jsval.invokePrivate(env, next, 'ToUint16'))
-        table.insert(elements, string.char(nextCU >> 8, nextCU & 0xFF))
+        local msb, lsb = compat.splitBytes(nextCU)
+        table.insert(elements, string.char(msb, lsb))
         nextIndex = nextIndex + 1
      end
      return jsval.newStringFromUtf16(table.concat(elements))
@@ -947,7 +949,7 @@ function Env:invoke(state, nargs)
    for i = 1,nargs do
       table.insert(nativeArgs, state:pop())
    end
-   for i = 1,nargs>>1 do -- reverse array
+   for i = 1,compat.rshift(nargs,1) do -- reverse array
       j = (nargs+1) - i
       nativeArgs[i],nativeArgs[j] = nativeArgs[j],nativeArgs[i]
    end
@@ -1026,10 +1028,16 @@ function Env:interpretFunction(func, this, args)
       local nFrame = jsval.newFrame(
          self, parentFrame, this, self:arrayCreate(args, true)
       )
-      -- Set up error-handling
-      return xpcall(
-         self.interpret, debug.traceback, self, f.modul, f.func.id, nFrame
-      )
+      if true then -- lua 5.1
+         return pcall(function()
+               return self:interpret(f.modul, f.func.id, nFrame)
+         end)
+      else
+         -- Set up error-handling
+         return xpcall(
+            self.interpret, debug.traceback, self, f.modul, f.func.id, nFrame
+         )
+      end
    end
    error('bad function object')
 end

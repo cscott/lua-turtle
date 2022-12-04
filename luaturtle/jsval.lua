@@ -1,9 +1,10 @@
 -- JavaScript value types
 -- In the future we could gain efficiency by unwrapping some of these
 -- primitive types, but for now let's wrap everything.
-local utf8 = require('utf8')
 local table = require('table')
 local string = require('string')
+
+local compat = require('luaturtle.compat')
 
 local jsval = {}
 
@@ -211,16 +212,17 @@ end
 function StringMT:fromUTF8(s)
    local result = {}
    local push16 = function(c)
-      table.insert(result, string.char(c >> 8, c & 0xFF))
+      local msb, lsb = compat.splitBytes(c)
+      table.insert(result, string.char(msb, lsb))
    end
-   for p,c in utf8.codes(s) do
+   for _,c in compat.utf8codes(s) do
       if c <= 0xD7FF or (c >= 0xE000 and c <= 0xFFFF) then
          push16(c)
       else
          assert(c >= 0x10000, "unpaired surrogate")
          c = c - 0x10000
-         push16(0xD800 + (c >> 10))
-         push16(0xDC00 + (c & 0x3FF))
+         push16(0xD800 + compat.rshift(c, 10))
+         push16(0xDC00 + (c % 0x400)) -- c & 0x3FF in Lua 5.3
       end
    end
    local obj = StringMT:cons(nil, table.concat(result))
@@ -549,7 +551,7 @@ function NumberMT.ToUint32(env, argument)
    local minus = (number < 0)
    number = math.floor(math.abs(number))
    if minus then number = -number end
-   return NumberMT:from(number & 0xFFFFFFFF)
+   return NumberMT:from(number % 0x100000000) -- (number & 0xFFFFFFFF) in Lua 5.3
 end
 
 function JsValMT.ToUint16(env, argument)
@@ -567,7 +569,7 @@ function NumberMT.ToUint16(env, argument)
    local minus = (number < 0)
    number = math.floor(math.abs(number))
    if minus then number = -number end
-   return NumberMT:from(number & 0xFFFF)
+   return NumberMT:from(number % 0x10000) -- (number & 0xFFFF) in Lua 5.3
 end
 
 -- ToString
@@ -584,7 +586,18 @@ function NumberMT.ToString(env, n)
    if val == 0 then return StringMT:intern('0') end -- +0 and -0
    if val == 1/0 then return StringMT:intern('Infinity') end -- +Infinity
    if val == -1/0 then return StringMT:intern('-Infinity') end -- -Infinity
-   local s = StringMT:fromUTF8(tostring(val))
+   -- Try to match the ECMAScript spec for number format
+   -- https://262.ecma-international.org/5.1/#sec-9.8.1
+   local luastr = tostring(val)
+   if val >= 1e-6 then
+      luastr = string.gsub(
+         string.gsub(
+            string.format('%.21f', val),
+            "0+$", ""
+         ),
+         "%.$", "")
+   end
+   local s = StringMT:fromUTF8(luastr)
    -- fast-ish path for converting back to number for array index, etc
    rawset(s, 'number', val)
    return s
@@ -979,7 +992,7 @@ function ObjectMT.StringGetOwnProperty(env, S, P) -- 9.4.3.5
    console.assert(str~=nil and mt(env, str, 'Type') == 'String')
    local len = #str
    if len <= index then return nil end
-   local start = (index << 1) + 1 -- 1-based indexing!
+   local start = (index * 2) + 1 -- 1-based indexing!
    local resultStr = string.sub(StringMT:flatten(str).suffix, start, start+1)
    return PropertyDescriptor:newData{
       value = StringMT:cons(nil, resultStr),
@@ -1548,7 +1561,7 @@ function StringMT:__len()
    if self.prefix ~= nil then
       StringMT:flatten(self)
    end
-   return (#self.suffix) >> 1 -- UTF-16 length
+   return (#self.suffix) / 2 -- UTF-16 length (should be // in lua 5.3)
 end
 
 -- UTF16 to UTF8 string conversion
@@ -1561,7 +1574,7 @@ function StringMT:__tostring()
    local surrogate = false
    for i=1,len,2 do
       local hi,lo = string.byte(s, i, i+1)
-      local code = (hi << 8) | lo
+      local code = compat.combineBytes(hi, lo)
       if surrogate ~= false then
          if code >= 0xDC00 and code <= 0xDFFF then
             code = (surrogate - 0xDB00) * 0x400 + (code - 0xDC00) + 0x10000;
@@ -1577,7 +1590,7 @@ function StringMT:__tostring()
       end
    end
    assert(surrogate == false, 'bad utf-16')
-   u8 = utf8.char(table.unpack(result))
+   u8 = compat.utf8char(compat.unpack(result))
    -- speed up future invocations!
    self.utf8 = u8
    return u8

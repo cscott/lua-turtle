@@ -56,9 +56,16 @@ function Interpreter:createModuleAndExecute(bc)
    end)
    local nm = Module:newFromBytes( table.concat(buf) )
    -- Execute the new module
-   return xpcall(
-      self.env.interpret, debug.traceback, self.env, nm, 0, self.frame
-   )
+   if true then -- lua 5.1
+      return pcall(function()
+            return self.env:interpret(nm, 0, self.frame)
+      end)
+   else
+      -- Set up error-handling
+      return xpcall(
+         self.env.interpret, debug.traceback, self.env, nm, 0, self.frame
+      )
+   end
 end
 
 return Interpreter
