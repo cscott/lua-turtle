@@ -59,11 +59,11 @@ function TestJsVal.testJsString()
    local c = a + b + a
    lu.assertEquals(jsval.Type(c), 'String')
    lu.assertEquals(tostring(c), 'abcdefgabc')
-   lu.assertEquals(#c, 10)
+   lu.assertEquals(jsval.strlen(c), 10) -- #c in Lua >= 5.2
 
    -- now test again w/o utf8 conversion first
    local d = b + a + b
-   lu.assertEquals(#d, 11)
+   lu.assertEquals(jsval.strlen(d), 11) -- #d in Lua >= 5.2
 
    -- number conversion to string, too
    local e = jsval.newNumber(5)

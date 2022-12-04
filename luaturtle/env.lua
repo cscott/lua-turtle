@@ -504,7 +504,7 @@ function Env:new()
      local S = jsval.invokePrivate(env, O, 'ToString')
      local pos = args[1] or jsval.Undefined
      local position = jsval.toLua(env, jsval.invokePrivate(env, pos, 'ToInteger'))
-     local size = #S
+     local size = jsval.strlen(S)
      if position < 0 or position >= size then
         return jsval.newStringIntern('')
      end
@@ -517,7 +517,7 @@ function Env:new()
      local S = jsval.invokePrivate(env, O, 'ToString')
      local pos = args[1] or jsval.Undefined
      local position = jsval.toLua(env, jsval.invokePrivate(env, pos, 'ToInteger'))
-     local size = #S
+     local size = jsval.strlen(S)
      if position < 0 or position >= size then
         return jsval.newNumber(0/0) -- NaN
      end
@@ -924,7 +924,7 @@ local one_step = {
 
 function Env:interpretOne(state)
    local op = state:getnext()
-   -- print(state.pc-2, ops.bynum[op]) -- convert back to 0-based pc indexing
+   -- print(state.func.name, state.pc-2, ops.bynum[op]) -- convert back to 0-based pc indexing
    local nstate = one_step[op](self, state) or state
    return nstate
 end

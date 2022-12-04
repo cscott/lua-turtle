@@ -14,7 +14,6 @@ end
 function top_level(name)
    -- initialize the built-ins as 'seen'
    seen = {}
-   seen['utf8'] = true -- XXX not in lua 5.1!
    seen['table'] = true
    seen['string'] = true
    -- XXX in wrapper code, initialize the built-ins
@@ -27,7 +26,6 @@ function top_level(name)
       "end\n" ..
       modules .. "\n" ..
       "local modules = {}\n" ..
-      "modules['utf8'] = require('utf8')\n" ..
       "modules['table'] = require('table')\n" ..
       "modules['string'] = require('string')\n" ..
       "function myrequire(name)\n" ..

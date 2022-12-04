@@ -372,7 +372,7 @@ function StringMT.ToObject(env, s, proto)
    local O = ObjectMT:create(env, proto or env.realm.StringPrototype)
    rawset(O, STRINGDATA, s)
    mt(env, O, 'DefinePropertyOrThrow', StringMT:intern('length'),
-      PropertyDescriptor:newData{ value = NumberMT:from(#s) } )
+      PropertyDescriptor:newData{ value = NumberMT:from(StringMT.__len(s)) } )
    setmetatable(O, getmetatable(env.realm.StringPrototype))
    return O
 end
@@ -490,6 +490,10 @@ function StringMT.ToNumber(env, s)
       nyi(prefix .. ' number parsing')()
    end
    local n = tonumber(s)
+   -- Lua 5.1 parses some strings which JavaScript does not.
+   if s == 'inf' or s == '-inf' then
+      n = nil
+   end
    if n == nil then n = (0/0) end
    return NumberMT:from(minus * n)
 end
@@ -592,7 +596,7 @@ function NumberMT.ToString(env, n)
    if val == -1/0 then return StringMT:intern('-Infinity') end -- -Infinity
    -- Try to match the ECMAScript spec for number format
    -- https://262.ecma-international.org/5.1/#sec-9.8.1
-   local luastr = tostring(val)
+   local luastr = tostring(val) -- only used for very small #s.
    if val >= 1e-6 then
       luastr = string.gsub(
          string.gsub(
@@ -994,7 +998,7 @@ function ObjectMT.StringGetOwnProperty(env, S, P) -- 9.4.3.5
    if index.value < 0 then return nil end
    local str = rawget(S, STRINGDATA)
    console.assert(str~=nil and mt(env, str, 'Type') == 'String')
-   local len = #str
+   local len = StringMT.__len(str)
    if len <= index then return nil end
    local start = (index * 2) + 1 -- 1-based indexing!
    local resultStr = string.sub(StringMT:flatten(str).suffix, start, start+1)
@@ -1561,6 +1565,9 @@ function ObjectMT:__newindex(key, value)
 end
 
 -- String utilities (lua interop)
+-- Note that #s with s an wrapped String jsval doesn't invoke this on Lua 5.1
+-- although it works fine on Lua 5.2+ ; use jsval.strlen(S) instead of #S
+-- for compatibility with Lua 5.1.
 function StringMT:__len()
    if self.prefix ~= nil then
       StringMT:flatten(self)
@@ -1625,6 +1632,7 @@ return {
    end,
    stringToUtf16 = function(s) return StringMT:flatten(s).suffix end,
    Type = function(jsval) return mt(nil, jsval, 'Type') end,
+   strlen = function(jsval) return StringMT.__len(jsval) end,
    newBoolean = function(b) if b then return True else return False end end,
    newNumber = function(val) return NumberMT:from(val) end,
    newString = function(s) return StringMT:fromUTF8(s) end,
