@@ -466,6 +466,10 @@ function NullMT.ToNumber() return NumberMT:from(0) end
 function BooleanMT.ToNumber(env, b) return b.number end
 function NumberMT.ToNumber(env, n) return n end
 function StringMT.ToNumber(env, s)
+   cheat = rawget(s, 'number')
+   if cheat ~= nil then
+      return NumberMT:from(cheat)
+   end
    -- convert from UTF16 to UTF8
    s = tostring(s)
    -- start by trimming whitespace
