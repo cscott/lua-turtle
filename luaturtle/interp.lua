@@ -12,6 +12,24 @@ function Interpreter:new()
    i.modul = Module:newStartupModule()
    i.frame = i.env:makeTopLevelFrame( jsval.Null, {} )
    i.compileFromSource = i.env:interpret( i.modul, 0, i.frame )
+   -- Create JSON parser
+   i.compileJSON = jsval.invokePrivate(
+      i.env, i.compileFromSource, 'GetV', jsval.newString('parse_json')
+   )
+   local JSON = i.env.realm.JSON
+   i.env:addNativeFunc(i.env.realm.JSON, 'parse', 2, function(this, args)
+      local status, bc = i.env:interpretFunction(
+         i.compileJSON, jsval.Null, { (args[1] or jsval.Undefined) }
+      )
+      if not status then
+         error(bc) -- native throw!
+      end
+      status, result = i:createModuleAndExecute(bc)
+      if not status then
+         error(bc) -- this should never happen
+      end
+      return result
+   end)
    -- Create repl
    local makeRepl = jsval.invokePrivate(
       i.env, i.compileFromSource, 'GetV', jsval.newString('make_repl')
