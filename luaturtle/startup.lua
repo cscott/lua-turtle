@@ -18,146 +18,157 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 0: push_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
       ops.SET_SLOT_DIRECT, 1,  -- 3: set_slot_direct(1)
-      ops.NEW_FUNCTION, 1,     -- 5: new_function(1)
-      ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
-      ops.INVOKE, 0,           -- 10: invoke(0)
-      ops.POP,                 -- 12: pop
-      ops.PUSH_FRAME,          -- 13: push_frame
-      ops.NEW_OBJECT,          -- 14: new_object
-      ops.SET_SLOT_DIRECT, 1,  -- 15: set_slot_direct(1)
-      ops.PUSH_FRAME,          -- 17: push_frame
-      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.NEW_FUNCTION, 37,    -- 19: new_function(37)
-      ops.OVER,                -- 21: over
-      ops.SET_SLOT_DIRECT, 196,-- 22: set_slot_direct(196)
-      ops.SET_SLOT_DIRECT, 197,-- 24: set_slot_direct(197)
-      ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 27: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
-      ops.PUSH_LITERAL, 198,   -- 32: push_literal(198)
-      ops.NEW_ARRAY,           -- 34: new_array
-      ops.DUP,                 -- 35: dup
-      ops.PUSH_LITERAL, 199,   -- 36: push_literal(199)
-      ops.SET_SLOT_DIRECT, 18, -- 38: set_slot_direct(18)
-      ops.PUSH_FRAME,          -- 40: push_frame
-      ops.NEW_FUNCTION, 39,    -- 41: new_function(39)
-      ops.OVER,                -- 43: over
-      ops.SET_SLOT_DIRECT, 249,-- 44: set_slot_direct(249)
-      ops.INVOKE, 3,           -- 46: invoke(3)
-      ops.POP,                 -- 48: pop
-      ops.PUSH_FRAME,          -- 49: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 50: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 53: get_slot_direct(26)
-      ops.PUSH_LITERAL, 252,   -- 55: push_literal(252)
-      ops.NEW_ARRAY,           -- 57: new_array
-      ops.DUP,                 -- 58: dup
-      ops.PUSH_LITERAL, 253,   -- 59: push_literal(253)
-      ops.SET_SLOT_DIRECT, 18, -- 61: set_slot_direct(18)
-      ops.DUP,                 -- 63: dup
-      ops.PUSH_LITERAL, 198,   -- 64: push_literal(198)
-      ops.SET_SLOT_DIRECT, 31, -- 66: set_slot_direct(31)
-      ops.PUSH_FRAME,          -- 68: push_frame
-      ops.NEW_FUNCTION, 43,    -- 69: new_function(43)
-      ops.OVER,                -- 71: over
-      ops.SET_SLOT_DIRECT, 377,-- 72: set_slot_direct(377)
-      ops.INVOKE, 3,           -- 74: invoke(3)
-      ops.POP,                 -- 76: pop
-      ops.PUSH_FRAME,          -- 77: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 78: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 80: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 81: get_slot_direct(26)
-      ops.PUSH_LITERAL, 380,   -- 83: push_literal(380)
-      ops.NEW_ARRAY,           -- 85: new_array
-      ops.DUP,                 -- 86: dup
-      ops.PUSH_LITERAL, 381,   -- 87: push_literal(381)
-      ops.SET_SLOT_DIRECT, 18, -- 89: set_slot_direct(18)
-      ops.PUSH_FRAME,          -- 91: push_frame
-      ops.NEW_FUNCTION, 96,    -- 92: new_function(96)
-      ops.OVER,                -- 94: over
-      ops.SET_SLOT_DIRECT, 434,-- 95: set_slot_direct(434)
-      ops.INVOKE, 3,           -- 97: invoke(3)
-      ops.POP,                 -- 99: pop
-      ops.PUSH_FRAME,          -- 100: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 101: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 104: get_slot_direct(26)
-      ops.PUSH_LITERAL, 437,   -- 106: push_literal(437)
-      ops.NEW_ARRAY,           -- 108: new_array
-      ops.DUP,                 -- 109: dup
-      ops.PUSH_LITERAL, 438,   -- 110: push_literal(438)
-      ops.SET_SLOT_DIRECT, 18, -- 112: set_slot_direct(18)
-      ops.PUSH_FRAME,          -- 114: push_frame
-      ops.NEW_FUNCTION, 106,   -- 115: new_function(106)
-      ops.OVER,                -- 117: over
-      ops.SET_SLOT_DIRECT, 449,-- 118: set_slot_direct(449)
-      ops.INVOKE, 3,           -- 120: invoke(3)
-      ops.POP,                 -- 122: pop
-      ops.PUSH_FRAME,          -- 123: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 124: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 127: get_slot_direct(26)
-      ops.PUSH_LITERAL, 450,   -- 129: push_literal(450)
-      ops.NEW_ARRAY,           -- 131: new_array
-      ops.DUP,                 -- 132: dup
-      ops.PUSH_LITERAL, 451,   -- 133: push_literal(451)
-      ops.SET_SLOT_DIRECT, 18, -- 135: set_slot_direct(18)
-      ops.DUP,                 -- 137: dup
-      ops.PUSH_LITERAL, 380,   -- 138: push_literal(380)
-      ops.SET_SLOT_DIRECT, 31, -- 140: set_slot_direct(31)
-      ops.DUP,                 -- 142: dup
-      ops.PUSH_LITERAL, 437,   -- 143: push_literal(437)
-      ops.SET_SLOT_DIRECT, 136,-- 145: set_slot_direct(136)
-      ops.PUSH_FRAME,          -- 147: push_frame
-      ops.NEW_FUNCTION, 111,   -- 148: new_function(111)
-      ops.OVER,                -- 150: over
-      ops.SET_SLOT_DIRECT, 516,-- 151: set_slot_direct(516)
-      ops.INVOKE, 3,           -- 153: invoke(3)
-      ops.POP,                 -- 155: pop
-      ops.PUSH_FRAME,          -- 156: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 157: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 159: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 160: get_slot_direct(26)
-      ops.PUSH_LITERAL, 517,   -- 162: push_literal(517)
-      ops.NEW_ARRAY,           -- 164: new_array
-      ops.NEW_FUNCTION, 170,   -- 165: new_function(170)
-      ops.INVOKE, 3,           -- 167: invoke(3)
-      ops.POP,                 -- 169: pop
-      ops.PUSH_FRAME,          -- 170: push_frame
-      ops.GET_SLOT_DIRECT, 197,-- 171: get_slot_direct(197)
-      ops.PUSH_LOCAL_FRAME,    -- 173: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 174: get_slot_direct(26)
-      ops.PUSH_LITERAL, 519,   -- 176: push_literal(519)
-      ops.NEW_ARRAY,           -- 178: new_array
-      ops.DUP,                 -- 179: dup
-      ops.PUSH_LITERAL, 252,   -- 180: push_literal(252)
-      ops.SET_SLOT_DIRECT, 18, -- 182: set_slot_direct(18)
-      ops.DUP,                 -- 184: dup
-      ops.PUSH_LITERAL, 450,   -- 185: push_literal(450)
-      ops.SET_SLOT_DIRECT, 31, -- 187: set_slot_direct(31)
-      ops.DUP,                 -- 189: dup
-      ops.PUSH_LITERAL, 520,   -- 190: push_literal(520)
-      ops.SET_SLOT_DIRECT, 136,-- 192: set_slot_direct(136)
-      ops.DUP,                 -- 194: dup
-      ops.PUSH_LITERAL, 437,   -- 195: push_literal(437)
-      ops.SET_SLOT_DIRECT, 159,-- 197: set_slot_direct(159)
-      ops.DUP,                 -- 199: dup
-      ops.PUSH_LITERAL, 517,   -- 200: push_literal(517)
-      ops.SET_SLOT_DIRECT, 162,-- 202: set_slot_direct(162)
-      ops.NEW_FUNCTION, 171,   -- 204: new_function(171)
-      ops.INVOKE, 3,           -- 206: invoke(3)
-      ops.POP,                 -- 208: pop
-      ops.PUSH_FRAME,          -- 209: push_frame
-      ops.GET_SLOT_DIRECT, 1,  -- 210: get_slot_direct(1)
-      ops.PUSH_LITERAL, 519,   -- 212: push_literal(519)
-      ops.GET_SLOT_INDIRECT,   -- 214: get_slot_indirect
-      ops.RETURN               -- 215: return
+      ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
+      ops.NEW_FUNCTION, 1,     -- 6: new_function(1)
+      ops.OVER,                -- 8: over
+      ops.SET_SLOT_DIRECT, 192,-- 9: set_slot_direct(192)
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
+      ops.INVOKE, 0,           -- 14: invoke(0)
+      ops.POP,                 -- 16: pop
+      ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
+      ops.NEW_FUNCTION, 37,    -- 18: new_function(37)
+      ops.OVER,                -- 20: over
+      ops.SET_SLOT_DIRECT, 272,-- 21: set_slot_direct(272)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 24: get_slot_direct(26)
+      ops.INVOKE, 0,           -- 26: invoke(0)
+      ops.POP,                 -- 28: pop
+      ops.PUSH_FRAME,          -- 29: push_frame
+      ops.NEW_OBJECT,          -- 30: new_object
+      ops.SET_SLOT_DIRECT, 1,  -- 31: set_slot_direct(1)
+      ops.PUSH_FRAME,          -- 33: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
+      ops.NEW_FUNCTION, 46,    -- 35: new_function(46)
+      ops.OVER,                -- 37: over
+      ops.SET_SLOT_DIRECT, 277,-- 38: set_slot_direct(277)
+      ops.SET_SLOT_DIRECT, 278,-- 40: set_slot_direct(278)
+      ops.PUSH_FRAME,          -- 42: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 43: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
+      ops.PUSH_LITERAL, 279,   -- 48: push_literal(279)
+      ops.NEW_ARRAY,           -- 50: new_array
+      ops.DUP,                 -- 51: dup
+      ops.PUSH_LITERAL, 280,   -- 52: push_literal(280)
+      ops.SET_SLOT_DIRECT, 18, -- 54: set_slot_direct(18)
+      ops.PUSH_FRAME,          -- 56: push_frame
+      ops.NEW_FUNCTION, 48,    -- 57: new_function(48)
+      ops.OVER,                -- 59: over
+      ops.SET_SLOT_DIRECT, 322,-- 60: set_slot_direct(322)
+      ops.INVOKE, 3,           -- 62: invoke(3)
+      ops.POP,                 -- 64: pop
+      ops.PUSH_FRAME,          -- 65: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 66: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 69: get_slot_direct(26)
+      ops.PUSH_LITERAL, 325,   -- 71: push_literal(325)
+      ops.NEW_ARRAY,           -- 73: new_array
+      ops.DUP,                 -- 74: dup
+      ops.PUSH_LITERAL, 326,   -- 75: push_literal(326)
+      ops.SET_SLOT_DIRECT, 18, -- 77: set_slot_direct(18)
+      ops.DUP,                 -- 79: dup
+      ops.PUSH_LITERAL, 279,   -- 80: push_literal(279)
+      ops.SET_SLOT_DIRECT, 31, -- 82: set_slot_direct(31)
+      ops.PUSH_FRAME,          -- 84: push_frame
+      ops.NEW_FUNCTION, 52,    -- 85: new_function(52)
+      ops.OVER,                -- 87: over
+      ops.SET_SLOT_DIRECT, 443,-- 88: set_slot_direct(443)
+      ops.INVOKE, 3,           -- 90: invoke(3)
+      ops.POP,                 -- 92: pop
+      ops.PUSH_FRAME,          -- 93: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 94: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 97: get_slot_direct(26)
+      ops.PUSH_LITERAL, 446,   -- 99: push_literal(446)
+      ops.NEW_ARRAY,           -- 101: new_array
+      ops.DUP,                 -- 102: dup
+      ops.PUSH_LITERAL, 447,   -- 103: push_literal(447)
+      ops.SET_SLOT_DIRECT, 18, -- 105: set_slot_direct(18)
+      ops.PUSH_FRAME,          -- 107: push_frame
+      ops.NEW_FUNCTION, 105,   -- 108: new_function(105)
+      ops.OVER,                -- 110: over
+      ops.SET_SLOT_DIRECT, 500,-- 111: set_slot_direct(500)
+      ops.INVOKE, 3,           -- 113: invoke(3)
+      ops.POP,                 -- 115: pop
+      ops.PUSH_FRAME,          -- 116: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 117: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 119: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 120: get_slot_direct(26)
+      ops.PUSH_LITERAL, 503,   -- 122: push_literal(503)
+      ops.NEW_ARRAY,           -- 124: new_array
+      ops.DUP,                 -- 125: dup
+      ops.PUSH_LITERAL, 504,   -- 126: push_literal(504)
+      ops.SET_SLOT_DIRECT, 18, -- 128: set_slot_direct(18)
+      ops.PUSH_FRAME,          -- 130: push_frame
+      ops.NEW_FUNCTION, 115,   -- 131: new_function(115)
+      ops.OVER,                -- 133: over
+      ops.SET_SLOT_DIRECT, 515,-- 134: set_slot_direct(515)
+      ops.INVOKE, 3,           -- 136: invoke(3)
+      ops.POP,                 -- 138: pop
+      ops.PUSH_FRAME,          -- 139: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 140: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 142: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 143: get_slot_direct(26)
+      ops.PUSH_LITERAL, 516,   -- 145: push_literal(516)
+      ops.NEW_ARRAY,           -- 147: new_array
+      ops.DUP,                 -- 148: dup
+      ops.PUSH_LITERAL, 517,   -- 149: push_literal(517)
+      ops.SET_SLOT_DIRECT, 18, -- 151: set_slot_direct(18)
+      ops.DUP,                 -- 153: dup
+      ops.PUSH_LITERAL, 446,   -- 154: push_literal(446)
+      ops.SET_SLOT_DIRECT, 31, -- 156: set_slot_direct(31)
+      ops.DUP,                 -- 158: dup
+      ops.PUSH_LITERAL, 503,   -- 159: push_literal(503)
+      ops.SET_SLOT_DIRECT, 136,-- 161: set_slot_direct(136)
+      ops.PUSH_FRAME,          -- 163: push_frame
+      ops.NEW_FUNCTION, 120,   -- 164: new_function(120)
+      ops.OVER,                -- 166: over
+      ops.SET_SLOT_DIRECT, 581,-- 167: set_slot_direct(581)
+      ops.INVOKE, 3,           -- 169: invoke(3)
+      ops.POP,                 -- 171: pop
+      ops.PUSH_FRAME,          -- 172: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 173: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 175: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 176: get_slot_direct(26)
+      ops.PUSH_LITERAL, 582,   -- 178: push_literal(582)
+      ops.NEW_ARRAY,           -- 180: new_array
+      ops.NEW_FUNCTION, 179,   -- 181: new_function(179)
+      ops.INVOKE, 3,           -- 183: invoke(3)
+      ops.POP,                 -- 185: pop
+      ops.PUSH_FRAME,          -- 186: push_frame
+      ops.GET_SLOT_DIRECT, 278,-- 187: get_slot_direct(278)
+      ops.PUSH_LOCAL_FRAME,    -- 189: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 190: get_slot_direct(26)
+      ops.PUSH_LITERAL, 584,   -- 192: push_literal(584)
+      ops.NEW_ARRAY,           -- 194: new_array
+      ops.DUP,                 -- 195: dup
+      ops.PUSH_LITERAL, 325,   -- 196: push_literal(325)
+      ops.SET_SLOT_DIRECT, 18, -- 198: set_slot_direct(18)
+      ops.DUP,                 -- 200: dup
+      ops.PUSH_LITERAL, 516,   -- 201: push_literal(516)
+      ops.SET_SLOT_DIRECT, 31, -- 203: set_slot_direct(31)
+      ops.DUP,                 -- 205: dup
+      ops.PUSH_LITERAL, 585,   -- 206: push_literal(585)
+      ops.SET_SLOT_DIRECT, 136,-- 208: set_slot_direct(136)
+      ops.DUP,                 -- 210: dup
+      ops.PUSH_LITERAL, 503,   -- 211: push_literal(503)
+      ops.SET_SLOT_DIRECT, 159,-- 213: set_slot_direct(159)
+      ops.DUP,                 -- 215: dup
+      ops.PUSH_LITERAL, 582,   -- 216: push_literal(582)
+      ops.SET_SLOT_DIRECT, 162,-- 218: set_slot_direct(162)
+      ops.NEW_FUNCTION, 180,   -- 220: new_function(180)
+      ops.INVOKE, 3,           -- 222: invoke(3)
+      ops.POP,                 -- 224: pop
+      ops.PUSH_FRAME,          -- 225: push_frame
+      ops.GET_SLOT_DIRECT, 1,  -- 226: get_slot_direct(1)
+      ops.PUSH_LITERAL, 584,   -- 228: push_literal(584)
+      ops.GET_SLOT_INDIRECT,   -- 230: get_slot_indirect
+      ops.RETURN               -- 231: return
     }
   },
-  ifunc.Function:new{
-    name = jsval.Undefined,
+  ifunc.Function:new{ -- "_make_stdlib"
+    name = jsval.newString("_make_stdlib"),
     id = 1,
     nargs = 0,
     max_stack = 5,
@@ -3611,9 +3622,1544 @@ startup.functions = {
       ops.RETURN               -- 37: return
     }
   },
+  ifunc.Function:new{ -- "_make_json"
+    name = jsval.newString("_make_json"),
+    id = 37,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_FRAME,          -- 0: push_frame
+      ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
+      ops.SET_SLOT_DIRECT, 193,-- 3: set_slot_direct(193)
+      ops.PUSH_FRAME,          -- 5: push_frame
+      ops.PUSH_LITERAL, 0,     -- 6: push_literal(0)
+      ops.SET_SLOT_DIRECT, 89, -- 8: set_slot_direct(89)
+      ops.PUSH_FRAME,          -- 10: push_frame
+      ops.PUSH_LITERAL, 0,     -- 11: push_literal(0)
+      ops.SET_SLOT_DIRECT, 194,-- 13: set_slot_direct(194)
+      ops.PUSH_FRAME,          -- 15: push_frame
+      ops.PUSH_LITERAL, 0,     -- 16: push_literal(0)
+      ops.SET_SLOT_DIRECT, 195,-- 18: set_slot_direct(195)
+      ops.PUSH_FRAME,          -- 20: push_frame
+      ops.PUSH_LITERAL, 0,     -- 21: push_literal(0)
+      ops.SET_SLOT_DIRECT, 196,-- 23: set_slot_direct(196)
+      ops.PUSH_FRAME,          -- 25: push_frame
+      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
+      ops.SET_SLOT_DIRECT, 197,-- 28: set_slot_direct(197)
+      ops.PUSH_FRAME,          -- 30: push_frame
+      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
+      ops.SET_SLOT_DIRECT, 198,-- 33: set_slot_direct(198)
+      ops.PUSH_FRAME,          -- 35: push_frame
+      ops.PUSH_LITERAL, 0,     -- 36: push_literal(0)
+      ops.SET_SLOT_DIRECT, 199,-- 38: set_slot_direct(199)
+      ops.PUSH_FRAME,          -- 40: push_frame
+      ops.PUSH_LITERAL, 0,     -- 41: push_literal(0)
+      ops.SET_SLOT_DIRECT, 200,-- 43: set_slot_direct(200)
+      ops.PUSH_FRAME,          -- 45: push_frame
+      ops.PUSH_LITERAL, 0,     -- 46: push_literal(0)
+      ops.SET_SLOT_DIRECT, 201,-- 48: set_slot_direct(201)
+      ops.PUSH_FRAME,          -- 50: push_frame
+      ops.PUSH_LITERAL, 0,     -- 51: push_literal(0)
+      ops.SET_SLOT_DIRECT, 202,-- 53: set_slot_direct(202)
+      ops.PUSH_FRAME,          -- 55: push_frame
+      ops.PUSH_LITERAL, 0,     -- 56: push_literal(0)
+      ops.SET_SLOT_DIRECT, 203,-- 58: set_slot_direct(203)
+      ops.PUSH_FRAME,          -- 60: push_frame
+      ops.PUSH_LITERAL, 0,     -- 61: push_literal(0)
+      ops.SET_SLOT_DIRECT, 204,-- 63: set_slot_direct(204)
+      ops.PUSH_FRAME,          -- 65: push_frame
+      ops.PUSH_LITERAL, 0,     -- 66: push_literal(0)
+      ops.SET_SLOT_DIRECT, 205,-- 68: set_slot_direct(205)
+      ops.PUSH_FRAME,          -- 70: push_frame
+      ops.PUSH_LITERAL, 0,     -- 71: push_literal(0)
+      ops.SET_SLOT_DIRECT, 206,-- 73: set_slot_direct(206)
+      ops.PUSH_FRAME,          -- 75: push_frame
+      ops.PUSH_FRAME,          -- 76: push_frame
+      ops.GET_SLOT_DIRECT, 68, -- 77: get_slot_direct(68)
+      ops.GET_SLOT_DIRECT, 103,-- 79: get_slot_direct(103)
+      ops.SET_SLOT_DIRECT, 193,-- 81: set_slot_direct(193)
+      ops.PUSH_FRAME,          -- 83: push_frame
+      ops.PUSH_FRAME,          -- 84: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 85: get_slot_direct(14)
+      ops.GET_SLOT_DIRECT, 11, -- 87: get_slot_direct(11)
+      ops.GET_SLOT_DIRECT, 89, -- 89: get_slot_direct(89)
+      ops.SET_SLOT_DIRECT, 89, -- 91: set_slot_direct(89)
+      ops.PUSH_FRAME,          -- 93: push_frame
+      ops.PUSH_FRAME,          -- 94: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 95: get_slot_direct(36)
+      ops.GET_SLOT_DIRECT, 11, -- 97: get_slot_direct(11)
+      ops.GET_SLOT_DIRECT, 62, -- 99: get_slot_direct(62)
+      ops.SET_SLOT_DIRECT, 194,-- 101: set_slot_direct(194)
+      ops.PUSH_FRAME,          -- 103: push_frame
+      ops.PUSH_FRAME,          -- 104: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 105: get_slot_direct(14)
+      ops.GET_SLOT_DIRECT, 119,-- 107: get_slot_direct(119)
+      ops.SET_SLOT_DIRECT, 195,-- 109: set_slot_direct(195)
+      ops.PUSH_FRAME,          -- 111: push_frame
+      ops.PUSH_FRAME,          -- 112: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 113: get_slot_direct(14)
+      ops.GET_SLOT_DIRECT, 207,-- 115: get_slot_direct(207)
+      ops.SET_SLOT_DIRECT, 196,-- 117: set_slot_direct(196)
+      ops.PUSH_FRAME,          -- 119: push_frame
+      ops.PUSH_FRAME,          -- 120: push_frame
+      ops.GET_SLOT_DIRECT, 13, -- 121: get_slot_direct(13)
+      ops.GET_SLOT_DIRECT, 124,-- 123: get_slot_direct(124)
+      ops.SET_SLOT_DIRECT, 197,-- 125: set_slot_direct(197)
+      ops.PUSH_FRAME,          -- 127: push_frame
+      ops.PUSH_FRAME,          -- 128: push_frame
+      ops.GET_SLOT_DIRECT, 68, -- 129: get_slot_direct(68)
+      ops.GET_SLOT_DIRECT, 11, -- 131: get_slot_direct(11)
+      ops.GET_SLOT_DIRECT, 78, -- 133: get_slot_direct(78)
+      ops.SET_SLOT_DIRECT, 198,-- 135: set_slot_direct(198)
+      ops.PUSH_FRAME,          -- 137: push_frame
+      ops.PUSH_FRAME,          -- 138: push_frame
+      ops.GET_SLOT_DIRECT, 68, -- 139: get_slot_direct(68)
+      ops.GET_SLOT_DIRECT, 11, -- 141: get_slot_direct(11)
+      ops.GET_SLOT_DIRECT, 94, -- 143: get_slot_direct(94)
+      ops.SET_SLOT_DIRECT, 199,-- 145: set_slot_direct(199)
+      ops.PUSH_FRAME,          -- 147: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
+      ops.NEW_FUNCTION, 38,    -- 149: new_function(38)
+      ops.OVER,                -- 151: over
+      ops.SET_SLOT_DIRECT, 208,-- 152: set_slot_direct(208)
+      ops.SET_SLOT_DIRECT, 200,-- 154: set_slot_direct(200)
+      ops.PUSH_FRAME,          -- 156: push_frame
+      ops.NEW_ARRAY,           -- 157: new_array
+      ops.SET_SLOT_DIRECT, 201,-- 158: set_slot_direct(201)
+      ops.PUSH_FRAME,          -- 160: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 161: get_slot_direct(201)
+      ops.PUSH_LITERAL, 174,   -- 163: push_literal(174)
+      ops.PUSH_LITERAL, 209,   -- 165: push_literal(209)
+      ops.SET_SLOT_INDIRECT,   -- 167: set_slot_indirect
+      ops.PUSH_FRAME,          -- 168: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 169: get_slot_direct(201)
+      ops.PUSH_LITERAL, 176,   -- 171: push_literal(176)
+      ops.PUSH_LITERAL, 210,   -- 173: push_literal(210)
+      ops.SET_SLOT_INDIRECT,   -- 175: set_slot_indirect
+      ops.PUSH_FRAME,          -- 176: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 177: get_slot_direct(201)
+      ops.PUSH_LITERAL, 135,   -- 179: push_literal(135)
+      ops.PUSH_LITERAL, 211,   -- 181: push_literal(211)
+      ops.SET_SLOT_INDIRECT,   -- 183: set_slot_indirect
+      ops.PUSH_FRAME,          -- 184: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 185: get_slot_direct(201)
+      ops.PUSH_LITERAL, 181,   -- 187: push_literal(181)
+      ops.PUSH_LITERAL, 212,   -- 189: push_literal(212)
+      ops.SET_SLOT_INDIRECT,   -- 191: set_slot_indirect
+      ops.PUSH_FRAME,          -- 192: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 193: get_slot_direct(201)
+      ops.PUSH_LITERAL, 213,   -- 195: push_literal(213)
+      ops.PUSH_LITERAL, 214,   -- 197: push_literal(214)
+      ops.SET_SLOT_INDIRECT,   -- 199: set_slot_indirect
+      ops.PUSH_FRAME,          -- 200: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 201: get_slot_direct(201)
+      ops.PUSH_LITERAL, 215,   -- 203: push_literal(215)
+      ops.PUSH_LITERAL, 216,   -- 205: push_literal(216)
+      ops.SET_SLOT_INDIRECT,   -- 207: set_slot_indirect
+      ops.PUSH_FRAME,          -- 208: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 209: get_slot_direct(201)
+      ops.PUSH_LITERAL, 217,   -- 211: push_literal(217)
+      ops.PUSH_LITERAL, 218,   -- 213: push_literal(218)
+      ops.SET_SLOT_INDIRECT,   -- 215: set_slot_indirect
+      ops.PUSH_FRAME,          -- 216: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 217: push_local_frame
+      ops.NEW_FUNCTION, 39,    -- 218: new_function(39)
+      ops.OVER,                -- 220: over
+      ops.SET_SLOT_DIRECT, 223,-- 221: set_slot_direct(223)
+      ops.SET_SLOT_DIRECT, 202,-- 223: set_slot_direct(202)
+      ops.PUSH_FRAME,          -- 225: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 226: push_local_frame
+      ops.NEW_FUNCTION, 40,    -- 227: new_function(40)
+      ops.OVER,                -- 229: over
+      ops.SET_SLOT_DIRECT, 229,-- 230: set_slot_direct(229)
+      ops.SET_SLOT_DIRECT, 203,-- 232: set_slot_direct(203)
+      ops.PUSH_FRAME,          -- 234: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 235: push_local_frame
+      ops.NEW_FUNCTION, 41,    -- 236: new_function(41)
+      ops.OVER,                -- 238: over
+      ops.SET_SLOT_DIRECT, 250,-- 239: set_slot_direct(250)
+      ops.SET_SLOT_DIRECT, 204,-- 241: set_slot_direct(204)
+      ops.PUSH_FRAME,          -- 243: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 244: push_local_frame
+      ops.NEW_FUNCTION, 43,    -- 245: new_function(43)
+      ops.OVER,                -- 247: over
+      ops.SET_SLOT_DIRECT, 257,-- 248: set_slot_direct(257)
+      ops.SET_SLOT_DIRECT, 205,-- 250: set_slot_direct(205)
+      ops.PUSH_FRAME,          -- 252: push_frame
+      ops.PUSH_LOCAL_FRAME,    -- 253: push_local_frame
+      ops.NEW_FUNCTION, 44,    -- 254: new_function(44)
+      ops.OVER,                -- 256: over
+      ops.SET_SLOT_DIRECT, 262,-- 257: set_slot_direct(262)
+      ops.SET_SLOT_DIRECT, 206,-- 259: set_slot_direct(206)
+      ops.PUSH_FRAME,          -- 261: push_frame
+      ops.GET_SLOT_DIRECT, 263,-- 262: get_slot_direct(263)
+      ops.NEW_FUNCTION, 45,    -- 264: new_function(45)
+      ops.SET_SLOT_DIRECT, 271,-- 266: set_slot_direct(271)
+      ops.PUSH_LITERAL, 0,     -- 268: push_literal(0)
+      ops.RETURN               -- 270: return
+    }
+  },
+  ifunc.Function:new{ -- "_ToIntegerOrInfinity"
+    name = jsval.newString("_ToIntegerOrInfinity"),
+    id = 38,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 23, -- 8: set_slot_direct(23)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
+      ops.SET_SLOT_DIRECT, 24, -- 14: set_slot_direct(24)
+      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
+      ops.PUSH_FRAME,          -- 17: push_frame
+      ops.GET_SLOT_DIRECT, 13, -- 18: get_slot_direct(13)
+      ops.UN_TYPEOF,           -- 20: un_typeof
+      ops.PUSH_LITERAL, 25,    -- 21: push_literal(25)
+      ops.BI_EQ,               -- 23: bi_eq
+      ops.JMP_UNLESS, 40, 43,  -- 24: jmp_unless(40,43)
+      ops.PUSH_FRAME,          -- 27: push_frame
+      ops.GET_SLOT_DIRECT, 13, -- 28: get_slot_direct(13)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 31: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 34: get_slot_direct(23)
+      ops.INVOKE, 1,           -- 36: invoke(1)
+      ops.JMP, 43,             -- 38: jmp(43)
+      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 41: get_slot_direct(23)
+      ops.PHI,                 -- 43: phi
+      ops.SET_SLOT_DIRECT, 23, -- 44: set_slot_direct(23)
+      ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 47: get_slot_direct(23)
+      ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 50: get_slot_direct(23)
+      ops.BI_EQ,               -- 52: bi_eq
+      ops.UN_NOT,              -- 53: un_not
+      ops.DUP,                 -- 54: dup
+      ops.UN_NOT,              -- 55: un_not
+      ops.JMP_UNLESS, 66, 66,  -- 56: jmp_unless(66,66)
+      ops.POP,                 -- 59: pop
+      ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 61: get_slot_direct(23)
+      ops.PUSH_LITERAL, 18,    -- 63: push_literal(18)
+      ops.BI_EQ,               -- 65: bi_eq
+      ops.PHI,                 -- 66: phi
+      ops.JMP_UNLESS, 73, 73,  -- 67: jmp_unless(73,73)
+      ops.PUSH_LITERAL, 18,    -- 70: push_literal(18)
+      ops.RETURN,              -- 72: return
+      ops.PHI,                 -- 73: phi
+      ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 75: get_slot_direct(23)
+      ops.PUSH_LITERAL, 27,    -- 77: push_literal(27)
+      ops.BI_EQ,               -- 79: bi_eq
+      ops.DUP,                 -- 80: dup
+      ops.UN_NOT,              -- 81: un_not
+      ops.JMP_UNLESS, 93, 93,  -- 82: jmp_unless(93,93)
+      ops.POP,                 -- 85: pop
+      ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 87: get_slot_direct(23)
+      ops.PUSH_LITERAL, 27,    -- 89: push_literal(27)
+      ops.UN_MINUS,            -- 91: un_minus
+      ops.BI_EQ,               -- 92: bi_eq
+      ops.PHI,                 -- 93: phi
+      ops.JMP_UNLESS, 101, 101,-- 94: jmp_unless(101,101)
+      ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 98: get_slot_direct(23)
+      ops.RETURN,              -- 100: return
+      ops.PHI,                 -- 101: phi
+      ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 104: get_slot_direct(23)
+      ops.PUSH_LITERAL, 18,    -- 106: push_literal(18)
+      ops.SWAP,                -- 108: swap
+      ops.BI_GT,               -- 109: bi_gt
+      ops.SET_SLOT_DIRECT, 24, -- 110: set_slot_direct(24)
+      ops.PUSH_LOCAL_FRAME,    -- 112: push_local_frame
+      ops.PUSH_FRAME,          -- 113: push_frame
+      ops.GET_SLOT_DIRECT, 28, -- 114: get_slot_direct(28)
+      ops.DUP,                 -- 116: dup
+      ops.GET_SLOT_DIRECT_CHECK, 29,-- 117: get_slot_direct_check(29)
+      ops.SWAP,                -- 119: swap
+      ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
+      ops.GET_SLOT_DIRECT, 24, -- 121: get_slot_direct(24)
+      ops.JMP_UNLESS, 132, 135,-- 123: jmp_unless(132,135)
+      ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 127: get_slot_direct(23)
+      ops.UN_MINUS,            -- 129: un_minus
+      ops.JMP, 135,            -- 130: jmp(135)
+      ops.PUSH_LOCAL_FRAME,    -- 132: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 133: get_slot_direct(23)
+      ops.PHI,                 -- 135: phi
+      ops.INVOKE, 1,           -- 136: invoke(1)
+      ops.SET_SLOT_DIRECT, 23, -- 138: set_slot_direct(23)
+      ops.PUSH_LOCAL_FRAME,    -- 140: push_local_frame
+      ops.GET_SLOT_DIRECT, 24, -- 141: get_slot_direct(24)
+      ops.JMP_UNLESS, 152, 155,-- 143: jmp_unless(152,155)
+      ops.PUSH_LOCAL_FRAME,    -- 146: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 147: get_slot_direct(23)
+      ops.UN_MINUS,            -- 149: un_minus
+      ops.JMP, 155,            -- 150: jmp(155)
+      ops.PUSH_LOCAL_FRAME,    -- 152: push_local_frame
+      ops.GET_SLOT_DIRECT, 23, -- 153: get_slot_direct(23)
+      ops.PHI,                 -- 155: phi
+      ops.RETURN               -- 156: return
+    }
+  },
+  ifunc.Function:new{ -- "_UnicodeEscape"
+    name = jsval.newString("_UnicodeEscape"),
+    id = 39,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 219,-- 8: set_slot_direct(219)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
+      ops.SET_SLOT_DIRECT, 220,-- 14: set_slot_direct(220)
+      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
+      ops.GET_SLOT_DIRECT, 219,-- 18: get_slot_direct(219)
+      ops.DUP,                 -- 20: dup
+      ops.GET_SLOT_DIRECT_CHECK, 15,-- 21: get_slot_direct_check(15)
+      ops.SWAP,                -- 23: swap
+      ops.PUSH_LITERAL, 221,   -- 24: push_literal(221)
+      ops.INVOKE, 1,           -- 26: invoke(1)
+      ops.SET_SLOT_DIRECT, 220,-- 28: set_slot_direct(220)
+      ops.JMP_INTO_LOOP, 42, 56,-- 30: jmp_into_loop(42,56)
+      ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
+      ops.PUSH_LITERAL, 140,   -- 34: push_literal(140)
+      ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
+      ops.GET_SLOT_DIRECT, 220,-- 37: get_slot_direct(220)
+      ops.BI_ADD,              -- 39: bi_add
+      ops.SET_SLOT_DIRECT, 220,-- 40: set_slot_direct(220)
+      ops.PHI,                 -- 42: phi
+      ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
+      ops.GET_SLOT_DIRECT, 220,-- 44: get_slot_direct(220)
+      ops.GET_SLOT_DIRECT, 55, -- 46: get_slot_direct(55)
+      ops.PUSH_LITERAL, 162,   -- 48: push_literal(162)
+      ops.SWAP,                -- 50: swap
+      ops.BI_GT,               -- 51: bi_gt
+      ops.UN_NOT,              -- 52: un_not
+      ops.JMP_UNLESS, 33, 56,  -- 53: jmp_unless(33,56)
+      ops.PHI,                 -- 56: phi
+      ops.PUSH_LITERAL, 222,   -- 57: push_literal(222)
+      ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
+      ops.GET_SLOT_DIRECT, 220,-- 60: get_slot_direct(220)
+      ops.BI_ADD,              -- 62: bi_add
+      ops.RETURN               -- 63: return
+    }
+  },
+  ifunc.Function:new{ -- "_QuoteJSONString"
+    name = jsval.newString("_QuoteJSONString"),
+    id = 40,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 224,-- 8: set_slot_direct(224)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
+      ops.SET_SLOT_DIRECT, 225,-- 14: set_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
+      ops.SET_SLOT_DIRECT, 53, -- 19: set_slot_direct(53)
+      ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
+      ops.SET_SLOT_DIRECT, 60, -- 24: set_slot_direct(60)
+      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
+      ops.PUSH_LITERAL, 226,   -- 27: push_literal(226)
+      ops.SET_SLOT_DIRECT, 225,-- 29: set_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
+      ops.PUSH_LITERAL, 18,    -- 32: push_literal(18)
+      ops.SET_SLOT_DIRECT, 53, -- 34: set_slot_direct(53)
+      ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 38: get_slot_direct(224)
+      ops.GET_SLOT_DIRECT, 55, -- 40: get_slot_direct(55)
+      ops.SET_SLOT_DIRECT, 60, -- 42: set_slot_direct(60)
+      ops.JMP_INTO_LOOP, 355, 368,-- 44: jmp_into_loop(355,368)
+      ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 48: push_literal(0)
+      ops.SET_SLOT_DIRECT, 227,-- 50: set_slot_direct(227)
+      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 53: push_literal(0)
+      ops.SET_SLOT_DIRECT, 87, -- 55: set_slot_direct(87)
+      ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 58: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 59: get_slot_direct(224)
+      ops.DUP,                 -- 61: dup
+      ops.GET_SLOT_DIRECT_CHECK, 43,-- 62: get_slot_direct_check(43)
+      ops.SWAP,                -- 64: swap
+      ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
+      ops.GET_SLOT_DIRECT, 53, -- 66: get_slot_direct(53)
+      ops.INVOKE, 1,           -- 68: invoke(1)
+      ops.SET_SLOT_DIRECT, 227,-- 70: set_slot_direct(227)
+      ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
+      ops.PUSH_FRAME,          -- 73: push_frame
+      ops.GET_SLOT_DIRECT, 201,-- 74: get_slot_direct(201)
+      ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 77: get_slot_direct(227)
+      ops.GET_SLOT_INDIRECT,   -- 79: get_slot_indirect
+      ops.SET_SLOT_DIRECT, 87, -- 80: set_slot_direct(87)
+      ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
+      ops.DUP,                 -- 83: dup
+      ops.GET_SLOT_DIRECT, 53, -- 84: get_slot_direct(53)
+      ops.PUSH_LITERAL, 31,    -- 86: push_literal(31)
+      ops.BI_ADD,              -- 88: bi_add
+      ops.SET_SLOT_DIRECT, 53, -- 89: set_slot_direct(53)
+      ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
+      ops.GET_SLOT_DIRECT, 87, -- 92: get_slot_direct(87)
+      ops.PUSH_LITERAL, 0,     -- 94: push_literal(0)
+      ops.BI_EQ,               -- 96: bi_eq
+      ops.UN_NOT,              -- 97: un_not
+      ops.JMP_UNLESS, 113, 354,-- 98: jmp_unless(113,354)
+      ops.PUSH_LOCAL_FRAME,    -- 101: push_local_frame
+      ops.DUP,                 -- 102: dup
+      ops.GET_SLOT_DIRECT, 225,-- 103: get_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
+      ops.GET_SLOT_DIRECT, 87, -- 106: get_slot_direct(87)
+      ops.BI_ADD,              -- 108: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 109: set_slot_direct(225)
+      ops.JMP, 354,            -- 111: jmp(354)
+      ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 114: get_slot_direct(227)
+      ops.PUSH_LITERAL, 228,   -- 116: push_literal(228)
+      ops.SWAP,                -- 118: swap
+      ops.BI_GT,               -- 119: bi_gt
+      ops.JMP_UNLESS, 143, 353,-- 120: jmp_unless(143,353)
+      ops.PUSH_LOCAL_FRAME,    -- 123: push_local_frame
+      ops.DUP,                 -- 124: dup
+      ops.GET_SLOT_DIRECT, 225,-- 125: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 127: push_frame
+      ops.GET_SLOT_DIRECT, 202,-- 128: get_slot_direct(202)
+      ops.PUSH_LOCAL_FRAME,    -- 130: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 131: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 134: get_slot_direct(227)
+      ops.INVOKE, 1,           -- 136: invoke(1)
+      ops.BI_ADD,              -- 138: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 139: set_slot_direct(225)
+      ops.JMP, 353,            -- 141: jmp(353)
+      ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 144: get_slot_direct(227)
+      ops.PUSH_LITERAL, 44,    -- 146: push_literal(44)
+      ops.BI_GTE,              -- 148: bi_gte
+      ops.DUP,                 -- 149: dup
+      ops.JMP_UNLESS, 161, 161,-- 150: jmp_unless(161,161)
+      ops.POP,                 -- 153: pop
+      ops.PUSH_LOCAL_FRAME,    -- 154: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 155: get_slot_direct(227)
+      ops.PUSH_LITERAL, 45,    -- 157: push_literal(45)
+      ops.SWAP,                -- 159: swap
+      ops.BI_GTE,              -- 160: bi_gte
+      ops.PHI,                 -- 161: phi
+      ops.JMP_UNLESS, 290, 352,-- 162: jmp_unless(290,352)
+      ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 166: push_literal(0)
+      ops.SET_SLOT_DIRECT, 40, -- 168: set_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 170: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 171: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 172: get_slot_direct(224)
+      ops.DUP,                 -- 174: dup
+      ops.GET_SLOT_DIRECT_CHECK, 43,-- 175: get_slot_direct_check(43)
+      ops.SWAP,                -- 177: swap
+      ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
+      ops.GET_SLOT_DIRECT, 53, -- 179: get_slot_direct(53)
+      ops.INVOKE, 1,           -- 181: invoke(1)
+      ops.SET_SLOT_DIRECT, 40, -- 183: set_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 185: push_local_frame
+      ops.GET_SLOT_DIRECT, 40, -- 186: get_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 188: push_local_frame
+      ops.GET_SLOT_DIRECT, 40, -- 189: get_slot_direct(40)
+      ops.BI_EQ,               -- 191: bi_eq
+      ops.DUP,                 -- 192: dup
+      ops.JMP_UNLESS, 216, 216,-- 193: jmp_unless(216,216)
+      ops.POP,                 -- 196: pop
+      ops.PUSH_LOCAL_FRAME,    -- 197: push_local_frame
+      ops.GET_SLOT_DIRECT, 40, -- 198: get_slot_direct(40)
+      ops.PUSH_LITERAL, 46,    -- 200: push_literal(46)
+      ops.BI_GTE,              -- 202: bi_gte
+      ops.DUP,                 -- 203: dup
+      ops.JMP_UNLESS, 215, 215,-- 204: jmp_unless(215,215)
+      ops.POP,                 -- 207: pop
+      ops.PUSH_LOCAL_FRAME,    -- 208: push_local_frame
+      ops.GET_SLOT_DIRECT, 40, -- 209: get_slot_direct(40)
+      ops.PUSH_LITERAL, 47,    -- 211: push_literal(47)
+      ops.SWAP,                -- 213: swap
+      ops.BI_GTE,              -- 214: bi_gte
+      ops.PHI,                 -- 215: phi
+      ops.PHI,                 -- 216: phi
+      ops.JMP_UNLESS, 269, 287,-- 217: jmp_unless(269,287)
+      ops.PUSH_LOCAL_FRAME,    -- 220: push_local_frame
+      ops.DUP,                 -- 221: dup
+      ops.GET_SLOT_DIRECT, 225,-- 222: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 224: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 225: get_slot_direct(36)
+      ops.DUP,                 -- 227: dup
+      ops.GET_SLOT_DIRECT_CHECK, 145,-- 228: get_slot_direct_check(145)
+      ops.SWAP,                -- 230: swap
+      ops.PUSH_LOCAL_FRAME,    -- 231: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 232: get_slot_direct(227)
+      ops.INVOKE, 1,           -- 234: invoke(1)
+      ops.BI_ADD,              -- 236: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 237: set_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 239: push_local_frame
+      ops.DUP,                 -- 240: dup
+      ops.GET_SLOT_DIRECT, 225,-- 241: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 243: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 244: get_slot_direct(36)
+      ops.DUP,                 -- 246: dup
+      ops.GET_SLOT_DIRECT_CHECK, 145,-- 247: get_slot_direct_check(145)
+      ops.SWAP,                -- 249: swap
+      ops.PUSH_LOCAL_FRAME,    -- 250: push_local_frame
+      ops.GET_SLOT_DIRECT, 40, -- 251: get_slot_direct(40)
+      ops.INVOKE, 1,           -- 253: invoke(1)
+      ops.BI_ADD,              -- 255: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 256: set_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 258: push_local_frame
+      ops.DUP,                 -- 259: dup
+      ops.GET_SLOT_DIRECT, 53, -- 260: get_slot_direct(53)
+      ops.PUSH_LITERAL, 31,    -- 262: push_literal(31)
+      ops.BI_ADD,              -- 264: bi_add
+      ops.SET_SLOT_DIRECT, 53, -- 265: set_slot_direct(53)
+      ops.JMP, 287,            -- 267: jmp(287)
+      ops.PUSH_LOCAL_FRAME,    -- 269: push_local_frame
+      ops.DUP,                 -- 270: dup
+      ops.GET_SLOT_DIRECT, 225,-- 271: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 273: push_frame
+      ops.GET_SLOT_DIRECT, 202,-- 274: get_slot_direct(202)
+      ops.PUSH_LOCAL_FRAME,    -- 276: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 277: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 279: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 280: get_slot_direct(227)
+      ops.INVOKE, 1,           -- 282: invoke(1)
+      ops.BI_ADD,              -- 284: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 285: set_slot_direct(225)
+      ops.PHI,                 -- 287: phi
+      ops.JMP, 352,            -- 288: jmp(352)
+      ops.PUSH_LOCAL_FRAME,    -- 290: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 291: get_slot_direct(227)
+      ops.PUSH_LITERAL, 46,    -- 293: push_literal(46)
+      ops.BI_GTE,              -- 295: bi_gte
+      ops.DUP,                 -- 296: dup
+      ops.JMP_UNLESS, 308, 308,-- 297: jmp_unless(308,308)
+      ops.POP,                 -- 300: pop
+      ops.PUSH_LOCAL_FRAME,    -- 301: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 302: get_slot_direct(227)
+      ops.PUSH_LITERAL, 47,    -- 304: push_literal(47)
+      ops.SWAP,                -- 306: swap
+      ops.BI_GTE,              -- 307: bi_gte
+      ops.PHI,                 -- 308: phi
+      ops.JMP_UNLESS, 332, 351,-- 309: jmp_unless(332,351)
+      ops.PUSH_LOCAL_FRAME,    -- 312: push_local_frame
+      ops.DUP,                 -- 313: dup
+      ops.GET_SLOT_DIRECT, 225,-- 314: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 316: push_frame
+      ops.GET_SLOT_DIRECT, 202,-- 317: get_slot_direct(202)
+      ops.PUSH_LOCAL_FRAME,    -- 319: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 320: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 322: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 323: get_slot_direct(227)
+      ops.INVOKE, 1,           -- 325: invoke(1)
+      ops.BI_ADD,              -- 327: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 328: set_slot_direct(225)
+      ops.JMP, 351,            -- 330: jmp(351)
+      ops.PUSH_LOCAL_FRAME,    -- 332: push_local_frame
+      ops.DUP,                 -- 333: dup
+      ops.GET_SLOT_DIRECT, 225,-- 334: get_slot_direct(225)
+      ops.PUSH_FRAME,          -- 336: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 337: get_slot_direct(36)
+      ops.DUP,                 -- 339: dup
+      ops.GET_SLOT_DIRECT_CHECK, 145,-- 340: get_slot_direct_check(145)
+      ops.SWAP,                -- 342: swap
+      ops.PUSH_LOCAL_FRAME,    -- 343: push_local_frame
+      ops.GET_SLOT_DIRECT, 227,-- 344: get_slot_direct(227)
+      ops.INVOKE, 1,           -- 346: invoke(1)
+      ops.BI_ADD,              -- 348: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 349: set_slot_direct(225)
+      ops.PHI,                 -- 351: phi
+      ops.PHI,                 -- 352: phi
+      ops.PHI,                 -- 353: phi
+      ops.PHI,                 -- 354: phi
+      ops.PHI,                 -- 355: phi
+      ops.PUSH_LOCAL_FRAME,    -- 356: push_local_frame
+      ops.GET_SLOT_DIRECT, 53, -- 357: get_slot_direct(53)
+      ops.PUSH_LOCAL_FRAME,    -- 359: push_local_frame
+      ops.GET_SLOT_DIRECT, 60, -- 360: get_slot_direct(60)
+      ops.SWAP,                -- 362: swap
+      ops.BI_GT,               -- 363: bi_gt
+      ops.UN_NOT,              -- 364: un_not
+      ops.JMP_UNLESS, 47, 368, -- 365: jmp_unless(47,368)
+      ops.PHI,                 -- 368: phi
+      ops.PUSH_LOCAL_FRAME,    -- 369: push_local_frame
+      ops.DUP,                 -- 370: dup
+      ops.GET_SLOT_DIRECT, 225,-- 371: get_slot_direct(225)
+      ops.PUSH_LITERAL, 226,   -- 373: push_literal(226)
+      ops.BI_ADD,              -- 375: bi_add
+      ops.SET_SLOT_DIRECT, 225,-- 376: set_slot_direct(225)
+      ops.PUSH_LOCAL_FRAME,    -- 378: push_local_frame
+      ops.GET_SLOT_DIRECT, 225,-- 379: get_slot_direct(225)
+      ops.RETURN               -- 381: return
+    }
+  },
+  ifunc.Function:new{ -- "_SerializeJSONObject"
+    name = jsval.newString("_SerializeJSONObject"),
+    id = 41,
+    nargs = 2,
+    max_stack = 6,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_FRAME,          -- 6: push_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_FRAME,          -- 13: push_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 224,-- 15: set_slot_direct(224)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
+      ops.SET_SLOT_DIRECT, 231,-- 21: set_slot_direct(231)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 24: push_literal(0)
+      ops.SET_SLOT_DIRECT, 232,-- 26: set_slot_direct(232)
+      ops.PUSH_FRAME,          -- 28: push_frame
+      ops.PUSH_LITERAL, 0,     -- 29: push_literal(0)
+      ops.SET_SLOT_DIRECT, 233,-- 31: set_slot_direct(233)
+      ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 34: push_literal(0)
+      ops.SET_SLOT_DIRECT, 234,-- 36: set_slot_direct(234)
+      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
+      ops.PUSH_FRAME,          -- 39: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 40: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 42: get_slot_direct(235)
+      ops.SET_SLOT_DIRECT, 231,-- 44: set_slot_direct(231)
+      ops.PUSH_FRAME,          -- 46: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 47: get_slot_direct(230)
+      ops.DUP,                 -- 49: dup
+      ops.GET_SLOT_DIRECT, 235,-- 50: get_slot_direct(235)
+      ops.PUSH_FRAME,          -- 52: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 236,-- 55: get_slot_direct(236)
+      ops.BI_ADD,              -- 57: bi_add
+      ops.SET_SLOT_DIRECT, 235,-- 58: set_slot_direct(235)
+      ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
+      ops.PUSH_FRAME,          -- 61: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 62: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 237,-- 64: get_slot_direct(237)
+      ops.SET_SLOT_DIRECT, 232,-- 66: set_slot_direct(232)
+      ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
+      ops.GET_SLOT_DIRECT, 232,-- 69: get_slot_direct(232)
+      ops.PUSH_LITERAL, 0,     -- 71: push_literal(0)
+      ops.BI_EQ,               -- 73: bi_eq
+      ops.JMP_UNLESS, 95, 95,  -- 74: jmp_unless(95,95)
+      ops.PUSH_LOCAL_FRAME,    -- 77: push_local_frame
+      ops.PUSH_FRAME,          -- 78: push_frame
+      ops.GET_SLOT_DIRECT, 196,-- 79: get_slot_direct(196)
+      ops.DUP,                 -- 81: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 82: get_slot_direct_check(93)
+      ops.SWAP,                -- 84: swap
+      ops.PUSH_FRAME,          -- 85: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 86: get_slot_direct(14)
+      ops.PUSH_FRAME,          -- 88: push_frame
+      ops.GET_SLOT_DIRECT, 224,-- 89: get_slot_direct(224)
+      ops.INVOKE, 2,           -- 91: invoke(2)
+      ops.SET_SLOT_DIRECT, 232,-- 93: set_slot_direct(232)
+      ops.PHI,                 -- 95: phi
+      ops.PUSH_FRAME,          -- 96: push_frame
+      ops.NEW_ARRAY,           -- 97: new_array
+      ops.SET_SLOT_DIRECT, 233,-- 98: set_slot_direct(233)
+      ops.PUSH_FRAME,          -- 100: push_frame
+      ops.GET_SLOT_DIRECT, 199,-- 101: get_slot_direct(199)
+      ops.DUP,                 -- 103: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 104: get_slot_direct_check(93)
+      ops.SWAP,                -- 106: swap
+      ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
+      ops.GET_SLOT_DIRECT, 232,-- 108: get_slot_direct(232)
+      ops.NEW_FUNCTION, 42,    -- 110: new_function(42)
+      ops.INVOKE, 2,           -- 112: invoke(2)
+      ops.POP,                 -- 114: pop
+      ops.PUSH_LOCAL_FRAME,    -- 115: push_local_frame
+      ops.PUSH_LITERAL, 243,   -- 116: push_literal(243)
+      ops.SET_SLOT_DIRECT, 234,-- 118: set_slot_direct(234)
+      ops.PUSH_FRAME,          -- 120: push_frame
+      ops.GET_SLOT_DIRECT, 233,-- 121: get_slot_direct(233)
+      ops.GET_SLOT_DIRECT, 55, -- 123: get_slot_direct(55)
+      ops.JMP_UNLESS, 218, 218,-- 125: jmp_unless(218,218)
+      ops.PUSH_FRAME,          -- 128: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 129: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 236,-- 131: get_slot_direct(236)
+      ops.PUSH_LITERAL, 66,    -- 133: push_literal(66)
+      ops.BI_EQ,               -- 135: bi_eq
+      ops.JMP_UNLESS, 164, 217,-- 136: jmp_unless(164,217)
+      ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
+      ops.PUSH_LITERAL, 244,   -- 140: push_literal(244)
+      ops.PUSH_FRAME,          -- 142: push_frame
+      ops.GET_SLOT_DIRECT, 198,-- 143: get_slot_direct(198)
+      ops.DUP,                 -- 145: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 146: get_slot_direct_check(93)
+      ops.SWAP,                -- 148: swap
+      ops.PUSH_FRAME,          -- 149: push_frame
+      ops.GET_SLOT_DIRECT, 233,-- 150: get_slot_direct(233)
+      ops.PUSH_LITERAL, 76,    -- 152: push_literal(76)
+      ops.INVOKE, 2,           -- 154: invoke(2)
+      ops.BI_ADD,              -- 156: bi_add
+      ops.PUSH_LITERAL, 245,   -- 157: push_literal(245)
+      ops.BI_ADD,              -- 159: bi_add
+      ops.SET_SLOT_DIRECT, 234,-- 160: set_slot_direct(234)
+      ops.JMP, 217,            -- 162: jmp(217)
+      ops.PUSH_LOCAL_FRAME,    -- 164: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 165: push_literal(0)
+      ops.SET_SLOT_DIRECT, 246,-- 167: set_slot_direct(246)
+      ops.PUSH_LOCAL_FRAME,    -- 169: push_local_frame
+      ops.PUSH_LITERAL, 247,   -- 170: push_literal(247)
+      ops.PUSH_FRAME,          -- 172: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 173: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 175: get_slot_direct(235)
+      ops.BI_ADD,              -- 177: bi_add
+      ops.SET_SLOT_DIRECT, 246,-- 178: set_slot_direct(246)
+      ops.PUSH_LOCAL_FRAME,    -- 180: push_local_frame
+      ops.PUSH_LITERAL, 248,   -- 181: push_literal(248)
+      ops.PUSH_FRAME,          -- 183: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 184: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 186: get_slot_direct(235)
+      ops.BI_ADD,              -- 188: bi_add
+      ops.PUSH_FRAME,          -- 189: push_frame
+      ops.GET_SLOT_DIRECT, 198,-- 190: get_slot_direct(198)
+      ops.DUP,                 -- 192: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 193: get_slot_direct_check(93)
+      ops.SWAP,                -- 195: swap
+      ops.PUSH_FRAME,          -- 196: push_frame
+      ops.GET_SLOT_DIRECT, 233,-- 197: get_slot_direct(233)
+      ops.PUSH_LOCAL_FRAME,    -- 199: push_local_frame
+      ops.GET_SLOT_DIRECT, 246,-- 200: get_slot_direct(246)
+      ops.INVOKE, 2,           -- 202: invoke(2)
+      ops.BI_ADD,              -- 204: bi_add
+      ops.PUSH_LITERAL, 249,   -- 205: push_literal(249)
+      ops.BI_ADD,              -- 207: bi_add
+      ops.PUSH_LOCAL_FRAME,    -- 208: push_local_frame
+      ops.GET_SLOT_DIRECT, 231,-- 209: get_slot_direct(231)
+      ops.BI_ADD,              -- 211: bi_add
+      ops.PUSH_LITERAL, 245,   -- 212: push_literal(245)
+      ops.BI_ADD,              -- 214: bi_add
+      ops.SET_SLOT_DIRECT, 234,-- 215: set_slot_direct(234)
+      ops.PHI,                 -- 217: phi
+      ops.PHI,                 -- 218: phi
+      ops.PUSH_FRAME,          -- 219: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 220: get_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 222: push_local_frame
+      ops.GET_SLOT_DIRECT, 231,-- 223: get_slot_direct(231)
+      ops.SET_SLOT_DIRECT, 235,-- 225: set_slot_direct(235)
+      ops.PUSH_LOCAL_FRAME,    -- 227: push_local_frame
+      ops.GET_SLOT_DIRECT, 234,-- 228: get_slot_direct(234)
+      ops.RETURN               -- 230: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 42,
+    nargs = 1,
+    max_stack = 6,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 238,-- 8: set_slot_direct(238)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
+      ops.SET_SLOT_DIRECT, 239,-- 14: set_slot_direct(239)
+      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
+      ops.SET_SLOT_DIRECT, 240,-- 19: set_slot_direct(240)
+      ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
+      ops.PUSH_FRAME,          -- 22: push_frame
+      ops.GET_SLOT_DIRECT, 206,-- 23: get_slot_direct(206)
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 28: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 29: get_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
+      ops.GET_SLOT_DIRECT, 238,-- 32: get_slot_direct(238)
+      ops.PUSH_FRAME,          -- 34: push_frame
+      ops.GET_SLOT_DIRECT, 224,-- 35: get_slot_direct(224)
+      ops.INVOKE, 3,           -- 37: invoke(3)
+      ops.SET_SLOT_DIRECT, 239,-- 39: set_slot_direct(239)
+      ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
+      ops.GET_SLOT_DIRECT, 239,-- 42: get_slot_direct(239)
+      ops.PUSH_LITERAL, 0,     -- 44: push_literal(0)
+      ops.BI_EQ,               -- 46: bi_eq
+      ops.JMP_UNLESS, 53, 53,  -- 47: jmp_unless(53,53)
+      ops.PUSH_LITERAL, 0,     -- 50: push_literal(0)
+      ops.RETURN,              -- 52: return
+      ops.PHI,                 -- 53: phi
+      ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
+      ops.PUSH_FRAME,          -- 55: push_frame
+      ops.GET_SLOT_DIRECT, 203,-- 56: get_slot_direct(203)
+      ops.PUSH_LOCAL_FRAME,    -- 58: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 59: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 61: push_local_frame
+      ops.GET_SLOT_DIRECT, 238,-- 62: get_slot_direct(238)
+      ops.INVOKE, 1,           -- 64: invoke(1)
+      ops.PUSH_LITERAL, 241,   -- 66: push_literal(241)
+      ops.BI_ADD,              -- 68: bi_add
+      ops.SET_SLOT_DIRECT, 240,-- 69: set_slot_direct(240)
+      ops.PUSH_FRAME,          -- 71: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 72: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 236,-- 74: get_slot_direct(236)
+      ops.PUSH_LITERAL, 66,    -- 76: push_literal(66)
+      ops.BI_EQ,               -- 78: bi_eq
+      ops.UN_NOT,              -- 79: un_not
+      ops.JMP_UNLESS, 92, 92,  -- 80: jmp_unless(92,92)
+      ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
+      ops.DUP,                 -- 84: dup
+      ops.GET_SLOT_DIRECT, 240,-- 85: get_slot_direct(240)
+      ops.PUSH_LITERAL, 242,   -- 87: push_literal(242)
+      ops.BI_ADD,              -- 89: bi_add
+      ops.SET_SLOT_DIRECT, 240,-- 90: set_slot_direct(240)
+      ops.PHI,                 -- 92: phi
+      ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
+      ops.DUP,                 -- 94: dup
+      ops.GET_SLOT_DIRECT, 240,-- 95: get_slot_direct(240)
+      ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
+      ops.GET_SLOT_DIRECT, 239,-- 98: get_slot_direct(239)
+      ops.BI_ADD,              -- 100: bi_add
+      ops.SET_SLOT_DIRECT, 240,-- 101: set_slot_direct(240)
+      ops.PUSH_FRAME,          -- 103: push_frame
+      ops.GET_SLOT_DIRECT, 233,-- 104: get_slot_direct(233)
+      ops.DUP,                 -- 106: dup
+      ops.GET_SLOT_DIRECT_CHECK, 69,-- 107: get_slot_direct_check(69)
+      ops.SWAP,                -- 109: swap
+      ops.PUSH_LOCAL_FRAME,    -- 110: push_local_frame
+      ops.GET_SLOT_DIRECT, 240,-- 111: get_slot_direct(240)
+      ops.INVOKE, 1,           -- 113: invoke(1)
+      ops.POP,                 -- 115: pop
+      ops.PUSH_LITERAL, 0,     -- 116: push_literal(0)
+      ops.RETURN               -- 118: return
+    }
+  },
+  ifunc.Function:new{ -- "_SerializeJSONArray"
+    name = jsval.newString("_SerializeJSONArray"),
+    id = 43,
+    nargs = 2,
+    max_stack = 7,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 224,-- 15: set_slot_direct(224)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
+      ops.SET_SLOT_DIRECT, 231,-- 21: set_slot_direct(231)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 24: push_literal(0)
+      ops.SET_SLOT_DIRECT, 233,-- 26: set_slot_direct(233)
+      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 29: push_literal(0)
+      ops.SET_SLOT_DIRECT, 60, -- 31: set_slot_direct(60)
+      ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 34: push_literal(0)
+      ops.SET_SLOT_DIRECT, 251,-- 36: set_slot_direct(251)
+      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 39: push_literal(0)
+      ops.SET_SLOT_DIRECT, 234,-- 41: set_slot_direct(234)
+      ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 45: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 47: get_slot_direct(235)
+      ops.SET_SLOT_DIRECT, 231,-- 49: set_slot_direct(231)
+      ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 52: get_slot_direct(230)
+      ops.DUP,                 -- 54: dup
+      ops.GET_SLOT_DIRECT, 235,-- 55: get_slot_direct(235)
+      ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 58: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 236,-- 60: get_slot_direct(236)
+      ops.BI_ADD,              -- 62: bi_add
+      ops.SET_SLOT_DIRECT, 235,-- 63: set_slot_direct(235)
+      ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
+      ops.NEW_ARRAY,           -- 66: new_array
+      ops.SET_SLOT_DIRECT, 233,-- 67: set_slot_direct(233)
+      ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 71: get_slot_direct(224)
+      ops.GET_SLOT_DIRECT, 55, -- 73: get_slot_direct(55)
+      ops.SET_SLOT_DIRECT, 60, -- 75: set_slot_direct(60)
+      ops.PUSH_LOCAL_FRAME,    -- 77: push_local_frame
+      ops.PUSH_LITERAL, 18,    -- 78: push_literal(18)
+      ops.SET_SLOT_DIRECT, 251,-- 80: set_slot_direct(251)
+      ops.JMP_INTO_LOOP, 164, 177,-- 82: jmp_into_loop(164,177)
+      ops.PUSH_LOCAL_FRAME,    -- 85: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 86: push_literal(0)
+      ops.SET_SLOT_DIRECT, 239,-- 88: set_slot_direct(239)
+      ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
+      ops.PUSH_FRAME,          -- 91: push_frame
+      ops.GET_SLOT_DIRECT, 206,-- 92: get_slot_direct(206)
+      ops.PUSH_LOCAL_FRAME,    -- 94: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 95: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 98: get_slot_direct(230)
+      ops.PUSH_FRAME,          -- 100: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 101: get_slot_direct(36)
+      ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 104: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
+      ops.GET_SLOT_DIRECT, 251,-- 107: get_slot_direct(251)
+      ops.INVOKE, 1,           -- 109: invoke(1)
+      ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 112: get_slot_direct(224)
+      ops.INVOKE, 3,           -- 114: invoke(3)
+      ops.SET_SLOT_DIRECT, 239,-- 116: set_slot_direct(239)
+      ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
+      ops.GET_SLOT_DIRECT, 239,-- 119: get_slot_direct(239)
+      ops.PUSH_LITERAL, 0,     -- 121: push_literal(0)
+      ops.BI_EQ,               -- 123: bi_eq
+      ops.JMP_UNLESS, 141, 154,-- 124: jmp_unless(141,154)
+      ops.PUSH_LOCAL_FRAME,    -- 127: push_local_frame
+      ops.GET_SLOT_DIRECT, 233,-- 128: get_slot_direct(233)
+      ops.DUP,                 -- 130: dup
+      ops.GET_SLOT_DIRECT_CHECK, 69,-- 131: get_slot_direct_check(69)
+      ops.SWAP,                -- 133: swap
+      ops.PUSH_LITERAL, 252,   -- 134: push_literal(252)
+      ops.INVOKE, 1,           -- 136: invoke(1)
+      ops.POP,                 -- 138: pop
+      ops.JMP, 154,            -- 139: jmp(154)
+      ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
+      ops.GET_SLOT_DIRECT, 233,-- 142: get_slot_direct(233)
+      ops.DUP,                 -- 144: dup
+      ops.GET_SLOT_DIRECT_CHECK, 69,-- 145: get_slot_direct_check(69)
+      ops.SWAP,                -- 147: swap
+      ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
+      ops.GET_SLOT_DIRECT, 239,-- 149: get_slot_direct(239)
+      ops.INVOKE, 1,           -- 151: invoke(1)
+      ops.POP,                 -- 153: pop
+      ops.PHI,                 -- 154: phi
+      ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
+      ops.DUP,                 -- 156: dup
+      ops.GET_SLOT_DIRECT, 251,-- 157: get_slot_direct(251)
+      ops.PUSH_LITERAL, 31,    -- 159: push_literal(31)
+      ops.BI_ADD,              -- 161: bi_add
+      ops.SET_SLOT_DIRECT, 251,-- 162: set_slot_direct(251)
+      ops.PHI,                 -- 164: phi
+      ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
+      ops.GET_SLOT_DIRECT, 251,-- 166: get_slot_direct(251)
+      ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
+      ops.GET_SLOT_DIRECT, 60, -- 169: get_slot_direct(60)
+      ops.SWAP,                -- 171: swap
+      ops.BI_GT,               -- 172: bi_gt
+      ops.UN_NOT,              -- 173: un_not
+      ops.JMP_UNLESS, 85, 177, -- 174: jmp_unless(85,177)
+      ops.PHI,                 -- 177: phi
+      ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
+      ops.PUSH_LITERAL, 253,   -- 179: push_literal(253)
+      ops.SET_SLOT_DIRECT, 234,-- 181: set_slot_direct(234)
+      ops.PUSH_LOCAL_FRAME,    -- 183: push_local_frame
+      ops.GET_SLOT_DIRECT, 233,-- 184: get_slot_direct(233)
+      ops.GET_SLOT_DIRECT, 55, -- 186: get_slot_direct(55)
+      ops.JMP_UNLESS, 281, 281,-- 188: jmp_unless(281,281)
+      ops.PUSH_LOCAL_FRAME,    -- 191: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 192: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 236,-- 194: get_slot_direct(236)
+      ops.PUSH_LITERAL, 66,    -- 196: push_literal(66)
+      ops.BI_EQ,               -- 198: bi_eq
+      ops.JMP_UNLESS, 227, 280,-- 199: jmp_unless(227,280)
+      ops.PUSH_LOCAL_FRAME,    -- 202: push_local_frame
+      ops.PUSH_LITERAL, 254,   -- 203: push_literal(254)
+      ops.PUSH_FRAME,          -- 205: push_frame
+      ops.GET_SLOT_DIRECT, 198,-- 206: get_slot_direct(198)
+      ops.DUP,                 -- 208: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 209: get_slot_direct_check(93)
+      ops.SWAP,                -- 211: swap
+      ops.PUSH_LOCAL_FRAME,    -- 212: push_local_frame
+      ops.GET_SLOT_DIRECT, 233,-- 213: get_slot_direct(233)
+      ops.PUSH_LITERAL, 76,    -- 215: push_literal(76)
+      ops.INVOKE, 2,           -- 217: invoke(2)
+      ops.BI_ADD,              -- 219: bi_add
+      ops.PUSH_LITERAL, 255,   -- 220: push_literal(255)
+      ops.BI_ADD,              -- 222: bi_add
+      ops.SET_SLOT_DIRECT, 234,-- 223: set_slot_direct(234)
+      ops.JMP, 280,            -- 225: jmp(280)
+      ops.PUSH_LOCAL_FRAME,    -- 227: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 228: push_literal(0)
+      ops.SET_SLOT_DIRECT, 246,-- 230: set_slot_direct(246)
+      ops.PUSH_LOCAL_FRAME,    -- 232: push_local_frame
+      ops.PUSH_LITERAL, 247,   -- 233: push_literal(247)
+      ops.PUSH_LOCAL_FRAME,    -- 235: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 236: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 238: get_slot_direct(235)
+      ops.BI_ADD,              -- 240: bi_add
+      ops.SET_SLOT_DIRECT, 246,-- 241: set_slot_direct(246)
+      ops.PUSH_LOCAL_FRAME,    -- 243: push_local_frame
+      ops.PUSH_LITERAL, 256,   -- 244: push_literal(256)
+      ops.PUSH_LOCAL_FRAME,    -- 246: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 247: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 235,-- 249: get_slot_direct(235)
+      ops.BI_ADD,              -- 251: bi_add
+      ops.PUSH_FRAME,          -- 252: push_frame
+      ops.GET_SLOT_DIRECT, 198,-- 253: get_slot_direct(198)
+      ops.DUP,                 -- 255: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 256: get_slot_direct_check(93)
+      ops.SWAP,                -- 258: swap
+      ops.PUSH_LOCAL_FRAME,    -- 259: push_local_frame
+      ops.GET_SLOT_DIRECT, 233,-- 260: get_slot_direct(233)
+      ops.PUSH_LOCAL_FRAME,    -- 262: push_local_frame
+      ops.GET_SLOT_DIRECT, 246,-- 263: get_slot_direct(246)
+      ops.INVOKE, 2,           -- 265: invoke(2)
+      ops.BI_ADD,              -- 267: bi_add
+      ops.PUSH_LITERAL, 249,   -- 268: push_literal(249)
+      ops.BI_ADD,              -- 270: bi_add
+      ops.PUSH_LOCAL_FRAME,    -- 271: push_local_frame
+      ops.GET_SLOT_DIRECT, 231,-- 272: get_slot_direct(231)
+      ops.BI_ADD,              -- 274: bi_add
+      ops.PUSH_LITERAL, 255,   -- 275: push_literal(255)
+      ops.BI_ADD,              -- 277: bi_add
+      ops.SET_SLOT_DIRECT, 234,-- 278: set_slot_direct(234)
+      ops.PHI,                 -- 280: phi
+      ops.PHI,                 -- 281: phi
+      ops.PUSH_LOCAL_FRAME,    -- 282: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 283: get_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 285: push_local_frame
+      ops.GET_SLOT_DIRECT, 231,-- 286: get_slot_direct(231)
+      ops.SET_SLOT_DIRECT, 235,-- 288: set_slot_direct(235)
+      ops.PUSH_LOCAL_FRAME,    -- 290: push_local_frame
+      ops.GET_SLOT_DIRECT, 234,-- 291: get_slot_direct(234)
+      ops.RETURN               -- 293: return
+    }
+  },
+  ifunc.Function:new{ -- "_SerializeJSONProperty"
+    name = jsval.newString("_SerializeJSONProperty"),
+    id = 44,
+    nargs = 3,
+    max_stack = 6,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 258,-- 15: set_slot_direct(258)
+      ops.DUP,                 -- 17: dup
+      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
+      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
+      ops.SWAP,                -- 21: swap
+      ops.SET_SLOT_DIRECT, 259,-- 22: set_slot_direct(259)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
+      ops.SET_SLOT_DIRECT, 224,-- 28: set_slot_direct(224)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
+      ops.GET_SLOT_DIRECT, 259,-- 32: get_slot_direct(259)
+      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
+      ops.GET_SLOT_DIRECT, 258,-- 35: get_slot_direct(258)
+      ops.GET_SLOT_INDIRECT,   -- 37: get_slot_indirect
+      ops.SET_SLOT_DIRECT, 224,-- 38: set_slot_direct(224)
+      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 41: get_slot_direct(224)
+      ops.PUSH_LITERAL, 41,    -- 43: push_literal(41)
+      ops.BI_EQ,               -- 45: bi_eq
+      ops.UN_NOT,              -- 46: un_not
+      ops.JMP_UNLESS, 92, 92,  -- 47: jmp_unless(92,92)
+      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 51: push_literal(0)
+      ops.SET_SLOT_DIRECT, 260,-- 53: set_slot_direct(260)
+      ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 57: get_slot_direct(224)
+      ops.GET_SLOT_DIRECT, 260,-- 59: get_slot_direct(260)
+      ops.SET_SLOT_DIRECT, 260,-- 61: set_slot_direct(260)
+      ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
+      ops.GET_SLOT_DIRECT, 260,-- 64: get_slot_direct(260)
+      ops.UN_TYPEOF,           -- 66: un_typeof
+      ops.PUSH_LITERAL, 25,    -- 67: push_literal(25)
+      ops.BI_EQ,               -- 69: bi_eq
+      ops.JMP_UNLESS, 91, 91,  -- 70: jmp_unless(91,91)
+      ops.PUSH_LOCAL_FRAME,    -- 73: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
+      ops.GET_SLOT_DIRECT, 260,-- 75: get_slot_direct(260)
+      ops.DUP,                 -- 77: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 78: get_slot_direct_check(93)
+      ops.SWAP,                -- 80: swap
+      ops.PUSH_LOCAL_FRAME,    -- 81: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 82: get_slot_direct(224)
+      ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
+      ops.GET_SLOT_DIRECT, 258,-- 85: get_slot_direct(258)
+      ops.INVOKE, 2,           -- 87: invoke(2)
+      ops.SET_SLOT_DIRECT, 224,-- 89: set_slot_direct(224)
+      ops.PHI,                 -- 91: phi
+      ops.PHI,                 -- 92: phi
+      ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 94: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 261,-- 96: get_slot_direct(261)
+      ops.PUSH_LITERAL, 0,     -- 98: push_literal(0)
+      ops.BI_EQ,               -- 100: bi_eq
+      ops.UN_NOT,              -- 101: un_not
+      ops.JMP_UNLESS, 128, 128,-- 102: jmp_unless(128,128)
+      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 107: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 261,-- 109: get_slot_direct(261)
+      ops.DUP,                 -- 111: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 112: get_slot_direct_check(93)
+      ops.SWAP,                -- 114: swap
+      ops.PUSH_LOCAL_FRAME,    -- 115: push_local_frame
+      ops.GET_SLOT_DIRECT, 259,-- 116: get_slot_direct(259)
+      ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
+      ops.GET_SLOT_DIRECT, 258,-- 119: get_slot_direct(258)
+      ops.PUSH_LOCAL_FRAME,    -- 121: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 122: get_slot_direct(224)
+      ops.INVOKE, 3,           -- 124: invoke(3)
+      ops.SET_SLOT_DIRECT, 224,-- 126: set_slot_direct(224)
+      ops.PHI,                 -- 128: phi
+      ops.PUSH_LOCAL_FRAME,    -- 129: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 130: get_slot_direct(224)
+      ops.PUSH_LITERAL, 41,    -- 132: push_literal(41)
+      ops.BI_EQ,               -- 134: bi_eq
+      ops.DUP,                 -- 135: dup
+      ops.UN_NOT,              -- 136: un_not
+      ops.JMP_UNLESS, 160, 160,-- 137: jmp_unless(160,160)
+      ops.POP,                 -- 140: pop
+      ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 142: get_slot_direct(224)
+      ops.PUSH_LITERAL, 118,   -- 144: push_literal(118)
+      ops.BI_EQ,               -- 146: bi_eq
+      ops.DUP,                 -- 147: dup
+      ops.UN_NOT,              -- 148: un_not
+      ops.JMP_UNLESS, 159, 159,-- 149: jmp_unless(159,159)
+      ops.POP,                 -- 152: pop
+      ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 154: get_slot_direct(224)
+      ops.PUSH_LITERAL, 32,    -- 156: push_literal(32)
+      ops.BI_EQ,               -- 158: bi_eq
+      ops.PHI,                 -- 159: phi
+      ops.PHI,                 -- 160: phi
+      ops.JMP_UNLESS, 176, 176,-- 161: jmp_unless(176,176)
+      ops.PUSH_FRAME,          -- 164: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 165: get_slot_direct(36)
+      ops.PUSH_LOCAL_FRAME,    -- 167: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 168: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 170: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 171: get_slot_direct(224)
+      ops.INVOKE, 1,           -- 173: invoke(1)
+      ops.RETURN,              -- 175: return
+      ops.PHI,                 -- 176: phi
+      ops.PUSH_LOCAL_FRAME,    -- 177: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 178: get_slot_direct(224)
+      ops.UN_TYPEOF,           -- 180: un_typeof
+      ops.PUSH_LITERAL, 38,    -- 181: push_literal(38)
+      ops.BI_EQ,               -- 183: bi_eq
+      ops.JMP_UNLESS, 199, 199,-- 184: jmp_unless(199,199)
+      ops.PUSH_FRAME,          -- 187: push_frame
+      ops.GET_SLOT_DIRECT, 203,-- 188: get_slot_direct(203)
+      ops.PUSH_LOCAL_FRAME,    -- 190: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 191: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 193: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 194: get_slot_direct(224)
+      ops.INVOKE, 1,           -- 196: invoke(1)
+      ops.RETURN,              -- 198: return
+      ops.PHI,                 -- 199: phi
+      ops.PUSH_LOCAL_FRAME,    -- 200: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 201: get_slot_direct(224)
+      ops.UN_TYPEOF,           -- 203: un_typeof
+      ops.PUSH_LITERAL, 86,    -- 204: push_literal(86)
+      ops.BI_EQ,               -- 206: bi_eq
+      ops.JMP_UNLESS, 244, 244,-- 207: jmp_unless(244,244)
+      ops.PUSH_FRAME,          -- 210: push_frame
+      ops.GET_SLOT_DIRECT, 197,-- 211: get_slot_direct(197)
+      ops.DUP,                 -- 213: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 214: get_slot_direct_check(93)
+      ops.SWAP,                -- 216: swap
+      ops.PUSH_FRAME,          -- 217: push_frame
+      ops.GET_SLOT_DIRECT, 13, -- 218: get_slot_direct(13)
+      ops.PUSH_LOCAL_FRAME,    -- 220: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 221: get_slot_direct(224)
+      ops.INVOKE, 2,           -- 223: invoke(2)
+      ops.JMP_UNLESS, 240, 240,-- 225: jmp_unless(240,240)
+      ops.PUSH_FRAME,          -- 228: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 229: get_slot_direct(36)
+      ops.PUSH_LOCAL_FRAME,    -- 231: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 232: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 234: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 235: get_slot_direct(224)
+      ops.INVOKE, 1,           -- 237: invoke(1)
+      ops.RETURN,              -- 239: return
+      ops.PHI,                 -- 240: phi
+      ops.PUSH_LITERAL, 252,   -- 241: push_literal(252)
+      ops.RETURN,              -- 243: return
+      ops.PHI,                 -- 244: phi
+      ops.PUSH_FRAME,          -- 245: push_frame
+      ops.GET_SLOT_DIRECT, 193,-- 246: get_slot_direct(193)
+      ops.DUP,                 -- 248: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 249: get_slot_direct_check(93)
+      ops.SWAP,                -- 251: swap
+      ops.PUSH_FRAME,          -- 252: push_frame
+      ops.GET_SLOT_DIRECT, 68, -- 253: get_slot_direct(68)
+      ops.PUSH_LOCAL_FRAME,    -- 255: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 256: get_slot_direct(224)
+      ops.INVOKE, 2,           -- 258: invoke(2)
+      ops.JMP_UNLESS, 278, 278,-- 260: jmp_unless(278,278)
+      ops.PUSH_FRAME,          -- 263: push_frame
+      ops.GET_SLOT_DIRECT, 205,-- 264: get_slot_direct(205)
+      ops.PUSH_LOCAL_FRAME,    -- 266: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 267: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 269: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 270: get_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 272: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 273: get_slot_direct(224)
+      ops.INVOKE, 2,           -- 275: invoke(2)
+      ops.RETURN,              -- 277: return
+      ops.PHI,                 -- 278: phi
+      ops.PUSH_LOCAL_FRAME,    -- 279: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 280: get_slot_direct(224)
+      ops.UN_TYPEOF,           -- 282: un_typeof
+      ops.PUSH_LITERAL, 88,    -- 283: push_literal(88)
+      ops.BI_EQ,               -- 285: bi_eq
+      ops.JMP_UNLESS, 304, 304,-- 286: jmp_unless(304,304)
+      ops.PUSH_FRAME,          -- 289: push_frame
+      ops.GET_SLOT_DIRECT, 204,-- 290: get_slot_direct(204)
+      ops.PUSH_LOCAL_FRAME,    -- 292: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 293: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 295: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 296: get_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 298: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 299: get_slot_direct(224)
+      ops.INVOKE, 2,           -- 301: invoke(2)
+      ops.RETURN,              -- 303: return
+      ops.PHI,                 -- 304: phi
+      ops.PUSH_LITERAL, 0,     -- 305: push_literal(0)
+      ops.RETURN               -- 307: return
+    }
+  },
+  ifunc.Function:new{ -- ".stringify"
+    name = jsval.newString(".stringify"),
+    id = 45,
+    nargs = 3,
+    max_stack = 6,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 224,-- 8: set_slot_direct(224)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 264,-- 15: set_slot_direct(264)
+      ops.DUP,                 -- 17: dup
+      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
+      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
+      ops.SWAP,                -- 21: swap
+      ops.SET_SLOT_DIRECT, 265,-- 22: set_slot_direct(265)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
+      ops.SET_SLOT_DIRECT, 237,-- 28: set_slot_direct(237)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
+      ops.SET_SLOT_DIRECT, 261,-- 33: set_slot_direct(261)
+      ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 36: push_literal(0)
+      ops.SET_SLOT_DIRECT, 236,-- 38: set_slot_direct(236)
+      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 41: push_literal(0)
+      ops.SET_SLOT_DIRECT, 266,-- 43: set_slot_direct(266)
+      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 46: push_literal(0)
+      ops.SET_SLOT_DIRECT, 230,-- 48: set_slot_direct(230)
+      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 51: push_literal(0)
+      ops.SET_SLOT_DIRECT, 237,-- 53: set_slot_direct(237)
+      ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 56: push_literal(0)
+      ops.SET_SLOT_DIRECT, 261,-- 58: set_slot_direct(261)
+      ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
+      ops.PUSH_LITERAL, 66,    -- 61: push_literal(66)
+      ops.SET_SLOT_DIRECT, 236,-- 63: set_slot_direct(236)
+      ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
+      ops.GET_SLOT_DIRECT, 264,-- 66: get_slot_direct(264)
+      ops.UN_TYPEOF,           -- 68: un_typeof
+      ops.PUSH_LITERAL, 25,    -- 69: push_literal(25)
+      ops.BI_EQ,               -- 71: bi_eq
+      ops.JMP_UNLESS, 83, 248, -- 72: jmp_unless(83,248)
+      ops.PUSH_LOCAL_FRAME,    -- 75: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
+      ops.GET_SLOT_DIRECT, 264,-- 77: get_slot_direct(264)
+      ops.SET_SLOT_DIRECT, 261,-- 79: set_slot_direct(261)
+      ops.JMP, 248,            -- 81: jmp(248)
+      ops.PUSH_FRAME,          -- 83: push_frame
+      ops.GET_SLOT_DIRECT, 193,-- 84: get_slot_direct(193)
+      ops.DUP,                 -- 86: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 87: get_slot_direct_check(93)
+      ops.SWAP,                -- 89: swap
+      ops.PUSH_FRAME,          -- 90: push_frame
+      ops.GET_SLOT_DIRECT, 68, -- 91: get_slot_direct(68)
+      ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
+      ops.GET_SLOT_DIRECT, 264,-- 94: get_slot_direct(264)
+      ops.INVOKE, 2,           -- 96: invoke(2)
+      ops.JMP_UNLESS, 247, 247,-- 98: jmp_unless(247,247)
+      ops.PUSH_LOCAL_FRAME,    -- 101: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 102: push_literal(0)
+      ops.SET_SLOT_DIRECT, 60, -- 104: set_slot_direct(60)
+      ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 107: push_literal(0)
+      ops.SET_SLOT_DIRECT, 74, -- 109: set_slot_direct(74)
+      ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 112: push_literal(0)
+      ops.SET_SLOT_DIRECT, 267,-- 114: set_slot_direct(267)
+      ops.PUSH_LOCAL_FRAME,    -- 116: push_local_frame
+      ops.NEW_ARRAY,           -- 117: new_array
+      ops.SET_SLOT_DIRECT, 237,-- 118: set_slot_direct(237)
+      ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 121: push_local_frame
+      ops.GET_SLOT_DIRECT, 264,-- 122: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 55, -- 124: get_slot_direct(55)
+      ops.SET_SLOT_DIRECT, 60, -- 126: set_slot_direct(60)
+      ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
+      ops.PUSH_LITERAL, 18,    -- 129: push_literal(18)
+      ops.SET_SLOT_DIRECT, 74, -- 131: set_slot_direct(74)
+      ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
+      ops.PUSH_FRAME,          -- 134: push_frame
+      ops.GET_SLOT_DIRECT, 195,-- 135: get_slot_direct(195)
+      ops.DUP,                 -- 137: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 138: get_slot_direct_check(93)
+      ops.SWAP,                -- 140: swap
+      ops.PUSH_FRAME,          -- 141: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 142: get_slot_direct(14)
+      ops.PUSH_LITERAL, 41,    -- 144: push_literal(41)
+      ops.INVOKE, 2,           -- 146: invoke(2)
+      ops.SET_SLOT_DIRECT, 267,-- 148: set_slot_direct(267)
+      ops.JMP_INTO_LOOP, 233, 246,-- 150: jmp_into_loop(233,246)
+      ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 154: push_literal(0)
+      ops.SET_SLOT_DIRECT, 110,-- 156: set_slot_direct(110)
+      ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
+      ops.PUSH_FRAME,          -- 159: push_frame
+      ops.GET_SLOT_DIRECT, 36, -- 160: get_slot_direct(36)
+      ops.PUSH_LOCAL_FRAME,    -- 162: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 163: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
+      ops.GET_SLOT_DIRECT, 264,-- 166: get_slot_direct(264)
+      ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
+      ops.GET_SLOT_DIRECT, 74, -- 169: get_slot_direct(74)
+      ops.GET_SLOT_INDIRECT,   -- 171: get_slot_indirect
+      ops.INVOKE, 1,           -- 172: invoke(1)
+      ops.SET_SLOT_DIRECT, 110,-- 174: set_slot_direct(110)
+      ops.PUSH_FRAME,          -- 176: push_frame
+      ops.GET_SLOT_DIRECT, 89, -- 177: get_slot_direct(89)
+      ops.DUP,                 -- 179: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 180: get_slot_direct_check(93)
+      ops.SWAP,                -- 182: swap
+      ops.PUSH_LOCAL_FRAME,    -- 183: push_local_frame
+      ops.GET_SLOT_DIRECT, 267,-- 184: get_slot_direct(267)
+      ops.PUSH_LITERAL, 268,   -- 186: push_literal(268)
+      ops.PUSH_LOCAL_FRAME,    -- 188: push_local_frame
+      ops.GET_SLOT_DIRECT, 110,-- 189: get_slot_direct(110)
+      ops.BI_ADD,              -- 191: bi_add
+      ops.INVOKE, 2,           -- 192: invoke(2)
+      ops.UN_NOT,              -- 194: un_not
+      ops.JMP_UNLESS, 223, 223,-- 195: jmp_unless(223,223)
+      ops.PUSH_LOCAL_FRAME,    -- 198: push_local_frame
+      ops.GET_SLOT_DIRECT, 237,-- 199: get_slot_direct(237)
+      ops.DUP,                 -- 201: dup
+      ops.GET_SLOT_DIRECT_CHECK, 69,-- 202: get_slot_direct_check(69)
+      ops.SWAP,                -- 204: swap
+      ops.PUSH_LOCAL_FRAME,    -- 205: push_local_frame
+      ops.GET_SLOT_DIRECT, 110,-- 206: get_slot_direct(110)
+      ops.INVOKE, 1,           -- 208: invoke(1)
+      ops.POP,                 -- 210: pop
+      ops.PUSH_LOCAL_FRAME,    -- 211: push_local_frame
+      ops.GET_SLOT_DIRECT, 267,-- 212: get_slot_direct(267)
+      ops.PUSH_LITERAL, 268,   -- 214: push_literal(268)
+      ops.PUSH_LOCAL_FRAME,    -- 216: push_local_frame
+      ops.GET_SLOT_DIRECT, 110,-- 217: get_slot_direct(110)
+      ops.BI_ADD,              -- 219: bi_add
+      ops.PUSH_LITERAL, 118,   -- 220: push_literal(118)
+      ops.SET_SLOT_INDIRECT,   -- 222: set_slot_indirect
+      ops.PHI,                 -- 223: phi
+      ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
+      ops.DUP,                 -- 225: dup
+      ops.GET_SLOT_DIRECT, 74, -- 226: get_slot_direct(74)
+      ops.PUSH_LITERAL, 31,    -- 228: push_literal(31)
+      ops.BI_ADD,              -- 230: bi_add
+      ops.SET_SLOT_DIRECT, 74, -- 231: set_slot_direct(74)
+      ops.PHI,                 -- 233: phi
+      ops.PUSH_LOCAL_FRAME,    -- 234: push_local_frame
+      ops.GET_SLOT_DIRECT, 74, -- 235: get_slot_direct(74)
+      ops.PUSH_LOCAL_FRAME,    -- 237: push_local_frame
+      ops.GET_SLOT_DIRECT, 60, -- 238: get_slot_direct(60)
+      ops.SWAP,                -- 240: swap
+      ops.BI_GT,               -- 241: bi_gt
+      ops.UN_NOT,              -- 242: un_not
+      ops.JMP_UNLESS, 153, 246,-- 243: jmp_unless(153,246)
+      ops.PHI,                 -- 246: phi
+      ops.PHI,                 -- 247: phi
+      ops.PHI,                 -- 248: phi
+      ops.PUSH_LOCAL_FRAME,    -- 249: push_local_frame
+      ops.GET_SLOT_DIRECT, 265,-- 250: get_slot_direct(265)
+      ops.UN_TYPEOF,           -- 252: un_typeof
+      ops.PUSH_LITERAL, 86,    -- 253: push_literal(86)
+      ops.BI_EQ,               -- 255: bi_eq
+      ops.JMP_UNLESS, 328, 358,-- 256: jmp_unless(328,358)
+      ops.PUSH_LOCAL_FRAME,    -- 259: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 260: push_literal(0)
+      ops.SET_SLOT_DIRECT, 269,-- 262: set_slot_direct(269)
+      ops.PUSH_LOCAL_FRAME,    -- 264: push_local_frame
+      ops.PUSH_FRAME,          -- 265: push_frame
+      ops.GET_SLOT_DIRECT, 200,-- 266: get_slot_direct(200)
+      ops.PUSH_LOCAL_FRAME,    -- 268: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 269: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 271: push_local_frame
+      ops.GET_SLOT_DIRECT, 265,-- 272: get_slot_direct(265)
+      ops.INVOKE, 1,           -- 274: invoke(1)
+      ops.SET_SLOT_DIRECT, 269,-- 276: set_slot_direct(269)
+      ops.PUSH_LOCAL_FRAME,    -- 278: push_local_frame
+      ops.GET_SLOT_DIRECT, 269,-- 279: get_slot_direct(269)
+      ops.PUSH_LITERAL, 135,   -- 281: push_literal(135)
+      ops.BI_GT,               -- 283: bi_gt
+      ops.JMP_UNLESS, 292, 292,-- 284: jmp_unless(292,292)
+      ops.PUSH_LOCAL_FRAME,    -- 287: push_local_frame
+      ops.PUSH_LITERAL, 135,   -- 288: push_literal(135)
+      ops.SET_SLOT_DIRECT, 269,-- 290: set_slot_direct(269)
+      ops.PHI,                 -- 292: phi
+      ops.JMP_INTO_LOOP, 314, 325,-- 293: jmp_into_loop(314,325)
+      ops.PUSH_LOCAL_FRAME,    -- 296: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 297: push_local_frame
+      ops.GET_SLOT_DIRECT, 236,-- 298: get_slot_direct(236)
+      ops.PUSH_LITERAL, 242,   -- 300: push_literal(242)
+      ops.BI_ADD,              -- 302: bi_add
+      ops.SET_SLOT_DIRECT, 236,-- 303: set_slot_direct(236)
+      ops.PUSH_LOCAL_FRAME,    -- 305: push_local_frame
+      ops.DUP,                 -- 306: dup
+      ops.GET_SLOT_DIRECT, 269,-- 307: get_slot_direct(269)
+      ops.PUSH_LITERAL, 31,    -- 309: push_literal(31)
+      ops.BI_SUB,              -- 311: bi_sub
+      ops.SET_SLOT_DIRECT, 269,-- 312: set_slot_direct(269)
+      ops.PHI,                 -- 314: phi
+      ops.PUSH_LOCAL_FRAME,    -- 315: push_local_frame
+      ops.GET_SLOT_DIRECT, 269,-- 316: get_slot_direct(269)
+      ops.PUSH_LITERAL, 31,    -- 318: push_literal(31)
+      ops.BI_GTE,              -- 320: bi_gte
+      ops.UN_NOT,              -- 321: un_not
+      ops.JMP_UNLESS, 296, 325,-- 322: jmp_unless(296,325)
+      ops.PHI,                 -- 325: phi
+      ops.JMP, 358,            -- 326: jmp(358)
+      ops.PUSH_LOCAL_FRAME,    -- 328: push_local_frame
+      ops.GET_SLOT_DIRECT, 265,-- 329: get_slot_direct(265)
+      ops.UN_TYPEOF,           -- 331: un_typeof
+      ops.PUSH_LITERAL, 38,    -- 332: push_literal(38)
+      ops.BI_EQ,               -- 334: bi_eq
+      ops.JMP_UNLESS, 357, 357,-- 335: jmp_unless(357,357)
+      ops.PUSH_LOCAL_FRAME,    -- 338: push_local_frame
+      ops.PUSH_FRAME,          -- 339: push_frame
+      ops.GET_SLOT_DIRECT, 194,-- 340: get_slot_direct(194)
+      ops.DUP,                 -- 342: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 343: get_slot_direct_check(93)
+      ops.SWAP,                -- 345: swap
+      ops.PUSH_LOCAL_FRAME,    -- 346: push_local_frame
+      ops.GET_SLOT_DIRECT, 265,-- 347: get_slot_direct(265)
+      ops.PUSH_LITERAL, 18,    -- 349: push_literal(18)
+      ops.PUSH_LITERAL, 135,   -- 351: push_literal(135)
+      ops.INVOKE, 3,           -- 353: invoke(3)
+      ops.SET_SLOT_DIRECT, 236,-- 355: set_slot_direct(236)
+      ops.PHI,                 -- 357: phi
+      ops.PHI,                 -- 358: phi
+      ops.PUSH_LOCAL_FRAME,    -- 359: push_local_frame
+      ops.PUSH_FRAME,          -- 360: push_frame
+      ops.GET_SLOT_DIRECT, 195,-- 361: get_slot_direct(195)
+      ops.DUP,                 -- 363: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 364: get_slot_direct_check(93)
+      ops.SWAP,                -- 366: swap
+      ops.PUSH_FRAME,          -- 367: push_frame
+      ops.GET_SLOT_DIRECT, 14, -- 368: get_slot_direct(14)
+      ops.PUSH_LITERAL, 41,    -- 370: push_literal(41)
+      ops.INVOKE, 2,           -- 372: invoke(2)
+      ops.SET_SLOT_DIRECT, 266,-- 374: set_slot_direct(266)
+      ops.PUSH_LOCAL_FRAME,    -- 376: push_local_frame
+      ops.GET_SLOT_DIRECT, 266,-- 377: get_slot_direct(266)
+      ops.PUSH_LITERAL, 66,    -- 379: push_literal(66)
+      ops.PUSH_LOCAL_FRAME,    -- 381: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 382: get_slot_direct(224)
+      ops.SET_SLOT_INDIRECT,   -- 384: set_slot_indirect
+      ops.PUSH_LOCAL_FRAME,    -- 385: push_local_frame
+      ops.NEW_OBJECT,          -- 386: new_object
+      ops.DUP,                 -- 387: dup
+      ops.PUSH_LOCAL_FRAME,    -- 388: push_local_frame
+      ops.GET_SLOT_DIRECT, 261,-- 389: get_slot_direct(261)
+      ops.SET_SLOT_DIRECT, 261,-- 391: set_slot_direct(261)
+      ops.DUP,                 -- 393: dup
+      ops.NEW_ARRAY,           -- 394: new_array
+      ops.SET_SLOT_DIRECT, 270,-- 395: set_slot_direct(270)
+      ops.DUP,                 -- 397: dup
+      ops.PUSH_LITERAL, 66,    -- 398: push_literal(66)
+      ops.SET_SLOT_DIRECT, 235,-- 400: set_slot_direct(235)
+      ops.DUP,                 -- 402: dup
+      ops.PUSH_LOCAL_FRAME,    -- 403: push_local_frame
+      ops.GET_SLOT_DIRECT, 236,-- 404: get_slot_direct(236)
+      ops.SET_SLOT_DIRECT, 236,-- 406: set_slot_direct(236)
+      ops.DUP,                 -- 408: dup
+      ops.PUSH_LOCAL_FRAME,    -- 409: push_local_frame
+      ops.GET_SLOT_DIRECT, 237,-- 410: get_slot_direct(237)
+      ops.SET_SLOT_DIRECT, 237,-- 412: set_slot_direct(237)
+      ops.SET_SLOT_DIRECT, 230,-- 414: set_slot_direct(230)
+      ops.PUSH_FRAME,          -- 416: push_frame
+      ops.GET_SLOT_DIRECT, 206,-- 417: get_slot_direct(206)
+      ops.PUSH_LOCAL_FRAME,    -- 419: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 420: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 422: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 423: get_slot_direct(230)
+      ops.PUSH_LITERAL, 66,    -- 425: push_literal(66)
+      ops.PUSH_LOCAL_FRAME,    -- 427: push_local_frame
+      ops.GET_SLOT_DIRECT, 266,-- 428: get_slot_direct(266)
+      ops.INVOKE, 3,           -- 430: invoke(3)
+      ops.RETURN               -- 432: return
+    }
+  },
   ifunc.Function:new{ -- "_define"
     name = jsval.newString("_define"),
-    id = 37,
+    id = 46,
     nargs = 3,
     max_stack = 6,
     bytecode = {
@@ -3628,38 +5174,38 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 192,-- 15: set_slot_direct(192)
+      ops.SET_SLOT_DIRECT, 273,-- 15: set_slot_direct(273)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 193,-- 22: set_slot_direct(193)
+      ops.SET_SLOT_DIRECT, 274,-- 22: set_slot_direct(274)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 194,-- 28: set_slot_direct(194)
+      ops.SET_SLOT_DIRECT, 275,-- 28: set_slot_direct(275)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
-      ops.GET_SLOT_DIRECT, 192,-- 32: get_slot_direct(192)
+      ops.GET_SLOT_DIRECT, 273,-- 32: get_slot_direct(273)
       ops.DUP,                 -- 34: dup
       ops.GET_SLOT_DIRECT_CHECK, 98,-- 35: get_slot_direct_check(98)
       ops.SWAP,                -- 37: swap
-      ops.NEW_FUNCTION, 38,    -- 38: new_function(38)
+      ops.NEW_FUNCTION, 47,    -- 38: new_function(47)
       ops.INVOKE, 1,           -- 40: invoke(1)
-      ops.SET_SLOT_DIRECT, 194,-- 42: set_slot_direct(194)
+      ops.SET_SLOT_DIRECT, 275,-- 42: set_slot_direct(275)
       ops.PUSH_FRAME,          -- 44: push_frame
       ops.GET_SLOT_DIRECT, 1,  -- 45: get_slot_direct(1)
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
       ops.GET_SLOT_DIRECT, 19, -- 48: get_slot_direct(19)
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
-      ops.GET_SLOT_DIRECT, 193,-- 51: get_slot_direct(193)
+      ops.GET_SLOT_DIRECT, 274,-- 51: get_slot_direct(274)
       ops.DUP,                 -- 53: dup
       ops.GET_SLOT_DIRECT_CHECK, 112,-- 54: get_slot_direct_check(112)
       ops.SWAP,                -- 56: swap
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 58: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 194,-- 61: get_slot_direct(194)
+      ops.GET_SLOT_DIRECT, 275,-- 61: get_slot_direct(275)
       ops.INVOKE, 2,           -- 63: invoke(2)
       ops.SET_SLOT_INDIRECT,   -- 65: set_slot_indirect
       ops.PUSH_LITERAL, 0,     -- 66: push_literal(0)
@@ -3668,7 +5214,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 38,
+    id = 47,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -3678,19 +5224,19 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 195,-- 8: set_slot_direct(195)
+      ops.SET_SLOT_DIRECT, 276,-- 8: set_slot_direct(276)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.GET_SLOT_DIRECT, 1,  -- 12: get_slot_direct(1)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 195,-- 15: get_slot_direct(195)
+      ops.GET_SLOT_DIRECT, 276,-- 15: get_slot_direct(276)
       ops.GET_SLOT_INDIRECT,   -- 17: get_slot_indirect
       ops.RETURN               -- 18: return
     }
   },
   ifunc.Function:new{ -- "make_tokenize"
     name = jsval.newString("make_tokenize"),
-    id = 39,
+    id = 48,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -3700,35 +5246,35 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 200,-- 8: set_slot_direct(200)
+      ops.SET_SLOT_DIRECT, 281,-- 8: set_slot_direct(281)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.NEW_FUNCTION, 40,    -- 12: new_function(40)
+      ops.NEW_FUNCTION, 49,    -- 12: new_function(49)
       ops.OVER,                -- 14: over
-      ops.SET_SLOT_DIRECT, 198,-- 15: set_slot_direct(198)
+      ops.SET_SLOT_DIRECT, 279,-- 15: set_slot_direct(279)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 198,-- 19: get_slot_direct(198)
-      ops.PUSH_LITERAL, 198,   -- 21: push_literal(198)
-      ops.SET_SLOT_DIRECT, 248,-- 23: set_slot_direct(248)
+      ops.GET_SLOT_DIRECT, 279,-- 19: get_slot_direct(279)
+      ops.PUSH_LITERAL, 279,   -- 21: push_literal(279)
+      ops.SET_SLOT_DIRECT, 321,-- 23: set_slot_direct(321)
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 198,-- 26: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 26: get_slot_direct(279)
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 249,-- 29: get_slot_direct(249)
-      ops.SET_SLOT_DIRECT, 250,-- 31: set_slot_direct(250)
+      ops.GET_SLOT_DIRECT, 322,-- 29: get_slot_direct(322)
+      ops.SET_SLOT_DIRECT, 323,-- 31: set_slot_direct(323)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
-      ops.GET_SLOT_DIRECT, 198,-- 34: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 34: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
-      ops.GET_SLOT_DIRECT, 200,-- 37: get_slot_direct(200)
-      ops.SET_SLOT_DIRECT, 251,-- 39: set_slot_direct(251)
+      ops.GET_SLOT_DIRECT, 281,-- 37: get_slot_direct(281)
+      ops.SET_SLOT_DIRECT, 324,-- 39: set_slot_direct(324)
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 198,-- 42: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 42: get_slot_direct(279)
       ops.RETURN               -- 44: return
     }
   },
   ifunc.Function:new{ -- "tokenize"
     name = jsval.newString("tokenize"),
-    id = 40,
+    id = 49,
     nargs = 4,
     max_stack = 8,
     bytecode = {
@@ -3743,21 +5289,21 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 201,-- 15: set_slot_direct(201)
+      ops.SET_SLOT_DIRECT, 282,-- 15: set_slot_direct(282)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 202,-- 22: set_slot_direct(202)
+      ops.SET_SLOT_DIRECT, 283,-- 22: set_slot_direct(283)
       ops.DUP,                 -- 24: dup
       ops.GET_SLOT_DIRECT, 159,-- 25: get_slot_direct(159)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.SWAP,                -- 28: swap
-      ops.SET_SLOT_DIRECT, 203,-- 29: set_slot_direct(203)
+      ops.SET_SLOT_DIRECT, 284,-- 29: set_slot_direct(284)
       ops.POP,                 -- 31: pop
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 33: push_literal(0)
-      ops.SET_SLOT_DIRECT, 204,-- 35: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 35: set_slot_direct(227)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.PUSH_LITERAL, 0,     -- 38: push_literal(0)
       ops.SET_SLOT_DIRECT, 52, -- 40: set_slot_direct(52)
@@ -3772,7 +5318,7 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 23, -- 55: set_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
-      ops.SET_SLOT_DIRECT, 205,-- 60: set_slot_direct(205)
+      ops.SET_SLOT_DIRECT, 285,-- 60: set_slot_direct(285)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 63: push_literal(0)
       ops.SET_SLOT_DIRECT, 63, -- 65: set_slot_direct(63)
@@ -3781,10 +5327,10 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 75, -- 70: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 73: push_literal(0)
-      ops.SET_SLOT_DIRECT, 206,-- 75: set_slot_direct(206)
+      ops.SET_SLOT_DIRECT, 286,-- 75: set_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 77: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 78: push_literal(0)
-      ops.SET_SLOT_DIRECT, 207,-- 80: set_slot_direct(207)
+      ops.SET_SLOT_DIRECT, 287,-- 80: set_slot_direct(287)
       ops.PUSH_FRAME,          -- 82: push_frame
       ops.PUSH_LITERAL, 18,    -- 83: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 85: set_slot_direct(53)
@@ -3797,11 +5343,11 @@ startup.functions = {
       ops.NEW_ARRAY,           -- 96: new_array
       ops.SET_SLOT_DIRECT, 75, -- 97: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
-      ops.NEW_FUNCTION, 41,    -- 100: new_function(41)
-      ops.SET_SLOT_DIRECT, 206,-- 102: set_slot_direct(206)
+      ops.NEW_FUNCTION, 50,    -- 100: new_function(50)
+      ops.SET_SLOT_DIRECT, 286,-- 102: set_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 104: push_local_frame
-      ops.NEW_FUNCTION, 42,    -- 105: new_function(42)
-      ops.SET_SLOT_DIRECT, 207,-- 107: set_slot_direct(207)
+      ops.NEW_FUNCTION, 51,    -- 105: new_function(51)
+      ops.SET_SLOT_DIRECT, 287,-- 107: set_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
       ops.GET_SLOT_DIRECT, 186,-- 110: get_slot_direct(186)
       ops.UN_NOT,              -- 112: un_not
@@ -3810,26 +5356,26 @@ startup.functions = {
       ops.RETURN,              -- 118: return
       ops.PHI,                 -- 119: phi
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 121: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 121: get_slot_direct(282)
       ops.UN_TYPEOF,           -- 123: un_typeof
       ops.PUSH_LITERAL, 38,    -- 124: push_literal(38)
       ops.BI_EQ,               -- 126: bi_eq
       ops.UN_NOT,              -- 127: un_not
       ops.JMP_UNLESS, 136, 136,-- 128: jmp_unless(136,136)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
-      ops.PUSH_LITERAL, 216,   -- 132: push_literal(216)
-      ops.SET_SLOT_DIRECT, 201,-- 134: set_slot_direct(201)
+      ops.PUSH_LITERAL, 294,   -- 132: push_literal(294)
+      ops.SET_SLOT_DIRECT, 282,-- 134: set_slot_direct(282)
       ops.PHI,                 -- 136: phi
       ops.PUSH_LOCAL_FRAME,    -- 137: push_local_frame
-      ops.GET_SLOT_DIRECT, 202,-- 138: get_slot_direct(202)
+      ops.GET_SLOT_DIRECT, 283,-- 138: get_slot_direct(283)
       ops.UN_TYPEOF,           -- 140: un_typeof
       ops.PUSH_LITERAL, 38,    -- 141: push_literal(38)
       ops.BI_EQ,               -- 143: bi_eq
       ops.UN_NOT,              -- 144: un_not
       ops.JMP_UNLESS, 153, 153,-- 145: jmp_unless(153,153)
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
-      ops.PUSH_LITERAL, 217,   -- 149: push_literal(217)
-      ops.SET_SLOT_DIRECT, 202,-- 151: set_slot_direct(202)
+      ops.PUSH_LITERAL, 295,   -- 149: push_literal(295)
+      ops.SET_SLOT_DIRECT, 283,-- 151: set_slot_direct(283)
       ops.PHI,                 -- 153: phi
       ops.PUSH_LOCAL_FRAME,    -- 154: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
@@ -3840,15 +5386,15 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 162: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 163: get_slot_direct(53)
       ops.INVOKE, 1,           -- 165: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 167: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 167: set_slot_direct(227)
       ops.JMP_INTO_LOOP, 2321, 2329,-- 169: jmp_into_loop(2321,2329)
       ops.PUSH_FRAME,          -- 172: push_frame
       ops.PUSH_FRAME,          -- 173: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 174: get_slot_direct(53)
       ops.SET_SLOT_DIRECT, 52, -- 176: set_slot_direct(52)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 179: get_slot_direct(204)
-      ops.PUSH_LITERAL, 218,   -- 181: push_literal(218)
+      ops.GET_SLOT_DIRECT, 227,-- 179: get_slot_direct(227)
+      ops.PUSH_LITERAL, 242,   -- 181: push_literal(242)
       ops.SWAP,                -- 183: swap
       ops.BI_GTE,              -- 184: bi_gte
       ops.JMP_UNLESS, 214, 2320,-- 185: jmp_unless(214,2320)
@@ -3867,18 +5413,18 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 205: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 206: get_slot_direct(53)
       ops.INVOKE, 1,           -- 208: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 210: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 210: set_slot_direct(227)
       ops.JMP, 2320,           -- 212: jmp(2320)
       ops.PUSH_LOCAL_FRAME,    -- 214: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 215: get_slot_direct(204)
-      ops.PUSH_LITERAL, 219,   -- 217: push_literal(219)
+      ops.GET_SLOT_DIRECT, 227,-- 215: get_slot_direct(227)
+      ops.PUSH_LITERAL, 296,   -- 217: push_literal(296)
       ops.BI_GTE,              -- 219: bi_gte
       ops.DUP,                 -- 220: dup
       ops.JMP_UNLESS, 232, 232,-- 221: jmp_unless(232,232)
       ops.POP,                 -- 224: pop
       ops.PUSH_LOCAL_FRAME,    -- 225: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 226: get_slot_direct(204)
-      ops.PUSH_LITERAL, 220,   -- 228: push_literal(220)
+      ops.GET_SLOT_DIRECT, 227,-- 226: get_slot_direct(227)
+      ops.PUSH_LITERAL, 297,   -- 228: push_literal(297)
       ops.SWAP,                -- 230: swap
       ops.BI_GTE,              -- 231: bi_gte
       ops.PHI,                 -- 232: phi
@@ -3887,15 +5433,15 @@ startup.functions = {
       ops.JMP_UNLESS, 284, 284,-- 235: jmp_unless(284,284)
       ops.POP,                 -- 238: pop
       ops.PUSH_LOCAL_FRAME,    -- 239: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 240: get_slot_direct(204)
-      ops.PUSH_LITERAL, 221,   -- 242: push_literal(221)
+      ops.GET_SLOT_DIRECT, 227,-- 240: get_slot_direct(227)
+      ops.PUSH_LITERAL, 298,   -- 242: push_literal(298)
       ops.BI_GTE,              -- 244: bi_gte
       ops.DUP,                 -- 245: dup
       ops.JMP_UNLESS, 257, 257,-- 246: jmp_unless(257,257)
       ops.POP,                 -- 249: pop
       ops.PUSH_LOCAL_FRAME,    -- 250: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 251: get_slot_direct(204)
-      ops.PUSH_LITERAL, 222,   -- 253: push_literal(222)
+      ops.GET_SLOT_DIRECT, 227,-- 251: get_slot_direct(227)
+      ops.PUSH_LITERAL, 299,   -- 253: push_literal(299)
       ops.SWAP,                -- 255: swap
       ops.BI_GTE,              -- 256: bi_gte
       ops.PHI,                 -- 257: phi
@@ -3904,16 +5450,16 @@ startup.functions = {
       ops.JMP_UNLESS, 283, 283,-- 260: jmp_unless(283,283)
       ops.POP,                 -- 263: pop
       ops.PUSH_LOCAL_FRAME,    -- 264: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 265: get_slot_direct(204)
-      ops.PUSH_LITERAL, 223,   -- 267: push_literal(223)
+      ops.GET_SLOT_DIRECT, 227,-- 265: get_slot_direct(227)
+      ops.PUSH_LITERAL, 268,   -- 267: push_literal(268)
       ops.BI_EQ,               -- 269: bi_eq
       ops.DUP,                 -- 270: dup
       ops.UN_NOT,              -- 271: un_not
       ops.JMP_UNLESS, 282, 282,-- 272: jmp_unless(282,282)
       ops.POP,                 -- 275: pop
       ops.PUSH_LOCAL_FRAME,    -- 276: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 277: get_slot_direct(204)
-      ops.PUSH_LITERAL, 224,   -- 279: push_literal(224)
+      ops.GET_SLOT_DIRECT, 227,-- 277: get_slot_direct(227)
+      ops.PUSH_LITERAL, 300,   -- 279: push_literal(300)
       ops.BI_EQ,               -- 281: bi_eq
       ops.PHI,                 -- 282: phi
       ops.PHI,                 -- 283: phi
@@ -3921,7 +5467,7 @@ startup.functions = {
       ops.JMP_UNLESS, 478, 2319,-- 285: jmp_unless(478,2319)
       ops.PUSH_LOCAL_FRAME,    -- 288: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 289: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 290: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 290: get_slot_direct(227)
       ops.SET_SLOT_DIRECT, 63, -- 292: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 294: push_frame
       ops.DUP,                 -- 295: dup
@@ -3939,17 +5485,17 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 314: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 315: get_slot_direct(53)
       ops.INVOKE, 1,           -- 317: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 319: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 319: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 321: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 322: get_slot_direct(204)
-      ops.PUSH_LITERAL, 219,   -- 324: push_literal(219)
+      ops.GET_SLOT_DIRECT, 227,-- 322: get_slot_direct(227)
+      ops.PUSH_LITERAL, 296,   -- 324: push_literal(296)
       ops.BI_GTE,              -- 326: bi_gte
       ops.DUP,                 -- 327: dup
       ops.JMP_UNLESS, 339, 339,-- 328: jmp_unless(339,339)
       ops.POP,                 -- 331: pop
       ops.PUSH_LOCAL_FRAME,    -- 332: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 333: get_slot_direct(204)
-      ops.PUSH_LITERAL, 220,   -- 335: push_literal(220)
+      ops.GET_SLOT_DIRECT, 227,-- 333: get_slot_direct(227)
+      ops.PUSH_LITERAL, 297,   -- 335: push_literal(297)
       ops.SWAP,                -- 337: swap
       ops.BI_GTE,              -- 338: bi_gte
       ops.PHI,                 -- 339: phi
@@ -3958,15 +5504,15 @@ startup.functions = {
       ops.JMP_UNLESS, 417, 417,-- 342: jmp_unless(417,417)
       ops.POP,                 -- 345: pop
       ops.PUSH_LOCAL_FRAME,    -- 346: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 347: get_slot_direct(204)
-      ops.PUSH_LITERAL, 221,   -- 349: push_literal(221)
+      ops.GET_SLOT_DIRECT, 227,-- 347: get_slot_direct(227)
+      ops.PUSH_LITERAL, 298,   -- 349: push_literal(298)
       ops.BI_GTE,              -- 351: bi_gte
       ops.DUP,                 -- 352: dup
       ops.JMP_UNLESS, 364, 364,-- 353: jmp_unless(364,364)
       ops.POP,                 -- 356: pop
       ops.PUSH_LOCAL_FRAME,    -- 357: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 358: get_slot_direct(204)
-      ops.PUSH_LITERAL, 222,   -- 360: push_literal(222)
+      ops.GET_SLOT_DIRECT, 227,-- 358: get_slot_direct(227)
+      ops.PUSH_LITERAL, 299,   -- 360: push_literal(299)
       ops.SWAP,                -- 362: swap
       ops.BI_GTE,              -- 363: bi_gte
       ops.PHI,                 -- 364: phi
@@ -3975,15 +5521,15 @@ startup.functions = {
       ops.JMP_UNLESS, 416, 416,-- 367: jmp_unless(416,416)
       ops.POP,                 -- 370: pop
       ops.PUSH_LOCAL_FRAME,    -- 371: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 372: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 372: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 374: push_literal(140)
       ops.BI_GTE,              -- 376: bi_gte
       ops.DUP,                 -- 377: dup
       ops.JMP_UNLESS, 389, 389,-- 378: jmp_unless(389,389)
       ops.POP,                 -- 381: pop
       ops.PUSH_LOCAL_FRAME,    -- 382: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 383: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 385: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 383: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 385: push_literal(301)
       ops.SWAP,                -- 387: swap
       ops.BI_GTE,              -- 388: bi_gte
       ops.PHI,                 -- 389: phi
@@ -3992,16 +5538,16 @@ startup.functions = {
       ops.JMP_UNLESS, 415, 415,-- 392: jmp_unless(415,415)
       ops.POP,                 -- 395: pop
       ops.PUSH_LOCAL_FRAME,    -- 396: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 397: get_slot_direct(204)
-      ops.PUSH_LITERAL, 224,   -- 399: push_literal(224)
+      ops.GET_SLOT_DIRECT, 227,-- 397: get_slot_direct(227)
+      ops.PUSH_LITERAL, 300,   -- 399: push_literal(300)
       ops.BI_EQ,               -- 401: bi_eq
       ops.DUP,                 -- 402: dup
       ops.UN_NOT,              -- 403: un_not
       ops.JMP_UNLESS, 414, 414,-- 404: jmp_unless(414,414)
       ops.POP,                 -- 407: pop
       ops.PUSH_LOCAL_FRAME,    -- 408: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 409: get_slot_direct(204)
-      ops.PUSH_LITERAL, 223,   -- 411: push_literal(223)
+      ops.GET_SLOT_DIRECT, 227,-- 409: get_slot_direct(227)
+      ops.PUSH_LITERAL, 268,   -- 411: push_literal(268)
       ops.BI_EQ,               -- 413: bi_eq
       ops.PHI,                 -- 414: phi
       ops.PHI,                 -- 415: phi
@@ -4012,7 +5558,7 @@ startup.functions = {
       ops.DUP,                 -- 422: dup
       ops.GET_SLOT_DIRECT, 63, -- 423: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 425: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 426: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 426: get_slot_direct(227)
       ops.BI_ADD,              -- 428: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 429: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 431: push_frame
@@ -4035,7 +5581,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 457: get_slot_direct_check(69)
       ops.SWAP,                -- 459: swap
       ops.PUSH_LOCAL_FRAME,    -- 460: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 461: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 461: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 463: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 464: get_slot_direct(26)
       ops.PUSH_LITERAL, 19,    -- 466: push_literal(19)
@@ -4046,15 +5592,15 @@ startup.functions = {
       ops.POP,                 -- 475: pop
       ops.JMP, 2319,           -- 476: jmp(2319)
       ops.PUSH_LOCAL_FRAME,    -- 478: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 479: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 479: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 481: push_literal(140)
       ops.BI_GTE,              -- 483: bi_gte
       ops.DUP,                 -- 484: dup
       ops.JMP_UNLESS, 496, 496,-- 485: jmp_unless(496,496)
       ops.POP,                 -- 488: pop
       ops.PUSH_LOCAL_FRAME,    -- 489: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 490: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 492: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 490: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 492: push_literal(301)
       ops.SWAP,                -- 494: swap
       ops.BI_GTE,              -- 495: bi_gte
       ops.PHI,                 -- 496: phi
@@ -4063,7 +5609,7 @@ startup.functions = {
       ops.JMP_UNLESS, 558, 558,-- 499: jmp_unless(558,558)
       ops.POP,                 -- 502: pop
       ops.PUSH_LOCAL_FRAME,    -- 503: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 504: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 504: get_slot_direct(227)
       ops.PUSH_LITERAL, 149,   -- 506: push_literal(149)
       ops.BI_EQ,               -- 508: bi_eq
       ops.DUP,                 -- 509: dup
@@ -4094,7 +5640,7 @@ startup.functions = {
       ops.PUSH_LITERAL, 31,    -- 547: push_literal(31)
       ops.BI_ADD,              -- 549: bi_add
       ops.INVOKE, 1,           -- 550: invoke(1)
-      ops.PUSH_LITERAL, 225,   -- 552: push_literal(225)
+      ops.PUSH_LITERAL, 301,   -- 552: push_literal(301)
       ops.SWAP,                -- 554: swap
       ops.BI_GTE,              -- 555: bi_gte
       ops.PHI,                 -- 556: phi
@@ -4102,7 +5648,7 @@ startup.functions = {
       ops.PHI,                 -- 558: phi
       ops.JMP_UNLESS, 1314, 2318,-- 559: jmp_unless(1314,2318)
       ops.PUSH_LOCAL_FRAME,    -- 562: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 563: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 563: get_slot_direct(227)
       ops.PUSH_LITERAL, 149,   -- 565: push_literal(149)
       ops.BI_EQ,               -- 567: bi_eq
       ops.JMP_UNLESS, 578, 790,-- 568: jmp_unless(578,790)
@@ -4112,10 +5658,10 @@ startup.functions = {
       ops.JMP, 790,            -- 576: jmp(790)
       ops.PUSH_LOCAL_FRAME,    -- 578: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 579: push_literal(0)
-      ops.SET_SLOT_DIRECT, 226,-- 581: set_slot_direct(226)
+      ops.SET_SLOT_DIRECT, 302,-- 581: set_slot_direct(302)
       ops.PUSH_LOCAL_FRAME,    -- 583: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 584: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 585: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 585: get_slot_direct(227)
       ops.SET_SLOT_DIRECT, 63, -- 587: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 589: push_frame
       ops.DUP,                 -- 590: dup
@@ -4132,7 +5678,7 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 606: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 607: get_slot_direct(53)
       ops.INVOKE, 1,           -- 609: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 611: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 611: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 613: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 614: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 615: get_slot_direct(63)
@@ -4142,19 +5688,19 @@ startup.functions = {
       ops.JMP_UNLESS, 631, 631,-- 621: jmp_unless(631,631)
       ops.POP,                 -- 624: pop
       ops.PUSH_LOCAL_FRAME,    -- 625: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 626: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 626: get_slot_direct(227)
       ops.PUSH_LITERAL, 128,   -- 628: push_literal(128)
       ops.BI_EQ,               -- 630: bi_eq
       ops.PHI,                 -- 631: phi
-      ops.SET_SLOT_DIRECT, 226,-- 632: set_slot_direct(226)
+      ops.SET_SLOT_DIRECT, 302,-- 632: set_slot_direct(302)
       ops.PUSH_LOCAL_FRAME,    -- 634: push_local_frame
-      ops.GET_SLOT_DIRECT, 226,-- 635: get_slot_direct(226)
+      ops.GET_SLOT_DIRECT, 302,-- 635: get_slot_direct(302)
       ops.JMP_UNLESS, 659, 659,-- 637: jmp_unless(659,659)
       ops.PUSH_LOCAL_FRAME,    -- 640: push_local_frame
       ops.DUP,                 -- 641: dup
       ops.GET_SLOT_DIRECT, 63, -- 642: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 644: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 645: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 645: get_slot_direct(227)
       ops.BI_ADD,              -- 647: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 648: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 650: push_frame
@@ -4174,9 +5720,9 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 671: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 672: get_slot_direct(53)
       ops.INVOKE, 1,           -- 674: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 676: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 676: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 678: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 679: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 679: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 681: push_literal(140)
       ops.SWAP,                -- 683: swap
       ops.BI_GT,               -- 684: bi_gt
@@ -4185,25 +5731,25 @@ startup.functions = {
       ops.JMP_UNLESS, 697, 697,-- 687: jmp_unless(697,697)
       ops.POP,                 -- 690: pop
       ops.PUSH_LOCAL_FRAME,    -- 691: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 692: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 694: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 692: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 694: push_literal(301)
       ops.BI_GT,               -- 696: bi_gt
       ops.PHI,                 -- 697: phi
       ops.JMP_UNLESS, 762, 762,-- 698: jmp_unless(762,762)
       ops.PUSH_LOCAL_FRAME,    -- 701: push_local_frame
-      ops.GET_SLOT_DIRECT, 226,-- 702: get_slot_direct(226)
+      ops.GET_SLOT_DIRECT, 302,-- 702: get_slot_direct(302)
       ops.DUP,                 -- 704: dup
       ops.JMP_UNLESS, 754, 754,-- 705: jmp_unless(754,754)
       ops.POP,                 -- 708: pop
       ops.PUSH_LOCAL_FRAME,    -- 709: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 710: get_slot_direct(204)
-      ops.PUSH_LITERAL, 219,   -- 712: push_literal(219)
+      ops.GET_SLOT_DIRECT, 227,-- 710: get_slot_direct(227)
+      ops.PUSH_LITERAL, 296,   -- 712: push_literal(296)
       ops.BI_GTE,              -- 714: bi_gte
       ops.DUP,                 -- 715: dup
       ops.JMP_UNLESS, 727, 727,-- 716: jmp_unless(727,727)
       ops.POP,                 -- 719: pop
       ops.PUSH_LOCAL_FRAME,    -- 720: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 721: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 721: get_slot_direct(227)
       ops.PUSH_LITERAL, 109,   -- 723: push_literal(109)
       ops.SWAP,                -- 725: swap
       ops.BI_GTE,              -- 726: bi_gte
@@ -4213,15 +5759,15 @@ startup.functions = {
       ops.JMP_UNLESS, 753, 753,-- 730: jmp_unless(753,753)
       ops.POP,                 -- 733: pop
       ops.PUSH_LOCAL_FRAME,    -- 734: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 735: get_slot_direct(204)
-      ops.PUSH_LITERAL, 221,   -- 737: push_literal(221)
+      ops.GET_SLOT_DIRECT, 227,-- 735: get_slot_direct(227)
+      ops.PUSH_LITERAL, 298,   -- 737: push_literal(298)
       ops.BI_GTE,              -- 739: bi_gte
       ops.DUP,                 -- 740: dup
       ops.JMP_UNLESS, 752, 752,-- 741: jmp_unless(752,752)
       ops.POP,                 -- 744: pop
       ops.PUSH_LOCAL_FRAME,    -- 745: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 746: get_slot_direct(204)
-      ops.PUSH_LITERAL, 227,   -- 748: push_literal(227)
+      ops.GET_SLOT_DIRECT, 227,-- 746: get_slot_direct(227)
+      ops.PUSH_LITERAL, 303,   -- 748: push_literal(303)
       ops.SWAP,                -- 750: swap
       ops.BI_GTE,              -- 751: bi_gte
       ops.PHI,                 -- 752: phi
@@ -4242,7 +5788,7 @@ startup.functions = {
       ops.DUP,                 -- 773: dup
       ops.GET_SLOT_DIRECT, 63, -- 774: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 776: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 777: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 777: get_slot_direct(227)
       ops.BI_ADD,              -- 779: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 780: set_slot_direct(63)
       ops.PHI,                 -- 782: phi
@@ -4252,14 +5798,14 @@ startup.functions = {
       ops.PHI,                 -- 789: phi
       ops.PHI,                 -- 790: phi
       ops.PUSH_LOCAL_FRAME,    -- 791: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 792: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 792: get_slot_direct(227)
       ops.PUSH_LITERAL, 149,   -- 794: push_literal(149)
       ops.BI_EQ,               -- 796: bi_eq
       ops.DUP,                 -- 797: dup
       ops.JMP_UNLESS, 806, 806,-- 798: jmp_unless(806,806)
       ops.POP,                 -- 801: pop
       ops.PUSH_LOCAL_FRAME,    -- 802: push_local_frame
-      ops.GET_SLOT_DIRECT, 226,-- 803: get_slot_direct(226)
+      ops.GET_SLOT_DIRECT, 302,-- 803: get_slot_direct(302)
       ops.UN_NOT,              -- 805: un_not
       ops.PHI,                 -- 806: phi
       ops.JMP_UNLESS, 900, 900,-- 807: jmp_unless(900,900)
@@ -4273,7 +5819,7 @@ startup.functions = {
       ops.DUP,                 -- 820: dup
       ops.GET_SLOT_DIRECT, 63, -- 821: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 823: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 824: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 824: get_slot_direct(227)
       ops.BI_ADD,              -- 826: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 827: set_slot_direct(63)
       ops.JMP_INTO_LOOP, 892, 899,-- 829: jmp_into_loop(892,899)
@@ -4286,9 +5832,9 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 840: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 841: get_slot_direct(53)
       ops.INVOKE, 1,           -- 843: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 845: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 845: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 847: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 848: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 848: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 850: push_literal(140)
       ops.SWAP,                -- 852: swap
       ops.BI_GT,               -- 853: bi_gt
@@ -4297,8 +5843,8 @@ startup.functions = {
       ops.JMP_UNLESS, 866, 866,-- 856: jmp_unless(866,866)
       ops.POP,                 -- 859: pop
       ops.PUSH_LOCAL_FRAME,    -- 860: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 861: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 863: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 861: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 863: push_literal(301)
       ops.BI_GT,               -- 865: bi_gt
       ops.PHI,                 -- 866: phi
       ops.JMP_UNLESS, 872, 872,-- 867: jmp_unless(872,872)
@@ -4314,7 +5860,7 @@ startup.functions = {
       ops.DUP,                 -- 883: dup
       ops.GET_SLOT_DIRECT, 63, -- 884: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 886: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 887: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 887: get_slot_direct(227)
       ops.BI_ADD,              -- 889: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 890: set_slot_direct(63)
       ops.PHI,                 -- 892: phi
@@ -4324,7 +5870,7 @@ startup.functions = {
       ops.PHI,                 -- 899: phi
       ops.PHI,                 -- 900: phi
       ops.PUSH_LOCAL_FRAME,    -- 901: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 902: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 902: get_slot_direct(227)
       ops.PUSH_LITERAL, 87,    -- 904: push_literal(87)
       ops.BI_EQ,               -- 906: bi_eq
       ops.DUP,                 -- 907: dup
@@ -4332,7 +5878,7 @@ startup.functions = {
       ops.JMP_UNLESS, 919, 919,-- 909: jmp_unless(919,919)
       ops.POP,                 -- 912: pop
       ops.PUSH_LOCAL_FRAME,    -- 913: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 914: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 914: get_slot_direct(227)
       ops.PUSH_LITERAL, 151,   -- 916: push_literal(151)
       ops.BI_EQ,               -- 918: bi_eq
       ops.PHI,                 -- 919: phi
@@ -4340,7 +5886,7 @@ startup.functions = {
       ops.JMP_UNLESS, 929, 929,-- 921: jmp_unless(929,929)
       ops.POP,                 -- 924: pop
       ops.PUSH_LOCAL_FRAME,    -- 925: push_local_frame
-      ops.GET_SLOT_DIRECT, 226,-- 926: get_slot_direct(226)
+      ops.GET_SLOT_DIRECT, 302,-- 926: get_slot_direct(302)
       ops.UN_NOT,              -- 928: un_not
       ops.PHI,                 -- 929: phi
       ops.JMP_UNLESS, 1143, 1143,-- 930: jmp_unless(1143,1143)
@@ -4354,7 +5900,7 @@ startup.functions = {
       ops.DUP,                 -- 943: dup
       ops.GET_SLOT_DIRECT, 63, -- 944: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 946: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 947: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 947: get_slot_direct(227)
       ops.BI_ADD,              -- 949: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 950: set_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 952: push_local_frame
@@ -4366,9 +5912,9 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 960: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 961: get_slot_direct(53)
       ops.INVOKE, 1,           -- 963: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 965: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 965: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 967: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 968: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 968: get_slot_direct(227)
       ops.PUSH_LITERAL, 141,   -- 970: push_literal(141)
       ops.BI_EQ,               -- 972: bi_eq
       ops.DUP,                 -- 973: dup
@@ -4376,8 +5922,8 @@ startup.functions = {
       ops.JMP_UNLESS, 985, 985,-- 975: jmp_unless(985,985)
       ops.POP,                 -- 978: pop
       ops.PUSH_LOCAL_FRAME,    -- 979: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 980: get_slot_direct(204)
-      ops.PUSH_LITERAL, 228,   -- 982: push_literal(228)
+      ops.GET_SLOT_DIRECT, 227,-- 980: get_slot_direct(227)
+      ops.PUSH_LITERAL, 304,   -- 982: push_literal(304)
       ops.BI_EQ,               -- 984: bi_eq
       ops.PHI,                 -- 985: phi
       ops.JMP_UNLESS, 1023, 1023,-- 986: jmp_unless(1023,1023)
@@ -4391,7 +5937,7 @@ startup.functions = {
       ops.DUP,                 -- 999: dup
       ops.GET_SLOT_DIRECT, 63, -- 1000: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1002: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1003: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1003: get_slot_direct(227)
       ops.BI_ADD,              -- 1005: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 1006: set_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1008: push_local_frame
@@ -4403,10 +5949,10 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1016: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1017: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1019: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1021: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1021: set_slot_direct(227)
       ops.PHI,                 -- 1023: phi
       ops.PUSH_LOCAL_FRAME,    -- 1024: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1025: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1025: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 1027: push_literal(140)
       ops.SWAP,                -- 1029: swap
       ops.BI_GT,               -- 1030: bi_gt
@@ -4415,24 +5961,24 @@ startup.functions = {
       ops.JMP_UNLESS, 1043, 1043,-- 1033: jmp_unless(1043,1043)
       ops.POP,                 -- 1036: pop
       ops.PUSH_LOCAL_FRAME,    -- 1037: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1038: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 1040: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 1038: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 1040: push_literal(301)
       ops.BI_GT,               -- 1042: bi_gt
       ops.PHI,                 -- 1043: phi
       ops.JMP_UNLESS, 1071, 1071,-- 1044: jmp_unless(1071,1071)
       ops.PUSH_LOCAL_FRAME,    -- 1047: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1048: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1048: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1050: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1051: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1053: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1054: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1054: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1056: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1057: get_slot_direct(26)
       ops.PUSH_LITERAL, 86,    -- 1059: push_literal(86)
       ops.PUSH_LOCAL_FRAME,    -- 1061: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1062: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1064: invoke(2)
-      ops.PUSH_LITERAL, 229,   -- 1066: push_literal(229)
+      ops.PUSH_LITERAL, 305,   -- 1066: push_literal(305)
       ops.INVOKE, 2,           -- 1068: invoke(2)
       ops.POP,                 -- 1070: pop
       ops.PHI,                 -- 1071: phi
@@ -4447,7 +5993,7 @@ startup.functions = {
       ops.DUP,                 -- 1085: dup
       ops.GET_SLOT_DIRECT, 63, -- 1086: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1088: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1089: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1089: get_slot_direct(227)
       ops.BI_ADD,              -- 1091: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 1092: set_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1094: push_local_frame
@@ -4459,17 +6005,17 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1102: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1103: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1105: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1107: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1107: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 1109: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1110: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1110: get_slot_direct(227)
       ops.PUSH_LITERAL, 140,   -- 1112: push_literal(140)
       ops.BI_GTE,              -- 1114: bi_gte
       ops.DUP,                 -- 1115: dup
       ops.JMP_UNLESS, 1127, 1127,-- 1116: jmp_unless(1127,1127)
       ops.POP,                 -- 1119: pop
       ops.PUSH_LOCAL_FRAME,    -- 1120: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1121: get_slot_direct(204)
-      ops.PUSH_LITERAL, 225,   -- 1123: push_literal(225)
+      ops.GET_SLOT_DIRECT, 227,-- 1121: get_slot_direct(227)
+      ops.PUSH_LITERAL, 301,   -- 1123: push_literal(301)
       ops.SWAP,                -- 1125: swap
       ops.BI_GTE,              -- 1126: bi_gte
       ops.PHI,                 -- 1127: phi
@@ -4484,15 +6030,15 @@ startup.functions = {
       ops.PHI,                 -- 1142: phi
       ops.PHI,                 -- 1143: phi
       ops.PUSH_LOCAL_FRAME,    -- 1144: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1145: get_slot_direct(204)
-      ops.PUSH_LITERAL, 219,   -- 1147: push_literal(219)
+      ops.GET_SLOT_DIRECT, 227,-- 1145: get_slot_direct(227)
+      ops.PUSH_LITERAL, 296,   -- 1147: push_literal(296)
       ops.BI_GTE,              -- 1149: bi_gte
       ops.DUP,                 -- 1150: dup
       ops.JMP_UNLESS, 1162, 1162,-- 1151: jmp_unless(1162,1162)
       ops.POP,                 -- 1154: pop
       ops.PUSH_LOCAL_FRAME,    -- 1155: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1156: get_slot_direct(204)
-      ops.PUSH_LITERAL, 220,   -- 1158: push_literal(220)
+      ops.GET_SLOT_DIRECT, 227,-- 1156: get_slot_direct(227)
+      ops.PUSH_LITERAL, 297,   -- 1158: push_literal(297)
       ops.SWAP,                -- 1160: swap
       ops.BI_GTE,              -- 1161: bi_gte
       ops.PHI,                 -- 1162: phi
@@ -4501,7 +6047,7 @@ startup.functions = {
       ops.DUP,                 -- 1167: dup
       ops.GET_SLOT_DIRECT, 63, -- 1168: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1170: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1171: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1171: get_slot_direct(227)
       ops.BI_ADD,              -- 1173: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 1174: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 1176: push_frame
@@ -4511,18 +6057,18 @@ startup.functions = {
       ops.BI_ADD,              -- 1182: bi_add
       ops.SET_SLOT_DIRECT, 53, -- 1183: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 1185: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1186: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1186: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1188: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1189: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1191: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1192: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1192: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1194: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1195: get_slot_direct(26)
       ops.PUSH_LITERAL, 86,    -- 1197: push_literal(86)
       ops.PUSH_LOCAL_FRAME,    -- 1199: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1200: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1202: invoke(2)
-      ops.PUSH_LITERAL, 230,   -- 1204: push_literal(230)
+      ops.PUSH_LITERAL, 306,   -- 1204: push_literal(306)
       ops.INVOKE, 2,           -- 1206: invoke(2)
       ops.POP,                 -- 1208: pop
       ops.PHI,                 -- 1209: phi
@@ -4542,23 +6088,23 @@ startup.functions = {
       ops.JMP_UNLESS, 1287, 1311,-- 1230: jmp_unless(1287,1311)
       ops.PUSH_LOCAL_FRAME,    -- 1233: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1234: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 1236: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 1236: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 1238: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 1239: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1240: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1240: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1242: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1243: get_slot_direct(26)
       ops.PUSH_LITERAL, 86,    -- 1245: push_literal(86)
       ops.PUSH_LOCAL_FRAME,    -- 1247: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 1248: get_slot_direct(23)
       ops.INVOKE, 2,           -- 1250: invoke(2)
-      ops.SET_SLOT_DIRECT, 209,-- 1252: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 1252: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 1254: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 1255: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 1255: get_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 1257: push_local_frame
-      ops.GET_SLOT_DIRECT, 226,-- 1258: get_slot_direct(226)
+      ops.GET_SLOT_DIRECT, 302,-- 1258: get_slot_direct(302)
       ops.JMP_UNLESS, 1267, 1269,-- 1260: jmp_unless(1267,1269)
-      ops.PUSH_LITERAL, 231,   -- 1263: push_literal(231)
+      ops.PUSH_LITERAL, 221,   -- 1263: push_literal(221)
       ops.JMP, 1269,           -- 1265: jmp(1269)
       ops.PUSH_LITERAL, 135,   -- 1267: push_literal(135)
       ops.PHI,                 -- 1269: phi
@@ -4569,38 +6115,38 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 1276: get_slot_direct_check(69)
       ops.SWAP,                -- 1278: swap
       ops.PUSH_LOCAL_FRAME,    -- 1279: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 1280: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 1280: get_slot_direct(289)
       ops.INVOKE, 1,           -- 1282: invoke(1)
       ops.POP,                 -- 1284: pop
       ops.JMP, 1311,           -- 1285: jmp(1311)
       ops.PUSH_LOCAL_FRAME,    -- 1287: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1288: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1288: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1290: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1291: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1293: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1294: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1294: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1296: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1297: get_slot_direct(26)
       ops.PUSH_LITERAL, 86,    -- 1299: push_literal(86)
       ops.PUSH_LOCAL_FRAME,    -- 1301: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1302: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1304: invoke(2)
-      ops.PUSH_LITERAL, 230,   -- 1306: push_literal(230)
+      ops.PUSH_LITERAL, 306,   -- 1306: push_literal(306)
       ops.INVOKE, 2,           -- 1308: invoke(2)
       ops.POP,                 -- 1310: pop
       ops.PHI,                 -- 1311: phi
       ops.JMP, 2318,           -- 1312: jmp(2318)
       ops.PUSH_LOCAL_FRAME,    -- 1314: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1315: get_slot_direct(204)
-      ops.PUSH_LITERAL, 232,   -- 1317: push_literal(232)
+      ops.GET_SLOT_DIRECT, 227,-- 1315: get_slot_direct(227)
+      ops.PUSH_LITERAL, 307,   -- 1317: push_literal(307)
       ops.BI_EQ,               -- 1319: bi_eq
       ops.DUP,                 -- 1320: dup
       ops.UN_NOT,              -- 1321: un_not
       ops.JMP_UNLESS, 1332, 1332,-- 1322: jmp_unless(1332,1332)
       ops.POP,                 -- 1325: pop
       ops.PUSH_LOCAL_FRAME,    -- 1326: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1327: get_slot_direct(204)
-      ops.PUSH_LITERAL, 233,   -- 1329: push_literal(233)
+      ops.GET_SLOT_DIRECT, 227,-- 1327: get_slot_direct(227)
+      ops.PUSH_LITERAL, 226,   -- 1329: push_literal(226)
       ops.BI_EQ,               -- 1331: bi_eq
       ops.PHI,                 -- 1332: phi
       ops.JMP_UNLESS, 1852, 2317,-- 1333: jmp_unless(1852,2317)
@@ -4609,8 +6155,8 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 63, -- 1339: set_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1341: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 1342: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1343: get_slot_direct(204)
-      ops.SET_SLOT_DIRECT, 205,-- 1345: set_slot_direct(205)
+      ops.GET_SLOT_DIRECT, 227,-- 1343: get_slot_direct(227)
+      ops.SET_SLOT_DIRECT, 285,-- 1345: set_slot_direct(285)
       ops.PUSH_FRAME,          -- 1347: push_frame
       ops.DUP,                 -- 1348: dup
       ops.GET_SLOT_DIRECT, 53, -- 1349: get_slot_direct(53)
@@ -4627,19 +6173,19 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1367: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1368: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1370: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1372: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1372: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 1374: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1375: get_slot_direct(204)
-      ops.PUSH_LITERAL, 218,   -- 1377: push_literal(218)
+      ops.GET_SLOT_DIRECT, 227,-- 1375: get_slot_direct(227)
+      ops.PUSH_LITERAL, 242,   -- 1377: push_literal(242)
       ops.SWAP,                -- 1379: swap
       ops.BI_GT,               -- 1380: bi_gt
       ops.JMP_UNLESS, 1448, 1448,-- 1381: jmp_unless(1448,1448)
       ops.PUSH_LOCAL_FRAME,    -- 1384: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1385: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1385: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1387: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1388: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1390: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1391: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1391: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1393: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1394: get_slot_direct(26)
       ops.PUSH_LITERAL, 38,    -- 1396: push_literal(38)
@@ -4647,46 +6193,46 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 63, -- 1399: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1401: invoke(2)
       ops.PUSH_LOCAL_FRAME,    -- 1403: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1404: get_slot_direct(204)
-      ops.PUSH_LITERAL, 234,   -- 1406: push_literal(234)
+      ops.GET_SLOT_DIRECT, 227,-- 1404: get_slot_direct(227)
+      ops.PUSH_LITERAL, 249,   -- 1406: push_literal(249)
       ops.BI_EQ,               -- 1408: bi_eq
       ops.DUP,                 -- 1409: dup
       ops.UN_NOT,              -- 1410: un_not
       ops.JMP_UNLESS, 1434, 1434,-- 1411: jmp_unless(1434,1434)
       ops.POP,                 -- 1414: pop
       ops.PUSH_LOCAL_FRAME,    -- 1415: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1416: get_slot_direct(204)
-      ops.PUSH_LITERAL, 235,   -- 1418: push_literal(235)
+      ops.GET_SLOT_DIRECT, 227,-- 1416: get_slot_direct(227)
+      ops.PUSH_LITERAL, 308,   -- 1418: push_literal(308)
       ops.BI_EQ,               -- 1420: bi_eq
       ops.DUP,                 -- 1421: dup
       ops.UN_NOT,              -- 1422: un_not
       ops.JMP_UNLESS, 1433, 1433,-- 1423: jmp_unless(1433,1433)
       ops.POP,                 -- 1426: pop
       ops.PUSH_LOCAL_FRAME,    -- 1427: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1428: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1428: get_slot_direct(227)
       ops.PUSH_LITERAL, 66,    -- 1430: push_literal(66)
       ops.BI_EQ,               -- 1432: bi_eq
       ops.PHI,                 -- 1433: phi
       ops.PHI,                 -- 1434: phi
       ops.JMP_UNLESS, 1442, 1444,-- 1435: jmp_unless(1442,1444)
-      ops.PUSH_LITERAL, 236,   -- 1438: push_literal(236)
+      ops.PUSH_LITERAL, 309,   -- 1438: push_literal(309)
       ops.JMP, 1444,           -- 1440: jmp(1444)
-      ops.PUSH_LITERAL, 237,   -- 1442: push_literal(237)
+      ops.PUSH_LITERAL, 310,   -- 1442: push_literal(310)
       ops.PHI,                 -- 1444: phi
       ops.INVOKE, 2,           -- 1445: invoke(2)
       ops.POP,                 -- 1447: pop
       ops.PHI,                 -- 1448: phi
       ops.PUSH_LOCAL_FRAME,    -- 1449: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1450: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1450: get_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 1452: push_local_frame
-      ops.GET_SLOT_DIRECT, 205,-- 1453: get_slot_direct(205)
+      ops.GET_SLOT_DIRECT, 285,-- 1453: get_slot_direct(285)
       ops.BI_EQ,               -- 1455: bi_eq
       ops.JMP_UNLESS, 1461, 1461,-- 1456: jmp_unless(1461,1461)
       ops.JMP, 1802,           -- 1459: jmp(1802)
       ops.PHI,                 -- 1461: phi
       ops.PUSH_LOCAL_FRAME,    -- 1462: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1463: get_slot_direct(204)
-      ops.PUSH_LITERAL, 238,   -- 1465: push_literal(238)
+      ops.GET_SLOT_DIRECT, 227,-- 1463: get_slot_direct(227)
+      ops.PUSH_LITERAL, 311,   -- 1465: push_literal(311)
       ops.BI_EQ,               -- 1467: bi_eq
       ops.JMP_UNLESS, 1775, 1775,-- 1468: jmp_unless(1775,1775)
       ops.PUSH_FRAME,          -- 1471: push_frame
@@ -4702,18 +6248,18 @@ startup.functions = {
       ops.BI_GTE,              -- 1486: bi_gte
       ops.JMP_UNLESS, 1514, 1514,-- 1487: jmp_unless(1514,1514)
       ops.PUSH_LOCAL_FRAME,    -- 1490: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1491: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1491: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1493: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1494: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1496: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1497: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1497: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1499: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1500: get_slot_direct(26)
       ops.PUSH_LITERAL, 38,    -- 1502: push_literal(38)
       ops.PUSH_LOCAL_FRAME,    -- 1504: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1505: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1507: invoke(2)
-      ops.PUSH_LITERAL, 239,   -- 1509: push_literal(239)
+      ops.PUSH_LITERAL, 312,   -- 1509: push_literal(312)
       ops.INVOKE, 2,           -- 1511: invoke(2)
       ops.POP,                 -- 1513: pop
       ops.PHI,                 -- 1514: phi
@@ -4726,55 +6272,55 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1523: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1524: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1526: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1528: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1528: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 1530: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1531: get_slot_direct(204)
-      ops.PUSH_LITERAL, 240,   -- 1533: push_literal(240)
+      ops.GET_SLOT_DIRECT, 227,-- 1531: get_slot_direct(227)
+      ops.PUSH_LITERAL, 313,   -- 1533: push_literal(313)
       ops.BI_EQ,               -- 1535: bi_eq
       ops.JMP_UNLESS, 1546, 1774,-- 1536: jmp_unless(1546,1774)
       ops.PUSH_LOCAL_FRAME,    -- 1539: push_local_frame
-      ops.PUSH_LITERAL, 241,   -- 1540: push_literal(241)
-      ops.SET_SLOT_DIRECT, 204,-- 1542: set_slot_direct(204)
+      ops.PUSH_LITERAL, 314,   -- 1540: push_literal(314)
+      ops.SET_SLOT_DIRECT, 227,-- 1542: set_slot_direct(227)
       ops.JMP, 1774,           -- 1544: jmp(1774)
       ops.PUSH_LOCAL_FRAME,    -- 1546: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1547: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1547: get_slot_direct(227)
       ops.PUSH_LITERAL, 109,   -- 1549: push_literal(109)
       ops.BI_EQ,               -- 1551: bi_eq
       ops.JMP_UNLESS, 1562, 1773,-- 1552: jmp_unless(1562,1773)
       ops.PUSH_LOCAL_FRAME,    -- 1555: push_local_frame
-      ops.PUSH_LITERAL, 242,   -- 1556: push_literal(242)
-      ops.SET_SLOT_DIRECT, 204,-- 1558: set_slot_direct(204)
+      ops.PUSH_LITERAL, 315,   -- 1556: push_literal(315)
+      ops.SET_SLOT_DIRECT, 227,-- 1558: set_slot_direct(227)
       ops.JMP, 1773,           -- 1560: jmp(1773)
       ops.PUSH_LOCAL_FRAME,    -- 1562: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1563: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1563: get_slot_direct(227)
       ops.PUSH_LITERAL, 23,    -- 1565: push_literal(23)
       ops.BI_EQ,               -- 1567: bi_eq
       ops.JMP_UNLESS, 1578, 1772,-- 1568: jmp_unless(1578,1772)
       ops.PUSH_LOCAL_FRAME,    -- 1571: push_local_frame
-      ops.PUSH_LITERAL, 234,   -- 1572: push_literal(234)
-      ops.SET_SLOT_DIRECT, 204,-- 1574: set_slot_direct(204)
+      ops.PUSH_LITERAL, 249,   -- 1572: push_literal(249)
+      ops.SET_SLOT_DIRECT, 227,-- 1574: set_slot_direct(227)
       ops.JMP, 1772,           -- 1576: jmp(1772)
       ops.PUSH_LOCAL_FRAME,    -- 1578: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1579: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1579: get_slot_direct(227)
       ops.PUSH_LITERAL, 133,   -- 1581: push_literal(133)
       ops.BI_EQ,               -- 1583: bi_eq
       ops.JMP_UNLESS, 1594, 1771,-- 1584: jmp_unless(1594,1771)
       ops.PUSH_LOCAL_FRAME,    -- 1587: push_local_frame
-      ops.PUSH_LITERAL, 235,   -- 1588: push_literal(235)
-      ops.SET_SLOT_DIRECT, 204,-- 1590: set_slot_direct(204)
+      ops.PUSH_LITERAL, 308,   -- 1588: push_literal(308)
+      ops.SET_SLOT_DIRECT, 227,-- 1590: set_slot_direct(227)
       ops.JMP, 1771,           -- 1592: jmp(1771)
       ops.PUSH_LOCAL_FRAME,    -- 1594: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1595: get_slot_direct(204)
-      ops.PUSH_LITERAL, 209,   -- 1597: push_literal(209)
+      ops.GET_SLOT_DIRECT, 227,-- 1595: get_slot_direct(227)
+      ops.PUSH_LITERAL, 289,   -- 1597: push_literal(289)
       ops.BI_EQ,               -- 1599: bi_eq
       ops.JMP_UNLESS, 1610, 1770,-- 1600: jmp_unless(1610,1770)
       ops.PUSH_LOCAL_FRAME,    -- 1603: push_local_frame
-      ops.PUSH_LITERAL, 243,   -- 1604: push_literal(243)
-      ops.SET_SLOT_DIRECT, 204,-- 1606: set_slot_direct(204)
+      ops.PUSH_LITERAL, 316,   -- 1604: push_literal(316)
+      ops.SET_SLOT_DIRECT, 227,-- 1606: set_slot_direct(227)
       ops.JMP, 1770,           -- 1608: jmp(1770)
       ops.PUSH_LOCAL_FRAME,    -- 1610: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1611: get_slot_direct(204)
-      ops.PUSH_LITERAL, 244,   -- 1613: push_literal(244)
+      ops.GET_SLOT_DIRECT, 227,-- 1611: get_slot_direct(227)
+      ops.PUSH_LITERAL, 317,   -- 1613: push_literal(317)
       ops.BI_EQ,               -- 1615: bi_eq
       ops.JMP_UNLESS, 1769, 1769,-- 1616: jmp_unless(1769,1769)
       ops.PUSH_FRAME,          -- 1619: push_frame
@@ -4784,18 +6330,18 @@ startup.functions = {
       ops.BI_GTE,              -- 1625: bi_gte
       ops.JMP_UNLESS, 1653, 1653,-- 1626: jmp_unless(1653,1653)
       ops.PUSH_LOCAL_FRAME,    -- 1629: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1630: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1630: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1632: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1633: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1635: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1636: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1636: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1638: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1639: get_slot_direct(26)
       ops.PUSH_LITERAL, 38,    -- 1641: push_literal(38)
       ops.PUSH_LOCAL_FRAME,    -- 1643: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1644: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1646: invoke(2)
-      ops.PUSH_LITERAL, 239,   -- 1648: push_literal(239)
+      ops.PUSH_LITERAL, 312,   -- 1648: push_literal(312)
       ops.INVOKE, 2,           -- 1650: invoke(2)
       ops.POP,                 -- 1652: pop
       ops.PHI,                 -- 1653: phi
@@ -4820,15 +6366,15 @@ startup.functions = {
       ops.PUSH_LITERAL, 162,   -- 1680: push_literal(162)
       ops.BI_ADD,              -- 1682: bi_add
       ops.INVOKE, 2,           -- 1683: invoke(2)
-      ops.PUSH_LITERAL, 231,   -- 1685: push_literal(231)
+      ops.PUSH_LITERAL, 221,   -- 1685: push_literal(221)
       ops.INVOKE, 2,           -- 1687: invoke(2)
-      ops.SET_SLOT_DIRECT, 204,-- 1689: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1689: set_slot_direct(227)
       ops.PUSH_FRAME,          -- 1691: push_frame
       ops.GET_SLOT_DIRECT, 124,-- 1692: get_slot_direct(124)
       ops.PUSH_LOCAL_FRAME,    -- 1694: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1695: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1697: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1698: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1698: get_slot_direct(227)
       ops.INVOKE, 1,           -- 1700: invoke(1)
       ops.UN_NOT,              -- 1702: un_not
       ops.DUP,                 -- 1703: dup
@@ -4836,25 +6382,25 @@ startup.functions = {
       ops.JMP_UNLESS, 1716, 1716,-- 1705: jmp_unless(1716,1716)
       ops.POP,                 -- 1708: pop
       ops.PUSH_LOCAL_FRAME,    -- 1709: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1710: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1710: get_slot_direct(227)
       ops.PUSH_LITERAL, 18,    -- 1712: push_literal(18)
       ops.SWAP,                -- 1714: swap
       ops.BI_GT,               -- 1715: bi_gt
       ops.PHI,                 -- 1716: phi
       ops.JMP_UNLESS, 1744, 1744,-- 1717: jmp_unless(1744,1744)
       ops.PUSH_LOCAL_FRAME,    -- 1720: push_local_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1721: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1721: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 1723: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1724: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 1726: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1727: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1727: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1729: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1730: get_slot_direct(26)
       ops.PUSH_LITERAL, 38,    -- 1732: push_literal(38)
       ops.PUSH_LOCAL_FRAME,    -- 1734: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 1735: get_slot_direct(63)
       ops.INVOKE, 2,           -- 1737: invoke(2)
-      ops.PUSH_LITERAL, 239,   -- 1739: push_literal(239)
+      ops.PUSH_LITERAL, 312,   -- 1739: push_literal(312)
       ops.INVOKE, 2,           -- 1741: invoke(2)
       ops.POP,                 -- 1743: pop
       ops.PHI,                 -- 1744: phi
@@ -4865,9 +6411,9 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 145,-- 1750: get_slot_direct_check(145)
       ops.SWAP,                -- 1752: swap
       ops.PUSH_LOCAL_FRAME,    -- 1753: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1754: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1754: get_slot_direct(227)
       ops.INVOKE, 1,           -- 1756: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1758: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1758: set_slot_direct(227)
       ops.PUSH_FRAME,          -- 1760: push_frame
       ops.DUP,                 -- 1761: dup
       ops.GET_SLOT_DIRECT, 53, -- 1762: get_slot_direct(53)
@@ -4885,7 +6431,7 @@ startup.functions = {
       ops.DUP,                 -- 1777: dup
       ops.GET_SLOT_DIRECT, 63, -- 1778: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 1780: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1781: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1781: get_slot_direct(227)
       ops.BI_ADD,              -- 1783: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 1784: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 1786: push_frame
@@ -4911,7 +6457,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 1816: get_slot_direct_check(69)
       ops.SWAP,                -- 1818: swap
       ops.PUSH_LOCAL_FRAME,    -- 1819: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 1820: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 1820: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 1822: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1823: get_slot_direct(26)
       ops.PUSH_LITERAL, 38,    -- 1825: push_literal(38)
@@ -4929,11 +6475,11 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1843: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1844: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1846: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1848: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1848: set_slot_direct(227)
       ops.JMP, 2317,           -- 1850: jmp(2317)
       ops.PUSH_LOCAL_FRAME,    -- 1852: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1853: get_slot_direct(204)
-      ops.PUSH_LITERAL, 245,   -- 1855: push_literal(245)
+      ops.GET_SLOT_DIRECT, 227,-- 1853: get_slot_direct(227)
+      ops.PUSH_LITERAL, 318,   -- 1855: push_literal(318)
       ops.BI_EQ,               -- 1857: bi_eq
       ops.DUP,                 -- 1858: dup
       ops.JMP_UNLESS, 1881, 1881,-- 1859: jmp_unless(1881,1881)
@@ -4948,7 +6494,7 @@ startup.functions = {
       ops.PUSH_LITERAL, 31,    -- 1873: push_literal(31)
       ops.BI_ADD,              -- 1875: bi_add
       ops.INVOKE, 1,           -- 1876: invoke(1)
-      ops.PUSH_LITERAL, 245,   -- 1878: push_literal(245)
+      ops.PUSH_LITERAL, 318,   -- 1878: push_literal(318)
       ops.BI_EQ,               -- 1880: bi_eq
       ops.PHI,                 -- 1881: phi
       ops.JMP_UNLESS, 1969, 2316,-- 1882: jmp_unless(1969,2316)
@@ -4968,25 +6514,25 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 1905: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 1906: get_slot_direct(53)
       ops.INVOKE, 1,           -- 1908: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 1910: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 1910: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 1912: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1913: get_slot_direct(204)
-      ops.PUSH_LITERAL, 234,   -- 1915: push_literal(234)
+      ops.GET_SLOT_DIRECT, 227,-- 1913: get_slot_direct(227)
+      ops.PUSH_LITERAL, 249,   -- 1915: push_literal(249)
       ops.BI_EQ,               -- 1917: bi_eq
       ops.DUP,                 -- 1918: dup
       ops.UN_NOT,              -- 1919: un_not
       ops.JMP_UNLESS, 1943, 1943,-- 1920: jmp_unless(1943,1943)
       ops.POP,                 -- 1923: pop
       ops.PUSH_LOCAL_FRAME,    -- 1924: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1925: get_slot_direct(204)
-      ops.PUSH_LITERAL, 235,   -- 1927: push_literal(235)
+      ops.GET_SLOT_DIRECT, 227,-- 1925: get_slot_direct(227)
+      ops.PUSH_LITERAL, 308,   -- 1927: push_literal(308)
       ops.BI_EQ,               -- 1929: bi_eq
       ops.DUP,                 -- 1930: dup
       ops.UN_NOT,              -- 1931: un_not
       ops.JMP_UNLESS, 1942, 1942,-- 1932: jmp_unless(1942,1942)
       ops.POP,                 -- 1935: pop
       ops.PUSH_LOCAL_FRAME,    -- 1936: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1937: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 1937: get_slot_direct(227)
       ops.PUSH_LITERAL, 66,    -- 1939: push_literal(66)
       ops.BI_EQ,               -- 1941: bi_eq
       ops.PHI,                 -- 1942: phi
@@ -5007,8 +6553,8 @@ startup.functions = {
       ops.PHI,                 -- 1966: phi
       ops.JMP, 2316,           -- 1967: jmp(2316)
       ops.PUSH_LOCAL_FRAME,    -- 1969: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 1970: get_slot_direct(204)
-      ops.PUSH_LITERAL, 245,   -- 1972: push_literal(245)
+      ops.GET_SLOT_DIRECT, 227,-- 1970: get_slot_direct(227)
+      ops.PUSH_LITERAL, 318,   -- 1972: push_literal(318)
       ops.BI_EQ,               -- 1974: bi_eq
       ops.DUP,                 -- 1975: dup
       ops.JMP_UNLESS, 1998, 1998,-- 1976: jmp_unless(1998,1998)
@@ -5023,7 +6569,7 @@ startup.functions = {
       ops.PUSH_LITERAL, 31,    -- 1990: push_literal(31)
       ops.BI_ADD,              -- 1992: bi_add
       ops.INVOKE, 1,           -- 1993: invoke(1)
-      ops.PUSH_LITERAL, 246,   -- 1995: push_literal(246)
+      ops.PUSH_LITERAL, 319,   -- 1995: push_literal(319)
       ops.BI_EQ,               -- 1997: bi_eq
       ops.PHI,                 -- 1998: phi
       ops.JMP_UNLESS, 2121, 2315,-- 1999: jmp_unless(2121,2315)
@@ -5043,9 +6589,9 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 2022: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2023: get_slot_direct(53)
       ops.INVOKE, 1,           -- 2025: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 2027: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 2027: set_slot_direct(227)
       ops.PUSH_LOCAL_FRAME,    -- 2029: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2030: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2030: get_slot_direct(227)
       ops.PUSH_LITERAL, 66,    -- 2032: push_literal(66)
       ops.BI_EQ,               -- 2034: bi_eq
       ops.DUP,                 -- 2035: dup
@@ -5053,8 +6599,8 @@ startup.functions = {
       ops.JMP_UNLESS, 2071, 2071,-- 2037: jmp_unless(2071,2071)
       ops.POP,                 -- 2040: pop
       ops.PUSH_LOCAL_FRAME,    -- 2041: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2042: get_slot_direct(204)
-      ops.PUSH_LITERAL, 245,   -- 2044: push_literal(245)
+      ops.GET_SLOT_DIRECT, 227,-- 2042: get_slot_direct(227)
+      ops.PUSH_LITERAL, 318,   -- 2044: push_literal(318)
       ops.BI_EQ,               -- 2046: bi_eq
       ops.DUP,                 -- 2047: dup
       ops.JMP_UNLESS, 2070, 2070,-- 2048: jmp_unless(2070,2070)
@@ -5069,7 +6615,7 @@ startup.functions = {
       ops.PUSH_LITERAL, 31,    -- 2062: push_literal(31)
       ops.BI_SUB,              -- 2064: bi_sub
       ops.INVOKE, 1,           -- 2065: invoke(1)
-      ops.PUSH_LITERAL, 246,   -- 2067: push_literal(246)
+      ops.PUSH_LITERAL, 319,   -- 2067: push_literal(319)
       ops.BI_EQ,               -- 2069: bi_eq
       ops.PHI,                 -- 2070: phi
       ops.PHI,                 -- 2071: phi
@@ -5089,7 +6635,7 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 2092: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2093: get_slot_direct(53)
       ops.INVOKE, 1,           -- 2095: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 2097: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 2097: set_slot_direct(227)
       ops.JMP, 2118,           -- 2099: jmp(2118)
       ops.PHI,                 -- 2101: phi
       ops.PUSH_FRAME,          -- 2102: push_frame
@@ -5105,19 +6651,19 @@ startup.functions = {
       ops.PHI,                 -- 2118: phi
       ops.JMP, 2315,           -- 2119: jmp(2315)
       ops.PUSH_LOCAL_FRAME,    -- 2121: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 2122: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 2122: get_slot_direct(282)
       ops.DUP,                 -- 2124: dup
       ops.GET_SLOT_DIRECT_CHECK, 57,-- 2125: get_slot_direct_check(57)
       ops.SWAP,                -- 2127: swap
       ops.PUSH_LOCAL_FRAME,    -- 2128: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2129: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2129: get_slot_direct(227)
       ops.INVOKE, 1,           -- 2131: invoke(1)
       ops.PUSH_LITERAL, 18,    -- 2133: push_literal(18)
       ops.BI_GTE,              -- 2135: bi_gte
       ops.JMP_UNLESS, 2267, 2314,-- 2136: jmp_unless(2267,2314)
       ops.PUSH_LOCAL_FRAME,    -- 2139: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 2140: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2141: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2141: get_slot_direct(227)
       ops.SET_SLOT_DIRECT, 63, -- 2143: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 2145: push_frame
       ops.DUP,                 -- 2146: dup
@@ -5134,15 +6680,15 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 2162: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2163: get_slot_direct(53)
       ops.INVOKE, 1,           -- 2165: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 2167: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 2167: set_slot_direct(227)
       ops.JMP_INTO_LOOP, 2228, 2241,-- 2169: jmp_into_loop(2228,2241)
       ops.PUSH_LOCAL_FRAME,    -- 2172: push_local_frame
-      ops.GET_SLOT_DIRECT, 202,-- 2173: get_slot_direct(202)
+      ops.GET_SLOT_DIRECT, 283,-- 2173: get_slot_direct(283)
       ops.DUP,                 -- 2175: dup
       ops.GET_SLOT_DIRECT_CHECK, 57,-- 2176: get_slot_direct_check(57)
       ops.SWAP,                -- 2178: swap
       ops.PUSH_LOCAL_FRAME,    -- 2179: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2180: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2180: get_slot_direct(227)
       ops.INVOKE, 1,           -- 2182: invoke(1)
       ops.PUSH_LITERAL, 18,    -- 2184: push_literal(18)
       ops.SWAP,                -- 2186: swap
@@ -5154,7 +6700,7 @@ startup.functions = {
       ops.DUP,                 -- 2195: dup
       ops.GET_SLOT_DIRECT, 63, -- 2196: get_slot_direct(63)
       ops.PUSH_LOCAL_FRAME,    -- 2198: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2199: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2199: get_slot_direct(227)
       ops.BI_ADD,              -- 2201: bi_add
       ops.SET_SLOT_DIRECT, 63, -- 2202: set_slot_direct(63)
       ops.PUSH_FRAME,          -- 2204: push_frame
@@ -5172,7 +6718,7 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 2221: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2222: get_slot_direct(53)
       ops.INVOKE, 1,           -- 2224: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 2226: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 2226: set_slot_direct(227)
       ops.PHI,                 -- 2228: phi
       ops.PUSH_FRAME,          -- 2229: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2230: get_slot_direct(53)
@@ -5189,10 +6735,10 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 2246: get_slot_direct_check(69)
       ops.SWAP,                -- 2248: swap
       ops.PUSH_LOCAL_FRAME,    -- 2249: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 2250: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 2250: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 2252: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 2253: get_slot_direct(26)
-      ops.PUSH_LITERAL, 247,   -- 2255: push_literal(247)
+      ops.PUSH_LITERAL, 320,   -- 2255: push_literal(320)
       ops.PUSH_LOCAL_FRAME,    -- 2257: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 2258: get_slot_direct(63)
       ops.INVOKE, 2,           -- 2260: invoke(2)
@@ -5211,12 +6757,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 2280: get_slot_direct_check(69)
       ops.SWAP,                -- 2282: swap
       ops.PUSH_LOCAL_FRAME,    -- 2283: push_local_frame
-      ops.GET_SLOT_DIRECT, 207,-- 2284: get_slot_direct(207)
+      ops.GET_SLOT_DIRECT, 287,-- 2284: get_slot_direct(287)
       ops.PUSH_LOCAL_FRAME,    -- 2286: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 2287: get_slot_direct(26)
-      ops.PUSH_LITERAL, 247,   -- 2289: push_literal(247)
+      ops.PUSH_LITERAL, 320,   -- 2289: push_literal(320)
       ops.PUSH_LOCAL_FRAME,    -- 2291: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2292: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2292: get_slot_direct(227)
       ops.INVOKE, 2,           -- 2294: invoke(2)
       ops.INVOKE, 1,           -- 2296: invoke(1)
       ops.POP,                 -- 2298: pop
@@ -5229,7 +6775,7 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 2307: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 2308: get_slot_direct(53)
       ops.INVOKE, 1,           -- 2310: invoke(1)
-      ops.SET_SLOT_DIRECT, 204,-- 2312: set_slot_direct(204)
+      ops.SET_SLOT_DIRECT, 227,-- 2312: set_slot_direct(227)
       ops.PHI,                 -- 2314: phi
       ops.PHI,                 -- 2315: phi
       ops.PHI,                 -- 2316: phi
@@ -5239,7 +6785,7 @@ startup.functions = {
       ops.PHI,                 -- 2320: phi
       ops.PHI,                 -- 2321: phi
       ops.PUSH_LOCAL_FRAME,    -- 2322: push_local_frame
-      ops.GET_SLOT_DIRECT, 204,-- 2323: get_slot_direct(204)
+      ops.GET_SLOT_DIRECT, 227,-- 2323: get_slot_direct(227)
       ops.UN_NOT,              -- 2325: un_not
       ops.JMP_UNLESS, 172, 2329,-- 2326: jmp_unless(172,2329)
       ops.PHI,                 -- 2329: phi
@@ -5250,7 +6796,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "error"
     name = jsval.newString("error"),
-    id = 41,
+    id = 50,
     nargs = 3,
     max_stack = 4,
     bytecode = {
@@ -5265,16 +6811,16 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 208,-- 15: set_slot_direct(208)
+      ops.SET_SLOT_DIRECT, 288,-- 15: set_slot_direct(288)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 209,-- 22: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 22: set_slot_direct(289)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 27: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 27: get_slot_direct(289)
       ops.DUP,                 -- 29: dup
       ops.UN_NOT,              -- 30: un_not
       ops.JMP_UNLESS, 38, 38,  -- 31: jmp_unless(38,38)
@@ -5282,54 +6828,54 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
       ops.GET_SLOT_DIRECT, 30, -- 36: get_slot_direct(30)
       ops.PHI,                 -- 38: phi
-      ops.SET_SLOT_DIRECT, 209,-- 39: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 39: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 42: get_slot_direct(209)
-      ops.PUSH_LITERAL, 210,   -- 44: push_literal(210)
+      ops.GET_SLOT_DIRECT, 289,-- 42: get_slot_direct(289)
+      ops.PUSH_LITERAL, 290,   -- 44: push_literal(290)
       ops.SET_SLOT_DIRECT, 19, -- 46: set_slot_direct(19)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 49: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 49: get_slot_direct(289)
       ops.GET_SLOT_DIRECT, 52, -- 51: get_slot_direct(52)
       ops.DUP,                 -- 53: dup
       ops.UN_NOT,              -- 54: un_not
       ops.JMP_UNLESS, 64, 64,  -- 55: jmp_unless(64,64)
       ops.POP,                 -- 58: pop
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 60: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 211,-- 62: get_slot_direct(211)
+      ops.GET_SLOT_DIRECT, 289,-- 60: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 291,-- 62: get_slot_direct(291)
       ops.PHI,                 -- 64: phi
       ops.JMP_UNLESS, 95, 95,  -- 65: jmp_unless(95,95)
       ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
       ops.DUP,                 -- 69: dup
-      ops.GET_SLOT_DIRECT, 208,-- 70: get_slot_direct(208)
-      ops.PUSH_LITERAL, 212,   -- 72: push_literal(212)
+      ops.GET_SLOT_DIRECT, 288,-- 70: get_slot_direct(288)
+      ops.PUSH_LITERAL, 292,   -- 72: push_literal(292)
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 75: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 75: get_slot_direct(289)
       ops.GET_SLOT_DIRECT, 52, -- 77: get_slot_direct(52)
       ops.BI_ADD,              -- 79: bi_add
       ops.PUSH_LITERAL, 141,   -- 80: push_literal(141)
       ops.BI_ADD,              -- 82: bi_add
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 84: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 211,-- 86: get_slot_direct(211)
+      ops.GET_SLOT_DIRECT, 289,-- 84: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 291,-- 86: get_slot_direct(291)
       ops.BI_ADD,              -- 88: bi_add
-      ops.PUSH_LITERAL, 213,   -- 89: push_literal(213)
+      ops.PUSH_LITERAL, 255,   -- 89: push_literal(255)
       ops.BI_ADD,              -- 91: bi_add
       ops.BI_ADD,              -- 92: bi_add
-      ops.SET_SLOT_DIRECT, 208,-- 93: set_slot_direct(208)
+      ops.SET_SLOT_DIRECT, 288,-- 93: set_slot_direct(288)
       ops.PHI,                 -- 95: phi
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 97: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 97: get_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
-      ops.GET_SLOT_DIRECT, 208,-- 100: get_slot_direct(208)
-      ops.SET_SLOT_DIRECT, 208,-- 102: set_slot_direct(208)
+      ops.GET_SLOT_DIRECT, 288,-- 100: get_slot_direct(288)
+      ops.SET_SLOT_DIRECT, 288,-- 102: set_slot_direct(288)
       ops.PUSH_FRAME,          -- 104: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 105: get_slot_direct(14)
       ops.DUP,                 -- 107: dup
       ops.GET_SLOT_DIRECT_CHECK, 6,-- 108: get_slot_direct_check(6)
       ops.SWAP,                -- 110: swap
       ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 112: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 112: get_slot_direct(289)
       ops.INVOKE, 1,           -- 114: invoke(1)
       ops.POP,                 -- 116: pop
       ops.PUSH_LITERAL, 0,     -- 117: push_literal(0)
@@ -5338,7 +6884,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "make"
     name = jsval.newString("make"),
-    id = 42,
+    id = 51,
     nargs = 2,
     max_stack = 3,
     bytecode = {
@@ -5348,22 +6894,22 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 214,-- 8: set_slot_direct(214)
+      ops.SET_SLOT_DIRECT, 293,-- 8: set_slot_direct(293)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 215,-- 15: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 15: set_slot_direct(224)
       ops.POP,                 -- 17: pop
       ops.NEW_OBJECT,          -- 18: new_object
       ops.DUP,                 -- 19: dup
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 214,-- 21: get_slot_direct(214)
-      ops.SET_SLOT_DIRECT, 214,-- 23: set_slot_direct(214)
+      ops.GET_SLOT_DIRECT, 293,-- 21: get_slot_direct(293)
+      ops.SET_SLOT_DIRECT, 293,-- 23: set_slot_direct(293)
       ops.DUP,                 -- 25: dup
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 215,-- 27: get_slot_direct(215)
-      ops.SET_SLOT_DIRECT, 215,-- 29: set_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 27: get_slot_direct(224)
+      ops.SET_SLOT_DIRECT, 224,-- 29: set_slot_direct(224)
       ops.DUP,                 -- 31: dup
       ops.PUSH_FRAME,          -- 32: push_frame
       ops.GET_SLOT_DIRECT, 52, -- 33: get_slot_direct(52)
@@ -5371,13 +6917,13 @@ startup.functions = {
       ops.DUP,                 -- 37: dup
       ops.PUSH_FRAME,          -- 38: push_frame
       ops.GET_SLOT_DIRECT, 53, -- 39: get_slot_direct(53)
-      ops.SET_SLOT_DIRECT, 211,-- 41: set_slot_direct(211)
+      ops.SET_SLOT_DIRECT, 291,-- 41: set_slot_direct(291)
       ops.RETURN               -- 43: return
     }
   },
   ifunc.Function:new{ -- "make_parse"
     name = jsval.newString("make_parse"),
-    id = 43,
+    id = 52,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -5387,243 +6933,243 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 254,-- 8: set_slot_direct(254)
+      ops.SET_SLOT_DIRECT, 327,-- 8: set_slot_direct(327)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 198,-- 15: set_slot_direct(198)
+      ops.SET_SLOT_DIRECT, 279,-- 15: set_slot_direct(279)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 203,-- 21: set_slot_direct(203)
+      ops.SET_SLOT_DIRECT, 284,-- 21: set_slot_direct(284)
       ops.PUSH_FRAME,          -- 23: push_frame
       ops.PUSH_LITERAL, 0,     -- 24: push_literal(0)
-      ops.SET_SLOT_DIRECT, 255,-- 26: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 26: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 28: push_frame
       ops.PUSH_LITERAL, 0,     -- 29: push_literal(0)
-      ops.SET_SLOT_DIRECT, 256,-- 31: set_slot_direct(256)
+      ops.SET_SLOT_DIRECT, 329,-- 31: set_slot_direct(329)
       ops.PUSH_FRAME,          -- 33: push_frame
       ops.PUSH_LITERAL, 0,     -- 34: push_literal(0)
-      ops.SET_SLOT_DIRECT, 257,-- 36: set_slot_direct(257)
+      ops.SET_SLOT_DIRECT, 330,-- 36: set_slot_direct(330)
       ops.PUSH_FRAME,          -- 38: push_frame
       ops.PUSH_LITERAL, 0,     -- 39: push_literal(0)
-      ops.SET_SLOT_DIRECT, 258,-- 41: set_slot_direct(258)
+      ops.SET_SLOT_DIRECT, 331,-- 41: set_slot_direct(331)
       ops.PUSH_FRAME,          -- 43: push_frame
       ops.PUSH_LITERAL, 0,     -- 44: push_literal(0)
-      ops.SET_SLOT_DIRECT, 259,-- 46: set_slot_direct(259)
+      ops.SET_SLOT_DIRECT, 332,-- 46: set_slot_direct(332)
       ops.PUSH_FRAME,          -- 48: push_frame
       ops.PUSH_LITERAL, 0,     -- 49: push_literal(0)
-      ops.SET_SLOT_DIRECT, 260,-- 51: set_slot_direct(260)
+      ops.SET_SLOT_DIRECT, 333,-- 51: set_slot_direct(333)
       ops.PUSH_FRAME,          -- 53: push_frame
       ops.PUSH_LITERAL, 0,     -- 54: push_literal(0)
-      ops.SET_SLOT_DIRECT, 206,-- 56: set_slot_direct(206)
+      ops.SET_SLOT_DIRECT, 286,-- 56: set_slot_direct(286)
       ops.PUSH_FRAME,          -- 58: push_frame
       ops.PUSH_LITERAL, 0,     -- 59: push_literal(0)
       ops.SET_SLOT_DIRECT, 89, -- 61: set_slot_direct(89)
       ops.PUSH_FRAME,          -- 63: push_frame
       ops.PUSH_LITERAL, 0,     -- 64: push_literal(0)
-      ops.SET_SLOT_DIRECT, 261,-- 66: set_slot_direct(261)
+      ops.SET_SLOT_DIRECT, 334,-- 66: set_slot_direct(334)
       ops.PUSH_FRAME,          -- 68: push_frame
       ops.PUSH_LITERAL, 0,     -- 69: push_literal(0)
-      ops.SET_SLOT_DIRECT, 262,-- 71: set_slot_direct(262)
+      ops.SET_SLOT_DIRECT, 335,-- 71: set_slot_direct(335)
       ops.PUSH_FRAME,          -- 73: push_frame
       ops.PUSH_LITERAL, 0,     -- 74: push_literal(0)
-      ops.SET_SLOT_DIRECT, 263,-- 76: set_slot_direct(263)
+      ops.SET_SLOT_DIRECT, 336,-- 76: set_slot_direct(336)
       ops.PUSH_FRAME,          -- 78: push_frame
       ops.PUSH_LITERAL, 0,     -- 79: push_literal(0)
-      ops.SET_SLOT_DIRECT, 264,-- 81: set_slot_direct(264)
+      ops.SET_SLOT_DIRECT, 337,-- 81: set_slot_direct(337)
       ops.PUSH_FRAME,          -- 83: push_frame
       ops.PUSH_LITERAL, 0,     -- 84: push_literal(0)
-      ops.SET_SLOT_DIRECT, 265,-- 86: set_slot_direct(265)
+      ops.SET_SLOT_DIRECT, 338,-- 86: set_slot_direct(338)
       ops.PUSH_FRAME,          -- 88: push_frame
       ops.PUSH_LITERAL, 0,     -- 89: push_literal(0)
-      ops.SET_SLOT_DIRECT, 266,-- 91: set_slot_direct(266)
+      ops.SET_SLOT_DIRECT, 339,-- 91: set_slot_direct(339)
       ops.PUSH_FRAME,          -- 93: push_frame
       ops.PUSH_LITERAL, 0,     -- 94: push_literal(0)
-      ops.SET_SLOT_DIRECT, 267,-- 96: set_slot_direct(267)
+      ops.SET_SLOT_DIRECT, 340,-- 96: set_slot_direct(340)
       ops.PUSH_FRAME,          -- 98: push_frame
       ops.PUSH_LITERAL, 0,     -- 99: push_literal(0)
-      ops.SET_SLOT_DIRECT, 268,-- 101: set_slot_direct(268)
+      ops.SET_SLOT_DIRECT, 341,-- 101: set_slot_direct(341)
       ops.PUSH_FRAME,          -- 103: push_frame
       ops.PUSH_LITERAL, 0,     -- 104: push_literal(0)
       ops.SET_SLOT_DIRECT, 91, -- 106: set_slot_direct(91)
       ops.PUSH_FRAME,          -- 108: push_frame
       ops.PUSH_LITERAL, 0,     -- 109: push_literal(0)
-      ops.SET_SLOT_DIRECT, 269,-- 111: set_slot_direct(269)
+      ops.SET_SLOT_DIRECT, 342,-- 111: set_slot_direct(342)
       ops.PUSH_FRAME,          -- 113: push_frame
       ops.PUSH_LITERAL, 0,     -- 114: push_literal(0)
-      ops.SET_SLOT_DIRECT, 270,-- 116: set_slot_direct(270)
+      ops.SET_SLOT_DIRECT, 343,-- 116: set_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 119: push_literal(0)
-      ops.SET_SLOT_DIRECT, 271,-- 121: set_slot_direct(271)
+      ops.SET_SLOT_DIRECT, 344,-- 121: set_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 123: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 124: push_literal(0)
-      ops.SET_SLOT_DIRECT, 272,-- 126: set_slot_direct(272)
+      ops.SET_SLOT_DIRECT, 345,-- 126: set_slot_direct(345)
       ops.PUSH_FRAME,          -- 128: push_frame
       ops.PUSH_LITERAL, 0,     -- 129: push_literal(0)
-      ops.SET_SLOT_DIRECT, 273,-- 131: set_slot_direct(273)
+      ops.SET_SLOT_DIRECT, 346,-- 131: set_slot_direct(346)
       ops.PUSH_FRAME,          -- 133: push_frame
       ops.PUSH_LITERAL, 0,     -- 134: push_literal(0)
-      ops.SET_SLOT_DIRECT, 274,-- 136: set_slot_direct(274)
+      ops.SET_SLOT_DIRECT, 347,-- 136: set_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 139: push_literal(0)
-      ops.SET_SLOT_DIRECT, 201,-- 141: set_slot_direct(201)
+      ops.SET_SLOT_DIRECT, 282,-- 141: set_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 144: push_literal(0)
-      ops.SET_SLOT_DIRECT, 275,-- 146: set_slot_direct(275)
+      ops.SET_SLOT_DIRECT, 348,-- 146: set_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 149: push_literal(0)
-      ops.SET_SLOT_DIRECT, 252,-- 151: set_slot_direct(252)
+      ops.SET_SLOT_DIRECT, 325,-- 151: set_slot_direct(325)
       ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 154: push_literal(0)
-      ops.SET_SLOT_DIRECT, 276,-- 156: set_slot_direct(276)
+      ops.SET_SLOT_DIRECT, 349,-- 156: set_slot_direct(349)
       ops.PUSH_FRAME,          -- 158: push_frame
       ops.NEW_OBJECT,          -- 159: new_object
-      ops.SET_SLOT_DIRECT, 256,-- 160: set_slot_direct(256)
+      ops.SET_SLOT_DIRECT, 329,-- 160: set_slot_direct(329)
       ops.PUSH_FRAME,          -- 162: push_frame
-      ops.NEW_FUNCTION, 44,    -- 163: new_function(44)
-      ops.SET_SLOT_DIRECT, 260,-- 165: set_slot_direct(260)
+      ops.NEW_FUNCTION, 53,    -- 163: new_function(53)
+      ops.SET_SLOT_DIRECT, 333,-- 165: set_slot_direct(333)
       ops.PUSH_FRAME,          -- 167: push_frame
-      ops.NEW_FUNCTION, 45,    -- 168: new_function(45)
-      ops.SET_SLOT_DIRECT, 206,-- 170: set_slot_direct(206)
+      ops.NEW_FUNCTION, 54,    -- 168: new_function(54)
+      ops.SET_SLOT_DIRECT, 286,-- 170: set_slot_direct(286)
       ops.PUSH_FRAME,          -- 172: push_frame
-      ops.NEW_FUNCTION, 46,    -- 173: new_function(46)
+      ops.NEW_FUNCTION, 55,    -- 173: new_function(55)
       ops.SET_SLOT_DIRECT, 89, -- 175: set_slot_direct(89)
       ops.PUSH_FRAME,          -- 177: push_frame
       ops.NEW_OBJECT,          -- 178: new_object
       ops.DUP,                 -- 179: dup
-      ops.NEW_FUNCTION, 47,    -- 180: new_function(47)
-      ops.SET_SLOT_DIRECT, 197,-- 182: set_slot_direct(197)
+      ops.NEW_FUNCTION, 56,    -- 180: new_function(56)
+      ops.SET_SLOT_DIRECT, 278,-- 182: set_slot_direct(278)
       ops.DUP,                 -- 184: dup
-      ops.NEW_FUNCTION, 48,    -- 185: new_function(48)
-      ops.SET_SLOT_DIRECT, 289,-- 187: set_slot_direct(289)
+      ops.NEW_FUNCTION, 57,    -- 185: new_function(57)
+      ops.SET_SLOT_DIRECT, 362,-- 187: set_slot_direct(362)
       ops.DUP,                 -- 189: dup
-      ops.NEW_FUNCTION, 49,    -- 190: new_function(49)
+      ops.NEW_FUNCTION, 58,    -- 190: new_function(58)
       ops.SET_SLOT_DIRECT, 71, -- 192: set_slot_direct(71)
       ops.DUP,                 -- 194: dup
-      ops.NEW_FUNCTION, 50,    -- 195: new_function(50)
-      ops.SET_SLOT_DIRECT, 291,-- 197: set_slot_direct(291)
-      ops.SET_SLOT_DIRECT, 261,-- 199: set_slot_direct(261)
+      ops.NEW_FUNCTION, 59,    -- 195: new_function(59)
+      ops.SET_SLOT_DIRECT, 364,-- 197: set_slot_direct(364)
+      ops.SET_SLOT_DIRECT, 334,-- 199: set_slot_direct(334)
       ops.PUSH_FRAME,          -- 201: push_frame
-      ops.NEW_FUNCTION, 51,    -- 202: new_function(51)
-      ops.SET_SLOT_DIRECT, 262,-- 204: set_slot_direct(262)
+      ops.NEW_FUNCTION, 60,    -- 202: new_function(60)
+      ops.SET_SLOT_DIRECT, 335,-- 204: set_slot_direct(335)
       ops.PUSH_FRAME,          -- 206: push_frame
-      ops.NEW_FUNCTION, 52,    -- 207: new_function(52)
-      ops.SET_SLOT_DIRECT, 263,-- 209: set_slot_direct(263)
+      ops.NEW_FUNCTION, 61,    -- 207: new_function(61)
+      ops.SET_SLOT_DIRECT, 336,-- 209: set_slot_direct(336)
       ops.PUSH_FRAME,          -- 211: push_frame
-      ops.NEW_FUNCTION, 53,    -- 212: new_function(53)
-      ops.SET_SLOT_DIRECT, 264,-- 214: set_slot_direct(264)
+      ops.NEW_FUNCTION, 62,    -- 212: new_function(62)
+      ops.SET_SLOT_DIRECT, 337,-- 214: set_slot_direct(337)
       ops.PUSH_FRAME,          -- 216: push_frame
-      ops.NEW_FUNCTION, 54,    -- 217: new_function(54)
-      ops.SET_SLOT_DIRECT, 265,-- 219: set_slot_direct(265)
+      ops.NEW_FUNCTION, 63,    -- 217: new_function(63)
+      ops.SET_SLOT_DIRECT, 338,-- 219: set_slot_direct(338)
       ops.PUSH_FRAME,          -- 221: push_frame
-      ops.NEW_FUNCTION, 55,    -- 222: new_function(55)
-      ops.SET_SLOT_DIRECT, 266,-- 224: set_slot_direct(266)
+      ops.NEW_FUNCTION, 64,    -- 222: new_function(64)
+      ops.SET_SLOT_DIRECT, 339,-- 224: set_slot_direct(339)
       ops.PUSH_FRAME,          -- 226: push_frame
-      ops.NEW_FUNCTION, 56,    -- 227: new_function(56)
-      ops.SET_SLOT_DIRECT, 267,-- 229: set_slot_direct(267)
+      ops.NEW_FUNCTION, 65,    -- 227: new_function(65)
+      ops.SET_SLOT_DIRECT, 340,-- 229: set_slot_direct(340)
       ops.PUSH_FRAME,          -- 231: push_frame
-      ops.NEW_FUNCTION, 57,    -- 232: new_function(57)
-      ops.SET_SLOT_DIRECT, 268,-- 234: set_slot_direct(268)
+      ops.NEW_FUNCTION, 66,    -- 232: new_function(66)
+      ops.SET_SLOT_DIRECT, 341,-- 234: set_slot_direct(341)
       ops.PUSH_FRAME,          -- 236: push_frame
-      ops.NEW_FUNCTION, 58,    -- 237: new_function(58)
+      ops.NEW_FUNCTION, 67,    -- 237: new_function(67)
       ops.SET_SLOT_DIRECT, 91, -- 239: set_slot_direct(91)
       ops.PUSH_FRAME,          -- 241: push_frame
       ops.NEW_OBJECT,          -- 242: new_object
       ops.DUP,                 -- 243: dup
-      ops.NEW_FUNCTION, 59,    -- 244: new_function(59)
-      ops.SET_SLOT_DIRECT, 282,-- 246: set_slot_direct(282)
+      ops.NEW_FUNCTION, 68,    -- 244: new_function(68)
+      ops.SET_SLOT_DIRECT, 355,-- 246: set_slot_direct(355)
       ops.DUP,                 -- 248: dup
-      ops.NEW_FUNCTION, 60,    -- 249: new_function(60)
-      ops.SET_SLOT_DIRECT, 283,-- 251: set_slot_direct(283)
-      ops.SET_SLOT_DIRECT, 269,-- 253: set_slot_direct(269)
+      ops.NEW_FUNCTION, 69,    -- 249: new_function(69)
+      ops.SET_SLOT_DIRECT, 356,-- 251: set_slot_direct(356)
+      ops.SET_SLOT_DIRECT, 342,-- 253: set_slot_direct(342)
       ops.PUSH_FRAME,          -- 255: push_frame
-      ops.NEW_FUNCTION, 61,    -- 256: new_function(61)
-      ops.SET_SLOT_DIRECT, 270,-- 258: set_slot_direct(270)
+      ops.NEW_FUNCTION, 70,    -- 256: new_function(70)
+      ops.SET_SLOT_DIRECT, 343,-- 258: set_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 260: push_local_frame
-      ops.NEW_FUNCTION, 62,    -- 261: new_function(62)
-      ops.SET_SLOT_DIRECT, 271,-- 263: set_slot_direct(271)
+      ops.NEW_FUNCTION, 71,    -- 261: new_function(71)
+      ops.SET_SLOT_DIRECT, 344,-- 263: set_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 265: push_local_frame
-      ops.NEW_FUNCTION, 64,    -- 266: new_function(64)
-      ops.SET_SLOT_DIRECT, 272,-- 268: set_slot_direct(272)
+      ops.NEW_FUNCTION, 73,    -- 266: new_function(73)
+      ops.SET_SLOT_DIRECT, 345,-- 268: set_slot_direct(345)
       ops.PUSH_FRAME,          -- 270: push_frame
-      ops.NEW_FUNCTION, 66,    -- 271: new_function(66)
-      ops.SET_SLOT_DIRECT, 273,-- 273: set_slot_direct(273)
+      ops.NEW_FUNCTION, 75,    -- 271: new_function(75)
+      ops.SET_SLOT_DIRECT, 346,-- 273: set_slot_direct(346)
       ops.PUSH_FRAME,          -- 275: push_frame
-      ops.NEW_FUNCTION, 68,    -- 276: new_function(68)
-      ops.SET_SLOT_DIRECT, 274,-- 278: set_slot_direct(274)
+      ops.NEW_FUNCTION, 77,    -- 276: new_function(77)
+      ops.SET_SLOT_DIRECT, 347,-- 278: set_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 280: push_local_frame
-      ops.NEW_FUNCTION, 70,    -- 281: new_function(70)
-      ops.SET_SLOT_DIRECT, 201,-- 283: set_slot_direct(201)
+      ops.NEW_FUNCTION, 79,    -- 281: new_function(79)
+      ops.SET_SLOT_DIRECT, 282,-- 283: set_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 285: push_local_frame
-      ops.NEW_FUNCTION, 72,    -- 286: new_function(72)
-      ops.SET_SLOT_DIRECT, 275,-- 288: set_slot_direct(275)
+      ops.NEW_FUNCTION, 81,    -- 286: new_function(81)
+      ops.SET_SLOT_DIRECT, 348,-- 288: set_slot_direct(348)
       ops.PUSH_FRAME,          -- 290: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 291: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 291: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 293: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 294: get_slot_direct(26)
-      ops.PUSH_LITERAL, 298,   -- 296: push_literal(298)
+      ops.PUSH_LITERAL, 371,   -- 296: push_literal(371)
       ops.INVOKE, 1,           -- 298: invoke(1)
       ops.POP,                 -- 300: pop
       ops.PUSH_FRAME,          -- 301: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 302: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 302: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 304: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 305: get_slot_direct(26)
-      ops.PUSH_LITERAL, 288,   -- 307: push_literal(288)
+      ops.PUSH_LITERAL, 361,   -- 307: push_literal(361)
       ops.INVOKE, 1,           -- 309: invoke(1)
       ops.POP,                 -- 311: pop
       ops.PUSH_FRAME,          -- 312: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 313: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 313: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 315: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 316: get_slot_direct(26)
-      ops.PUSH_LITERAL, 320,   -- 318: push_literal(320)
+      ops.PUSH_LITERAL, 241,   -- 318: push_literal(241)
       ops.INVOKE, 1,           -- 320: invoke(1)
       ops.POP,                 -- 322: pop
       ops.PUSH_FRAME,          -- 323: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 324: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 324: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 326: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 327: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 329: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 329: push_literal(380)
       ops.INVOKE, 1,           -- 331: invoke(1)
       ops.POP,                 -- 333: pop
       ops.PUSH_FRAME,          -- 334: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 335: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 335: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 337: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 338: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 340: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 340: push_literal(390)
       ops.INVOKE, 1,           -- 342: invoke(1)
       ops.POP,                 -- 344: pop
       ops.PUSH_FRAME,          -- 345: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 346: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 346: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 348: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 349: get_slot_direct(26)
-      ops.PUSH_LITERAL, 213,   -- 351: push_literal(213)
+      ops.PUSH_LITERAL, 255,   -- 351: push_literal(255)
       ops.INVOKE, 1,           -- 353: invoke(1)
       ops.POP,                 -- 355: pop
       ops.PUSH_FRAME,          -- 356: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 357: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 357: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 359: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 360: get_slot_direct(26)
-      ops.PUSH_LITERAL, 310,   -- 362: push_literal(310)
+      ops.PUSH_LITERAL, 245,   -- 362: push_literal(245)
       ops.INVOKE, 1,           -- 364: invoke(1)
       ops.POP,                 -- 366: pop
       ops.PUSH_FRAME,          -- 367: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 368: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 368: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 370: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 371: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 373: push_literal(76)
       ops.INVOKE, 1,           -- 375: invoke(1)
       ops.POP,                 -- 377: pop
       ops.PUSH_FRAME,          -- 378: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 379: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 379: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 381: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 382: get_slot_direct(26)
-      ops.PUSH_LITERAL, 322,   -- 384: push_literal(322)
+      ops.PUSH_LITERAL, 391,   -- 384: push_literal(391)
       ops.INVOKE, 1,           -- 386: invoke(1)
       ops.POP,                 -- 388: pop
       ops.PUSH_LOCAL_FRAME,    -- 389: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 390: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 390: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 392: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 393: get_slot_direct(26)
       ops.PUSH_LITERAL, 122,   -- 395: push_literal(122)
@@ -5631,7 +7177,7 @@ startup.functions = {
       ops.INVOKE, 2,           -- 399: invoke(2)
       ops.POP,                 -- 401: pop
       ops.PUSH_LOCAL_FRAME,    -- 402: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 403: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 403: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 405: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 406: get_slot_direct(26)
       ops.PUSH_LITERAL, 123,   -- 408: push_literal(123)
@@ -5639,15 +7185,15 @@ startup.functions = {
       ops.INVOKE, 2,           -- 412: invoke(2)
       ops.POP,                 -- 414: pop
       ops.PUSH_LOCAL_FRAME,    -- 415: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 416: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 416: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 418: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 419: get_slot_direct(26)
-      ops.PUSH_LITERAL, 323,   -- 421: push_literal(323)
+      ops.PUSH_LITERAL, 252,   -- 421: push_literal(252)
       ops.PUSH_LITERAL, 41,    -- 423: push_literal(41)
       ops.INVOKE, 2,           -- 425: invoke(2)
       ops.POP,                 -- 427: pop
       ops.PUSH_LOCAL_FRAME,    -- 428: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 429: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 429: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 431: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 432: get_slot_direct(26)
       ops.PUSH_LITERAL, 85,    -- 434: push_literal(85)
@@ -5655,7 +7201,7 @@ startup.functions = {
       ops.INVOKE, 2,           -- 438: invoke(2)
       ops.POP,                 -- 440: pop
       ops.PUSH_LOCAL_FRAME,    -- 441: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 442: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 442: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 444: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 445: get_slot_direct(26)
       ops.PUSH_LITERAL, 139,   -- 447: push_literal(139)
@@ -5663,7 +7209,7 @@ startup.functions = {
       ops.INVOKE, 2,           -- 451: invoke(2)
       ops.POP,                 -- 453: pop
       ops.PUSH_LOCAL_FRAME,    -- 454: push_local_frame
-      ops.GET_SLOT_DIRECT, 271,-- 455: get_slot_direct(271)
+      ops.GET_SLOT_DIRECT, 344,-- 455: get_slot_direct(344)
       ops.PUSH_LOCAL_FRAME,    -- 457: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 458: get_slot_direct(26)
       ops.PUSH_LITERAL, 142,   -- 460: push_literal(142)
@@ -5671,330 +7217,330 @@ startup.functions = {
       ops.INVOKE, 2,           -- 464: invoke(2)
       ops.POP,                 -- 466: pop
       ops.PUSH_FRAME,          -- 467: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 468: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 468: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 470: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 471: get_slot_direct(26)
-      ops.PUSH_LITERAL, 300,   -- 473: push_literal(300)
+      ops.PUSH_LITERAL, 373,   -- 473: push_literal(373)
       ops.INVOKE, 1,           -- 475: invoke(1)
       ops.PUSH_FRAME,          -- 477: push_frame
-      ops.GET_SLOT_DIRECT, 260,-- 478: get_slot_direct(260)
-      ops.SET_SLOT_DIRECT, 282,-- 480: set_slot_direct(282)
+      ops.GET_SLOT_DIRECT, 333,-- 478: get_slot_direct(333)
+      ops.SET_SLOT_DIRECT, 355,-- 480: set_slot_direct(355)
       ops.PUSH_FRAME,          -- 482: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 483: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 483: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 485: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 486: get_slot_direct(26)
       ops.PUSH_LITERAL, 26,    -- 488: push_literal(26)
       ops.INVOKE, 1,           -- 490: invoke(1)
-      ops.NEW_FUNCTION, 73,    -- 492: new_function(73)
-      ops.SET_SLOT_DIRECT, 282,-- 494: set_slot_direct(282)
+      ops.NEW_FUNCTION, 82,    -- 492: new_function(82)
+      ops.SET_SLOT_DIRECT, 355,-- 494: set_slot_direct(355)
       ops.PUSH_FRAME,          -- 496: push_frame
-      ops.GET_SLOT_DIRECT, 274,-- 497: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 497: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 499: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 500: get_slot_direct(26)
-      ops.PUSH_LITERAL, 324,   -- 502: push_literal(324)
+      ops.PUSH_LITERAL, 392,   -- 502: push_literal(392)
       ops.INVOKE, 1,           -- 504: invoke(1)
       ops.POP,                 -- 506: pop
       ops.PUSH_FRAME,          -- 507: push_frame
-      ops.GET_SLOT_DIRECT, 274,-- 508: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 508: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 510: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 511: get_slot_direct(26)
-      ops.PUSH_LITERAL, 325,   -- 513: push_literal(325)
+      ops.PUSH_LITERAL, 393,   -- 513: push_literal(393)
       ops.INVOKE, 1,           -- 515: invoke(1)
       ops.POP,                 -- 517: pop
       ops.PUSH_FRAME,          -- 518: push_frame
-      ops.GET_SLOT_DIRECT, 274,-- 519: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 519: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 521: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 522: get_slot_direct(26)
-      ops.PUSH_LITERAL, 326,   -- 524: push_literal(326)
+      ops.PUSH_LITERAL, 394,   -- 524: push_literal(394)
       ops.INVOKE, 1,           -- 526: invoke(1)
       ops.POP,                 -- 528: pop
       ops.PUSH_FRAME,          -- 529: push_frame
-      ops.GET_SLOT_DIRECT, 274,-- 530: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 530: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 532: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 533: get_slot_direct(26)
-      ops.PUSH_LITERAL, 327,   -- 535: push_literal(327)
+      ops.PUSH_LITERAL, 395,   -- 535: push_literal(395)
       ops.INVOKE, 1,           -- 537: invoke(1)
       ops.POP,                 -- 539: pop
       ops.PUSH_FRAME,          -- 540: push_frame
-      ops.GET_SLOT_DIRECT, 274,-- 541: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 541: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 543: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 544: get_slot_direct(26)
-      ops.PUSH_LITERAL, 328,   -- 546: push_literal(328)
+      ops.PUSH_LITERAL, 396,   -- 546: push_literal(396)
       ops.INVOKE, 1,           -- 548: invoke(1)
       ops.POP,                 -- 550: pop
       ops.PUSH_LOCAL_FRAME,    -- 551: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 552: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 552: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 554: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 555: get_slot_direct(26)
-      ops.PUSH_LITERAL, 329,   -- 557: push_literal(329)
-      ops.PUSH_LITERAL, 330,   -- 559: push_literal(330)
-      ops.NEW_FUNCTION, 74,    -- 561: new_function(74)
+      ops.PUSH_LITERAL, 397,   -- 557: push_literal(397)
+      ops.PUSH_LITERAL, 398,   -- 559: push_literal(398)
+      ops.NEW_FUNCTION, 83,    -- 561: new_function(83)
       ops.INVOKE, 3,           -- 563: invoke(3)
       ops.POP,                 -- 565: pop
       ops.PUSH_FRAME,          -- 566: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 567: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 567: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 569: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 570: get_slot_direct(26)
-      ops.PUSH_LITERAL, 333,   -- 572: push_literal(333)
-      ops.PUSH_LITERAL, 334,   -- 574: push_literal(334)
+      ops.PUSH_LITERAL, 401,   -- 572: push_literal(401)
+      ops.PUSH_LITERAL, 402,   -- 574: push_literal(402)
       ops.INVOKE, 2,           -- 576: invoke(2)
       ops.POP,                 -- 578: pop
       ops.PUSH_FRAME,          -- 579: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 580: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 580: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 582: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 583: get_slot_direct(26)
-      ops.PUSH_LITERAL, 335,   -- 585: push_literal(335)
-      ops.PUSH_LITERAL, 336,   -- 587: push_literal(336)
+      ops.PUSH_LITERAL, 403,   -- 585: push_literal(403)
+      ops.PUSH_LITERAL, 404,   -- 587: push_literal(404)
       ops.INVOKE, 2,           -- 589: invoke(2)
       ops.POP,                 -- 591: pop
       ops.PUSH_FRAME,          -- 592: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 593: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 593: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 595: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 596: get_slot_direct(26)
-      ops.PUSH_LITERAL, 337,   -- 598: push_literal(337)
-      ops.PUSH_LITERAL, 338,   -- 600: push_literal(338)
+      ops.PUSH_LITERAL, 405,   -- 598: push_literal(405)
+      ops.PUSH_LITERAL, 406,   -- 600: push_literal(406)
       ops.INVOKE, 2,           -- 602: invoke(2)
       ops.POP,                 -- 604: pop
       ops.PUSH_FRAME,          -- 605: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 606: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 606: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 608: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 609: get_slot_direct(26)
-      ops.PUSH_LITERAL, 339,   -- 611: push_literal(339)
-      ops.PUSH_LITERAL, 338,   -- 613: push_literal(338)
+      ops.PUSH_LITERAL, 407,   -- 611: push_literal(407)
+      ops.PUSH_LITERAL, 406,   -- 613: push_literal(406)
       ops.INVOKE, 2,           -- 615: invoke(2)
       ops.POP,                 -- 617: pop
       ops.PUSH_FRAME,          -- 618: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 619: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 619: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 621: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 622: get_slot_direct(26)
-      ops.PUSH_LITERAL, 340,   -- 624: push_literal(340)
-      ops.PUSH_LITERAL, 341,   -- 626: push_literal(341)
+      ops.PUSH_LITERAL, 408,   -- 624: push_literal(408)
+      ops.PUSH_LITERAL, 409,   -- 626: push_literal(409)
       ops.INVOKE, 2,           -- 628: invoke(2)
       ops.POP,                 -- 630: pop
       ops.PUSH_FRAME,          -- 631: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 632: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 632: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 634: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 635: get_slot_direct(26)
-      ops.PUSH_LITERAL, 342,   -- 637: push_literal(342)
-      ops.PUSH_LITERAL, 341,   -- 639: push_literal(341)
+      ops.PUSH_LITERAL, 410,   -- 637: push_literal(410)
+      ops.PUSH_LITERAL, 409,   -- 639: push_literal(409)
       ops.INVOKE, 2,           -- 641: invoke(2)
       ops.POP,                 -- 643: pop
       ops.PUSH_FRAME,          -- 644: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 645: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 645: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 647: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 648: get_slot_direct(26)
-      ops.PUSH_LITERAL, 343,   -- 650: push_literal(343)
-      ops.PUSH_LITERAL, 341,   -- 652: push_literal(341)
+      ops.PUSH_LITERAL, 411,   -- 650: push_literal(411)
+      ops.PUSH_LITERAL, 409,   -- 652: push_literal(409)
       ops.INVOKE, 2,           -- 654: invoke(2)
       ops.POP,                 -- 656: pop
       ops.PUSH_FRAME,          -- 657: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 658: get_slot_direct(273)
+      ops.GET_SLOT_DIRECT, 346,-- 658: get_slot_direct(346)
       ops.PUSH_LOCAL_FRAME,    -- 660: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 661: get_slot_direct(26)
-      ops.PUSH_LITERAL, 344,   -- 663: push_literal(344)
-      ops.PUSH_LITERAL, 341,   -- 665: push_literal(341)
+      ops.PUSH_LITERAL, 412,   -- 663: push_literal(412)
+      ops.PUSH_LITERAL, 409,   -- 665: push_literal(409)
       ops.INVOKE, 2,           -- 667: invoke(2)
       ops.POP,                 -- 669: pop
       ops.PUSH_LOCAL_FRAME,    -- 670: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 671: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 671: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 673: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 674: get_slot_direct(26)
-      ops.PUSH_LITERAL, 228,   -- 676: push_literal(228)
-      ops.PUSH_LITERAL, 345,   -- 678: push_literal(345)
+      ops.PUSH_LITERAL, 304,   -- 676: push_literal(304)
+      ops.PUSH_LITERAL, 413,   -- 678: push_literal(413)
       ops.INVOKE, 2,           -- 680: invoke(2)
       ops.POP,                 -- 682: pop
       ops.PUSH_LOCAL_FRAME,    -- 683: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 684: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 684: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 686: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 687: get_slot_direct(26)
       ops.PUSH_LITERAL, 141,   -- 689: push_literal(141)
-      ops.PUSH_LITERAL, 345,   -- 691: push_literal(345)
+      ops.PUSH_LITERAL, 413,   -- 691: push_literal(413)
       ops.INVOKE, 2,           -- 693: invoke(2)
       ops.POP,                 -- 695: pop
       ops.PUSH_LOCAL_FRAME,    -- 696: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 697: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 697: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 699: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 700: get_slot_direct(26)
-      ops.PUSH_LITERAL, 246,   -- 702: push_literal(246)
-      ops.PUSH_LITERAL, 346,   -- 704: push_literal(346)
+      ops.PUSH_LITERAL, 319,   -- 702: push_literal(319)
+      ops.PUSH_LITERAL, 414,   -- 704: push_literal(414)
       ops.INVOKE, 2,           -- 706: invoke(2)
       ops.POP,                 -- 708: pop
       ops.PUSH_LOCAL_FRAME,    -- 709: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 710: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 710: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 712: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 713: get_slot_direct(26)
-      ops.PUSH_LITERAL, 245,   -- 715: push_literal(245)
-      ops.PUSH_LITERAL, 346,   -- 717: push_literal(346)
+      ops.PUSH_LITERAL, 318,   -- 715: push_literal(318)
+      ops.PUSH_LITERAL, 414,   -- 717: push_literal(414)
       ops.INVOKE, 2,           -- 719: invoke(2)
       ops.POP,                 -- 721: pop
       ops.PUSH_LOCAL_FRAME,    -- 722: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 723: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 723: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 725: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 726: get_slot_direct(26)
       ops.PUSH_LITERAL, 149,   -- 728: push_literal(149)
-      ops.PUSH_LITERAL, 347,   -- 730: push_literal(347)
-      ops.NEW_FUNCTION, 75,    -- 732: new_function(75)
+      ops.PUSH_LITERAL, 415,   -- 730: push_literal(415)
+      ops.NEW_FUNCTION, 84,    -- 732: new_function(84)
       ops.INVOKE, 3,           -- 734: invoke(3)
       ops.POP,                 -- 736: pop
       ops.PUSH_LOCAL_FRAME,    -- 737: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 738: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 738: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 740: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 741: get_slot_direct(26)
-      ops.PUSH_LITERAL, 316,   -- 743: push_literal(316)
-      ops.PUSH_LITERAL, 347,   -- 745: push_literal(347)
-      ops.NEW_FUNCTION, 76,    -- 747: new_function(76)
+      ops.PUSH_LITERAL, 254,   -- 743: push_literal(254)
+      ops.PUSH_LITERAL, 415,   -- 745: push_literal(415)
+      ops.NEW_FUNCTION, 85,    -- 747: new_function(85)
       ops.INVOKE, 3,           -- 749: invoke(3)
       ops.POP,                 -- 751: pop
       ops.PUSH_LOCAL_FRAME,    -- 752: push_local_frame
-      ops.GET_SLOT_DIRECT, 272,-- 753: get_slot_direct(272)
+      ops.GET_SLOT_DIRECT, 345,-- 753: get_slot_direct(345)
       ops.PUSH_LOCAL_FRAME,    -- 755: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 756: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 758: push_literal(305)
-      ops.PUSH_LITERAL, 349,   -- 760: push_literal(349)
-      ops.NEW_FUNCTION, 77,    -- 762: new_function(77)
+      ops.PUSH_LITERAL, 378,   -- 758: push_literal(378)
+      ops.PUSH_LITERAL, 417,   -- 760: push_literal(417)
+      ops.NEW_FUNCTION, 86,    -- 762: new_function(86)
       ops.INVOKE, 3,           -- 764: invoke(3)
       ops.POP,                 -- 766: pop
       ops.PUSH_LOCAL_FRAME,    -- 767: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 768: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 768: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 770: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 771: get_slot_direct(26)
-      ops.PUSH_LITERAL, 351,   -- 773: push_literal(351)
+      ops.PUSH_LITERAL, 419,   -- 773: push_literal(419)
       ops.INVOKE, 1,           -- 775: invoke(1)
       ops.POP,                 -- 777: pop
       ops.PUSH_LOCAL_FRAME,    -- 778: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 779: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 779: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 781: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 782: get_slot_direct(26)
       ops.PUSH_LITERAL, 141,   -- 784: push_literal(141)
       ops.INVOKE, 1,           -- 786: invoke(1)
       ops.POP,                 -- 788: pop
       ops.PUSH_LOCAL_FRAME,    -- 789: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 790: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 790: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 792: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 793: get_slot_direct(26)
-      ops.PUSH_LITERAL, 352,   -- 795: push_literal(352)
+      ops.PUSH_LITERAL, 420,   -- 795: push_literal(420)
       ops.INVOKE, 1,           -- 797: invoke(1)
       ops.POP,                 -- 799: pop
       ops.PUSH_LOCAL_FRAME,    -- 800: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 801: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 801: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 803: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 804: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 806: push_literal(305)
-      ops.NEW_FUNCTION, 78,    -- 808: new_function(78)
+      ops.PUSH_LITERAL, 378,   -- 806: push_literal(378)
+      ops.NEW_FUNCTION, 87,    -- 808: new_function(87)
       ops.INVOKE, 2,           -- 810: invoke(2)
       ops.POP,                 -- 812: pop
       ops.PUSH_LOCAL_FRAME,    -- 813: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 814: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 814: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 816: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 817: get_slot_direct(26)
       ops.PUSH_LITERAL, 25,    -- 819: push_literal(25)
-      ops.NEW_FUNCTION, 79,    -- 821: new_function(79)
+      ops.NEW_FUNCTION, 88,    -- 821: new_function(88)
       ops.INVOKE, 2,           -- 823: invoke(2)
       ops.POP,                 -- 825: pop
       ops.PUSH_LOCAL_FRAME,    -- 826: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 827: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 827: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 829: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 830: get_slot_direct(26)
-      ops.PUSH_LITERAL, 316,   -- 832: push_literal(316)
-      ops.NEW_FUNCTION, 80,    -- 834: new_function(80)
+      ops.PUSH_LITERAL, 254,   -- 832: push_literal(254)
+      ops.NEW_FUNCTION, 89,    -- 834: new_function(89)
       ops.INVOKE, 2,           -- 836: invoke(2)
       ops.POP,                 -- 838: pop
       ops.PUSH_LOCAL_FRAME,    -- 839: push_local_frame
-      ops.GET_SLOT_DIRECT, 201,-- 840: get_slot_direct(201)
+      ops.GET_SLOT_DIRECT, 282,-- 840: get_slot_direct(282)
       ops.PUSH_LOCAL_FRAME,    -- 842: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 843: get_slot_direct(26)
-      ops.PUSH_LITERAL, 311,   -- 845: push_literal(311)
-      ops.NEW_FUNCTION, 81,    -- 847: new_function(81)
+      ops.PUSH_LITERAL, 244,   -- 845: push_literal(244)
+      ops.NEW_FUNCTION, 90,    -- 847: new_function(90)
       ops.INVOKE, 2,           -- 849: invoke(2)
       ops.POP,                 -- 851: pop
       ops.PUSH_LOCAL_FRAME,    -- 852: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 853: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 853: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 855: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 856: get_slot_direct(26)
-      ops.PUSH_LITERAL, 311,   -- 858: push_literal(311)
-      ops.NEW_FUNCTION, 82,    -- 860: new_function(82)
+      ops.PUSH_LITERAL, 244,   -- 858: push_literal(244)
+      ops.NEW_FUNCTION, 91,    -- 860: new_function(91)
       ops.INVOKE, 2,           -- 862: invoke(2)
       ops.POP,                 -- 864: pop
       ops.PUSH_LOCAL_FRAME,    -- 865: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 866: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 866: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 868: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 869: get_slot_direct(26)
-      ops.PUSH_LITERAL, 309,   -- 871: push_literal(309)
-      ops.NEW_FUNCTION, 83,    -- 873: new_function(83)
+      ops.PUSH_LITERAL, 382,   -- 871: push_literal(382)
+      ops.NEW_FUNCTION, 92,    -- 873: new_function(92)
       ops.INVOKE, 2,           -- 875: invoke(2)
       ops.POP,                 -- 877: pop
       ops.PUSH_LOCAL_FRAME,    -- 878: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 879: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 879: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 881: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 882: get_slot_direct(26)
-      ops.PUSH_LITERAL, 359,   -- 884: push_literal(359)
-      ops.NEW_FUNCTION, 84,    -- 886: new_function(84)
+      ops.PUSH_LITERAL, 426,   -- 884: push_literal(426)
+      ops.NEW_FUNCTION, 93,    -- 886: new_function(93)
       ops.INVOKE, 2,           -- 888: invoke(2)
       ops.POP,                 -- 890: pop
       ops.PUSH_LOCAL_FRAME,    -- 891: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 892: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 892: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 894: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 895: get_slot_direct(26)
-      ops.PUSH_LITERAL, 360,   -- 897: push_literal(360)
-      ops.NEW_FUNCTION, 85,    -- 899: new_function(85)
+      ops.PUSH_LITERAL, 427,   -- 897: push_literal(427)
+      ops.NEW_FUNCTION, 94,    -- 899: new_function(94)
       ops.INVOKE, 2,           -- 901: invoke(2)
       ops.POP,                 -- 903: pop
       ops.PUSH_LOCAL_FRAME,    -- 904: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 905: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 905: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 907: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 908: get_slot_direct(26)
-      ops.PUSH_LITERAL, 362,   -- 910: push_literal(362)
-      ops.NEW_FUNCTION, 86,    -- 912: new_function(86)
+      ops.PUSH_LITERAL, 429,   -- 910: push_literal(429)
+      ops.NEW_FUNCTION, 95,    -- 912: new_function(95)
       ops.INVOKE, 2,           -- 914: invoke(2)
       ops.POP,                 -- 916: pop
       ops.PUSH_LOCAL_FRAME,    -- 917: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 918: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 918: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 920: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 921: get_slot_direct(26)
       ops.PUSH_LITERAL, 185,   -- 923: push_literal(185)
-      ops.NEW_FUNCTION, 87,    -- 925: new_function(87)
+      ops.NEW_FUNCTION, 96,    -- 925: new_function(96)
       ops.INVOKE, 2,           -- 927: invoke(2)
       ops.POP,                 -- 929: pop
       ops.PUSH_LOCAL_FRAME,    -- 930: push_local_frame
-      ops.NEW_FUNCTION, 88,    -- 931: new_function(88)
-      ops.SET_SLOT_DIRECT, 252,-- 933: set_slot_direct(252)
+      ops.NEW_FUNCTION, 97,    -- 931: new_function(97)
+      ops.SET_SLOT_DIRECT, 325,-- 933: set_slot_direct(325)
       ops.PUSH_LOCAL_FRAME,    -- 935: push_local_frame
-      ops.NEW_FUNCTION, 91,    -- 936: new_function(91)
-      ops.SET_SLOT_DIRECT, 276,-- 938: set_slot_direct(276)
+      ops.NEW_FUNCTION, 100,   -- 936: new_function(100)
+      ops.SET_SLOT_DIRECT, 349,-- 938: set_slot_direct(349)
       ops.PUSH_LOCAL_FRAME,    -- 940: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 941: get_slot_direct(252)
-      ops.PUSH_LITERAL, 252,   -- 943: push_literal(252)
-      ops.SET_SLOT_DIRECT, 248,-- 945: set_slot_direct(248)
+      ops.GET_SLOT_DIRECT, 325,-- 941: get_slot_direct(325)
+      ops.PUSH_LITERAL, 325,   -- 943: push_literal(325)
+      ops.SET_SLOT_DIRECT, 321,-- 945: set_slot_direct(321)
       ops.PUSH_LOCAL_FRAME,    -- 947: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 948: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 948: get_slot_direct(325)
       ops.PUSH_FRAME,          -- 950: push_frame
-      ops.GET_SLOT_DIRECT, 377,-- 951: get_slot_direct(377)
-      ops.SET_SLOT_DIRECT, 250,-- 953: set_slot_direct(250)
+      ops.GET_SLOT_DIRECT, 443,-- 951: get_slot_direct(443)
+      ops.SET_SLOT_DIRECT, 323,-- 953: set_slot_direct(323)
       ops.PUSH_LOCAL_FRAME,    -- 955: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 956: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 956: get_slot_direct(325)
       ops.NEW_ARRAY,           -- 958: new_array
       ops.DUP,                 -- 959: dup
-      ops.PUSH_LITERAL, 198,   -- 960: push_literal(198)
+      ops.PUSH_LITERAL, 279,   -- 960: push_literal(279)
       ops.SET_SLOT_DIRECT, 18, -- 962: set_slot_direct(18)
-      ops.SET_SLOT_DIRECT, 378,-- 964: set_slot_direct(378)
+      ops.SET_SLOT_DIRECT, 444,-- 964: set_slot_direct(444)
       ops.PUSH_LOCAL_FRAME,    -- 966: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 967: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 967: get_slot_direct(325)
       ops.PUSH_LOCAL_FRAME,    -- 969: push_local_frame
-      ops.GET_SLOT_DIRECT, 254,-- 970: get_slot_direct(254)
-      ops.SET_SLOT_DIRECT, 251,-- 972: set_slot_direct(251)
+      ops.GET_SLOT_DIRECT, 327,-- 970: get_slot_direct(327)
+      ops.SET_SLOT_DIRECT, 324,-- 972: set_slot_direct(324)
       ops.PUSH_LOCAL_FRAME,    -- 974: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 975: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 975: get_slot_direct(325)
       ops.PUSH_LOCAL_FRAME,    -- 977: push_local_frame
-      ops.GET_SLOT_DIRECT, 276,-- 978: get_slot_direct(276)
-      ops.SET_SLOT_DIRECT, 379,-- 980: set_slot_direct(379)
+      ops.GET_SLOT_DIRECT, 349,-- 978: get_slot_direct(349)
+      ops.SET_SLOT_DIRECT, 445,-- 980: set_slot_direct(445)
       ops.PUSH_LOCAL_FRAME,    -- 982: push_local_frame
-      ops.GET_SLOT_DIRECT, 252,-- 983: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 983: get_slot_direct(325)
       ops.RETURN               -- 985: return
     }
   },
   ifunc.Function:new{ -- "itself"
     name = jsval.newString("itself"),
-    id = 44,
+    id = 53,
     nargs = 0,
     max_stack = 1,
     bytecode = {
@@ -6005,7 +7551,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "error"
     name = jsval.newString("error"),
-    id = 45,
+    id = 54,
     nargs = 3,
     max_stack = 4,
     bytecode = {
@@ -6020,16 +7566,16 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 208,-- 15: set_slot_direct(208)
+      ops.SET_SLOT_DIRECT, 288,-- 15: set_slot_direct(288)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 209,-- 22: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 22: set_slot_direct(289)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 27: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 27: get_slot_direct(289)
       ops.DUP,                 -- 29: dup
       ops.UN_NOT,              -- 30: un_not
       ops.JMP_UNLESS, 38, 38,  -- 31: jmp_unless(38,38)
@@ -6037,54 +7583,54 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
       ops.GET_SLOT_DIRECT, 30, -- 36: get_slot_direct(30)
       ops.PHI,                 -- 38: phi
-      ops.SET_SLOT_DIRECT, 209,-- 39: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 39: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 42: get_slot_direct(209)
-      ops.PUSH_LITERAL, 210,   -- 44: push_literal(210)
+      ops.GET_SLOT_DIRECT, 289,-- 42: get_slot_direct(289)
+      ops.PUSH_LITERAL, 290,   -- 44: push_literal(290)
       ops.SET_SLOT_DIRECT, 19, -- 46: set_slot_direct(19)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 49: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 49: get_slot_direct(289)
       ops.GET_SLOT_DIRECT, 52, -- 51: get_slot_direct(52)
       ops.DUP,                 -- 53: dup
       ops.UN_NOT,              -- 54: un_not
       ops.JMP_UNLESS, 64, 64,  -- 55: jmp_unless(64,64)
       ops.POP,                 -- 58: pop
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 60: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 211,-- 62: get_slot_direct(211)
+      ops.GET_SLOT_DIRECT, 289,-- 60: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 291,-- 62: get_slot_direct(291)
       ops.PHI,                 -- 64: phi
       ops.JMP_UNLESS, 95, 95,  -- 65: jmp_unless(95,95)
       ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
       ops.DUP,                 -- 69: dup
-      ops.GET_SLOT_DIRECT, 208,-- 70: get_slot_direct(208)
-      ops.PUSH_LITERAL, 212,   -- 72: push_literal(212)
+      ops.GET_SLOT_DIRECT, 288,-- 70: get_slot_direct(288)
+      ops.PUSH_LITERAL, 292,   -- 72: push_literal(292)
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 75: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 75: get_slot_direct(289)
       ops.GET_SLOT_DIRECT, 52, -- 77: get_slot_direct(52)
       ops.BI_ADD,              -- 79: bi_add
       ops.PUSH_LITERAL, 141,   -- 80: push_literal(141)
       ops.BI_ADD,              -- 82: bi_add
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 84: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 211,-- 86: get_slot_direct(211)
+      ops.GET_SLOT_DIRECT, 289,-- 84: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 291,-- 86: get_slot_direct(291)
       ops.BI_ADD,              -- 88: bi_add
-      ops.PUSH_LITERAL, 213,   -- 89: push_literal(213)
+      ops.PUSH_LITERAL, 255,   -- 89: push_literal(255)
       ops.BI_ADD,              -- 91: bi_add
       ops.BI_ADD,              -- 92: bi_add
-      ops.SET_SLOT_DIRECT, 208,-- 93: set_slot_direct(208)
+      ops.SET_SLOT_DIRECT, 288,-- 93: set_slot_direct(288)
       ops.PHI,                 -- 95: phi
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 97: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 97: get_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
-      ops.GET_SLOT_DIRECT, 208,-- 100: get_slot_direct(208)
-      ops.SET_SLOT_DIRECT, 208,-- 102: set_slot_direct(208)
+      ops.GET_SLOT_DIRECT, 288,-- 100: get_slot_direct(288)
+      ops.SET_SLOT_DIRECT, 288,-- 102: set_slot_direct(288)
       ops.PUSH_FRAME,          -- 104: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 105: get_slot_direct(14)
       ops.DUP,                 -- 107: dup
       ops.GET_SLOT_DIRECT_CHECK, 6,-- 108: get_slot_direct_check(6)
       ops.SWAP,                -- 110: swap
       ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 112: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 112: get_slot_direct(289)
       ops.INVOKE, 1,           -- 114: invoke(1)
       ops.POP,                 -- 116: pop
       ops.PUSH_LITERAL, 0,     -- 117: push_literal(0)
@@ -6093,7 +7639,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "hasOwnProperty"
     name = jsval.newString("hasOwnProperty"),
-    id = 46,
+    id = 55,
     nargs = 2,
     max_stack = 4,
     bytecode = {
@@ -6108,7 +7654,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 277,-- 15: set_slot_direct(277)
+      ops.SET_SLOT_DIRECT, 350,-- 15: set_slot_direct(350)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 19: get_slot_direct(14)
@@ -6120,14 +7666,14 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 30, -- 30: get_slot_direct(30)
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
-      ops.GET_SLOT_DIRECT, 277,-- 33: get_slot_direct(277)
+      ops.GET_SLOT_DIRECT, 350,-- 33: get_slot_direct(350)
       ops.INVOKE, 2,           -- 35: invoke(2)
       ops.RETURN               -- 37: return
     }
   },
   ifunc.Function:new{ -- "define:"
     name = jsval.newString("define:"),
-    id = 47,
+    id = 56,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -6141,74 +7687,74 @@ startup.functions = {
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 14: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 14: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 18: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 278,-- 20: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 20: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 23: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 25: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 25: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 209,-- 28: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 28: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 31: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 31: get_slot_direct(289)
       ops.UN_TYPEOF,           -- 33: un_typeof
       ops.PUSH_LITERAL, 88,    -- 34: push_literal(88)
       ops.BI_EQ,               -- 36: bi_eq
       ops.JMP_UNLESS, 67, 67,  -- 37: jmp_unless(67,67)
       ops.PUSH_FRAME,          -- 40: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 41: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 41: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 44: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 47: get_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 50: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 279,-- 52: get_slot_direct(279)
+      ops.GET_SLOT_DIRECT, 289,-- 50: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 352,-- 52: get_slot_direct(352)
       ops.JMP_UNLESS, 61, 63,  -- 54: jmp_unless(61,63)
-      ops.PUSH_LITERAL, 280,   -- 57: push_literal(280)
+      ops.PUSH_LITERAL, 353,   -- 57: push_literal(353)
       ops.JMP, 63,             -- 59: jmp(63)
-      ops.PUSH_LITERAL, 281,   -- 61: push_literal(281)
+      ops.PUSH_LITERAL, 354,   -- 61: push_literal(354)
       ops.PHI,                 -- 63: phi
       ops.INVOKE, 2,           -- 64: invoke(2)
       ops.POP,                 -- 66: pop
       ops.PHI,                 -- 67: phi
       ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 69: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 278,-- 71: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 71: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 73: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 74: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 76: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 76: get_slot_direct(224)
       ops.PUSH_LOCAL_FRAME,    -- 78: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 79: get_slot_direct(23)
       ops.SET_SLOT_INDIRECT,   -- 81: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 83: get_slot_direct(23)
       ops.PUSH_LITERAL, 32,    -- 85: push_literal(32)
-      ops.SET_SLOT_DIRECT, 279,-- 87: set_slot_direct(279)
+      ops.SET_SLOT_DIRECT, 352,-- 87: set_slot_direct(352)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 90: get_slot_direct(23)
       ops.PUSH_FRAME,          -- 92: push_frame
-      ops.GET_SLOT_DIRECT, 260,-- 93: get_slot_direct(260)
-      ops.SET_SLOT_DIRECT, 282,-- 95: set_slot_direct(282)
+      ops.GET_SLOT_DIRECT, 333,-- 93: get_slot_direct(333)
+      ops.SET_SLOT_DIRECT, 355,-- 95: set_slot_direct(355)
       ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 98: get_slot_direct(23)
       ops.PUSH_LITERAL, 41,    -- 100: push_literal(41)
-      ops.SET_SLOT_DIRECT, 283,-- 102: set_slot_direct(283)
+      ops.SET_SLOT_DIRECT, 356,-- 102: set_slot_direct(356)
       ops.PUSH_LOCAL_FRAME,    -- 104: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 105: get_slot_direct(23)
       ops.PUSH_LITERAL, 41,    -- 107: push_literal(41)
-      ops.SET_SLOT_DIRECT, 284,-- 109: set_slot_direct(284)
+      ops.SET_SLOT_DIRECT, 357,-- 109: set_slot_direct(357)
       ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 112: get_slot_direct(23)
       ops.PUSH_LITERAL, 18,    -- 114: push_literal(18)
-      ops.SET_SLOT_DIRECT, 285,-- 116: set_slot_direct(285)
+      ops.SET_SLOT_DIRECT, 358,-- 116: set_slot_direct(358)
       ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 119: get_slot_direct(23)
       ops.PUSH_FRAME,          -- 121: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 122: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 124: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 122: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 124: set_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 127: get_slot_direct(23)
       ops.RETURN               -- 129: return
@@ -6216,7 +7762,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "find:"
     name = jsval.newString("find:"),
-    id = 48,
+    id = 57,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -6236,7 +7782,7 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 116,-- 19: set_slot_direct(116)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 286,-- 24: set_slot_direct(286)
+      ops.SET_SLOT_DIRECT, 359,-- 24: set_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
@@ -6246,7 +7792,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 23, -- 34: get_slot_direct(23)
       ops.PUSH_LITERAL, 17,    -- 36: push_literal(17)
       ops.BI_EQ,               -- 38: bi_eq
-      ops.SET_SLOT_DIRECT, 286,-- 39: set_slot_direct(286)
+      ops.SET_SLOT_DIRECT, 359,-- 39: set_slot_direct(359)
       ops.JMP_INTO_LOOP, 160, 167,-- 41: jmp_into_loop(160,167)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
       ops.PUSH_FRAME,          -- 45: push_frame
@@ -6255,14 +7801,14 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 52: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 278,-- 54: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 54: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 57: get_slot_direct(23)
       ops.INVOKE, 2,           -- 59: invoke(2)
       ops.JMP_UNLESS, 75, 77,  -- 61: jmp_unless(75,77)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 65: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 278,-- 67: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 67: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 70: get_slot_direct(23)
       ops.GET_SLOT_INDIRECT,   -- 72: get_slot_indirect
@@ -6274,11 +7820,11 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 116,-- 81: get_slot_direct(116)
       ops.JMP_UNLESS, 108, 108,-- 83: jmp_unless(108,108)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 286,-- 87: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 359,-- 87: get_slot_direct(359)
       ops.JMP_UNLESS, 103, 103,-- 89: jmp_unless(103,103)
       ops.PUSH_LOCAL_FRAME,    -- 92: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 93: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 286,-- 95: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 359,-- 95: get_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 98: get_slot_direct(23)
       ops.PUSH_LITERAL, 118,   -- 100: push_literal(118)
@@ -6291,23 +7837,23 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 110: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 111: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 287,-- 113: get_slot_direct(287)
+      ops.GET_SLOT_DIRECT, 360,-- 113: get_slot_direct(360)
       ops.SET_SLOT_DIRECT, 87, -- 115: set_slot_direct(87)
       ops.PUSH_LOCAL_FRAME,    -- 117: push_local_frame
       ops.PUSH_LITERAL, 118,   -- 118: push_literal(118)
-      ops.SET_SLOT_DIRECT, 286,-- 120: set_slot_direct(286)
+      ops.SET_SLOT_DIRECT, 359,-- 120: set_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 123: get_slot_direct(87)
       ops.UN_NOT,              -- 125: un_not
       ops.JMP_UNLESS, 159, 159,-- 126: jmp_unless(159,159)
       ops.PUSH_FRAME,          -- 129: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 130: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 130: get_slot_direct(329)
       ops.PUSH_FRAME,          -- 132: push_frame
       ops.GET_SLOT_DIRECT, 89, -- 133: get_slot_direct(89)
       ops.PUSH_LOCAL_FRAME,    -- 135: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 136: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 138: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 139: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 139: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 142: get_slot_direct(23)
       ops.INVOKE, 2,           -- 144: invoke(2)
@@ -6315,7 +7861,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 149: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 150: get_slot_direct(23)
       ops.JMP, 156,            -- 152: jmp(156)
-      ops.PUSH_LITERAL, 288,   -- 154: push_literal(288)
+      ops.PUSH_LITERAL, 361,   -- 154: push_literal(361)
       ops.PHI,                 -- 156: phi
       ops.GET_SLOT_INDIRECT,   -- 157: get_slot_indirect
       ops.RETURN,              -- 158: return
@@ -6331,7 +7877,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "pop:"
     name = jsval.newString("pop:"),
-    id = 49,
+    id = 58,
     nargs = 0,
     max_stack = 2,
     bytecode = {
@@ -6339,15 +7885,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 117,-- 1: get_slot_direct(117)
       ops.PUSH_LOCAL_FRAME,    -- 3: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 4: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 287,-- 6: get_slot_direct(287)
-      ops.SET_SLOT_DIRECT, 255,-- 8: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 360,-- 6: get_slot_direct(360)
+      ops.SET_SLOT_DIRECT, 328,-- 8: set_slot_direct(328)
       ops.PUSH_LITERAL, 0,     -- 10: push_literal(0)
       ops.RETURN               -- 12: return
     }
   },
   ifunc.Function:new{ -- "reserve:"
     name = jsval.newString("reserve:"),
-    id = 50,
+    id = 59,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -6361,10 +7907,10 @@ startup.functions = {
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 14: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 14: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 17: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 290,-- 19: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 19: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 21: push_literal(19)
       ops.BI_EQ,               -- 23: bi_eq
       ops.UN_NOT,              -- 24: un_not
@@ -6374,7 +7920,7 @@ startup.functions = {
       ops.POP,                 -- 30: pop
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 32: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 279,-- 34: get_slot_direct(279)
+      ops.GET_SLOT_DIRECT, 352,-- 34: get_slot_direct(352)
       ops.PHI,                 -- 36: phi
       ops.JMP_UNLESS, 43, 43,  -- 37: jmp_unless(43,43)
       ops.PUSH_LITERAL, 0,     -- 40: push_literal(0)
@@ -6387,80 +7933,80 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 52: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 278,-- 54: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 54: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 57: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 59: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 59: get_slot_direct(224)
       ops.INVOKE, 2,           -- 61: invoke(2)
       ops.JMP_UNLESS, 79, 81,  -- 63: jmp_unless(79,81)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 67: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 278,-- 69: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 69: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 72: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 74: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 74: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 76: get_slot_indirect
       ops.JMP, 81,             -- 77: jmp(81)
       ops.PUSH_LITERAL, 41,    -- 79: push_literal(41)
       ops.PHI,                 -- 81: phi
-      ops.SET_SLOT_DIRECT, 209,-- 82: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 82: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 85: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 85: get_slot_direct(289)
       ops.JMP_UNLESS, 128, 128,-- 87: jmp_unless(128,128)
       ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 91: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 279,-- 93: get_slot_direct(279)
+      ops.GET_SLOT_DIRECT, 289,-- 91: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 352,-- 93: get_slot_direct(352)
       ops.JMP_UNLESS, 101, 101,-- 95: jmp_unless(101,101)
       ops.PUSH_LITERAL, 0,     -- 98: push_literal(0)
       ops.RETURN,              -- 100: return
       ops.PHI,                 -- 101: phi
       ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 103: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 290,-- 105: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 289,-- 103: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 363,-- 105: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 107: push_literal(19)
       ops.BI_EQ,               -- 109: bi_eq
       ops.JMP_UNLESS, 127, 127,-- 110: jmp_unless(127,127)
       ops.PUSH_FRAME,          -- 113: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 114: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 114: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 116: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 117: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 119: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 120: get_slot_direct(23)
-      ops.PUSH_LITERAL, 281,   -- 122: push_literal(281)
+      ops.PUSH_LITERAL, 354,   -- 122: push_literal(354)
       ops.INVOKE, 2,           -- 124: invoke(2)
       ops.POP,                 -- 126: pop
       ops.PHI,                 -- 127: phi
       ops.PHI,                 -- 128: phi
       ops.PUSH_LOCAL_FRAME,    -- 129: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 130: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 278,-- 132: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 351,-- 132: get_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 134: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 135: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 137: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 137: get_slot_direct(224)
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 140: get_slot_direct(23)
       ops.SET_SLOT_INDIRECT,   -- 142: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 144: get_slot_direct(23)
       ops.PUSH_LITERAL, 118,   -- 146: push_literal(118)
-      ops.SET_SLOT_DIRECT, 279,-- 148: set_slot_direct(279)
+      ops.SET_SLOT_DIRECT, 352,-- 148: set_slot_direct(352)
       ops.PUSH_LITERAL, 0,     -- 150: push_literal(0)
       ops.RETURN               -- 152: return
     }
   },
   ifunc.Function:new{ -- "new_scope"
     name = jsval.newString("new_scope"),
-    id = 51,
+    id = 60,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 3: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 3: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_FRAME,          -- 6: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 7: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 292,-- 9: set_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 328,-- 7: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 365,-- 9: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 12: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 14: push_frame
@@ -6469,57 +8015,57 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 119,-- 18: get_slot_direct_check(119)
       ops.SWAP,                -- 20: swap
       ops.PUSH_FRAME,          -- 21: push_frame
-      ops.GET_SLOT_DIRECT, 261,-- 22: get_slot_direct(261)
+      ops.GET_SLOT_DIRECT, 334,-- 22: get_slot_direct(334)
       ops.INVOKE, 1,           -- 24: invoke(1)
-      ops.SET_SLOT_DIRECT, 255,-- 26: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 26: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 29: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 29: get_slot_direct(328)
       ops.NEW_OBJECT,          -- 31: new_object
-      ops.SET_SLOT_DIRECT, 278,-- 32: set_slot_direct(278)
+      ops.SET_SLOT_DIRECT, 351,-- 32: set_slot_direct(351)
       ops.PUSH_FRAME,          -- 34: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 35: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 35: get_slot_direct(328)
       ops.NEW_OBJECT,          -- 37: new_object
-      ops.SET_SLOT_DIRECT, 286,-- 38: set_slot_direct(286)
+      ops.SET_SLOT_DIRECT, 359,-- 38: set_slot_direct(359)
       ops.PUSH_FRAME,          -- 40: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 41: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 41: get_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 44: get_slot_direct(292)
-      ops.SET_SLOT_DIRECT, 287,-- 46: set_slot_direct(287)
+      ops.GET_SLOT_DIRECT, 365,-- 44: get_slot_direct(365)
+      ops.SET_SLOT_DIRECT, 360,-- 46: set_slot_direct(360)
       ops.PUSH_FRAME,          -- 48: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 49: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 49: get_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 52: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 52: get_slot_direct(365)
       ops.JMP_UNLESS, 67, 69,  -- 54: jmp_unless(67,69)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 58: get_slot_direct(292)
-      ops.GET_SLOT_DIRECT, 293,-- 60: get_slot_direct(293)
+      ops.GET_SLOT_DIRECT, 365,-- 58: get_slot_direct(365)
+      ops.GET_SLOT_DIRECT, 366,-- 60: get_slot_direct(366)
       ops.PUSH_LITERAL, 31,    -- 62: push_literal(31)
       ops.BI_ADD,              -- 64: bi_add
       ops.JMP, 69,             -- 65: jmp(69)
       ops.PUSH_LITERAL, 18,    -- 67: push_literal(18)
       ops.PHI,                 -- 69: phi
-      ops.SET_SLOT_DIRECT, 293,-- 70: set_slot_direct(293)
+      ops.SET_SLOT_DIRECT, 366,-- 70: set_slot_direct(366)
       ops.PUSH_FRAME,          -- 72: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 73: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 73: get_slot_direct(328)
       ops.RETURN               -- 75: return
     }
   },
   ifunc.Function:new{ -- "copy_scope"
     name = jsval.newString("copy_scope"),
-    id = 52,
+    id = 61,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 3: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 3: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 5: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 6: get_slot_direct(14)
-      ops.GET_SLOT_DIRECT, 294,-- 8: get_slot_direct(294)
+      ops.GET_SLOT_DIRECT, 367,-- 8: get_slot_direct(367)
       ops.UN_NOT,              -- 10: un_not
       ops.JMP_UNLESS, 18, 18,  -- 11: jmp_unless(18,18)
       ops.PUSH_FRAME,          -- 14: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 15: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 15: get_slot_direct(328)
       ops.RETURN,              -- 17: return
       ops.PHI,                 -- 18: phi
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
@@ -6529,55 +8075,55 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 119,-- 24: get_slot_direct_check(119)
       ops.SWAP,                -- 26: swap
       ops.PUSH_FRAME,          -- 27: push_frame
-      ops.GET_SLOT_DIRECT, 261,-- 28: get_slot_direct(261)
+      ops.GET_SLOT_DIRECT, 334,-- 28: get_slot_direct(334)
       ops.INVOKE, 1,           -- 30: invoke(1)
-      ops.SET_SLOT_DIRECT, 292,-- 32: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 32: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 35: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 35: get_slot_direct(365)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 38: get_slot_direct(14)
       ops.DUP,                 -- 40: dup
-      ops.GET_SLOT_DIRECT_CHECK, 294,-- 41: get_slot_direct_check(294)
+      ops.GET_SLOT_DIRECT_CHECK, 367,-- 41: get_slot_direct_check(367)
       ops.SWAP,                -- 43: swap
       ops.NEW_OBJECT,          -- 44: new_object
       ops.PUSH_FRAME,          -- 45: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 46: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 278,-- 48: get_slot_direct(278)
+      ops.GET_SLOT_DIRECT, 328,-- 46: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 351,-- 48: get_slot_direct(351)
       ops.INVOKE, 2,           -- 50: invoke(2)
-      ops.SET_SLOT_DIRECT, 278,-- 52: set_slot_direct(278)
+      ops.SET_SLOT_DIRECT, 351,-- 52: set_slot_direct(351)
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 55: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 55: get_slot_direct(365)
       ops.PUSH_FRAME,          -- 57: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 58: get_slot_direct(14)
       ops.DUP,                 -- 60: dup
-      ops.GET_SLOT_DIRECT_CHECK, 294,-- 61: get_slot_direct_check(294)
+      ops.GET_SLOT_DIRECT_CHECK, 367,-- 61: get_slot_direct_check(367)
       ops.SWAP,                -- 63: swap
       ops.NEW_OBJECT,          -- 64: new_object
       ops.PUSH_FRAME,          -- 65: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 66: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 68: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 66: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 68: get_slot_direct(359)
       ops.INVOKE, 2,           -- 70: invoke(2)
-      ops.SET_SLOT_DIRECT, 286,-- 72: set_slot_direct(286)
+      ops.SET_SLOT_DIRECT, 359,-- 72: set_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 75: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 75: get_slot_direct(365)
       ops.PUSH_FRAME,          -- 77: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 78: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 287,-- 80: get_slot_direct(287)
-      ops.SET_SLOT_DIRECT, 287,-- 82: set_slot_direct(287)
+      ops.GET_SLOT_DIRECT, 328,-- 78: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 360,-- 80: get_slot_direct(360)
+      ops.SET_SLOT_DIRECT, 360,-- 82: set_slot_direct(360)
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 85: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 85: get_slot_direct(365)
       ops.PUSH_FRAME,          -- 87: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 88: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 293,-- 90: get_slot_direct(293)
-      ops.SET_SLOT_DIRECT, 293,-- 92: set_slot_direct(293)
+      ops.GET_SLOT_DIRECT, 328,-- 88: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 366,-- 90: get_slot_direct(366)
+      ops.SET_SLOT_DIRECT, 366,-- 92: set_slot_direct(366)
       ops.PUSH_LOCAL_FRAME,    -- 94: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 95: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 95: get_slot_direct(365)
       ops.RETURN               -- 97: return
     }
   },
   ifunc.Function:new{ -- "advance"
     name = jsval.newString("advance"),
-    id = 53,
+    id = 62,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -6587,100 +8133,100 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 14: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 14: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
       ops.SET_SLOT_DIRECT, 116,-- 19: set_slot_direct(116)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 24: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 24: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
       ops.SET_SLOT_DIRECT, 110,-- 29: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 32: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 32: get_slot_direct(368)
       ops.DUP,                 -- 34: dup
       ops.JMP_UNLESS, 49, 49,  -- 35: jmp_unless(49,49)
       ops.POP,                 -- 38: pop
       ops.PUSH_FRAME,          -- 39: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 40: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 42: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 40: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 42: get_slot_direct(368)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 45: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 45: get_slot_direct(368)
       ops.BI_EQ,               -- 47: bi_eq
       ops.UN_NOT,              -- 48: un_not
       ops.PHI,                 -- 49: phi
       ops.JMP_UNLESS, 74, 74,  -- 50: jmp_unless(74,74)
       ops.PUSH_FRAME,          -- 53: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 54: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 54: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 57: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 59: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 60: get_slot_direct(257)
-      ops.PUSH_LITERAL, 296,   -- 62: push_literal(296)
+      ops.GET_SLOT_DIRECT, 330,-- 60: get_slot_direct(330)
+      ops.PUSH_LITERAL, 369,   -- 62: push_literal(369)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 65: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 65: get_slot_direct(368)
       ops.BI_ADD,              -- 67: bi_add
-      ops.PUSH_LITERAL, 297,   -- 68: push_literal(297)
+      ops.PUSH_LITERAL, 370,   -- 68: push_literal(370)
       ops.BI_ADD,              -- 70: bi_add
       ops.INVOKE, 2,           -- 71: invoke(2)
       ops.POP,                 -- 73: pop
       ops.PHI,                 -- 74: phi
       ops.PUSH_FRAME,          -- 75: push_frame
-      ops.GET_SLOT_DIRECT, 259,-- 76: get_slot_direct(259)
+      ops.GET_SLOT_DIRECT, 332,-- 76: get_slot_direct(332)
       ops.PUSH_FRAME,          -- 78: push_frame
-      ops.GET_SLOT_DIRECT, 258,-- 79: get_slot_direct(258)
+      ops.GET_SLOT_DIRECT, 331,-- 79: get_slot_direct(331)
       ops.GET_SLOT_DIRECT, 55, -- 81: get_slot_direct(55)
       ops.BI_GTE,              -- 83: bi_gte
       ops.JMP_UNLESS, 101, 101,-- 84: jmp_unless(101,101)
       ops.PUSH_FRAME,          -- 87: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 88: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 90: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 91: get_slot_direct(256)
-      ops.PUSH_LITERAL, 298,   -- 93: push_literal(298)
+      ops.GET_SLOT_DIRECT, 329,-- 91: get_slot_direct(329)
+      ops.PUSH_LITERAL, 371,   -- 93: push_literal(371)
       ops.GET_SLOT_INDIRECT,   -- 95: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 257,-- 96: set_slot_direct(257)
+      ops.SET_SLOT_DIRECT, 330,-- 96: set_slot_direct(330)
       ops.PUSH_LITERAL, 0,     -- 98: push_literal(0)
       ops.RETURN,              -- 100: return
       ops.PHI,                 -- 101: phi
       ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
       ops.PUSH_FRAME,          -- 103: push_frame
-      ops.GET_SLOT_DIRECT, 258,-- 104: get_slot_direct(258)
+      ops.GET_SLOT_DIRECT, 331,-- 104: get_slot_direct(331)
       ops.PUSH_FRAME,          -- 106: push_frame
-      ops.GET_SLOT_DIRECT, 259,-- 107: get_slot_direct(259)
+      ops.GET_SLOT_DIRECT, 332,-- 107: get_slot_direct(332)
       ops.GET_SLOT_INDIRECT,   -- 109: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 209,-- 110: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 110: set_slot_direct(289)
       ops.PUSH_FRAME,          -- 112: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 113: get_slot_direct(117)
       ops.DUP,                 -- 115: dup
-      ops.GET_SLOT_DIRECT, 259,-- 116: get_slot_direct(259)
+      ops.GET_SLOT_DIRECT, 332,-- 116: get_slot_direct(332)
       ops.PUSH_LITERAL, 31,    -- 118: push_literal(31)
       ops.BI_ADD,              -- 120: bi_add
-      ops.SET_SLOT_DIRECT, 259,-- 121: set_slot_direct(259)
+      ops.SET_SLOT_DIRECT, 332,-- 121: set_slot_direct(332)
       ops.PUSH_LOCAL_FRAME,    -- 123: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 125: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 215,-- 127: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 289,-- 125: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 224,-- 127: get_slot_direct(224)
       ops.SET_SLOT_DIRECT, 110,-- 129: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 132: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 133: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 214,-- 135: get_slot_direct(214)
-      ops.SET_SLOT_DIRECT, 219,-- 137: set_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 289,-- 133: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 293,-- 135: get_slot_direct(293)
+      ops.SET_SLOT_DIRECT, 296,-- 137: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 140: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 140: get_slot_direct(296)
       ops.PUSH_LITERAL, 19,    -- 142: push_literal(19)
       ops.BI_EQ,               -- 144: bi_eq
       ops.JMP_UNLESS, 165, 266,-- 145: jmp_unless(165,266)
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
       ops.PUSH_FRAME,          -- 149: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 150: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 150: get_slot_direct(328)
       ops.DUP,                 -- 152: dup
-      ops.GET_SLOT_DIRECT_CHECK, 289,-- 153: get_slot_direct_check(289)
+      ops.GET_SLOT_DIRECT_CHECK, 362,-- 153: get_slot_direct_check(362)
       ops.SWAP,                -- 155: swap
       ops.PUSH_LOCAL_FRAME,    -- 156: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 157: get_slot_direct(110)
@@ -6688,13 +8234,13 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 116,-- 161: set_slot_direct(116)
       ops.JMP, 266,            -- 163: jmp(266)
       ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 166: get_slot_direct(219)
-      ops.PUSH_LITERAL, 247,   -- 168: push_literal(247)
+      ops.GET_SLOT_DIRECT, 296,-- 166: get_slot_direct(296)
+      ops.PUSH_LITERAL, 320,   -- 168: push_literal(320)
       ops.BI_EQ,               -- 170: bi_eq
       ops.JMP_UNLESS, 212, 265,-- 171: jmp_unless(212,265)
       ops.PUSH_LOCAL_FRAME,    -- 174: push_local_frame
       ops.PUSH_FRAME,          -- 175: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 176: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 176: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 179: get_slot_direct(110)
       ops.GET_SLOT_INDIRECT,   -- 181: get_slot_indirect
@@ -6704,12 +8250,12 @@ startup.functions = {
       ops.UN_NOT,              -- 187: un_not
       ops.JMP_UNLESS, 209, 209,-- 188: jmp_unless(209,209)
       ops.PUSH_FRAME,          -- 191: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 192: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 192: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 194: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 195: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 197: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 198: get_slot_direct(209)
-      ops.PUSH_LITERAL, 299,   -- 200: push_literal(299)
+      ops.GET_SLOT_DIRECT, 289,-- 198: get_slot_direct(289)
+      ops.PUSH_LITERAL, 372,   -- 200: push_literal(372)
       ops.PUSH_LOCAL_FRAME,    -- 202: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 203: get_slot_direct(110)
       ops.BI_ADD,              -- 205: bi_add
@@ -6718,7 +8264,7 @@ startup.functions = {
       ops.PHI,                 -- 209: phi
       ops.JMP, 265,            -- 210: jmp(265)
       ops.PUSH_LOCAL_FRAME,    -- 212: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 213: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 213: get_slot_direct(296)
       ops.PUSH_LITERAL, 38,    -- 215: push_literal(38)
       ops.BI_EQ,               -- 217: bi_eq
       ops.DUP,                 -- 218: dup
@@ -6726,28 +8272,28 @@ startup.functions = {
       ops.JMP_UNLESS, 230, 230,-- 220: jmp_unless(230,230)
       ops.POP,                 -- 223: pop
       ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 225: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 225: get_slot_direct(296)
       ops.PUSH_LITERAL, 86,    -- 227: push_literal(86)
       ops.BI_EQ,               -- 229: bi_eq
       ops.PHI,                 -- 230: phi
       ops.JMP_UNLESS, 250, 264,-- 231: jmp_unless(250,264)
       ops.PUSH_LOCAL_FRAME,    -- 234: push_local_frame
       ops.PUSH_FRAME,          -- 235: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 236: get_slot_direct(256)
-      ops.PUSH_LITERAL, 300,   -- 238: push_literal(300)
+      ops.GET_SLOT_DIRECT, 329,-- 236: get_slot_direct(329)
+      ops.PUSH_LITERAL, 373,   -- 238: push_literal(373)
       ops.GET_SLOT_INDIRECT,   -- 240: get_slot_indirect
       ops.SET_SLOT_DIRECT, 116,-- 241: set_slot_direct(116)
       ops.PUSH_LOCAL_FRAME,    -- 243: push_local_frame
-      ops.PUSH_LITERAL, 301,   -- 244: push_literal(301)
-      ops.SET_SLOT_DIRECT, 219,-- 246: set_slot_direct(219)
+      ops.PUSH_LITERAL, 374,   -- 244: push_literal(374)
+      ops.SET_SLOT_DIRECT, 296,-- 246: set_slot_direct(296)
       ops.JMP, 264,            -- 248: jmp(264)
       ops.PUSH_FRAME,          -- 250: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 251: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 251: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 253: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 254: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 256: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 257: get_slot_direct(209)
-      ops.PUSH_LITERAL, 302,   -- 259: push_literal(302)
+      ops.GET_SLOT_DIRECT, 289,-- 257: get_slot_direct(289)
+      ops.PUSH_LITERAL, 375,   -- 259: push_literal(375)
       ops.INVOKE, 2,           -- 261: invoke(2)
       ops.POP,                 -- 263: pop
       ops.PHI,                 -- 264: phi
@@ -6763,37 +8309,37 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 277: push_local_frame
       ops.GET_SLOT_DIRECT, 116,-- 278: get_slot_direct(116)
       ops.INVOKE, 1,           -- 280: invoke(1)
-      ops.SET_SLOT_DIRECT, 257,-- 282: set_slot_direct(257)
+      ops.SET_SLOT_DIRECT, 330,-- 282: set_slot_direct(330)
       ops.PUSH_FRAME,          -- 284: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 285: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 285: get_slot_direct(330)
       ops.PUSH_LOCAL_FRAME,    -- 287: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 288: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 288: get_slot_direct(289)
       ops.GET_SLOT_DIRECT, 52, -- 290: get_slot_direct(52)
       ops.SET_SLOT_DIRECT, 52, -- 292: set_slot_direct(52)
       ops.PUSH_FRAME,          -- 294: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 295: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 295: get_slot_direct(330)
       ops.PUSH_LOCAL_FRAME,    -- 297: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 298: get_slot_direct(209)
-      ops.GET_SLOT_DIRECT, 211,-- 300: get_slot_direct(211)
-      ops.SET_SLOT_DIRECT, 211,-- 302: set_slot_direct(211)
+      ops.GET_SLOT_DIRECT, 289,-- 298: get_slot_direct(289)
+      ops.GET_SLOT_DIRECT, 291,-- 300: get_slot_direct(291)
+      ops.SET_SLOT_DIRECT, 291,-- 302: set_slot_direct(291)
       ops.PUSH_FRAME,          -- 304: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 305: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 305: get_slot_direct(330)
       ops.PUSH_LOCAL_FRAME,    -- 307: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 308: get_slot_direct(110)
-      ops.SET_SLOT_DIRECT, 215,-- 310: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 310: set_slot_direct(224)
       ops.PUSH_FRAME,          -- 312: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 313: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 313: get_slot_direct(330)
       ops.PUSH_LOCAL_FRAME,    -- 315: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 316: get_slot_direct(219)
-      ops.SET_SLOT_DIRECT, 290,-- 318: set_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 296,-- 316: get_slot_direct(296)
+      ops.SET_SLOT_DIRECT, 363,-- 318: set_slot_direct(363)
       ops.PUSH_FRAME,          -- 320: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 321: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 321: get_slot_direct(330)
       ops.RETURN               -- 323: return
     }
   },
   ifunc.Function:new{ -- "expression"
     name = jsval.newString("expression"),
-    id = 54,
+    id = 63,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -6803,72 +8349,72 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 303,-- 8: set_slot_direct(303)
+      ops.SET_SLOT_DIRECT, 376,-- 8: set_slot_direct(376)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 304,-- 14: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 14: set_slot_direct(377)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 19: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 19: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_FRAME,          -- 22: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 23: get_slot_direct(257)
-      ops.SET_SLOT_DIRECT, 209,-- 25: set_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 330,-- 23: get_slot_direct(330)
+      ops.SET_SLOT_DIRECT, 289,-- 25: set_slot_direct(289)
       ops.PUSH_FRAME,          -- 27: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 28: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 28: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 31: get_slot_direct(26)
       ops.INVOKE, 0,           -- 33: invoke(0)
       ops.POP,                 -- 35: pop
       ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 38: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 38: get_slot_direct(289)
       ops.DUP,                 -- 40: dup
-      ops.GET_SLOT_DIRECT_CHECK, 282,-- 41: get_slot_direct_check(282)
+      ops.GET_SLOT_DIRECT_CHECK, 355,-- 41: get_slot_direct_check(355)
       ops.SWAP,                -- 43: swap
       ops.INVOKE, 0,           -- 44: invoke(0)
-      ops.SET_SLOT_DIRECT, 304,-- 46: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 46: set_slot_direct(377)
       ops.JMP_INTO_LOOP, 81, 96,-- 48: jmp_into_loop(81,96)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.PUSH_FRAME,          -- 52: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 53: get_slot_direct(257)
-      ops.SET_SLOT_DIRECT, 209,-- 55: set_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 330,-- 53: get_slot_direct(330)
+      ops.SET_SLOT_DIRECT, 289,-- 55: set_slot_direct(289)
       ops.PUSH_FRAME,          -- 57: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 58: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 58: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 61: get_slot_direct(26)
       ops.INVOKE, 0,           -- 63: invoke(0)
       ops.POP,                 -- 65: pop
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 68: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 68: get_slot_direct(289)
       ops.DUP,                 -- 70: dup
-      ops.GET_SLOT_DIRECT_CHECK, 283,-- 71: get_slot_direct_check(283)
+      ops.GET_SLOT_DIRECT_CHECK, 356,-- 71: get_slot_direct_check(356)
       ops.SWAP,                -- 73: swap
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 75: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 75: get_slot_direct(377)
       ops.INVOKE, 1,           -- 77: invoke(1)
-      ops.SET_SLOT_DIRECT, 304,-- 79: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 79: set_slot_direct(377)
       ops.PHI,                 -- 81: phi
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
-      ops.GET_SLOT_DIRECT, 303,-- 83: get_slot_direct(303)
+      ops.GET_SLOT_DIRECT, 376,-- 83: get_slot_direct(376)
       ops.PUSH_FRAME,          -- 85: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 86: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 285,-- 88: get_slot_direct(285)
+      ops.GET_SLOT_DIRECT, 330,-- 86: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 358,-- 88: get_slot_direct(358)
       ops.SWAP,                -- 90: swap
       ops.BI_GT,               -- 91: bi_gt
       ops.UN_NOT,              -- 92: un_not
       ops.JMP_UNLESS, 51, 96,  -- 93: jmp_unless(51,96)
       ops.PHI,                 -- 96: phi
       ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 98: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 98: get_slot_direct(377)
       ops.RETURN               -- 100: return
     }
   },
   ifunc.Function:new{ -- "statement"
     name = jsval.newString("statement"),
-    id = 55,
+    id = 64,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -6880,22 +8426,22 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 110,-- 8: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 10: push_local_frame
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 12: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 12: get_slot_direct(330)
       ops.SET_SLOT_DIRECT, 23, -- 14: set_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 17: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 284,-- 19: get_slot_direct(284)
+      ops.GET_SLOT_DIRECT, 357,-- 19: get_slot_direct(357)
       ops.JMP_UNLESS, 58, 186, -- 21: jmp_unless(58,186)
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 25: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 25: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
       ops.INVOKE, 0,           -- 30: invoke(0)
       ops.POP,                 -- 32: pop
       ops.PUSH_FRAME,          -- 33: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 34: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 34: get_slot_direct(328)
       ops.DUP,                 -- 36: dup
-      ops.GET_SLOT_DIRECT_CHECK, 291,-- 37: get_slot_direct_check(291)
+      ops.GET_SLOT_DIRECT_CHECK, 364,-- 37: get_slot_direct_check(364)
       ops.SWAP,                -- 39: swap
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 41: get_slot_direct(23)
@@ -6904,14 +8450,14 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 47: get_slot_direct(23)
       ops.DUP,                 -- 49: dup
-      ops.GET_SLOT_DIRECT_CHECK, 284,-- 50: get_slot_direct_check(284)
+      ops.GET_SLOT_DIRECT_CHECK, 357,-- 50: get_slot_direct_check(357)
       ops.SWAP,                -- 52: swap
       ops.INVOKE, 0,           -- 53: invoke(0)
       ops.RETURN,              -- 55: return
       ops.JMP, 186,            -- 56: jmp(186)
       ops.PUSH_LOCAL_FRAME,    -- 58: push_local_frame
       ops.PUSH_FRAME,          -- 59: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 60: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 60: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 63: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 65: push_literal(18)
@@ -6919,15 +8465,15 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 110,-- 69: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 72: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 274,-- 74: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 74: get_slot_direct(347)
       ops.UN_NOT,              -- 76: un_not
       ops.DUP,                 -- 77: dup
       ops.JMP_UNLESS, 117, 117,-- 78: jmp_unless(117,117)
       ops.POP,                 -- 81: pop
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 83: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 295,-- 85: get_slot_direct(295)
-      ops.PUSH_LITERAL, 305,   -- 87: push_literal(305)
+      ops.GET_SLOT_DIRECT, 368,-- 85: get_slot_direct(368)
+      ops.PUSH_LITERAL, 378,   -- 87: push_literal(378)
       ops.BI_EQ,               -- 89: bi_eq
       ops.UN_NOT,              -- 90: un_not
       ops.DUP,                 -- 91: dup
@@ -6935,7 +8481,7 @@ startup.functions = {
       ops.POP,                 -- 95: pop
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 97: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 290,-- 99: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 99: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 101: push_literal(25)
       ops.BI_EQ,               -- 103: bi_eq
       ops.DUP,                 -- 104: dup
@@ -6950,18 +8496,18 @@ startup.functions = {
       ops.PHI,                 -- 117: phi
       ops.JMP_UNLESS, 135, 135,-- 118: jmp_unless(135,135)
       ops.PUSH_FRAME,          -- 121: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 122: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 122: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 125: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 127: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 128: get_slot_direct(110)
-      ops.PUSH_LITERAL, 306,   -- 130: push_literal(306)
+      ops.PUSH_LITERAL, 379,   -- 130: push_literal(379)
       ops.INVOKE, 2,           -- 132: invoke(2)
       ops.POP,                 -- 134: pop
       ops.PHI,                 -- 135: phi
       ops.PUSH_LOCAL_FRAME,    -- 136: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 137: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 290,-- 139: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 139: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 141: push_literal(25)
       ops.BI_EQ,               -- 143: bi_eq
       ops.DUP,                 -- 144: dup
@@ -6974,9 +8520,9 @@ startup.functions = {
       ops.JMP_UNLESS, 168, 168,-- 155: jmp_unless(168,168)
       ops.POP,                 -- 158: pop
       ops.PUSH_FRAME,          -- 159: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 160: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 162: get_slot_direct(295)
-      ops.PUSH_LITERAL, 307,   -- 164: push_literal(307)
+      ops.GET_SLOT_DIRECT, 330,-- 160: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 162: get_slot_direct(368)
+      ops.PUSH_LITERAL, 380,   -- 164: push_literal(380)
       ops.BI_EQ,               -- 166: bi_eq
       ops.UN_NOT,              -- 167: un_not
       ops.PHI,                 -- 168: phi
@@ -6984,10 +8530,10 @@ startup.functions = {
       ops.UN_NOT,              -- 170: un_not
       ops.JMP_UNLESS, 185, 185,-- 171: jmp_unless(185,185)
       ops.PUSH_FRAME,          -- 174: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 175: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 175: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 177: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 178: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 180: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 180: push_literal(380)
       ops.INVOKE, 1,           -- 182: invoke(1)
       ops.POP,                 -- 184: pop
       ops.PHI,                 -- 185: phi
@@ -7008,7 +8554,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "hoist_var"
     name = jsval.newString("hoist_var"),
-    id = 56,
+    id = 65,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -7018,14 +8564,14 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 308,-- 8: set_slot_direct(308)
+      ops.SET_SLOT_DIRECT, 381,-- 8: set_slot_direct(381)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
       ops.SET_SLOT_DIRECT, 110,-- 14: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 19: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 19: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 24: set_slot_direct(53)
@@ -7034,18 +8580,18 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 110,-- 28: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.NEW_ARRAY,           -- 31: new_array
-      ops.SET_SLOT_DIRECT, 292,-- 32: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 32: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 35: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 37: set_slot_direct(53)
       ops.JMP_INTO_LOOP, 103, 118,-- 39: jmp_into_loop(103,118)
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
-      ops.GET_SLOT_DIRECT, 308,-- 43: get_slot_direct(308)
+      ops.GET_SLOT_DIRECT, 381,-- 43: get_slot_direct(381)
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 46: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 48: get_slot_indirect
-      ops.GET_SLOT_DIRECT, 215,-- 49: get_slot_direct(215)
-      ops.PUSH_LITERAL, 309,   -- 51: push_literal(309)
+      ops.GET_SLOT_DIRECT, 224,-- 49: get_slot_direct(224)
+      ops.PUSH_LITERAL, 382,   -- 51: push_literal(382)
       ops.BI_EQ,               -- 53: bi_eq
       ops.JMP_UNLESS, 76, 93,  -- 54: jmp_unless(76,93)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
@@ -7054,7 +8600,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 61: get_slot_direct_check(69)
       ops.SWAP,                -- 63: swap
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 308,-- 65: get_slot_direct(308)
+      ops.GET_SLOT_DIRECT, 381,-- 65: get_slot_direct(381)
       ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 68: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 70: get_slot_indirect
@@ -7062,12 +8608,12 @@ startup.functions = {
       ops.POP,                 -- 73: pop
       ops.JMP, 93,             -- 74: jmp(93)
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 77: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 77: get_slot_direct(365)
       ops.DUP,                 -- 79: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 80: get_slot_direct_check(69)
       ops.SWAP,                -- 82: swap
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
-      ops.GET_SLOT_DIRECT, 308,-- 84: get_slot_direct(308)
+      ops.GET_SLOT_DIRECT, 381,-- 84: get_slot_direct(381)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 87: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 89: get_slot_indirect
@@ -7084,7 +8630,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 104: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 105: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
-      ops.GET_SLOT_DIRECT, 308,-- 108: get_slot_direct(308)
+      ops.GET_SLOT_DIRECT, 381,-- 108: get_slot_direct(381)
       ops.GET_SLOT_DIRECT, 55, -- 110: get_slot_direct(55)
       ops.SWAP,                -- 112: swap
       ops.BI_GT,               -- 113: bi_gt
@@ -7097,40 +8643,40 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 90,-- 123: get_slot_direct_check(90)
       ops.SWAP,                -- 125: swap
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 127: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 127: get_slot_direct(365)
       ops.INVOKE, 1,           -- 129: invoke(1)
       ops.RETURN               -- 131: return
     }
   },
   ifunc.Function:new{ -- "statements"
     name = jsval.newString("statements"),
-    id = 57,
+    id = 66,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 6: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 8: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 8: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 10: push_local_frame
       ops.NEW_ARRAY,           -- 11: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 12: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 12: set_slot_direct(296)
       ops.JMP_INTO_LOOP, 82, 89,-- 14: jmp_into_loop(82,89)
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 18: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 20: get_slot_direct(295)
-      ops.PUSH_LITERAL, 310,   -- 22: push_literal(310)
+      ops.GET_SLOT_DIRECT, 330,-- 18: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 20: get_slot_direct(368)
+      ops.PUSH_LITERAL, 245,   -- 22: push_literal(245)
       ops.BI_EQ,               -- 24: bi_eq
       ops.DUP,                 -- 25: dup
       ops.UN_NOT,              -- 26: un_not
       ops.JMP_UNLESS, 39, 39,  -- 27: jmp_unless(39,39)
       ops.POP,                 -- 30: pop
       ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 32: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 34: get_slot_direct(295)
-      ops.PUSH_LITERAL, 298,   -- 36: push_literal(298)
+      ops.GET_SLOT_DIRECT, 330,-- 32: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 34: get_slot_direct(368)
+      ops.PUSH_LITERAL, 371,   -- 36: push_literal(371)
       ops.BI_EQ,               -- 38: bi_eq
       ops.PHI,                 -- 39: phi
       ops.JMP_UNLESS, 45, 45,  -- 40: jmp_unless(45,45)
@@ -7138,24 +8684,24 @@ startup.functions = {
       ops.PHI,                 -- 45: phi
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.PUSH_FRAME,          -- 47: push_frame
-      ops.GET_SLOT_DIRECT, 266,-- 48: get_slot_direct(266)
+      ops.GET_SLOT_DIRECT, 339,-- 48: get_slot_direct(339)
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 51: get_slot_direct(26)
       ops.INVOKE, 0,           -- 53: invoke(0)
-      ops.SET_SLOT_DIRECT, 292,-- 55: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 55: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 58: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 58: get_slot_direct(365)
       ops.JMP_UNLESS, 81, 81,  -- 60: jmp_unless(81,81)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 64: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 64: get_slot_direct(296)
       ops.GET_SLOT_DIRECT, 69, -- 66: get_slot_direct(69)
       ops.DUP,                 -- 68: dup
       ops.GET_SLOT_DIRECT_CHECK, 112,-- 69: get_slot_direct_check(112)
       ops.SWAP,                -- 71: swap
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 73: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 73: get_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 75: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 76: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 76: get_slot_direct(365)
       ops.INVOKE, 2,           -- 78: invoke(2)
       ops.POP,                 -- 80: pop
       ops.PHI,                 -- 81: phi
@@ -7165,39 +8711,39 @@ startup.functions = {
       ops.JMP_UNLESS, 17, 89,  -- 86: jmp_unless(17,89)
       ops.PHI,                 -- 89: phi
       ops.PUSH_FRAME,          -- 90: push_frame
-      ops.GET_SLOT_DIRECT, 267,-- 91: get_slot_direct(267)
+      ops.GET_SLOT_DIRECT, 340,-- 91: get_slot_direct(340)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 94: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 97: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 97: get_slot_direct(296)
       ops.INVOKE, 1,           -- 99: invoke(1)
       ops.RETURN               -- 101: return
     }
   },
   ifunc.Function:new{ -- "block"
     name = jsval.newString("block"),
-    id = 58,
+    id = 67,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 3: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 3: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_FRAME,          -- 6: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 7: get_slot_direct(257)
-      ops.SET_SLOT_DIRECT, 209,-- 9: set_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 330,-- 7: get_slot_direct(330)
+      ops.SET_SLOT_DIRECT, 289,-- 9: set_slot_direct(289)
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 12: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 12: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
-      ops.PUSH_LITERAL, 311,   -- 17: push_literal(311)
+      ops.PUSH_LITERAL, 244,   -- 17: push_literal(244)
       ops.INVOKE, 1,           -- 19: invoke(1)
       ops.POP,                 -- 21: pop
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 23: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 23: get_slot_direct(289)
       ops.DUP,                 -- 25: dup
-      ops.GET_SLOT_DIRECT_CHECK, 284,-- 26: get_slot_direct_check(284)
+      ops.GET_SLOT_DIRECT_CHECK, 357,-- 26: get_slot_direct_check(357)
       ops.SWAP,                -- 28: swap
       ops.INVOKE, 0,           -- 29: invoke(0)
       ops.RETURN               -- 31: return
@@ -7205,20 +8751,20 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "nud:"
     name = jsval.newString("nud:"),
-    id = 59,
+    id = 68,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 1: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 1: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 3: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 4: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 7: get_slot_direct(26)
-      ops.PUSH_LITERAL, 312,   -- 9: push_literal(312)
+      ops.PUSH_LITERAL, 383,   -- 9: push_literal(383)
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 14: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 14: get_slot_direct(224)
       ops.BI_ADD,              -- 16: bi_add
       ops.INVOKE, 2,           -- 17: invoke(2)
       ops.POP,                 -- 19: pop
@@ -7228,7 +8774,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "led:"
     name = jsval.newString("led:"),
-    id = 60,
+    id = 69,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -7238,15 +8784,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 12: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 12: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 18: get_slot_direct(26)
-      ops.PUSH_LITERAL, 313,   -- 20: push_literal(313)
+      ops.PUSH_LITERAL, 384,   -- 20: push_literal(384)
       ops.INVOKE, 2,           -- 22: invoke(2)
       ops.POP,                 -- 24: pop
       ops.PUSH_LITERAL, 0,     -- 25: push_literal(0)
@@ -7255,7 +8801,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "symbol"
     name = jsval.newString("symbol"),
-    id = 61,
+    id = 70,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -7265,61 +8811,61 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 314,-- 15: set_slot_direct(314)
+      ops.SET_SLOT_DIRECT, 385,-- 15: set_slot_direct(385)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 21: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 21: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.PUSH_FRAME,          -- 24: push_frame
       ops.GET_SLOT_DIRECT, 89, -- 25: get_slot_direct(89)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 30: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 31: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 31: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 34: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 34: get_slot_direct(368)
       ops.INVOKE, 2,           -- 36: invoke(2)
       ops.JMP_UNLESS, 50, 52,  -- 38: jmp_unless(50,52)
       ops.PUSH_FRAME,          -- 41: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 42: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 42: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 45: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 45: get_slot_direct(368)
       ops.GET_SLOT_INDIRECT,   -- 47: get_slot_indirect
       ops.JMP, 52,             -- 48: jmp(52)
       ops.PUSH_LITERAL, 41,    -- 50: push_literal(41)
       ops.PHI,                 -- 52: phi
-      ops.SET_SLOT_DIRECT, 292,-- 53: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 53: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
-      ops.GET_SLOT_DIRECT, 314,-- 57: get_slot_direct(314)
+      ops.GET_SLOT_DIRECT, 385,-- 57: get_slot_direct(385)
       ops.DUP,                 -- 59: dup
       ops.UN_NOT,              -- 60: un_not
       ops.JMP_UNLESS, 67, 67,  -- 61: jmp_unless(67,67)
       ops.POP,                 -- 64: pop
       ops.PUSH_LITERAL, 18,    -- 65: push_literal(18)
       ops.PHI,                 -- 67: phi
-      ops.SET_SLOT_DIRECT, 314,-- 68: set_slot_direct(314)
+      ops.SET_SLOT_DIRECT, 385,-- 68: set_slot_direct(385)
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 71: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 71: get_slot_direct(365)
       ops.JMP_UNLESS, 99, 146, -- 73: jmp_unless(99,146)
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 314,-- 77: get_slot_direct(314)
+      ops.GET_SLOT_DIRECT, 385,-- 77: get_slot_direct(385)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 80: get_slot_direct(292)
-      ops.GET_SLOT_DIRECT, 285,-- 82: get_slot_direct(285)
+      ops.GET_SLOT_DIRECT, 365,-- 80: get_slot_direct(365)
+      ops.GET_SLOT_DIRECT, 358,-- 82: get_slot_direct(358)
       ops.BI_GTE,              -- 84: bi_gte
       ops.JMP_UNLESS, 96, 96,  -- 85: jmp_unless(96,96)
       ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 89: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 89: get_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
-      ops.GET_SLOT_DIRECT, 314,-- 92: get_slot_direct(314)
-      ops.SET_SLOT_DIRECT, 285,-- 94: set_slot_direct(285)
+      ops.GET_SLOT_DIRECT, 385,-- 92: get_slot_direct(385)
+      ops.SET_SLOT_DIRECT, 358,-- 94: set_slot_direct(358)
       ops.PHI,                 -- 96: phi
       ops.JMP, 146,            -- 97: jmp(146)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
@@ -7329,39 +8875,39 @@ startup.functions = {
       ops.GET_SLOT_DIRECT_CHECK, 119,-- 104: get_slot_direct_check(119)
       ops.SWAP,                -- 106: swap
       ops.PUSH_FRAME,          -- 107: push_frame
-      ops.GET_SLOT_DIRECT, 269,-- 108: get_slot_direct(269)
+      ops.GET_SLOT_DIRECT, 342,-- 108: get_slot_direct(342)
       ops.INVOKE, 1,           -- 110: invoke(1)
-      ops.SET_SLOT_DIRECT, 292,-- 112: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 112: set_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 114: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 115: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 115: get_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 117: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 118: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 118: get_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 121: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 121: get_slot_direct(368)
       ops.OVER,                -- 123: over
-      ops.SET_SLOT_DIRECT, 215,-- 124: set_slot_direct(215)
-      ops.SET_SLOT_DIRECT, 295,-- 126: set_slot_direct(295)
+      ops.SET_SLOT_DIRECT, 224,-- 124: set_slot_direct(224)
+      ops.SET_SLOT_DIRECT, 368,-- 126: set_slot_direct(368)
       ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 129: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 129: get_slot_direct(365)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
-      ops.GET_SLOT_DIRECT, 314,-- 132: get_slot_direct(314)
-      ops.SET_SLOT_DIRECT, 285,-- 134: set_slot_direct(285)
+      ops.GET_SLOT_DIRECT, 385,-- 132: get_slot_direct(385)
+      ops.SET_SLOT_DIRECT, 358,-- 134: set_slot_direct(358)
       ops.PUSH_FRAME,          -- 136: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 137: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 137: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 140: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 140: get_slot_direct(368)
       ops.PUSH_LOCAL_FRAME,    -- 142: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 143: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 143: get_slot_direct(365)
       ops.SET_SLOT_INDIRECT,   -- 145: set_slot_indirect
       ops.PHI,                 -- 146: phi
       ops.PUSH_LOCAL_FRAME,    -- 147: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 148: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 148: get_slot_direct(365)
       ops.RETURN               -- 150: return
     }
   },
   ifunc.Function:new{ -- "constant"
     name = jsval.newString("constant"),
-    id = 62,
+    id = 71,
     nargs = 2,
     max_stack = 4,
     bytecode = {
@@ -7371,7 +8917,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 292,-- 8: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 8: set_slot_direct(365)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
@@ -7383,22 +8929,22 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 128,-- 21: set_slot_direct(128)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 25: get_slot_direct(270)
+      ops.GET_SLOT_DIRECT, 343,-- 25: get_slot_direct(343)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 31: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 31: get_slot_direct(365)
       ops.INVOKE, 1,           -- 33: invoke(1)
       ops.SET_SLOT_DIRECT, 128,-- 35: set_slot_direct(128)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
       ops.GET_SLOT_DIRECT, 128,-- 38: get_slot_direct(128)
-      ops.NEW_FUNCTION, 63,    -- 40: new_function(63)
-      ops.SET_SLOT_DIRECT, 282,-- 42: set_slot_direct(282)
+      ops.NEW_FUNCTION, 72,    -- 40: new_function(72)
+      ops.SET_SLOT_DIRECT, 355,-- 42: set_slot_direct(355)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
       ops.GET_SLOT_DIRECT, 128,-- 45: get_slot_direct(128)
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 48: get_slot_direct(110)
-      ops.SET_SLOT_DIRECT, 215,-- 50: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 50: set_slot_direct(224)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
       ops.GET_SLOT_DIRECT, 128,-- 53: get_slot_direct(128)
       ops.RETURN               -- 55: return
@@ -7406,14 +8952,14 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".nud"
     name = jsval.newString(".nud"),
-    id = 63,
+    id = 72,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 1: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 1: get_slot_direct(328)
       ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT_CHECK, 291,-- 4: get_slot_direct_check(291)
+      ops.GET_SLOT_DIRECT_CHECK, 364,-- 4: get_slot_direct_check(364)
       ops.SWAP,                -- 6: swap
       ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
@@ -7422,17 +8968,17 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 16: push_frame
-      ops.GET_SLOT_DIRECT, 256,-- 17: get_slot_direct(256)
+      ops.GET_SLOT_DIRECT, 329,-- 17: get_slot_direct(329)
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 295,-- 22: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 22: get_slot_direct(368)
       ops.GET_SLOT_INDIRECT,   -- 24: get_slot_indirect
-      ops.GET_SLOT_DIRECT, 215,-- 25: get_slot_direct(215)
-      ops.SET_SLOT_DIRECT, 215,-- 27: set_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 25: get_slot_direct(224)
+      ops.SET_SLOT_DIRECT, 224,-- 27: set_slot_direct(224)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
-      ops.PUSH_LITERAL, 301,   -- 32: push_literal(301)
-      ops.SET_SLOT_DIRECT, 290,-- 34: set_slot_direct(290)
+      ops.PUSH_LITERAL, 374,   -- 32: push_literal(374)
+      ops.SET_SLOT_DIRECT, 363,-- 34: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 37: get_slot_direct(26)
       ops.RETURN               -- 39: return
@@ -7440,437 +8986,56 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "infix"
     name = jsval.newString("infix"),
-    id = 64,
-    nargs = 3,
-    max_stack = 5,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_FRAME,          -- 13: push_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 314,-- 15: set_slot_direct(314)
-      ops.DUP,                 -- 17: dup
-      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
-      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 283,-- 22: set_slot_direct(283)
-      ops.POP,                 -- 24: pop
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 28: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 32: get_slot_direct(270)
-      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 38: get_slot_direct(295)
-      ops.PUSH_FRAME,          -- 40: push_frame
-      ops.GET_SLOT_DIRECT, 314,-- 41: get_slot_direct(314)
-      ops.INVOKE, 2,           -- 43: invoke(2)
-      ops.SET_SLOT_DIRECT, 292,-- 45: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 48: get_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
-      ops.GET_SLOT_DIRECT, 283,-- 51: get_slot_direct(283)
-      ops.DUP,                 -- 53: dup
-      ops.UN_NOT,              -- 54: un_not
-      ops.JMP_UNLESS, 61, 61,  -- 55: jmp_unless(61,61)
-      ops.POP,                 -- 58: pop
-      ops.NEW_FUNCTION, 65,    -- 59: new_function(65)
-      ops.PHI,                 -- 61: phi
-      ops.SET_SLOT_DIRECT, 283,-- 62: set_slot_direct(283)
-      ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 65: get_slot_direct(292)
-      ops.RETURN               -- 67: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 65,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 15: get_slot_direct(304)
-      ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
-      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 22: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 23: get_slot_direct(265)
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 314,-- 29: get_slot_direct(314)
-      ops.INVOKE, 1,           -- 31: invoke(1)
-      ops.SET_SLOT_DIRECT, 40, -- 33: set_slot_direct(40)
-      ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 36: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 38: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 40: set_slot_direct(290)
-      ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 43: get_slot_direct(26)
-      ops.RETURN               -- 45: return
-    }
-  },
-  ifunc.Function:new{ -- "infixr"
-    name = jsval.newString("infixr"),
-    id = 66,
-    nargs = 3,
-    max_stack = 5,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_FRAME,          -- 13: push_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 314,-- 15: set_slot_direct(314)
-      ops.DUP,                 -- 17: dup
-      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
-      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 283,-- 22: set_slot_direct(283)
-      ops.POP,                 -- 24: pop
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 28: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 32: get_slot_direct(270)
-      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 38: get_slot_direct(295)
-      ops.PUSH_FRAME,          -- 40: push_frame
-      ops.GET_SLOT_DIRECT, 314,-- 41: get_slot_direct(314)
-      ops.INVOKE, 2,           -- 43: invoke(2)
-      ops.SET_SLOT_DIRECT, 292,-- 45: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 48: get_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
-      ops.GET_SLOT_DIRECT, 283,-- 51: get_slot_direct(283)
-      ops.DUP,                 -- 53: dup
-      ops.UN_NOT,              -- 54: un_not
-      ops.JMP_UNLESS, 61, 61,  -- 55: jmp_unless(61,61)
-      ops.POP,                 -- 58: pop
-      ops.NEW_FUNCTION, 67,    -- 59: new_function(67)
-      ops.PHI,                 -- 61: phi
-      ops.SET_SLOT_DIRECT, 283,-- 62: set_slot_direct(283)
-      ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 65: get_slot_direct(292)
-      ops.RETURN               -- 67: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 67,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 15: get_slot_direct(304)
-      ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
-      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 22: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 23: get_slot_direct(265)
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 314,-- 29: get_slot_direct(314)
-      ops.PUSH_LITERAL, 31,    -- 31: push_literal(31)
-      ops.BI_SUB,              -- 33: bi_sub
-      ops.INVOKE, 1,           -- 34: invoke(1)
-      ops.SET_SLOT_DIRECT, 40, -- 36: set_slot_direct(40)
-      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 39: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 41: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 43: set_slot_direct(290)
-      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
-      ops.RETURN               -- 48: return
-    }
-  },
-  ifunc.Function:new{ -- "assignment"
-    name = jsval.newString("assignment"),
-    id = 68,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_FRAME,          -- 6: push_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 273,-- 12: get_slot_direct(273)
-      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 295,-- 18: get_slot_direct(295)
-      ops.PUSH_LITERAL, 135,   -- 20: push_literal(135)
-      ops.NEW_FUNCTION, 69,    -- 22: new_function(69)
-      ops.INVOKE, 3,           -- 24: invoke(3)
-      ops.RETURN               -- 26: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 69,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 12: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 14: get_slot_direct(295)
-      ops.PUSH_LITERAL, 149,   -- 16: push_literal(149)
-      ops.BI_EQ,               -- 18: bi_eq
-      ops.UN_NOT,              -- 19: un_not
-      ops.DUP,                 -- 20: dup
-      ops.JMP_UNLESS, 49, 49,  -- 21: jmp_unless(49,49)
-      ops.POP,                 -- 24: pop
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 26: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 28: get_slot_direct(295)
-      ops.PUSH_LITERAL, 316,   -- 30: push_literal(316)
-      ops.BI_EQ,               -- 32: bi_eq
-      ops.UN_NOT,              -- 33: un_not
-      ops.DUP,                 -- 34: dup
-      ops.JMP_UNLESS, 48, 48,  -- 35: jmp_unless(48,48)
-      ops.POP,                 -- 38: pop
-      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 40: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 290,-- 42: get_slot_direct(290)
-      ops.PUSH_LITERAL, 19,    -- 44: push_literal(19)
-      ops.BI_EQ,               -- 46: bi_eq
-      ops.UN_NOT,              -- 47: un_not
-      ops.PHI,                 -- 48: phi
-      ops.PHI,                 -- 49: phi
-      ops.JMP_UNLESS, 67, 67,  -- 50: jmp_unless(67,67)
-      ops.PUSH_FRAME,          -- 53: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 54: get_slot_direct(206)
-      ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 57: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 60: get_slot_direct(304)
-      ops.PUSH_LITERAL, 317,   -- 62: push_literal(317)
-      ops.INVOKE, 2,           -- 64: invoke(2)
-      ops.POP,                 -- 66: pop
-      ops.PHI,                 -- 67: phi
-      ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 69: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 72: get_slot_direct(304)
-      ops.SET_SLOT_DIRECT, 39, -- 74: set_slot_direct(39)
-      ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 77: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 79: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 80: get_slot_direct(265)
-      ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 83: get_slot_direct(26)
-      ops.PUSH_LITERAL, 176,   -- 85: push_literal(176)
-      ops.INVOKE, 1,           -- 87: invoke(1)
-      ops.SET_SLOT_DIRECT, 40, -- 89: set_slot_direct(40)
-      ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 92: get_slot_direct(26)
-      ops.PUSH_LITERAL, 118,   -- 94: push_literal(118)
-      ops.SET_SLOT_DIRECT, 274,-- 96: set_slot_direct(274)
-      ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 99: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 101: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 103: set_slot_direct(290)
-      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
-      ops.RETURN               -- 108: return
-    }
-  },
-  ifunc.Function:new{ -- "prefix"
-    name = jsval.newString("prefix"),
-    id = 70,
-    nargs = 2,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 295,-- 8: set_slot_direct(295)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 282,-- 15: set_slot_direct(282)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 21: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
-      ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 25: get_slot_direct(270)
-      ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 295,-- 31: get_slot_direct(295)
-      ops.INVOKE, 1,           -- 33: invoke(1)
-      ops.SET_SLOT_DIRECT, 292,-- 35: set_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 38: get_slot_direct(292)
-      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 282,-- 41: get_slot_direct(282)
-      ops.DUP,                 -- 43: dup
-      ops.UN_NOT,              -- 44: un_not
-      ops.JMP_UNLESS, 51, 51,  -- 45: jmp_unless(51,51)
-      ops.POP,                 -- 48: pop
-      ops.NEW_FUNCTION, 71,    -- 49: new_function(71)
-      ops.PHI,                 -- 51: phi
-      ops.SET_SLOT_DIRECT, 282,-- 52: set_slot_direct(282)
-      ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 55: get_slot_direct(292)
-      ops.RETURN               -- 57: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 71,
-    nargs = 0,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 1: get_slot_direct(255)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT_CHECK, 291,-- 4: get_slot_direct_check(291)
-      ops.SWAP,                -- 6: swap
-      ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
-      ops.INVOKE, 1,           -- 10: invoke(1)
-      ops.POP,                 -- 12: pop
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 16: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 17: get_slot_direct(265)
-      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.PUSH_LITERAL, 318,   -- 22: push_literal(318)
-      ops.INVOKE, 1,           -- 24: invoke(1)
-      ops.SET_SLOT_DIRECT, 39, -- 26: set_slot_direct(39)
-      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
-      ops.PUSH_LITERAL, 319,   -- 31: push_literal(319)
-      ops.SET_SLOT_DIRECT, 290,-- 33: set_slot_direct(290)
-      ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 36: get_slot_direct(26)
-      ops.RETURN               -- 38: return
-    }
-  },
-  ifunc.Function:new{ -- "stmt"
-    name = jsval.newString("stmt"),
-    id = 72,
-    nargs = 2,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 292,-- 8: set_slot_direct(292)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 128,-- 21: set_slot_direct(128)
-      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
-      ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 270,-- 25: get_slot_direct(270)
-      ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 31: get_slot_direct(292)
-      ops.INVOKE, 1,           -- 33: invoke(1)
-      ops.SET_SLOT_DIRECT, 128,-- 35: set_slot_direct(128)
-      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 128,-- 38: get_slot_direct(128)
-      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 109,-- 41: get_slot_direct(109)
-      ops.SET_SLOT_DIRECT, 284,-- 43: set_slot_direct(284)
-      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 128,-- 46: get_slot_direct(128)
-      ops.RETURN               -- 48: return
-    }
-  },
-  ifunc.Function:new{ -- ".nud"
-    name = jsval.newString(".nud"),
     id = 73,
-    nargs = 0,
-    max_stack = 3,
+    nargs = 3,
+    max_stack = 5,
     bytecode = {
-      ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 1: get_slot_direct(255)
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
       ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT_CHECK, 291,-- 4: get_slot_direct_check(291)
-      ops.SWAP,                -- 6: swap
-      ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
-      ops.INVOKE, 1,           -- 10: invoke(1)
-      ops.POP,                 -- 12: pop
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
-      ops.PUSH_LITERAL, 26,    -- 16: push_literal(26)
-      ops.SET_SLOT_DIRECT, 290,-- 18: set_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_FRAME,          -- 13: push_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 385,-- 15: set_slot_direct(385)
+      ops.DUP,                 -- 17: dup
+      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 21: get_slot_direct(26)
-      ops.RETURN               -- 23: return
+      ops.SWAP,                -- 21: swap
+      ops.SET_SLOT_DIRECT, 356,-- 22: set_slot_direct(356)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
+      ops.SET_SLOT_DIRECT, 365,-- 28: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.PUSH_FRAME,          -- 31: push_frame
+      ops.GET_SLOT_DIRECT, 343,-- 32: get_slot_direct(343)
+      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
+      ops.GET_SLOT_DIRECT, 368,-- 38: get_slot_direct(368)
+      ops.PUSH_FRAME,          -- 40: push_frame
+      ops.GET_SLOT_DIRECT, 385,-- 41: get_slot_direct(385)
+      ops.INVOKE, 2,           -- 43: invoke(2)
+      ops.SET_SLOT_DIRECT, 365,-- 45: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 48: get_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
+      ops.GET_SLOT_DIRECT, 356,-- 51: get_slot_direct(356)
+      ops.DUP,                 -- 53: dup
+      ops.UN_NOT,              -- 54: un_not
+      ops.JMP_UNLESS, 61, 61,  -- 55: jmp_unless(61,61)
+      ops.POP,                 -- 58: pop
+      ops.NEW_FUNCTION, 74,    -- 59: new_function(74)
+      ops.PHI,                 -- 61: phi
+      ops.SET_SLOT_DIRECT, 356,-- 62: set_slot_direct(356)
+      ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 65: get_slot_direct(365)
+      ops.RETURN               -- 67: return
     }
   },
   ifunc.Function:new{
@@ -7885,50 +9050,155 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 15: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 15: get_slot_direct(377)
       ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 22: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 23: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 23: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
-      ops.PUSH_LITERAL, 18,    -- 28: push_literal(18)
-      ops.INVOKE, 1,           -- 30: invoke(1)
-      ops.SET_SLOT_DIRECT, 40, -- 32: set_slot_direct(40)
-      ops.PUSH_FRAME,          -- 34: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 35: get_slot_direct(264)
+      ops.PUSH_FRAME,          -- 28: push_frame
+      ops.GET_SLOT_DIRECT, 385,-- 29: get_slot_direct(385)
+      ops.INVOKE, 1,           -- 31: invoke(1)
+      ops.SET_SLOT_DIRECT, 40, -- 33: set_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 36: get_slot_direct(26)
+      ops.PUSH_LITERAL, 386,   -- 38: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 40: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 43: get_slot_direct(26)
+      ops.RETURN               -- 45: return
+    }
+  },
+  ifunc.Function:new{ -- "infixr"
+    name = jsval.newString("infixr"),
+    id = 75,
+    nargs = 3,
+    max_stack = 5,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_FRAME,          -- 13: push_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 385,-- 15: set_slot_direct(385)
+      ops.DUP,                 -- 17: dup
+      ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
+      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
+      ops.SWAP,                -- 21: swap
+      ops.SET_SLOT_DIRECT, 356,-- 22: set_slot_direct(356)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
+      ops.SET_SLOT_DIRECT, 365,-- 28: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.PUSH_FRAME,          -- 31: push_frame
+      ops.GET_SLOT_DIRECT, 343,-- 32: get_slot_direct(343)
+      ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 38: get_slot_direct(26)
-      ops.PUSH_LITERAL, 320,   -- 40: push_literal(320)
-      ops.INVOKE, 1,           -- 42: invoke(1)
-      ops.POP,                 -- 44: pop
-      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 48: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 49: get_slot_direct(265)
-      ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 52: get_slot_direct(26)
-      ops.PUSH_LITERAL, 18,    -- 54: push_literal(18)
-      ops.INVOKE, 1,           -- 56: invoke(1)
-      ops.SET_SLOT_DIRECT, 331,-- 58: set_slot_direct(331)
-      ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 61: get_slot_direct(26)
-      ops.PUSH_LITERAL, 332,   -- 63: push_literal(332)
-      ops.SET_SLOT_DIRECT, 290,-- 65: set_slot_direct(290)
-      ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 68: get_slot_direct(26)
-      ops.RETURN               -- 70: return
+      ops.GET_SLOT_DIRECT, 368,-- 38: get_slot_direct(368)
+      ops.PUSH_FRAME,          -- 40: push_frame
+      ops.GET_SLOT_DIRECT, 385,-- 41: get_slot_direct(385)
+      ops.INVOKE, 2,           -- 43: invoke(2)
+      ops.SET_SLOT_DIRECT, 365,-- 45: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 48: get_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
+      ops.GET_SLOT_DIRECT, 356,-- 51: get_slot_direct(356)
+      ops.DUP,                 -- 53: dup
+      ops.UN_NOT,              -- 54: un_not
+      ops.JMP_UNLESS, 61, 61,  -- 55: jmp_unless(61,61)
+      ops.POP,                 -- 58: pop
+      ops.NEW_FUNCTION, 76,    -- 59: new_function(76)
+      ops.PHI,                 -- 61: phi
+      ops.SET_SLOT_DIRECT, 356,-- 62: set_slot_direct(356)
+      ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 65: get_slot_direct(365)
+      ops.RETURN               -- 67: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 75,
+    id = 76,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 15: get_slot_direct(377)
+      ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
+      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 22: push_frame
+      ops.GET_SLOT_DIRECT, 338,-- 23: get_slot_direct(338)
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 28: push_frame
+      ops.GET_SLOT_DIRECT, 385,-- 29: get_slot_direct(385)
+      ops.PUSH_LITERAL, 31,    -- 31: push_literal(31)
+      ops.BI_SUB,              -- 33: bi_sub
+      ops.INVOKE, 1,           -- 34: invoke(1)
+      ops.SET_SLOT_DIRECT, 40, -- 36: set_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 39: get_slot_direct(26)
+      ops.PUSH_LITERAL, 386,   -- 41: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 43: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
+      ops.RETURN               -- 48: return
+    }
+  },
+  ifunc.Function:new{ -- "assignment"
+    name = jsval.newString("assignment"),
+    id = 77,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_FRAME,          -- 6: push_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_FRAME,          -- 11: push_frame
+      ops.GET_SLOT_DIRECT, 346,-- 12: get_slot_direct(346)
+      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 17: push_frame
+      ops.GET_SLOT_DIRECT, 368,-- 18: get_slot_direct(368)
+      ops.PUSH_LITERAL, 135,   -- 20: push_literal(135)
+      ops.NEW_FUNCTION, 78,    -- 22: new_function(78)
+      ops.INVOKE, 3,           -- 24: invoke(3)
+      ops.RETURN               -- 26: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 78,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -7938,45 +9208,321 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 12: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 14: get_slot_direct(368)
+      ops.PUSH_LITERAL, 149,   -- 16: push_literal(149)
+      ops.BI_EQ,               -- 18: bi_eq
+      ops.UN_NOT,              -- 19: un_not
+      ops.DUP,                 -- 20: dup
+      ops.JMP_UNLESS, 49, 49,  -- 21: jmp_unless(49,49)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 26: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 28: get_slot_direct(368)
+      ops.PUSH_LITERAL, 254,   -- 30: push_literal(254)
+      ops.BI_EQ,               -- 32: bi_eq
+      ops.UN_NOT,              -- 33: un_not
+      ops.DUP,                 -- 34: dup
+      ops.JMP_UNLESS, 48, 48,  -- 35: jmp_unless(48,48)
+      ops.POP,                 -- 38: pop
+      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 40: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 363,-- 42: get_slot_direct(363)
+      ops.PUSH_LITERAL, 19,    -- 44: push_literal(19)
+      ops.BI_EQ,               -- 46: bi_eq
+      ops.UN_NOT,              -- 47: un_not
+      ops.PHI,                 -- 48: phi
+      ops.PHI,                 -- 49: phi
+      ops.JMP_UNLESS, 67, 67,  -- 50: jmp_unless(67,67)
+      ops.PUSH_FRAME,          -- 53: push_frame
+      ops.GET_SLOT_DIRECT, 286,-- 54: get_slot_direct(286)
+      ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 57: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 60: get_slot_direct(377)
+      ops.PUSH_LITERAL, 387,   -- 62: push_literal(387)
+      ops.INVOKE, 2,           -- 64: invoke(2)
+      ops.POP,                 -- 66: pop
+      ops.PHI,                 -- 67: phi
+      ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 69: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 72: get_slot_direct(377)
+      ops.SET_SLOT_DIRECT, 39, -- 74: set_slot_direct(39)
+      ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 77: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 79: push_frame
+      ops.GET_SLOT_DIRECT, 338,-- 80: get_slot_direct(338)
+      ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 83: get_slot_direct(26)
+      ops.PUSH_LITERAL, 176,   -- 85: push_literal(176)
+      ops.INVOKE, 1,           -- 87: invoke(1)
+      ops.SET_SLOT_DIRECT, 40, -- 89: set_slot_direct(40)
+      ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 92: get_slot_direct(26)
+      ops.PUSH_LITERAL, 118,   -- 94: push_literal(118)
+      ops.SET_SLOT_DIRECT, 347,-- 96: set_slot_direct(347)
+      ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 99: get_slot_direct(26)
+      ops.PUSH_LITERAL, 386,   -- 101: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 103: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
+      ops.RETURN               -- 108: return
+    }
+  },
+  ifunc.Function:new{ -- "prefix"
+    name = jsval.newString("prefix"),
+    id = 79,
+    nargs = 2,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 368,-- 8: set_slot_direct(368)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 355,-- 15: set_slot_direct(355)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
+      ops.SET_SLOT_DIRECT, 365,-- 21: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.PUSH_FRAME,          -- 24: push_frame
+      ops.GET_SLOT_DIRECT, 343,-- 25: get_slot_direct(343)
+      ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.GET_SLOT_DIRECT, 368,-- 31: get_slot_direct(368)
+      ops.INVOKE, 1,           -- 33: invoke(1)
+      ops.SET_SLOT_DIRECT, 365,-- 35: set_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 38: get_slot_direct(365)
+      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
+      ops.GET_SLOT_DIRECT, 355,-- 41: get_slot_direct(355)
+      ops.DUP,                 -- 43: dup
+      ops.UN_NOT,              -- 44: un_not
+      ops.JMP_UNLESS, 51, 51,  -- 45: jmp_unless(51,51)
+      ops.POP,                 -- 48: pop
+      ops.NEW_FUNCTION, 80,    -- 49: new_function(80)
+      ops.PHI,                 -- 51: phi
+      ops.SET_SLOT_DIRECT, 355,-- 52: set_slot_direct(355)
+      ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 55: get_slot_direct(365)
+      ops.RETURN               -- 57: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 80,
+    nargs = 0,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_FRAME,          -- 0: push_frame
+      ops.GET_SLOT_DIRECT, 328,-- 1: get_slot_direct(328)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT_CHECK, 364,-- 4: get_slot_direct_check(364)
+      ops.SWAP,                -- 6: swap
+      ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
+      ops.INVOKE, 1,           -- 10: invoke(1)
+      ops.POP,                 -- 12: pop
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 16: push_frame
+      ops.GET_SLOT_DIRECT, 338,-- 17: get_slot_direct(338)
+      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
+      ops.PUSH_LITERAL, 388,   -- 22: push_literal(388)
+      ops.INVOKE, 1,           -- 24: invoke(1)
+      ops.SET_SLOT_DIRECT, 39, -- 26: set_slot_direct(39)
+      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
+      ops.PUSH_LITERAL, 389,   -- 31: push_literal(389)
+      ops.SET_SLOT_DIRECT, 363,-- 33: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 36: get_slot_direct(26)
+      ops.RETURN               -- 38: return
+    }
+  },
+  ifunc.Function:new{ -- "stmt"
+    name = jsval.newString("stmt"),
+    id = 81,
+    nargs = 2,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 365,-- 8: set_slot_direct(365)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
+      ops.SET_SLOT_DIRECT, 128,-- 21: set_slot_direct(128)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.PUSH_FRAME,          -- 24: push_frame
+      ops.GET_SLOT_DIRECT, 343,-- 25: get_slot_direct(343)
+      ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
+      ops.GET_SLOT_DIRECT, 365,-- 31: get_slot_direct(365)
+      ops.INVOKE, 1,           -- 33: invoke(1)
+      ops.SET_SLOT_DIRECT, 128,-- 35: set_slot_direct(128)
+      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
+      ops.GET_SLOT_DIRECT, 128,-- 38: get_slot_direct(128)
+      ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
+      ops.GET_SLOT_DIRECT, 109,-- 41: get_slot_direct(109)
+      ops.SET_SLOT_DIRECT, 357,-- 43: set_slot_direct(357)
+      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
+      ops.GET_SLOT_DIRECT, 128,-- 46: get_slot_direct(128)
+      ops.RETURN               -- 48: return
+    }
+  },
+  ifunc.Function:new{ -- ".nud"
+    name = jsval.newString(".nud"),
+    id = 82,
+    nargs = 0,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_FRAME,          -- 0: push_frame
+      ops.GET_SLOT_DIRECT, 328,-- 1: get_slot_direct(328)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT_CHECK, 364,-- 4: get_slot_direct_check(364)
+      ops.SWAP,                -- 6: swap
+      ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 8: get_slot_direct(26)
+      ops.INVOKE, 1,           -- 10: invoke(1)
+      ops.POP,                 -- 12: pop
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
+      ops.PUSH_LITERAL, 26,    -- 16: push_literal(26)
+      ops.SET_SLOT_DIRECT, 363,-- 18: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 21: get_slot_direct(26)
+      ops.RETURN               -- 23: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 83,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 15: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 15: get_slot_direct(377)
+      ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
+      ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 22: push_frame
+      ops.GET_SLOT_DIRECT, 338,-- 23: get_slot_direct(338)
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
+      ops.PUSH_LITERAL, 18,    -- 28: push_literal(18)
+      ops.INVOKE, 1,           -- 30: invoke(1)
+      ops.SET_SLOT_DIRECT, 40, -- 32: set_slot_direct(40)
+      ops.PUSH_FRAME,          -- 34: push_frame
+      ops.GET_SLOT_DIRECT, 337,-- 35: get_slot_direct(337)
+      ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 38: get_slot_direct(26)
+      ops.PUSH_LITERAL, 241,   -- 40: push_literal(241)
+      ops.INVOKE, 1,           -- 42: invoke(1)
+      ops.POP,                 -- 44: pop
+      ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 48: push_frame
+      ops.GET_SLOT_DIRECT, 338,-- 49: get_slot_direct(338)
+      ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 52: get_slot_direct(26)
+      ops.PUSH_LITERAL, 18,    -- 54: push_literal(18)
+      ops.INVOKE, 1,           -- 56: invoke(1)
+      ops.SET_SLOT_DIRECT, 399,-- 58: set_slot_direct(399)
+      ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 61: get_slot_direct(26)
+      ops.PUSH_LITERAL, 400,   -- 63: push_literal(400)
+      ops.SET_SLOT_DIRECT, 363,-- 65: set_slot_direct(363)
+      ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 68: get_slot_direct(26)
+      ops.RETURN               -- 70: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 84,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
+      ops.GET_SLOT_DIRECT, 377,-- 15: get_slot_direct(377)
       ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
       ops.PUSH_FRAME,          -- 19: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 20: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 290,-- 22: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 330,-- 20: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 363,-- 22: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 24: push_literal(19)
       ops.BI_EQ,               -- 26: bi_eq
       ops.UN_NOT,              -- 27: un_not
       ops.JMP_UNLESS, 45, 45,  -- 28: jmp_unless(45,45)
       ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 32: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 32: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 37: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 38: get_slot_direct(257)
-      ops.PUSH_LITERAL, 348,   -- 40: push_literal(348)
+      ops.GET_SLOT_DIRECT, 330,-- 38: get_slot_direct(330)
+      ops.PUSH_LITERAL, 416,   -- 40: push_literal(416)
       ops.INVOKE, 2,           -- 42: invoke(2)
       ops.POP,                 -- 44: pop
       ops.PHI,                 -- 45: phi
       ops.PUSH_FRAME,          -- 46: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 47: get_slot_direct(257)
-      ops.PUSH_LITERAL, 301,   -- 49: push_literal(301)
-      ops.SET_SLOT_DIRECT, 290,-- 51: set_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 330,-- 47: get_slot_direct(330)
+      ops.PUSH_LITERAL, 374,   -- 49: push_literal(374)
+      ops.SET_SLOT_DIRECT, 363,-- 51: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 54: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 56: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 57: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 57: get_slot_direct(330)
       ops.SET_SLOT_DIRECT, 40, -- 59: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 61: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 62: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 64: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 66: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 64: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 66: set_slot_direct(363)
       ops.PUSH_FRAME,          -- 68: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 69: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 69: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 72: get_slot_direct(26)
       ops.INVOKE, 0,           -- 74: invoke(0)
@@ -7988,7 +9534,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 76,
+    id = 85,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -7998,17 +9544,17 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 15: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 15: get_slot_direct(377)
       ops.SET_SLOT_DIRECT, 39, -- 17: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 22: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 23: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 23: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 26: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 28: push_literal(18)
@@ -8016,13 +9562,13 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 40, -- 32: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 37: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 39: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 37: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 39: set_slot_direct(363)
       ops.PUSH_FRAME,          -- 41: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 42: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 42: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 45: get_slot_direct(26)
-      ops.PUSH_LITERAL, 213,   -- 47: push_literal(213)
+      ops.PUSH_LITERAL, 255,   -- 47: push_literal(255)
       ops.INVOKE, 1,           -- 49: invoke(1)
       ops.POP,                 -- 51: pop
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
@@ -8032,7 +9578,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 77,
+    id = 86,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -8042,17 +9588,17 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 304,-- 8: set_slot_direct(304)
+      ops.SET_SLOT_DIRECT, 377,-- 8: set_slot_direct(377)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 14: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 14: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.NEW_ARRAY,           -- 17: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 18: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 18: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 21: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 23: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 377,-- 21: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 23: get_slot_direct(368)
       ops.PUSH_LITERAL, 149,   -- 25: push_literal(149)
       ops.BI_EQ,               -- 27: bi_eq
       ops.DUP,                 -- 28: dup
@@ -8060,51 +9606,51 @@ startup.functions = {
       ops.JMP_UNLESS, 42, 42,  -- 30: jmp_unless(42,42)
       ops.POP,                 -- 33: pop
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 35: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 37: get_slot_direct(295)
-      ops.PUSH_LITERAL, 316,   -- 39: push_literal(316)
+      ops.GET_SLOT_DIRECT, 377,-- 35: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 37: get_slot_direct(368)
+      ops.PUSH_LITERAL, 254,   -- 39: push_literal(254)
       ops.BI_EQ,               -- 41: bi_eq
       ops.PHI,                 -- 42: phi
       ops.JMP_UNLESS, 83, 208, -- 43: jmp_unless(83,208)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 47: get_slot_direct(26)
-      ops.PUSH_LITERAL, 332,   -- 49: push_literal(332)
-      ops.SET_SLOT_DIRECT, 290,-- 51: set_slot_direct(290)
+      ops.PUSH_LITERAL, 400,   -- 49: push_literal(400)
+      ops.SET_SLOT_DIRECT, 363,-- 51: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 54: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 57: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 57: get_slot_direct(377)
       ops.GET_SLOT_DIRECT, 39, -- 59: get_slot_direct(39)
       ops.SET_SLOT_DIRECT, 39, -- 61: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 64: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 67: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 67: get_slot_direct(377)
       ops.GET_SLOT_DIRECT, 40, -- 69: get_slot_direct(40)
       ops.SET_SLOT_DIRECT, 40, -- 71: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 73: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 74: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 77: get_slot_direct(219)
-      ops.SET_SLOT_DIRECT, 331,-- 79: set_slot_direct(331)
+      ops.GET_SLOT_DIRECT, 296,-- 77: get_slot_direct(296)
+      ops.SET_SLOT_DIRECT, 399,-- 79: set_slot_direct(399)
       ops.JMP, 208,            -- 81: jmp(208)
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 84: get_slot_direct(26)
-      ops.PUSH_LITERAL, 315,   -- 86: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 88: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 86: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 88: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 91: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 94: get_slot_direct(304)
+      ops.GET_SLOT_DIRECT, 377,-- 94: get_slot_direct(377)
       ops.SET_SLOT_DIRECT, 39, -- 96: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 99: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 101: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 102: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 102: get_slot_direct(296)
       ops.SET_SLOT_DIRECT, 40, -- 104: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 107: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 290,-- 109: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 377,-- 107: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 363,-- 109: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 111: push_literal(25)
       ops.BI_EQ,               -- 113: bi_eq
       ops.UN_NOT,              -- 114: un_not
@@ -8112,8 +9658,8 @@ startup.functions = {
       ops.JMP_UNLESS, 189, 189,-- 116: jmp_unless(189,189)
       ops.POP,                 -- 119: pop
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 121: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 290,-- 123: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 377,-- 121: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 363,-- 123: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 125: push_literal(19)
       ops.BI_EQ,               -- 127: bi_eq
       ops.UN_NOT,              -- 128: un_not
@@ -8121,36 +9667,36 @@ startup.functions = {
       ops.JMP_UNLESS, 188, 188,-- 130: jmp_unless(188,188)
       ops.POP,                 -- 133: pop
       ops.PUSH_LOCAL_FRAME,    -- 134: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 135: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 137: get_slot_direct(295)
-      ops.PUSH_LITERAL, 305,   -- 139: push_literal(305)
+      ops.GET_SLOT_DIRECT, 377,-- 135: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 137: get_slot_direct(368)
+      ops.PUSH_LITERAL, 378,   -- 139: push_literal(378)
       ops.BI_EQ,               -- 141: bi_eq
       ops.UN_NOT,              -- 142: un_not
       ops.DUP,                 -- 143: dup
       ops.JMP_UNLESS, 187, 187,-- 144: jmp_unless(187,187)
       ops.POP,                 -- 147: pop
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 149: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 151: get_slot_direct(295)
-      ops.PUSH_LITERAL, 335,   -- 153: push_literal(335)
+      ops.GET_SLOT_DIRECT, 377,-- 149: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 151: get_slot_direct(368)
+      ops.PUSH_LITERAL, 403,   -- 153: push_literal(403)
       ops.BI_EQ,               -- 155: bi_eq
       ops.UN_NOT,              -- 156: un_not
       ops.DUP,                 -- 157: dup
       ops.JMP_UNLESS, 186, 186,-- 158: jmp_unless(186,186)
       ops.POP,                 -- 161: pop
       ops.PUSH_LOCAL_FRAME,    -- 162: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 163: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 165: get_slot_direct(295)
-      ops.PUSH_LITERAL, 333,   -- 167: push_literal(333)
+      ops.GET_SLOT_DIRECT, 377,-- 163: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 165: get_slot_direct(368)
+      ops.PUSH_LITERAL, 401,   -- 167: push_literal(401)
       ops.BI_EQ,               -- 169: bi_eq
       ops.UN_NOT,              -- 170: un_not
       ops.DUP,                 -- 171: dup
       ops.JMP_UNLESS, 185, 185,-- 172: jmp_unless(185,185)
       ops.POP,                 -- 175: pop
       ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 177: get_slot_direct(304)
-      ops.GET_SLOT_DIRECT, 295,-- 179: get_slot_direct(295)
-      ops.PUSH_LITERAL, 329,   -- 181: push_literal(329)
+      ops.GET_SLOT_DIRECT, 377,-- 177: get_slot_direct(377)
+      ops.GET_SLOT_DIRECT, 368,-- 179: get_slot_direct(368)
+      ops.PUSH_LITERAL, 397,   -- 181: push_literal(397)
       ops.BI_EQ,               -- 183: bi_eq
       ops.UN_NOT,              -- 184: un_not
       ops.PHI,                 -- 185: phi
@@ -8160,31 +9706,31 @@ startup.functions = {
       ops.PHI,                 -- 189: phi
       ops.JMP_UNLESS, 207, 207,-- 190: jmp_unless(207,207)
       ops.PUSH_FRAME,          -- 193: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 194: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 194: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 196: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 197: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 199: push_local_frame
-      ops.GET_SLOT_DIRECT, 304,-- 200: get_slot_direct(304)
-      ops.PUSH_LITERAL, 350,   -- 202: push_literal(350)
+      ops.GET_SLOT_DIRECT, 377,-- 200: get_slot_direct(377)
+      ops.PUSH_LITERAL, 418,   -- 202: push_literal(418)
       ops.INVOKE, 2,           -- 204: invoke(2)
       ops.POP,                 -- 206: pop
       ops.PHI,                 -- 207: phi
       ops.PHI,                 -- 208: phi
       ops.PUSH_FRAME,          -- 209: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 210: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 212: get_slot_direct(295)
-      ops.PUSH_LITERAL, 321,   -- 214: push_literal(321)
+      ops.GET_SLOT_DIRECT, 330,-- 210: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 212: get_slot_direct(368)
+      ops.PUSH_LITERAL, 390,   -- 214: push_literal(390)
       ops.BI_EQ,               -- 216: bi_eq
       ops.UN_NOT,              -- 217: un_not
       ops.JMP_UNLESS, 278, 278,-- 218: jmp_unless(278,278)
       ops.JMP_INTO_LOOP, 270, 277,-- 221: jmp_into_loop(270,277)
       ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 225: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 225: get_slot_direct(296)
       ops.DUP,                 -- 227: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 228: get_slot_direct_check(69)
       ops.SWAP,                -- 230: swap
       ops.PUSH_FRAME,          -- 231: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 232: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 232: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 234: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 235: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 237: push_literal(18)
@@ -8192,8 +9738,8 @@ startup.functions = {
       ops.INVOKE, 1,           -- 241: invoke(1)
       ops.POP,                 -- 243: pop
       ops.PUSH_FRAME,          -- 244: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 245: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 247: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 245: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 247: get_slot_direct(368)
       ops.PUSH_LITERAL, 76,    -- 249: push_literal(76)
       ops.BI_EQ,               -- 251: bi_eq
       ops.UN_NOT,              -- 252: un_not
@@ -8201,7 +9747,7 @@ startup.functions = {
       ops.JMP, 277,            -- 256: jmp(277)
       ops.PHI,                 -- 258: phi
       ops.PUSH_FRAME,          -- 259: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 260: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 260: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 262: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 263: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 265: push_literal(76)
@@ -8214,10 +9760,10 @@ startup.functions = {
       ops.PHI,                 -- 277: phi
       ops.PHI,                 -- 278: phi
       ops.PUSH_FRAME,          -- 279: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 280: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 280: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 282: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 283: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 285: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 285: push_literal(390)
       ops.INVOKE, 1,           -- 287: invoke(1)
       ops.POP,                 -- 289: pop
       ops.PUSH_LOCAL_FRAME,    -- 290: push_local_frame
@@ -8227,7 +9773,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 78,
+    id = 87,
     nargs = 0,
     max_stack = 4,
     bytecode = {
@@ -8236,17 +9782,17 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 87, -- 3: set_slot_direct(87)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_FRAME,          -- 6: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 7: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 7: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 9: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 10: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 12: push_literal(18)
       ops.INVOKE, 1,           -- 14: invoke(1)
       ops.SET_SLOT_DIRECT, 87, -- 16: set_slot_direct(87)
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 19: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 19: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 22: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 24: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 24: push_literal(390)
       ops.INVOKE, 1,           -- 26: invoke(1)
       ops.POP,                 -- 28: pop
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
@@ -8256,44 +9802,44 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 79,
+    id = 88,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.NEW_ARRAY,           -- 6: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 7: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 7: set_slot_direct(296)
       ops.PUSH_FRAME,          -- 9: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 10: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 290,-- 12: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 330,-- 10: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 363,-- 12: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 14: push_literal(19)
       ops.BI_EQ,               -- 16: bi_eq
       ops.JMP_UNLESS, 62, 69,  -- 17: jmp_unless(62,69)
       ops.PUSH_FRAME,          -- 20: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 21: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 21: get_slot_direct(328)
       ops.DUP,                 -- 23: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 24: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 24: get_slot_direct_check(278)
       ops.SWAP,                -- 26: swap
       ops.PUSH_FRAME,          -- 27: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 28: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 28: get_slot_direct(330)
       ops.INVOKE, 1,           -- 30: invoke(1)
       ops.POP,                 -- 32: pop
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 34: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 36: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 37: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 215,-- 39: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 330,-- 37: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 224,-- 39: get_slot_direct(224)
       ops.SET_SLOT_DIRECT, 19, -- 41: set_slot_direct(19)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 44: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 46: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 47: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 49: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 47: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 49: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 51: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 52: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 52: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 55: get_slot_direct(26)
       ops.INVOKE, 0,           -- 57: invoke(0)
@@ -8305,84 +9851,84 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 19, -- 67: set_slot_direct(19)
       ops.PHI,                 -- 69: phi
       ops.PUSH_FRAME,          -- 70: push_frame
-      ops.GET_SLOT_DIRECT, 262,-- 71: get_slot_direct(262)
+      ops.GET_SLOT_DIRECT, 335,-- 71: get_slot_direct(335)
       ops.PUSH_LOCAL_FRAME,    -- 73: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 74: get_slot_direct(26)
       ops.INVOKE, 0,           -- 76: invoke(0)
       ops.POP,                 -- 78: pop
       ops.PUSH_FRAME,          -- 79: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 80: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 80: get_slot_direct(328)
       ops.DUP,                 -- 82: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 83: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 83: get_slot_direct_check(278)
       ops.SWAP,                -- 85: swap
       ops.NEW_OBJECT,          -- 86: new_object
       ops.DUP,                 -- 87: dup
       ops.PUSH_LITERAL, 17,    -- 88: push_literal(17)
-      ops.SET_SLOT_DIRECT, 215,-- 90: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 90: set_slot_direct(224)
       ops.DUP,                 -- 92: dup
       ops.PUSH_LITERAL, 19,    -- 93: push_literal(19)
-      ops.SET_SLOT_DIRECT, 290,-- 95: set_slot_direct(290)
+      ops.SET_SLOT_DIRECT, 363,-- 95: set_slot_direct(363)
       ops.INVOKE, 1,           -- 97: invoke(1)
       ops.POP,                 -- 99: pop
       ops.PUSH_FRAME,          -- 100: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 101: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 101: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 104: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 106: push_literal(305)
+      ops.PUSH_LITERAL, 378,   -- 106: push_literal(378)
       ops.INVOKE, 1,           -- 108: invoke(1)
       ops.POP,                 -- 110: pop
       ops.PUSH_FRAME,          -- 111: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 112: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 114: get_slot_direct(295)
-      ops.PUSH_LITERAL, 321,   -- 116: push_literal(321)
+      ops.GET_SLOT_DIRECT, 330,-- 112: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 114: get_slot_direct(368)
+      ops.PUSH_LITERAL, 390,   -- 116: push_literal(390)
       ops.BI_EQ,               -- 118: bi_eq
       ops.UN_NOT,              -- 119: un_not
       ops.JMP_UNLESS, 222, 222,-- 120: jmp_unless(222,222)
       ops.JMP_INTO_LOOP, 214, 221,-- 123: jmp_into_loop(214,221)
       ops.PUSH_FRAME,          -- 126: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 127: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 290,-- 129: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 330,-- 127: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 363,-- 129: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 131: push_literal(19)
       ops.BI_EQ,               -- 133: bi_eq
       ops.UN_NOT,              -- 134: un_not
       ops.JMP_UNLESS, 152, 152,-- 135: jmp_unless(152,152)
       ops.PUSH_FRAME,          -- 138: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 139: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 139: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 142: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 144: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 145: get_slot_direct(257)
-      ops.PUSH_LITERAL, 353,   -- 147: push_literal(353)
+      ops.GET_SLOT_DIRECT, 330,-- 145: get_slot_direct(330)
+      ops.PUSH_LITERAL, 421,   -- 147: push_literal(421)
       ops.INVOKE, 2,           -- 149: invoke(2)
       ops.POP,                 -- 151: pop
       ops.PHI,                 -- 152: phi
       ops.PUSH_FRAME,          -- 153: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 154: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 154: get_slot_direct(328)
       ops.DUP,                 -- 156: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 157: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 157: get_slot_direct_check(278)
       ops.SWAP,                -- 159: swap
       ops.PUSH_FRAME,          -- 160: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 161: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 161: get_slot_direct(330)
       ops.INVOKE, 1,           -- 163: invoke(1)
       ops.POP,                 -- 165: pop
       ops.PUSH_LOCAL_FRAME,    -- 166: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 167: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 167: get_slot_direct(296)
       ops.DUP,                 -- 169: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 170: get_slot_direct_check(69)
       ops.SWAP,                -- 172: swap
       ops.PUSH_FRAME,          -- 173: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 174: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 174: get_slot_direct(330)
       ops.INVOKE, 1,           -- 176: invoke(1)
       ops.POP,                 -- 178: pop
       ops.PUSH_FRAME,          -- 179: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 180: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 180: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 182: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 183: get_slot_direct(26)
       ops.INVOKE, 0,           -- 185: invoke(0)
       ops.POP,                 -- 187: pop
       ops.PUSH_FRAME,          -- 188: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 189: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 191: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 189: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 191: get_slot_direct(368)
       ops.PUSH_LITERAL, 76,    -- 193: push_literal(76)
       ops.BI_EQ,               -- 195: bi_eq
       ops.UN_NOT,              -- 196: un_not
@@ -8390,7 +9936,7 @@ startup.functions = {
       ops.JMP, 221,            -- 200: jmp(221)
       ops.PHI,                 -- 202: phi
       ops.PUSH_FRAME,          -- 203: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 204: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 204: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 206: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 207: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 209: push_literal(76)
@@ -8405,88 +9951,88 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 223: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 224: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 226: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 227: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 227: get_slot_direct(296)
       ops.SET_SLOT_DIRECT, 39, -- 229: set_slot_direct(39)
       ops.PUSH_FRAME,          -- 231: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 232: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 232: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 234: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 235: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 237: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 237: push_literal(390)
       ops.INVOKE, 1,           -- 239: invoke(1)
       ops.POP,                 -- 241: pop
       ops.PUSH_FRAME,          -- 242: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 243: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 243: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 245: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 246: get_slot_direct(26)
-      ops.PUSH_LITERAL, 311,   -- 248: push_literal(311)
+      ops.PUSH_LITERAL, 244,   -- 248: push_literal(244)
       ops.INVOKE, 1,           -- 250: invoke(1)
       ops.POP,                 -- 252: pop
       ops.PUSH_FRAME,          -- 253: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 254: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 290,-- 256: get_slot_direct(290)
-      ops.PUSH_LITERAL, 301,   -- 258: push_literal(301)
+      ops.GET_SLOT_DIRECT, 330,-- 254: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 363,-- 256: get_slot_direct(363)
+      ops.PUSH_LITERAL, 374,   -- 258: push_literal(374)
       ops.BI_EQ,               -- 260: bi_eq
       ops.DUP,                 -- 261: dup
       ops.JMP_UNLESS, 274, 274,-- 262: jmp_unless(274,274)
       ops.POP,                 -- 265: pop
       ops.PUSH_FRAME,          -- 266: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 267: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 215,-- 269: get_slot_direct(215)
-      ops.PUSH_LITERAL, 354,   -- 271: push_literal(354)
+      ops.GET_SLOT_DIRECT, 330,-- 267: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 224,-- 269: get_slot_direct(224)
+      ops.PUSH_LITERAL, 422,   -- 271: push_literal(422)
       ops.BI_EQ,               -- 273: bi_eq
       ops.PHI,                 -- 274: phi
       ops.JMP_UNLESS, 298, 298,-- 275: jmp_unless(298,298)
       ops.PUSH_FRAME,          -- 278: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 279: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 279: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 281: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 282: get_slot_direct(26)
       ops.INVOKE, 0,           -- 284: invoke(0)
       ops.POP,                 -- 286: pop
       ops.PUSH_FRAME,          -- 287: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 288: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 288: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 290: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 291: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 293: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 293: push_literal(380)
       ops.INVOKE, 1,           -- 295: invoke(1)
       ops.POP,                 -- 297: pop
       ops.PHI,                 -- 298: phi
       ops.PUSH_LOCAL_FRAME,    -- 299: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 300: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 302: push_frame
-      ops.GET_SLOT_DIRECT, 268,-- 303: get_slot_direct(268)
+      ops.GET_SLOT_DIRECT, 341,-- 303: get_slot_direct(341)
       ops.PUSH_LOCAL_FRAME,    -- 305: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 306: get_slot_direct(26)
       ops.INVOKE, 0,           -- 308: invoke(0)
       ops.SET_SLOT_DIRECT, 40, -- 310: set_slot_direct(40)
       ops.PUSH_FRAME,          -- 312: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 313: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 315: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 313: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 315: get_slot_direct(359)
       ops.PUSH_LITERAL, 17,    -- 317: push_literal(17)
       ops.GET_SLOT_INDIRECT,   -- 319: get_slot_indirect
       ops.JMP_UNLESS, 330, 330,-- 320: jmp_unless(330,330)
       ops.PUSH_LOCAL_FRAME,    -- 323: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 324: get_slot_direct(26)
       ops.PUSH_LITERAL, 118,   -- 326: push_literal(118)
-      ops.SET_SLOT_DIRECT, 355,-- 328: set_slot_direct(355)
+      ops.SET_SLOT_DIRECT, 423,-- 328: set_slot_direct(423)
       ops.PHI,                 -- 330: phi
       ops.PUSH_FRAME,          -- 331: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 332: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 332: get_slot_direct(328)
       ops.DUP,                 -- 334: dup
       ops.GET_SLOT_DIRECT_CHECK, 71,-- 335: get_slot_direct_check(71)
       ops.SWAP,                -- 337: swap
       ops.INVOKE, 0,           -- 338: invoke(0)
       ops.POP,                 -- 340: pop
       ops.PUSH_FRAME,          -- 341: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 342: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 342: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 344: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 345: get_slot_direct(26)
-      ops.PUSH_LITERAL, 310,   -- 347: push_literal(310)
+      ops.PUSH_LITERAL, 245,   -- 347: push_literal(245)
       ops.INVOKE, 1,           -- 349: invoke(1)
       ops.POP,                 -- 351: pop
       ops.PUSH_LOCAL_FRAME,    -- 352: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 353: get_slot_direct(26)
       ops.PUSH_LITERAL, 25,    -- 355: push_literal(25)
-      ops.SET_SLOT_DIRECT, 290,-- 357: set_slot_direct(290)
+      ops.SET_SLOT_DIRECT, 363,-- 357: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 359: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 360: get_slot_direct(26)
       ops.RETURN               -- 362: return
@@ -8494,31 +10040,31 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 80,
+    id = 89,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.NEW_ARRAY,           -- 6: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 7: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 7: set_slot_direct(296)
       ops.PUSH_FRAME,          -- 9: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 10: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 12: get_slot_direct(295)
-      ops.PUSH_LITERAL, 213,   -- 14: push_literal(213)
+      ops.GET_SLOT_DIRECT, 330,-- 10: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 12: get_slot_direct(368)
+      ops.PUSH_LITERAL, 255,   -- 14: push_literal(255)
       ops.BI_EQ,               -- 16: bi_eq
       ops.UN_NOT,              -- 17: un_not
       ops.JMP_UNLESS, 78, 78,  -- 18: jmp_unless(78,78)
       ops.JMP_INTO_LOOP, 70, 77,-- 21: jmp_into_loop(70,77)
       ops.PUSH_LOCAL_FRAME,    -- 24: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 25: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 25: get_slot_direct(296)
       ops.DUP,                 -- 27: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 28: get_slot_direct_check(69)
       ops.SWAP,                -- 30: swap
       ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 32: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 32: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 37: push_literal(18)
@@ -8526,8 +10072,8 @@ startup.functions = {
       ops.INVOKE, 1,           -- 41: invoke(1)
       ops.POP,                 -- 43: pop
       ops.PUSH_FRAME,          -- 44: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 45: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 47: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 45: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 47: get_slot_direct(368)
       ops.PUSH_LITERAL, 76,    -- 49: push_literal(76)
       ops.BI_EQ,               -- 51: bi_eq
       ops.UN_NOT,              -- 52: un_not
@@ -8535,7 +10081,7 @@ startup.functions = {
       ops.JMP, 77,             -- 56: jmp(77)
       ops.PHI,                 -- 58: phi
       ops.PUSH_FRAME,          -- 59: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 60: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 60: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 63: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 65: push_literal(76)
@@ -8548,21 +10094,21 @@ startup.functions = {
       ops.PHI,                 -- 77: phi
       ops.PHI,                 -- 78: phi
       ops.PUSH_FRAME,          -- 79: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 80: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 80: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 83: get_slot_direct(26)
-      ops.PUSH_LITERAL, 213,   -- 85: push_literal(213)
+      ops.PUSH_LITERAL, 255,   -- 85: push_literal(255)
       ops.INVOKE, 1,           -- 87: invoke(1)
       ops.POP,                 -- 89: pop
       ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 91: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 94: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 94: get_slot_direct(296)
       ops.SET_SLOT_DIRECT, 39, -- 96: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 99: get_slot_direct(26)
-      ops.PUSH_LITERAL, 319,   -- 101: push_literal(319)
-      ops.SET_SLOT_DIRECT, 290,-- 103: set_slot_direct(290)
+      ops.PUSH_LITERAL, 389,   -- 101: push_literal(389)
+      ops.SET_SLOT_DIRECT, 363,-- 103: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
       ops.RETURN               -- 108: return
@@ -8570,13 +10116,13 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 81,
+    id = 90,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 6: push_literal(0)
       ops.SET_SLOT_DIRECT, 23, -- 8: set_slot_direct(23)
@@ -8585,22 +10131,22 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 110,-- 13: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 15: push_local_frame
       ops.NEW_ARRAY,           -- 16: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 17: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 17: set_slot_direct(296)
       ops.PUSH_FRAME,          -- 19: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 20: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 22: get_slot_direct(295)
-      ops.PUSH_LITERAL, 310,   -- 24: push_literal(310)
+      ops.GET_SLOT_DIRECT, 330,-- 20: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 22: get_slot_direct(368)
+      ops.PUSH_LITERAL, 245,   -- 24: push_literal(245)
       ops.BI_EQ,               -- 26: bi_eq
       ops.UN_NOT,              -- 27: un_not
       ops.JMP_UNLESS, 172, 172,-- 28: jmp_unless(172,172)
       ops.JMP_INTO_LOOP, 164, 171,-- 31: jmp_into_loop(164,171)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.PUSH_FRAME,          -- 35: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 36: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 36: get_slot_direct(330)
       ops.SET_SLOT_DIRECT, 23, -- 38: set_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 41: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 290,-- 43: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 43: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 45: push_literal(19)
       ops.BI_EQ,               -- 47: bi_eq
       ops.UN_NOT,              -- 48: un_not
@@ -8609,38 +10155,38 @@ startup.functions = {
       ops.POP,                 -- 53: pop
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 55: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 290,-- 57: get_slot_direct(290)
-      ops.PUSH_LITERAL, 301,   -- 59: push_literal(301)
+      ops.GET_SLOT_DIRECT, 363,-- 57: get_slot_direct(363)
+      ops.PUSH_LITERAL, 374,   -- 59: push_literal(374)
       ops.BI_EQ,               -- 61: bi_eq
       ops.UN_NOT,              -- 62: un_not
       ops.PHI,                 -- 63: phi
       ops.JMP_UNLESS, 81, 81,  -- 64: jmp_unless(81,81)
       ops.PUSH_FRAME,          -- 67: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 68: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 68: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 71: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 73: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 74: get_slot_direct(257)
-      ops.PUSH_LITERAL, 356,   -- 76: push_literal(356)
+      ops.GET_SLOT_DIRECT, 330,-- 74: get_slot_direct(330)
+      ops.PUSH_LITERAL, 424,   -- 76: push_literal(424)
       ops.INVOKE, 2,           -- 78: invoke(2)
       ops.POP,                 -- 80: pop
       ops.PHI,                 -- 81: phi
       ops.PUSH_FRAME,          -- 82: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 83: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 83: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 85: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 86: get_slot_direct(26)
       ops.INVOKE, 0,           -- 88: invoke(0)
       ops.POP,                 -- 90: pop
       ops.PUSH_FRAME,          -- 91: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 92: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 92: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 94: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 95: get_slot_direct(26)
-      ops.PUSH_LITERAL, 320,   -- 97: push_literal(320)
+      ops.PUSH_LITERAL, 241,   -- 97: push_literal(241)
       ops.INVOKE, 1,           -- 99: invoke(1)
       ops.POP,                 -- 101: pop
       ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
       ops.PUSH_FRAME,          -- 103: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 104: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 104: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 107: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 109: push_literal(18)
@@ -8650,10 +10196,10 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 110,-- 116: get_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 119: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 215,-- 121: get_slot_direct(215)
-      ops.SET_SLOT_DIRECT, 357,-- 123: set_slot_direct(357)
+      ops.GET_SLOT_DIRECT, 224,-- 121: get_slot_direct(224)
+      ops.SET_SLOT_DIRECT, 258,-- 123: set_slot_direct(258)
       ops.PUSH_LOCAL_FRAME,    -- 125: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 126: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 126: get_slot_direct(296)
       ops.DUP,                 -- 128: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 129: get_slot_direct_check(69)
       ops.SWAP,                -- 131: swap
@@ -8662,8 +10208,8 @@ startup.functions = {
       ops.INVOKE, 1,           -- 135: invoke(1)
       ops.POP,                 -- 137: pop
       ops.PUSH_FRAME,          -- 138: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 139: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 141: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 139: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 141: get_slot_direct(368)
       ops.PUSH_LITERAL, 76,    -- 143: push_literal(76)
       ops.BI_EQ,               -- 145: bi_eq
       ops.UN_NOT,              -- 146: un_not
@@ -8671,7 +10217,7 @@ startup.functions = {
       ops.JMP, 171,            -- 150: jmp(171)
       ops.PHI,                 -- 152: phi
       ops.PUSH_FRAME,          -- 153: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 154: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 154: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 156: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 157: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 159: push_literal(76)
@@ -8684,21 +10230,21 @@ startup.functions = {
       ops.PHI,                 -- 171: phi
       ops.PHI,                 -- 172: phi
       ops.PUSH_FRAME,          -- 173: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 174: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 174: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 177: get_slot_direct(26)
-      ops.PUSH_LITERAL, 310,   -- 179: push_literal(310)
+      ops.PUSH_LITERAL, 245,   -- 179: push_literal(245)
       ops.INVOKE, 1,           -- 181: invoke(1)
       ops.POP,                 -- 183: pop
       ops.PUSH_LOCAL_FRAME,    -- 184: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 185: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 187: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 188: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 188: get_slot_direct(296)
       ops.SET_SLOT_DIRECT, 39, -- 190: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 192: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 193: get_slot_direct(26)
-      ops.PUSH_LITERAL, 319,   -- 195: push_literal(319)
-      ops.SET_SLOT_DIRECT, 290,-- 197: set_slot_direct(290)
+      ops.PUSH_LITERAL, 389,   -- 195: push_literal(389)
+      ops.SET_SLOT_DIRECT, 363,-- 197: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 199: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 200: get_slot_direct(26)
       ops.RETURN               -- 202: return
@@ -8706,25 +10252,25 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 82,
+    id = 91,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_FRAME,          -- 6: push_frame
-      ops.GET_SLOT_DIRECT, 268,-- 7: get_slot_direct(268)
+      ops.GET_SLOT_DIRECT, 341,-- 7: get_slot_direct(341)
       ops.PUSH_LOCAL_FRAME,    -- 9: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 10: get_slot_direct(26)
       ops.INVOKE, 0,           -- 12: invoke(0)
-      ops.SET_SLOT_DIRECT, 219,-- 14: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 14: set_slot_direct(296)
       ops.PUSH_FRAME,          -- 16: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 17: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 17: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.PUSH_LITERAL, 310,   -- 22: push_literal(310)
+      ops.PUSH_LITERAL, 245,   -- 22: push_literal(245)
       ops.INVOKE, 1,           -- 24: invoke(1)
       ops.POP,                 -- 26: pop
       ops.NEW_ARRAY,           -- 27: new_array
@@ -8732,13 +10278,13 @@ startup.functions = {
       ops.NEW_OBJECT,          -- 29: new_object
       ops.DUP,                 -- 30: dup
       ops.PUSH_LITERAL, 91,    -- 31: push_literal(91)
-      ops.SET_SLOT_DIRECT, 215,-- 33: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 33: set_slot_direct(224)
       ops.DUP,                 -- 35: dup
-      ops.PUSH_LITERAL, 266,   -- 36: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 38: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 36: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 38: set_slot_direct(363)
       ops.DUP,                 -- 40: dup
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 42: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 42: get_slot_direct(296)
       ops.SET_SLOT_DIRECT, 39, -- 44: set_slot_direct(39)
       ops.SET_SLOT_DIRECT, 18, -- 46: set_slot_direct(18)
       ops.RETURN               -- 48: return
@@ -8746,51 +10292,51 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 83,
+    id = 92,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 219,-- 3: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 3: set_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 6: push_literal(0)
       ops.SET_SLOT_DIRECT, 23, -- 8: set_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 10: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 11: push_literal(0)
-      ops.SET_SLOT_DIRECT, 209,-- 13: set_slot_direct(209)
+      ops.SET_SLOT_DIRECT, 289,-- 13: set_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 15: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 16: push_literal(0)
       ops.SET_SLOT_DIRECT, 110,-- 18: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.NEW_ARRAY,           -- 21: new_array
-      ops.SET_SLOT_DIRECT, 219,-- 22: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 22: set_slot_direct(296)
       ops.JMP_INTO_LOOP, 213, 220,-- 24: jmp_into_loop(213,220)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 29: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 29: get_slot_direct(330)
       ops.SET_SLOT_DIRECT, 23, -- 31: set_slot_direct(23)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 34: get_slot_direct(23)
-      ops.GET_SLOT_DIRECT, 290,-- 36: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 36: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 38: push_literal(19)
       ops.BI_EQ,               -- 40: bi_eq
       ops.UN_NOT,              -- 41: un_not
       ops.JMP_UNLESS, 59, 59,  -- 42: jmp_unless(59,59)
       ops.PUSH_FRAME,          -- 45: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 46: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 46: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 52: get_slot_direct(23)
-      ops.PUSH_LITERAL, 358,   -- 54: push_literal(358)
+      ops.PUSH_LITERAL, 425,   -- 54: push_literal(425)
       ops.INVOKE, 2,           -- 56: invoke(2)
       ops.POP,                 -- 58: pop
       ops.PHI,                 -- 59: phi
       ops.PUSH_FRAME,          -- 60: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 61: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 61: get_slot_direct(328)
       ops.DUP,                 -- 63: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 64: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 64: get_slot_direct_check(278)
       ops.SWAP,                -- 66: swap
       ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 68: get_slot_direct(23)
@@ -8799,18 +10345,18 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 73: push_local_frame
       ops.NEW_OBJECT,          -- 74: new_object
       ops.DUP,                 -- 75: dup
-      ops.PUSH_LITERAL, 309,   -- 76: push_literal(309)
-      ops.SET_SLOT_DIRECT, 215,-- 78: set_slot_direct(215)
+      ops.PUSH_LITERAL, 382,   -- 76: push_literal(382)
+      ops.SET_SLOT_DIRECT, 224,-- 78: set_slot_direct(224)
       ops.DUP,                 -- 80: dup
-      ops.PUSH_LITERAL, 266,   -- 81: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 83: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 81: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 83: set_slot_direct(363)
       ops.DUP,                 -- 85: dup
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 87: get_slot_direct(23)
       ops.SET_SLOT_DIRECT, 39, -- 89: set_slot_direct(39)
       ops.SET_SLOT_DIRECT, 110,-- 91: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 94: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 94: get_slot_direct(296)
       ops.DUP,                 -- 96: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 97: get_slot_direct_check(69)
       ops.SWAP,                -- 99: swap
@@ -8819,59 +10365,59 @@ startup.functions = {
       ops.INVOKE, 1,           -- 103: invoke(1)
       ops.POP,                 -- 105: pop
       ops.PUSH_FRAME,          -- 106: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 107: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 107: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 110: get_slot_direct(26)
       ops.INVOKE, 0,           -- 112: invoke(0)
       ops.POP,                 -- 114: pop
       ops.PUSH_FRAME,          -- 115: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 116: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 118: get_slot_direct(295)
-      ops.PUSH_LITERAL, 324,   -- 120: push_literal(324)
+      ops.GET_SLOT_DIRECT, 330,-- 116: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 118: get_slot_direct(368)
+      ops.PUSH_LITERAL, 392,   -- 120: push_literal(392)
       ops.BI_EQ,               -- 122: bi_eq
       ops.JMP_UNLESS, 186, 186,-- 123: jmp_unless(186,186)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.PUSH_FRAME,          -- 127: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 128: get_slot_direct(257)
-      ops.SET_SLOT_DIRECT, 209,-- 130: set_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 330,-- 128: get_slot_direct(330)
+      ops.SET_SLOT_DIRECT, 289,-- 130: set_slot_direct(289)
       ops.PUSH_FRAME,          -- 132: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 133: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 133: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 135: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 136: get_slot_direct(26)
-      ops.PUSH_LITERAL, 324,   -- 138: push_literal(324)
+      ops.PUSH_LITERAL, 392,   -- 138: push_literal(392)
       ops.INVOKE, 1,           -- 140: invoke(1)
       ops.POP,                 -- 142: pop
       ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 144: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 144: get_slot_direct(289)
       ops.PUSH_LOCAL_FRAME,    -- 146: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 147: get_slot_direct(23)
       ops.SET_SLOT_DIRECT, 39, -- 149: set_slot_direct(39)
       ops.PUSH_LOCAL_FRAME,    -- 151: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 152: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 152: get_slot_direct(289)
       ops.PUSH_FRAME,          -- 154: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 155: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 155: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 157: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 158: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 160: push_literal(18)
       ops.INVOKE, 1,           -- 162: invoke(1)
       ops.SET_SLOT_DIRECT, 40, -- 164: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 166: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 167: get_slot_direct(209)
-      ops.PUSH_LITERAL, 315,   -- 169: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 171: set_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 289,-- 167: get_slot_direct(289)
+      ops.PUSH_LITERAL, 386,   -- 169: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 171: set_slot_direct(363)
       ops.PUSH_LOCAL_FRAME,    -- 173: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 174: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 174: get_slot_direct(296)
       ops.DUP,                 -- 176: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 177: get_slot_direct_check(69)
       ops.SWAP,                -- 179: swap
       ops.PUSH_LOCAL_FRAME,    -- 180: push_local_frame
-      ops.GET_SLOT_DIRECT, 209,-- 181: get_slot_direct(209)
+      ops.GET_SLOT_DIRECT, 289,-- 181: get_slot_direct(289)
       ops.INVOKE, 1,           -- 183: invoke(1)
       ops.POP,                 -- 185: pop
       ops.PHI,                 -- 186: phi
       ops.PUSH_FRAME,          -- 187: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 188: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 190: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 330,-- 188: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 190: get_slot_direct(368)
       ops.PUSH_LITERAL, 76,    -- 192: push_literal(76)
       ops.BI_EQ,               -- 194: bi_eq
       ops.UN_NOT,              -- 195: un_not
@@ -8879,7 +10425,7 @@ startup.functions = {
       ops.JMP, 220,            -- 199: jmp(220)
       ops.PHI,                 -- 201: phi
       ops.PUSH_FRAME,          -- 202: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 203: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 203: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 205: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 206: get_slot_direct(26)
       ops.PUSH_LITERAL, 76,    -- 208: push_literal(76)
@@ -8891,44 +10437,44 @@ startup.functions = {
       ops.JMP_UNLESS, 27, 220, -- 217: jmp_unless(27,220)
       ops.PHI,                 -- 220: phi
       ops.PUSH_FRAME,          -- 221: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 222: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 222: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 225: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 227: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 227: push_literal(380)
       ops.INVOKE, 1,           -- 229: invoke(1)
       ops.POP,                 -- 231: pop
       ops.PUSH_LOCAL_FRAME,    -- 232: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 233: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 233: get_slot_direct(296)
       ops.RETURN               -- 235: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 84,
+    id = 93,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 1: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 1: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 3: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 4: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 6: push_literal(305)
+      ops.PUSH_LITERAL, 378,   -- 6: push_literal(378)
       ops.INVOKE, 1,           -- 8: invoke(1)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 14: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 15: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 15: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 18: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 20: push_literal(18)
       ops.INVOKE, 1,           -- 22: invoke(1)
       ops.SET_SLOT_DIRECT, 39, -- 24: set_slot_direct(39)
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 27: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 27: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 32: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 32: push_literal(390)
       ops.INVOKE, 1,           -- 34: invoke(1)
       ops.POP,                 -- 36: pop
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
@@ -8942,45 +10488,45 @@ startup.functions = {
       ops.GET_SLOT_INDIRECT,   -- 50: get_slot_indirect
       ops.SET_SLOT_DIRECT, 40, -- 51: set_slot_direct(40)
       ops.PUSH_FRAME,          -- 53: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 54: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 56: get_slot_direct(295)
-      ops.PUSH_LITERAL, 322,   -- 58: push_literal(322)
+      ops.GET_SLOT_DIRECT, 330,-- 54: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 56: get_slot_direct(368)
+      ops.PUSH_LITERAL, 391,   -- 58: push_literal(391)
       ops.BI_EQ,               -- 60: bi_eq
       ops.JMP_UNLESS, 142, 149,-- 61: jmp_unless(142,149)
       ops.PUSH_FRAME,          -- 64: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 65: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 65: get_slot_direct(328)
       ops.DUP,                 -- 67: dup
-      ops.GET_SLOT_DIRECT_CHECK, 291,-- 68: get_slot_direct_check(291)
+      ops.GET_SLOT_DIRECT_CHECK, 364,-- 68: get_slot_direct_check(364)
       ops.SWAP,                -- 70: swap
       ops.PUSH_FRAME,          -- 71: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 72: get_slot_direct(257)
+      ops.GET_SLOT_DIRECT, 330,-- 72: get_slot_direct(330)
       ops.INVOKE, 1,           -- 74: invoke(1)
       ops.POP,                 -- 76: pop
       ops.PUSH_FRAME,          -- 77: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 78: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 78: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 80: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 81: get_slot_direct(26)
-      ops.PUSH_LITERAL, 322,   -- 83: push_literal(322)
+      ops.PUSH_LITERAL, 391,   -- 83: push_literal(391)
       ops.INVOKE, 1,           -- 85: invoke(1)
       ops.POP,                 -- 87: pop
       ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 89: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 91: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 92: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 94: get_slot_direct(295)
-      ops.PUSH_LITERAL, 359,   -- 96: push_literal(359)
+      ops.GET_SLOT_DIRECT, 330,-- 92: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 94: get_slot_direct(368)
+      ops.PUSH_LITERAL, 426,   -- 96: push_literal(426)
       ops.BI_EQ,               -- 98: bi_eq
       ops.JMP_UNLESS, 126, 137,-- 99: jmp_unless(126,137)
       ops.NEW_OBJECT,          -- 102: new_object
       ops.DUP,                 -- 103: dup
       ops.PUSH_LITERAL, 91,    -- 104: push_literal(91)
-      ops.SET_SLOT_DIRECT, 215,-- 106: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 106: set_slot_direct(224)
       ops.DUP,                 -- 108: dup
-      ops.PUSH_LITERAL, 266,   -- 109: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 111: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 109: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 111: set_slot_direct(363)
       ops.DUP,                 -- 113: dup
       ops.PUSH_FRAME,          -- 114: push_frame
-      ops.GET_SLOT_DIRECT, 266,-- 115: get_slot_direct(266)
+      ops.GET_SLOT_DIRECT, 339,-- 115: get_slot_direct(339)
       ops.PUSH_LOCAL_FRAME,    -- 117: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 118: get_slot_direct(26)
       ops.INVOKE, 0,           -- 120: invoke(0)
@@ -8994,17 +10540,17 @@ startup.functions = {
       ops.PUSH_LITERAL, 18,    -- 134: push_literal(18)
       ops.GET_SLOT_INDIRECT,   -- 136: get_slot_indirect
       ops.PHI,                 -- 137: phi
-      ops.SET_SLOT_DIRECT, 331,-- 138: set_slot_direct(331)
+      ops.SET_SLOT_DIRECT, 399,-- 138: set_slot_direct(399)
       ops.JMP, 149,            -- 140: jmp(149)
       ops.PUSH_LOCAL_FRAME,    -- 142: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 143: get_slot_direct(26)
       ops.PUSH_LITERAL, 41,    -- 145: push_literal(41)
-      ops.SET_SLOT_DIRECT, 331,-- 147: set_slot_direct(331)
+      ops.SET_SLOT_DIRECT, 399,-- 147: set_slot_direct(399)
       ops.PHI,                 -- 149: phi
       ops.PUSH_LOCAL_FRAME,    -- 150: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 151: get_slot_direct(26)
-      ops.PUSH_LITERAL, 266,   -- 153: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 155: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 153: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 155: set_slot_direct(363)
       ops.NEW_ARRAY,           -- 157: new_array
       ops.DUP,                 -- 158: dup
       ops.PUSH_LOCAL_FRAME,    -- 159: push_local_frame
@@ -9015,21 +10561,21 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 85,
+    id = 94,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 1: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 3: get_slot_direct(295)
-      ops.PUSH_LITERAL, 307,   -- 5: push_literal(307)
+      ops.GET_SLOT_DIRECT, 330,-- 1: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 3: get_slot_direct(368)
+      ops.PUSH_LITERAL, 380,   -- 5: push_literal(380)
       ops.BI_EQ,               -- 7: bi_eq
       ops.UN_NOT,              -- 8: un_not
       ops.JMP_UNLESS, 29, 36,  -- 9: jmp_unless(29,36)
       ops.PUSH_LOCAL_FRAME,    -- 12: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 13: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 15: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 16: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 16: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 21: push_literal(18)
@@ -9042,33 +10588,33 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 39, -- 34: set_slot_direct(39)
       ops.PHI,                 -- 36: phi
       ops.PUSH_FRAME,          -- 37: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 38: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 38: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 41: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 43: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 43: push_literal(380)
       ops.INVOKE, 1,           -- 45: invoke(1)
       ops.POP,                 -- 47: pop
       ops.PUSH_FRAME,          -- 48: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 49: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 51: get_slot_direct(295)
-      ops.PUSH_LITERAL, 310,   -- 53: push_literal(310)
+      ops.GET_SLOT_DIRECT, 330,-- 49: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 51: get_slot_direct(368)
+      ops.PUSH_LITERAL, 245,   -- 53: push_literal(245)
       ops.BI_EQ,               -- 55: bi_eq
       ops.UN_NOT,              -- 56: un_not
       ops.JMP_UNLESS, 74, 74,  -- 57: jmp_unless(74,74)
       ops.PUSH_FRAME,          -- 60: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 61: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 61: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 64: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 66: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 67: get_slot_direct(257)
-      ops.PUSH_LITERAL, 361,   -- 69: push_literal(361)
+      ops.GET_SLOT_DIRECT, 330,-- 67: get_slot_direct(330)
+      ops.PUSH_LITERAL, 428,   -- 69: push_literal(428)
       ops.INVOKE, 2,           -- 71: invoke(2)
       ops.POP,                 -- 73: pop
       ops.PHI,                 -- 74: phi
       ops.PUSH_LOCAL_FRAME,    -- 75: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 76: get_slot_direct(26)
-      ops.PUSH_LITERAL, 266,   -- 78: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 80: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 78: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 80: set_slot_direct(363)
       ops.NEW_ARRAY,           -- 82: new_array
       ops.DUP,                 -- 83: dup
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
@@ -9079,38 +10625,38 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 86,
+    id = 95,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 1: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 1: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 3: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 4: get_slot_direct(26)
-      ops.PUSH_LITERAL, 307,   -- 6: push_literal(307)
+      ops.PUSH_LITERAL, 380,   -- 6: push_literal(380)
       ops.INVOKE, 1,           -- 8: invoke(1)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 12: get_slot_direct(257)
-      ops.GET_SLOT_DIRECT, 295,-- 14: get_slot_direct(295)
-      ops.PUSH_LITERAL, 310,   -- 16: push_literal(310)
+      ops.GET_SLOT_DIRECT, 330,-- 12: get_slot_direct(330)
+      ops.GET_SLOT_DIRECT, 368,-- 14: get_slot_direct(368)
+      ops.PUSH_LITERAL, 245,   -- 16: push_literal(245)
       ops.BI_EQ,               -- 18: bi_eq
       ops.UN_NOT,              -- 19: un_not
       ops.JMP_UNLESS, 37, 37,  -- 20: jmp_unless(37,37)
       ops.PUSH_FRAME,          -- 23: push_frame
-      ops.GET_SLOT_DIRECT, 206,-- 24: get_slot_direct(206)
+      ops.GET_SLOT_DIRECT, 286,-- 24: get_slot_direct(286)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 27: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 29: push_frame
-      ops.GET_SLOT_DIRECT, 257,-- 30: get_slot_direct(257)
-      ops.PUSH_LITERAL, 361,   -- 32: push_literal(361)
+      ops.GET_SLOT_DIRECT, 330,-- 30: get_slot_direct(330)
+      ops.PUSH_LITERAL, 428,   -- 32: push_literal(428)
       ops.INVOKE, 2,           -- 34: invoke(2)
       ops.POP,                 -- 36: pop
       ops.PHI,                 -- 37: phi
       ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 39: get_slot_direct(26)
-      ops.PUSH_LITERAL, 266,   -- 41: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 43: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 41: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 43: set_slot_direct(363)
       ops.NEW_ARRAY,           -- 45: new_array
       ops.DUP,                 -- 46: dup
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
@@ -9121,31 +10667,31 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 87,
+    id = 96,
     nargs = 0,
     max_stack = 4,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 1: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 1: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 3: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 4: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 6: push_literal(305)
+      ops.PUSH_LITERAL, 378,   -- 6: push_literal(378)
       ops.INVOKE, 1,           -- 8: invoke(1)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 14: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 15: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 15: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 18: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 20: push_literal(18)
       ops.INVOKE, 1,           -- 22: invoke(1)
       ops.SET_SLOT_DIRECT, 39, -- 24: set_slot_direct(39)
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 27: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 27: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
-      ops.PUSH_LITERAL, 321,   -- 32: push_literal(321)
+      ops.PUSH_LITERAL, 390,   -- 32: push_literal(390)
       ops.INVOKE, 1,           -- 34: invoke(1)
       ops.POP,                 -- 36: pop
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
@@ -9160,8 +10706,8 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 40, -- 51: set_slot_direct(40)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 54: get_slot_direct(26)
-      ops.PUSH_LITERAL, 266,   -- 56: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 58: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 56: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 58: set_slot_direct(363)
       ops.NEW_ARRAY,           -- 60: new_array
       ops.DUP,                 -- 61: dup
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
@@ -9172,7 +10718,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "parse"
     name = jsval.newString("parse"),
-    id = 88,
+    id = 97,
     nargs = 3,
     max_stack = 6,
     bytecode = {
@@ -9182,85 +10728,85 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 363,-- 8: set_slot_direct(363)
+      ops.SET_SLOT_DIRECT, 430,-- 8: set_slot_direct(430)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 364,-- 15: set_slot_direct(364)
+      ops.SET_SLOT_DIRECT, 431,-- 15: set_slot_direct(431)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 365,-- 22: set_slot_direct(365)
+      ops.SET_SLOT_DIRECT, 432,-- 22: set_slot_direct(432)
       ops.POP,                 -- 24: pop
       ops.PUSH_FRAME,          -- 25: push_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 366,-- 28: set_slot_direct(366)
+      ops.SET_SLOT_DIRECT, 433,-- 28: set_slot_direct(433)
       ops.PUSH_FRAME,          -- 30: push_frame
       ops.PUSH_FRAME,          -- 31: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 32: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 366,-- 34: set_slot_direct(366)
+      ops.GET_SLOT_DIRECT, 328,-- 32: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 433,-- 34: set_slot_direct(433)
       ops.PUSH_FRAME,          -- 36: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 37: get_slot_direct(14)
       ops.DUP,                 -- 39: dup
-      ops.GET_SLOT_DIRECT_CHECK, 367,-- 40: get_slot_direct_check(367)
+      ops.GET_SLOT_DIRECT_CHECK, 434,-- 40: get_slot_direct_check(434)
       ops.SWAP,                -- 42: swap
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 44: get_slot_direct(26)
-      ops.NEW_FUNCTION, 89,    -- 46: new_function(89)
+      ops.NEW_FUNCTION, 98,    -- 46: new_function(98)
       ops.PUSH_LITERAL, 41,    -- 48: push_literal(41)
-      ops.NEW_FUNCTION, 90,    -- 50: new_function(90)
+      ops.NEW_FUNCTION, 99,    -- 50: new_function(99)
       ops.INVOKE, 4,           -- 52: invoke(4)
       ops.RETURN               -- 54: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 89,
+    id = 98,
     nargs = 0,
     max_stack = 6,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 3: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 3: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 5: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 6: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 8: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 10: push_frame
-      ops.GET_SLOT_DIRECT, 365,-- 11: get_slot_direct(365)
-      ops.SET_SLOT_DIRECT, 203,-- 13: set_slot_direct(203)
+      ops.GET_SLOT_DIRECT, 432,-- 11: get_slot_direct(432)
+      ops.SET_SLOT_DIRECT, 284,-- 13: set_slot_direct(284)
       ops.PUSH_FRAME,          -- 15: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 16: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 18: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 20: push_frame
-      ops.GET_SLOT_DIRECT, 198,-- 21: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 21: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 24: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 363,-- 27: get_slot_direct(363)
-      ops.PUSH_LITERAL, 368,   -- 29: push_literal(368)
-      ops.PUSH_LITERAL, 369,   -- 31: push_literal(369)
+      ops.GET_SLOT_DIRECT, 430,-- 27: get_slot_direct(430)
+      ops.PUSH_LITERAL, 435,   -- 29: push_literal(435)
+      ops.PUSH_LITERAL, 436,   -- 31: push_literal(436)
       ops.INVOKE, 3,           -- 33: invoke(3)
-      ops.SET_SLOT_DIRECT, 258,-- 35: set_slot_direct(258)
+      ops.SET_SLOT_DIRECT, 331,-- 35: set_slot_direct(331)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 38: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 40: get_slot_direct(117)
       ops.PUSH_LITERAL, 18,    -- 42: push_literal(18)
-      ops.SET_SLOT_DIRECT, 259,-- 44: set_slot_direct(259)
+      ops.SET_SLOT_DIRECT, 332,-- 44: set_slot_direct(332)
       ops.PUSH_FRAME,          -- 46: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 47: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 49: get_slot_direct(117)
       ops.PUSH_LITERAL, 41,    -- 51: push_literal(41)
-      ops.SET_SLOT_DIRECT, 255,-- 53: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 53: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 55: push_frame
-      ops.GET_SLOT_DIRECT, 262,-- 56: get_slot_direct(262)
+      ops.GET_SLOT_DIRECT, 335,-- 56: get_slot_direct(335)
       ops.PUSH_LOCAL_FRAME,    -- 58: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 59: get_slot_direct(26)
       ops.INVOKE, 0,           -- 61: invoke(0)
       ops.POP,                 -- 63: pop
       ops.PUSH_FRAME,          -- 64: push_frame
-      ops.GET_SLOT_DIRECT, 364,-- 65: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 65: get_slot_direct(431)
       ops.JMP_UNLESS, 158, 158,-- 67: jmp_unless(158,158)
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 71: push_literal(0)
@@ -9268,38 +10814,38 @@ startup.functions = {
       ops.PUSH_FRAME,          -- 75: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 76: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 78: push_frame
-      ops.GET_SLOT_DIRECT, 198,-- 79: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 79: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 81: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 82: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 84: push_frame
-      ops.GET_SLOT_DIRECT, 364,-- 85: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 85: get_slot_direct(431)
       ops.INVOKE, 1,           -- 87: invoke(1)
-      ops.SET_SLOT_DIRECT, 364,-- 89: set_slot_direct(364)
+      ops.SET_SLOT_DIRECT, 431,-- 89: set_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 92: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 94: set_slot_direct(53)
       ops.JMP_INTO_LOOP, 142, 157,-- 96: jmp_into_loop(142,157)
       ops.PUSH_FRAME,          -- 99: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 100: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 100: get_slot_direct(328)
       ops.DUP,                 -- 102: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 103: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 103: get_slot_direct_check(278)
       ops.SWAP,                -- 105: swap
       ops.PUSH_FRAME,          -- 106: push_frame
-      ops.GET_SLOT_DIRECT, 364,-- 107: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 107: get_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 110: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 112: get_slot_indirect
       ops.INVOKE, 1,           -- 113: invoke(1)
       ops.POP,                 -- 115: pop
       ops.PUSH_FRAME,          -- 116: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 117: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 119: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 117: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 119: get_slot_direct(359)
       ops.PUSH_FRAME,          -- 121: push_frame
-      ops.GET_SLOT_DIRECT, 364,-- 122: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 122: get_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 125: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 127: get_slot_indirect
-      ops.GET_SLOT_DIRECT, 215,-- 128: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 128: get_slot_direct(224)
       ops.PUSH_LITERAL, 118,   -- 130: push_literal(118)
       ops.SET_SLOT_INDIRECT,   -- 132: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
@@ -9312,7 +10858,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 144: get_slot_direct(53)
       ops.PUSH_FRAME,          -- 146: push_frame
-      ops.GET_SLOT_DIRECT, 364,-- 147: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 147: get_slot_direct(431)
       ops.GET_SLOT_DIRECT, 55, -- 149: get_slot_direct(55)
       ops.SWAP,                -- 151: swap
       ops.BI_GT,               -- 152: bi_gt
@@ -9321,40 +10867,40 @@ startup.functions = {
       ops.PHI,                 -- 157: phi
       ops.PHI,                 -- 158: phi
       ops.PUSH_FRAME,          -- 159: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 160: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 160: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 162: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 163: get_slot_direct(26)
       ops.INVOKE, 0,           -- 165: invoke(0)
       ops.POP,                 -- 167: pop
       ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
       ops.PUSH_FRAME,          -- 169: push_frame
-      ops.GET_SLOT_DIRECT, 268,-- 170: get_slot_direct(268)
+      ops.GET_SLOT_DIRECT, 341,-- 170: get_slot_direct(341)
       ops.PUSH_LOCAL_FRAME,    -- 172: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 173: get_slot_direct(26)
       ops.INVOKE, 0,           -- 175: invoke(0)
-      ops.SET_SLOT_DIRECT, 292,-- 177: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 177: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 179: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 180: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 180: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 182: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 183: get_slot_direct(26)
-      ops.PUSH_LITERAL, 298,   -- 185: push_literal(298)
+      ops.PUSH_LITERAL, 371,   -- 185: push_literal(371)
       ops.INVOKE, 1,           -- 187: invoke(1)
       ops.POP,                 -- 189: pop
       ops.PUSH_FRAME,          -- 190: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 191: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 191: get_slot_direct(328)
       ops.DUP,                 -- 193: dup
       ops.GET_SLOT_DIRECT_CHECK, 71,-- 194: get_slot_direct_check(71)
       ops.SWAP,                -- 196: swap
       ops.INVOKE, 0,           -- 197: invoke(0)
       ops.POP,                 -- 199: pop
       ops.PUSH_LOCAL_FRAME,    -- 200: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 201: get_slot_direct(292)
+      ops.GET_SLOT_DIRECT, 365,-- 201: get_slot_direct(365)
       ops.RETURN               -- 203: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 90,
+    id = 99,
     nargs = 0,
     max_stack = 2,
     bytecode = {
@@ -9362,15 +10908,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 117,-- 1: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 3: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 5: push_frame
-      ops.GET_SLOT_DIRECT, 366,-- 6: get_slot_direct(366)
-      ops.SET_SLOT_DIRECT, 255,-- 8: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 433,-- 6: get_slot_direct(433)
+      ops.SET_SLOT_DIRECT, 328,-- 8: set_slot_direct(328)
       ops.PUSH_LITERAL, 0,     -- 10: push_literal(0)
       ops.RETURN               -- 12: return
     }
   },
   ifunc.Function:new{ -- "parse_repl"
     name = jsval.newString("parse_repl"),
-    id = 91,
+    id = 100,
     nargs = 4,
     max_stack = 6,
     bytecode = {
@@ -9380,116 +10926,116 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 363,-- 15: set_slot_direct(363)
+      ops.SET_SLOT_DIRECT, 430,-- 15: set_slot_direct(430)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 364,-- 22: set_slot_direct(364)
+      ops.SET_SLOT_DIRECT, 431,-- 22: set_slot_direct(431)
       ops.DUP,                 -- 24: dup
       ops.GET_SLOT_DIRECT, 159,-- 25: get_slot_direct(159)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.SWAP,                -- 28: swap
-      ops.SET_SLOT_DIRECT, 365,-- 29: set_slot_direct(365)
+      ops.SET_SLOT_DIRECT, 432,-- 29: set_slot_direct(432)
       ops.POP,                 -- 31: pop
       ops.PUSH_FRAME,          -- 32: push_frame
       ops.PUSH_LITERAL, 0,     -- 33: push_literal(0)
-      ops.SET_SLOT_DIRECT, 371,-- 35: set_slot_direct(371)
+      ops.SET_SLOT_DIRECT, 437,-- 35: set_slot_direct(437)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.PUSH_LITERAL, 0,     -- 38: push_literal(0)
-      ops.SET_SLOT_DIRECT, 372,-- 40: set_slot_direct(372)
+      ops.SET_SLOT_DIRECT, 438,-- 40: set_slot_direct(438)
       ops.PUSH_FRAME,          -- 42: push_frame
       ops.PUSH_LITERAL, 0,     -- 43: push_literal(0)
-      ops.SET_SLOT_DIRECT, 366,-- 45: set_slot_direct(366)
+      ops.SET_SLOT_DIRECT, 433,-- 45: set_slot_direct(433)
       ops.PUSH_FRAME,          -- 47: push_frame
       ops.PUSH_LITERAL, 0,     -- 48: push_literal(0)
-      ops.SET_SLOT_DIRECT, 373,-- 50: set_slot_direct(373)
+      ops.SET_SLOT_DIRECT, 439,-- 50: set_slot_direct(439)
       ops.PUSH_FRAME,          -- 52: push_frame
       ops.PUSH_LITERAL, 0,     -- 53: push_literal(0)
-      ops.SET_SLOT_DIRECT, 374,-- 55: set_slot_direct(374)
+      ops.SET_SLOT_DIRECT, 440,-- 55: set_slot_direct(440)
       ops.PUSH_FRAME,          -- 57: push_frame
       ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
-      ops.SET_SLOT_DIRECT, 375,-- 60: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 60: set_slot_direct(441)
       ops.PUSH_FRAME,          -- 62: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 63: get_slot_direct(117)
       ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
-      ops.GET_SLOT_DIRECT, 365,-- 66: get_slot_direct(365)
-      ops.SET_SLOT_DIRECT, 203,-- 68: set_slot_direct(203)
+      ops.GET_SLOT_DIRECT, 432,-- 66: get_slot_direct(432)
+      ops.SET_SLOT_DIRECT, 284,-- 68: set_slot_direct(284)
       ops.PUSH_FRAME,          -- 70: push_frame
-      ops.PUSH_LITERAL, 368,   -- 71: push_literal(368)
-      ops.SET_SLOT_DIRECT, 371,-- 73: set_slot_direct(371)
+      ops.PUSH_LITERAL, 435,   -- 71: push_literal(435)
+      ops.SET_SLOT_DIRECT, 437,-- 73: set_slot_direct(437)
       ops.PUSH_FRAME,          -- 75: push_frame
-      ops.PUSH_LITERAL, 369,   -- 76: push_literal(369)
-      ops.SET_SLOT_DIRECT, 372,-- 78: set_slot_direct(372)
+      ops.PUSH_LITERAL, 436,   -- 76: push_literal(436)
+      ops.SET_SLOT_DIRECT, 438,-- 78: set_slot_direct(438)
       ops.PUSH_FRAME,          -- 80: push_frame
       ops.PUSH_FRAME,          -- 81: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 82: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 366,-- 84: set_slot_direct(366)
+      ops.GET_SLOT_DIRECT, 328,-- 82: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 433,-- 84: set_slot_direct(433)
       ops.PUSH_FRAME,          -- 86: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 87: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 87: get_slot_direct(230)
       ops.JMP_UNLESS, 104, 213,-- 89: jmp_unless(104,213)
       ops.PUSH_FRAME,          -- 92: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 93: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 95: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 96: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 255,-- 98: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 100: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 230,-- 96: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 328,-- 98: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 100: set_slot_direct(328)
       ops.JMP, 213,            -- 102: jmp(213)
       ops.PUSH_FRAME,          -- 104: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 105: get_slot_direct(117)
       ops.PUSH_LITERAL, 41,    -- 107: push_literal(41)
-      ops.SET_SLOT_DIRECT, 255,-- 109: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 109: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 111: push_frame
-      ops.GET_SLOT_DIRECT, 262,-- 112: get_slot_direct(262)
+      ops.GET_SLOT_DIRECT, 335,-- 112: get_slot_direct(335)
       ops.PUSH_LOCAL_FRAME,    -- 114: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 115: get_slot_direct(26)
       ops.INVOKE, 0,           -- 117: invoke(0)
       ops.POP,                 -- 119: pop
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 364,-- 121: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 121: get_slot_direct(431)
       ops.JMP_UNLESS, 212, 212,-- 123: jmp_unless(212,212)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 127: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 129: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
       ops.PUSH_FRAME,          -- 132: push_frame
-      ops.GET_SLOT_DIRECT, 198,-- 133: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 133: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 135: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 136: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
-      ops.GET_SLOT_DIRECT, 364,-- 139: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 139: get_slot_direct(431)
       ops.INVOKE, 1,           -- 141: invoke(1)
-      ops.SET_SLOT_DIRECT, 364,-- 143: set_slot_direct(364)
+      ops.SET_SLOT_DIRECT, 431,-- 143: set_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 145: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 146: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 148: set_slot_direct(53)
       ops.JMP_INTO_LOOP, 196, 211,-- 150: jmp_into_loop(196,211)
       ops.PUSH_FRAME,          -- 153: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 154: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 154: get_slot_direct(328)
       ops.DUP,                 -- 156: dup
-      ops.GET_SLOT_DIRECT_CHECK, 197,-- 157: get_slot_direct_check(197)
+      ops.GET_SLOT_DIRECT_CHECK, 278,-- 157: get_slot_direct_check(278)
       ops.SWAP,                -- 159: swap
       ops.PUSH_LOCAL_FRAME,    -- 160: push_local_frame
-      ops.GET_SLOT_DIRECT, 364,-- 161: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 161: get_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 163: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 164: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 166: get_slot_indirect
       ops.INVOKE, 1,           -- 167: invoke(1)
       ops.POP,                 -- 169: pop
       ops.PUSH_FRAME,          -- 170: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 171: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 173: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 171: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 173: get_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 175: push_local_frame
-      ops.GET_SLOT_DIRECT, 364,-- 176: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 176: get_slot_direct(431)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 179: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 181: get_slot_indirect
-      ops.GET_SLOT_DIRECT, 215,-- 182: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 182: get_slot_direct(224)
       ops.PUSH_LITERAL, 118,   -- 184: push_literal(118)
       ops.SET_SLOT_INDIRECT,   -- 186: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 187: push_local_frame
@@ -9502,7 +11048,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 197: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 198: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 200: push_local_frame
-      ops.GET_SLOT_DIRECT, 364,-- 201: get_slot_direct(364)
+      ops.GET_SLOT_DIRECT, 431,-- 201: get_slot_direct(431)
       ops.GET_SLOT_DIRECT, 55, -- 203: get_slot_direct(55)
       ops.SWAP,                -- 205: swap
       ops.BI_GT,               -- 206: bi_gt
@@ -9515,50 +11061,50 @@ startup.functions = {
       ops.NEW_OBJECT,          -- 215: new_object
       ops.DUP,                 -- 216: dup
       ops.PUSH_FRAME,          -- 217: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 218: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 220: set_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 373,-- 222: set_slot_direct(373)
+      ops.GET_SLOT_DIRECT, 328,-- 218: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 220: set_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 439,-- 222: set_slot_direct(439)
       ops.PUSH_FRAME,          -- 224: push_frame
       ops.PUSH_FRAME,          -- 225: push_frame
-      ops.GET_SLOT_DIRECT, 198,-- 226: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 226: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 228: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 229: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 231: push_frame
-      ops.GET_SLOT_DIRECT, 363,-- 232: get_slot_direct(363)
+      ops.GET_SLOT_DIRECT, 430,-- 232: get_slot_direct(430)
       ops.PUSH_FRAME,          -- 234: push_frame
-      ops.GET_SLOT_DIRECT, 371,-- 235: get_slot_direct(371)
+      ops.GET_SLOT_DIRECT, 437,-- 235: get_slot_direct(437)
       ops.PUSH_FRAME,          -- 237: push_frame
-      ops.GET_SLOT_DIRECT, 372,-- 238: get_slot_direct(372)
+      ops.GET_SLOT_DIRECT, 438,-- 238: get_slot_direct(438)
       ops.INVOKE, 3,           -- 240: invoke(3)
-      ops.SET_SLOT_DIRECT, 374,-- 242: set_slot_direct(374)
+      ops.SET_SLOT_DIRECT, 440,-- 242: set_slot_direct(440)
       ops.PUSH_FRAME,          -- 244: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 245: get_slot_direct(14)
       ops.DUP,                 -- 247: dup
-      ops.GET_SLOT_DIRECT_CHECK, 367,-- 248: get_slot_direct_check(367)
+      ops.GET_SLOT_DIRECT_CHECK, 434,-- 248: get_slot_direct_check(434)
       ops.SWAP,                -- 250: swap
       ops.PUSH_LOCAL_FRAME,    -- 251: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 252: get_slot_direct(26)
-      ops.NEW_FUNCTION, 92,    -- 254: new_function(92)
-      ops.NEW_FUNCTION, 93,    -- 256: new_function(93)
+      ops.NEW_FUNCTION, 101,   -- 254: new_function(101)
+      ops.NEW_FUNCTION, 102,   -- 256: new_function(102)
       ops.INVOKE, 3,           -- 258: invoke(3)
       ops.POP,                 -- 260: pop
       ops.PUSH_FRAME,          -- 261: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 262: get_slot_direct(14)
       ops.DUP,                 -- 264: dup
-      ops.GET_SLOT_DIRECT_CHECK, 367,-- 265: get_slot_direct_check(367)
+      ops.GET_SLOT_DIRECT_CHECK, 434,-- 265: get_slot_direct_check(434)
       ops.SWAP,                -- 267: swap
       ops.PUSH_LOCAL_FRAME,    -- 268: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 269: get_slot_direct(26)
-      ops.NEW_FUNCTION, 94,    -- 271: new_function(94)
+      ops.NEW_FUNCTION, 103,   -- 271: new_function(103)
       ops.PUSH_LITERAL, 41,    -- 273: push_literal(41)
-      ops.NEW_FUNCTION, 95,    -- 275: new_function(95)
+      ops.NEW_FUNCTION, 104,   -- 275: new_function(104)
       ops.INVOKE, 4,           -- 277: invoke(4)
       ops.RETURN               -- 279: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 92,
+    id = 101,
     nargs = 0,
     max_stack = 6,
     bytecode = {
@@ -9569,41 +11115,41 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 117,-- 6: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 8: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 10: push_frame
-      ops.GET_SLOT_DIRECT, 263,-- 11: get_slot_direct(263)
+      ops.GET_SLOT_DIRECT, 336,-- 11: get_slot_direct(336)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 14: get_slot_direct(26)
       ops.INVOKE, 0,           -- 16: invoke(0)
-      ops.SET_SLOT_DIRECT, 255,-- 18: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 18: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 21: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 23: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 25: push_frame
-      ops.GET_SLOT_DIRECT, 374,-- 26: get_slot_direct(374)
-      ops.SET_SLOT_DIRECT, 258,-- 28: set_slot_direct(258)
+      ops.GET_SLOT_DIRECT, 440,-- 26: get_slot_direct(440)
+      ops.SET_SLOT_DIRECT, 331,-- 28: set_slot_direct(331)
       ops.PUSH_FRAME,          -- 30: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 31: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 33: get_slot_direct(117)
       ops.PUSH_LITERAL, 18,    -- 35: push_literal(18)
-      ops.SET_SLOT_DIRECT, 259,-- 37: set_slot_direct(259)
+      ops.SET_SLOT_DIRECT, 332,-- 37: set_slot_direct(332)
       ops.PUSH_FRAME,          -- 39: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 40: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 40: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 43: get_slot_direct(26)
       ops.INVOKE, 0,           -- 45: invoke(0)
       ops.POP,                 -- 47: pop
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.PUSH_FRAME,          -- 49: push_frame
-      ops.GET_SLOT_DIRECT, 265,-- 50: get_slot_direct(265)
+      ops.GET_SLOT_DIRECT, 338,-- 50: get_slot_direct(338)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 53: get_slot_direct(26)
       ops.PUSH_LITERAL, 18,    -- 55: push_literal(18)
       ops.INVOKE, 1,           -- 57: invoke(1)
       ops.SET_SLOT_DIRECT, 87, -- 59: set_slot_direct(87)
       ops.PUSH_FRAME,          -- 61: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 62: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 62: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 65: get_slot_direct(26)
-      ops.PUSH_LITERAL, 298,   -- 67: push_literal(298)
+      ops.PUSH_LITERAL, 371,   -- 67: push_literal(371)
       ops.INVOKE, 1,           -- 69: invoke(1)
       ops.POP,                 -- 71: pop
       ops.PUSH_FRAME,          -- 72: push_frame
@@ -9612,29 +11158,29 @@ startup.functions = {
       ops.DUP,                 -- 76: dup
       ops.NEW_OBJECT,          -- 77: new_object
       ops.DUP,                 -- 78: dup
-      ops.PUSH_LITERAL, 360,   -- 79: push_literal(360)
-      ops.SET_SLOT_DIRECT, 215,-- 81: set_slot_direct(215)
+      ops.PUSH_LITERAL, 427,   -- 79: push_literal(427)
+      ops.SET_SLOT_DIRECT, 224,-- 81: set_slot_direct(224)
       ops.DUP,                 -- 83: dup
-      ops.PUSH_LITERAL, 266,   -- 84: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 86: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 84: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 86: set_slot_direct(363)
       ops.DUP,                 -- 88: dup
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 90: get_slot_direct(87)
       ops.SET_SLOT_DIRECT, 39, -- 92: set_slot_direct(39)
       ops.SET_SLOT_DIRECT, 18, -- 94: set_slot_direct(18)
-      ops.SET_SLOT_DIRECT, 375,-- 96: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 96: set_slot_direct(441)
       ops.PUSH_FRAME,          -- 98: push_frame
-      ops.GET_SLOT_DIRECT, 373,-- 99: get_slot_direct(373)
+      ops.GET_SLOT_DIRECT, 439,-- 99: get_slot_direct(439)
       ops.PUSH_FRAME,          -- 101: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 102: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 104: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 102: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 104: set_slot_direct(328)
       ops.PUSH_LITERAL, 0,     -- 106: push_literal(0)
       ops.RETURN               -- 108: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 93,
+    id = 102,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -9644,112 +11190,112 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 376,-- 8: set_slot_direct(376)
+      ops.SET_SLOT_DIRECT, 442,-- 8: set_slot_direct(442)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 12: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 14: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 16: push_frame
-      ops.GET_SLOT_DIRECT, 373,-- 17: get_slot_direct(373)
-      ops.GET_SLOT_DIRECT, 255,-- 19: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 21: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 439,-- 17: get_slot_direct(439)
+      ops.GET_SLOT_DIRECT, 328,-- 19: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 21: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 23: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 24: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 198,-- 27: get_slot_direct(198)
+      ops.GET_SLOT_DIRECT, 279,-- 27: get_slot_direct(279)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 32: push_frame
-      ops.GET_SLOT_DIRECT, 363,-- 33: get_slot_direct(363)
+      ops.GET_SLOT_DIRECT, 430,-- 33: get_slot_direct(430)
       ops.PUSH_FRAME,          -- 35: push_frame
-      ops.GET_SLOT_DIRECT, 371,-- 36: get_slot_direct(371)
+      ops.GET_SLOT_DIRECT, 437,-- 36: get_slot_direct(437)
       ops.PUSH_FRAME,          -- 38: push_frame
-      ops.GET_SLOT_DIRECT, 372,-- 39: get_slot_direct(372)
+      ops.GET_SLOT_DIRECT, 438,-- 39: get_slot_direct(438)
       ops.INVOKE, 3,           -- 41: invoke(3)
-      ops.SET_SLOT_DIRECT, 374,-- 43: set_slot_direct(374)
+      ops.SET_SLOT_DIRECT, 440,-- 43: set_slot_direct(440)
       ops.PUSH_LITERAL, 0,     -- 45: push_literal(0)
       ops.RETURN               -- 47: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 94,
+    id = 103,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 375,-- 1: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 1: get_slot_direct(441)
       ops.UN_NOT,              -- 3: un_not
       ops.JMP_UNLESS, 93, 93,  -- 4: jmp_unless(93,93)
       ops.PUSH_LOCAL_FRAME,    -- 7: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 8: push_literal(0)
-      ops.SET_SLOT_DIRECT, 292,-- 10: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 10: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 12: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 13: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 15: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 263,-- 18: get_slot_direct(263)
+      ops.GET_SLOT_DIRECT, 336,-- 18: get_slot_direct(336)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 21: get_slot_direct(26)
       ops.INVOKE, 0,           -- 23: invoke(0)
-      ops.SET_SLOT_DIRECT, 255,-- 25: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 25: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 27: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 28: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 30: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 32: push_frame
-      ops.GET_SLOT_DIRECT, 374,-- 33: get_slot_direct(374)
-      ops.SET_SLOT_DIRECT, 258,-- 35: set_slot_direct(258)
+      ops.GET_SLOT_DIRECT, 440,-- 33: get_slot_direct(440)
+      ops.SET_SLOT_DIRECT, 331,-- 35: set_slot_direct(331)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 38: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 40: get_slot_direct(117)
       ops.PUSH_LITERAL, 18,    -- 42: push_literal(18)
-      ops.SET_SLOT_DIRECT, 259,-- 44: set_slot_direct(259)
+      ops.SET_SLOT_DIRECT, 332,-- 44: set_slot_direct(332)
       ops.PUSH_FRAME,          -- 46: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 47: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 47: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
       ops.INVOKE, 0,           -- 52: invoke(0)
       ops.POP,                 -- 54: pop
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
       ops.PUSH_FRAME,          -- 56: push_frame
-      ops.GET_SLOT_DIRECT, 268,-- 57: get_slot_direct(268)
+      ops.GET_SLOT_DIRECT, 341,-- 57: get_slot_direct(341)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 60: get_slot_direct(26)
       ops.INVOKE, 0,           -- 62: invoke(0)
-      ops.SET_SLOT_DIRECT, 292,-- 64: set_slot_direct(292)
+      ops.SET_SLOT_DIRECT, 365,-- 64: set_slot_direct(365)
       ops.PUSH_FRAME,          -- 66: push_frame
-      ops.GET_SLOT_DIRECT, 264,-- 67: get_slot_direct(264)
+      ops.GET_SLOT_DIRECT, 337,-- 67: get_slot_direct(337)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 70: get_slot_direct(26)
-      ops.PUSH_LITERAL, 298,   -- 72: push_literal(298)
+      ops.PUSH_LITERAL, 371,   -- 72: push_literal(371)
       ops.INVOKE, 1,           -- 74: invoke(1)
       ops.POP,                 -- 76: pop
       ops.PUSH_FRAME,          -- 77: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 78: get_slot_direct(117)
       ops.PUSH_LOCAL_FRAME,    -- 80: push_local_frame
-      ops.GET_SLOT_DIRECT, 292,-- 81: get_slot_direct(292)
-      ops.SET_SLOT_DIRECT, 375,-- 83: set_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 365,-- 81: get_slot_direct(365)
+      ops.SET_SLOT_DIRECT, 441,-- 83: set_slot_direct(441)
       ops.PUSH_FRAME,          -- 85: push_frame
-      ops.GET_SLOT_DIRECT, 373,-- 86: get_slot_direct(373)
+      ops.GET_SLOT_DIRECT, 439,-- 86: get_slot_direct(439)
       ops.PUSH_FRAME,          -- 88: push_frame
-      ops.GET_SLOT_DIRECT, 255,-- 89: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 91: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 89: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 91: set_slot_direct(328)
       ops.PHI,                 -- 93: phi
       ops.NEW_OBJECT,          -- 94: new_object
       ops.DUP,                 -- 95: dup
       ops.PUSH_FRAME,          -- 96: push_frame
-      ops.GET_SLOT_DIRECT, 373,-- 97: get_slot_direct(373)
-      ops.SET_SLOT_DIRECT, 370,-- 99: set_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 439,-- 97: get_slot_direct(439)
+      ops.SET_SLOT_DIRECT, 230,-- 99: set_slot_direct(230)
       ops.DUP,                 -- 101: dup
       ops.PUSH_FRAME,          -- 102: push_frame
-      ops.GET_SLOT_DIRECT, 375,-- 103: get_slot_direct(375)
-      ops.SET_SLOT_DIRECT, 375,-- 105: set_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 103: get_slot_direct(441)
+      ops.SET_SLOT_DIRECT, 441,-- 105: set_slot_direct(441)
       ops.RETURN               -- 107: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 95,
+    id = 104,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -9759,21 +11305,21 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 376,-- 8: set_slot_direct(376)
+      ops.SET_SLOT_DIRECT, 442,-- 8: set_slot_direct(442)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 12: get_slot_direct(117)
       ops.GET_SLOT_DIRECT, 117,-- 14: get_slot_direct(117)
       ops.PUSH_FRAME,          -- 16: push_frame
-      ops.GET_SLOT_DIRECT, 366,-- 17: get_slot_direct(366)
-      ops.SET_SLOT_DIRECT, 255,-- 19: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 433,-- 17: get_slot_direct(433)
+      ops.SET_SLOT_DIRECT, 328,-- 19: set_slot_direct(328)
       ops.PUSH_LITERAL, 0,     -- 21: push_literal(0)
       ops.RETURN               -- 23: return
     }
   },
   ifunc.Function:new{ -- "make_bytecode_table"
     name = jsval.newString("make_bytecode_table"),
-    id = 96,
+    id = 105,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -9783,224 +11329,224 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 382,-- 8: set_slot_direct(382)
+      ops.SET_SLOT_DIRECT, 448,-- 8: set_slot_direct(448)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 383,-- 14: set_slot_direct(383)
+      ops.SET_SLOT_DIRECT, 449,-- 14: set_slot_direct(449)
       ops.PUSH_FRAME,          -- 16: push_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 384,-- 19: set_slot_direct(384)
+      ops.SET_SLOT_DIRECT, 450,-- 19: set_slot_direct(450)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 385,-- 24: set_slot_direct(385)
+      ops.SET_SLOT_DIRECT, 451,-- 24: set_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
-      ops.SET_SLOT_DIRECT, 386,-- 29: set_slot_direct(386)
+      ops.SET_SLOT_DIRECT, 452,-- 29: set_slot_direct(452)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 32: push_literal(0)
-      ops.SET_SLOT_DIRECT, 387,-- 34: set_slot_direct(387)
+      ops.SET_SLOT_DIRECT, 453,-- 34: set_slot_direct(453)
       ops.PUSH_FRAME,          -- 36: push_frame
       ops.NEW_ARRAY,           -- 37: new_array
-      ops.SET_SLOT_DIRECT, 383,-- 38: set_slot_direct(383)
+      ops.SET_SLOT_DIRECT, 449,-- 38: set_slot_direct(449)
       ops.PUSH_FRAME,          -- 40: push_frame
       ops.NEW_OBJECT,          -- 41: new_object
-      ops.SET_SLOT_DIRECT, 384,-- 42: set_slot_direct(384)
+      ops.SET_SLOT_DIRECT, 450,-- 42: set_slot_direct(450)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.NEW_FUNCTION, 97,    -- 45: new_function(97)
-      ops.SET_SLOT_DIRECT, 385,-- 47: set_slot_direct(385)
+      ops.NEW_FUNCTION, 106,   -- 45: new_function(106)
+      ops.SET_SLOT_DIRECT, 451,-- 47: set_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
-      ops.NEW_FUNCTION, 101,   -- 50: new_function(101)
-      ops.SET_SLOT_DIRECT, 386,-- 52: set_slot_direct(386)
+      ops.NEW_FUNCTION, 110,   -- 50: new_function(110)
+      ops.SET_SLOT_DIRECT, 452,-- 52: set_slot_direct(452)
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
-      ops.NEW_FUNCTION, 102,   -- 55: new_function(102)
-      ops.SET_SLOT_DIRECT, 387,-- 57: set_slot_direct(387)
+      ops.NEW_FUNCTION, 111,   -- 55: new_function(111)
+      ops.SET_SLOT_DIRECT, 453,-- 57: set_slot_direct(453)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 60: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 60: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 63: get_slot_direct(26)
-      ops.PUSH_LITERAL, 401,   -- 65: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 65: push_literal(467)
       ops.PUSH_LITERAL, 18,    -- 67: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 69: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 71: push_literal(31)
       ops.INVOKE, 4,           -- 73: invoke(4)
       ops.POP,                 -- 75: pop
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 77: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 77: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 80: get_slot_direct(26)
-      ops.PUSH_LITERAL, 402,   -- 82: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 82: push_literal(468)
       ops.PUSH_LITERAL, 18,    -- 84: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 86: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 88: push_literal(31)
       ops.INVOKE, 4,           -- 90: invoke(4)
       ops.POP,                 -- 92: pop
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 94: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 94: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 97: get_slot_direct(26)
-      ops.PUSH_LITERAL, 403,   -- 99: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 99: push_literal(469)
       ops.PUSH_LITERAL, 31,    -- 101: push_literal(31)
       ops.PUSH_LITERAL, 18,    -- 103: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 105: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
-      ops.GET_SLOT_DIRECT, 386,-- 108: get_slot_direct(386)
+      ops.GET_SLOT_DIRECT, 452,-- 108: get_slot_direct(452)
       ops.INVOKE, 5,           -- 110: invoke(5)
       ops.POP,                 -- 112: pop
       ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 114: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 114: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 116: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 117: get_slot_direct(26)
-      ops.PUSH_LITERAL, 404,   -- 119: push_literal(404)
+      ops.PUSH_LITERAL, 470,   -- 119: push_literal(470)
       ops.PUSH_LITERAL, 18,    -- 121: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 123: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 125: push_literal(31)
       ops.INVOKE, 4,           -- 127: invoke(4)
       ops.POP,                 -- 129: pop
       ops.PUSH_LOCAL_FRAME,    -- 130: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 131: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 131: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 134: get_slot_direct(26)
-      ops.PUSH_LITERAL, 405,   -- 136: push_literal(405)
+      ops.PUSH_LITERAL, 471,   -- 136: push_literal(471)
       ops.PUSH_LITERAL, 18,    -- 138: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 140: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 142: push_literal(31)
       ops.INVOKE, 4,           -- 144: invoke(4)
       ops.POP,                 -- 146: pop
       ops.PUSH_LOCAL_FRAME,    -- 147: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 148: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 148: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 150: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 151: get_slot_direct(26)
-      ops.PUSH_LITERAL, 406,   -- 153: push_literal(406)
+      ops.PUSH_LITERAL, 472,   -- 153: push_literal(472)
       ops.PUSH_LITERAL, 31,    -- 155: push_literal(31)
       ops.PUSH_LITERAL, 18,    -- 157: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 159: push_literal(31)
       ops.INVOKE, 4,           -- 161: invoke(4)
       ops.POP,                 -- 163: pop
       ops.PUSH_LOCAL_FRAME,    -- 164: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 165: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 165: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 167: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 168: get_slot_direct(26)
-      ops.PUSH_LITERAL, 407,   -- 170: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 170: push_literal(473)
       ops.PUSH_LITERAL, 31,    -- 172: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 174: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 176: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
-      ops.GET_SLOT_DIRECT, 386,-- 179: get_slot_direct(386)
+      ops.GET_SLOT_DIRECT, 452,-- 179: get_slot_direct(452)
       ops.INVOKE, 5,           -- 181: invoke(5)
       ops.POP,                 -- 183: pop
       ops.PUSH_LOCAL_FRAME,    -- 184: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 185: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 185: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 187: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 188: get_slot_direct(26)
-      ops.PUSH_LITERAL, 408,   -- 190: push_literal(408)
+      ops.PUSH_LITERAL, 474,   -- 190: push_literal(474)
       ops.PUSH_LITERAL, 18,    -- 192: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 194: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 196: push_literal(31)
       ops.INVOKE, 4,           -- 198: invoke(4)
       ops.POP,                 -- 200: pop
       ops.PUSH_LOCAL_FRAME,    -- 201: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 202: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 202: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 204: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 205: get_slot_direct(26)
-      ops.PUSH_LITERAL, 409,   -- 207: push_literal(409)
+      ops.PUSH_LITERAL, 475,   -- 207: push_literal(475)
       ops.PUSH_LITERAL, 31,    -- 209: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 211: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 213: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 215: push_local_frame
-      ops.GET_SLOT_DIRECT, 386,-- 216: get_slot_direct(386)
+      ops.GET_SLOT_DIRECT, 452,-- 216: get_slot_direct(452)
       ops.INVOKE, 5,           -- 218: invoke(5)
       ops.POP,                 -- 220: pop
       ops.PUSH_LOCAL_FRAME,    -- 221: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 222: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 222: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 225: get_slot_direct(26)
-      ops.PUSH_LITERAL, 410,   -- 227: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 227: push_literal(476)
       ops.PUSH_LITERAL, 31,    -- 229: push_literal(31)
       ops.PUSH_LITERAL, 136,   -- 231: push_literal(136)
       ops.PUSH_LITERAL, 18,    -- 233: push_literal(18)
       ops.PUSH_LOCAL_FRAME,    -- 235: push_local_frame
-      ops.GET_SLOT_DIRECT, 386,-- 236: get_slot_direct(386)
+      ops.GET_SLOT_DIRECT, 452,-- 236: get_slot_direct(452)
       ops.INVOKE, 5,           -- 238: invoke(5)
       ops.POP,                 -- 240: pop
       ops.PUSH_LOCAL_FRAME,    -- 241: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 242: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 242: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 244: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 245: get_slot_direct(26)
-      ops.PUSH_LITERAL, 411,   -- 247: push_literal(411)
+      ops.PUSH_LITERAL, 477,   -- 247: push_literal(477)
       ops.PUSH_LITERAL, 18,    -- 249: push_literal(18)
       ops.PUSH_LITERAL, 159,   -- 251: push_literal(159)
       ops.PUSH_LITERAL, 18,    -- 253: push_literal(18)
       ops.INVOKE, 4,           -- 255: invoke(4)
       ops.POP,                 -- 257: pop
       ops.PUSH_LOCAL_FRAME,    -- 258: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 259: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 259: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 261: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 262: get_slot_direct(26)
-      ops.PUSH_LITERAL, 412,   -- 264: push_literal(412)
+      ops.PUSH_LITERAL, 478,   -- 264: push_literal(478)
       ops.PUSH_LITERAL, 31,    -- 266: push_literal(31)
-      ops.NEW_FUNCTION, 103,   -- 268: new_function(103)
+      ops.NEW_FUNCTION, 112,   -- 268: new_function(112)
       ops.PUSH_LITERAL, 31,    -- 270: push_literal(31)
       ops.INVOKE, 4,           -- 272: invoke(4)
       ops.POP,                 -- 274: pop
       ops.PUSH_LOCAL_FRAME,    -- 275: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 276: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 276: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 278: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 279: get_slot_direct(26)
-      ops.PUSH_LITERAL, 360,   -- 281: push_literal(360)
+      ops.PUSH_LITERAL, 427,   -- 281: push_literal(427)
       ops.PUSH_LITERAL, 18,    -- 283: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 285: push_literal(31)
       ops.PUSH_LITERAL, 18,    -- 287: push_literal(18)
       ops.INVOKE, 4,           -- 289: invoke(4)
       ops.POP,                 -- 291: pop
       ops.PUSH_LOCAL_FRAME,    -- 292: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 293: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 293: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 295: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 296: get_slot_direct(26)
-      ops.PUSH_LITERAL, 415,   -- 298: push_literal(415)
+      ops.PUSH_LITERAL, 481,   -- 298: push_literal(481)
       ops.PUSH_LITERAL, 31,    -- 300: push_literal(31)
       ops.PUSH_LITERAL, 18,    -- 302: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 304: push_literal(18)
       ops.PUSH_LOCAL_FRAME,    -- 306: push_local_frame
-      ops.GET_SLOT_DIRECT, 387,-- 307: get_slot_direct(387)
+      ops.GET_SLOT_DIRECT, 453,-- 307: get_slot_direct(453)
       ops.INVOKE, 5,           -- 309: invoke(5)
       ops.POP,                 -- 311: pop
       ops.PUSH_LOCAL_FRAME,    -- 312: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 313: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 313: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 315: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 316: get_slot_direct(26)
-      ops.PUSH_LITERAL, 416,   -- 318: push_literal(416)
+      ops.PUSH_LITERAL, 482,   -- 318: push_literal(482)
       ops.PUSH_LITERAL, 136,   -- 320: push_literal(136)
       ops.PUSH_LITERAL, 18,    -- 322: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 324: push_literal(18)
       ops.PUSH_LOCAL_FRAME,    -- 326: push_local_frame
-      ops.GET_SLOT_DIRECT, 387,-- 327: get_slot_direct(387)
+      ops.GET_SLOT_DIRECT, 453,-- 327: get_slot_direct(453)
       ops.INVOKE, 5,           -- 329: invoke(5)
       ops.POP,                 -- 331: pop
       ops.PUSH_LOCAL_FRAME,    -- 332: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 333: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 333: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 335: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 336: get_slot_direct(26)
-      ops.PUSH_LITERAL, 417,   -- 338: push_literal(417)
+      ops.PUSH_LITERAL, 483,   -- 338: push_literal(483)
       ops.PUSH_LITERAL, 136,   -- 340: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 342: push_literal(31)
       ops.PUSH_LITERAL, 18,    -- 344: push_literal(18)
       ops.PUSH_LOCAL_FRAME,    -- 346: push_local_frame
-      ops.GET_SLOT_DIRECT, 387,-- 347: get_slot_direct(387)
+      ops.GET_SLOT_DIRECT, 453,-- 347: get_slot_direct(453)
       ops.INVOKE, 5,           -- 349: invoke(5)
       ops.POP,                 -- 351: pop
       ops.PUSH_LOCAL_FRAME,    -- 352: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 353: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 353: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 355: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 356: get_slot_direct(26)
-      ops.PUSH_LITERAL, 418,   -- 358: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 358: push_literal(484)
       ops.PUSH_LITERAL, 18,    -- 360: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 362: push_literal(18)
       ops.PUSH_LITERAL, 18,    -- 364: push_literal(18)
       ops.INVOKE, 4,           -- 366: invoke(4)
       ops.POP,                 -- 368: pop
       ops.PUSH_LOCAL_FRAME,    -- 369: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 370: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 370: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 372: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 373: get_slot_direct(26)
       ops.PUSH_LITERAL, 71,    -- 375: push_literal(71)
@@ -10010,150 +11556,150 @@ startup.functions = {
       ops.INVOKE, 4,           -- 383: invoke(4)
       ops.POP,                 -- 385: pop
       ops.PUSH_LOCAL_FRAME,    -- 386: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 387: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 387: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 389: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 390: get_slot_direct(26)
-      ops.PUSH_LITERAL, 419,   -- 392: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 392: push_literal(485)
       ops.PUSH_LITERAL, 18,    -- 394: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 396: push_literal(31)
       ops.PUSH_LITERAL, 136,   -- 398: push_literal(136)
       ops.INVOKE, 4,           -- 400: invoke(4)
       ops.POP,                 -- 402: pop
       ops.PUSH_LOCAL_FRAME,    -- 403: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 404: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 404: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 406: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 407: get_slot_direct(26)
-      ops.PUSH_LITERAL, 420,   -- 409: push_literal(420)
+      ops.PUSH_LITERAL, 486,   -- 409: push_literal(486)
       ops.PUSH_LITERAL, 18,    -- 411: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 413: push_literal(136)
       ops.PUSH_LITERAL, 162,   -- 415: push_literal(162)
       ops.INVOKE, 4,           -- 417: invoke(4)
       ops.POP,                 -- 419: pop
       ops.PUSH_LOCAL_FRAME,    -- 420: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 421: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 421: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 423: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 424: get_slot_direct(26)
-      ops.PUSH_LITERAL, 421,   -- 426: push_literal(421)
+      ops.PUSH_LITERAL, 487,   -- 426: push_literal(487)
       ops.PUSH_LITERAL, 18,    -- 428: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 430: push_literal(136)
       ops.PUSH_LITERAL, 159,   -- 432: push_literal(159)
       ops.INVOKE, 4,           -- 434: invoke(4)
       ops.POP,                 -- 436: pop
       ops.PUSH_LOCAL_FRAME,    -- 437: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 438: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 438: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 440: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 441: get_slot_direct(26)
-      ops.PUSH_LITERAL, 422,   -- 443: push_literal(422)
+      ops.PUSH_LITERAL, 488,   -- 443: push_literal(488)
       ops.PUSH_LITERAL, 18,    -- 445: push_literal(18)
       ops.PUSH_LITERAL, 159,   -- 447: push_literal(159)
       ops.PUSH_LITERAL, 162,   -- 449: push_literal(162)
       ops.INVOKE, 4,           -- 451: invoke(4)
       ops.POP,                 -- 453: pop
       ops.PUSH_LOCAL_FRAME,    -- 454: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 455: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 455: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 457: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 458: get_slot_direct(26)
-      ops.PUSH_LITERAL, 423,   -- 460: push_literal(423)
+      ops.PUSH_LITERAL, 489,   -- 460: push_literal(489)
       ops.PUSH_LITERAL, 18,    -- 462: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 464: push_literal(136)
       ops.PUSH_LITERAL, 136,   -- 466: push_literal(136)
       ops.INVOKE, 4,           -- 468: invoke(4)
       ops.POP,                 -- 470: pop
       ops.PUSH_LOCAL_FRAME,    -- 471: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 472: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 472: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 474: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 475: get_slot_direct(26)
-      ops.PUSH_LITERAL, 424,   -- 477: push_literal(424)
+      ops.PUSH_LITERAL, 490,   -- 477: push_literal(490)
       ops.PUSH_LITERAL, 18,    -- 479: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 481: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 483: push_literal(31)
       ops.INVOKE, 4,           -- 485: invoke(4)
       ops.POP,                 -- 487: pop
       ops.PUSH_LOCAL_FRAME,    -- 488: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 489: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 489: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 491: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 492: get_slot_direct(26)
-      ops.PUSH_LITERAL, 425,   -- 494: push_literal(425)
+      ops.PUSH_LITERAL, 491,   -- 494: push_literal(491)
       ops.PUSH_LITERAL, 18,    -- 496: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 498: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 500: push_literal(31)
       ops.INVOKE, 4,           -- 502: invoke(4)
       ops.POP,                 -- 504: pop
       ops.PUSH_LOCAL_FRAME,    -- 505: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 506: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 506: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 508: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 509: get_slot_direct(26)
-      ops.PUSH_LITERAL, 426,   -- 511: push_literal(426)
+      ops.PUSH_LITERAL, 492,   -- 511: push_literal(492)
       ops.PUSH_LITERAL, 18,    -- 513: push_literal(18)
       ops.PUSH_LITERAL, 31,    -- 515: push_literal(31)
       ops.PUSH_LITERAL, 31,    -- 517: push_literal(31)
       ops.INVOKE, 4,           -- 519: invoke(4)
       ops.POP,                 -- 521: pop
       ops.PUSH_LOCAL_FRAME,    -- 522: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 523: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 523: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 525: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 526: get_slot_direct(26)
-      ops.PUSH_LITERAL, 427,   -- 528: push_literal(427)
+      ops.PUSH_LITERAL, 493,   -- 528: push_literal(493)
       ops.PUSH_LITERAL, 18,    -- 530: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 532: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 534: push_literal(31)
       ops.INVOKE, 4,           -- 536: invoke(4)
       ops.POP,                 -- 538: pop
       ops.PUSH_LOCAL_FRAME,    -- 539: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 540: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 540: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 542: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 543: get_slot_direct(26)
-      ops.PUSH_LITERAL, 428,   -- 545: push_literal(428)
+      ops.PUSH_LITERAL, 494,   -- 545: push_literal(494)
       ops.PUSH_LITERAL, 18,    -- 547: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 549: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 551: push_literal(31)
       ops.INVOKE, 4,           -- 553: invoke(4)
       ops.POP,                 -- 555: pop
       ops.PUSH_LOCAL_FRAME,    -- 556: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 557: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 557: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 559: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 560: get_slot_direct(26)
-      ops.PUSH_LITERAL, 429,   -- 562: push_literal(429)
+      ops.PUSH_LITERAL, 495,   -- 562: push_literal(495)
       ops.PUSH_LITERAL, 18,    -- 564: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 566: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 568: push_literal(31)
       ops.INVOKE, 4,           -- 570: invoke(4)
       ops.POP,                 -- 572: pop
       ops.PUSH_LOCAL_FRAME,    -- 573: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 574: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 574: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 576: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 577: get_slot_direct(26)
-      ops.PUSH_LITERAL, 430,   -- 579: push_literal(430)
+      ops.PUSH_LITERAL, 496,   -- 579: push_literal(496)
       ops.PUSH_LITERAL, 18,    -- 581: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 583: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 585: push_literal(31)
       ops.INVOKE, 4,           -- 587: invoke(4)
       ops.POP,                 -- 589: pop
       ops.PUSH_LOCAL_FRAME,    -- 590: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 591: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 591: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 593: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 594: get_slot_direct(26)
-      ops.PUSH_LITERAL, 431,   -- 596: push_literal(431)
+      ops.PUSH_LITERAL, 497,   -- 596: push_literal(497)
       ops.PUSH_LITERAL, 18,    -- 598: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 600: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 602: push_literal(31)
       ops.INVOKE, 4,           -- 604: invoke(4)
       ops.POP,                 -- 606: pop
       ops.PUSH_LOCAL_FRAME,    -- 607: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 608: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 608: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 610: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 611: get_slot_direct(26)
-      ops.PUSH_LITERAL, 432,   -- 613: push_literal(432)
+      ops.PUSH_LITERAL, 498,   -- 613: push_literal(498)
       ops.PUSH_LITERAL, 18,    -- 615: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 617: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 619: push_literal(31)
       ops.INVOKE, 4,           -- 621: invoke(4)
       ops.POP,                 -- 623: pop
       ops.PUSH_LOCAL_FRAME,    -- 624: push_local_frame
-      ops.GET_SLOT_DIRECT, 385,-- 625: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 625: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 627: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 628: get_slot_direct(26)
-      ops.PUSH_LITERAL, 433,   -- 630: push_literal(433)
+      ops.PUSH_LITERAL, 499,   -- 630: push_literal(499)
       ops.PUSH_LITERAL, 18,    -- 632: push_literal(18)
       ops.PUSH_LITERAL, 136,   -- 634: push_literal(136)
       ops.PUSH_LITERAL, 31,    -- 636: push_literal(31)
@@ -10161,31 +11707,31 @@ startup.functions = {
       ops.POP,                 -- 640: pop
       ops.NEW_OBJECT,          -- 641: new_object
       ops.DUP,                 -- 642: dup
-      ops.PUSH_LITERAL, 380,   -- 643: push_literal(380)
-      ops.SET_SLOT_DIRECT, 248,-- 645: set_slot_direct(248)
+      ops.PUSH_LITERAL, 446,   -- 643: push_literal(446)
+      ops.SET_SLOT_DIRECT, 321,-- 645: set_slot_direct(321)
       ops.DUP,                 -- 647: dup
       ops.PUSH_FRAME,          -- 648: push_frame
-      ops.GET_SLOT_DIRECT, 434,-- 649: get_slot_direct(434)
-      ops.SET_SLOT_DIRECT, 250,-- 651: set_slot_direct(250)
+      ops.GET_SLOT_DIRECT, 500,-- 649: get_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 323,-- 651: set_slot_direct(323)
       ops.DUP,                 -- 653: dup
       ops.NEW_ARRAY,           -- 654: new_array
-      ops.SET_SLOT_DIRECT, 378,-- 655: set_slot_direct(378)
+      ops.SET_SLOT_DIRECT, 444,-- 655: set_slot_direct(444)
       ops.DUP,                 -- 657: dup
       ops.PUSH_LOCAL_FRAME,    -- 658: push_local_frame
-      ops.GET_SLOT_DIRECT, 382,-- 659: get_slot_direct(382)
-      ops.SET_SLOT_DIRECT, 251,-- 661: set_slot_direct(251)
+      ops.GET_SLOT_DIRECT, 448,-- 659: get_slot_direct(448)
+      ops.SET_SLOT_DIRECT, 324,-- 661: set_slot_direct(324)
       ops.DUP,                 -- 663: dup
-      ops.NEW_FUNCTION, 104,   -- 664: new_function(104)
-      ops.SET_SLOT_DIRECT, 435,-- 666: set_slot_direct(435)
+      ops.NEW_FUNCTION, 113,   -- 664: new_function(113)
+      ops.SET_SLOT_DIRECT, 501,-- 666: set_slot_direct(501)
       ops.DUP,                 -- 668: dup
-      ops.NEW_FUNCTION, 105,   -- 669: new_function(105)
-      ops.SET_SLOT_DIRECT, 436,-- 671: set_slot_direct(436)
+      ops.NEW_FUNCTION, 114,   -- 669: new_function(114)
+      ops.SET_SLOT_DIRECT, 502,-- 671: set_slot_direct(502)
       ops.RETURN               -- 673: return
     }
   },
   ifunc.Function:new{ -- "bc"
     name = jsval.newString("bc"),
-    id = 97,
+    id = 106,
     nargs = 5,
     max_stack = 4,
     bytecode = {
@@ -10200,105 +11746,105 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 388,-- 15: set_slot_direct(388)
+      ops.SET_SLOT_DIRECT, 454,-- 15: set_slot_direct(454)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 389,-- 22: set_slot_direct(389)
+      ops.SET_SLOT_DIRECT, 455,-- 22: set_slot_direct(455)
       ops.DUP,                 -- 24: dup
       ops.GET_SLOT_DIRECT, 159,-- 25: get_slot_direct(159)
       ops.PUSH_FRAME,          -- 27: push_frame
       ops.SWAP,                -- 28: swap
-      ops.SET_SLOT_DIRECT, 390,-- 29: set_slot_direct(390)
+      ops.SET_SLOT_DIRECT, 456,-- 29: set_slot_direct(456)
       ops.DUP,                 -- 31: dup
       ops.GET_SLOT_DIRECT, 162,-- 32: get_slot_direct(162)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.SWAP,                -- 35: swap
-      ops.SET_SLOT_DIRECT, 391,-- 36: set_slot_direct(391)
+      ops.SET_SLOT_DIRECT, 457,-- 36: set_slot_direct(457)
       ops.POP,                 -- 38: pop
       ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 40: push_literal(0)
-      ops.SET_SLOT_DIRECT, 392,-- 42: set_slot_direct(392)
+      ops.SET_SLOT_DIRECT, 458,-- 42: set_slot_direct(458)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
       ops.NEW_OBJECT,          -- 45: new_object
       ops.DUP,                 -- 46: dup
       ops.PUSH_FRAME,          -- 47: push_frame
-      ops.GET_SLOT_DIRECT, 383,-- 48: get_slot_direct(383)
+      ops.GET_SLOT_DIRECT, 449,-- 48: get_slot_direct(449)
       ops.GET_SLOT_DIRECT, 55, -- 50: get_slot_direct(55)
-      ops.SET_SLOT_DIRECT, 295,-- 52: set_slot_direct(295)
+      ops.SET_SLOT_DIRECT, 368,-- 52: set_slot_direct(368)
       ops.DUP,                 -- 54: dup
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
       ops.GET_SLOT_DIRECT, 19, -- 56: get_slot_direct(19)
       ops.SET_SLOT_DIRECT, 19, -- 58: set_slot_direct(19)
       ops.DUP,                 -- 60: dup
       ops.PUSH_FRAME,          -- 61: push_frame
-      ops.GET_SLOT_DIRECT, 388,-- 62: get_slot_direct(388)
-      ops.SET_SLOT_DIRECT, 388,-- 64: set_slot_direct(388)
+      ops.GET_SLOT_DIRECT, 454,-- 62: get_slot_direct(454)
+      ops.SET_SLOT_DIRECT, 454,-- 64: set_slot_direct(454)
       ops.DUP,                 -- 66: dup
       ops.PUSH_FRAME,          -- 67: push_frame
-      ops.GET_SLOT_DIRECT, 389,-- 68: get_slot_direct(389)
-      ops.SET_SLOT_DIRECT, 389,-- 70: set_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 455,-- 68: get_slot_direct(455)
+      ops.SET_SLOT_DIRECT, 455,-- 70: set_slot_direct(455)
       ops.DUP,                 -- 72: dup
       ops.PUSH_FRAME,          -- 73: push_frame
-      ops.GET_SLOT_DIRECT, 390,-- 74: get_slot_direct(390)
-      ops.SET_SLOT_DIRECT, 390,-- 76: set_slot_direct(390)
+      ops.GET_SLOT_DIRECT, 456,-- 74: get_slot_direct(456)
+      ops.SET_SLOT_DIRECT, 456,-- 76: set_slot_direct(456)
       ops.DUP,                 -- 78: dup
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
-      ops.GET_SLOT_DIRECT, 391,-- 80: get_slot_direct(391)
-      ops.SET_SLOT_DIRECT, 391,-- 82: set_slot_direct(391)
-      ops.SET_SLOT_DIRECT, 392,-- 84: set_slot_direct(392)
+      ops.GET_SLOT_DIRECT, 457,-- 80: get_slot_direct(457)
+      ops.SET_SLOT_DIRECT, 457,-- 82: set_slot_direct(457)
+      ops.SET_SLOT_DIRECT, 458,-- 84: set_slot_direct(458)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 87: get_slot_direct(392)
-      ops.GET_SLOT_DIRECT, 389,-- 89: get_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 458,-- 87: get_slot_direct(458)
+      ops.GET_SLOT_DIRECT, 455,-- 89: get_slot_direct(455)
       ops.UN_TYPEOF,           -- 91: un_typeof
       ops.PUSH_LITERAL, 25,    -- 92: push_literal(25)
       ops.BI_EQ,               -- 94: bi_eq
       ops.UN_NOT,              -- 95: un_not
       ops.JMP_UNLESS, 106, 106,-- 96: jmp_unless(106,106)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 100: get_slot_direct(392)
-      ops.NEW_FUNCTION, 98,    -- 102: new_function(98)
-      ops.SET_SLOT_DIRECT, 389,-- 104: set_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 458,-- 100: get_slot_direct(458)
+      ops.NEW_FUNCTION, 107,   -- 102: new_function(107)
+      ops.SET_SLOT_DIRECT, 455,-- 104: set_slot_direct(455)
       ops.PHI,                 -- 106: phi
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 108: get_slot_direct(392)
-      ops.GET_SLOT_DIRECT, 390,-- 110: get_slot_direct(390)
+      ops.GET_SLOT_DIRECT, 458,-- 108: get_slot_direct(458)
+      ops.GET_SLOT_DIRECT, 456,-- 110: get_slot_direct(456)
       ops.UN_TYPEOF,           -- 112: un_typeof
       ops.PUSH_LITERAL, 25,    -- 113: push_literal(25)
       ops.BI_EQ,               -- 115: bi_eq
       ops.UN_NOT,              -- 116: un_not
       ops.JMP_UNLESS, 127, 127,-- 117: jmp_unless(127,127)
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 121: get_slot_direct(392)
-      ops.NEW_FUNCTION, 99,    -- 123: new_function(99)
-      ops.SET_SLOT_DIRECT, 390,-- 125: set_slot_direct(390)
+      ops.GET_SLOT_DIRECT, 458,-- 121: get_slot_direct(458)
+      ops.NEW_FUNCTION, 108,   -- 123: new_function(108)
+      ops.SET_SLOT_DIRECT, 456,-- 125: set_slot_direct(456)
       ops.PHI,                 -- 127: phi
       ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 129: get_slot_direct(392)
-      ops.GET_SLOT_DIRECT, 391,-- 131: get_slot_direct(391)
+      ops.GET_SLOT_DIRECT, 458,-- 129: get_slot_direct(458)
+      ops.GET_SLOT_DIRECT, 457,-- 131: get_slot_direct(457)
       ops.UN_NOT,              -- 133: un_not
       ops.JMP_UNLESS, 144, 144,-- 134: jmp_unless(144,144)
       ops.PUSH_LOCAL_FRAME,    -- 137: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 138: get_slot_direct(392)
-      ops.NEW_FUNCTION, 100,   -- 140: new_function(100)
-      ops.SET_SLOT_DIRECT, 391,-- 142: set_slot_direct(391)
+      ops.GET_SLOT_DIRECT, 458,-- 138: get_slot_direct(458)
+      ops.NEW_FUNCTION, 109,   -- 140: new_function(109)
+      ops.SET_SLOT_DIRECT, 457,-- 142: set_slot_direct(457)
       ops.PHI,                 -- 144: phi
       ops.PUSH_FRAME,          -- 145: push_frame
-      ops.GET_SLOT_DIRECT, 383,-- 146: get_slot_direct(383)
+      ops.GET_SLOT_DIRECT, 449,-- 146: get_slot_direct(449)
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 149: get_slot_direct(392)
-      ops.GET_SLOT_DIRECT, 295,-- 151: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 458,-- 149: get_slot_direct(458)
+      ops.GET_SLOT_DIRECT, 368,-- 151: get_slot_direct(368)
       ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 154: get_slot_direct(392)
+      ops.GET_SLOT_DIRECT, 458,-- 154: get_slot_direct(458)
       ops.SET_SLOT_INDIRECT,   -- 156: set_slot_indirect
       ops.PUSH_FRAME,          -- 157: push_frame
-      ops.GET_SLOT_DIRECT, 384,-- 158: get_slot_direct(384)
+      ops.GET_SLOT_DIRECT, 450,-- 158: get_slot_direct(450)
       ops.PUSH_LOCAL_FRAME,    -- 160: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 161: get_slot_direct(392)
+      ops.GET_SLOT_DIRECT, 458,-- 161: get_slot_direct(458)
       ops.GET_SLOT_DIRECT, 19, -- 163: get_slot_direct(19)
       ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
-      ops.GET_SLOT_DIRECT, 392,-- 166: get_slot_direct(392)
+      ops.GET_SLOT_DIRECT, 458,-- 166: get_slot_direct(458)
       ops.SET_SLOT_INDIRECT,   -- 168: set_slot_indirect
       ops.PUSH_LITERAL, 0,     -- 169: push_literal(0)
       ops.RETURN               -- 171: return
@@ -10306,29 +11852,29 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".stackpop"
     name = jsval.newString(".stackpop"),
-    id = 98,
+    id = 107,
     nargs = 0,
     max_stack = 1,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 389,-- 1: get_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 455,-- 1: get_slot_direct(455)
       ops.RETURN               -- 3: return
     }
   },
   ifunc.Function:new{ -- ".stackpush"
     name = jsval.newString(".stackpush"),
-    id = 99,
+    id = 108,
     nargs = 0,
     max_stack = 1,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
-      ops.GET_SLOT_DIRECT, 390,-- 1: get_slot_direct(390)
+      ops.GET_SLOT_DIRECT, 456,-- 1: get_slot_direct(456)
       ops.RETURN               -- 3: return
     }
   },
   ifunc.Function:new{ -- ".printargs"
     name = jsval.newString(".printargs"),
-    id = 100,
+    id = 109,
     nargs = 3,
     max_stack = 5,
     bytecode = {
@@ -10338,17 +11884,17 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 393,-- 15: set_slot_direct(393)
+      ops.SET_SLOT_DIRECT, 459,-- 15: set_slot_direct(459)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 394,-- 22: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 22: set_slot_direct(460)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
@@ -10366,16 +11912,16 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.DUP,                 -- 49: dup
       ops.GET_SLOT_DIRECT, 75, -- 50: get_slot_direct(75)
-      ops.PUSH_LITERAL, 218,   -- 52: push_literal(218)
+      ops.PUSH_LITERAL, 242,   -- 52: push_literal(242)
       ops.BI_ADD,              -- 54: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 55: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.DUP,                 -- 58: dup
       ops.GET_SLOT_DIRECT, 75, -- 59: get_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 61: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 62: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 62: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 65: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 65: get_slot_direct(460)
       ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 68: get_slot_direct(53)
       ops.BI_ADD,              -- 70: bi_add
@@ -10395,7 +11941,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 53, -- 89: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 92: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 388,-- 94: get_slot_direct(388)
+      ops.GET_SLOT_DIRECT, 454,-- 94: get_slot_direct(454)
       ops.SWAP,                -- 96: swap
       ops.BI_GT,               -- 97: bi_gt
       ops.UN_NOT,              -- 98: un_not
@@ -10408,7 +11954,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "print_literal"
     name = jsval.newString("print_literal"),
-    id = 101,
+    id = 110,
     nargs = 3,
     max_stack = 4,
     bytecode = {
@@ -10418,51 +11964,51 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 393,-- 15: set_slot_direct(393)
+      ops.SET_SLOT_DIRECT, 459,-- 15: set_slot_direct(459)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 394,-- 22: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 22: set_slot_direct(460)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 395,-- 28: set_slot_direct(395)
+      ops.SET_SLOT_DIRECT, 461,-- 28: set_slot_direct(461)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 32: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 32: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 35: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 35: get_slot_direct(460)
       ops.PUSH_LITERAL, 31,    -- 37: push_literal(31)
       ops.BI_ADD,              -- 39: bi_add
       ops.GET_SLOT_INDIRECT,   -- 40: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 395,-- 41: set_slot_direct(395)
-      ops.PUSH_LITERAL, 218,   -- 43: push_literal(218)
+      ops.SET_SLOT_DIRECT, 461,-- 41: set_slot_direct(461)
+      ops.PUSH_LITERAL, 242,   -- 43: push_literal(242)
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 395,-- 46: get_slot_direct(395)
+      ops.GET_SLOT_DIRECT, 461,-- 46: get_slot_direct(461)
       ops.BI_ADD,              -- 48: bi_add
-      ops.PUSH_LITERAL, 396,   -- 49: push_literal(396)
+      ops.PUSH_LITERAL, 462,   -- 49: push_literal(462)
       ops.BI_ADD,              -- 51: bi_add
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 397,-- 55: get_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 463,-- 55: get_slot_direct(463)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
-      ops.GET_SLOT_DIRECT, 395,-- 58: get_slot_direct(395)
+      ops.GET_SLOT_DIRECT, 461,-- 58: get_slot_direct(461)
       ops.GET_SLOT_INDIRECT,   -- 60: get_slot_indirect
       ops.BI_ADD,              -- 61: bi_add
-      ops.PUSH_LITERAL, 398,   -- 62: push_literal(398)
+      ops.PUSH_LITERAL, 464,   -- 62: push_literal(464)
       ops.BI_ADD,              -- 64: bi_add
       ops.RETURN               -- 65: return
     }
   },
   ifunc.Function:new{ -- "print_label"
     name = jsval.newString("print_label"),
-    id = 102,
+    id = 111,
     nargs = 3,
     max_stack = 4,
     bytecode = {
@@ -10472,17 +12018,17 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 393,-- 15: set_slot_direct(393)
+      ops.SET_SLOT_DIRECT, 459,-- 15: set_slot_direct(459)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 394,-- 22: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 22: set_slot_direct(460)
       ops.POP,                 -- 24: pop
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
@@ -10499,27 +12045,27 @@ startup.functions = {
       ops.JMP_INTO_LOOP, 118, 133,-- 45: jmp_into_loop(118,133)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 49: push_literal(0)
-      ops.SET_SLOT_DIRECT, 399,-- 51: set_slot_direct(399)
+      ops.SET_SLOT_DIRECT, 465,-- 51: set_slot_direct(465)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
       ops.DUP,                 -- 54: dup
       ops.GET_SLOT_DIRECT, 75, -- 55: get_slot_direct(75)
-      ops.PUSH_LITERAL, 218,   -- 57: push_literal(218)
+      ops.PUSH_LITERAL, 242,   -- 57: push_literal(242)
       ops.BI_ADD,              -- 59: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 60: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 64: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 64: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 67: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 67: get_slot_direct(460)
       ops.PUSH_LITERAL, 31,    -- 69: push_literal(31)
       ops.BI_ADD,              -- 71: bi_add
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 73: get_slot_direct(53)
       ops.BI_ADD,              -- 75: bi_add
       ops.GET_SLOT_INDIRECT,   -- 76: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 399,-- 77: set_slot_direct(399)
+      ops.SET_SLOT_DIRECT, 465,-- 77: set_slot_direct(465)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
-      ops.GET_SLOT_DIRECT, 399,-- 80: get_slot_direct(399)
+      ops.GET_SLOT_DIRECT, 465,-- 80: get_slot_direct(465)
       ops.UN_TYPEOF,           -- 82: un_typeof
       ops.PUSH_LITERAL, 86,    -- 83: push_literal(86)
       ops.BI_EQ,               -- 85: bi_eq
@@ -10527,15 +12073,15 @@ startup.functions = {
       ops.JMP_UNLESS, 98, 98,  -- 87: jmp_unless(98,98)
       ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
-      ops.GET_SLOT_DIRECT, 399,-- 92: get_slot_direct(399)
-      ops.GET_SLOT_DIRECT, 400,-- 94: get_slot_direct(400)
-      ops.SET_SLOT_DIRECT, 399,-- 96: set_slot_direct(399)
+      ops.GET_SLOT_DIRECT, 465,-- 92: get_slot_direct(465)
+      ops.GET_SLOT_DIRECT, 466,-- 94: get_slot_direct(466)
+      ops.SET_SLOT_DIRECT, 465,-- 96: set_slot_direct(465)
       ops.PHI,                 -- 98: phi
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
       ops.DUP,                 -- 100: dup
       ops.GET_SLOT_DIRECT, 75, -- 101: get_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
-      ops.GET_SLOT_DIRECT, 399,-- 104: get_slot_direct(399)
+      ops.GET_SLOT_DIRECT, 465,-- 104: get_slot_direct(465)
       ops.BI_ADD,              -- 106: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 107: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
@@ -10549,7 +12095,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 53, -- 120: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 123: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 388,-- 125: get_slot_direct(388)
+      ops.GET_SLOT_DIRECT, 454,-- 125: get_slot_direct(454)
       ops.SWAP,                -- 127: swap
       ops.BI_GT,               -- 128: bi_gt
       ops.UN_NOT,              -- 129: un_not
@@ -10562,7 +12108,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 103,
+    id = 112,
     nargs = 2,
     max_stack = 3,
     bytecode = {
@@ -10572,15 +12118,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 413,-- 8: set_slot_direct(413)
+      ops.SET_SLOT_DIRECT, 479,-- 8: set_slot_direct(479)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 414,-- 15: set_slot_direct(414)
+      ops.SET_SLOT_DIRECT, 480,-- 15: set_slot_direct(480)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 414,-- 19: get_slot_direct(414)
+      ops.GET_SLOT_DIRECT, 480,-- 19: get_slot_direct(480)
       ops.PUSH_LITERAL, 136,   -- 21: push_literal(136)
       ops.BI_ADD,              -- 23: bi_add
       ops.RETURN               -- 24: return
@@ -10588,7 +12134,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "for_num:"
     name = jsval.newString("for_num:"),
-    id = 104,
+    id = 113,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -10601,7 +12147,7 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 23, -- 8: set_slot_direct(23)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 383,-- 12: get_slot_direct(383)
+      ops.GET_SLOT_DIRECT, 449,-- 12: get_slot_direct(449)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 23, -- 15: get_slot_direct(23)
       ops.GET_SLOT_INDIRECT,   -- 17: get_slot_indirect
@@ -10610,7 +12156,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "for_name:"
     name = jsval.newString("for_name:"),
-    id = 105,
+    id = 114,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -10623,7 +12169,7 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 19, -- 8: set_slot_direct(19)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 384,-- 12: get_slot_direct(384)
+      ops.GET_SLOT_DIRECT, 450,-- 12: get_slot_direct(450)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 19, -- 15: get_slot_direct(19)
       ops.GET_SLOT_INDIRECT,   -- 17: get_slot_indirect
@@ -10632,7 +12178,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "make_literal_map"
     name = jsval.newString("make_literal_map"),
-    id = 106,
+    id = 115,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -10642,67 +12188,67 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 439,-- 8: set_slot_direct(439)
+      ops.SET_SLOT_DIRECT, 505,-- 8: set_slot_direct(505)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 440,-- 14: set_slot_direct(440)
+      ops.SET_SLOT_DIRECT, 506,-- 14: set_slot_direct(506)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 441,-- 19: set_slot_direct(441)
+      ops.SET_SLOT_DIRECT, 507,-- 19: set_slot_direct(507)
       ops.PUSH_FRAME,          -- 21: push_frame
       ops.PUSH_FRAME,          -- 22: push_frame
       ops.GET_SLOT_DIRECT, 14, -- 23: get_slot_direct(14)
-      ops.GET_SLOT_DIRECT, 442,-- 25: get_slot_direct(442)
+      ops.GET_SLOT_DIRECT, 508,-- 25: get_slot_direct(508)
       ops.DUP,                 -- 27: dup
       ops.UN_NOT,              -- 28: un_not
       ops.JMP_UNLESS, 35, 35,  -- 29: jmp_unless(35,35)
       ops.POP,                 -- 32: pop
-      ops.NEW_FUNCTION, 107,   -- 33: new_function(107)
+      ops.NEW_FUNCTION, 116,   -- 33: new_function(116)
       ops.PHI,                 -- 35: phi
-      ops.SET_SLOT_DIRECT, 440,-- 36: set_slot_direct(440)
+      ops.SET_SLOT_DIRECT, 506,-- 36: set_slot_direct(506)
       ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
-      ops.NEW_FUNCTION, 108,   -- 39: new_function(108)
-      ops.SET_SLOT_DIRECT, 441,-- 41: set_slot_direct(441)
+      ops.NEW_FUNCTION, 117,   -- 39: new_function(117)
+      ops.SET_SLOT_DIRECT, 507,-- 41: set_slot_direct(507)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 44: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 44: get_slot_direct(507)
       ops.NEW_OBJECT,          -- 46: new_object
       ops.DUP,                 -- 47: dup
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 49: get_slot_direct(441)
-      ops.SET_SLOT_DIRECT, 446,-- 51: set_slot_direct(446)
+      ops.GET_SLOT_DIRECT, 507,-- 49: get_slot_direct(507)
+      ops.SET_SLOT_DIRECT, 512,-- 51: set_slot_direct(512)
       ops.SET_SLOT_DIRECT, 11, -- 53: set_slot_direct(11)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 56: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 56: get_slot_direct(507)
       ops.GET_SLOT_DIRECT, 11, -- 58: get_slot_direct(11)
-      ops.NEW_FUNCTION, 110,   -- 60: new_function(110)
-      ops.SET_SLOT_DIRECT, 445,-- 62: set_slot_direct(445)
+      ops.NEW_FUNCTION, 119,   -- 60: new_function(119)
+      ops.SET_SLOT_DIRECT, 511,-- 62: set_slot_direct(511)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 65: get_slot_direct(441)
-      ops.PUSH_LITERAL, 437,   -- 67: push_literal(437)
-      ops.SET_SLOT_DIRECT, 248,-- 69: set_slot_direct(248)
+      ops.GET_SLOT_DIRECT, 507,-- 65: get_slot_direct(507)
+      ops.PUSH_LITERAL, 503,   -- 67: push_literal(503)
+      ops.SET_SLOT_DIRECT, 321,-- 69: set_slot_direct(321)
       ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 72: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 72: get_slot_direct(507)
       ops.PUSH_FRAME,          -- 74: push_frame
-      ops.GET_SLOT_DIRECT, 449,-- 75: get_slot_direct(449)
-      ops.SET_SLOT_DIRECT, 250,-- 77: set_slot_direct(250)
+      ops.GET_SLOT_DIRECT, 515,-- 75: get_slot_direct(515)
+      ops.SET_SLOT_DIRECT, 323,-- 77: set_slot_direct(323)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 80: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 80: get_slot_direct(507)
       ops.NEW_ARRAY,           -- 82: new_array
-      ops.SET_SLOT_DIRECT, 378,-- 83: set_slot_direct(378)
+      ops.SET_SLOT_DIRECT, 444,-- 83: set_slot_direct(444)
       ops.PUSH_LOCAL_FRAME,    -- 85: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 86: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 86: get_slot_direct(507)
       ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
-      ops.GET_SLOT_DIRECT, 439,-- 89: get_slot_direct(439)
-      ops.SET_SLOT_DIRECT, 251,-- 91: set_slot_direct(251)
+      ops.GET_SLOT_DIRECT, 505,-- 89: get_slot_direct(505)
+      ops.SET_SLOT_DIRECT, 324,-- 91: set_slot_direct(324)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 441,-- 94: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 94: get_slot_direct(507)
       ops.RETURN               -- 96: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 107,
+    id = 116,
     nargs = 2,
     max_stack = 3,
     bytecode = {
@@ -10712,15 +12258,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 219,-- 8: set_slot_direct(219)
+      ops.SET_SLOT_DIRECT, 296,-- 8: set_slot_direct(296)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 240,-- 15: set_slot_direct(240)
+      ops.SET_SLOT_DIRECT, 313,-- 15: set_slot_direct(313)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 19: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 19: get_slot_direct(296)
       ops.UN_TYPEOF,           -- 21: un_typeof
       ops.PUSH_LITERAL, 86,    -- 22: push_literal(86)
       ops.BI_EQ,               -- 24: bi_eq
@@ -10728,34 +12274,34 @@ startup.functions = {
       ops.JMP_UNLESS, 37, 37,  -- 26: jmp_unless(37,37)
       ops.POP,                 -- 29: pop
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 31: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 31: get_slot_direct(313)
       ops.UN_TYPEOF,           -- 33: un_typeof
       ops.PUSH_LITERAL, 86,    -- 34: push_literal(86)
       ops.BI_EQ,               -- 36: bi_eq
       ops.PHI,                 -- 37: phi
       ops.JMP_UNLESS, 98, 98,  -- 38: jmp_unless(98,98)
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 42: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 42: get_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 45: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 45: get_slot_direct(296)
       ops.BI_EQ,               -- 47: bi_eq
       ops.UN_NOT,              -- 48: un_not
       ops.JMP_UNLESS, 61, 61,  -- 49: jmp_unless(61,61)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 53: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 53: get_slot_direct(313)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 56: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 56: get_slot_direct(313)
       ops.BI_EQ,               -- 58: bi_eq
       ops.UN_NOT,              -- 59: un_not
       ops.RETURN,              -- 60: return
       ops.PHI,                 -- 61: phi
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 63: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 63: get_slot_direct(296)
       ops.PUSH_LITERAL, 18,    -- 65: push_literal(18)
       ops.BI_EQ,               -- 67: bi_eq
       ops.JMP_UNLESS, 97, 97,  -- 68: jmp_unless(97,97)
       ops.PUSH_LOCAL_FRAME,    -- 71: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 72: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 72: get_slot_direct(313)
       ops.PUSH_LITERAL, 18,    -- 74: push_literal(18)
       ops.BI_EQ,               -- 76: bi_eq
       ops.DUP,                 -- 77: dup
@@ -10763,11 +12309,11 @@ startup.functions = {
       ops.POP,                 -- 81: pop
       ops.PUSH_LITERAL, 31,    -- 82: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 85: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 85: get_slot_direct(296)
       ops.BI_DIV,              -- 87: bi_div
       ops.PUSH_LITERAL, 31,    -- 88: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 90: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 91: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 91: get_slot_direct(313)
       ops.BI_DIV,              -- 93: bi_div
       ops.BI_EQ,               -- 94: bi_eq
       ops.PHI,                 -- 95: phi
@@ -10775,16 +12321,16 @@ startup.functions = {
       ops.PHI,                 -- 97: phi
       ops.PHI,                 -- 98: phi
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
-      ops.GET_SLOT_DIRECT, 219,-- 100: get_slot_direct(219)
+      ops.GET_SLOT_DIRECT, 296,-- 100: get_slot_direct(296)
       ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 103: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 103: get_slot_direct(313)
       ops.BI_EQ,               -- 105: bi_eq
       ops.RETURN               -- 106: return
     }
   },
   ifunc.Function:new{ -- "LiteralMap"
     name = jsval.newString("LiteralMap"),
-    id = 108,
+    id = 117,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -10794,7 +12340,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 443,-- 8: set_slot_direct(443)
+      ops.SET_SLOT_DIRECT, 509,-- 8: set_slot_direct(509)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
@@ -10809,19 +12355,19 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
       ops.NEW_ARRAY,           -- 30: new_array
-      ops.SET_SLOT_DIRECT, 444,-- 31: set_slot_direct(444)
+      ops.SET_SLOT_DIRECT, 510,-- 31: set_slot_direct(510)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
-      ops.GET_SLOT_DIRECT, 443,-- 34: get_slot_direct(443)
+      ops.GET_SLOT_DIRECT, 509,-- 34: get_slot_direct(509)
       ops.PUSH_LITERAL, 0,     -- 36: push_literal(0)
       ops.BI_EQ,               -- 38: bi_eq
       ops.UN_NOT,              -- 39: un_not
       ops.JMP_UNLESS, 58, 58,  -- 40: jmp_unless(58,58)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
-      ops.GET_SLOT_DIRECT, 443,-- 44: get_slot_direct(443)
+      ops.GET_SLOT_DIRECT, 509,-- 44: get_slot_direct(509)
       ops.DUP,                 -- 46: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 47: get_slot_direct_check(94)
       ops.SWAP,                -- 49: swap
-      ops.NEW_FUNCTION, 109,   -- 50: new_function(109)
+      ops.NEW_FUNCTION, 118,   -- 50: new_function(118)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 53: get_slot_direct(26)
       ops.INVOKE, 2,           -- 55: invoke(2)
@@ -10833,7 +12379,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 109,
+    id = 118,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -10848,7 +12394,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 445,-- 15: get_slot_direct_check(445)
+      ops.GET_SLOT_DIRECT_CHECK, 511,-- 15: get_slot_direct_check(511)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 19: get_slot_direct(110)
@@ -10860,7 +12406,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".get"
     name = jsval.newString(".get"),
-    id = 110,
+    id = 119,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -10877,33 +12423,33 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 14: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 447,-- 19: set_slot_direct(447)
+      ops.SET_SLOT_DIRECT, 513,-- 19: set_slot_direct(513)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 357,-- 24: set_slot_direct(357)
+      ops.SET_SLOT_DIRECT, 258,-- 24: set_slot_direct(258)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
-      ops.SET_SLOT_DIRECT, 448,-- 29: set_slot_direct(448)
+      ops.SET_SLOT_DIRECT, 514,-- 29: set_slot_direct(514)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 33: get_slot_direct(184)
       ops.UN_TYPEOF,           -- 35: un_typeof
-      ops.PUSH_LITERAL, 320,   -- 36: push_literal(320)
+      ops.PUSH_LITERAL, 241,   -- 36: push_literal(241)
       ops.BI_ADD,              -- 38: bi_add
       ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 40: get_slot_direct(184)
       ops.BI_ADD,              -- 42: bi_add
-      ops.SET_SLOT_DIRECT, 357,-- 43: set_slot_direct(357)
+      ops.SET_SLOT_DIRECT, 258,-- 43: set_slot_direct(258)
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 47: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 98, -- 49: get_slot_direct(98)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
-      ops.GET_SLOT_DIRECT, 357,-- 52: get_slot_direct(357)
+      ops.GET_SLOT_DIRECT, 258,-- 52: get_slot_direct(258)
       ops.GET_SLOT_INDIRECT,   -- 54: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 448,-- 55: set_slot_direct(448)
+      ops.SET_SLOT_DIRECT, 514,-- 55: set_slot_direct(514)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
-      ops.GET_SLOT_DIRECT, 448,-- 58: get_slot_direct(448)
+      ops.GET_SLOT_DIRECT, 514,-- 58: get_slot_direct(514)
       ops.PUSH_LITERAL, 0,     -- 60: push_literal(0)
       ops.BI_EQ,               -- 62: bi_eq
       ops.UN_NOT,              -- 63: un_not
@@ -10914,17 +12460,17 @@ startup.functions = {
       ops.JMP_INTO_LOOP, 122, 137,-- 72: jmp_into_loop(122,137)
       ops.PUSH_LOCAL_FRAME,    -- 75: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 448,-- 77: get_slot_direct(448)
+      ops.GET_SLOT_DIRECT, 514,-- 77: get_slot_direct(514)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 80: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 82: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 447,-- 83: set_slot_direct(447)
+      ops.SET_SLOT_DIRECT, 513,-- 83: set_slot_direct(513)
       ops.PUSH_FRAME,          -- 85: push_frame
-      ops.GET_SLOT_DIRECT, 440,-- 86: get_slot_direct(440)
+      ops.GET_SLOT_DIRECT, 506,-- 86: get_slot_direct(506)
       ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 89: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
-      ops.GET_SLOT_DIRECT, 447,-- 92: get_slot_direct(447)
+      ops.GET_SLOT_DIRECT, 513,-- 92: get_slot_direct(513)
       ops.PUSH_LITERAL, 18,    -- 94: push_literal(18)
       ops.GET_SLOT_INDIRECT,   -- 96: get_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
@@ -10932,7 +12478,7 @@ startup.functions = {
       ops.INVOKE, 2,           -- 100: invoke(2)
       ops.JMP_UNLESS, 112, 112,-- 102: jmp_unless(112,112)
       ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 447,-- 106: get_slot_direct(447)
+      ops.GET_SLOT_DIRECT, 513,-- 106: get_slot_direct(513)
       ops.PUSH_LITERAL, 31,    -- 108: push_literal(31)
       ops.GET_SLOT_INDIRECT,   -- 110: get_slot_indirect
       ops.RETURN,              -- 111: return
@@ -10947,7 +12493,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 123: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 124: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
-      ops.GET_SLOT_DIRECT, 448,-- 127: get_slot_direct(448)
+      ops.GET_SLOT_DIRECT, 514,-- 127: get_slot_direct(514)
       ops.GET_SLOT_DIRECT, 55, -- 129: get_slot_direct(55)
       ops.SWAP,                -- 131: swap
       ops.BI_GT,               -- 132: bi_gt
@@ -10957,32 +12503,32 @@ startup.functions = {
       ops.JMP, 156,            -- 138: jmp(156)
       ops.PUSH_LOCAL_FRAME,    -- 140: push_local_frame
       ops.NEW_ARRAY,           -- 141: new_array
-      ops.SET_SLOT_DIRECT, 448,-- 142: set_slot_direct(448)
+      ops.SET_SLOT_DIRECT, 514,-- 142: set_slot_direct(514)
       ops.PUSH_LOCAL_FRAME,    -- 144: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 145: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 98, -- 147: get_slot_direct(98)
       ops.PUSH_LOCAL_FRAME,    -- 149: push_local_frame
-      ops.GET_SLOT_DIRECT, 357,-- 150: get_slot_direct(357)
+      ops.GET_SLOT_DIRECT, 258,-- 150: get_slot_direct(258)
       ops.PUSH_LOCAL_FRAME,    -- 152: push_local_frame
-      ops.GET_SLOT_DIRECT, 448,-- 153: get_slot_direct(448)
+      ops.GET_SLOT_DIRECT, 514,-- 153: get_slot_direct(514)
       ops.SET_SLOT_INDIRECT,   -- 155: set_slot_indirect
       ops.PHI,                 -- 156: phi
       ops.PUSH_LOCAL_FRAME,    -- 157: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 159: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 444,-- 161: get_slot_direct(444)
+      ops.GET_SLOT_DIRECT, 510,-- 161: get_slot_direct(510)
       ops.GET_SLOT_DIRECT, 55, -- 163: get_slot_direct(55)
       ops.SET_SLOT_DIRECT, 53, -- 165: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 167: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 168: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 444,-- 170: get_slot_direct(444)
+      ops.GET_SLOT_DIRECT, 510,-- 170: get_slot_direct(510)
       ops.PUSH_LOCAL_FRAME,    -- 172: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 173: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 175: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 176: get_slot_direct(184)
       ops.SET_SLOT_INDIRECT,   -- 178: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 179: push_local_frame
-      ops.GET_SLOT_DIRECT, 448,-- 180: get_slot_direct(448)
+      ops.GET_SLOT_DIRECT, 514,-- 180: get_slot_direct(514)
       ops.DUP,                 -- 182: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 183: get_slot_direct_check(69)
       ops.SWAP,                -- 185: swap
@@ -11004,7 +12550,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "make_bcompile"
     name = jsval.newString("make_bcompile"),
-    id = 111,
+    id = 120,
     nargs = 3,
     max_stack = 6,
     bytecode = {
@@ -11014,126 +12560,126 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 452,-- 8: set_slot_direct(452)
+      ops.SET_SLOT_DIRECT, 518,-- 8: set_slot_direct(518)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 453,-- 15: set_slot_direct(453)
+      ops.SET_SLOT_DIRECT, 519,-- 15: set_slot_direct(519)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 441,-- 22: set_slot_direct(441)
+      ops.SET_SLOT_DIRECT, 507,-- 22: set_slot_direct(507)
       ops.POP,                 -- 24: pop
       ops.PUSH_FRAME,          -- 25: push_frame
       ops.PUSH_LITERAL, 0,     -- 26: push_literal(0)
-      ops.SET_SLOT_DIRECT, 454,-- 28: set_slot_direct(454)
+      ops.SET_SLOT_DIRECT, 520,-- 28: set_slot_direct(520)
       ops.PUSH_FRAME,          -- 30: push_frame
       ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
-      ops.SET_SLOT_DIRECT, 455,-- 33: set_slot_direct(455)
+      ops.SET_SLOT_DIRECT, 521,-- 33: set_slot_direct(521)
       ops.PUSH_FRAME,          -- 35: push_frame
       ops.PUSH_LITERAL, 0,     -- 36: push_literal(0)
-      ops.SET_SLOT_DIRECT, 456,-- 38: set_slot_direct(456)
+      ops.SET_SLOT_DIRECT, 522,-- 38: set_slot_direct(522)
       ops.PUSH_FRAME,          -- 40: push_frame
       ops.PUSH_LITERAL, 0,     -- 41: push_literal(0)
-      ops.SET_SLOT_DIRECT, 319,-- 43: set_slot_direct(319)
+      ops.SET_SLOT_DIRECT, 389,-- 43: set_slot_direct(389)
       ops.PUSH_FRAME,          -- 45: push_frame
       ops.PUSH_LITERAL, 0,     -- 46: push_literal(0)
-      ops.SET_SLOT_DIRECT, 315,-- 48: set_slot_direct(315)
+      ops.SET_SLOT_DIRECT, 386,-- 48: set_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 51: push_literal(0)
-      ops.SET_SLOT_DIRECT, 274,-- 53: set_slot_direct(274)
+      ops.SET_SLOT_DIRECT, 347,-- 53: set_slot_direct(347)
       ops.PUSH_FRAME,          -- 55: push_frame
       ops.PUSH_LITERAL, 0,     -- 56: push_literal(0)
-      ops.SET_SLOT_DIRECT, 332,-- 58: set_slot_direct(332)
+      ops.SET_SLOT_DIRECT, 400,-- 58: set_slot_direct(400)
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 61: push_literal(0)
-      ops.SET_SLOT_DIRECT, 275,-- 63: set_slot_direct(275)
+      ops.SET_SLOT_DIRECT, 348,-- 63: set_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 66: push_literal(0)
-      ops.SET_SLOT_DIRECT, 450,-- 68: set_slot_direct(450)
+      ops.SET_SLOT_DIRECT, 516,-- 68: set_slot_direct(516)
       ops.PUSH_FRAME,          -- 70: push_frame
-      ops.NEW_FUNCTION, 112,   -- 71: new_function(112)
-      ops.SET_SLOT_DIRECT, 454,-- 73: set_slot_direct(454)
+      ops.NEW_FUNCTION, 121,   -- 71: new_function(121)
+      ops.SET_SLOT_DIRECT, 520,-- 73: set_slot_direct(520)
       ops.PUSH_FRAME,          -- 75: push_frame
       ops.NEW_OBJECT,          -- 76: new_object
-      ops.SET_SLOT_DIRECT, 455,-- 77: set_slot_direct(455)
+      ops.SET_SLOT_DIRECT, 521,-- 77: set_slot_direct(521)
       ops.PUSH_FRAME,          -- 79: push_frame
-      ops.NEW_FUNCTION, 113,   -- 80: new_function(113)
-      ops.SET_SLOT_DIRECT, 456,-- 82: set_slot_direct(456)
+      ops.NEW_FUNCTION, 122,   -- 80: new_function(122)
+      ops.SET_SLOT_DIRECT, 522,-- 82: set_slot_direct(522)
       ops.PUSH_FRAME,          -- 84: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 85: get_slot_direct(455)
-      ops.NEW_FUNCTION, 131,   -- 87: new_function(131)
+      ops.GET_SLOT_DIRECT, 521,-- 85: get_slot_direct(521)
+      ops.NEW_FUNCTION, 140,   -- 87: new_function(140)
       ops.SET_SLOT_DIRECT, 19, -- 89: set_slot_direct(19)
       ops.PUSH_FRAME,          -- 91: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 92: get_slot_direct(455)
-      ops.NEW_FUNCTION, 132,   -- 94: new_function(132)
-      ops.SET_SLOT_DIRECT, 301,-- 96: set_slot_direct(301)
+      ops.GET_SLOT_DIRECT, 521,-- 92: get_slot_direct(521)
+      ops.NEW_FUNCTION, 141,   -- 94: new_function(141)
+      ops.SET_SLOT_DIRECT, 374,-- 96: set_slot_direct(374)
       ops.PUSH_FRAME,          -- 98: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 99: get_slot_direct(455)
-      ops.NEW_FUNCTION, 133,   -- 101: new_function(133)
-      ops.SET_SLOT_DIRECT, 319,-- 103: set_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 521,-- 99: get_slot_direct(521)
+      ops.NEW_FUNCTION, 142,   -- 101: new_function(142)
+      ops.SET_SLOT_DIRECT, 389,-- 103: set_slot_direct(389)
       ops.PUSH_FRAME,          -- 105: push_frame
-      ops.NEW_FUNCTION, 134,   -- 106: new_function(134)
-      ops.SET_SLOT_DIRECT, 319,-- 108: set_slot_direct(319)
+      ops.NEW_FUNCTION, 143,   -- 106: new_function(143)
+      ops.SET_SLOT_DIRECT, 389,-- 108: set_slot_direct(389)
       ops.PUSH_FRAME,          -- 110: push_frame
-      ops.GET_SLOT_DIRECT, 319,-- 111: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 389,-- 111: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 114: get_slot_direct(26)
-      ops.PUSH_LITERAL, 351,   -- 116: push_literal(351)
-      ops.PUSH_LITERAL, 424,   -- 118: push_literal(424)
+      ops.PUSH_LITERAL, 419,   -- 116: push_literal(419)
+      ops.PUSH_LITERAL, 490,   -- 118: push_literal(490)
       ops.INVOKE, 2,           -- 120: invoke(2)
       ops.POP,                 -- 122: pop
       ops.PUSH_FRAME,          -- 123: push_frame
-      ops.GET_SLOT_DIRECT, 319,-- 124: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 389,-- 124: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 127: get_slot_direct(26)
       ops.PUSH_LITERAL, 141,   -- 129: push_literal(141)
-      ops.PUSH_LITERAL, 425,   -- 131: push_literal(425)
+      ops.PUSH_LITERAL, 491,   -- 131: push_literal(491)
       ops.INVOKE, 2,           -- 133: invoke(2)
       ops.POP,                 -- 135: pop
       ops.PUSH_FRAME,          -- 136: push_frame
-      ops.GET_SLOT_DIRECT, 319,-- 137: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 389,-- 137: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 140: get_slot_direct(26)
-      ops.PUSH_LITERAL, 352,   -- 142: push_literal(352)
-      ops.PUSH_LITERAL, 426,   -- 144: push_literal(426)
+      ops.PUSH_LITERAL, 420,   -- 142: push_literal(420)
+      ops.PUSH_LITERAL, 492,   -- 144: push_literal(492)
       ops.INVOKE, 2,           -- 146: invoke(2)
       ops.POP,                 -- 148: pop
       ops.PUSH_FRAME,          -- 149: push_frame
-      ops.GET_SLOT_DIRECT, 319,-- 150: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 389,-- 150: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 152: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 153: get_slot_direct(26)
-      ops.PUSH_LITERAL, 316,   -- 155: push_literal(316)
-      ops.NEW_FUNCTION, 136,   -- 157: new_function(136)
+      ops.PUSH_LITERAL, 254,   -- 155: push_literal(254)
+      ops.NEW_FUNCTION, 145,   -- 157: new_function(145)
       ops.INVOKE, 2,           -- 159: invoke(2)
       ops.POP,                 -- 161: pop
       ops.PUSH_FRAME,          -- 162: push_frame
-      ops.GET_SLOT_DIRECT, 319,-- 163: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 389,-- 163: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 165: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 166: get_slot_direct(26)
-      ops.PUSH_LITERAL, 311,   -- 168: push_literal(311)
-      ops.NEW_FUNCTION, 138,   -- 170: new_function(138)
+      ops.PUSH_LITERAL, 244,   -- 168: push_literal(244)
+      ops.NEW_FUNCTION, 147,   -- 170: new_function(147)
       ops.INVOKE, 2,           -- 172: invoke(2)
       ops.POP,                 -- 174: pop
       ops.PUSH_FRAME,          -- 175: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 176: get_slot_direct(455)
-      ops.NEW_FUNCTION, 140,   -- 178: new_function(140)
-      ops.SET_SLOT_DIRECT, 315,-- 180: set_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 521,-- 176: get_slot_direct(521)
+      ops.NEW_FUNCTION, 149,   -- 178: new_function(149)
+      ops.SET_SLOT_DIRECT, 386,-- 180: set_slot_direct(386)
       ops.PUSH_FRAME,          -- 182: push_frame
-      ops.NEW_FUNCTION, 141,   -- 183: new_function(141)
-      ops.SET_SLOT_DIRECT, 315,-- 185: set_slot_direct(315)
+      ops.NEW_FUNCTION, 150,   -- 183: new_function(150)
+      ops.SET_SLOT_DIRECT, 386,-- 185: set_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 187: push_local_frame
-      ops.NEW_FUNCTION, 143,   -- 188: new_function(143)
-      ops.SET_SLOT_DIRECT, 274,-- 190: set_slot_direct(274)
+      ops.NEW_FUNCTION, 152,   -- 188: new_function(152)
+      ops.SET_SLOT_DIRECT, 347,-- 190: set_slot_direct(347)
       ops.PUSH_FRAME,          -- 192: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 193: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 193: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 195: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 196: get_slot_direct(26)
-      ops.PUSH_LITERAL, 324,   -- 198: push_literal(324)
+      ops.PUSH_LITERAL, 392,   -- 198: push_literal(392)
       ops.PUSH_LOCAL_FRAME,    -- 200: push_local_frame
-      ops.GET_SLOT_DIRECT, 274,-- 201: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 201: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 203: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 204: get_slot_direct(26)
       ops.PUSH_LITERAL, 41,    -- 206: push_literal(41)
@@ -11141,302 +12687,302 @@ startup.functions = {
       ops.INVOKE, 2,           -- 210: invoke(2)
       ops.POP,                 -- 212: pop
       ops.PUSH_FRAME,          -- 213: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 214: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 214: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 216: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 217: get_slot_direct(26)
-      ops.PUSH_LITERAL, 325,   -- 219: push_literal(325)
+      ops.PUSH_LITERAL, 393,   -- 219: push_literal(393)
       ops.PUSH_LOCAL_FRAME,    -- 221: push_local_frame
-      ops.GET_SLOT_DIRECT, 274,-- 222: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 222: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 224: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 225: get_slot_direct(26)
-      ops.PUSH_LITERAL, 430,   -- 227: push_literal(430)
+      ops.PUSH_LITERAL, 496,   -- 227: push_literal(496)
       ops.INVOKE, 1,           -- 229: invoke(1)
       ops.INVOKE, 2,           -- 231: invoke(2)
       ops.POP,                 -- 233: pop
       ops.PUSH_FRAME,          -- 234: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 235: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 235: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 237: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 238: get_slot_direct(26)
-      ops.PUSH_LITERAL, 326,   -- 240: push_literal(326)
+      ops.PUSH_LITERAL, 394,   -- 240: push_literal(394)
       ops.PUSH_LOCAL_FRAME,    -- 242: push_local_frame
-      ops.GET_SLOT_DIRECT, 274,-- 243: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 243: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 245: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 246: get_slot_direct(26)
-      ops.PUSH_LITERAL, 431,   -- 248: push_literal(431)
+      ops.PUSH_LITERAL, 497,   -- 248: push_literal(497)
       ops.INVOKE, 1,           -- 250: invoke(1)
       ops.INVOKE, 2,           -- 252: invoke(2)
       ops.POP,                 -- 254: pop
       ops.PUSH_FRAME,          -- 255: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 256: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 256: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 258: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 259: get_slot_direct(26)
-      ops.PUSH_LITERAL, 327,   -- 261: push_literal(327)
+      ops.PUSH_LITERAL, 395,   -- 261: push_literal(395)
       ops.PUSH_LOCAL_FRAME,    -- 263: push_local_frame
-      ops.GET_SLOT_DIRECT, 274,-- 264: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 264: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 266: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 267: get_slot_direct(26)
-      ops.PUSH_LITERAL, 432,   -- 269: push_literal(432)
+      ops.PUSH_LITERAL, 498,   -- 269: push_literal(498)
       ops.INVOKE, 1,           -- 271: invoke(1)
       ops.INVOKE, 2,           -- 273: invoke(2)
       ops.POP,                 -- 275: pop
       ops.PUSH_FRAME,          -- 276: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 277: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 277: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 279: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 280: get_slot_direct(26)
-      ops.PUSH_LITERAL, 328,   -- 282: push_literal(328)
+      ops.PUSH_LITERAL, 396,   -- 282: push_literal(396)
       ops.PUSH_LOCAL_FRAME,    -- 284: push_local_frame
-      ops.GET_SLOT_DIRECT, 274,-- 285: get_slot_direct(274)
+      ops.GET_SLOT_DIRECT, 347,-- 285: get_slot_direct(347)
       ops.PUSH_LOCAL_FRAME,    -- 287: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 288: get_slot_direct(26)
-      ops.PUSH_LITERAL, 433,   -- 290: push_literal(433)
+      ops.PUSH_LITERAL, 499,   -- 290: push_literal(499)
       ops.INVOKE, 1,           -- 292: invoke(1)
       ops.INVOKE, 2,           -- 294: invoke(2)
       ops.POP,                 -- 296: pop
       ops.PUSH_FRAME,          -- 297: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 298: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 298: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 300: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 301: get_slot_direct(26)
-      ops.PUSH_LITERAL, 333,   -- 303: push_literal(333)
-      ops.NEW_FUNCTION, 145,   -- 305: new_function(145)
+      ops.PUSH_LITERAL, 401,   -- 303: push_literal(401)
+      ops.NEW_FUNCTION, 154,   -- 305: new_function(154)
       ops.INVOKE, 2,           -- 307: invoke(2)
       ops.POP,                 -- 309: pop
       ops.PUSH_FRAME,          -- 310: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 311: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 311: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 313: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 314: get_slot_direct(26)
-      ops.PUSH_LITERAL, 335,   -- 316: push_literal(335)
-      ops.NEW_FUNCTION, 146,   -- 318: new_function(146)
+      ops.PUSH_LITERAL, 403,   -- 316: push_literal(403)
+      ops.NEW_FUNCTION, 155,   -- 318: new_function(155)
       ops.INVOKE, 2,           -- 320: invoke(2)
       ops.POP,                 -- 322: pop
       ops.PUSH_FRAME,          -- 323: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 324: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 324: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 326: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 327: get_slot_direct(26)
-      ops.PUSH_LITERAL, 337,   -- 329: push_literal(337)
-      ops.PUSH_LITERAL, 427,   -- 331: push_literal(427)
+      ops.PUSH_LITERAL, 405,   -- 329: push_literal(405)
+      ops.PUSH_LITERAL, 493,   -- 331: push_literal(493)
       ops.INVOKE, 2,           -- 333: invoke(2)
       ops.POP,                 -- 335: pop
       ops.PUSH_FRAME,          -- 336: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 337: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 337: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 339: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 340: get_slot_direct(26)
-      ops.PUSH_LITERAL, 339,   -- 342: push_literal(339)
-      ops.NEW_FUNCTION, 147,   -- 344: new_function(147)
+      ops.PUSH_LITERAL, 407,   -- 342: push_literal(407)
+      ops.NEW_FUNCTION, 156,   -- 344: new_function(156)
       ops.INVOKE, 2,           -- 346: invoke(2)
       ops.POP,                 -- 348: pop
       ops.PUSH_FRAME,          -- 349: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 350: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 350: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 352: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 353: get_slot_direct(26)
-      ops.PUSH_LITERAL, 340,   -- 355: push_literal(340)
-      ops.PUSH_LITERAL, 428,   -- 357: push_literal(428)
+      ops.PUSH_LITERAL, 408,   -- 355: push_literal(408)
+      ops.PUSH_LITERAL, 494,   -- 357: push_literal(494)
       ops.PUSH_LITERAL, 31,    -- 359: push_literal(31)
       ops.INVOKE, 3,           -- 361: invoke(3)
       ops.POP,                 -- 363: pop
       ops.PUSH_FRAME,          -- 364: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 365: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 365: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 367: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 368: get_slot_direct(26)
-      ops.PUSH_LITERAL, 342,   -- 370: push_literal(342)
-      ops.PUSH_LITERAL, 429,   -- 372: push_literal(429)
+      ops.PUSH_LITERAL, 410,   -- 370: push_literal(410)
+      ops.PUSH_LITERAL, 495,   -- 372: push_literal(495)
       ops.PUSH_LITERAL, 31,    -- 374: push_literal(31)
       ops.INVOKE, 3,           -- 376: invoke(3)
       ops.POP,                 -- 378: pop
       ops.PUSH_FRAME,          -- 379: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 380: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 380: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 382: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 383: get_slot_direct(26)
-      ops.PUSH_LITERAL, 343,   -- 385: push_literal(343)
-      ops.PUSH_LITERAL, 428,   -- 387: push_literal(428)
+      ops.PUSH_LITERAL, 411,   -- 385: push_literal(411)
+      ops.PUSH_LITERAL, 494,   -- 387: push_literal(494)
       ops.INVOKE, 2,           -- 389: invoke(2)
       ops.POP,                 -- 391: pop
       ops.PUSH_FRAME,          -- 392: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 393: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 393: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 395: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 396: get_slot_direct(26)
-      ops.PUSH_LITERAL, 344,   -- 398: push_literal(344)
-      ops.PUSH_LITERAL, 429,   -- 400: push_literal(429)
+      ops.PUSH_LITERAL, 412,   -- 398: push_literal(412)
+      ops.PUSH_LITERAL, 495,   -- 400: push_literal(495)
       ops.INVOKE, 2,           -- 402: invoke(2)
       ops.POP,                 -- 404: pop
       ops.PUSH_FRAME,          -- 405: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 406: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 406: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 408: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 409: get_slot_direct(26)
-      ops.PUSH_LITERAL, 228,   -- 411: push_literal(228)
-      ops.PUSH_LITERAL, 430,   -- 413: push_literal(430)
+      ops.PUSH_LITERAL, 304,   -- 411: push_literal(304)
+      ops.PUSH_LITERAL, 496,   -- 413: push_literal(496)
       ops.INVOKE, 2,           -- 415: invoke(2)
       ops.POP,                 -- 417: pop
       ops.PUSH_FRAME,          -- 418: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 419: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 419: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 421: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 422: get_slot_direct(26)
       ops.PUSH_LITERAL, 141,   -- 424: push_literal(141)
-      ops.PUSH_LITERAL, 431,   -- 426: push_literal(431)
+      ops.PUSH_LITERAL, 497,   -- 426: push_literal(497)
       ops.INVOKE, 2,           -- 428: invoke(2)
       ops.POP,                 -- 430: pop
       ops.PUSH_FRAME,          -- 431: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 432: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 432: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 434: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 435: get_slot_direct(26)
-      ops.PUSH_LITERAL, 246,   -- 437: push_literal(246)
-      ops.PUSH_LITERAL, 432,   -- 439: push_literal(432)
+      ops.PUSH_LITERAL, 319,   -- 437: push_literal(319)
+      ops.PUSH_LITERAL, 498,   -- 439: push_literal(498)
       ops.INVOKE, 2,           -- 441: invoke(2)
       ops.POP,                 -- 443: pop
       ops.PUSH_FRAME,          -- 444: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 445: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 445: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 447: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 448: get_slot_direct(26)
-      ops.PUSH_LITERAL, 245,   -- 450: push_literal(245)
-      ops.PUSH_LITERAL, 433,   -- 452: push_literal(433)
+      ops.PUSH_LITERAL, 318,   -- 450: push_literal(318)
+      ops.PUSH_LITERAL, 499,   -- 452: push_literal(499)
       ops.INVOKE, 2,           -- 454: invoke(2)
       ops.POP,                 -- 456: pop
       ops.PUSH_FRAME,          -- 457: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 458: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 458: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 460: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 461: get_slot_direct(26)
       ops.PUSH_LITERAL, 149,   -- 463: push_literal(149)
-      ops.NEW_FUNCTION, 148,   -- 465: new_function(148)
+      ops.NEW_FUNCTION, 157,   -- 465: new_function(157)
       ops.INVOKE, 2,           -- 467: invoke(2)
       ops.POP,                 -- 469: pop
       ops.PUSH_FRAME,          -- 470: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 471: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 471: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 473: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 474: get_slot_direct(26)
-      ops.PUSH_LITERAL, 316,   -- 476: push_literal(316)
-      ops.NEW_FUNCTION, 149,   -- 478: new_function(149)
+      ops.PUSH_LITERAL, 254,   -- 476: push_literal(254)
+      ops.NEW_FUNCTION, 158,   -- 478: new_function(158)
       ops.INVOKE, 2,           -- 480: invoke(2)
       ops.POP,                 -- 482: pop
       ops.PUSH_FRAME,          -- 483: push_frame
-      ops.GET_SLOT_DIRECT, 315,-- 484: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 386,-- 484: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 486: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 487: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 489: push_literal(305)
-      ops.NEW_FUNCTION, 150,   -- 491: new_function(150)
+      ops.PUSH_LITERAL, 378,   -- 489: push_literal(378)
+      ops.NEW_FUNCTION, 159,   -- 491: new_function(159)
       ops.INVOKE, 2,           -- 493: invoke(2)
       ops.POP,                 -- 495: pop
       ops.PUSH_FRAME,          -- 496: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 497: get_slot_direct(455)
-      ops.NEW_FUNCTION, 152,   -- 499: new_function(152)
-      ops.SET_SLOT_DIRECT, 332,-- 501: set_slot_direct(332)
+      ops.GET_SLOT_DIRECT, 521,-- 497: get_slot_direct(521)
+      ops.NEW_FUNCTION, 161,   -- 499: new_function(161)
+      ops.SET_SLOT_DIRECT, 400,-- 501: set_slot_direct(400)
       ops.PUSH_FRAME,          -- 503: push_frame
-      ops.NEW_FUNCTION, 153,   -- 504: new_function(153)
-      ops.SET_SLOT_DIRECT, 332,-- 506: set_slot_direct(332)
+      ops.NEW_FUNCTION, 162,   -- 504: new_function(162)
+      ops.SET_SLOT_DIRECT, 400,-- 506: set_slot_direct(400)
       ops.PUSH_FRAME,          -- 508: push_frame
-      ops.GET_SLOT_DIRECT, 332,-- 509: get_slot_direct(332)
+      ops.GET_SLOT_DIRECT, 400,-- 509: get_slot_direct(400)
       ops.PUSH_LOCAL_FRAME,    -- 511: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 512: get_slot_direct(26)
-      ops.PUSH_LITERAL, 329,   -- 514: push_literal(329)
-      ops.NEW_FUNCTION, 154,   -- 516: new_function(154)
+      ops.PUSH_LITERAL, 397,   -- 514: push_literal(397)
+      ops.NEW_FUNCTION, 163,   -- 516: new_function(163)
       ops.INVOKE, 2,           -- 518: invoke(2)
       ops.POP,                 -- 520: pop
       ops.PUSH_FRAME,          -- 521: push_frame
-      ops.GET_SLOT_DIRECT, 332,-- 522: get_slot_direct(332)
+      ops.GET_SLOT_DIRECT, 400,-- 522: get_slot_direct(400)
       ops.PUSH_LOCAL_FRAME,    -- 524: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 525: get_slot_direct(26)
-      ops.PUSH_LITERAL, 305,   -- 527: push_literal(305)
-      ops.NEW_FUNCTION, 155,   -- 529: new_function(155)
+      ops.PUSH_LITERAL, 378,   -- 527: push_literal(378)
+      ops.NEW_FUNCTION, 164,   -- 529: new_function(164)
       ops.INVOKE, 2,           -- 531: invoke(2)
       ops.POP,                 -- 533: pop
       ops.PUSH_FRAME,          -- 534: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 535: get_slot_direct(455)
-      ops.NEW_FUNCTION, 157,   -- 537: new_function(157)
-      ops.SET_SLOT_DIRECT, 266,-- 539: set_slot_direct(266)
+      ops.GET_SLOT_DIRECT, 521,-- 535: get_slot_direct(521)
+      ops.NEW_FUNCTION, 166,   -- 537: new_function(166)
+      ops.SET_SLOT_DIRECT, 339,-- 539: set_slot_direct(339)
       ops.PUSH_LOCAL_FRAME,    -- 541: push_local_frame
-      ops.NEW_FUNCTION, 158,   -- 542: new_function(158)
-      ops.SET_SLOT_DIRECT, 275,-- 544: set_slot_direct(275)
+      ops.NEW_FUNCTION, 167,   -- 542: new_function(167)
+      ops.SET_SLOT_DIRECT, 348,-- 544: set_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 546: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 547: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 547: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 549: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 550: get_slot_direct(26)
       ops.PUSH_LITERAL, 91,    -- 552: push_literal(91)
-      ops.NEW_FUNCTION, 159,   -- 554: new_function(159)
+      ops.NEW_FUNCTION, 168,   -- 554: new_function(168)
       ops.INVOKE, 2,           -- 556: invoke(2)
       ops.POP,                 -- 558: pop
       ops.PUSH_LOCAL_FRAME,    -- 559: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 560: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 560: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 562: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 563: get_slot_direct(26)
-      ops.PUSH_LITERAL, 309,   -- 565: push_literal(309)
-      ops.NEW_FUNCTION, 161,   -- 567: new_function(161)
+      ops.PUSH_LITERAL, 382,   -- 565: push_literal(382)
+      ops.NEW_FUNCTION, 170,   -- 567: new_function(170)
       ops.INVOKE, 2,           -- 569: invoke(2)
       ops.POP,                 -- 571: pop
       ops.PUSH_LOCAL_FRAME,    -- 572: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 573: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 573: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 575: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 576: get_slot_direct(26)
-      ops.PUSH_LITERAL, 359,   -- 578: push_literal(359)
-      ops.NEW_FUNCTION, 162,   -- 580: new_function(162)
+      ops.PUSH_LITERAL, 426,   -- 578: push_literal(426)
+      ops.NEW_FUNCTION, 171,   -- 580: new_function(171)
       ops.INVOKE, 2,           -- 582: invoke(2)
       ops.POP,                 -- 584: pop
       ops.PUSH_LOCAL_FRAME,    -- 585: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 586: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 586: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 588: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 589: get_slot_direct(26)
-      ops.PUSH_LITERAL, 360,   -- 591: push_literal(360)
-      ops.NEW_FUNCTION, 163,   -- 593: new_function(163)
+      ops.PUSH_LITERAL, 427,   -- 591: push_literal(427)
+      ops.NEW_FUNCTION, 172,   -- 593: new_function(172)
       ops.INVOKE, 2,           -- 595: invoke(2)
       ops.POP,                 -- 597: pop
       ops.PUSH_LOCAL_FRAME,    -- 598: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 599: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 599: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 601: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 602: get_slot_direct(26)
-      ops.PUSH_LITERAL, 362,   -- 604: push_literal(362)
-      ops.NEW_FUNCTION, 164,   -- 606: new_function(164)
+      ops.PUSH_LITERAL, 429,   -- 604: push_literal(429)
+      ops.NEW_FUNCTION, 173,   -- 606: new_function(173)
       ops.INVOKE, 2,           -- 608: invoke(2)
       ops.POP,                 -- 610: pop
       ops.PUSH_LOCAL_FRAME,    -- 611: push_local_frame
-      ops.GET_SLOT_DIRECT, 275,-- 612: get_slot_direct(275)
+      ops.GET_SLOT_DIRECT, 348,-- 612: get_slot_direct(348)
       ops.PUSH_LOCAL_FRAME,    -- 614: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 615: get_slot_direct(26)
       ops.PUSH_LITERAL, 185,   -- 617: push_literal(185)
-      ops.NEW_FUNCTION, 165,   -- 619: new_function(165)
+      ops.NEW_FUNCTION, 174,   -- 619: new_function(174)
       ops.INVOKE, 2,           -- 621: invoke(2)
       ops.POP,                 -- 623: pop
       ops.PUSH_FRAME,          -- 624: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 625: get_slot_direct(455)
+      ops.GET_SLOT_DIRECT, 521,-- 625: get_slot_direct(521)
       ops.PUSH_LITERAL, 26,    -- 627: push_literal(26)
-      ops.NEW_FUNCTION, 166,   -- 629: new_function(166)
+      ops.NEW_FUNCTION, 175,   -- 629: new_function(175)
       ops.SET_SLOT_INDIRECT,   -- 631: set_slot_indirect
       ops.PUSH_FRAME,          -- 632: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 633: get_slot_direct(455)
+      ops.GET_SLOT_DIRECT, 521,-- 633: get_slot_direct(521)
       ops.PUSH_LITERAL, 25,    -- 635: push_literal(25)
-      ops.NEW_FUNCTION, 167,   -- 637: new_function(167)
+      ops.NEW_FUNCTION, 176,   -- 637: new_function(176)
       ops.SET_SLOT_INDIRECT,   -- 639: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 640: push_local_frame
-      ops.NEW_FUNCTION, 169,   -- 641: new_function(169)
-      ops.SET_SLOT_DIRECT, 450,-- 643: set_slot_direct(450)
+      ops.NEW_FUNCTION, 178,   -- 641: new_function(178)
+      ops.SET_SLOT_DIRECT, 516,-- 643: set_slot_direct(516)
       ops.PUSH_LOCAL_FRAME,    -- 645: push_local_frame
-      ops.GET_SLOT_DIRECT, 450,-- 646: get_slot_direct(450)
-      ops.PUSH_LITERAL, 450,   -- 648: push_literal(450)
-      ops.SET_SLOT_DIRECT, 248,-- 650: set_slot_direct(248)
+      ops.GET_SLOT_DIRECT, 516,-- 646: get_slot_direct(516)
+      ops.PUSH_LITERAL, 516,   -- 648: push_literal(516)
+      ops.SET_SLOT_DIRECT, 321,-- 650: set_slot_direct(321)
       ops.PUSH_LOCAL_FRAME,    -- 652: push_local_frame
-      ops.GET_SLOT_DIRECT, 450,-- 653: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 653: get_slot_direct(516)
       ops.PUSH_FRAME,          -- 655: push_frame
-      ops.GET_SLOT_DIRECT, 516,-- 656: get_slot_direct(516)
-      ops.SET_SLOT_DIRECT, 250,-- 658: set_slot_direct(250)
+      ops.GET_SLOT_DIRECT, 581,-- 656: get_slot_direct(581)
+      ops.SET_SLOT_DIRECT, 323,-- 658: set_slot_direct(323)
       ops.PUSH_LOCAL_FRAME,    -- 660: push_local_frame
-      ops.GET_SLOT_DIRECT, 450,-- 661: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 661: get_slot_direct(516)
       ops.NEW_ARRAY,           -- 663: new_array
       ops.DUP,                 -- 664: dup
-      ops.PUSH_LITERAL, 380,   -- 665: push_literal(380)
+      ops.PUSH_LITERAL, 446,   -- 665: push_literal(446)
       ops.SET_SLOT_DIRECT, 18, -- 667: set_slot_direct(18)
       ops.DUP,                 -- 669: dup
-      ops.PUSH_LITERAL, 437,   -- 670: push_literal(437)
+      ops.PUSH_LITERAL, 503,   -- 670: push_literal(503)
       ops.SET_SLOT_DIRECT, 31, -- 672: set_slot_direct(31)
-      ops.SET_SLOT_DIRECT, 378,-- 674: set_slot_direct(378)
+      ops.SET_SLOT_DIRECT, 444,-- 674: set_slot_direct(444)
       ops.PUSH_LOCAL_FRAME,    -- 676: push_local_frame
-      ops.GET_SLOT_DIRECT, 450,-- 677: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 677: get_slot_direct(516)
       ops.PUSH_LOCAL_FRAME,    -- 679: push_local_frame
-      ops.GET_SLOT_DIRECT, 452,-- 680: get_slot_direct(452)
-      ops.SET_SLOT_DIRECT, 251,-- 682: set_slot_direct(251)
+      ops.GET_SLOT_DIRECT, 518,-- 680: get_slot_direct(518)
+      ops.SET_SLOT_DIRECT, 324,-- 682: set_slot_direct(324)
       ops.PUSH_LOCAL_FRAME,    -- 684: push_local_frame
-      ops.GET_SLOT_DIRECT, 450,-- 685: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 685: get_slot_direct(516)
       ops.RETURN               -- 687: return
     }
   },
   ifunc.Function:new{ -- "assert"
     name = jsval.newString("assert"),
-    id = 112,
+    id = 121,
     nargs = 2,
     max_stack = 4,
     bytecode = {
@@ -11446,7 +12992,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 240,-- 8: set_slot_direct(240)
+      ops.SET_SLOT_DIRECT, 313,-- 8: set_slot_direct(313)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
@@ -11454,23 +13000,23 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 30, -- 15: set_slot_direct(30)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 240,-- 19: get_slot_direct(240)
+      ops.GET_SLOT_DIRECT, 313,-- 19: get_slot_direct(313)
       ops.UN_NOT,              -- 21: un_not
       ops.JMP_UNLESS, 52, 52,  -- 22: jmp_unless(52,52)
       ops.PUSH_FRAME,          -- 25: push_frame
-      ops.GET_SLOT_DIRECT, 457,-- 26: get_slot_direct(457)
+      ops.GET_SLOT_DIRECT, 523,-- 26: get_slot_direct(523)
       ops.DUP,                 -- 28: dup
-      ops.GET_SLOT_DIRECT_CHECK, 458,-- 29: get_slot_direct_check(458)
+      ops.GET_SLOT_DIRECT_CHECK, 524,-- 29: get_slot_direct_check(524)
       ops.SWAP,                -- 31: swap
-      ops.PUSH_LITERAL, 459,   -- 32: push_literal(459)
+      ops.PUSH_LITERAL, 525,   -- 32: push_literal(525)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.GET_SLOT_DIRECT, 30, -- 35: get_slot_direct(30)
       ops.INVOKE, 2,           -- 37: invoke(2)
       ops.POP,                 -- 39: pop
       ops.PUSH_FRAME,          -- 40: push_frame
-      ops.GET_SLOT_DIRECT, 457,-- 41: get_slot_direct(457)
+      ops.GET_SLOT_DIRECT, 523,-- 41: get_slot_direct(523)
       ops.DUP,                 -- 43: dup
-      ops.GET_SLOT_DIRECT_CHECK, 454,-- 44: get_slot_direct_check(454)
+      ops.GET_SLOT_DIRECT_CHECK, 520,-- 44: get_slot_direct_check(520)
       ops.SWAP,                -- 46: swap
       ops.PUSH_LITERAL, 32,    -- 47: push_literal(32)
       ops.INVOKE, 1,           -- 49: invoke(1)
@@ -11482,7 +13028,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "mkstate"
     name = jsval.newString("mkstate"),
-    id = 113,
+    id = 122,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -11492,121 +13038,121 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 460,-- 8: set_slot_direct(460)
+      ops.SET_SLOT_DIRECT, 526,-- 8: set_slot_direct(526)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 370,-- 14: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 14: set_slot_direct(230)
       ops.PUSH_FRAME,          -- 16: push_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 461,-- 19: set_slot_direct(461)
+      ops.SET_SLOT_DIRECT, 527,-- 19: set_slot_direct(527)
       ops.PUSH_FRAME,          -- 21: push_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 462,-- 24: set_slot_direct(462)
+      ops.SET_SLOT_DIRECT, 528,-- 24: set_slot_direct(528)
       ops.PUSH_FRAME,          -- 26: push_frame
       ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
-      ops.SET_SLOT_DIRECT, 463,-- 29: set_slot_direct(463)
+      ops.SET_SLOT_DIRECT, 529,-- 29: set_slot_direct(529)
       ops.PUSH_FRAME,          -- 31: push_frame
       ops.NEW_OBJECT,          -- 32: new_object
       ops.DUP,                 -- 33: dup
       ops.NEW_ARRAY,           -- 34: new_array
-      ops.SET_SLOT_DIRECT, 464,-- 35: set_slot_direct(464)
+      ops.SET_SLOT_DIRECT, 530,-- 35: set_slot_direct(530)
       ops.DUP,                 -- 37: dup
       ops.PUSH_LITERAL, 41,    -- 38: push_literal(41)
-      ops.SET_SLOT_DIRECT, 397,-- 40: set_slot_direct(397)
+      ops.SET_SLOT_DIRECT, 463,-- 40: set_slot_direct(463)
       ops.DUP,                 -- 42: dup
       ops.PUSH_LITERAL, 18,    -- 43: push_literal(18)
-      ops.SET_SLOT_DIRECT, 255,-- 45: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 45: set_slot_direct(328)
       ops.DUP,                 -- 47: dup
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
-      ops.GET_SLOT_DIRECT, 460,-- 49: get_slot_direct(460)
+      ops.GET_SLOT_DIRECT, 526,-- 49: get_slot_direct(526)
       ops.UN_NOT,              -- 51: un_not
-      ops.SET_SLOT_DIRECT, 465,-- 52: set_slot_direct(465)
-      ops.SET_SLOT_DIRECT, 370,-- 54: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 531,-- 52: set_slot_direct(531)
+      ops.SET_SLOT_DIRECT, 230,-- 54: set_slot_direct(230)
       ops.PUSH_FRAME,          -- 56: push_frame
       ops.PUSH_FRAME,          -- 57: push_frame
-      ops.GET_SLOT_DIRECT, 441,-- 58: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 58: get_slot_direct(507)
       ops.DUP,                 -- 60: dup
       ops.GET_SLOT_DIRECT_CHECK, 22,-- 61: get_slot_direct_check(22)
       ops.SWAP,                -- 63: swap
       ops.INVOKE, 0,           -- 64: invoke(0)
-      ops.SET_SLOT_DIRECT, 461,-- 66: set_slot_direct(461)
+      ops.SET_SLOT_DIRECT, 527,-- 66: set_slot_direct(527)
       ops.PUSH_FRAME,          -- 68: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 69: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 69: get_slot_direct(230)
       ops.PUSH_FRAME,          -- 71: push_frame
-      ops.GET_SLOT_DIRECT, 461,-- 72: get_slot_direct(461)
-      ops.GET_SLOT_DIRECT, 444,-- 74: get_slot_direct(444)
-      ops.SET_SLOT_DIRECT, 397,-- 76: set_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 527,-- 72: get_slot_direct(527)
+      ops.GET_SLOT_DIRECT, 510,-- 74: get_slot_direct(510)
+      ops.SET_SLOT_DIRECT, 463,-- 76: set_slot_direct(463)
       ops.PUSH_FRAME,          -- 78: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 79: get_slot_direct(370)
-      ops.NEW_FUNCTION, 114,   -- 81: new_function(114)
-      ops.SET_SLOT_DIRECT, 301,-- 83: set_slot_direct(301)
+      ops.GET_SLOT_DIRECT, 230,-- 79: get_slot_direct(230)
+      ops.NEW_FUNCTION, 123,   -- 81: new_function(123)
+      ops.SET_SLOT_DIRECT, 374,-- 83: set_slot_direct(374)
       ops.PUSH_FRAME,          -- 85: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 86: get_slot_direct(370)
-      ops.NEW_FUNCTION, 115,   -- 88: new_function(115)
-      ops.SET_SLOT_DIRECT, 406,-- 90: set_slot_direct(406)
+      ops.GET_SLOT_DIRECT, 230,-- 86: get_slot_direct(230)
+      ops.NEW_FUNCTION, 124,   -- 88: new_function(124)
+      ops.SET_SLOT_DIRECT, 472,-- 90: set_slot_direct(472)
       ops.PUSH_FRAME,          -- 92: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 93: get_slot_direct(370)
-      ops.NEW_FUNCTION, 116,   -- 95: new_function(116)
-      ops.SET_SLOT_DIRECT, 475,-- 97: set_slot_direct(475)
+      ops.GET_SLOT_DIRECT, 230,-- 93: get_slot_direct(230)
+      ops.NEW_FUNCTION, 125,   -- 95: new_function(125)
+      ops.SET_SLOT_DIRECT, 541,-- 97: set_slot_direct(541)
       ops.PUSH_FRAME,          -- 99: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 100: get_slot_direct(370)
-      ops.NEW_FUNCTION, 117,   -- 102: new_function(117)
-      ops.SET_SLOT_DIRECT, 478,-- 104: set_slot_direct(478)
+      ops.GET_SLOT_DIRECT, 230,-- 100: get_slot_direct(230)
+      ops.NEW_FUNCTION, 126,   -- 102: new_function(126)
+      ops.SET_SLOT_DIRECT, 544,-- 104: set_slot_direct(544)
       ops.PUSH_FRAME,          -- 106: push_frame
-      ops.NEW_FUNCTION, 118,   -- 107: new_function(118)
-      ops.SET_SLOT_DIRECT, 462,-- 109: set_slot_direct(462)
+      ops.NEW_FUNCTION, 127,   -- 107: new_function(127)
+      ops.SET_SLOT_DIRECT, 528,-- 109: set_slot_direct(528)
       ops.PUSH_FRAME,          -- 111: push_frame
-      ops.NEW_FUNCTION, 119,   -- 112: new_function(119)
-      ops.SET_SLOT_DIRECT, 463,-- 114: set_slot_direct(463)
+      ops.NEW_FUNCTION, 128,   -- 112: new_function(128)
+      ops.SET_SLOT_DIRECT, 529,-- 114: set_slot_direct(529)
       ops.PUSH_FRAME,          -- 116: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 117: get_slot_direct(370)
-      ops.NEW_FUNCTION, 120,   -- 119: new_function(120)
-      ops.SET_SLOT_DIRECT, 486,-- 121: set_slot_direct(486)
+      ops.GET_SLOT_DIRECT, 230,-- 117: get_slot_direct(230)
+      ops.NEW_FUNCTION, 129,   -- 119: new_function(129)
+      ops.SET_SLOT_DIRECT, 552,-- 121: set_slot_direct(552)
       ops.PUSH_FRAME,          -- 123: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 124: get_slot_direct(370)
-      ops.NEW_FUNCTION, 121,   -- 126: new_function(121)
-      ops.SET_SLOT_DIRECT, 488,-- 128: set_slot_direct(488)
+      ops.GET_SLOT_DIRECT, 230,-- 124: get_slot_direct(230)
+      ops.NEW_FUNCTION, 130,   -- 126: new_function(130)
+      ops.SET_SLOT_DIRECT, 554,-- 128: set_slot_direct(554)
       ops.PUSH_FRAME,          -- 130: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 131: get_slot_direct(370)
-      ops.NEW_FUNCTION, 122,   -- 133: new_function(122)
-      ops.SET_SLOT_DIRECT, 489,-- 135: set_slot_direct(489)
+      ops.GET_SLOT_DIRECT, 230,-- 131: get_slot_direct(230)
+      ops.NEW_FUNCTION, 131,   -- 133: new_function(131)
+      ops.SET_SLOT_DIRECT, 555,-- 135: set_slot_direct(555)
       ops.PUSH_FRAME,          -- 137: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 138: get_slot_direct(370)
-      ops.NEW_FUNCTION, 123,   -- 140: new_function(123)
-      ops.SET_SLOT_DIRECT, 491,-- 142: set_slot_direct(491)
+      ops.GET_SLOT_DIRECT, 230,-- 138: get_slot_direct(230)
+      ops.NEW_FUNCTION, 132,   -- 140: new_function(132)
+      ops.SET_SLOT_DIRECT, 557,-- 142: set_slot_direct(557)
       ops.PUSH_FRAME,          -- 144: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 145: get_slot_direct(370)
-      ops.NEW_FUNCTION, 124,   -- 147: new_function(124)
-      ops.SET_SLOT_DIRECT, 492,-- 149: set_slot_direct(492)
+      ops.GET_SLOT_DIRECT, 230,-- 145: get_slot_direct(230)
+      ops.NEW_FUNCTION, 133,   -- 147: new_function(133)
+      ops.SET_SLOT_DIRECT, 558,-- 149: set_slot_direct(558)
       ops.PUSH_FRAME,          -- 151: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 152: get_slot_direct(370)
-      ops.NEW_FUNCTION, 125,   -- 154: new_function(125)
-      ops.SET_SLOT_DIRECT, 493,-- 156: set_slot_direct(493)
+      ops.GET_SLOT_DIRECT, 230,-- 152: get_slot_direct(230)
+      ops.NEW_FUNCTION, 134,   -- 154: new_function(134)
+      ops.SET_SLOT_DIRECT, 559,-- 156: set_slot_direct(559)
       ops.PUSH_FRAME,          -- 158: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 159: get_slot_direct(370)
-      ops.NEW_FUNCTION, 126,   -- 161: new_function(126)
-      ops.SET_SLOT_DIRECT, 494,-- 163: set_slot_direct(494)
+      ops.GET_SLOT_DIRECT, 230,-- 159: get_slot_direct(230)
+      ops.NEW_FUNCTION, 135,   -- 161: new_function(135)
+      ops.SET_SLOT_DIRECT, 560,-- 163: set_slot_direct(560)
       ops.PUSH_FRAME,          -- 165: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 166: get_slot_direct(370)
-      ops.NEW_FUNCTION, 128,   -- 168: new_function(128)
-      ops.SET_SLOT_DIRECT, 497,-- 170: set_slot_direct(497)
+      ops.GET_SLOT_DIRECT, 230,-- 166: get_slot_direct(230)
+      ops.NEW_FUNCTION, 137,   -- 168: new_function(137)
+      ops.SET_SLOT_DIRECT, 563,-- 170: set_slot_direct(563)
       ops.PUSH_FRAME,          -- 172: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 173: get_slot_direct(370)
-      ops.NEW_FUNCTION, 129,   -- 175: new_function(129)
-      ops.SET_SLOT_DIRECT, 496,-- 177: set_slot_direct(496)
+      ops.GET_SLOT_DIRECT, 230,-- 173: get_slot_direct(230)
+      ops.NEW_FUNCTION, 138,   -- 175: new_function(138)
+      ops.SET_SLOT_DIRECT, 562,-- 177: set_slot_direct(562)
       ops.PUSH_FRAME,          -- 179: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 180: get_slot_direct(370)
-      ops.NEW_FUNCTION, 130,   -- 182: new_function(130)
-      ops.SET_SLOT_DIRECT, 498,-- 184: set_slot_direct(498)
+      ops.GET_SLOT_DIRECT, 230,-- 180: get_slot_direct(230)
+      ops.NEW_FUNCTION, 139,   -- 182: new_function(139)
+      ops.SET_SLOT_DIRECT, 564,-- 184: set_slot_direct(564)
       ops.PUSH_FRAME,          -- 186: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 187: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 187: get_slot_direct(230)
       ops.RETURN               -- 189: return
     }
   },
   ifunc.Function:new{ -- ".literal"
     name = jsval.newString(".literal"),
-    id = 114,
+    id = 123,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -11619,9 +13165,9 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 184,-- 8: set_slot_direct(184)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 461,-- 12: get_slot_direct(461)
+      ops.GET_SLOT_DIRECT, 527,-- 12: get_slot_direct(527)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 445,-- 15: get_slot_direct_check(445)
+      ops.GET_SLOT_DIRECT_CHECK, 511,-- 15: get_slot_direct_check(511)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 19: get_slot_direct(184)
@@ -11631,7 +13177,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".new_function"
     name = jsval.newString(".new_function"),
-    id = 115,
+    id = 124,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -11645,49 +13191,49 @@ startup.functions = {
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 466,-- 14: set_slot_direct(466)
+      ops.SET_SLOT_DIRECT, 532,-- 14: set_slot_direct(532)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.NEW_OBJECT,          -- 17: new_object
       ops.DUP,                 -- 18: dup
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 20: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 22: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 22: get_slot_direct(530)
       ops.GET_SLOT_DIRECT, 55, -- 24: get_slot_direct(55)
-      ops.SET_SLOT_DIRECT, 295,-- 26: set_slot_direct(295)
+      ops.SET_SLOT_DIRECT, 368,-- 26: set_slot_direct(368)
       ops.DUP,                 -- 28: dup
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 108,-- 30: get_slot_direct(108)
       ops.SET_SLOT_DIRECT, 108,-- 32: set_slot_direct(108)
       ops.DUP,                 -- 34: dup
       ops.PUSH_LITERAL, 18,    -- 35: push_literal(18)
-      ops.SET_SLOT_DIRECT, 467,-- 37: set_slot_direct(467)
+      ops.SET_SLOT_DIRECT, 533,-- 37: set_slot_direct(533)
       ops.DUP,                 -- 39: dup
       ops.NEW_ARRAY,           -- 40: new_array
-      ops.SET_SLOT_DIRECT, 393,-- 41: set_slot_direct(393)
+      ops.SET_SLOT_DIRECT, 459,-- 41: set_slot_direct(459)
       ops.DUP,                 -- 43: dup
       ops.PUSH_LITERAL, 18,    -- 44: push_literal(18)
-      ops.SET_SLOT_DIRECT, 468,-- 46: set_slot_direct(468)
+      ops.SET_SLOT_DIRECT, 534,-- 46: set_slot_direct(534)
       ops.DUP,                 -- 48: dup
       ops.NEW_ARRAY,           -- 49: new_array
-      ops.SET_SLOT_DIRECT, 469,-- 50: set_slot_direct(469)
-      ops.SET_SLOT_DIRECT, 466,-- 52: set_slot_direct(466)
+      ops.SET_SLOT_DIRECT, 535,-- 50: set_slot_direct(535)
+      ops.SET_SLOT_DIRECT, 532,-- 52: set_slot_direct(532)
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 55: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 57: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 57: get_slot_direct(530)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 466,-- 60: get_slot_direct(466)
-      ops.GET_SLOT_DIRECT, 295,-- 62: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 532,-- 60: get_slot_direct(532)
+      ops.GET_SLOT_DIRECT, 368,-- 62: get_slot_direct(368)
       ops.PUSH_LOCAL_FRAME,    -- 64: push_local_frame
-      ops.GET_SLOT_DIRECT, 466,-- 65: get_slot_direct(466)
+      ops.GET_SLOT_DIRECT, 532,-- 65: get_slot_direct(532)
       ops.SET_SLOT_INDIRECT,   -- 67: set_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 68: push_local_frame
-      ops.GET_SLOT_DIRECT, 466,-- 69: get_slot_direct(466)
+      ops.GET_SLOT_DIRECT, 532,-- 69: get_slot_direct(532)
       ops.RETURN               -- 71: return
     }
   },
   ifunc.Function:new{ -- ".emit"
     name = jsval.newString(".emit"),
-    id = 116,
+    id = 125,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -11701,60 +13247,60 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 10: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 12: push_local_frame
       ops.SWAP,                -- 13: swap
-      ops.SET_SLOT_DIRECT, 470,-- 14: set_slot_direct(470)
+      ops.SET_SLOT_DIRECT, 536,-- 14: set_slot_direct(536)
       ops.POP,                 -- 16: pop
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 18: push_literal(0)
-      ops.SET_SLOT_DIRECT, 471,-- 20: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 20: set_slot_direct(537)
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 23: push_literal(0)
-      ops.SET_SLOT_DIRECT, 472,-- 25: set_slot_direct(472)
+      ops.SET_SLOT_DIRECT, 538,-- 25: set_slot_direct(538)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 28: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 30: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
       ops.PUSH_FRAME,          -- 33: push_frame
-      ops.GET_SLOT_DIRECT, 453,-- 34: get_slot_direct(453)
+      ops.GET_SLOT_DIRECT, 519,-- 34: get_slot_direct(519)
       ops.DUP,                 -- 36: dup
-      ops.GET_SLOT_DIRECT_CHECK, 436,-- 37: get_slot_direct_check(436)
+      ops.GET_SLOT_DIRECT_CHECK, 502,-- 37: get_slot_direct_check(502)
       ops.SWAP,                -- 39: swap
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 470,-- 41: get_slot_direct(470)
+      ops.GET_SLOT_DIRECT, 536,-- 41: get_slot_direct(536)
       ops.INVOKE, 1,           -- 43: invoke(1)
-      ops.SET_SLOT_DIRECT, 471,-- 45: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 45: set_slot_direct(537)
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 473,-- 51: get_slot_direct(473)
-      ops.SET_SLOT_DIRECT, 472,-- 53: set_slot_direct(472)
+      ops.GET_SLOT_DIRECT, 539,-- 51: get_slot_direct(539)
+      ops.SET_SLOT_DIRECT, 538,-- 53: set_slot_direct(538)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
       ops.PUSH_LITERAL, 31,    -- 56: push_literal(31)
       ops.SET_SLOT_DIRECT, 53, -- 58: set_slot_direct(53)
       ops.PUSH_FRAME,          -- 60: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 61: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 61: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 64: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 67: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 67: get_slot_direct(537)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
-      ops.GET_SLOT_DIRECT, 470,-- 70: get_slot_direct(470)
+      ops.GET_SLOT_DIRECT, 536,-- 70: get_slot_direct(536)
       ops.INVOKE, 2,           -- 72: invoke(2)
       ops.POP,                 -- 74: pop
       ops.PUSH_FRAME,          -- 75: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 76: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 76: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 78: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 79: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 81: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 82: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 468,-- 84: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 538,-- 82: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 534,-- 84: get_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 87: get_slot_direct(471)
-      ops.GET_SLOT_DIRECT, 389,-- 89: get_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 537,-- 87: get_slot_direct(537)
+      ops.GET_SLOT_DIRECT, 455,-- 89: get_slot_direct(455)
       ops.DUP,                 -- 91: dup
       ops.GET_SLOT_DIRECT_CHECK, 112,-- 92: get_slot_direct_check(112)
       ops.SWAP,                -- 94: swap
       ops.PUSH_LOCAL_FRAME,    -- 95: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 96: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 96: get_slot_direct(537)
       ops.PUSH_FRAME,          -- 98: push_frame
       ops.GET_SLOT_DIRECT, 17, -- 99: get_slot_direct(17)
       ops.INVOKE, 2,           -- 101: invoke(2)
@@ -11762,20 +13308,20 @@ startup.functions = {
       ops.INVOKE, 1,           -- 104: invoke(1)
       ops.POP,                 -- 106: pop
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 108: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 393,-- 110: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 538,-- 108: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 459,-- 110: get_slot_direct(459)
       ops.DUP,                 -- 112: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 113: get_slot_direct_check(69)
       ops.SWAP,                -- 115: swap
       ops.PUSH_LOCAL_FRAME,    -- 116: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 117: get_slot_direct(471)
-      ops.GET_SLOT_DIRECT, 295,-- 119: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 537,-- 117: get_slot_direct(537)
+      ops.GET_SLOT_DIRECT, 368,-- 119: get_slot_direct(368)
       ops.INVOKE, 1,           -- 121: invoke(1)
       ops.POP,                 -- 123: pop
       ops.JMP_INTO_LOOP, 155, 170,-- 124: jmp_into_loop(155,170)
       ops.PUSH_LOCAL_FRAME,    -- 127: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 128: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 393,-- 130: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 538,-- 128: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 459,-- 130: get_slot_direct(459)
       ops.DUP,                 -- 132: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 133: get_slot_direct_check(69)
       ops.SWAP,                -- 135: swap
@@ -11804,65 +13350,65 @@ startup.functions = {
       ops.JMP_UNLESS, 127, 170,-- 167: jmp_unless(127,170)
       ops.PHI,                 -- 170: phi
       ops.PUSH_LOCAL_FRAME,    -- 171: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 172: get_slot_direct(472)
+      ops.GET_SLOT_DIRECT, 538,-- 172: get_slot_direct(538)
       ops.DUP,                 -- 174: dup
-      ops.GET_SLOT_DIRECT, 468,-- 175: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 534,-- 175: get_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 177: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 178: get_slot_direct(471)
-      ops.GET_SLOT_DIRECT, 389,-- 180: get_slot_direct(389)
+      ops.GET_SLOT_DIRECT, 537,-- 178: get_slot_direct(537)
+      ops.GET_SLOT_DIRECT, 455,-- 180: get_slot_direct(455)
       ops.DUP,                 -- 182: dup
       ops.GET_SLOT_DIRECT_CHECK, 112,-- 183: get_slot_direct_check(112)
       ops.SWAP,                -- 185: swap
       ops.PUSH_LOCAL_FRAME,    -- 186: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 187: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 187: get_slot_direct(537)
       ops.PUSH_FRAME,          -- 189: push_frame
       ops.GET_SLOT_DIRECT, 17, -- 190: get_slot_direct(17)
       ops.INVOKE, 2,           -- 192: invoke(2)
       ops.BI_SUB,              -- 194: bi_sub
-      ops.SET_SLOT_DIRECT, 468,-- 195: set_slot_direct(468)
+      ops.SET_SLOT_DIRECT, 534,-- 195: set_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 197: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 198: get_slot_direct(472)
+      ops.GET_SLOT_DIRECT, 538,-- 198: get_slot_direct(538)
       ops.DUP,                 -- 200: dup
-      ops.GET_SLOT_DIRECT, 468,-- 201: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 534,-- 201: get_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 203: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 204: get_slot_direct(471)
-      ops.GET_SLOT_DIRECT, 390,-- 206: get_slot_direct(390)
+      ops.GET_SLOT_DIRECT, 537,-- 204: get_slot_direct(537)
+      ops.GET_SLOT_DIRECT, 456,-- 206: get_slot_direct(456)
       ops.DUP,                 -- 208: dup
       ops.GET_SLOT_DIRECT_CHECK, 112,-- 209: get_slot_direct_check(112)
       ops.SWAP,                -- 211: swap
       ops.PUSH_LOCAL_FRAME,    -- 212: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 213: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 213: get_slot_direct(537)
       ops.PUSH_FRAME,          -- 215: push_frame
       ops.GET_SLOT_DIRECT, 17, -- 216: get_slot_direct(17)
       ops.INVOKE, 2,           -- 218: invoke(2)
       ops.BI_ADD,              -- 220: bi_add
-      ops.SET_SLOT_DIRECT, 468,-- 221: set_slot_direct(468)
+      ops.SET_SLOT_DIRECT, 534,-- 221: set_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 223: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 224: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 468,-- 226: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 538,-- 224: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 534,-- 226: get_slot_direct(534)
       ops.PUSH_LOCAL_FRAME,    -- 228: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 229: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 467,-- 231: get_slot_direct(467)
+      ops.GET_SLOT_DIRECT, 538,-- 229: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 533,-- 231: get_slot_direct(533)
       ops.BI_GT,               -- 233: bi_gt
       ops.JMP_UNLESS, 247, 247,-- 234: jmp_unless(247,247)
       ops.PUSH_LOCAL_FRAME,    -- 237: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 238: get_slot_direct(472)
+      ops.GET_SLOT_DIRECT, 538,-- 238: get_slot_direct(538)
       ops.PUSH_LOCAL_FRAME,    -- 240: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 241: get_slot_direct(472)
-      ops.GET_SLOT_DIRECT, 468,-- 243: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 467,-- 245: set_slot_direct(467)
+      ops.GET_SLOT_DIRECT, 538,-- 241: get_slot_direct(538)
+      ops.GET_SLOT_DIRECT, 534,-- 243: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 533,-- 245: set_slot_direct(533)
       ops.PHI,                 -- 247: phi
       ops.PUSH_LOCAL_FRAME,    -- 248: push_local_frame
-      ops.GET_SLOT_DIRECT, 472,-- 249: get_slot_direct(472)
+      ops.GET_SLOT_DIRECT, 538,-- 249: get_slot_direct(538)
       ops.PUSH_LITERAL, 118,   -- 251: push_literal(118)
-      ops.SET_SLOT_DIRECT, 474,-- 253: set_slot_direct(474)
+      ops.SET_SLOT_DIRECT, 540,-- 253: set_slot_direct(540)
       ops.PUSH_LITERAL, 0,     -- 255: push_literal(0)
       ops.RETURN               -- 257: return
     }
   },
   ifunc.Function:new{ -- ".decompile"
     name = jsval.newString(".decompile"),
-    id = 117,
+    id = 126,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -11872,7 +13418,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 476,-- 8: set_slot_direct(476)
+      ops.SET_SLOT_DIRECT, 542,-- 8: set_slot_direct(542)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
@@ -11882,42 +13428,42 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 109,-- 19: set_slot_direct(109)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 394,-- 24: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 24: set_slot_direct(460)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LITERAL, 66,    -- 27: push_literal(66)
       ops.SET_SLOT_DIRECT, 75, -- 29: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 33: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 35: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 35: get_slot_direct(530)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 476,-- 38: get_slot_direct(476)
+      ops.GET_SLOT_DIRECT, 542,-- 38: get_slot_direct(542)
       ops.GET_SLOT_INDIRECT,   -- 40: get_slot_indirect
       ops.SET_SLOT_DIRECT, 109,-- 41: set_slot_direct(109)
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 44: push_literal(18)
-      ops.SET_SLOT_DIRECT, 394,-- 46: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 46: set_slot_direct(460)
       ops.JMP_INTO_LOOP, 163, 180,-- 48: jmp_into_loop(163,180)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 52: push_literal(0)
-      ops.SET_SLOT_DIRECT, 471,-- 54: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 54: set_slot_direct(537)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 57: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 59: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 61: push_local_frame
       ops.PUSH_FRAME,          -- 62: push_frame
-      ops.GET_SLOT_DIRECT, 453,-- 63: get_slot_direct(453)
+      ops.GET_SLOT_DIRECT, 519,-- 63: get_slot_direct(519)
       ops.DUP,                 -- 65: dup
-      ops.GET_SLOT_DIRECT_CHECK, 435,-- 66: get_slot_direct_check(435)
+      ops.GET_SLOT_DIRECT_CHECK, 501,-- 66: get_slot_direct_check(501)
       ops.SWAP,                -- 68: swap
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 70: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 72: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 72: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 75: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 75: get_slot_direct(460)
       ops.GET_SLOT_INDIRECT,   -- 77: get_slot_indirect
       ops.INVOKE, 1,           -- 78: invoke(1)
-      ops.SET_SLOT_DIRECT, 471,-- 80: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 80: set_slot_direct(537)
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 83: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 85: set_slot_direct(53)
@@ -11925,8 +13471,8 @@ startup.functions = {
       ops.DUP,                 -- 88: dup
       ops.GET_SLOT_DIRECT, 75, -- 89: get_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 92: get_slot_direct(394)
-      ops.PUSH_LITERAL, 477,   -- 94: push_literal(477)
+      ops.GET_SLOT_DIRECT, 460,-- 92: get_slot_direct(460)
+      ops.PUSH_LITERAL, 543,   -- 94: push_literal(543)
       ops.BI_ADD,              -- 96: bi_add
       ops.BI_ADD,              -- 97: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 98: set_slot_direct(75)
@@ -11934,7 +13480,7 @@ startup.functions = {
       ops.DUP,                 -- 101: dup
       ops.GET_SLOT_DIRECT, 75, -- 102: get_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 104: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 105: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 105: get_slot_direct(537)
       ops.GET_SLOT_DIRECT, 19, -- 107: get_slot_direct(19)
       ops.BI_ADD,              -- 109: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 110: set_slot_direct(75)
@@ -11942,42 +13488,42 @@ startup.functions = {
       ops.DUP,                 -- 113: dup
       ops.GET_SLOT_DIRECT, 75, -- 114: get_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 116: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 117: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 117: get_slot_direct(537)
       ops.DUP,                 -- 119: dup
-      ops.GET_SLOT_DIRECT_CHECK, 391,-- 120: get_slot_direct_check(391)
+      ops.GET_SLOT_DIRECT_CHECK, 457,-- 120: get_slot_direct_check(457)
       ops.SWAP,                -- 122: swap
       ops.PUSH_LOCAL_FRAME,    -- 123: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 124: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 127: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 129: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 129: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 132: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 132: get_slot_direct(460)
       ops.INVOKE, 3,           -- 134: invoke(3)
       ops.BI_ADD,              -- 136: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 137: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
       ops.DUP,                 -- 140: dup
       ops.GET_SLOT_DIRECT, 75, -- 141: get_slot_direct(75)
-      ops.PUSH_LITERAL, 234,   -- 143: push_literal(234)
+      ops.PUSH_LITERAL, 249,   -- 143: push_literal(249)
       ops.BI_ADD,              -- 145: bi_add
       ops.SET_SLOT_DIRECT, 75, -- 146: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
       ops.DUP,                 -- 149: dup
-      ops.GET_SLOT_DIRECT, 394,-- 150: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 150: get_slot_direct(460)
       ops.PUSH_LITERAL, 31,    -- 152: push_literal(31)
       ops.PUSH_LOCAL_FRAME,    -- 154: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 155: get_slot_direct(471)
-      ops.GET_SLOT_DIRECT, 388,-- 157: get_slot_direct(388)
+      ops.GET_SLOT_DIRECT, 537,-- 155: get_slot_direct(537)
+      ops.GET_SLOT_DIRECT, 454,-- 157: get_slot_direct(454)
       ops.BI_ADD,              -- 159: bi_add
       ops.BI_ADD,              -- 160: bi_add
-      ops.SET_SLOT_DIRECT, 394,-- 161: set_slot_direct(394)
+      ops.SET_SLOT_DIRECT, 460,-- 161: set_slot_direct(460)
       ops.PHI,                 -- 163: phi
       ops.PUSH_LOCAL_FRAME,    -- 164: push_local_frame
-      ops.GET_SLOT_DIRECT, 394,-- 165: get_slot_direct(394)
+      ops.GET_SLOT_DIRECT, 460,-- 165: get_slot_direct(460)
       ops.PUSH_LOCAL_FRAME,    -- 167: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 168: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 170: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 170: get_slot_direct(459)
       ops.GET_SLOT_DIRECT, 55, -- 172: get_slot_direct(55)
       ops.SWAP,                -- 174: swap
       ops.BI_GT,               -- 175: bi_gt
@@ -11991,7 +13537,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "encode_uint"
     name = jsval.newString("encode_uint"),
-    id = 118,
+    id = 127,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -12001,7 +13547,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 479,-- 8: set_slot_direct(479)
+      ops.SET_SLOT_DIRECT, 545,-- 8: set_slot_direct(545)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
@@ -12010,12 +13556,12 @@ startup.functions = {
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 480,-- 21: set_slot_direct(480)
+      ops.SET_SLOT_DIRECT, 546,-- 21: set_slot_direct(546)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 24: push_literal(0)
-      ops.SET_SLOT_DIRECT, 481,-- 26: set_slot_direct(481)
+      ops.SET_SLOT_DIRECT, 547,-- 26: set_slot_direct(547)
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 29: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 29: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 32: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
@@ -12028,12 +13574,12 @@ startup.functions = {
       ops.POP,                 -- 45: pop
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 47: get_slot_direct(184)
-      ops.PUSH_LITERAL, 482,   -- 49: push_literal(482)
+      ops.PUSH_LITERAL, 548,   -- 49: push_literal(548)
       ops.SWAP,                -- 51: swap
       ops.BI_GT,               -- 52: bi_gt
       ops.JMP_UNLESS, 72, 72,  -- 53: jmp_unless(72,72)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 57: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 57: get_slot_direct(545)
       ops.DUP,                 -- 59: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 60: get_slot_direct_check(69)
       ops.SWAP,                -- 62: swap
@@ -12052,33 +13598,33 @@ startup.functions = {
       ops.SWAP,                -- 80: swap
       ops.PUSH_LOCAL_FRAME,    -- 81: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 82: get_slot_direct(184)
-      ops.PUSH_LITERAL, 482,   -- 84: push_literal(482)
+      ops.PUSH_LITERAL, 548,   -- 84: push_literal(548)
       ops.BI_DIV,              -- 86: bi_div
       ops.INVOKE, 1,           -- 87: invoke(1)
-      ops.SET_SLOT_DIRECT, 480,-- 89: set_slot_direct(480)
+      ops.SET_SLOT_DIRECT, 546,-- 89: set_slot_direct(546)
       ops.PUSH_LOCAL_FRAME,    -- 91: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 92: push_local_frame
       ops.GET_SLOT_DIRECT, 184,-- 93: get_slot_direct(184)
-      ops.PUSH_LITERAL, 482,   -- 95: push_literal(482)
+      ops.PUSH_LITERAL, 548,   -- 95: push_literal(548)
       ops.PUSH_LOCAL_FRAME,    -- 97: push_local_frame
-      ops.GET_SLOT_DIRECT, 480,-- 98: get_slot_direct(480)
+      ops.GET_SLOT_DIRECT, 546,-- 98: get_slot_direct(546)
       ops.BI_MUL,              -- 100: bi_mul
       ops.BI_SUB,              -- 101: bi_sub
-      ops.SET_SLOT_DIRECT, 481,-- 102: set_slot_direct(481)
+      ops.SET_SLOT_DIRECT, 547,-- 102: set_slot_direct(547)
       ops.PUSH_FRAME,          -- 104: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 105: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 105: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 108: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 110: push_local_frame
-      ops.GET_SLOT_DIRECT, 481,-- 111: get_slot_direct(481)
+      ops.GET_SLOT_DIRECT, 547,-- 111: get_slot_direct(547)
       ops.PUSH_LITERAL, 18,    -- 113: push_literal(18)
       ops.BI_GTE,              -- 115: bi_gte
       ops.DUP,                 -- 116: dup
       ops.JMP_UNLESS, 128, 128,-- 117: jmp_unless(128,128)
       ops.POP,                 -- 120: pop
       ops.PUSH_LOCAL_FRAME,    -- 121: push_local_frame
-      ops.GET_SLOT_DIRECT, 481,-- 122: get_slot_direct(481)
-      ops.PUSH_LITERAL, 482,   -- 124: push_literal(482)
+      ops.GET_SLOT_DIRECT, 547,-- 122: get_slot_direct(547)
+      ops.PUSH_LITERAL, 548,   -- 124: push_literal(548)
       ops.SWAP,                -- 126: swap
       ops.BI_GT,               -- 127: bi_gt
       ops.PHI,                 -- 128: phi
@@ -12087,11 +13633,11 @@ startup.functions = {
       ops.INVOKE, 2,           -- 132: invoke(2)
       ops.POP,                 -- 134: pop
       ops.PUSH_FRAME,          -- 135: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 136: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 136: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 139: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
-      ops.GET_SLOT_DIRECT, 480,-- 142: get_slot_direct(480)
+      ops.GET_SLOT_DIRECT, 546,-- 142: get_slot_direct(546)
       ops.PUSH_LITERAL, 18,    -- 144: push_literal(18)
       ops.BI_GT,               -- 146: bi_gt
       ops.PUSH_LOCAL_FRAME,    -- 147: push_local_frame
@@ -12099,24 +13645,24 @@ startup.functions = {
       ops.INVOKE, 2,           -- 150: invoke(2)
       ops.POP,                 -- 152: pop
       ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 154: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 154: get_slot_direct(545)
       ops.DUP,                 -- 156: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 157: get_slot_direct_check(69)
       ops.SWAP,                -- 159: swap
       ops.PUSH_LOCAL_FRAME,    -- 160: push_local_frame
-      ops.GET_SLOT_DIRECT, 481,-- 161: get_slot_direct(481)
-      ops.PUSH_LITERAL, 482,   -- 163: push_literal(482)
+      ops.GET_SLOT_DIRECT, 547,-- 161: get_slot_direct(547)
+      ops.PUSH_LITERAL, 548,   -- 163: push_literal(548)
       ops.BI_ADD,              -- 165: bi_add
       ops.INVOKE, 1,           -- 166: invoke(1)
       ops.POP,                 -- 168: pop
       ops.PUSH_FRAME,          -- 169: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 170: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 170: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 172: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 173: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 175: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 176: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 176: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
-      ops.GET_SLOT_DIRECT, 480,-- 179: get_slot_direct(480)
+      ops.GET_SLOT_DIRECT, 546,-- 179: get_slot_direct(546)
       ops.INVOKE, 2,           -- 181: invoke(2)
       ops.POP,                 -- 183: pop
       ops.PUSH_LITERAL, 0,     -- 184: push_literal(0)
@@ -12125,7 +13671,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "encode_str"
     name = jsval.newString("encode_str"),
-    id = 119,
+    id = 128,
     nargs = 2,
     max_stack = 6,
     bytecode = {
@@ -12135,7 +13681,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 479,-- 8: set_slot_direct(479)
+      ops.SET_SLOT_DIRECT, 545,-- 8: set_slot_direct(545)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
@@ -12149,11 +13695,11 @@ startup.functions = {
       ops.PUSH_LITERAL, 18,    -- 24: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 26: set_slot_direct(53)
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 29: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 29: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 32: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 35: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 35: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 38: get_slot_direct(63)
       ops.GET_SLOT_DIRECT, 55, -- 40: get_slot_direct(55)
@@ -12161,11 +13707,11 @@ startup.functions = {
       ops.POP,                 -- 44: pop
       ops.JMP_INTO_LOOP, 81, 96,-- 45: jmp_into_loop(81,96)
       ops.PUSH_FRAME,          -- 48: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 49: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 49: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 52: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 54: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 55: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 55: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.GET_SLOT_DIRECT, 63, -- 58: get_slot_direct(63)
       ops.DUP,                 -- 60: dup
@@ -12199,28 +13745,28 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".encode"
     name = jsval.newString(".encode"),
-    id = 120,
+    id = 129,
     nargs = 0,
     max_stack = 5,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 479,-- 3: set_slot_direct(479)
+      ops.SET_SLOT_DIRECT, 545,-- 3: set_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 6: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 8: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 10: push_local_frame
       ops.NEW_ARRAY,           -- 11: new_array
-      ops.SET_SLOT_DIRECT, 479,-- 12: set_slot_direct(479)
+      ops.SET_SLOT_DIRECT, 545,-- 12: set_slot_direct(545)
       ops.PUSH_FRAME,          -- 14: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 15: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 15: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 17: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 18: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 21: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 21: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 24: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 26: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 26: get_slot_direct(530)
       ops.GET_SLOT_DIRECT, 55, -- 28: get_slot_direct(55)
       ops.INVOKE, 2,           -- 30: invoke(2)
       ops.POP,                 -- 32: pop
@@ -12237,39 +13783,39 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 53: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 55: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 55: get_slot_direct(530)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 58: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 60: get_slot_indirect
       ops.SET_SLOT_DIRECT, 109,-- 61: set_slot_direct(109)
       ops.PUSH_FRAME,          -- 63: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 64: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 64: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 67: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 70: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 70: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 73: get_slot_direct(109)
       ops.GET_SLOT_DIRECT, 108,-- 75: get_slot_direct(108)
       ops.INVOKE, 2,           -- 77: invoke(2)
       ops.POP,                 -- 79: pop
       ops.PUSH_FRAME,          -- 80: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 81: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 81: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 84: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 87: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 87: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 90: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 467,-- 92: get_slot_direct(467)
+      ops.GET_SLOT_DIRECT, 533,-- 92: get_slot_direct(533)
       ops.INVOKE, 2,           -- 94: invoke(2)
       ops.POP,                 -- 96: pop
       ops.PUSH_FRAME,          -- 97: push_frame
-      ops.GET_SLOT_DIRECT, 463,-- 98: get_slot_direct(463)
+      ops.GET_SLOT_DIRECT, 529,-- 98: get_slot_direct(529)
       ops.PUSH_LOCAL_FRAME,    -- 100: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 101: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 103: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 104: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 104: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 107: get_slot_direct(109)
       ops.GET_SLOT_DIRECT, 19, -- 109: get_slot_direct(19)
@@ -12282,14 +13828,14 @@ startup.functions = {
       ops.INVOKE, 2,           -- 120: invoke(2)
       ops.POP,                 -- 122: pop
       ops.PUSH_FRAME,          -- 123: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 124: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 124: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 127: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 129: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 130: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 130: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 132: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 133: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 135: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 135: get_slot_direct(459)
       ops.GET_SLOT_DIRECT, 55, -- 137: get_slot_direct(55)
       ops.INVOKE, 2,           -- 139: invoke(2)
       ops.POP,                 -- 141: pop
@@ -12303,7 +13849,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 156: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 157: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 159: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 159: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
       ops.GET_SLOT_DIRECT, 54, -- 162: get_slot_direct(54)
       ops.GET_SLOT_INDIRECT,   -- 164: get_slot_indirect
@@ -12320,15 +13866,15 @@ startup.functions = {
       ops.JMP, 188,            -- 181: jmp(188)
       ops.PUSH_LOCAL_FRAME,    -- 183: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 184: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 400,-- 186: get_slot_direct(400)
+      ops.GET_SLOT_DIRECT, 466,-- 186: get_slot_direct(466)
       ops.PHI,                 -- 188: phi
       ops.SET_SLOT_DIRECT, 110,-- 189: set_slot_direct(110)
       ops.PUSH_FRAME,          -- 191: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 192: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 192: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 194: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 195: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 197: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 198: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 198: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 200: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 201: get_slot_direct(110)
       ops.INVOKE, 2,           -- 203: invoke(2)
@@ -12344,7 +13890,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 54, -- 217: get_slot_direct(54)
       ops.PUSH_LOCAL_FRAME,    -- 219: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 220: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 222: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 222: get_slot_direct(459)
       ops.GET_SLOT_DIRECT, 55, -- 224: get_slot_direct(55)
       ops.SWAP,                -- 226: swap
       ops.BI_GT,               -- 227: bi_gt
@@ -12362,7 +13908,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 53, -- 244: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 246: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 247: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 249: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 249: get_slot_direct(530)
       ops.GET_SLOT_DIRECT, 55, -- 251: get_slot_direct(55)
       ops.SWAP,                -- 253: swap
       ops.BI_GT,               -- 254: bi_gt
@@ -12370,14 +13916,14 @@ startup.functions = {
       ops.JMP_UNLESS, 41, 259, -- 256: jmp_unless(41,259)
       ops.PHI,                 -- 259: phi
       ops.PUSH_FRAME,          -- 260: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 261: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 261: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 263: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 264: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 266: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 267: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 267: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 269: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 270: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 397,-- 272: get_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 463,-- 272: get_slot_direct(463)
       ops.GET_SLOT_DIRECT, 55, -- 274: get_slot_direct(55)
       ops.INVOKE, 2,           -- 276: invoke(2)
       ops.POP,                 -- 278: pop
@@ -12387,38 +13933,38 @@ startup.functions = {
       ops.JMP_INTO_LOOP, 522, 539,-- 284: jmp_into_loop(522,539)
       ops.PUSH_LOCAL_FRAME,    -- 287: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 288: push_literal(0)
-      ops.SET_SLOT_DIRECT, 483,-- 290: set_slot_direct(483)
+      ops.SET_SLOT_DIRECT, 549,-- 290: set_slot_direct(549)
       ops.PUSH_LOCAL_FRAME,    -- 292: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 293: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 294: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 397,-- 296: get_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 463,-- 296: get_slot_direct(463)
       ops.PUSH_LOCAL_FRAME,    -- 298: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 299: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 301: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 483,-- 302: set_slot_direct(483)
+      ops.SET_SLOT_DIRECT, 549,-- 302: set_slot_direct(549)
       ops.PUSH_LOCAL_FRAME,    -- 304: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 305: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 305: get_slot_direct(549)
       ops.UN_TYPEOF,           -- 307: un_typeof
       ops.PUSH_LITERAL, 86,    -- 308: push_literal(86)
       ops.BI_EQ,               -- 310: bi_eq
       ops.JMP_UNLESS, 351, 512,-- 311: jmp_unless(351,512)
       ops.PUSH_FRAME,          -- 314: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 315: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 315: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 317: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 318: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 320: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 321: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 321: get_slot_direct(545)
       ops.PUSH_LITERAL, 18,    -- 323: push_literal(18)
       ops.INVOKE, 2,           -- 325: invoke(2)
       ops.POP,                 -- 327: pop
       ops.PUSH_FRAME,          -- 328: push_frame
-      ops.GET_SLOT_DIRECT, 463,-- 329: get_slot_direct(463)
+      ops.GET_SLOT_DIRECT, 529,-- 329: get_slot_direct(529)
       ops.PUSH_LOCAL_FRAME,    -- 331: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 332: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 334: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 335: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 335: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 337: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 338: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 338: get_slot_direct(549)
       ops.DUP,                 -- 340: dup
       ops.GET_SLOT_DIRECT_CHECK, 15,-- 341: get_slot_direct_check(15)
       ops.SWAP,                -- 343: swap
@@ -12427,45 +13973,45 @@ startup.functions = {
       ops.POP,                 -- 348: pop
       ops.JMP, 512,            -- 349: jmp(512)
       ops.PUSH_LOCAL_FRAME,    -- 351: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 352: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 352: get_slot_direct(549)
       ops.UN_TYPEOF,           -- 354: un_typeof
       ops.PUSH_LITERAL, 38,    -- 355: push_literal(38)
       ops.BI_EQ,               -- 357: bi_eq
       ops.JMP_UNLESS, 392, 511,-- 358: jmp_unless(392,511)
       ops.PUSH_FRAME,          -- 361: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 362: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 362: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 364: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 365: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 367: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 368: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 368: get_slot_direct(545)
       ops.PUSH_LITERAL, 31,    -- 370: push_literal(31)
       ops.INVOKE, 2,           -- 372: invoke(2)
       ops.POP,                 -- 374: pop
       ops.PUSH_FRAME,          -- 375: push_frame
-      ops.GET_SLOT_DIRECT, 463,-- 376: get_slot_direct(463)
+      ops.GET_SLOT_DIRECT, 529,-- 376: get_slot_direct(529)
       ops.PUSH_LOCAL_FRAME,    -- 378: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 379: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 381: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 382: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 382: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 384: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 385: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 385: get_slot_direct(549)
       ops.INVOKE, 2,           -- 387: invoke(2)
       ops.POP,                 -- 389: pop
       ops.JMP, 511,            -- 390: jmp(511)
       ops.PUSH_LOCAL_FRAME,    -- 392: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 393: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 393: get_slot_direct(549)
       ops.UN_TYPEOF,           -- 395: un_typeof
-      ops.PUSH_LITERAL, 484,   -- 396: push_literal(484)
+      ops.PUSH_LITERAL, 550,   -- 396: push_literal(550)
       ops.BI_EQ,               -- 398: bi_eq
       ops.JMP_UNLESS, 429, 510,-- 399: jmp_unless(429,510)
       ops.PUSH_FRAME,          -- 402: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 403: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 403: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 405: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 406: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 408: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 409: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 409: get_slot_direct(545)
       ops.PUSH_LOCAL_FRAME,    -- 411: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 412: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 412: get_slot_direct(549)
       ops.JMP_UNLESS, 421, 423,-- 414: jmp_unless(421,423)
       ops.PUSH_LITERAL, 136,   -- 417: push_literal(136)
       ops.JMP, 423,            -- 419: jmp(423)
@@ -12475,51 +14021,51 @@ startup.functions = {
       ops.POP,                 -- 426: pop
       ops.JMP, 510,            -- 427: jmp(510)
       ops.PUSH_LOCAL_FRAME,    -- 429: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 430: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 430: get_slot_direct(549)
       ops.PUSH_LITERAL, 41,    -- 432: push_literal(41)
       ops.BI_EQ,               -- 434: bi_eq
       ops.JMP_UNLESS, 454, 509,-- 435: jmp_unless(454,509)
       ops.PUSH_FRAME,          -- 438: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 439: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 439: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 441: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 442: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 444: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 445: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 445: get_slot_direct(545)
       ops.PUSH_LITERAL, 162,   -- 447: push_literal(162)
       ops.INVOKE, 2,           -- 449: invoke(2)
       ops.POP,                 -- 451: pop
       ops.JMP, 509,            -- 452: jmp(509)
       ops.PUSH_LOCAL_FRAME,    -- 454: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 455: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 455: get_slot_direct(549)
       ops.PUSH_LITERAL, 0,     -- 457: push_literal(0)
       ops.BI_EQ,               -- 459: bi_eq
       ops.JMP_UNLESS, 479, 508,-- 460: jmp_unless(479,508)
       ops.PUSH_FRAME,          -- 463: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 464: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 464: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 466: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 467: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 469: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 470: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 470: get_slot_direct(545)
       ops.PUSH_LITERAL, 165,   -- 472: push_literal(165)
       ops.INVOKE, 2,           -- 474: invoke(2)
       ops.POP,                 -- 476: pop
       ops.JMP, 508,            -- 477: jmp(508)
       ops.PUSH_FRAME,          -- 479: push_frame
-      ops.GET_SLOT_DIRECT, 457,-- 480: get_slot_direct(457)
+      ops.GET_SLOT_DIRECT, 523,-- 480: get_slot_direct(523)
       ops.DUP,                 -- 482: dup
-      ops.GET_SLOT_DIRECT_CHECK, 458,-- 483: get_slot_direct_check(458)
+      ops.GET_SLOT_DIRECT_CHECK, 524,-- 483: get_slot_direct_check(524)
       ops.SWAP,                -- 485: swap
-      ops.PUSH_LITERAL, 485,   -- 486: push_literal(485)
+      ops.PUSH_LITERAL, 551,   -- 486: push_literal(551)
       ops.PUSH_LOCAL_FRAME,    -- 488: push_local_frame
-      ops.GET_SLOT_DIRECT, 483,-- 489: get_slot_direct(483)
+      ops.GET_SLOT_DIRECT, 549,-- 489: get_slot_direct(549)
       ops.INVOKE, 2,           -- 491: invoke(2)
       ops.POP,                 -- 493: pop
       ops.PUSH_FRAME,          -- 494: push_frame
-      ops.GET_SLOT_DIRECT, 462,-- 495: get_slot_direct(462)
+      ops.GET_SLOT_DIRECT, 528,-- 495: get_slot_direct(528)
       ops.PUSH_LOCAL_FRAME,    -- 497: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 498: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 500: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 501: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 501: get_slot_direct(545)
       ops.PUSH_LITERAL, 168,   -- 503: push_literal(168)
       ops.INVOKE, 2,           -- 505: invoke(2)
       ops.POP,                 -- 507: pop
@@ -12539,7 +14085,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 53, -- 524: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 526: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 527: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 397,-- 529: get_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 463,-- 529: get_slot_direct(463)
       ops.GET_SLOT_DIRECT, 55, -- 531: get_slot_direct(55)
       ops.SWAP,                -- 533: swap
       ops.BI_GT,               -- 534: bi_gt
@@ -12547,26 +14093,26 @@ startup.functions = {
       ops.JMP_UNLESS, 287, 539,-- 536: jmp_unless(287,539)
       ops.PHI,                 -- 539: phi
       ops.PUSH_LOCAL_FRAME,    -- 540: push_local_frame
-      ops.GET_SLOT_DIRECT, 479,-- 541: get_slot_direct(479)
+      ops.GET_SLOT_DIRECT, 545,-- 541: get_slot_direct(545)
       ops.RETURN               -- 543: return
     }
   },
   ifunc.Function:new{ -- ".new_label"
     name = jsval.newString(".new_label"),
-    id = 121,
+    id = 130,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.NEW_OBJECT,          -- 0: new_object
       ops.DUP,                 -- 1: dup
-      ops.PUSH_LITERAL, 487,   -- 2: push_literal(487)
-      ops.SET_SLOT_DIRECT, 400,-- 4: set_slot_direct(400)
+      ops.PUSH_LITERAL, 553,   -- 2: push_literal(553)
+      ops.SET_SLOT_DIRECT, 466,-- 4: set_slot_direct(466)
       ops.RETURN               -- 6: return
     }
   },
   ifunc.Function:new{ -- ".set_label"
     name = jsval.newString(".set_label"),
-    id = 122,
+    id = 131,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -12576,39 +14122,39 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 400,-- 8: set_slot_direct(400)
+      ops.SET_SLOT_DIRECT, 466,-- 8: set_slot_direct(466)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 400,-- 12: get_slot_direct(400)
+      ops.GET_SLOT_DIRECT, 466,-- 12: get_slot_direct(466)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 473,-- 17: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 393,-- 19: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 539,-- 17: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 459,-- 19: get_slot_direct(459)
       ops.GET_SLOT_DIRECT, 55, -- 21: get_slot_direct(55)
-      ops.SET_SLOT_DIRECT, 400,-- 23: set_slot_direct(400)
+      ops.SET_SLOT_DIRECT, 466,-- 23: set_slot_direct(466)
       ops.PUSH_LITERAL, 0,     -- 25: push_literal(0)
       ops.RETURN               -- 27: return
     }
   },
   ifunc.Function:new{ -- ".peek_loop_label"
     name = jsval.newString(".peek_loop_label"),
-    id = 123,
+    id = 132,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 490,-- 3: set_slot_direct(490)
+      ops.SET_SLOT_DIRECT, 556,-- 3: set_slot_direct(556)
       ops.PUSH_LOCAL_FRAME,    -- 5: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 7: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 473,-- 9: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 469,-- 11: get_slot_direct(469)
-      ops.SET_SLOT_DIRECT, 490,-- 13: set_slot_direct(490)
+      ops.GET_SLOT_DIRECT, 539,-- 9: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 535,-- 11: get_slot_direct(535)
+      ops.SET_SLOT_DIRECT, 556,-- 13: set_slot_direct(556)
       ops.PUSH_LOCAL_FRAME,    -- 15: push_local_frame
-      ops.GET_SLOT_DIRECT, 490,-- 16: get_slot_direct(490)
+      ops.GET_SLOT_DIRECT, 556,-- 16: get_slot_direct(556)
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 490,-- 19: get_slot_direct(490)
+      ops.GET_SLOT_DIRECT, 556,-- 19: get_slot_direct(556)
       ops.GET_SLOT_DIRECT, 55, -- 21: get_slot_direct(55)
       ops.PUSH_LITERAL, 31,    -- 23: push_literal(31)
       ops.BI_SUB,              -- 25: bi_sub
@@ -12618,14 +14164,14 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".pop_loop_label"
     name = jsval.newString(".pop_loop_label"),
-    id = 124,
+    id = 133,
     nargs = 0,
     max_stack = 2,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 473,-- 3: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 469,-- 5: get_slot_direct(469)
+      ops.GET_SLOT_DIRECT, 539,-- 3: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 535,-- 5: get_slot_direct(535)
       ops.DUP,                 -- 7: dup
       ops.GET_SLOT_DIRECT_CHECK, 71,-- 8: get_slot_direct_check(71)
       ops.SWAP,                -- 10: swap
@@ -12635,7 +14181,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".push_loop_label"
     name = jsval.newString(".push_loop_label"),
-    id = 125,
+    id = 134,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -12645,34 +14191,34 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 400,-- 8: set_slot_direct(400)
+      ops.SET_SLOT_DIRECT, 466,-- 8: set_slot_direct(466)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 473,-- 14: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 469,-- 16: get_slot_direct(469)
+      ops.GET_SLOT_DIRECT, 539,-- 14: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 535,-- 16: get_slot_direct(535)
       ops.DUP,                 -- 18: dup
       ops.GET_SLOT_DIRECT_CHECK, 69,-- 19: get_slot_direct_check(69)
       ops.SWAP,                -- 21: swap
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 400,-- 23: get_slot_direct(400)
+      ops.GET_SLOT_DIRECT, 466,-- 23: get_slot_direct(466)
       ops.INVOKE, 1,           -- 25: invoke(1)
       ops.RETURN               -- 27: return
     }
   },
   ifunc.Function:new{ -- ".flatten_labels"
     name = jsval.newString(".flatten_labels"),
-    id = 126,
+    id = 135,
     nargs = 0,
     max_stack = 3,
     bytecode = {
       ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 1: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 464,-- 3: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 530,-- 3: get_slot_direct(530)
       ops.DUP,                 -- 5: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 6: get_slot_direct_check(94)
       ops.SWAP,                -- 8: swap
-      ops.NEW_FUNCTION, 127,   -- 9: new_function(127)
+      ops.NEW_FUNCTION, 136,   -- 9: new_function(136)
       ops.INVOKE, 1,           -- 11: invoke(1)
       ops.POP,                 -- 13: pop
       ops.PUSH_LITERAL, 0,     -- 14: push_literal(0)
@@ -12681,7 +14227,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 127,
+    id = 136,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -12695,15 +14241,15 @@ startup.functions = {
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 393,-- 14: set_slot_direct(393)
+      ops.SET_SLOT_DIRECT, 459,-- 14: set_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 19: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 23: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 393,-- 25: get_slot_direct(393)
-      ops.SET_SLOT_DIRECT, 393,-- 27: set_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 25: get_slot_direct(459)
+      ops.SET_SLOT_DIRECT, 459,-- 27: set_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 30: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 32: set_slot_direct(53)
@@ -12713,7 +14259,7 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 110,-- 40: set_slot_direct(110)
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 44: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 44: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 47: get_slot_direct(53)
       ops.GET_SLOT_INDIRECT,   -- 49: get_slot_indirect
@@ -12726,12 +14272,12 @@ startup.functions = {
       ops.UN_NOT,              -- 59: un_not
       ops.JMP_UNLESS, 75, 75,  -- 60: jmp_unless(75,75)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 64: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 64: get_slot_direct(459)
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 67: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.GET_SLOT_DIRECT, 110,-- 70: get_slot_direct(110)
-      ops.GET_SLOT_DIRECT, 400,-- 72: get_slot_direct(400)
+      ops.GET_SLOT_DIRECT, 466,-- 72: get_slot_direct(466)
       ops.SET_SLOT_INDIRECT,   -- 74: set_slot_indirect
       ops.PHI,                 -- 75: phi
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
@@ -12744,7 +14290,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 87: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
-      ops.GET_SLOT_DIRECT, 393,-- 90: get_slot_direct(393)
+      ops.GET_SLOT_DIRECT, 459,-- 90: get_slot_direct(459)
       ops.GET_SLOT_DIRECT, 55, -- 92: get_slot_direct(55)
       ops.SWAP,                -- 94: swap
       ops.BI_GT,               -- 95: bi_gt
@@ -12757,7 +14303,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".bcompile_stmts"
     name = jsval.newString(".bcompile_stmts"),
-    id = 128,
+    id = 137,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -12767,23 +14313,23 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 495,-- 8: set_slot_direct(495)
+      ops.SET_SLOT_DIRECT, 561,-- 8: set_slot_direct(561)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 15: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 15: get_slot_direct_check(562)
       ops.SWAP,                -- 17: swap
       ops.NEW_OBJECT,          -- 18: new_object
       ops.DUP,                 -- 19: dup
       ops.PUSH_LITERAL, 91,    -- 20: push_literal(91)
-      ops.SET_SLOT_DIRECT, 215,-- 22: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 22: set_slot_direct(224)
       ops.DUP,                 -- 24: dup
-      ops.PUSH_LITERAL, 266,   -- 25: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 27: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 25: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 27: set_slot_direct(363)
       ops.DUP,                 -- 29: dup
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 495,-- 31: get_slot_direct(495)
+      ops.GET_SLOT_DIRECT, 561,-- 31: get_slot_direct(561)
       ops.SET_SLOT_DIRECT, 39, -- 33: set_slot_direct(39)
       ops.INVOKE, 1,           -- 35: invoke(1)
       ops.POP,                 -- 37: pop
@@ -12793,7 +14339,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".bcompile_stmt"
     name = jsval.newString(".bcompile_stmt"),
-    id = 129,
+    id = 138,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -12803,70 +14349,70 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 375,-- 8: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 8: set_slot_direct(441)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 12: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 12: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 18: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 20: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 22: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 230,-- 18: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 20: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 22: get_slot_direct(534)
       ops.PUSH_LITERAL, 18,    -- 24: push_literal(18)
       ops.BI_EQ,               -- 26: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 28: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 28: get_slot_direct(441)
       ops.INVOKE, 2,           -- 30: invoke(2)
       ops.POP,                 -- 32: pop
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 34: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 290,-- 36: get_slot_direct(290)
-      ops.PUSH_LITERAL, 315,   -- 38: push_literal(315)
+      ops.GET_SLOT_DIRECT, 441,-- 34: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 363,-- 36: get_slot_direct(363)
+      ops.PUSH_LITERAL, 386,   -- 38: push_literal(386)
       ops.BI_EQ,               -- 40: bi_eq
       ops.DUP,                 -- 41: dup
       ops.JMP_UNLESS, 114, 114,-- 42: jmp_unless(114,114)
       ops.POP,                 -- 45: pop
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 47: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 215,-- 49: get_slot_direct(215)
-      ops.PUSH_LITERAL, 324,   -- 51: push_literal(324)
+      ops.GET_SLOT_DIRECT, 441,-- 47: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 224,-- 49: get_slot_direct(224)
+      ops.PUSH_LITERAL, 392,   -- 51: push_literal(392)
       ops.BI_EQ,               -- 53: bi_eq
       ops.DUP,                 -- 54: dup
       ops.UN_NOT,              -- 55: un_not
       ops.JMP_UNLESS, 113, 113,-- 56: jmp_unless(113,113)
       ops.POP,                 -- 59: pop
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 61: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 215,-- 63: get_slot_direct(215)
-      ops.PUSH_LITERAL, 325,   -- 65: push_literal(325)
+      ops.GET_SLOT_DIRECT, 441,-- 61: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 224,-- 63: get_slot_direct(224)
+      ops.PUSH_LITERAL, 393,   -- 65: push_literal(393)
       ops.BI_EQ,               -- 67: bi_eq
       ops.DUP,                 -- 68: dup
       ops.UN_NOT,              -- 69: un_not
       ops.JMP_UNLESS, 112, 112,-- 70: jmp_unless(112,112)
       ops.POP,                 -- 73: pop
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 75: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 215,-- 77: get_slot_direct(215)
-      ops.PUSH_LITERAL, 326,   -- 79: push_literal(326)
+      ops.GET_SLOT_DIRECT, 441,-- 75: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 224,-- 77: get_slot_direct(224)
+      ops.PUSH_LITERAL, 394,   -- 79: push_literal(394)
       ops.BI_EQ,               -- 81: bi_eq
       ops.DUP,                 -- 82: dup
       ops.UN_NOT,              -- 83: un_not
       ops.JMP_UNLESS, 111, 111,-- 84: jmp_unless(111,111)
       ops.POP,                 -- 87: pop
       ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 89: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 215,-- 91: get_slot_direct(215)
-      ops.PUSH_LITERAL, 327,   -- 93: push_literal(327)
+      ops.GET_SLOT_DIRECT, 441,-- 89: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 224,-- 91: get_slot_direct(224)
+      ops.PUSH_LITERAL, 395,   -- 93: push_literal(395)
       ops.BI_EQ,               -- 95: bi_eq
       ops.DUP,                 -- 96: dup
       ops.UN_NOT,              -- 97: un_not
       ops.JMP_UNLESS, 110, 110,-- 98: jmp_unless(110,110)
       ops.POP,                 -- 101: pop
       ops.PUSH_LOCAL_FRAME,    -- 102: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 103: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 215,-- 105: get_slot_direct(215)
-      ops.PUSH_LITERAL, 328,   -- 107: push_literal(328)
+      ops.GET_SLOT_DIRECT, 441,-- 103: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 224,-- 105: get_slot_direct(224)
+      ops.PUSH_LITERAL, 396,   -- 107: push_literal(396)
       ops.BI_EQ,               -- 109: bi_eq
       ops.PHI,                 -- 110: phi
       ops.PHI,                 -- 111: phi
@@ -12875,33 +14421,33 @@ startup.functions = {
       ops.PHI,                 -- 114: phi
       ops.JMP_UNLESS, 167, 167,-- 115: jmp_unless(167,167)
       ops.PUSH_FRAME,          -- 118: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 119: get_slot_direct(455)
+      ops.GET_SLOT_DIRECT, 521,-- 119: get_slot_direct(521)
       ops.PUSH_LOCAL_FRAME,    -- 121: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 122: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 290,-- 124: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 441,-- 122: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 363,-- 124: get_slot_direct(363)
       ops.GET_SLOT_INDIRECT,   -- 126: get_slot_indirect
       ops.DUP,                 -- 127: dup
       ops.GET_SLOT_DIRECT_CHECK, 93,-- 128: get_slot_direct_check(93)
       ops.SWAP,                -- 130: swap
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 132: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 132: get_slot_direct(441)
       ops.PUSH_LOCAL_FRAME,    -- 134: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 135: get_slot_direct(26)
       ops.PUSH_LITERAL, 31,    -- 137: push_literal(31)
       ops.INVOKE, 3,           -- 139: invoke(3)
       ops.POP,                 -- 141: pop
       ops.PUSH_FRAME,          -- 142: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 143: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 143: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 145: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 146: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 148: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 149: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 151: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 153: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 230,-- 149: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 151: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 153: get_slot_direct(534)
       ops.PUSH_LITERAL, 18,    -- 155: push_literal(18)
       ops.BI_EQ,               -- 157: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 159: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 159: get_slot_direct(441)
       ops.INVOKE, 2,           -- 161: invoke(2)
       ops.POP,                 -- 163: pop
       ops.PUSH_LITERAL, 0,     -- 164: push_literal(0)
@@ -12910,54 +14456,54 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 169: get_slot_direct(26)
       ops.DUP,                 -- 171: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 172: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 172: get_slot_direct_check(564)
       ops.SWAP,                -- 174: swap
       ops.PUSH_LOCAL_FRAME,    -- 175: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 176: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 176: get_slot_direct(441)
       ops.INVOKE, 1,           -- 178: invoke(1)
       ops.POP,                 -- 180: pop
       ops.PUSH_LOCAL_FRAME,    -- 181: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 182: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 290,-- 184: get_slot_direct(290)
-      ops.PUSH_LITERAL, 266,   -- 186: push_literal(266)
+      ops.GET_SLOT_DIRECT, 441,-- 182: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 363,-- 184: get_slot_direct(363)
+      ops.PUSH_LITERAL, 339,   -- 186: push_literal(339)
       ops.BI_EQ,               -- 188: bi_eq
       ops.UN_NOT,              -- 189: un_not
       ops.JMP_UNLESS, 227, 227,-- 190: jmp_unless(227,227)
       ops.PUSH_FRAME,          -- 193: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 194: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 194: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 196: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 197: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 199: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 200: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 202: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 204: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 230,-- 200: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 202: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 204: get_slot_direct(534)
       ops.PUSH_LITERAL, 31,    -- 206: push_literal(31)
       ops.BI_EQ,               -- 208: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 209: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 210: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 210: get_slot_direct(441)
       ops.INVOKE, 2,           -- 212: invoke(2)
       ops.POP,                 -- 214: pop
       ops.PUSH_LOCAL_FRAME,    -- 215: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 216: get_slot_direct(26)
       ops.DUP,                 -- 218: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 219: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 219: get_slot_direct_check(541)
       ops.SWAP,                -- 221: swap
       ops.PUSH_LITERAL, 71,    -- 222: push_literal(71)
       ops.INVOKE, 1,           -- 224: invoke(1)
       ops.POP,                 -- 226: pop
       ops.PHI,                 -- 227: phi
       ops.PUSH_FRAME,          -- 228: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 229: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 229: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 231: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 232: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 234: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 235: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 237: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 239: get_slot_direct(468)
+      ops.GET_SLOT_DIRECT, 230,-- 235: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 237: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 239: get_slot_direct(534)
       ops.PUSH_LITERAL, 18,    -- 241: push_literal(18)
       ops.BI_EQ,               -- 243: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 244: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 245: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 245: get_slot_direct(441)
       ops.INVOKE, 2,           -- 247: invoke(2)
       ops.POP,                 -- 249: pop
       ops.PUSH_LITERAL, 0,     -- 250: push_literal(0)
@@ -12966,7 +14512,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".bcompile_expr"
     name = jsval.newString(".bcompile_expr"),
-    id = 130,
+    id = 139,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -12976,33 +14522,33 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 375,-- 8: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 8: set_slot_direct(441)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 12: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 12: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 18: get_slot_direct(455)
+      ops.GET_SLOT_DIRECT, 521,-- 18: get_slot_direct(521)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 21: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 290,-- 23: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 441,-- 21: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 363,-- 23: get_slot_direct(363)
       ops.GET_SLOT_INDIRECT,   -- 25: get_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 27: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 27: get_slot_direct(441)
       ops.INVOKE, 2,           -- 29: invoke(2)
       ops.POP,                 -- 31: pop
       ops.PUSH_FRAME,          -- 32: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 33: get_slot_direct(455)
+      ops.GET_SLOT_DIRECT, 521,-- 33: get_slot_direct(521)
       ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 36: get_slot_direct(375)
-      ops.GET_SLOT_DIRECT, 290,-- 38: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 441,-- 36: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 363,-- 38: get_slot_direct(363)
       ops.GET_SLOT_INDIRECT,   -- 40: get_slot_indirect
       ops.DUP,                 -- 41: dup
       ops.GET_SLOT_DIRECT_CHECK, 93,-- 42: get_slot_direct_check(93)
       ops.SWAP,                -- 44: swap
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 46: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 46: get_slot_direct(441)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
       ops.INVOKE, 2,           -- 51: invoke(2)
@@ -13011,7 +14557,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".name"
     name = jsval.newString(".name"),
-    id = 131,
+    id = 140,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -13021,86 +14567,86 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
       ops.SET_SLOT_DIRECT, 53, -- 14: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 499,-- 19: set_slot_direct(499)
+      ops.SET_SLOT_DIRECT, 565,-- 19: set_slot_direct(565)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 500,-- 24: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 24: set_slot_direct(201)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 27: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 29: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 33: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 255,-- 35: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 230,-- 33: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 328,-- 35: get_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 38: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 255,-- 40: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 293,-- 42: get_slot_direct(293)
+      ops.GET_SLOT_DIRECT, 328,-- 40: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 366,-- 42: get_slot_direct(366)
       ops.BI_SUB,              -- 44: bi_sub
-      ops.SET_SLOT_DIRECT, 499,-- 45: set_slot_direct(499)
+      ops.SET_SLOT_DIRECT, 565,-- 45: set_slot_direct(565)
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 49: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 255,-- 51: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 53: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 51: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 53: get_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 56: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 58: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 58: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 60: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 500,-- 61: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 61: set_slot_direct(201)
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 64: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 64: get_slot_direct(230)
       ops.DUP,                 -- 66: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 67: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 67: get_slot_direct_check(541)
       ops.SWAP,                -- 69: swap
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
-      ops.GET_SLOT_DIRECT, 500,-- 71: get_slot_direct(500)
+      ops.GET_SLOT_DIRECT, 201,-- 71: get_slot_direct(201)
       ops.JMP_UNLESS, 80, 82,  -- 73: jmp_unless(80,82)
-      ops.PUSH_LITERAL, 401,   -- 76: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 76: push_literal(467)
       ops.JMP, 82,             -- 78: jmp(82)
-      ops.PUSH_LITERAL, 402,   -- 80: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 80: push_literal(468)
       ops.PHI,                 -- 82: phi
       ops.INVOKE, 1,           -- 83: invoke(1)
       ops.POP,                 -- 85: pop
       ops.PUSH_FRAME,          -- 86: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 87: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 87: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 90: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 92: push_local_frame
-      ops.GET_SLOT_DIRECT, 500,-- 93: get_slot_direct(500)
+      ops.GET_SLOT_DIRECT, 201,-- 93: get_slot_direct(201)
       ops.DUP,                 -- 95: dup
       ops.UN_NOT,              -- 96: un_not
       ops.JMP_UNLESS, 107, 107,-- 97: jmp_unless(107,107)
       ops.POP,                 -- 100: pop
       ops.PUSH_LOCAL_FRAME,    -- 101: push_local_frame
-      ops.GET_SLOT_DIRECT, 499,-- 102: get_slot_direct(499)
+      ops.GET_SLOT_DIRECT, 565,-- 102: get_slot_direct(565)
       ops.PUSH_LITERAL, 18,    -- 104: push_literal(18)
       ops.BI_EQ,               -- 106: bi_eq
       ops.PHI,                 -- 107: phi
       ops.INVOKE, 1,           -- 108: invoke(1)
       ops.POP,                 -- 110: pop
       ops.PUSH_LOCAL_FRAME,    -- 111: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 112: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 465,-- 114: get_slot_direct(465)
+      ops.GET_SLOT_DIRECT, 230,-- 112: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 531,-- 114: get_slot_direct(531)
       ops.JMP_UNLESS, 168, 168,-- 116: jmp_unless(168,168)
       ops.JMP_INTO_LOOP, 154, 167,-- 119: jmp_into_loop(154,167)
       ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 123: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 123: get_slot_direct(230)
       ops.DUP,                 -- 125: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 126: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 126: get_slot_direct_check(541)
       ops.SWAP,                -- 128: swap
-      ops.PUSH_LITERAL, 407,   -- 129: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 129: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 131: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 132: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 132: get_slot_direct(230)
       ops.DUP,                 -- 134: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 135: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 135: get_slot_direct_check(374)
       ops.SWAP,                -- 137: swap
       ops.PUSH_LITERAL, 117,   -- 138: push_literal(117)
       ops.INVOKE, 1,           -- 140: invoke(1)
@@ -13116,7 +14662,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 156: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
-      ops.GET_SLOT_DIRECT, 499,-- 159: get_slot_direct(499)
+      ops.GET_SLOT_DIRECT, 565,-- 159: get_slot_direct(565)
       ops.SWAP,                -- 161: swap
       ops.BI_GT,               -- 162: bi_gt
       ops.UN_NOT,              -- 163: un_not
@@ -13124,19 +14670,19 @@ startup.functions = {
       ops.PHI,                 -- 167: phi
       ops.PHI,                 -- 168: phi
       ops.PUSH_LOCAL_FRAME,    -- 169: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 170: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 170: get_slot_direct(230)
       ops.DUP,                 -- 172: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 173: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 173: get_slot_direct_check(541)
       ops.SWAP,                -- 175: swap
-      ops.PUSH_LITERAL, 407,   -- 176: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 176: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 178: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 179: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 179: get_slot_direct(230)
       ops.DUP,                 -- 181: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 182: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 182: get_slot_direct_check(374)
       ops.SWAP,                -- 184: swap
       ops.PUSH_LOCAL_FRAME,    -- 185: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 186: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 188: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 188: get_slot_direct(224)
       ops.INVOKE, 1,           -- 190: invoke(1)
       ops.INVOKE, 2,           -- 192: invoke(2)
       ops.POP,                 -- 194: pop
@@ -13146,7 +14692,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".literal"
     name = jsval.newString(".literal"),
-    id = 132,
+    id = 141,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -13156,24 +14702,24 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 14: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 14: get_slot_direct(224)
       ops.PUSH_LITERAL, 0,     -- 16: push_literal(0)
       ops.BI_EQ,               -- 18: bi_eq
       ops.JMP_UNLESS, 48, 48,  -- 19: jmp_unless(48,48)
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 23: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 23: get_slot_direct(230)
       ops.DUP,                 -- 25: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 26: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 26: get_slot_direct_check(541)
       ops.SWAP,                -- 28: swap
-      ops.PUSH_LITERAL, 403,   -- 29: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 29: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 32: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 32: get_slot_direct(230)
       ops.DUP,                 -- 34: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 35: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 35: get_slot_direct_check(374)
       ops.SWAP,                -- 37: swap
       ops.PUSH_LITERAL, 0,     -- 38: push_literal(0)
       ops.INVOKE, 1,           -- 40: invoke(1)
@@ -13184,20 +14730,20 @@ startup.functions = {
       ops.PHI,                 -- 48: phi
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 52: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 52: get_slot_direct(224)
       ops.PUSH_LITERAL, 41,    -- 54: push_literal(41)
       ops.BI_EQ,               -- 56: bi_eq
       ops.JMP_UNLESS, 86, 86,  -- 57: jmp_unless(86,86)
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 61: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 61: get_slot_direct(230)
       ops.DUP,                 -- 63: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 64: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 64: get_slot_direct_check(541)
       ops.SWAP,                -- 66: swap
-      ops.PUSH_LITERAL, 403,   -- 67: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 67: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 70: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 70: get_slot_direct(230)
       ops.DUP,                 -- 72: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 73: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 73: get_slot_direct_check(374)
       ops.SWAP,                -- 75: swap
       ops.PUSH_LITERAL, 41,    -- 76: push_literal(41)
       ops.INVOKE, 1,           -- 78: invoke(1)
@@ -13208,57 +14754,57 @@ startup.functions = {
       ops.PHI,                 -- 86: phi
       ops.PUSH_LOCAL_FRAME,    -- 87: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 88: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 90: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 90: get_slot_direct(224)
       ops.UN_TYPEOF,           -- 92: un_typeof
       ops.PUSH_LITERAL, 88,    -- 93: push_literal(88)
       ops.BI_EQ,               -- 95: bi_eq
       ops.JMP_UNLESS, 180, 180,-- 96: jmp_unless(180,180)
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 100: push_literal(0)
-      ops.SET_SLOT_DIRECT, 501,-- 102: set_slot_direct(501)
+      ops.SET_SLOT_DIRECT, 566,-- 102: set_slot_direct(566)
       ops.PUSH_FRAME,          -- 104: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 105: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 105: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 108: get_slot_direct(26)
       ops.PUSH_LITERAL, 32,    -- 110: push_literal(32)
-      ops.PUSH_LITERAL, 502,   -- 112: push_literal(502)
+      ops.PUSH_LITERAL, 567,   -- 112: push_literal(567)
       ops.INVOKE, 2,           -- 114: invoke(2)
       ops.POP,                 -- 116: pop
       ops.PUSH_LOCAL_FRAME,    -- 117: push_local_frame
       ops.PUSH_LITERAL, 14,    -- 118: push_literal(14)
-      ops.SET_SLOT_DIRECT, 501,-- 120: set_slot_direct(501)
+      ops.SET_SLOT_DIRECT, 566,-- 120: set_slot_direct(566)
       ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 123: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 125: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 125: get_slot_direct(224)
       ops.GET_SLOT_DIRECT, 55, -- 127: get_slot_direct(55)
       ops.PUSH_LITERAL, 18,    -- 129: push_literal(18)
       ops.BI_EQ,               -- 131: bi_eq
       ops.JMP_UNLESS, 140, 140,-- 132: jmp_unless(140,140)
       ops.PUSH_LOCAL_FRAME,    -- 135: push_local_frame
       ops.PUSH_LITERAL, 68,    -- 136: push_literal(68)
-      ops.SET_SLOT_DIRECT, 501,-- 138: set_slot_direct(501)
+      ops.SET_SLOT_DIRECT, 566,-- 138: set_slot_direct(566)
       ops.PHI,                 -- 140: phi
       ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 142: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 142: get_slot_direct(230)
       ops.DUP,                 -- 144: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 145: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 145: get_slot_direct_check(541)
       ops.SWAP,                -- 147: swap
-      ops.PUSH_LITERAL, 401,   -- 148: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 148: push_literal(467)
       ops.INVOKE, 1,           -- 150: invoke(1)
       ops.POP,                 -- 152: pop
       ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 154: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 154: get_slot_direct(230)
       ops.DUP,                 -- 156: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 157: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 157: get_slot_direct_check(541)
       ops.SWAP,                -- 159: swap
-      ops.PUSH_LITERAL, 407,   -- 160: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 160: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 162: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 163: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 163: get_slot_direct(230)
       ops.DUP,                 -- 165: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 166: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 166: get_slot_direct_check(374)
       ops.SWAP,                -- 168: swap
       ops.PUSH_LOCAL_FRAME,    -- 169: push_local_frame
-      ops.GET_SLOT_DIRECT, 501,-- 170: get_slot_direct(501)
+      ops.GET_SLOT_DIRECT, 566,-- 170: get_slot_direct(566)
       ops.INVOKE, 1,           -- 172: invoke(1)
       ops.INVOKE, 2,           -- 174: invoke(2)
       ops.POP,                 -- 176: pop
@@ -13267,25 +14813,25 @@ startup.functions = {
       ops.PHI,                 -- 180: phi
       ops.PUSH_LOCAL_FRAME,    -- 181: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 182: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 184: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 184: get_slot_direct(224)
       ops.UN_TYPEOF,           -- 186: un_typeof
       ops.PUSH_LITERAL, 38,    -- 187: push_literal(38)
       ops.BI_EQ,               -- 189: bi_eq
       ops.JMP_UNLESS, 222, 222,-- 190: jmp_unless(222,222)
       ops.PUSH_LOCAL_FRAME,    -- 193: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 194: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 194: get_slot_direct(230)
       ops.DUP,                 -- 196: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 197: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 197: get_slot_direct_check(541)
       ops.SWAP,                -- 199: swap
-      ops.PUSH_LITERAL, 403,   -- 200: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 200: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 202: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 203: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 203: get_slot_direct(230)
       ops.DUP,                 -- 205: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 206: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 206: get_slot_direct_check(374)
       ops.SWAP,                -- 208: swap
       ops.PUSH_LOCAL_FRAME,    -- 209: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 210: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 212: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 212: get_slot_direct(224)
       ops.INVOKE, 1,           -- 214: invoke(1)
       ops.INVOKE, 2,           -- 216: invoke(2)
       ops.POP,                 -- 218: pop
@@ -13294,25 +14840,25 @@ startup.functions = {
       ops.PHI,                 -- 222: phi
       ops.PUSH_LOCAL_FRAME,    -- 223: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 224: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 226: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 226: get_slot_direct(224)
       ops.UN_TYPEOF,           -- 228: un_typeof
-      ops.PUSH_LITERAL, 484,   -- 229: push_literal(484)
+      ops.PUSH_LITERAL, 550,   -- 229: push_literal(550)
       ops.BI_EQ,               -- 231: bi_eq
       ops.JMP_UNLESS, 264, 264,-- 232: jmp_unless(264,264)
       ops.PUSH_LOCAL_FRAME,    -- 235: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 236: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 236: get_slot_direct(230)
       ops.DUP,                 -- 238: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 239: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 239: get_slot_direct_check(541)
       ops.SWAP,                -- 241: swap
-      ops.PUSH_LITERAL, 403,   -- 242: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 242: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 244: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 245: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 245: get_slot_direct(230)
       ops.DUP,                 -- 247: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 248: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 248: get_slot_direct_check(374)
       ops.SWAP,                -- 250: swap
       ops.PUSH_LOCAL_FRAME,    -- 251: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 252: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 254: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 254: get_slot_direct(224)
       ops.INVOKE, 1,           -- 256: invoke(1)
       ops.INVOKE, 2,           -- 258: invoke(2)
       ops.POP,                 -- 260: pop
@@ -13320,31 +14866,31 @@ startup.functions = {
       ops.RETURN,              -- 263: return
       ops.PHI,                 -- 264: phi
       ops.PUSH_FRAME,          -- 265: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 266: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 266: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 268: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 269: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 271: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 272: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 274: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 274: get_slot_direct(224)
       ops.UN_TYPEOF,           -- 276: un_typeof
       ops.PUSH_LITERAL, 86,    -- 277: push_literal(86)
       ops.BI_EQ,               -- 279: bi_eq
       ops.INVOKE, 1,           -- 280: invoke(1)
       ops.POP,                 -- 282: pop
       ops.PUSH_LOCAL_FRAME,    -- 283: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 284: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 284: get_slot_direct(230)
       ops.DUP,                 -- 286: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 287: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 287: get_slot_direct_check(541)
       ops.SWAP,                -- 289: swap
-      ops.PUSH_LITERAL, 403,   -- 290: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 290: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 292: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 293: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 293: get_slot_direct(230)
       ops.DUP,                 -- 295: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 296: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 296: get_slot_direct_check(374)
       ops.SWAP,                -- 298: swap
       ops.PUSH_LOCAL_FRAME,    -- 299: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 300: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 302: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 302: get_slot_direct(224)
       ops.INVOKE, 1,           -- 304: invoke(1)
       ops.INVOKE, 2,           -- 306: invoke(2)
       ops.POP,                 -- 308: pop
@@ -13354,7 +14900,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".unary"
     name = jsval.newString(".unary"),
-    id = 133,
+    id = 142,
     nargs = 1,
     max_stack = 4,
     bytecode = {
@@ -13364,29 +14910,29 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 12: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 12: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 18: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 319,-- 20: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 521,-- 18: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 389,-- 20: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 23: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 25: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 25: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
       ops.INVOKE, 2,           -- 31: invoke(2)
       ops.POP,                 -- 33: pop
       ops.PUSH_FRAME,          -- 34: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 35: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 319,-- 37: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 521,-- 35: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 389,-- 37: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 40: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 42: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 42: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 44: get_slot_indirect
       ops.DUP,                 -- 45: dup
       ops.GET_SLOT_DIRECT_CHECK, 93,-- 46: get_slot_direct_check(93)
@@ -13394,7 +14940,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
       ops.INVOKE, 2,           -- 55: invoke(2)
       ops.POP,                 -- 57: pop
       ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
@@ -13403,7 +14949,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "unary"
     name = jsval.newString("unary"),
-    id = 134,
+    id = 143,
     nargs = 2,
     max_stack = 3,
     bytecode = {
@@ -13413,7 +14959,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 471,-- 8: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 8: set_slot_direct(537)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
@@ -13427,18 +14973,18 @@ startup.functions = {
       ops.BI_EQ,               -- 24: bi_eq
       ops.JMP_UNLESS, 41, 53,  -- 25: jmp_unless(41,53)
       ops.PUSH_FRAME,          -- 28: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 29: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 319,-- 31: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 521,-- 29: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 389,-- 31: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 34: get_slot_direct(471)
-      ops.NEW_FUNCTION, 135,   -- 36: new_function(135)
+      ops.GET_SLOT_DIRECT, 537,-- 34: get_slot_direct(537)
+      ops.NEW_FUNCTION, 144,   -- 36: new_function(144)
       ops.SET_SLOT_INDIRECT,   -- 38: set_slot_indirect
       ops.JMP, 53,             -- 39: jmp(53)
       ops.PUSH_FRAME,          -- 41: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 42: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 319,-- 44: get_slot_direct(319)
+      ops.GET_SLOT_DIRECT, 521,-- 42: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 389,-- 44: get_slot_direct(389)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 47: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 47: get_slot_direct(537)
       ops.PUSH_FRAME,          -- 49: push_frame
       ops.GET_SLOT_DIRECT, 109,-- 50: get_slot_direct(109)
       ops.SET_SLOT_INDIRECT,   -- 52: set_slot_indirect
@@ -13449,7 +14995,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 135,
+    id = 144,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -13459,12 +15005,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
@@ -13472,9 +15018,9 @@ startup.functions = {
       ops.INVOKE, 1,           -- 23: invoke(1)
       ops.POP,                 -- 25: pop
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 27: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 27: get_slot_direct(230)
       ops.DUP,                 -- 29: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 30: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 30: get_slot_direct_check(541)
       ops.SWAP,                -- 32: swap
       ops.PUSH_FRAME,          -- 33: push_frame
       ops.GET_SLOT_DIRECT, 109,-- 34: get_slot_direct(109)
@@ -13486,7 +15032,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 136,
+    id = 145,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -13496,7 +15042,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
@@ -13505,11 +15051,11 @@ startup.functions = {
       ops.PUSH_LITERAL, 18,    -- 17: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 19: set_slot_direct(53)
       ops.PUSH_FRAME,          -- 21: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 22: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 22: get_slot_direct(230)
       ops.DUP,                 -- 24: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 25: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 25: get_slot_direct_check(541)
       ops.SWAP,                -- 27: swap
-      ops.PUSH_LITERAL, 405,   -- 28: push_literal(405)
+      ops.PUSH_LITERAL, 471,   -- 28: push_literal(471)
       ops.INVOKE, 1,           -- 30: invoke(1)
       ops.POP,                 -- 32: pop
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
@@ -13518,7 +15064,7 @@ startup.functions = {
       ops.DUP,                 -- 38: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 39: get_slot_direct_check(94)
       ops.SWAP,                -- 41: swap
-      ops.NEW_FUNCTION, 137,   -- 42: new_function(137)
+      ops.NEW_FUNCTION, 146,   -- 42: new_function(146)
       ops.INVOKE, 1,           -- 44: invoke(1)
       ops.POP,                 -- 46: pop
       ops.PUSH_LITERAL, 0,     -- 47: push_literal(0)
@@ -13527,7 +15073,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 137,
+    id = 146,
     nargs = 2,
     max_stack = 6,
     bytecode = {
@@ -13545,32 +15091,32 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 19: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 19: get_slot_direct(230)
       ops.DUP,                 -- 21: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 22: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 22: get_slot_direct_check(541)
       ops.SWAP,                -- 24: swap
-      ops.PUSH_LITERAL, 419,   -- 25: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 25: push_literal(485)
       ops.INVOKE, 1,           -- 27: invoke(1)
       ops.POP,                 -- 29: pop
       ops.PUSH_FRAME,          -- 30: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 31: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 31: get_slot_direct(230)
       ops.DUP,                 -- 33: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 34: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 34: get_slot_direct_check(564)
       ops.SWAP,                -- 36: swap
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 38: get_slot_direct(87)
       ops.INVOKE, 1,           -- 40: invoke(1)
       ops.POP,                 -- 42: pop
       ops.PUSH_FRAME,          -- 43: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 44: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 44: get_slot_direct(230)
       ops.DUP,                 -- 46: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 47: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 47: get_slot_direct_check(541)
       ops.SWAP,                -- 49: swap
-      ops.PUSH_LITERAL, 410,   -- 50: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 50: push_literal(476)
       ops.PUSH_FRAME,          -- 52: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
       ops.DUP,                 -- 55: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 56: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 56: get_slot_direct_check(374)
       ops.SWAP,                -- 58: swap
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 60: get_slot_direct(53)
@@ -13583,7 +15129,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 138,
+    id = 147,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -13593,7 +15139,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
@@ -13602,11 +15148,11 @@ startup.functions = {
       ops.PUSH_LITERAL, 18,    -- 17: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 19: set_slot_direct(53)
       ops.PUSH_FRAME,          -- 21: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 22: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 22: get_slot_direct(230)
       ops.DUP,                 -- 24: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 25: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 25: get_slot_direct_check(541)
       ops.SWAP,                -- 27: swap
-      ops.PUSH_LITERAL, 404,   -- 28: push_literal(404)
+      ops.PUSH_LITERAL, 470,   -- 28: push_literal(470)
       ops.INVOKE, 1,           -- 30: invoke(1)
       ops.POP,                 -- 32: pop
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
@@ -13615,7 +15161,7 @@ startup.functions = {
       ops.DUP,                 -- 38: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 39: get_slot_direct_check(94)
       ops.SWAP,                -- 41: swap
-      ops.NEW_FUNCTION, 139,   -- 42: new_function(139)
+      ops.NEW_FUNCTION, 148,   -- 42: new_function(148)
       ops.INVOKE, 1,           -- 44: invoke(1)
       ops.POP,                 -- 46: pop
       ops.PUSH_LITERAL, 0,     -- 47: push_literal(0)
@@ -13624,7 +15170,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 139,
+    id = 148,
     nargs = 2,
     max_stack = 6,
     bytecode = {
@@ -13642,16 +15188,16 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 19: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 19: get_slot_direct(230)
       ops.DUP,                 -- 21: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 22: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 22: get_slot_direct_check(541)
       ops.SWAP,                -- 24: swap
-      ops.PUSH_LITERAL, 419,   -- 25: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 25: push_literal(485)
       ops.INVOKE, 1,           -- 27: invoke(1)
       ops.POP,                 -- 29: pop
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 31: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 290,-- 33: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 33: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 35: push_literal(25)
       ops.BI_EQ,               -- 37: bi_eq
       ops.JMP_UNLESS, 54, 54,  -- 38: jmp_unless(54,54)
@@ -13659,34 +15205,34 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 87, -- 42: get_slot_direct(87)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 45: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 357,-- 47: get_slot_direct(357)
-      ops.PUSH_LITERAL, 320,   -- 49: push_literal(320)
+      ops.GET_SLOT_DIRECT, 258,-- 47: get_slot_direct(258)
+      ops.PUSH_LITERAL, 241,   -- 49: push_literal(241)
       ops.BI_ADD,              -- 51: bi_add
-      ops.SET_SLOT_DIRECT, 503,-- 52: set_slot_direct(503)
+      ops.SET_SLOT_DIRECT, 568,-- 52: set_slot_direct(568)
       ops.PHI,                 -- 54: phi
       ops.PUSH_FRAME,          -- 55: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 56: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 56: get_slot_direct(230)
       ops.DUP,                 -- 58: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 59: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 59: get_slot_direct_check(564)
       ops.SWAP,                -- 61: swap
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 63: get_slot_direct(87)
       ops.INVOKE, 1,           -- 65: invoke(1)
       ops.POP,                 -- 67: pop
       ops.PUSH_FRAME,          -- 68: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 69: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 69: get_slot_direct(230)
       ops.DUP,                 -- 71: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 72: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 72: get_slot_direct_check(541)
       ops.SWAP,                -- 74: swap
-      ops.PUSH_LITERAL, 410,   -- 75: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 75: push_literal(476)
       ops.PUSH_FRAME,          -- 77: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 78: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 78: get_slot_direct(230)
       ops.DUP,                 -- 80: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 81: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 81: get_slot_direct_check(374)
       ops.SWAP,                -- 83: swap
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 85: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 357,-- 87: get_slot_direct(357)
+      ops.GET_SLOT_DIRECT, 258,-- 87: get_slot_direct(258)
       ops.INVOKE, 1,           -- 89: invoke(1)
       ops.INVOKE, 2,           -- 91: invoke(2)
       ops.POP,                 -- 93: pop
@@ -13696,7 +15242,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".binary"
     name = jsval.newString(".binary"),
-    id = 140,
+    id = 149,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -13706,34 +15252,34 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 504,-- 15: set_slot_direct(504)
+      ops.SET_SLOT_DIRECT, 569,-- 15: set_slot_direct(569)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 19: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 19: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 22: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 25: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 315,-- 27: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 521,-- 25: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 386,-- 27: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 32: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 32: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 34: get_slot_indirect
       ops.PUSH_LOCAL_FRAME,    -- 35: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 36: get_slot_direct(26)
       ops.INVOKE, 2,           -- 38: invoke(2)
       ops.POP,                 -- 40: pop
       ops.PUSH_FRAME,          -- 41: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 42: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 315,-- 44: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 521,-- 42: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 386,-- 44: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 47: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 49: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 49: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 51: get_slot_indirect
       ops.DUP,                 -- 52: dup
       ops.GET_SLOT_DIRECT_CHECK, 93,-- 53: get_slot_direct_check(93)
@@ -13741,9 +15287,9 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 57: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 60: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 60: get_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
-      ops.GET_SLOT_DIRECT, 504,-- 63: get_slot_direct(504)
+      ops.GET_SLOT_DIRECT, 569,-- 63: get_slot_direct(569)
       ops.INVOKE, 3,           -- 65: invoke(3)
       ops.POP,                 -- 67: pop
       ops.PUSH_LITERAL, 0,     -- 68: push_literal(0)
@@ -13752,7 +15298,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "binary"
     name = jsval.newString("binary"),
-    id = 141,
+    id = 150,
     nargs = 3,
     max_stack = 3,
     bytecode = {
@@ -13762,7 +15308,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 471,-- 8: set_slot_direct(471)
+      ops.SET_SLOT_DIRECT, 537,-- 8: set_slot_direct(537)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
@@ -13772,7 +15318,7 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 423,-- 22: set_slot_direct(423)
+      ops.SET_SLOT_DIRECT, 489,-- 22: set_slot_direct(489)
       ops.POP,                 -- 24: pop
       ops.PUSH_FRAME,          -- 25: push_frame
       ops.GET_SLOT_DIRECT, 109,-- 26: get_slot_direct(109)
@@ -13781,18 +15327,18 @@ startup.functions = {
       ops.BI_EQ,               -- 31: bi_eq
       ops.JMP_UNLESS, 48, 60,  -- 32: jmp_unless(48,60)
       ops.PUSH_FRAME,          -- 35: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 36: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 315,-- 38: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 521,-- 36: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 386,-- 38: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 41: get_slot_direct(471)
-      ops.NEW_FUNCTION, 142,   -- 43: new_function(142)
+      ops.GET_SLOT_DIRECT, 537,-- 41: get_slot_direct(537)
+      ops.NEW_FUNCTION, 151,   -- 43: new_function(151)
       ops.SET_SLOT_INDIRECT,   -- 45: set_slot_indirect
       ops.JMP, 60,             -- 46: jmp(60)
       ops.PUSH_FRAME,          -- 48: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 49: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 315,-- 51: get_slot_direct(315)
+      ops.GET_SLOT_DIRECT, 521,-- 49: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 386,-- 51: get_slot_direct(386)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 54: get_slot_direct(471)
+      ops.GET_SLOT_DIRECT, 537,-- 54: get_slot_direct(537)
       ops.PUSH_FRAME,          -- 56: push_frame
       ops.GET_SLOT_DIRECT, 109,-- 57: get_slot_direct(109)
       ops.SET_SLOT_INDIRECT,   -- 59: set_slot_indirect
@@ -13803,7 +15349,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 142,
+    id = 151,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -13813,12 +15359,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
@@ -13826,9 +15372,9 @@ startup.functions = {
       ops.INVOKE, 1,           -- 23: invoke(1)
       ops.POP,                 -- 25: pop
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 27: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 27: get_slot_direct(230)
       ops.DUP,                 -- 29: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 30: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 30: get_slot_direct_check(564)
       ops.SWAP,                -- 32: swap
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 34: get_slot_direct(26)
@@ -13836,21 +15382,21 @@ startup.functions = {
       ops.INVOKE, 1,           -- 38: invoke(1)
       ops.POP,                 -- 40: pop
       ops.PUSH_FRAME,          -- 41: push_frame
-      ops.GET_SLOT_DIRECT, 423,-- 42: get_slot_direct(423)
+      ops.GET_SLOT_DIRECT, 489,-- 42: get_slot_direct(489)
       ops.JMP_UNLESS, 59, 59,  -- 44: jmp_unless(59,59)
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 48: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 48: get_slot_direct(230)
       ops.DUP,                 -- 50: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 51: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 51: get_slot_direct_check(541)
       ops.SWAP,                -- 53: swap
-      ops.PUSH_LITERAL, 423,   -- 54: push_literal(423)
+      ops.PUSH_LITERAL, 489,   -- 54: push_literal(489)
       ops.INVOKE, 1,           -- 56: invoke(1)
       ops.POP,                 -- 58: pop
       ops.PHI,                 -- 59: phi
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 61: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 61: get_slot_direct(230)
       ops.DUP,                 -- 63: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 64: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 64: get_slot_direct_check(541)
       ops.SWAP,                -- 66: swap
       ops.PUSH_FRAME,          -- 67: push_frame
       ops.GET_SLOT_DIRECT, 109,-- 68: get_slot_direct(109)
@@ -13862,7 +15408,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "assignment"
     name = jsval.newString("assignment"),
-    id = 143,
+    id = 152,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -13872,15 +15418,15 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 505,-- 8: set_slot_direct(505)
+      ops.SET_SLOT_DIRECT, 570,-- 8: set_slot_direct(570)
       ops.POP,                 -- 10: pop
-      ops.NEW_FUNCTION, 144,   -- 11: new_function(144)
+      ops.NEW_FUNCTION, 153,   -- 11: new_function(153)
       ops.RETURN               -- 13: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 144,
+    id = 153,
     nargs = 2,
     max_stack = 6,
     bytecode = {
@@ -13890,17 +15436,17 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 504,-- 15: set_slot_direct(504)
+      ops.SET_SLOT_DIRECT, 569,-- 15: set_slot_direct(569)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 21: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 290,-- 23: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 23: get_slot_direct(363)
       ops.PUSH_LITERAL, 19,    -- 25: push_literal(19)
       ops.BI_EQ,               -- 27: bi_eq
       ops.JMP_UNLESS, 347, 347,-- 28: jmp_unless(347,347)
@@ -13909,62 +15455,62 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 34: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 37: push_literal(0)
-      ops.SET_SLOT_DIRECT, 499,-- 39: set_slot_direct(499)
+      ops.SET_SLOT_DIRECT, 565,-- 39: set_slot_direct(565)
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 42: push_literal(0)
-      ops.SET_SLOT_DIRECT, 500,-- 44: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 44: set_slot_direct(201)
       ops.PUSH_LOCAL_FRAME,    -- 46: push_local_frame
       ops.PUSH_LITERAL, 18,    -- 47: push_literal(18)
       ops.SET_SLOT_DIRECT, 53, -- 49: set_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 255,-- 55: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 328,-- 55: get_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 57: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 58: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 60: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 255,-- 62: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 293,-- 64: get_slot_direct(293)
+      ops.GET_SLOT_DIRECT, 328,-- 62: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 366,-- 64: get_slot_direct(366)
       ops.BI_SUB,              -- 66: bi_sub
-      ops.SET_SLOT_DIRECT, 499,-- 67: set_slot_direct(499)
+      ops.SET_SLOT_DIRECT, 565,-- 67: set_slot_direct(565)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 71: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 73: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 255,-- 75: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 77: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 75: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 77: get_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 80: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 82: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 84: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 84: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 86: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 500,-- 87: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 87: set_slot_direct(201)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 90: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 90: get_slot_direct(230)
       ops.DUP,                 -- 92: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 93: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 93: get_slot_direct_check(541)
       ops.SWAP,                -- 95: swap
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
-      ops.GET_SLOT_DIRECT, 500,-- 97: get_slot_direct(500)
+      ops.GET_SLOT_DIRECT, 201,-- 97: get_slot_direct(201)
       ops.JMP_UNLESS, 106, 108,-- 99: jmp_unless(106,108)
-      ops.PUSH_LITERAL, 401,   -- 102: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 102: push_literal(467)
       ops.JMP, 108,            -- 104: jmp(108)
-      ops.PUSH_LITERAL, 402,   -- 106: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 106: push_literal(468)
       ops.PHI,                 -- 108: phi
       ops.INVOKE, 1,           -- 109: invoke(1)
       ops.POP,                 -- 111: pop
       ops.PUSH_FRAME,          -- 112: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 113: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 113: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 115: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 116: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 118: push_local_frame
-      ops.GET_SLOT_DIRECT, 500,-- 119: get_slot_direct(500)
+      ops.GET_SLOT_DIRECT, 201,-- 119: get_slot_direct(201)
       ops.DUP,                 -- 121: dup
       ops.UN_NOT,              -- 122: un_not
       ops.JMP_UNLESS, 133, 133,-- 123: jmp_unless(133,133)
       ops.POP,                 -- 126: pop
       ops.PUSH_LOCAL_FRAME,    -- 127: push_local_frame
-      ops.GET_SLOT_DIRECT, 499,-- 128: get_slot_direct(499)
+      ops.GET_SLOT_DIRECT, 565,-- 128: get_slot_direct(565)
       ops.PUSH_LITERAL, 18,    -- 130: push_literal(18)
       ops.BI_EQ,               -- 132: bi_eq
       ops.PHI,                 -- 133: phi
@@ -13972,15 +15518,15 @@ startup.functions = {
       ops.POP,                 -- 136: pop
       ops.JMP_INTO_LOOP, 172, 185,-- 137: jmp_into_loop(172,185)
       ops.PUSH_LOCAL_FRAME,    -- 140: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 141: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 141: get_slot_direct(230)
       ops.DUP,                 -- 143: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 144: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 144: get_slot_direct_check(541)
       ops.SWAP,                -- 146: swap
-      ops.PUSH_LITERAL, 407,   -- 147: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 147: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 149: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 150: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 150: get_slot_direct(230)
       ops.DUP,                 -- 152: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 153: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 153: get_slot_direct_check(374)
       ops.SWAP,                -- 155: swap
       ops.PUSH_LITERAL, 117,   -- 156: push_literal(117)
       ops.INVOKE, 1,           -- 158: invoke(1)
@@ -13996,38 +15542,38 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 173: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 174: get_slot_direct(53)
       ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
-      ops.GET_SLOT_DIRECT, 499,-- 177: get_slot_direct(499)
+      ops.GET_SLOT_DIRECT, 565,-- 177: get_slot_direct(565)
       ops.SWAP,                -- 179: swap
       ops.BI_GT,               -- 180: bi_gt
       ops.UN_NOT,              -- 181: un_not
       ops.JMP_UNLESS, 140, 185,-- 182: jmp_unless(140,185)
       ops.PHI,                 -- 185: phi
       ops.PUSH_FRAME,          -- 186: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 187: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 187: get_slot_direct(570)
       ops.JMP_UNLESS, 232, 232,-- 189: jmp_unless(232,232)
       ops.PUSH_LOCAL_FRAME,    -- 192: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 193: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 193: get_slot_direct(230)
       ops.DUP,                 -- 195: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 196: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 196: get_slot_direct_check(541)
       ops.SWAP,                -- 198: swap
-      ops.PUSH_LITERAL, 419,   -- 199: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 199: push_literal(485)
       ops.INVOKE, 1,           -- 201: invoke(1)
       ops.POP,                 -- 203: pop
       ops.PUSH_LOCAL_FRAME,    -- 204: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 205: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 205: get_slot_direct(230)
       ops.DUP,                 -- 207: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 208: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 208: get_slot_direct_check(541)
       ops.SWAP,                -- 210: swap
-      ops.PUSH_LITERAL, 407,   -- 211: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 211: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 213: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 214: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 214: get_slot_direct(230)
       ops.DUP,                 -- 216: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 217: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 217: get_slot_direct_check(374)
       ops.SWAP,                -- 219: swap
       ops.PUSH_LOCAL_FRAME,    -- 220: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 221: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 223: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 225: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 225: get_slot_direct(224)
       ops.INVOKE, 1,           -- 227: invoke(1)
       ops.INVOKE, 2,           -- 229: invoke(2)
       ops.POP,                 -- 231: pop
@@ -14035,7 +15581,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 233: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 234: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 40, -- 236: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 290,-- 238: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 238: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 240: push_literal(25)
       ops.BI_EQ,               -- 242: bi_eq
       ops.JMP_UNLESS, 260, 260,-- 243: jmp_unless(260,260)
@@ -14045,13 +15591,13 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 251: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 252: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 254: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 256: get_slot_direct(215)
-      ops.SET_SLOT_DIRECT, 503,-- 258: set_slot_direct(503)
+      ops.GET_SLOT_DIRECT, 224,-- 256: get_slot_direct(224)
+      ops.SET_SLOT_DIRECT, 568,-- 258: set_slot_direct(568)
       ops.PHI,                 -- 260: phi
       ops.PUSH_LOCAL_FRAME,    -- 261: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 262: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 262: get_slot_direct(230)
       ops.DUP,                 -- 264: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 265: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 265: get_slot_direct_check(564)
       ops.SWAP,                -- 267: swap
       ops.PUSH_LOCAL_FRAME,    -- 268: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 269: get_slot_direct(26)
@@ -14059,46 +15605,46 @@ startup.functions = {
       ops.INVOKE, 1,           -- 273: invoke(1)
       ops.POP,                 -- 275: pop
       ops.PUSH_FRAME,          -- 276: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 277: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 277: get_slot_direct(570)
       ops.JMP_UNLESS, 295, 295,-- 279: jmp_unless(295,295)
       ops.PUSH_LOCAL_FRAME,    -- 282: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 283: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 283: get_slot_direct(230)
       ops.DUP,                 -- 285: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 286: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 286: get_slot_direct_check(541)
       ops.SWAP,                -- 288: swap
       ops.PUSH_FRAME,          -- 289: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 290: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 290: get_slot_direct(570)
       ops.INVOKE, 1,           -- 292: invoke(1)
       ops.POP,                 -- 294: pop
       ops.PHI,                 -- 295: phi
       ops.PUSH_LOCAL_FRAME,    -- 296: push_local_frame
-      ops.GET_SLOT_DIRECT, 504,-- 297: get_slot_direct(504)
+      ops.GET_SLOT_DIRECT, 569,-- 297: get_slot_direct(569)
       ops.UN_NOT,              -- 299: un_not
       ops.JMP_UNLESS, 315, 315,-- 300: jmp_unless(315,315)
       ops.PUSH_LOCAL_FRAME,    -- 303: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 304: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 304: get_slot_direct(230)
       ops.DUP,                 -- 306: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 307: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 307: get_slot_direct_check(541)
       ops.SWAP,                -- 309: swap
-      ops.PUSH_LITERAL, 421,   -- 310: push_literal(421)
+      ops.PUSH_LITERAL, 487,   -- 310: push_literal(487)
       ops.INVOKE, 1,           -- 312: invoke(1)
       ops.POP,                 -- 314: pop
       ops.PHI,                 -- 315: phi
       ops.PUSH_LOCAL_FRAME,    -- 316: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 317: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 317: get_slot_direct(230)
       ops.DUP,                 -- 319: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 320: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 320: get_slot_direct_check(541)
       ops.SWAP,                -- 322: swap
-      ops.PUSH_LITERAL, 410,   -- 323: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 323: push_literal(476)
       ops.PUSH_LOCAL_FRAME,    -- 325: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 326: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 326: get_slot_direct(230)
       ops.DUP,                 -- 328: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 329: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 329: get_slot_direct_check(374)
       ops.SWAP,                -- 331: swap
       ops.PUSH_LOCAL_FRAME,    -- 332: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 333: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 335: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 337: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 337: get_slot_direct(224)
       ops.INVOKE, 1,           -- 339: invoke(1)
       ops.INVOKE, 2,           -- 341: invoke(2)
       ops.POP,                 -- 343: pop
@@ -14106,14 +15652,14 @@ startup.functions = {
       ops.RETURN,              -- 346: return
       ops.PHI,                 -- 347: phi
       ops.PUSH_FRAME,          -- 348: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 349: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 349: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 351: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 352: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 354: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 355: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 357: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 290,-- 359: get_slot_direct(290)
-      ops.PUSH_LITERAL, 315,   -- 361: push_literal(315)
+      ops.GET_SLOT_DIRECT, 363,-- 359: get_slot_direct(363)
+      ops.PUSH_LITERAL, 386,   -- 361: push_literal(386)
       ops.BI_EQ,               -- 363: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 364: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 365: get_slot_direct(26)
@@ -14123,20 +15669,20 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 372: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 373: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 375: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 377: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 377: get_slot_direct(224)
       ops.PUSH_LITERAL, 149,   -- 379: push_literal(149)
       ops.BI_EQ,               -- 381: bi_eq
       ops.JMP_UNLESS, 598, 598,-- 382: jmp_unless(598,598)
       ops.PUSH_FRAME,          -- 385: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 386: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 386: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 388: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 389: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 391: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 392: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 394: get_slot_direct(39)
       ops.GET_SLOT_DIRECT, 40, -- 396: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 290,-- 398: get_slot_direct(290)
-      ops.PUSH_LITERAL, 301,   -- 400: push_literal(301)
+      ops.GET_SLOT_DIRECT, 363,-- 398: get_slot_direct(363)
+      ops.PUSH_LITERAL, 374,   -- 400: push_literal(374)
       ops.BI_EQ,               -- 402: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 403: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 404: get_slot_direct(26)
@@ -14144,9 +15690,9 @@ startup.functions = {
       ops.INVOKE, 2,           -- 408: invoke(2)
       ops.POP,                 -- 410: pop
       ops.PUSH_LOCAL_FRAME,    -- 411: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 412: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 412: get_slot_direct(230)
       ops.DUP,                 -- 414: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 415: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 415: get_slot_direct_check(564)
       ops.SWAP,                -- 417: swap
       ops.PUSH_LOCAL_FRAME,    -- 418: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 419: get_slot_direct(26)
@@ -14155,32 +15701,32 @@ startup.functions = {
       ops.INVOKE, 1,           -- 425: invoke(1)
       ops.POP,                 -- 427: pop
       ops.PUSH_FRAME,          -- 428: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 429: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 429: get_slot_direct(570)
       ops.JMP_UNLESS, 476, 476,-- 431: jmp_unless(476,476)
       ops.PUSH_LOCAL_FRAME,    -- 434: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 435: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 435: get_slot_direct(230)
       ops.DUP,                 -- 437: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 438: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 438: get_slot_direct_check(541)
       ops.SWAP,                -- 440: swap
-      ops.PUSH_LITERAL, 419,   -- 441: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 441: push_literal(485)
       ops.INVOKE, 1,           -- 443: invoke(1)
       ops.POP,                 -- 445: pop
       ops.PUSH_LOCAL_FRAME,    -- 446: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 447: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 447: get_slot_direct(230)
       ops.DUP,                 -- 449: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 450: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 450: get_slot_direct_check(541)
       ops.SWAP,                -- 452: swap
-      ops.PUSH_LITERAL, 407,   -- 453: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 453: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 455: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 456: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 456: get_slot_direct(230)
       ops.DUP,                 -- 458: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 459: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 459: get_slot_direct_check(374)
       ops.SWAP,                -- 461: swap
       ops.PUSH_LOCAL_FRAME,    -- 462: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 463: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 465: get_slot_direct(39)
       ops.GET_SLOT_DIRECT, 40, -- 467: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 469: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 469: get_slot_direct(224)
       ops.INVOKE, 1,           -- 471: invoke(1)
       ops.INVOKE, 2,           -- 473: invoke(2)
       ops.POP,                 -- 475: pop
@@ -14188,7 +15734,7 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 477: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 478: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 40, -- 480: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 290,-- 482: get_slot_direct(290)
+      ops.GET_SLOT_DIRECT, 363,-- 482: get_slot_direct(363)
       ops.PUSH_LITERAL, 25,    -- 484: push_literal(25)
       ops.BI_EQ,               -- 486: bi_eq
       ops.JMP_UNLESS, 509, 509,-- 487: jmp_unless(509,509)
@@ -14200,14 +15746,14 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 26, -- 498: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 500: get_slot_direct(39)
       ops.GET_SLOT_DIRECT, 40, -- 502: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 504: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 504: get_slot_direct(224)
       ops.BI_ADD,              -- 506: bi_add
-      ops.SET_SLOT_DIRECT, 503,-- 507: set_slot_direct(503)
+      ops.SET_SLOT_DIRECT, 568,-- 507: set_slot_direct(568)
       ops.PHI,                 -- 509: phi
       ops.PUSH_LOCAL_FRAME,    -- 510: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 511: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 511: get_slot_direct(230)
       ops.DUP,                 -- 513: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 514: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 514: get_slot_direct_check(564)
       ops.SWAP,                -- 516: swap
       ops.PUSH_LOCAL_FRAME,    -- 517: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 518: get_slot_direct(26)
@@ -14215,47 +15761,47 @@ startup.functions = {
       ops.INVOKE, 1,           -- 522: invoke(1)
       ops.POP,                 -- 524: pop
       ops.PUSH_FRAME,          -- 525: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 526: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 526: get_slot_direct(570)
       ops.JMP_UNLESS, 544, 544,-- 528: jmp_unless(544,544)
       ops.PUSH_LOCAL_FRAME,    -- 531: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 532: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 532: get_slot_direct(230)
       ops.DUP,                 -- 534: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 535: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 535: get_slot_direct_check(541)
       ops.SWAP,                -- 537: swap
       ops.PUSH_FRAME,          -- 538: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 539: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 539: get_slot_direct(570)
       ops.INVOKE, 1,           -- 541: invoke(1)
       ops.POP,                 -- 543: pop
       ops.PHI,                 -- 544: phi
       ops.PUSH_LOCAL_FRAME,    -- 545: push_local_frame
-      ops.GET_SLOT_DIRECT, 504,-- 546: get_slot_direct(504)
+      ops.GET_SLOT_DIRECT, 569,-- 546: get_slot_direct(569)
       ops.UN_NOT,              -- 548: un_not
       ops.JMP_UNLESS, 564, 564,-- 549: jmp_unless(564,564)
       ops.PUSH_LOCAL_FRAME,    -- 552: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 553: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 553: get_slot_direct(230)
       ops.DUP,                 -- 555: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 556: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 556: get_slot_direct_check(541)
       ops.SWAP,                -- 558: swap
-      ops.PUSH_LITERAL, 421,   -- 559: push_literal(421)
+      ops.PUSH_LITERAL, 487,   -- 559: push_literal(487)
       ops.INVOKE, 1,           -- 561: invoke(1)
       ops.POP,                 -- 563: pop
       ops.PHI,                 -- 564: phi
       ops.PUSH_LOCAL_FRAME,    -- 565: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 566: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 566: get_slot_direct(230)
       ops.DUP,                 -- 568: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 569: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 569: get_slot_direct_check(541)
       ops.SWAP,                -- 571: swap
-      ops.PUSH_LITERAL, 410,   -- 572: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 572: push_literal(476)
       ops.PUSH_LOCAL_FRAME,    -- 574: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 575: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 575: get_slot_direct(230)
       ops.DUP,                 -- 577: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 578: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 578: get_slot_direct_check(374)
       ops.SWAP,                -- 580: swap
       ops.PUSH_LOCAL_FRAME,    -- 581: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 582: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 584: get_slot_direct(39)
       ops.GET_SLOT_DIRECT, 40, -- 586: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 588: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 588: get_slot_direct(224)
       ops.INVOKE, 1,           -- 590: invoke(1)
       ops.INVOKE, 2,           -- 592: invoke(2)
       ops.POP,                 -- 594: pop
@@ -14265,14 +15811,14 @@ startup.functions = {
       ops.PUSH_LOCAL_FRAME,    -- 599: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 600: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 602: get_slot_direct(39)
-      ops.GET_SLOT_DIRECT, 215,-- 604: get_slot_direct(215)
-      ops.PUSH_LITERAL, 316,   -- 606: push_literal(316)
+      ops.GET_SLOT_DIRECT, 224,-- 604: get_slot_direct(224)
+      ops.PUSH_LITERAL, 254,   -- 606: push_literal(254)
       ops.BI_EQ,               -- 608: bi_eq
       ops.JMP_UNLESS, 747, 747,-- 609: jmp_unless(747,747)
       ops.PUSH_LOCAL_FRAME,    -- 612: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 613: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 613: get_slot_direct(230)
       ops.DUP,                 -- 615: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 616: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 616: get_slot_direct_check(564)
       ops.SWAP,                -- 618: swap
       ops.PUSH_LOCAL_FRAME,    -- 619: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 620: get_slot_direct(26)
@@ -14281,9 +15827,9 @@ startup.functions = {
       ops.INVOKE, 1,           -- 626: invoke(1)
       ops.POP,                 -- 628: pop
       ops.PUSH_LOCAL_FRAME,    -- 629: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 630: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 630: get_slot_direct(230)
       ops.DUP,                 -- 632: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 633: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 633: get_slot_direct_check(564)
       ops.SWAP,                -- 635: swap
       ops.PUSH_LOCAL_FRAME,    -- 636: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 637: get_slot_direct(26)
@@ -14292,29 +15838,29 @@ startup.functions = {
       ops.INVOKE, 1,           -- 643: invoke(1)
       ops.POP,                 -- 645: pop
       ops.PUSH_FRAME,          -- 646: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 647: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 647: get_slot_direct(570)
       ops.JMP_UNLESS, 676, 676,-- 649: jmp_unless(676,676)
       ops.PUSH_LOCAL_FRAME,    -- 652: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 653: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 653: get_slot_direct(230)
       ops.DUP,                 -- 655: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 656: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 656: get_slot_direct_check(541)
       ops.SWAP,                -- 658: swap
-      ops.PUSH_LITERAL, 420,   -- 659: push_literal(420)
+      ops.PUSH_LITERAL, 486,   -- 659: push_literal(486)
       ops.INVOKE, 1,           -- 661: invoke(1)
       ops.POP,                 -- 663: pop
       ops.PUSH_LOCAL_FRAME,    -- 664: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 665: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 665: get_slot_direct(230)
       ops.DUP,                 -- 667: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 668: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 668: get_slot_direct_check(541)
       ops.SWAP,                -- 670: swap
-      ops.PUSH_LITERAL, 408,   -- 671: push_literal(408)
+      ops.PUSH_LITERAL, 474,   -- 671: push_literal(474)
       ops.INVOKE, 1,           -- 673: invoke(1)
       ops.POP,                 -- 675: pop
       ops.PHI,                 -- 676: phi
       ops.PUSH_LOCAL_FRAME,    -- 677: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 678: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 678: get_slot_direct(230)
       ops.DUP,                 -- 680: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 681: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 681: get_slot_direct_check(564)
       ops.SWAP,                -- 683: swap
       ops.PUSH_LOCAL_FRAME,    -- 684: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 685: get_slot_direct(26)
@@ -14322,44 +15868,44 @@ startup.functions = {
       ops.INVOKE, 1,           -- 689: invoke(1)
       ops.POP,                 -- 691: pop
       ops.PUSH_FRAME,          -- 692: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 693: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 693: get_slot_direct(570)
       ops.JMP_UNLESS, 711, 711,-- 695: jmp_unless(711,711)
       ops.PUSH_LOCAL_FRAME,    -- 698: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 699: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 699: get_slot_direct(230)
       ops.DUP,                 -- 701: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 702: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 702: get_slot_direct_check(541)
       ops.SWAP,                -- 704: swap
       ops.PUSH_FRAME,          -- 705: push_frame
-      ops.GET_SLOT_DIRECT, 505,-- 706: get_slot_direct(505)
+      ops.GET_SLOT_DIRECT, 570,-- 706: get_slot_direct(570)
       ops.INVOKE, 1,           -- 708: invoke(1)
       ops.POP,                 -- 710: pop
       ops.PHI,                 -- 711: phi
       ops.PUSH_LOCAL_FRAME,    -- 712: push_local_frame
-      ops.GET_SLOT_DIRECT, 504,-- 713: get_slot_direct(504)
+      ops.GET_SLOT_DIRECT, 569,-- 713: get_slot_direct(569)
       ops.UN_NOT,              -- 715: un_not
       ops.JMP_UNLESS, 731, 731,-- 716: jmp_unless(731,731)
       ops.PUSH_LOCAL_FRAME,    -- 719: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 720: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 720: get_slot_direct(230)
       ops.DUP,                 -- 722: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 723: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 723: get_slot_direct_check(541)
       ops.SWAP,                -- 725: swap
-      ops.PUSH_LITERAL, 422,   -- 726: push_literal(422)
+      ops.PUSH_LITERAL, 488,   -- 726: push_literal(488)
       ops.INVOKE, 1,           -- 728: invoke(1)
       ops.POP,                 -- 730: pop
       ops.PHI,                 -- 731: phi
       ops.PUSH_LOCAL_FRAME,    -- 732: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 733: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 733: get_slot_direct(230)
       ops.DUP,                 -- 735: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 736: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 736: get_slot_direct_check(541)
       ops.SWAP,                -- 738: swap
-      ops.PUSH_LITERAL, 411,   -- 739: push_literal(411)
+      ops.PUSH_LITERAL, 477,   -- 739: push_literal(477)
       ops.INVOKE, 1,           -- 741: invoke(1)
       ops.POP,                 -- 743: pop
       ops.PUSH_LITERAL, 0,     -- 744: push_literal(0)
       ops.RETURN,              -- 746: return
       ops.PHI,                 -- 747: phi
       ops.PUSH_FRAME,          -- 748: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 749: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 749: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 751: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 752: get_slot_direct(26)
       ops.PUSH_LITERAL, 32,    -- 754: push_literal(32)
@@ -14374,7 +15920,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 145,
+    id = 154,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -14384,29 +15930,29 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 506,-- 14: set_slot_direct(506)
+      ops.SET_SLOT_DIRECT, 571,-- 14: set_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 507,-- 19: set_slot_direct(507)
+      ops.SET_SLOT_DIRECT, 572,-- 19: set_slot_direct(572)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 508,-- 24: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 24: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 28: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 28: get_slot_direct(230)
       ops.DUP,                 -- 30: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 31: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 31: get_slot_direct_check(554)
       ops.SWAP,                -- 33: swap
       ops.INVOKE, 0,           -- 34: invoke(0)
-      ops.SET_SLOT_DIRECT, 508,-- 36: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 36: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 39: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 39: get_slot_direct(230)
       ops.DUP,                 -- 41: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 42: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 42: get_slot_direct_check(564)
       ops.SWAP,                -- 44: swap
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
@@ -14414,51 +15960,51 @@ startup.functions = {
       ops.INVOKE, 1,           -- 50: invoke(1)
       ops.POP,                 -- 52: pop
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 54: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 54: get_slot_direct(230)
       ops.DUP,                 -- 56: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 57: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 57: get_slot_direct_check(541)
       ops.SWAP,                -- 59: swap
-      ops.PUSH_LITERAL, 419,   -- 60: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 60: push_literal(485)
       ops.INVOKE, 1,           -- 62: invoke(1)
       ops.POP,                 -- 64: pop
       ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 66: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 66: get_slot_direct(230)
       ops.DUP,                 -- 68: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 69: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 69: get_slot_direct_check(541)
       ops.SWAP,                -- 71: swap
-      ops.PUSH_LITERAL, 424,   -- 72: push_literal(424)
+      ops.PUSH_LITERAL, 490,   -- 72: push_literal(490)
       ops.INVOKE, 1,           -- 74: invoke(1)
       ops.POP,                 -- 76: pop
       ops.PUSH_LOCAL_FRAME,    -- 77: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 78: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 78: get_slot_direct(230)
       ops.DUP,                 -- 80: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 81: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 81: get_slot_direct_check(541)
       ops.SWAP,                -- 83: swap
-      ops.PUSH_LITERAL, 417,   -- 84: push_literal(417)
+      ops.PUSH_LITERAL, 483,   -- 84: push_literal(483)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 87: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 87: get_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 90: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 90: get_slot_direct(573)
       ops.INVOKE, 3,           -- 92: invoke(3)
       ops.POP,                 -- 94: pop
       ops.PUSH_LOCAL_FRAME,    -- 95: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 96: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 97: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 99: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 101: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 506,-- 103: set_slot_direct(506)
+      ops.GET_SLOT_DIRECT, 230,-- 97: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 99: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 101: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 571,-- 103: set_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 106: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 106: get_slot_direct(230)
       ops.DUP,                 -- 108: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 109: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 109: get_slot_direct_check(541)
       ops.SWAP,                -- 111: swap
       ops.PUSH_LITERAL, 71,    -- 112: push_literal(71)
       ops.INVOKE, 1,           -- 114: invoke(1)
       ops.POP,                 -- 116: pop
       ops.PUSH_LOCAL_FRAME,    -- 117: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 118: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 118: get_slot_direct(230)
       ops.DUP,                 -- 120: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 121: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 121: get_slot_direct_check(564)
       ops.SWAP,                -- 123: swap
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 125: get_slot_direct(26)
@@ -14466,36 +16012,36 @@ startup.functions = {
       ops.INVOKE, 1,           -- 129: invoke(1)
       ops.POP,                 -- 131: pop
       ops.PUSH_LOCAL_FRAME,    -- 132: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 133: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 133: get_slot_direct(230)
       ops.DUP,                 -- 135: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 136: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 136: get_slot_direct_check(555)
       ops.SWAP,                -- 138: swap
       ops.PUSH_LOCAL_FRAME,    -- 139: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 140: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 140: get_slot_direct(573)
       ops.INVOKE, 1,           -- 142: invoke(1)
       ops.POP,                 -- 144: pop
       ops.PUSH_LOCAL_FRAME,    -- 145: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 146: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 146: get_slot_direct(230)
       ops.DUP,                 -- 148: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 149: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 149: get_slot_direct_check(541)
       ops.SWAP,                -- 151: swap
-      ops.PUSH_LITERAL, 418,   -- 152: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 152: push_literal(484)
       ops.INVOKE, 1,           -- 154: invoke(1)
       ops.POP,                 -- 156: pop
       ops.PUSH_LOCAL_FRAME,    -- 157: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 159: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 161: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 163: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 507,-- 165: set_slot_direct(507)
+      ops.GET_SLOT_DIRECT, 230,-- 159: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 161: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 163: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 572,-- 165: set_slot_direct(572)
       ops.PUSH_FRAME,          -- 167: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 168: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 168: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 170: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 171: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 173: push_local_frame
-      ops.GET_SLOT_DIRECT, 506,-- 174: get_slot_direct(506)
+      ops.GET_SLOT_DIRECT, 571,-- 174: get_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
-      ops.GET_SLOT_DIRECT, 507,-- 177: get_slot_direct(507)
+      ops.GET_SLOT_DIRECT, 572,-- 177: get_slot_direct(572)
       ops.BI_EQ,               -- 179: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 180: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 181: get_slot_direct(26)
@@ -14507,7 +16053,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 146,
+    id = 155,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -14517,29 +16063,29 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 506,-- 14: set_slot_direct(506)
+      ops.SET_SLOT_DIRECT, 571,-- 14: set_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 507,-- 19: set_slot_direct(507)
+      ops.SET_SLOT_DIRECT, 572,-- 19: set_slot_direct(572)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 508,-- 24: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 24: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 28: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 28: get_slot_direct(230)
       ops.DUP,                 -- 30: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 31: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 31: get_slot_direct_check(554)
       ops.SWAP,                -- 33: swap
       ops.INVOKE, 0,           -- 34: invoke(0)
-      ops.SET_SLOT_DIRECT, 508,-- 36: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 36: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 39: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 39: get_slot_direct(230)
       ops.DUP,                 -- 41: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 42: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 42: get_slot_direct_check(564)
       ops.SWAP,                -- 44: swap
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 46: get_slot_direct(26)
@@ -14547,43 +16093,43 @@ startup.functions = {
       ops.INVOKE, 1,           -- 50: invoke(1)
       ops.POP,                 -- 52: pop
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 54: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 54: get_slot_direct(230)
       ops.DUP,                 -- 56: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 57: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 57: get_slot_direct_check(541)
       ops.SWAP,                -- 59: swap
-      ops.PUSH_LITERAL, 419,   -- 60: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 60: push_literal(485)
       ops.INVOKE, 1,           -- 62: invoke(1)
       ops.POP,                 -- 64: pop
       ops.PUSH_LOCAL_FRAME,    -- 65: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 66: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 66: get_slot_direct(230)
       ops.DUP,                 -- 68: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 69: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 69: get_slot_direct_check(541)
       ops.SWAP,                -- 71: swap
-      ops.PUSH_LITERAL, 417,   -- 72: push_literal(417)
+      ops.PUSH_LITERAL, 483,   -- 72: push_literal(483)
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 75: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 75: get_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 77: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 78: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 78: get_slot_direct(573)
       ops.INVOKE, 3,           -- 80: invoke(3)
       ops.POP,                 -- 82: pop
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 85: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 87: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 89: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 506,-- 91: set_slot_direct(506)
+      ops.GET_SLOT_DIRECT, 230,-- 85: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 87: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 89: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 571,-- 91: set_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 94: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 94: get_slot_direct(230)
       ops.DUP,                 -- 96: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 97: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 97: get_slot_direct_check(541)
       ops.SWAP,                -- 99: swap
       ops.PUSH_LITERAL, 71,    -- 100: push_literal(71)
       ops.INVOKE, 1,           -- 102: invoke(1)
       ops.POP,                 -- 104: pop
       ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 106: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 106: get_slot_direct(230)
       ops.DUP,                 -- 108: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 109: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 109: get_slot_direct_check(564)
       ops.SWAP,                -- 111: swap
       ops.PUSH_LOCAL_FRAME,    -- 112: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 113: get_slot_direct(26)
@@ -14591,36 +16137,36 @@ startup.functions = {
       ops.INVOKE, 1,           -- 117: invoke(1)
       ops.POP,                 -- 119: pop
       ops.PUSH_LOCAL_FRAME,    -- 120: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 121: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 121: get_slot_direct(230)
       ops.DUP,                 -- 123: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 124: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 124: get_slot_direct_check(555)
       ops.SWAP,                -- 126: swap
       ops.PUSH_LOCAL_FRAME,    -- 127: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 128: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 128: get_slot_direct(573)
       ops.INVOKE, 1,           -- 130: invoke(1)
       ops.POP,                 -- 132: pop
       ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 134: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 134: get_slot_direct(230)
       ops.DUP,                 -- 136: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 137: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 137: get_slot_direct_check(541)
       ops.SWAP,                -- 139: swap
-      ops.PUSH_LITERAL, 418,   -- 140: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 140: push_literal(484)
       ops.INVOKE, 1,           -- 142: invoke(1)
       ops.POP,                 -- 144: pop
       ops.PUSH_LOCAL_FRAME,    -- 145: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 146: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 147: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 149: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 151: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 507,-- 153: set_slot_direct(507)
+      ops.GET_SLOT_DIRECT, 230,-- 147: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 149: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 151: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 572,-- 153: set_slot_direct(572)
       ops.PUSH_FRAME,          -- 155: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 156: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 156: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 158: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 159: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
-      ops.GET_SLOT_DIRECT, 506,-- 162: get_slot_direct(506)
+      ops.GET_SLOT_DIRECT, 571,-- 162: get_slot_direct(571)
       ops.PUSH_LOCAL_FRAME,    -- 164: push_local_frame
-      ops.GET_SLOT_DIRECT, 507,-- 165: get_slot_direct(507)
+      ops.GET_SLOT_DIRECT, 572,-- 165: get_slot_direct(572)
       ops.BI_EQ,               -- 167: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 169: get_slot_direct(26)
@@ -14632,7 +16178,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 147,
+    id = 156,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -14642,28 +16188,28 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.NEW_OBJECT,          -- 18: new_object
       ops.DUP,                 -- 19: dup
-      ops.PUSH_LITERAL, 351,   -- 20: push_literal(351)
-      ops.SET_SLOT_DIRECT, 215,-- 22: set_slot_direct(215)
+      ops.PUSH_LITERAL, 419,   -- 20: push_literal(419)
+      ops.SET_SLOT_DIRECT, 224,-- 22: set_slot_direct(224)
       ops.DUP,                 -- 24: dup
-      ops.PUSH_LITERAL, 319,   -- 25: push_literal(319)
-      ops.SET_SLOT_DIRECT, 290,-- 27: set_slot_direct(290)
+      ops.PUSH_LITERAL, 389,   -- 25: push_literal(389)
+      ops.SET_SLOT_DIRECT, 363,-- 27: set_slot_direct(363)
       ops.DUP,                 -- 29: dup
       ops.NEW_OBJECT,          -- 30: new_object
       ops.DUP,                 -- 31: dup
-      ops.PUSH_LITERAL, 337,   -- 32: push_literal(337)
-      ops.SET_SLOT_DIRECT, 215,-- 34: set_slot_direct(215)
+      ops.PUSH_LITERAL, 405,   -- 32: push_literal(405)
+      ops.SET_SLOT_DIRECT, 224,-- 34: set_slot_direct(224)
       ops.DUP,                 -- 36: dup
-      ops.PUSH_LITERAL, 315,   -- 37: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 39: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 37: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 39: set_slot_direct(363)
       ops.DUP,                 -- 41: dup
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 43: get_slot_direct(26)
@@ -14683,7 +16229,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 148,
+    id = 157,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -14693,12 +16239,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
@@ -14706,14 +16252,14 @@ startup.functions = {
       ops.INVOKE, 1,           -- 23: invoke(1)
       ops.POP,                 -- 25: pop
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 27: get_slot_direct(454)
+      ops.GET_SLOT_DIRECT, 520,-- 27: get_slot_direct(520)
       ops.PUSH_LOCAL_FRAME,    -- 29: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 30: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 33: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 40, -- 35: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 290,-- 37: get_slot_direct(290)
-      ops.PUSH_LITERAL, 301,   -- 39: push_literal(301)
+      ops.GET_SLOT_DIRECT, 363,-- 37: get_slot_direct(363)
+      ops.PUSH_LITERAL, 374,   -- 39: push_literal(374)
       ops.BI_EQ,               -- 41: bi_eq
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 43: get_slot_direct(26)
@@ -14721,20 +16267,20 @@ startup.functions = {
       ops.INVOKE, 2,           -- 47: invoke(2)
       ops.POP,                 -- 49: pop
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 51: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 51: get_slot_direct(230)
       ops.DUP,                 -- 53: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 54: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 54: get_slot_direct_check(541)
       ops.SWAP,                -- 56: swap
-      ops.PUSH_LITERAL, 407,   -- 57: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 57: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 60: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 60: get_slot_direct(230)
       ops.DUP,                 -- 62: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 63: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 63: get_slot_direct_check(374)
       ops.SWAP,                -- 65: swap
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 67: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 40, -- 69: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 71: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 71: get_slot_direct(224)
       ops.INVOKE, 1,           -- 73: invoke(1)
       ops.INVOKE, 2,           -- 75: invoke(2)
       ops.POP,                 -- 77: pop
@@ -14744,7 +16290,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 149,
+    id = 158,
     nargs = 1,
     max_stack = 3,
     bytecode = {
@@ -14754,12 +16300,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
@@ -14767,9 +16313,9 @@ startup.functions = {
       ops.INVOKE, 1,           -- 23: invoke(1)
       ops.POP,                 -- 25: pop
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 27: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 27: get_slot_direct(230)
       ops.DUP,                 -- 29: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 30: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 30: get_slot_direct_check(564)
       ops.SWAP,                -- 32: swap
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 34: get_slot_direct(26)
@@ -14777,11 +16323,11 @@ startup.functions = {
       ops.INVOKE, 1,           -- 38: invoke(1)
       ops.POP,                 -- 40: pop
       ops.PUSH_LOCAL_FRAME,    -- 41: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 42: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 42: get_slot_direct(230)
       ops.DUP,                 -- 44: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 45: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 45: get_slot_direct_check(541)
       ops.SWAP,                -- 47: swap
-      ops.PUSH_LITERAL, 408,   -- 48: push_literal(408)
+      ops.PUSH_LITERAL, 474,   -- 48: push_literal(474)
       ops.INVOKE, 1,           -- 50: invoke(1)
       ops.POP,                 -- 52: pop
       ops.PUSH_LITERAL, 0,     -- 53: push_literal(0)
@@ -14790,7 +16336,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 150,
+    id = 159,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -14800,12 +16346,12 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
       ops.SWAP,                -- 17: swap
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
@@ -14813,17 +16359,17 @@ startup.functions = {
       ops.INVOKE, 1,           -- 23: invoke(1)
       ops.POP,                 -- 25: pop
       ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 27: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 27: get_slot_direct(230)
       ops.DUP,                 -- 29: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 30: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 30: get_slot_direct_check(564)
       ops.SWAP,                -- 32: swap
       ops.NEW_OBJECT,          -- 33: new_object
       ops.DUP,                 -- 34: dup
       ops.PUSH_LITERAL, 26,    -- 35: push_literal(26)
-      ops.SET_SLOT_DIRECT, 215,-- 37: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 37: set_slot_direct(224)
       ops.DUP,                 -- 39: dup
       ops.PUSH_LITERAL, 26,    -- 40: push_literal(26)
-      ops.SET_SLOT_DIRECT, 290,-- 42: set_slot_direct(290)
+      ops.SET_SLOT_DIRECT, 363,-- 42: set_slot_direct(363)
       ops.INVOKE, 1,           -- 44: invoke(1)
       ops.POP,                 -- 46: pop
       ops.PUSH_LOCAL_FRAME,    -- 47: push_local_frame
@@ -14832,15 +16378,15 @@ startup.functions = {
       ops.DUP,                 -- 52: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 53: get_slot_direct_check(94)
       ops.SWAP,                -- 55: swap
-      ops.NEW_FUNCTION, 151,   -- 56: new_function(151)
+      ops.NEW_FUNCTION, 160,   -- 56: new_function(160)
       ops.INVOKE, 1,           -- 58: invoke(1)
       ops.POP,                 -- 60: pop
       ops.PUSH_FRAME,          -- 61: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 62: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 62: get_slot_direct(230)
       ops.DUP,                 -- 64: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 65: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 65: get_slot_direct_check(541)
       ops.SWAP,                -- 67: swap
-      ops.PUSH_LITERAL, 412,   -- 68: push_literal(412)
+      ops.PUSH_LITERAL, 478,   -- 68: push_literal(478)
       ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 71: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 40, -- 73: get_slot_direct(40)
@@ -14849,535 +16395,6 @@ startup.functions = {
       ops.POP,                 -- 79: pop
       ops.PUSH_LITERAL, 0,     -- 80: push_literal(0)
       ops.RETURN               -- 82: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 151,
-    nargs = 2,
-    max_stack = 3,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 87, -- 8: set_slot_direct(87)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 19: get_slot_direct(370)
-      ops.DUP,                 -- 21: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 22: get_slot_direct_check(498)
-      ops.SWAP,                -- 24: swap
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 87, -- 26: get_slot_direct(87)
-      ops.INVOKE, 1,           -- 28: invoke(1)
-      ops.POP,                 -- 30: pop
-      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
-      ops.RETURN               -- 33: return
-    }
-  },
-  ifunc.Function:new{ -- ".ternary"
-    name = jsval.newString(".ternary"),
-    id = 152,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 12: get_slot_direct(454)
-      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 18: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 332,-- 20: get_slot_direct(332)
-      ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 23: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 25: get_slot_direct(215)
-      ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
-      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
-      ops.INVOKE, 2,           -- 31: invoke(2)
-      ops.POP,                 -- 33: pop
-      ops.PUSH_FRAME,          -- 34: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 35: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 332,-- 37: get_slot_direct(332)
-      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 40: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 42: get_slot_direct(215)
-      ops.GET_SLOT_INDIRECT,   -- 44: get_slot_indirect
-      ops.DUP,                 -- 45: dup
-      ops.GET_SLOT_DIRECT_CHECK, 93,-- 46: get_slot_direct_check(93)
-      ops.SWAP,                -- 48: swap
-      ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
-      ops.INVOKE, 2,           -- 55: invoke(2)
-      ops.POP,                 -- 57: pop
-      ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
-      ops.RETURN               -- 60: return
-    }
-  },
-  ifunc.Function:new{ -- "ternary"
-    name = jsval.newString("ternary"),
-    id = 153,
-    nargs = 2,
-    max_stack = 3,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 471,-- 8: set_slot_direct(471)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 19: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 332,-- 21: get_slot_direct(332)
-      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
-      ops.GET_SLOT_DIRECT, 471,-- 24: get_slot_direct(471)
-      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 109,-- 27: get_slot_direct(109)
-      ops.SET_SLOT_INDIRECT,   -- 29: set_slot_indirect
-      ops.PUSH_LITERAL, 0,     -- 30: push_literal(0)
-      ops.RETURN               -- 32: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 154,
-    nargs = 1,
-    max_stack = 5,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 506,-- 14: set_slot_direct(506)
-      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 507,-- 19: set_slot_direct(507)
-      ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 509,-- 24: set_slot_direct(509)
-      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
-      ops.SET_SLOT_DIRECT, 508,-- 29: set_slot_direct(508)
-      ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
-      ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 33: get_slot_direct(370)
-      ops.DUP,                 -- 35: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 36: get_slot_direct_check(488)
-      ops.SWAP,                -- 38: swap
-      ops.INVOKE, 0,           -- 39: invoke(0)
-      ops.SET_SLOT_DIRECT, 509,-- 41: set_slot_direct(509)
-      ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
-      ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 45: get_slot_direct(370)
-      ops.DUP,                 -- 47: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 48: get_slot_direct_check(488)
-      ops.SWAP,                -- 50: swap
-      ops.INVOKE, 0,           -- 51: invoke(0)
-      ops.SET_SLOT_DIRECT, 508,-- 53: set_slot_direct(508)
-      ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 56: get_slot_direct(370)
-      ops.DUP,                 -- 58: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 59: get_slot_direct_check(498)
-      ops.SWAP,                -- 61: swap
-      ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 63: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 39, -- 65: get_slot_direct(39)
-      ops.INVOKE, 1,           -- 67: invoke(1)
-      ops.POP,                 -- 69: pop
-      ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 71: get_slot_direct(370)
-      ops.DUP,                 -- 73: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 74: get_slot_direct_check(475)
-      ops.SWAP,                -- 76: swap
-      ops.PUSH_LITERAL, 417,   -- 77: push_literal(417)
-      ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
-      ops.GET_SLOT_DIRECT, 509,-- 80: get_slot_direct(509)
-      ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 83: get_slot_direct(508)
-      ops.INVOKE, 3,           -- 85: invoke(3)
-      ops.POP,                 -- 87: pop
-      ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
-      ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 90: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 92: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 94: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 506,-- 96: set_slot_direct(506)
-      ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 99: get_slot_direct(370)
-      ops.DUP,                 -- 101: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 102: get_slot_direct_check(498)
-      ops.SWAP,                -- 104: swap
-      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 40, -- 108: get_slot_direct(40)
-      ops.INVOKE, 1,           -- 110: invoke(1)
-      ops.POP,                 -- 112: pop
-      ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 114: get_slot_direct(370)
-      ops.DUP,                 -- 116: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 117: get_slot_direct_check(475)
-      ops.SWAP,                -- 119: swap
-      ops.PUSH_LITERAL, 415,   -- 120: push_literal(415)
-      ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 123: get_slot_direct(508)
-      ops.INVOKE, 2,           -- 125: invoke(2)
-      ops.POP,                 -- 127: pop
-      ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
-      ops.PUSH_LOCAL_FRAME,    -- 129: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 130: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 132: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 134: get_slot_direct(468)
-      ops.SET_SLOT_DIRECT, 507,-- 136: set_slot_direct(507)
-      ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 139: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 141: get_slot_direct(473)
-      ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
-      ops.GET_SLOT_DIRECT, 506,-- 144: get_slot_direct(506)
-      ops.SET_SLOT_DIRECT, 468,-- 146: set_slot_direct(468)
-      ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 149: get_slot_direct(370)
-      ops.DUP,                 -- 151: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 152: get_slot_direct_check(489)
-      ops.SWAP,                -- 154: swap
-      ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
-      ops.GET_SLOT_DIRECT, 509,-- 156: get_slot_direct(509)
-      ops.INVOKE, 1,           -- 158: invoke(1)
-      ops.POP,                 -- 160: pop
-      ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 162: get_slot_direct(370)
-      ops.DUP,                 -- 164: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 165: get_slot_direct_check(498)
-      ops.SWAP,                -- 167: swap
-      ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 169: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 171: get_slot_direct(331)
-      ops.INVOKE, 1,           -- 173: invoke(1)
-      ops.POP,                 -- 175: pop
-      ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 177: get_slot_direct(370)
-      ops.DUP,                 -- 179: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 180: get_slot_direct_check(489)
-      ops.SWAP,                -- 182: swap
-      ops.PUSH_LOCAL_FRAME,    -- 183: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 184: get_slot_direct(508)
-      ops.INVOKE, 1,           -- 186: invoke(1)
-      ops.POP,                 -- 188: pop
-      ops.PUSH_LOCAL_FRAME,    -- 189: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 190: get_slot_direct(370)
-      ops.DUP,                 -- 192: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 193: get_slot_direct_check(475)
-      ops.SWAP,                -- 195: swap
-      ops.PUSH_LITERAL, 418,   -- 196: push_literal(418)
-      ops.INVOKE, 1,           -- 198: invoke(1)
-      ops.POP,                 -- 200: pop
-      ops.PUSH_FRAME,          -- 201: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 202: get_slot_direct(454)
-      ops.PUSH_LOCAL_FRAME,    -- 204: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 205: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 207: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 208: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 210: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 468,-- 212: get_slot_direct(468)
-      ops.PUSH_LOCAL_FRAME,    -- 214: push_local_frame
-      ops.GET_SLOT_DIRECT, 507,-- 215: get_slot_direct(507)
-      ops.BI_EQ,               -- 217: bi_eq
-      ops.PUSH_LOCAL_FRAME,    -- 218: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 219: get_slot_direct(26)
-      ops.INVOKE, 2,           -- 221: invoke(2)
-      ops.POP,                 -- 223: pop
-      ops.PUSH_LITERAL, 0,     -- 224: push_literal(0)
-      ops.RETURN               -- 226: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 155,
-    nargs = 1,
-    max_stack = 6,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_FRAME,          -- 6: push_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
-      ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 15: get_slot_direct_check(498)
-      ops.SWAP,                -- 17: swap
-      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 39, -- 21: get_slot_direct(39)
-      ops.INVOKE, 1,           -- 23: invoke(1)
-      ops.POP,                 -- 25: pop
-      ops.PUSH_FRAME,          -- 26: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 27: get_slot_direct(370)
-      ops.DUP,                 -- 29: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 30: get_slot_direct_check(475)
-      ops.SWAP,                -- 32: swap
-      ops.PUSH_LITERAL, 419,   -- 33: push_literal(419)
-      ops.INVOKE, 1,           -- 35: invoke(1)
-      ops.POP,                 -- 37: pop
-      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 39: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 40, -- 41: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 290,-- 43: get_slot_direct(290)
-      ops.PUSH_LITERAL, 301,   -- 45: push_literal(301)
-      ops.BI_EQ,               -- 47: bi_eq
-      ops.DUP,                 -- 48: dup
-      ops.JMP_UNLESS, 64, 64,  -- 49: jmp_unless(64,64)
-      ops.POP,                 -- 52: pop
-      ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 54: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 40, -- 56: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 58: get_slot_direct(215)
-      ops.UN_TYPEOF,           -- 60: un_typeof
-      ops.PUSH_LITERAL, 38,    -- 61: push_literal(38)
-      ops.BI_EQ,               -- 63: bi_eq
-      ops.PHI,                 -- 64: phi
-      ops.JMP_UNLESS, 98, 125, -- 65: jmp_unless(98,125)
-      ops.PUSH_FRAME,          -- 68: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 69: get_slot_direct(370)
-      ops.DUP,                 -- 71: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 72: get_slot_direct_check(475)
-      ops.SWAP,                -- 74: swap
-      ops.PUSH_LITERAL, 409,   -- 75: push_literal(409)
-      ops.PUSH_FRAME,          -- 77: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 78: get_slot_direct(370)
-      ops.DUP,                 -- 80: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 81: get_slot_direct_check(301)
-      ops.SWAP,                -- 83: swap
-      ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 85: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 40, -- 87: get_slot_direct(40)
-      ops.GET_SLOT_DIRECT, 215,-- 89: get_slot_direct(215)
-      ops.INVOKE, 1,           -- 91: invoke(1)
-      ops.INVOKE, 2,           -- 93: invoke(2)
-      ops.POP,                 -- 95: pop
-      ops.JMP, 125,            -- 96: jmp(125)
-      ops.PUSH_FRAME,          -- 98: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 99: get_slot_direct(370)
-      ops.DUP,                 -- 101: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 102: get_slot_direct_check(498)
-      ops.SWAP,                -- 104: swap
-      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 40, -- 108: get_slot_direct(40)
-      ops.INVOKE, 1,           -- 110: invoke(1)
-      ops.POP,                 -- 112: pop
-      ops.PUSH_FRAME,          -- 113: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 114: get_slot_direct(370)
-      ops.DUP,                 -- 116: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 117: get_slot_direct_check(475)
-      ops.SWAP,                -- 119: swap
-      ops.PUSH_LITERAL, 408,   -- 120: push_literal(408)
-      ops.INVOKE, 1,           -- 122: invoke(1)
-      ops.POP,                 -- 124: pop
-      ops.PHI,                 -- 125: phi
-      ops.PUSH_FRAME,          -- 126: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 127: get_slot_direct(370)
-      ops.DUP,                 -- 129: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 130: get_slot_direct_check(475)
-      ops.SWAP,                -- 132: swap
-      ops.PUSH_LITERAL, 423,   -- 133: push_literal(423)
-      ops.INVOKE, 1,           -- 135: invoke(1)
-      ops.POP,                 -- 137: pop
-      ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 139: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 141: get_slot_direct(331)
-      ops.DUP,                 -- 143: dup
-      ops.GET_SLOT_DIRECT_CHECK, 94,-- 144: get_slot_direct_check(94)
-      ops.SWAP,                -- 146: swap
-      ops.NEW_FUNCTION, 156,   -- 147: new_function(156)
-      ops.INVOKE, 1,           -- 149: invoke(1)
-      ops.POP,                 -- 151: pop
-      ops.PUSH_FRAME,          -- 152: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 153: get_slot_direct(370)
-      ops.DUP,                 -- 155: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 156: get_slot_direct_check(475)
-      ops.SWAP,                -- 158: swap
-      ops.PUSH_LITERAL, 412,   -- 159: push_literal(412)
-      ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 162: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 164: get_slot_direct(331)
-      ops.GET_SLOT_DIRECT, 55, -- 166: get_slot_direct(55)
-      ops.INVOKE, 2,           -- 168: invoke(2)
-      ops.POP,                 -- 170: pop
-      ops.PUSH_LITERAL, 0,     -- 171: push_literal(0)
-      ops.RETURN               -- 173: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 156,
-    nargs = 2,
-    max_stack = 3,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 87, -- 8: set_slot_direct(87)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 19: get_slot_direct(370)
-      ops.DUP,                 -- 21: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 22: get_slot_direct_check(498)
-      ops.SWAP,                -- 24: swap
-      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
-      ops.GET_SLOT_DIRECT, 87, -- 26: get_slot_direct(87)
-      ops.INVOKE, 1,           -- 28: invoke(1)
-      ops.POP,                 -- 30: pop
-      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
-      ops.RETURN               -- 33: return
-    }
-  },
-  ifunc.Function:new{ -- ".statement"
-    name = jsval.newString(".statement"),
-    id = 157,
-    nargs = 1,
-    max_stack = 4,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_FRAME,          -- 11: push_frame
-      ops.GET_SLOT_DIRECT, 454,-- 12: get_slot_direct(454)
-      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
-      ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 18: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 266,-- 20: get_slot_direct(266)
-      ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 23: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 25: get_slot_direct(215)
-      ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
-      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
-      ops.INVOKE, 2,           -- 31: invoke(2)
-      ops.POP,                 -- 33: pop
-      ops.PUSH_FRAME,          -- 34: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 35: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 266,-- 37: get_slot_direct(266)
-      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 40: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 215,-- 42: get_slot_direct(215)
-      ops.GET_SLOT_INDIRECT,   -- 44: get_slot_indirect
-      ops.DUP,                 -- 45: dup
-      ops.GET_SLOT_DIRECT_CHECK, 93,-- 46: get_slot_direct_check(93)
-      ops.SWAP,                -- 48: swap
-      ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
-      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 53: get_slot_direct(370)
-      ops.INVOKE, 2,           -- 55: invoke(2)
-      ops.POP,                 -- 57: pop
-      ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
-      ops.RETURN               -- 60: return
-    }
-  },
-  ifunc.Function:new{ -- "stmt"
-    name = jsval.newString("stmt"),
-    id = 158,
-    nargs = 2,
-    max_stack = 3,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 215,-- 8: set_slot_direct(215)
-      ops.DUP,                 -- 10: dup
-      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
-      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
-      ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
-      ops.POP,                 -- 17: pop
-      ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 455,-- 19: get_slot_direct(455)
-      ops.GET_SLOT_DIRECT, 266,-- 21: get_slot_direct(266)
-      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
-      ops.GET_SLOT_DIRECT, 215,-- 24: get_slot_direct(215)
-      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
-      ops.GET_SLOT_DIRECT, 109,-- 27: get_slot_direct(109)
-      ops.SET_SLOT_INDIRECT,   -- 29: set_slot_indirect
-      ops.PUSH_LITERAL, 0,     -- 30: push_literal(0)
-      ops.RETURN               -- 32: return
-    }
-  },
-  ifunc.Function:new{
-    name = jsval.Undefined,
-    id = 159,
-    nargs = 1,
-    max_stack = 3,
-    bytecode = {
-      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
-      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
-      ops.DUP,                 -- 3: dup
-      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
-      ops.PUSH_FRAME,          -- 6: push_frame
-      ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.POP,                 -- 10: pop
-      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 39, -- 14: get_slot_direct(39)
-      ops.DUP,                 -- 16: dup
-      ops.GET_SLOT_DIRECT_CHECK, 94,-- 17: get_slot_direct_check(94)
-      ops.SWAP,                -- 19: swap
-      ops.NEW_FUNCTION, 160,   -- 20: new_function(160)
-      ops.INVOKE, 1,           -- 22: invoke(1)
-      ops.POP,                 -- 24: pop
-      ops.PUSH_LITERAL, 0,     -- 25: push_literal(0)
-      ops.RETURN               -- 27: return
     }
   },
   ifunc.Function:new{
@@ -15400,9 +16417,538 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 19: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 19: get_slot_direct(230)
       ops.DUP,                 -- 21: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 22: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 22: get_slot_direct_check(564)
+      ops.SWAP,                -- 24: swap
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 87, -- 26: get_slot_direct(87)
+      ops.INVOKE, 1,           -- 28: invoke(1)
+      ops.POP,                 -- 30: pop
+      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
+      ops.RETURN               -- 33: return
+    }
+  },
+  ifunc.Function:new{ -- ".ternary"
+    name = jsval.newString(".ternary"),
+    id = 161,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_FRAME,          -- 11: push_frame
+      ops.GET_SLOT_DIRECT, 520,-- 12: get_slot_direct(520)
+      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 17: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 18: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 400,-- 20: get_slot_direct(400)
+      ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 23: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 224,-- 25: get_slot_direct(224)
+      ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
+      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
+      ops.INVOKE, 2,           -- 31: invoke(2)
+      ops.POP,                 -- 33: pop
+      ops.PUSH_FRAME,          -- 34: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 35: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 400,-- 37: get_slot_direct(400)
+      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 40: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 224,-- 42: get_slot_direct(224)
+      ops.GET_SLOT_INDIRECT,   -- 44: get_slot_indirect
+      ops.DUP,                 -- 45: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 46: get_slot_direct_check(93)
+      ops.SWAP,                -- 48: swap
+      ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
+      ops.INVOKE, 2,           -- 55: invoke(2)
+      ops.POP,                 -- 57: pop
+      ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
+      ops.RETURN               -- 60: return
+    }
+  },
+  ifunc.Function:new{ -- "ternary"
+    name = jsval.newString("ternary"),
+    id = 162,
+    nargs = 2,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 537,-- 8: set_slot_direct(537)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_FRAME,          -- 18: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 19: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 400,-- 21: get_slot_direct(400)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.GET_SLOT_DIRECT, 537,-- 24: get_slot_direct(537)
+      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
+      ops.GET_SLOT_DIRECT, 109,-- 27: get_slot_direct(109)
+      ops.SET_SLOT_INDIRECT,   -- 29: set_slot_indirect
+      ops.PUSH_LITERAL, 0,     -- 30: push_literal(0)
+      ops.RETURN               -- 32: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 163,
+    nargs = 1,
+    max_stack = 5,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
+      ops.SET_SLOT_DIRECT, 571,-- 14: set_slot_direct(571)
+      ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
+      ops.SET_SLOT_DIRECT, 572,-- 19: set_slot_direct(572)
+      ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
+      ops.SET_SLOT_DIRECT, 574,-- 24: set_slot_direct(574)
+      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
+      ops.PUSH_LITERAL, 0,     -- 27: push_literal(0)
+      ops.SET_SLOT_DIRECT, 573,-- 29: set_slot_direct(573)
+      ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 33: get_slot_direct(230)
+      ops.DUP,                 -- 35: dup
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 36: get_slot_direct_check(554)
+      ops.SWAP,                -- 38: swap
+      ops.INVOKE, 0,           -- 39: invoke(0)
+      ops.SET_SLOT_DIRECT, 574,-- 41: set_slot_direct(574)
+      ops.PUSH_LOCAL_FRAME,    -- 43: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 45: get_slot_direct(230)
+      ops.DUP,                 -- 47: dup
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 48: get_slot_direct_check(554)
+      ops.SWAP,                -- 50: swap
+      ops.INVOKE, 0,           -- 51: invoke(0)
+      ops.SET_SLOT_DIRECT, 573,-- 53: set_slot_direct(573)
+      ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 56: get_slot_direct(230)
+      ops.DUP,                 -- 58: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 59: get_slot_direct_check(564)
+      ops.SWAP,                -- 61: swap
+      ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 63: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 39, -- 65: get_slot_direct(39)
+      ops.INVOKE, 1,           -- 67: invoke(1)
+      ops.POP,                 -- 69: pop
+      ops.PUSH_LOCAL_FRAME,    -- 70: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 71: get_slot_direct(230)
+      ops.DUP,                 -- 73: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 74: get_slot_direct_check(541)
+      ops.SWAP,                -- 76: swap
+      ops.PUSH_LITERAL, 483,   -- 77: push_literal(483)
+      ops.PUSH_LOCAL_FRAME,    -- 79: push_local_frame
+      ops.GET_SLOT_DIRECT, 574,-- 80: get_slot_direct(574)
+      ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
+      ops.GET_SLOT_DIRECT, 573,-- 83: get_slot_direct(573)
+      ops.INVOKE, 3,           -- 85: invoke(3)
+      ops.POP,                 -- 87: pop
+      ops.PUSH_LOCAL_FRAME,    -- 88: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 89: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 90: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 92: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 94: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 571,-- 96: set_slot_direct(571)
+      ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 99: get_slot_direct(230)
+      ops.DUP,                 -- 101: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 102: get_slot_direct_check(564)
+      ops.SWAP,                -- 104: swap
+      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 40, -- 108: get_slot_direct(40)
+      ops.INVOKE, 1,           -- 110: invoke(1)
+      ops.POP,                 -- 112: pop
+      ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 114: get_slot_direct(230)
+      ops.DUP,                 -- 116: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 117: get_slot_direct_check(541)
+      ops.SWAP,                -- 119: swap
+      ops.PUSH_LITERAL, 481,   -- 120: push_literal(481)
+      ops.PUSH_LOCAL_FRAME,    -- 122: push_local_frame
+      ops.GET_SLOT_DIRECT, 573,-- 123: get_slot_direct(573)
+      ops.INVOKE, 2,           -- 125: invoke(2)
+      ops.POP,                 -- 127: pop
+      ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
+      ops.PUSH_LOCAL_FRAME,    -- 129: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 130: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 132: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 134: get_slot_direct(534)
+      ops.SET_SLOT_DIRECT, 572,-- 136: set_slot_direct(572)
+      ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 139: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 141: get_slot_direct(539)
+      ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
+      ops.GET_SLOT_DIRECT, 571,-- 144: get_slot_direct(571)
+      ops.SET_SLOT_DIRECT, 534,-- 146: set_slot_direct(534)
+      ops.PUSH_LOCAL_FRAME,    -- 148: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 149: get_slot_direct(230)
+      ops.DUP,                 -- 151: dup
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 152: get_slot_direct_check(555)
+      ops.SWAP,                -- 154: swap
+      ops.PUSH_LOCAL_FRAME,    -- 155: push_local_frame
+      ops.GET_SLOT_DIRECT, 574,-- 156: get_slot_direct(574)
+      ops.INVOKE, 1,           -- 158: invoke(1)
+      ops.POP,                 -- 160: pop
+      ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 162: get_slot_direct(230)
+      ops.DUP,                 -- 164: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 165: get_slot_direct_check(564)
+      ops.SWAP,                -- 167: swap
+      ops.PUSH_LOCAL_FRAME,    -- 168: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 169: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 399,-- 171: get_slot_direct(399)
+      ops.INVOKE, 1,           -- 173: invoke(1)
+      ops.POP,                 -- 175: pop
+      ops.PUSH_LOCAL_FRAME,    -- 176: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 177: get_slot_direct(230)
+      ops.DUP,                 -- 179: dup
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 180: get_slot_direct_check(555)
+      ops.SWAP,                -- 182: swap
+      ops.PUSH_LOCAL_FRAME,    -- 183: push_local_frame
+      ops.GET_SLOT_DIRECT, 573,-- 184: get_slot_direct(573)
+      ops.INVOKE, 1,           -- 186: invoke(1)
+      ops.POP,                 -- 188: pop
+      ops.PUSH_LOCAL_FRAME,    -- 189: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 190: get_slot_direct(230)
+      ops.DUP,                 -- 192: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 193: get_slot_direct_check(541)
+      ops.SWAP,                -- 195: swap
+      ops.PUSH_LITERAL, 484,   -- 196: push_literal(484)
+      ops.INVOKE, 1,           -- 198: invoke(1)
+      ops.POP,                 -- 200: pop
+      ops.PUSH_FRAME,          -- 201: push_frame
+      ops.GET_SLOT_DIRECT, 520,-- 202: get_slot_direct(520)
+      ops.PUSH_LOCAL_FRAME,    -- 204: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 205: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 207: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 208: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 210: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 534,-- 212: get_slot_direct(534)
+      ops.PUSH_LOCAL_FRAME,    -- 214: push_local_frame
+      ops.GET_SLOT_DIRECT, 572,-- 215: get_slot_direct(572)
+      ops.BI_EQ,               -- 217: bi_eq
+      ops.PUSH_LOCAL_FRAME,    -- 218: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 219: get_slot_direct(26)
+      ops.INVOKE, 2,           -- 221: invoke(2)
+      ops.POP,                 -- 223: pop
+      ops.PUSH_LITERAL, 0,     -- 224: push_literal(0)
+      ops.RETURN               -- 226: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 164,
+    nargs = 1,
+    max_stack = 6,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_FRAME,          -- 6: push_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_FRAME,          -- 11: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
+      ops.DUP,                 -- 14: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 15: get_slot_direct_check(564)
+      ops.SWAP,                -- 17: swap
+      ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 19: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 39, -- 21: get_slot_direct(39)
+      ops.INVOKE, 1,           -- 23: invoke(1)
+      ops.POP,                 -- 25: pop
+      ops.PUSH_FRAME,          -- 26: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 27: get_slot_direct(230)
+      ops.DUP,                 -- 29: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 30: get_slot_direct_check(541)
+      ops.SWAP,                -- 32: swap
+      ops.PUSH_LITERAL, 485,   -- 33: push_literal(485)
+      ops.INVOKE, 1,           -- 35: invoke(1)
+      ops.POP,                 -- 37: pop
+      ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 39: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 40, -- 41: get_slot_direct(40)
+      ops.GET_SLOT_DIRECT, 363,-- 43: get_slot_direct(363)
+      ops.PUSH_LITERAL, 374,   -- 45: push_literal(374)
+      ops.BI_EQ,               -- 47: bi_eq
+      ops.DUP,                 -- 48: dup
+      ops.JMP_UNLESS, 64, 64,  -- 49: jmp_unless(64,64)
+      ops.POP,                 -- 52: pop
+      ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 54: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 40, -- 56: get_slot_direct(40)
+      ops.GET_SLOT_DIRECT, 224,-- 58: get_slot_direct(224)
+      ops.UN_TYPEOF,           -- 60: un_typeof
+      ops.PUSH_LITERAL, 38,    -- 61: push_literal(38)
+      ops.BI_EQ,               -- 63: bi_eq
+      ops.PHI,                 -- 64: phi
+      ops.JMP_UNLESS, 98, 125, -- 65: jmp_unless(98,125)
+      ops.PUSH_FRAME,          -- 68: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 69: get_slot_direct(230)
+      ops.DUP,                 -- 71: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 72: get_slot_direct_check(541)
+      ops.SWAP,                -- 74: swap
+      ops.PUSH_LITERAL, 475,   -- 75: push_literal(475)
+      ops.PUSH_FRAME,          -- 77: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 78: get_slot_direct(230)
+      ops.DUP,                 -- 80: dup
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 81: get_slot_direct_check(374)
+      ops.SWAP,                -- 83: swap
+      ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 85: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 40, -- 87: get_slot_direct(40)
+      ops.GET_SLOT_DIRECT, 224,-- 89: get_slot_direct(224)
+      ops.INVOKE, 1,           -- 91: invoke(1)
+      ops.INVOKE, 2,           -- 93: invoke(2)
+      ops.POP,                 -- 95: pop
+      ops.JMP, 125,            -- 96: jmp(125)
+      ops.PUSH_FRAME,          -- 98: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 99: get_slot_direct(230)
+      ops.DUP,                 -- 101: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 102: get_slot_direct_check(564)
+      ops.SWAP,                -- 104: swap
+      ops.PUSH_LOCAL_FRAME,    -- 105: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 106: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 40, -- 108: get_slot_direct(40)
+      ops.INVOKE, 1,           -- 110: invoke(1)
+      ops.POP,                 -- 112: pop
+      ops.PUSH_FRAME,          -- 113: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 114: get_slot_direct(230)
+      ops.DUP,                 -- 116: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 117: get_slot_direct_check(541)
+      ops.SWAP,                -- 119: swap
+      ops.PUSH_LITERAL, 474,   -- 120: push_literal(474)
+      ops.INVOKE, 1,           -- 122: invoke(1)
+      ops.POP,                 -- 124: pop
+      ops.PHI,                 -- 125: phi
+      ops.PUSH_FRAME,          -- 126: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 127: get_slot_direct(230)
+      ops.DUP,                 -- 129: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 130: get_slot_direct_check(541)
+      ops.SWAP,                -- 132: swap
+      ops.PUSH_LITERAL, 489,   -- 133: push_literal(489)
+      ops.INVOKE, 1,           -- 135: invoke(1)
+      ops.POP,                 -- 137: pop
+      ops.PUSH_LOCAL_FRAME,    -- 138: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 139: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 399,-- 141: get_slot_direct(399)
+      ops.DUP,                 -- 143: dup
+      ops.GET_SLOT_DIRECT_CHECK, 94,-- 144: get_slot_direct_check(94)
+      ops.SWAP,                -- 146: swap
+      ops.NEW_FUNCTION, 165,   -- 147: new_function(165)
+      ops.INVOKE, 1,           -- 149: invoke(1)
+      ops.POP,                 -- 151: pop
+      ops.PUSH_FRAME,          -- 152: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 153: get_slot_direct(230)
+      ops.DUP,                 -- 155: dup
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 156: get_slot_direct_check(541)
+      ops.SWAP,                -- 158: swap
+      ops.PUSH_LITERAL, 478,   -- 159: push_literal(478)
+      ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 162: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 399,-- 164: get_slot_direct(399)
+      ops.GET_SLOT_DIRECT, 55, -- 166: get_slot_direct(55)
+      ops.INVOKE, 2,           -- 168: invoke(2)
+      ops.POP,                 -- 170: pop
+      ops.PUSH_LITERAL, 0,     -- 171: push_literal(0)
+      ops.RETURN               -- 173: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 165,
+    nargs = 2,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 87, -- 8: set_slot_direct(87)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_FRAME,          -- 18: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 19: get_slot_direct(230)
+      ops.DUP,                 -- 21: dup
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 22: get_slot_direct_check(564)
+      ops.SWAP,                -- 24: swap
+      ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
+      ops.GET_SLOT_DIRECT, 87, -- 26: get_slot_direct(87)
+      ops.INVOKE, 1,           -- 28: invoke(1)
+      ops.POP,                 -- 30: pop
+      ops.PUSH_LITERAL, 0,     -- 31: push_literal(0)
+      ops.RETURN               -- 33: return
+    }
+  },
+  ifunc.Function:new{ -- ".statement"
+    name = jsval.newString(".statement"),
+    id = 166,
+    nargs = 1,
+    max_stack = 4,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_FRAME,          -- 11: push_frame
+      ops.GET_SLOT_DIRECT, 520,-- 12: get_slot_direct(520)
+      ops.PUSH_LOCAL_FRAME,    -- 14: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 15: get_slot_direct(26)
+      ops.PUSH_FRAME,          -- 17: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 18: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 339,-- 20: get_slot_direct(339)
+      ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 23: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 224,-- 25: get_slot_direct(224)
+      ops.GET_SLOT_INDIRECT,   -- 27: get_slot_indirect
+      ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 29: get_slot_direct(26)
+      ops.INVOKE, 2,           -- 31: invoke(2)
+      ops.POP,                 -- 33: pop
+      ops.PUSH_FRAME,          -- 34: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 35: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 339,-- 37: get_slot_direct(339)
+      ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 40: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 224,-- 42: get_slot_direct(224)
+      ops.GET_SLOT_INDIRECT,   -- 44: get_slot_indirect
+      ops.DUP,                 -- 45: dup
+      ops.GET_SLOT_DIRECT_CHECK, 93,-- 46: get_slot_direct_check(93)
+      ops.SWAP,                -- 48: swap
+      ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 50: get_slot_direct(26)
+      ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
+      ops.GET_SLOT_DIRECT, 230,-- 53: get_slot_direct(230)
+      ops.INVOKE, 2,           -- 55: invoke(2)
+      ops.POP,                 -- 57: pop
+      ops.PUSH_LITERAL, 0,     -- 58: push_literal(0)
+      ops.RETURN               -- 60: return
+    }
+  },
+  ifunc.Function:new{ -- "stmt"
+    name = jsval.newString("stmt"),
+    id = 167,
+    nargs = 2,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 224,-- 8: set_slot_direct(224)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 109,-- 15: set_slot_direct(109)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_FRAME,          -- 18: push_frame
+      ops.GET_SLOT_DIRECT, 521,-- 19: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 339,-- 21: get_slot_direct(339)
+      ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
+      ops.GET_SLOT_DIRECT, 224,-- 24: get_slot_direct(224)
+      ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
+      ops.GET_SLOT_DIRECT, 109,-- 27: get_slot_direct(109)
+      ops.SET_SLOT_INDIRECT,   -- 29: set_slot_indirect
+      ops.PUSH_LITERAL, 0,     -- 30: push_literal(0)
+      ops.RETURN               -- 32: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 168,
+    nargs = 1,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_FRAME,          -- 6: push_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.POP,                 -- 10: pop
+      ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
+      ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
+      ops.GET_SLOT_DIRECT, 39, -- 14: get_slot_direct(39)
+      ops.DUP,                 -- 16: dup
+      ops.GET_SLOT_DIRECT_CHECK, 94,-- 17: get_slot_direct_check(94)
+      ops.SWAP,                -- 19: swap
+      ops.NEW_FUNCTION, 169,   -- 20: new_function(169)
+      ops.INVOKE, 1,           -- 22: invoke(1)
+      ops.POP,                 -- 24: pop
+      ops.PUSH_LITERAL, 0,     -- 25: push_literal(0)
+      ops.RETURN               -- 27: return
+    }
+  },
+  ifunc.Function:new{
+    name = jsval.Undefined,
+    id = 169,
+    nargs = 2,
+    max_stack = 3,
+    bytecode = {
+      ops.PUSH_LOCAL_FRAME,    -- 0: push_local_frame
+      ops.GET_SLOT_DIRECT, 17, -- 1: get_slot_direct(17)
+      ops.DUP,                 -- 3: dup
+      ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
+      ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
+      ops.SWAP,                -- 7: swap
+      ops.SET_SLOT_DIRECT, 87, -- 8: set_slot_direct(87)
+      ops.DUP,                 -- 10: dup
+      ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
+      ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
+      ops.SWAP,                -- 14: swap
+      ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
+      ops.POP,                 -- 17: pop
+      ops.PUSH_FRAME,          -- 18: push_frame
+      ops.GET_SLOT_DIRECT, 230,-- 19: get_slot_direct(230)
+      ops.DUP,                 -- 21: dup
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 22: get_slot_direct_check(562)
       ops.SWAP,                -- 24: swap
       ops.PUSH_LOCAL_FRAME,    -- 25: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 26: get_slot_direct(87)
@@ -15414,7 +16960,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 161,
+    id = 170,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -15424,20 +16970,20 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 15: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 15: get_slot_direct_check(562)
       ops.SWAP,                -- 17: swap
       ops.NEW_OBJECT,          -- 18: new_object
       ops.DUP,                 -- 19: dup
-      ops.PUSH_LITERAL, 315,   -- 20: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 22: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 20: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 22: set_slot_direct(363)
       ops.DUP,                 -- 24: dup
-      ops.PUSH_LITERAL, 324,   -- 25: push_literal(324)
-      ops.SET_SLOT_DIRECT, 215,-- 27: set_slot_direct(215)
+      ops.PUSH_LITERAL, 392,   -- 25: push_literal(392)
+      ops.SET_SLOT_DIRECT, 224,-- 27: set_slot_direct(224)
       ops.DUP,                 -- 29: dup
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 31: get_slot_direct(26)
@@ -15446,11 +16992,11 @@ startup.functions = {
       ops.DUP,                 -- 37: dup
       ops.NEW_OBJECT,          -- 38: new_object
       ops.DUP,                 -- 39: dup
-      ops.PUSH_LITERAL, 301,   -- 40: push_literal(301)
-      ops.SET_SLOT_DIRECT, 290,-- 42: set_slot_direct(290)
+      ops.PUSH_LITERAL, 374,   -- 40: push_literal(374)
+      ops.SET_SLOT_DIRECT, 363,-- 42: set_slot_direct(363)
       ops.DUP,                 -- 44: dup
       ops.PUSH_LITERAL, 0,     -- 45: push_literal(0)
-      ops.SET_SLOT_DIRECT, 215,-- 47: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 47: set_slot_direct(224)
       ops.SET_SLOT_DIRECT, 40, -- 49: set_slot_direct(40)
       ops.INVOKE, 1,           -- 51: invoke(1)
       ops.POP,                 -- 53: pop
@@ -15460,7 +17006,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 162,
+    id = 171,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -15470,42 +17016,42 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 508,-- 14: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 14: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 509,-- 19: set_slot_direct(509)
+      ops.SET_SLOT_DIRECT, 574,-- 19: set_slot_direct(574)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 22: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 23: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 23: get_slot_direct(230)
       ops.DUP,                 -- 25: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 26: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 26: get_slot_direct_check(554)
       ops.SWAP,                -- 28: swap
       ops.INVOKE, 0,           -- 29: invoke(0)
-      ops.SET_SLOT_DIRECT, 508,-- 31: set_slot_direct(508)
+      ops.SET_SLOT_DIRECT, 573,-- 31: set_slot_direct(573)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 35: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 37: get_slot_direct(331)
+      ops.GET_SLOT_DIRECT, 399,-- 37: get_slot_direct(399)
       ops.JMP_UNLESS, 53, 56,  -- 39: jmp_unless(53,56)
       ops.PUSH_LOCAL_FRAME,    -- 42: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 43: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 43: get_slot_direct(230)
       ops.DUP,                 -- 45: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 46: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 46: get_slot_direct_check(554)
       ops.SWAP,                -- 48: swap
       ops.INVOKE, 0,           -- 49: invoke(0)
       ops.JMP, 56,             -- 51: jmp(56)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 54: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 54: get_slot_direct(573)
       ops.PHI,                 -- 56: phi
-      ops.SET_SLOT_DIRECT, 509,-- 57: set_slot_direct(509)
+      ops.SET_SLOT_DIRECT, 574,-- 57: set_slot_direct(574)
       ops.PUSH_LOCAL_FRAME,    -- 59: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 60: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 60: get_slot_direct(230)
       ops.DUP,                 -- 62: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 63: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 63: get_slot_direct_check(564)
       ops.SWAP,                -- 65: swap
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 67: get_slot_direct(26)
@@ -15513,21 +17059,21 @@ startup.functions = {
       ops.INVOKE, 1,           -- 71: invoke(1)
       ops.POP,                 -- 73: pop
       ops.PUSH_LOCAL_FRAME,    -- 74: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 75: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 75: get_slot_direct(230)
       ops.DUP,                 -- 77: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 78: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 78: get_slot_direct_check(541)
       ops.SWAP,                -- 80: swap
-      ops.PUSH_LITERAL, 417,   -- 81: push_literal(417)
+      ops.PUSH_LITERAL, 483,   -- 81: push_literal(483)
       ops.PUSH_LOCAL_FRAME,    -- 83: push_local_frame
-      ops.GET_SLOT_DIRECT, 509,-- 84: get_slot_direct(509)
+      ops.GET_SLOT_DIRECT, 574,-- 84: get_slot_direct(574)
       ops.PUSH_LOCAL_FRAME,    -- 86: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 87: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 87: get_slot_direct(573)
       ops.INVOKE, 3,           -- 89: invoke(3)
       ops.POP,                 -- 91: pop
       ops.PUSH_LOCAL_FRAME,    -- 92: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 93: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 93: get_slot_direct(230)
       ops.DUP,                 -- 95: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 96: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 96: get_slot_direct_check(562)
       ops.SWAP,                -- 98: swap
       ops.PUSH_LOCAL_FRAME,    -- 99: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 100: get_slot_direct(26)
@@ -15536,53 +17082,53 @@ startup.functions = {
       ops.POP,                 -- 106: pop
       ops.PUSH_LOCAL_FRAME,    -- 107: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 108: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 110: get_slot_direct(331)
+      ops.GET_SLOT_DIRECT, 399,-- 110: get_slot_direct(399)
       ops.JMP_UNLESS, 158, 158,-- 112: jmp_unless(158,158)
       ops.PUSH_LOCAL_FRAME,    -- 115: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 116: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 116: get_slot_direct(230)
       ops.DUP,                 -- 118: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 119: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 119: get_slot_direct_check(541)
       ops.SWAP,                -- 121: swap
-      ops.PUSH_LITERAL, 415,   -- 122: push_literal(415)
+      ops.PUSH_LITERAL, 481,   -- 122: push_literal(481)
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 125: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 125: get_slot_direct(573)
       ops.INVOKE, 2,           -- 127: invoke(2)
       ops.POP,                 -- 129: pop
       ops.PUSH_LOCAL_FRAME,    -- 130: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 131: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 131: get_slot_direct(230)
       ops.DUP,                 -- 133: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 134: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 134: get_slot_direct_check(555)
       ops.SWAP,                -- 136: swap
       ops.PUSH_LOCAL_FRAME,    -- 137: push_local_frame
-      ops.GET_SLOT_DIRECT, 509,-- 138: get_slot_direct(509)
+      ops.GET_SLOT_DIRECT, 574,-- 138: get_slot_direct(574)
       ops.INVOKE, 1,           -- 140: invoke(1)
       ops.POP,                 -- 142: pop
       ops.PUSH_LOCAL_FRAME,    -- 143: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 144: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 144: get_slot_direct(230)
       ops.DUP,                 -- 146: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 147: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 147: get_slot_direct_check(562)
       ops.SWAP,                -- 149: swap
       ops.PUSH_LOCAL_FRAME,    -- 150: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 151: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 331,-- 153: get_slot_direct(331)
+      ops.GET_SLOT_DIRECT, 399,-- 153: get_slot_direct(399)
       ops.INVOKE, 1,           -- 155: invoke(1)
       ops.POP,                 -- 157: pop
       ops.PHI,                 -- 158: phi
       ops.PUSH_LOCAL_FRAME,    -- 159: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 160: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 160: get_slot_direct(230)
       ops.DUP,                 -- 162: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 163: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 163: get_slot_direct_check(555)
       ops.SWAP,                -- 165: swap
       ops.PUSH_LOCAL_FRAME,    -- 166: push_local_frame
-      ops.GET_SLOT_DIRECT, 508,-- 167: get_slot_direct(508)
+      ops.GET_SLOT_DIRECT, 573,-- 167: get_slot_direct(573)
       ops.INVOKE, 1,           -- 169: invoke(1)
       ops.POP,                 -- 171: pop
       ops.PUSH_LOCAL_FRAME,    -- 172: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 173: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 173: get_slot_direct(230)
       ops.DUP,                 -- 175: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 176: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 176: get_slot_direct_check(541)
       ops.SWAP,                -- 178: swap
-      ops.PUSH_LITERAL, 418,   -- 179: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 179: push_literal(484)
       ops.INVOKE, 1,           -- 181: invoke(1)
       ops.POP,                 -- 183: pop
       ops.PUSH_LITERAL, 0,     -- 184: push_literal(0)
@@ -15591,7 +17137,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 163,
+    id = 172,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -15601,16 +17147,16 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 12: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 14: get_slot_direct(39)
       ops.JMP_UNLESS, 36, 59,  -- 16: jmp_unless(36,59)
       ops.PUSH_LOCAL_FRAME,    -- 19: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 20: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 20: get_slot_direct(230)
       ops.DUP,                 -- 22: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 23: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 23: get_slot_direct_check(564)
       ops.SWAP,                -- 25: swap
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 27: get_slot_direct(26)
@@ -15619,15 +17165,15 @@ startup.functions = {
       ops.POP,                 -- 33: pop
       ops.JMP, 59,             -- 34: jmp(59)
       ops.PUSH_LOCAL_FRAME,    -- 36: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 37: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 37: get_slot_direct(230)
       ops.DUP,                 -- 39: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 40: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 40: get_slot_direct_check(541)
       ops.SWAP,                -- 42: swap
-      ops.PUSH_LITERAL, 403,   -- 43: push_literal(403)
+      ops.PUSH_LITERAL, 469,   -- 43: push_literal(469)
       ops.PUSH_LOCAL_FRAME,    -- 45: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 46: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 46: get_slot_direct(230)
       ops.DUP,                 -- 48: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 49: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 49: get_slot_direct_check(374)
       ops.SWAP,                -- 51: swap
       ops.PUSH_LITERAL, 0,     -- 52: push_literal(0)
       ops.INVOKE, 1,           -- 54: invoke(1)
@@ -15635,25 +17181,25 @@ startup.functions = {
       ops.POP,                 -- 58: pop
       ops.PHI,                 -- 59: phi
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 61: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 61: get_slot_direct(230)
       ops.DUP,                 -- 63: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 64: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 64: get_slot_direct_check(541)
       ops.SWAP,                -- 66: swap
-      ops.PUSH_LITERAL, 360,   -- 67: push_literal(360)
+      ops.PUSH_LITERAL, 427,   -- 67: push_literal(427)
       ops.INVOKE, 1,           -- 69: invoke(1)
       ops.POP,                 -- 71: pop
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 73: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 75: get_slot_direct(473)
+      ops.GET_SLOT_DIRECT, 230,-- 73: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 75: get_slot_direct(539)
       ops.PUSH_LITERAL, 32,    -- 77: push_literal(32)
-      ops.SET_SLOT_DIRECT, 474,-- 79: set_slot_direct(474)
+      ops.SET_SLOT_DIRECT, 540,-- 79: set_slot_direct(540)
       ops.PUSH_LITERAL, 0,     -- 81: push_literal(0)
       ops.RETURN               -- 83: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 164,
+    id = 173,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -15663,18 +17209,18 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 15: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 15: get_slot_direct_check(541)
       ops.SWAP,                -- 17: swap
-      ops.PUSH_LITERAL, 415,   -- 18: push_literal(415)
+      ops.PUSH_LITERAL, 481,   -- 18: push_literal(481)
       ops.PUSH_LOCAL_FRAME,    -- 20: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 21: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 21: get_slot_direct(230)
       ops.DUP,                 -- 23: dup
-      ops.GET_SLOT_DIRECT_CHECK, 491,-- 24: get_slot_direct_check(491)
+      ops.GET_SLOT_DIRECT_CHECK, 557,-- 24: get_slot_direct_check(557)
       ops.SWAP,                -- 26: swap
       ops.INVOKE, 0,           -- 27: invoke(0)
       ops.INVOKE, 2,           -- 29: invoke(2)
@@ -15685,7 +17231,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 165,
+    id = 174,
     nargs = 1,
     max_stack = 5,
     bytecode = {
@@ -15695,75 +17241,75 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 510,-- 14: set_slot_direct(510)
+      ops.SET_SLOT_DIRECT, 575,-- 14: set_slot_direct(575)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 511,-- 19: set_slot_direct(511)
+      ops.SET_SLOT_DIRECT, 576,-- 19: set_slot_direct(576)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 22: push_literal(0)
-      ops.SET_SLOT_DIRECT, 512,-- 24: set_slot_direct(512)
+      ops.SET_SLOT_DIRECT, 577,-- 24: set_slot_direct(577)
       ops.PUSH_LOCAL_FRAME,    -- 26: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 28: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 28: get_slot_direct(230)
       ops.DUP,                 -- 30: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 31: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 31: get_slot_direct_check(554)
       ops.SWAP,                -- 33: swap
       ops.INVOKE, 0,           -- 34: invoke(0)
-      ops.SET_SLOT_DIRECT, 510,-- 36: set_slot_direct(510)
+      ops.SET_SLOT_DIRECT, 575,-- 36: set_slot_direct(575)
       ops.PUSH_LOCAL_FRAME,    -- 38: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 40: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 40: get_slot_direct(230)
       ops.DUP,                 -- 42: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 43: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 43: get_slot_direct_check(554)
       ops.SWAP,                -- 45: swap
       ops.INVOKE, 0,           -- 46: invoke(0)
-      ops.SET_SLOT_DIRECT, 511,-- 48: set_slot_direct(511)
+      ops.SET_SLOT_DIRECT, 576,-- 48: set_slot_direct(576)
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 51: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 52: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 52: get_slot_direct(230)
       ops.DUP,                 -- 54: dup
-      ops.GET_SLOT_DIRECT_CHECK, 488,-- 55: get_slot_direct_check(488)
+      ops.GET_SLOT_DIRECT_CHECK, 554,-- 55: get_slot_direct_check(554)
       ops.SWAP,                -- 57: swap
       ops.INVOKE, 0,           -- 58: invoke(0)
-      ops.SET_SLOT_DIRECT, 512,-- 60: set_slot_direct(512)
+      ops.SET_SLOT_DIRECT, 577,-- 60: set_slot_direct(577)
       ops.PUSH_LOCAL_FRAME,    -- 62: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 63: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 63: get_slot_direct(230)
       ops.DUP,                 -- 65: dup
-      ops.GET_SLOT_DIRECT_CHECK, 493,-- 66: get_slot_direct_check(493)
+      ops.GET_SLOT_DIRECT_CHECK, 559,-- 66: get_slot_direct_check(559)
       ops.SWAP,                -- 68: swap
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
-      ops.GET_SLOT_DIRECT, 512,-- 70: get_slot_direct(512)
+      ops.GET_SLOT_DIRECT, 577,-- 70: get_slot_direct(577)
       ops.INVOKE, 1,           -- 72: invoke(1)
       ops.POP,                 -- 74: pop
       ops.PUSH_LOCAL_FRAME,    -- 75: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 76: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 76: get_slot_direct(230)
       ops.DUP,                 -- 78: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 79: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 79: get_slot_direct_check(541)
       ops.SWAP,                -- 81: swap
-      ops.PUSH_LITERAL, 416,   -- 82: push_literal(416)
+      ops.PUSH_LITERAL, 482,   -- 82: push_literal(482)
       ops.PUSH_LOCAL_FRAME,    -- 84: push_local_frame
-      ops.GET_SLOT_DIRECT, 511,-- 85: get_slot_direct(511)
+      ops.GET_SLOT_DIRECT, 576,-- 85: get_slot_direct(576)
       ops.PUSH_LOCAL_FRAME,    -- 87: push_local_frame
-      ops.GET_SLOT_DIRECT, 512,-- 88: get_slot_direct(512)
+      ops.GET_SLOT_DIRECT, 577,-- 88: get_slot_direct(577)
       ops.INVOKE, 3,           -- 90: invoke(3)
       ops.POP,                 -- 92: pop
       ops.PUSH_LOCAL_FRAME,    -- 93: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 94: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 94: get_slot_direct(230)
       ops.DUP,                 -- 96: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 97: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 97: get_slot_direct_check(555)
       ops.SWAP,                -- 99: swap
       ops.PUSH_LOCAL_FRAME,    -- 100: push_local_frame
-      ops.GET_SLOT_DIRECT, 510,-- 101: get_slot_direct(510)
+      ops.GET_SLOT_DIRECT, 575,-- 101: get_slot_direct(575)
       ops.INVOKE, 1,           -- 103: invoke(1)
       ops.POP,                 -- 105: pop
       ops.PUSH_LOCAL_FRAME,    -- 106: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 107: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 107: get_slot_direct(230)
       ops.DUP,                 -- 109: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 110: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 110: get_slot_direct_check(562)
       ops.SWAP,                -- 112: swap
       ops.PUSH_LOCAL_FRAME,    -- 113: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 114: get_slot_direct(26)
@@ -15771,26 +17317,26 @@ startup.functions = {
       ops.INVOKE, 1,           -- 118: invoke(1)
       ops.POP,                 -- 120: pop
       ops.PUSH_LOCAL_FRAME,    -- 121: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 122: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 122: get_slot_direct(230)
       ops.DUP,                 -- 124: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 125: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 125: get_slot_direct_check(555)
       ops.SWAP,                -- 127: swap
       ops.PUSH_LOCAL_FRAME,    -- 128: push_local_frame
-      ops.GET_SLOT_DIRECT, 511,-- 129: get_slot_direct(511)
+      ops.GET_SLOT_DIRECT, 576,-- 129: get_slot_direct(576)
       ops.INVOKE, 1,           -- 131: invoke(1)
       ops.POP,                 -- 133: pop
       ops.PUSH_LOCAL_FRAME,    -- 134: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 135: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 135: get_slot_direct(230)
       ops.DUP,                 -- 137: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 138: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 138: get_slot_direct_check(541)
       ops.SWAP,                -- 140: swap
-      ops.PUSH_LITERAL, 418,   -- 141: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 141: push_literal(484)
       ops.INVOKE, 1,           -- 143: invoke(1)
       ops.POP,                 -- 145: pop
       ops.PUSH_LOCAL_FRAME,    -- 146: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 147: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 147: get_slot_direct(230)
       ops.DUP,                 -- 149: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 150: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 150: get_slot_direct_check(564)
       ops.SWAP,                -- 152: swap
       ops.PUSH_LOCAL_FRAME,    -- 153: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 154: get_slot_direct(26)
@@ -15798,46 +17344,46 @@ startup.functions = {
       ops.INVOKE, 1,           -- 158: invoke(1)
       ops.POP,                 -- 160: pop
       ops.PUSH_LOCAL_FRAME,    -- 161: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 162: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 162: get_slot_direct(230)
       ops.DUP,                 -- 164: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 165: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 165: get_slot_direct_check(541)
       ops.SWAP,                -- 167: swap
-      ops.PUSH_LITERAL, 424,   -- 168: push_literal(424)
+      ops.PUSH_LITERAL, 490,   -- 168: push_literal(490)
       ops.INVOKE, 1,           -- 170: invoke(1)
       ops.POP,                 -- 172: pop
       ops.PUSH_LOCAL_FRAME,    -- 173: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 174: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 174: get_slot_direct(230)
       ops.DUP,                 -- 176: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 177: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 177: get_slot_direct_check(541)
       ops.SWAP,                -- 179: swap
-      ops.PUSH_LITERAL, 417,   -- 180: push_literal(417)
+      ops.PUSH_LITERAL, 483,   -- 180: push_literal(483)
       ops.PUSH_LOCAL_FRAME,    -- 182: push_local_frame
-      ops.GET_SLOT_DIRECT, 510,-- 183: get_slot_direct(510)
+      ops.GET_SLOT_DIRECT, 575,-- 183: get_slot_direct(575)
       ops.PUSH_LOCAL_FRAME,    -- 185: push_local_frame
-      ops.GET_SLOT_DIRECT, 512,-- 186: get_slot_direct(512)
+      ops.GET_SLOT_DIRECT, 577,-- 186: get_slot_direct(577)
       ops.INVOKE, 3,           -- 188: invoke(3)
       ops.POP,                 -- 190: pop
       ops.PUSH_LOCAL_FRAME,    -- 191: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 192: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 192: get_slot_direct(230)
       ops.DUP,                 -- 194: dup
-      ops.GET_SLOT_DIRECT_CHECK, 489,-- 195: get_slot_direct_check(489)
+      ops.GET_SLOT_DIRECT_CHECK, 555,-- 195: get_slot_direct_check(555)
       ops.SWAP,                -- 197: swap
       ops.PUSH_LOCAL_FRAME,    -- 198: push_local_frame
-      ops.GET_SLOT_DIRECT, 512,-- 199: get_slot_direct(512)
+      ops.GET_SLOT_DIRECT, 577,-- 199: get_slot_direct(577)
       ops.INVOKE, 1,           -- 201: invoke(1)
       ops.POP,                 -- 203: pop
       ops.PUSH_LOCAL_FRAME,    -- 204: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 205: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 205: get_slot_direct(230)
       ops.DUP,                 -- 207: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 208: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 208: get_slot_direct_check(541)
       ops.SWAP,                -- 210: swap
-      ops.PUSH_LITERAL, 418,   -- 211: push_literal(418)
+      ops.PUSH_LITERAL, 484,   -- 211: push_literal(484)
       ops.INVOKE, 1,           -- 213: invoke(1)
       ops.POP,                 -- 215: pop
       ops.PUSH_LOCAL_FRAME,    -- 216: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 217: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 217: get_slot_direct(230)
       ops.DUP,                 -- 219: dup
-      ops.GET_SLOT_DIRECT_CHECK, 492,-- 220: get_slot_direct_check(492)
+      ops.GET_SLOT_DIRECT_CHECK, 558,-- 220: get_slot_direct_check(558)
       ops.SWAP,                -- 222: swap
       ops.INVOKE, 0,           -- 223: invoke(0)
       ops.POP,                 -- 225: pop
@@ -15847,7 +17393,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 166,
+    id = 175,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -15857,26 +17403,26 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 12: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 12: get_slot_direct(230)
       ops.DUP,                 -- 14: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 15: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 15: get_slot_direct_check(541)
       ops.SWAP,                -- 17: swap
-      ops.PUSH_LITERAL, 402,   -- 18: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 18: push_literal(468)
       ops.INVOKE, 1,           -- 20: invoke(1)
       ops.POP,                 -- 22: pop
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 24: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 24: get_slot_direct(230)
       ops.DUP,                 -- 26: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 27: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 27: get_slot_direct_check(541)
       ops.SWAP,                -- 29: swap
-      ops.PUSH_LITERAL, 407,   -- 30: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 30: push_literal(473)
       ops.PUSH_LOCAL_FRAME,    -- 32: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 33: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 33: get_slot_direct(230)
       ops.DUP,                 -- 35: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 36: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 36: get_slot_direct_check(374)
       ops.SWAP,                -- 38: swap
       ops.PUSH_LITERAL, 26,    -- 39: push_literal(26)
       ops.INVOKE, 1,           -- 41: invoke(1)
@@ -15888,7 +17434,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 167,
+    id = 176,
     nargs = 1,
     max_stack = 7,
     bytecode = {
@@ -15898,54 +17444,54 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 513,-- 14: set_slot_direct(513)
+      ops.SET_SLOT_DIRECT, 578,-- 14: set_slot_direct(578)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 17: push_literal(0)
-      ops.SET_SLOT_DIRECT, 514,-- 19: set_slot_direct(514)
+      ops.SET_SLOT_DIRECT, 579,-- 19: set_slot_direct(579)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 22: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 19, -- 24: get_slot_direct(19)
       ops.JMP_UNLESS, 124, 124,-- 26: jmp_unless(124,124)
       ops.PUSH_FRAME,          -- 29: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 30: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 30: get_slot_direct(230)
       ops.DUP,                 -- 32: dup
-      ops.GET_SLOT_DIRECT_CHECK, 498,-- 33: get_slot_direct_check(498)
+      ops.GET_SLOT_DIRECT_CHECK, 564,-- 33: get_slot_direct_check(564)
       ops.SWAP,                -- 35: swap
       ops.NEW_OBJECT,          -- 36: new_object
       ops.DUP,                 -- 37: dup
-      ops.PUSH_LITERAL, 324,   -- 38: push_literal(324)
-      ops.SET_SLOT_DIRECT, 215,-- 40: set_slot_direct(215)
+      ops.PUSH_LITERAL, 392,   -- 38: push_literal(392)
+      ops.SET_SLOT_DIRECT, 224,-- 40: set_slot_direct(224)
       ops.DUP,                 -- 42: dup
-      ops.PUSH_LITERAL, 315,   -- 43: push_literal(315)
-      ops.SET_SLOT_DIRECT, 290,-- 45: set_slot_direct(290)
+      ops.PUSH_LITERAL, 386,   -- 43: push_literal(386)
+      ops.SET_SLOT_DIRECT, 363,-- 45: set_slot_direct(363)
       ops.DUP,                 -- 47: dup
       ops.NEW_OBJECT,          -- 48: new_object
       ops.DUP,                 -- 49: dup
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 51: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 19, -- 53: get_slot_direct(19)
-      ops.SET_SLOT_DIRECT, 215,-- 55: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 55: set_slot_direct(224)
       ops.DUP,                 -- 57: dup
       ops.PUSH_LITERAL, 19,    -- 58: push_literal(19)
-      ops.SET_SLOT_DIRECT, 290,-- 60: set_slot_direct(290)
+      ops.SET_SLOT_DIRECT, 363,-- 60: set_slot_direct(363)
       ops.DUP,                 -- 62: dup
       ops.PUSH_LOCAL_FRAME,    -- 63: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 64: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 255,-- 66: get_slot_direct(255)
-      ops.SET_SLOT_DIRECT, 255,-- 68: set_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 66: get_slot_direct(328)
+      ops.SET_SLOT_DIRECT, 328,-- 68: set_slot_direct(328)
       ops.SET_SLOT_DIRECT, 39, -- 70: set_slot_direct(39)
       ops.DUP,                 -- 72: dup
       ops.NEW_OBJECT,          -- 73: new_object
       ops.DUP,                 -- 74: dup
       ops.PUSH_LITERAL, 25,    -- 75: push_literal(25)
-      ops.SET_SLOT_DIRECT, 215,-- 77: set_slot_direct(215)
+      ops.SET_SLOT_DIRECT, 224,-- 77: set_slot_direct(224)
       ops.DUP,                 -- 79: dup
       ops.PUSH_LITERAL, 25,    -- 80: push_literal(25)
-      ops.SET_SLOT_DIRECT, 290,-- 82: set_slot_direct(290)
+      ops.SET_SLOT_DIRECT, 363,-- 82: set_slot_direct(363)
       ops.DUP,                 -- 84: dup
       ops.PUSH_LOCAL_FRAME,    -- 85: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 86: get_slot_direct(26)
@@ -15959,13 +17505,13 @@ startup.functions = {
       ops.DUP,                 -- 100: dup
       ops.PUSH_LOCAL_FRAME,    -- 101: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 102: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 355,-- 104: get_slot_direct(355)
-      ops.SET_SLOT_DIRECT, 355,-- 106: set_slot_direct(355)
+      ops.GET_SLOT_DIRECT, 423,-- 104: get_slot_direct(423)
+      ops.SET_SLOT_DIRECT, 423,-- 106: set_slot_direct(423)
       ops.DUP,                 -- 108: dup
       ops.PUSH_LOCAL_FRAME,    -- 109: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 110: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 19, -- 112: get_slot_direct(19)
-      ops.SET_SLOT_DIRECT, 503,-- 114: set_slot_direct(503)
+      ops.SET_SLOT_DIRECT, 568,-- 114: set_slot_direct(568)
       ops.SET_SLOT_DIRECT, 40, -- 116: set_slot_direct(40)
       ops.INVOKE, 1,           -- 118: invoke(1)
       ops.POP,                 -- 120: pop
@@ -15974,94 +17520,94 @@ startup.functions = {
       ops.PHI,                 -- 124: phi
       ops.PUSH_LOCAL_FRAME,    -- 125: push_local_frame
       ops.PUSH_FRAME,          -- 126: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 127: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 129: get_slot_direct(473)
-      ops.SET_SLOT_DIRECT, 513,-- 131: set_slot_direct(513)
+      ops.GET_SLOT_DIRECT, 230,-- 127: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 129: get_slot_direct(539)
+      ops.SET_SLOT_DIRECT, 578,-- 131: set_slot_direct(578)
       ops.PUSH_LOCAL_FRAME,    -- 133: push_local_frame
       ops.PUSH_FRAME,          -- 134: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 135: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 135: get_slot_direct(230)
       ops.DUP,                 -- 137: dup
-      ops.GET_SLOT_DIRECT_CHECK, 406,-- 138: get_slot_direct_check(406)
+      ops.GET_SLOT_DIRECT_CHECK, 472,-- 138: get_slot_direct_check(472)
       ops.SWAP,                -- 140: swap
       ops.PUSH_LOCAL_FRAME,    -- 141: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 142: get_slot_direct(26)
       ops.GET_SLOT_DIRECT, 39, -- 144: get_slot_direct(39)
       ops.GET_SLOT_DIRECT, 55, -- 146: get_slot_direct(55)
       ops.INVOKE, 1,           -- 148: invoke(1)
-      ops.SET_SLOT_DIRECT, 514,-- 150: set_slot_direct(514)
+      ops.SET_SLOT_DIRECT, 579,-- 150: set_slot_direct(579)
       ops.PUSH_LOCAL_FRAME,    -- 152: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 153: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 503,-- 155: get_slot_direct(503)
+      ops.GET_SLOT_DIRECT, 568,-- 155: get_slot_direct(568)
       ops.JMP_UNLESS, 170, 170,-- 157: jmp_unless(170,170)
       ops.PUSH_LOCAL_FRAME,    -- 160: push_local_frame
-      ops.GET_SLOT_DIRECT, 514,-- 161: get_slot_direct(514)
+      ops.GET_SLOT_DIRECT, 579,-- 161: get_slot_direct(579)
       ops.PUSH_LOCAL_FRAME,    -- 163: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 164: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 503,-- 166: get_slot_direct(503)
+      ops.GET_SLOT_DIRECT, 568,-- 166: get_slot_direct(568)
       ops.SET_SLOT_DIRECT, 19, -- 168: set_slot_direct(19)
       ops.PHI,                 -- 170: phi
       ops.PUSH_FRAME,          -- 171: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 172: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 172: get_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 174: push_local_frame
-      ops.GET_SLOT_DIRECT, 514,-- 175: get_slot_direct(514)
-      ops.SET_SLOT_DIRECT, 473,-- 177: set_slot_direct(473)
+      ops.GET_SLOT_DIRECT, 579,-- 175: get_slot_direct(579)
+      ops.SET_SLOT_DIRECT, 539,-- 177: set_slot_direct(539)
       ops.PUSH_FRAME,          -- 179: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 180: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 182: get_slot_direct(473)
+      ops.GET_SLOT_DIRECT, 230,-- 180: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 182: get_slot_direct(539)
       ops.PUSH_LITERAL, 118,   -- 184: push_literal(118)
-      ops.SET_SLOT_DIRECT, 474,-- 186: set_slot_direct(474)
+      ops.SET_SLOT_DIRECT, 540,-- 186: set_slot_direct(540)
       ops.PUSH_FRAME,          -- 188: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 189: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 189: get_slot_direct(230)
       ops.DUP,                 -- 191: dup
-      ops.GET_SLOT_DIRECT, 255,-- 192: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 192: get_slot_direct(328)
       ops.PUSH_LITERAL, 31,    -- 194: push_literal(31)
       ops.BI_ADD,              -- 196: bi_add
-      ops.SET_SLOT_DIRECT, 255,-- 197: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 197: set_slot_direct(328)
       ops.PUSH_LOCAL_FRAME,    -- 199: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 200: get_slot_direct(26)
-      ops.GET_SLOT_DIRECT, 355,-- 202: get_slot_direct(355)
+      ops.GET_SLOT_DIRECT, 423,-- 202: get_slot_direct(423)
       ops.JMP_UNLESS, 277, 277,-- 204: jmp_unless(277,277)
       ops.PUSH_FRAME,          -- 207: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 208: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 208: get_slot_direct(230)
       ops.DUP,                 -- 210: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 211: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 211: get_slot_direct_check(541)
       ops.SWAP,                -- 213: swap
-      ops.PUSH_LITERAL, 401,   -- 214: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 214: push_literal(467)
       ops.INVOKE, 1,           -- 216: invoke(1)
       ops.POP,                 -- 218: pop
       ops.PUSH_FRAME,          -- 219: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 220: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 220: get_slot_direct(230)
       ops.DUP,                 -- 222: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 223: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 223: get_slot_direct_check(541)
       ops.SWAP,                -- 225: swap
-      ops.PUSH_LITERAL, 402,   -- 226: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 226: push_literal(468)
       ops.INVOKE, 1,           -- 228: invoke(1)
       ops.POP,                 -- 230: pop
       ops.PUSH_FRAME,          -- 231: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 232: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 232: get_slot_direct(230)
       ops.DUP,                 -- 234: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 235: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 235: get_slot_direct_check(541)
       ops.SWAP,                -- 237: swap
-      ops.PUSH_LITERAL, 407,   -- 238: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 238: push_literal(473)
       ops.PUSH_FRAME,          -- 240: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 241: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 241: get_slot_direct(230)
       ops.DUP,                 -- 243: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 244: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 244: get_slot_direct_check(374)
       ops.SWAP,                -- 246: swap
       ops.PUSH_LITERAL, 17,    -- 247: push_literal(17)
       ops.INVOKE, 1,           -- 249: invoke(1)
       ops.INVOKE, 2,           -- 251: invoke(2)
       ops.POP,                 -- 253: pop
       ops.PUSH_FRAME,          -- 254: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 255: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 255: get_slot_direct(230)
       ops.DUP,                 -- 257: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 258: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 258: get_slot_direct_check(541)
       ops.SWAP,                -- 260: swap
-      ops.PUSH_LITERAL, 410,   -- 261: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 261: push_literal(476)
       ops.PUSH_FRAME,          -- 263: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 264: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 264: get_slot_direct(230)
       ops.DUP,                 -- 266: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 267: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 267: get_slot_direct_check(374)
       ops.SWAP,                -- 269: swap
       ops.PUSH_LITERAL, 17,    -- 270: push_literal(17)
       ops.INVOKE, 1,           -- 272: invoke(1)
@@ -16076,23 +17622,23 @@ startup.functions = {
       ops.BI_GT,               -- 287: bi_gt
       ops.JMP_UNLESS, 352, 352,-- 288: jmp_unless(352,352)
       ops.PUSH_FRAME,          -- 291: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 292: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 292: get_slot_direct(230)
       ops.DUP,                 -- 294: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 295: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 295: get_slot_direct_check(541)
       ops.SWAP,                -- 297: swap
-      ops.PUSH_LITERAL, 402,   -- 298: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 298: push_literal(468)
       ops.INVOKE, 1,           -- 300: invoke(1)
       ops.POP,                 -- 302: pop
       ops.PUSH_FRAME,          -- 303: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 304: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 304: get_slot_direct(230)
       ops.DUP,                 -- 306: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 307: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 307: get_slot_direct_check(541)
       ops.SWAP,                -- 309: swap
-      ops.PUSH_LITERAL, 407,   -- 310: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 310: push_literal(473)
       ops.PUSH_FRAME,          -- 312: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 313: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 313: get_slot_direct(230)
       ops.DUP,                 -- 315: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 316: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 316: get_slot_direct_check(374)
       ops.SWAP,                -- 318: swap
       ops.PUSH_LITERAL, 17,    -- 319: push_literal(17)
       ops.INVOKE, 1,           -- 321: invoke(1)
@@ -16104,22 +17650,22 @@ startup.functions = {
       ops.DUP,                 -- 331: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 332: get_slot_direct_check(94)
       ops.SWAP,                -- 334: swap
-      ops.NEW_FUNCTION, 168,   -- 335: new_function(168)
+      ops.NEW_FUNCTION, 177,   -- 335: new_function(177)
       ops.INVOKE, 1,           -- 337: invoke(1)
       ops.POP,                 -- 339: pop
       ops.PUSH_FRAME,          -- 340: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 341: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 341: get_slot_direct(230)
       ops.DUP,                 -- 343: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 344: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 344: get_slot_direct_check(541)
       ops.SWAP,                -- 346: swap
       ops.PUSH_LITERAL, 71,    -- 347: push_literal(71)
       ops.INVOKE, 1,           -- 349: invoke(1)
       ops.POP,                 -- 351: pop
       ops.PHI,                 -- 352: phi
       ops.PUSH_FRAME,          -- 353: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 354: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 354: get_slot_direct(230)
       ops.DUP,                 -- 356: dup
-      ops.GET_SLOT_DIRECT_CHECK, 497,-- 357: get_slot_direct_check(497)
+      ops.GET_SLOT_DIRECT_CHECK, 563,-- 357: get_slot_direct_check(563)
       ops.SWAP,                -- 359: swap
       ops.PUSH_LOCAL_FRAME,    -- 360: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 361: get_slot_direct(26)
@@ -16127,46 +17673,46 @@ startup.functions = {
       ops.INVOKE, 1,           -- 365: invoke(1)
       ops.POP,                 -- 367: pop
       ops.PUSH_FRAME,          -- 368: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 369: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 371: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 474,-- 373: get_slot_direct(474)
+      ops.GET_SLOT_DIRECT, 230,-- 369: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 371: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 540,-- 373: get_slot_direct(540)
       ops.JMP_UNLESS, 399, 399,-- 375: jmp_unless(399,399)
       ops.PUSH_FRAME,          -- 378: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 379: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 379: get_slot_direct(230)
       ops.DUP,                 -- 381: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 382: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 382: get_slot_direct_check(562)
       ops.SWAP,                -- 384: swap
       ops.NEW_OBJECT,          -- 385: new_object
       ops.DUP,                 -- 386: dup
-      ops.PUSH_LITERAL, 360,   -- 387: push_literal(360)
-      ops.SET_SLOT_DIRECT, 215,-- 389: set_slot_direct(215)
+      ops.PUSH_LITERAL, 427,   -- 387: push_literal(427)
+      ops.SET_SLOT_DIRECT, 224,-- 389: set_slot_direct(224)
       ops.DUP,                 -- 391: dup
-      ops.PUSH_LITERAL, 266,   -- 392: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 394: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 392: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 394: set_slot_direct(363)
       ops.INVOKE, 1,           -- 396: invoke(1)
       ops.POP,                 -- 398: pop
       ops.PHI,                 -- 399: phi
       ops.PUSH_FRAME,          -- 400: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 401: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 401: get_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 403: push_local_frame
-      ops.GET_SLOT_DIRECT, 513,-- 404: get_slot_direct(513)
-      ops.SET_SLOT_DIRECT, 473,-- 406: set_slot_direct(473)
+      ops.GET_SLOT_DIRECT, 578,-- 404: get_slot_direct(578)
+      ops.SET_SLOT_DIRECT, 539,-- 406: set_slot_direct(539)
       ops.PUSH_FRAME,          -- 408: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 409: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 409: get_slot_direct(230)
       ops.DUP,                 -- 411: dup
-      ops.GET_SLOT_DIRECT, 255,-- 412: get_slot_direct(255)
+      ops.GET_SLOT_DIRECT, 328,-- 412: get_slot_direct(328)
       ops.PUSH_LITERAL, 31,    -- 414: push_literal(31)
       ops.BI_SUB,              -- 416: bi_sub
-      ops.SET_SLOT_DIRECT, 255,-- 417: set_slot_direct(255)
+      ops.SET_SLOT_DIRECT, 328,-- 417: set_slot_direct(328)
       ops.PUSH_FRAME,          -- 419: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 420: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 420: get_slot_direct(230)
       ops.DUP,                 -- 422: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 423: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 423: get_slot_direct_check(541)
       ops.SWAP,                -- 425: swap
-      ops.PUSH_LITERAL, 406,   -- 426: push_literal(406)
+      ops.PUSH_LITERAL, 472,   -- 426: push_literal(472)
       ops.PUSH_LOCAL_FRAME,    -- 428: push_local_frame
-      ops.GET_SLOT_DIRECT, 514,-- 429: get_slot_direct(514)
-      ops.GET_SLOT_DIRECT, 295,-- 431: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 579,-- 429: get_slot_direct(579)
+      ops.GET_SLOT_DIRECT, 368,-- 431: get_slot_direct(368)
       ops.INVOKE, 2,           -- 433: invoke(2)
       ops.POP,                 -- 435: pop
       ops.PUSH_LITERAL, 0,     -- 436: push_literal(0)
@@ -16175,7 +17721,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 168,
+    id = 177,
     nargs = 2,
     max_stack = 6,
     bytecode = {
@@ -16194,35 +17740,35 @@ startup.functions = {
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 500,-- 21: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 21: set_slot_direct(201)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 24: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 25: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 255,-- 27: get_slot_direct(255)
-      ops.GET_SLOT_DIRECT, 286,-- 29: get_slot_direct(286)
+      ops.GET_SLOT_DIRECT, 328,-- 27: get_slot_direct(328)
+      ops.GET_SLOT_DIRECT, 359,-- 29: get_slot_direct(359)
       ops.PUSH_LOCAL_FRAME,    -- 31: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 32: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 215,-- 34: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 34: get_slot_direct(224)
       ops.GET_SLOT_INDIRECT,   -- 36: get_slot_indirect
-      ops.SET_SLOT_DIRECT, 500,-- 37: set_slot_direct(500)
+      ops.SET_SLOT_DIRECT, 201,-- 37: set_slot_direct(201)
       ops.PUSH_FRAME,          -- 39: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 40: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 40: get_slot_direct(230)
       ops.DUP,                 -- 42: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 43: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 43: get_slot_direct_check(541)
       ops.SWAP,                -- 45: swap
-      ops.PUSH_LITERAL, 419,   -- 46: push_literal(419)
+      ops.PUSH_LITERAL, 485,   -- 46: push_literal(485)
       ops.INVOKE, 1,           -- 48: invoke(1)
       ops.POP,                 -- 50: pop
       ops.PUSH_FRAME,          -- 51: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 52: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 52: get_slot_direct(230)
       ops.DUP,                 -- 54: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 55: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 55: get_slot_direct_check(541)
       ops.SWAP,                -- 57: swap
-      ops.PUSH_LITERAL, 407,   -- 58: push_literal(407)
+      ops.PUSH_LITERAL, 473,   -- 58: push_literal(473)
       ops.PUSH_FRAME,          -- 60: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 61: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 61: get_slot_direct(230)
       ops.DUP,                 -- 63: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 64: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 64: get_slot_direct_check(374)
       ops.SWAP,                -- 66: swap
       ops.PUSH_LOCAL_FRAME,    -- 67: push_local_frame
       ops.GET_SLOT_DIRECT, 53, -- 68: get_slot_direct(53)
@@ -16230,41 +17776,41 @@ startup.functions = {
       ops.INVOKE, 2,           -- 72: invoke(2)
       ops.POP,                 -- 74: pop
       ops.PUSH_FRAME,          -- 75: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 76: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 76: get_slot_direct(230)
       ops.DUP,                 -- 78: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 79: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 79: get_slot_direct_check(541)
       ops.SWAP,                -- 81: swap
       ops.PUSH_LOCAL_FRAME,    -- 82: push_local_frame
-      ops.GET_SLOT_DIRECT, 500,-- 83: get_slot_direct(500)
+      ops.GET_SLOT_DIRECT, 201,-- 83: get_slot_direct(201)
       ops.JMP_UNLESS, 92, 94,  -- 85: jmp_unless(92,94)
-      ops.PUSH_LITERAL, 401,   -- 88: push_literal(401)
+      ops.PUSH_LITERAL, 467,   -- 88: push_literal(467)
       ops.JMP, 94,             -- 90: jmp(94)
-      ops.PUSH_LITERAL, 402,   -- 92: push_literal(402)
+      ops.PUSH_LITERAL, 468,   -- 92: push_literal(468)
       ops.PHI,                 -- 94: phi
       ops.INVOKE, 1,           -- 95: invoke(1)
       ops.POP,                 -- 97: pop
       ops.PUSH_FRAME,          -- 98: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 99: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 99: get_slot_direct(230)
       ops.DUP,                 -- 101: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 102: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 102: get_slot_direct_check(541)
       ops.SWAP,                -- 104: swap
-      ops.PUSH_LITERAL, 423,   -- 105: push_literal(423)
+      ops.PUSH_LITERAL, 489,   -- 105: push_literal(489)
       ops.INVOKE, 1,           -- 107: invoke(1)
       ops.POP,                 -- 109: pop
       ops.PUSH_FRAME,          -- 110: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 111: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 111: get_slot_direct(230)
       ops.DUP,                 -- 113: dup
-      ops.GET_SLOT_DIRECT_CHECK, 475,-- 114: get_slot_direct_check(475)
+      ops.GET_SLOT_DIRECT_CHECK, 541,-- 114: get_slot_direct_check(541)
       ops.SWAP,                -- 116: swap
-      ops.PUSH_LITERAL, 410,   -- 117: push_literal(410)
+      ops.PUSH_LITERAL, 476,   -- 117: push_literal(476)
       ops.PUSH_FRAME,          -- 119: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 120: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 120: get_slot_direct(230)
       ops.DUP,                 -- 122: dup
-      ops.GET_SLOT_DIRECT_CHECK, 301,-- 123: get_slot_direct_check(301)
+      ops.GET_SLOT_DIRECT_CHECK, 374,-- 123: get_slot_direct_check(374)
       ops.SWAP,                -- 125: swap
       ops.PUSH_LOCAL_FRAME,    -- 126: push_local_frame
       ops.GET_SLOT_DIRECT, 87, -- 127: get_slot_direct(87)
-      ops.GET_SLOT_DIRECT, 215,-- 129: get_slot_direct(215)
+      ops.GET_SLOT_DIRECT, 224,-- 129: get_slot_direct(224)
       ops.INVOKE, 1,           -- 131: invoke(1)
       ops.INVOKE, 2,           -- 133: invoke(2)
       ops.POP,                 -- 135: pop
@@ -16274,7 +17820,7 @@ startup.functions = {
   },
   ifunc.Function:new{ -- "bcompile"
     name = jsval.newString("bcompile"),
-    id = 169,
+    id = 178,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -16284,89 +17830,89 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 515,-- 8: set_slot_direct(515)
+      ops.SET_SLOT_DIRECT, 580,-- 8: set_slot_direct(580)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 460,-- 15: set_slot_direct(460)
+      ops.SET_SLOT_DIRECT, 526,-- 15: set_slot_direct(526)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 370,-- 21: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 21: set_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 23: push_local_frame
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 456,-- 25: get_slot_direct(456)
+      ops.GET_SLOT_DIRECT, 522,-- 25: get_slot_direct(522)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 28: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 30: push_local_frame
-      ops.GET_SLOT_DIRECT, 460,-- 31: get_slot_direct(460)
+      ops.GET_SLOT_DIRECT, 526,-- 31: get_slot_direct(526)
       ops.INVOKE, 1,           -- 33: invoke(1)
-      ops.SET_SLOT_DIRECT, 370,-- 35: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 35: set_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 37: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 38: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 38: get_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 41: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 41: get_slot_direct(230)
       ops.DUP,                 -- 43: dup
-      ops.GET_SLOT_DIRECT_CHECK, 406,-- 44: get_slot_direct_check(406)
+      ops.GET_SLOT_DIRECT_CHECK, 472,-- 44: get_slot_direct_check(472)
       ops.SWAP,                -- 46: swap
       ops.PUSH_LITERAL, 18,    -- 47: push_literal(18)
       ops.INVOKE, 1,           -- 49: invoke(1)
-      ops.SET_SLOT_DIRECT, 473,-- 51: set_slot_direct(473)
+      ops.SET_SLOT_DIRECT, 539,-- 51: set_slot_direct(539)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 54: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 54: get_slot_direct(230)
       ops.DUP,                 -- 56: dup
-      ops.GET_SLOT_DIRECT_CHECK, 497,-- 57: get_slot_direct_check(497)
+      ops.GET_SLOT_DIRECT_CHECK, 563,-- 57: get_slot_direct_check(563)
       ops.SWAP,                -- 59: swap
       ops.PUSH_LOCAL_FRAME,    -- 60: push_local_frame
-      ops.GET_SLOT_DIRECT, 515,-- 61: get_slot_direct(515)
+      ops.GET_SLOT_DIRECT, 580,-- 61: get_slot_direct(580)
       ops.INVOKE, 1,           -- 63: invoke(1)
       ops.POP,                 -- 65: pop
       ops.PUSH_LOCAL_FRAME,    -- 66: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 67: get_slot_direct(370)
-      ops.GET_SLOT_DIRECT, 473,-- 69: get_slot_direct(473)
-      ops.GET_SLOT_DIRECT, 474,-- 71: get_slot_direct(474)
+      ops.GET_SLOT_DIRECT, 230,-- 67: get_slot_direct(230)
+      ops.GET_SLOT_DIRECT, 539,-- 69: get_slot_direct(539)
+      ops.GET_SLOT_DIRECT, 540,-- 71: get_slot_direct(540)
       ops.JMP_UNLESS, 97, 97,  -- 73: jmp_unless(97,97)
       ops.PUSH_LOCAL_FRAME,    -- 76: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 77: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 77: get_slot_direct(230)
       ops.DUP,                 -- 79: dup
-      ops.GET_SLOT_DIRECT_CHECK, 496,-- 80: get_slot_direct_check(496)
+      ops.GET_SLOT_DIRECT_CHECK, 562,-- 80: get_slot_direct_check(562)
       ops.SWAP,                -- 82: swap
       ops.NEW_OBJECT,          -- 83: new_object
       ops.DUP,                 -- 84: dup
-      ops.PUSH_LITERAL, 360,   -- 85: push_literal(360)
-      ops.SET_SLOT_DIRECT, 215,-- 87: set_slot_direct(215)
+      ops.PUSH_LITERAL, 427,   -- 85: push_literal(427)
+      ops.SET_SLOT_DIRECT, 224,-- 87: set_slot_direct(224)
       ops.DUP,                 -- 89: dup
-      ops.PUSH_LITERAL, 266,   -- 90: push_literal(266)
-      ops.SET_SLOT_DIRECT, 290,-- 92: set_slot_direct(290)
+      ops.PUSH_LITERAL, 339,   -- 90: push_literal(339)
+      ops.SET_SLOT_DIRECT, 363,-- 92: set_slot_direct(363)
       ops.INVOKE, 1,           -- 94: invoke(1)
       ops.POP,                 -- 96: pop
       ops.PHI,                 -- 97: phi
       ops.PUSH_LOCAL_FRAME,    -- 98: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 99: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 99: get_slot_direct(230)
       ops.DUP,                 -- 101: dup
-      ops.GET_SLOT_DIRECT_CHECK, 494,-- 102: get_slot_direct_check(494)
+      ops.GET_SLOT_DIRECT_CHECK, 560,-- 102: get_slot_direct_check(560)
       ops.SWAP,                -- 104: swap
       ops.INVOKE, 0,           -- 105: invoke(0)
       ops.POP,                 -- 107: pop
       ops.PUSH_LOCAL_FRAME,    -- 108: push_local_frame
-      ops.GET_SLOT_DIRECT, 370,-- 109: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 109: get_slot_direct(230)
       ops.RETURN               -- 111: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 170,
+    id = 179,
     nargs = 0,
     max_stack = 1,
     bytecode = {
-      ops.PUSH_LITERAL, 518,   -- 0: push_literal(518)
+      ops.PUSH_LITERAL, 583,   -- 0: push_literal(583)
       ops.RETURN               -- 2: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 171,
+    id = 180,
     nargs = 5,
     max_stack = 3,
     bytecode = {
@@ -16376,46 +17922,46 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_FRAME,          -- 6: push_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 252,-- 8: set_slot_direct(252)
+      ops.SET_SLOT_DIRECT, 325,-- 8: set_slot_direct(325)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_FRAME,          -- 13: push_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 450,-- 15: set_slot_direct(450)
+      ops.SET_SLOT_DIRECT, 516,-- 15: set_slot_direct(516)
       ops.DUP,                 -- 17: dup
       ops.GET_SLOT_DIRECT, 136,-- 18: get_slot_direct(136)
       ops.PUSH_FRAME,          -- 20: push_frame
       ops.SWAP,                -- 21: swap
-      ops.SET_SLOT_DIRECT, 520,-- 22: set_slot_direct(520)
+      ops.SET_SLOT_DIRECT, 585,-- 22: set_slot_direct(585)
       ops.DUP,                 -- 24: dup
       ops.GET_SLOT_DIRECT, 159,-- 25: get_slot_direct(159)
       ops.PUSH_FRAME,          -- 27: push_frame
       ops.SWAP,                -- 28: swap
-      ops.SET_SLOT_DIRECT, 441,-- 29: set_slot_direct(441)
+      ops.SET_SLOT_DIRECT, 507,-- 29: set_slot_direct(507)
       ops.DUP,                 -- 31: dup
       ops.GET_SLOT_DIRECT, 162,-- 32: get_slot_direct(162)
       ops.PUSH_FRAME,          -- 34: push_frame
       ops.SWAP,                -- 35: swap
-      ops.SET_SLOT_DIRECT, 521,-- 36: set_slot_direct(521)
+      ops.SET_SLOT_DIRECT, 586,-- 36: set_slot_direct(586)
       ops.POP,                 -- 38: pop
       ops.PUSH_LOCAL_FRAME,    -- 39: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 40: push_literal(0)
-      ops.SET_SLOT_DIRECT, 519,-- 42: set_slot_direct(519)
+      ops.SET_SLOT_DIRECT, 584,-- 42: set_slot_direct(584)
       ops.PUSH_LOCAL_FRAME,    -- 44: push_local_frame
-      ops.NEW_FUNCTION, 172,   -- 45: new_function(172)
-      ops.SET_SLOT_DIRECT, 519,-- 47: set_slot_direct(519)
+      ops.NEW_FUNCTION, 181,   -- 45: new_function(181)
+      ops.SET_SLOT_DIRECT, 584,-- 47: set_slot_direct(584)
       ops.PUSH_LOCAL_FRAME,    -- 49: push_local_frame
-      ops.GET_SLOT_DIRECT, 519,-- 50: get_slot_direct(519)
-      ops.NEW_FUNCTION, 174,   -- 52: new_function(174)
-      ops.SET_SLOT_DIRECT, 526,-- 54: set_slot_direct(526)
+      ops.GET_SLOT_DIRECT, 584,-- 50: get_slot_direct(584)
+      ops.NEW_FUNCTION, 183,   -- 52: new_function(183)
+      ops.SET_SLOT_DIRECT, 591,-- 54: set_slot_direct(591)
       ops.PUSH_LOCAL_FRAME,    -- 56: push_local_frame
-      ops.GET_SLOT_DIRECT, 519,-- 57: get_slot_direct(519)
+      ops.GET_SLOT_DIRECT, 584,-- 57: get_slot_direct(584)
       ops.RETURN               -- 59: return
     }
   },
   ifunc.Function:new{ -- "compile_from_source"
     name = jsval.newString("compile_from_source"),
-    id = 172,
+    id = 181,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -16425,91 +17971,91 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 363,-- 8: set_slot_direct(363)
+      ops.SET_SLOT_DIRECT, 430,-- 8: set_slot_direct(430)
       ops.DUP,                 -- 10: dup
       ops.GET_SLOT_DIRECT, 31, -- 11: get_slot_direct(31)
       ops.PUSH_LOCAL_FRAME,    -- 13: push_local_frame
       ops.SWAP,                -- 14: swap
-      ops.SET_SLOT_DIRECT, 522,-- 15: set_slot_direct(522)
+      ops.SET_SLOT_DIRECT, 587,-- 15: set_slot_direct(587)
       ops.POP,                 -- 17: pop
       ops.PUSH_LOCAL_FRAME,    -- 18: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 19: push_literal(0)
-      ops.SET_SLOT_DIRECT, 375,-- 21: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 21: set_slot_direct(441)
       ops.PUSH_FRAME,          -- 23: push_frame
       ops.PUSH_LITERAL, 0,     -- 24: push_literal(0)
-      ops.SET_SLOT_DIRECT, 385,-- 26: set_slot_direct(385)
+      ops.SET_SLOT_DIRECT, 451,-- 26: set_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 28: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 29: push_literal(0)
       ops.SET_SLOT_DIRECT, 75, -- 31: set_slot_direct(75)
       ops.PUSH_LOCAL_FRAME,    -- 33: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 34: push_local_frame
-      ops.GET_SLOT_DIRECT, 363,-- 35: get_slot_direct(363)
+      ops.GET_SLOT_DIRECT, 430,-- 35: get_slot_direct(430)
       ops.DUP,                 -- 37: dup
       ops.UN_NOT,              -- 38: un_not
       ops.JMP_UNLESS, 45, 45,  -- 39: jmp_unless(45,45)
       ops.POP,                 -- 42: pop
-      ops.PUSH_LITERAL, 523,   -- 43: push_literal(523)
+      ops.PUSH_LITERAL, 588,   -- 43: push_literal(588)
       ops.PHI,                 -- 45: phi
-      ops.SET_SLOT_DIRECT, 363,-- 46: set_slot_direct(363)
+      ops.SET_SLOT_DIRECT, 430,-- 46: set_slot_direct(430)
       ops.PUSH_LOCAL_FRAME,    -- 48: push_local_frame
       ops.PUSH_FRAME,          -- 49: push_frame
-      ops.GET_SLOT_DIRECT, 252,-- 50: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 50: get_slot_direct(325)
       ops.PUSH_LOCAL_FRAME,    -- 52: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 53: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 55: push_local_frame
-      ops.GET_SLOT_DIRECT, 363,-- 56: get_slot_direct(363)
+      ops.GET_SLOT_DIRECT, 430,-- 56: get_slot_direct(430)
       ops.PUSH_FRAME,          -- 58: push_frame
-      ops.GET_SLOT_DIRECT, 521,-- 59: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 586,-- 59: get_slot_direct(586)
       ops.INVOKE, 2,           -- 61: invoke(2)
-      ops.SET_SLOT_DIRECT, 375,-- 63: set_slot_direct(375)
+      ops.SET_SLOT_DIRECT, 441,-- 63: set_slot_direct(441)
       ops.PUSH_FRAME,          -- 65: push_frame
       ops.PUSH_FRAME,          -- 66: push_frame
-      ops.GET_SLOT_DIRECT, 450,-- 67: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 67: get_slot_direct(516)
       ops.PUSH_LOCAL_FRAME,    -- 69: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 70: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 72: push_local_frame
-      ops.GET_SLOT_DIRECT, 375,-- 73: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 441,-- 73: get_slot_direct(441)
       ops.PUSH_LITERAL, 118,   -- 75: push_literal(118)
       ops.INVOKE, 2,           -- 77: invoke(2)
-      ops.SET_SLOT_DIRECT, 385,-- 79: set_slot_direct(385)
+      ops.SET_SLOT_DIRECT, 451,-- 79: set_slot_direct(451)
       ops.PUSH_FRAME,          -- 81: push_frame
-      ops.GET_SLOT_DIRECT, 520,-- 82: get_slot_direct(520)
+      ops.GET_SLOT_DIRECT, 585,-- 82: get_slot_direct(585)
       ops.JMP_UNLESS, 123, 123,-- 84: jmp_unless(123,123)
       ops.PUSH_FRAME,          -- 87: push_frame
       ops.PUSH_LITERAL, 0,     -- 88: push_literal(0)
-      ops.SET_SLOT_DIRECT, 524,-- 90: set_slot_direct(524)
+      ops.SET_SLOT_DIRECT, 589,-- 90: set_slot_direct(589)
       ops.PUSH_FRAME,          -- 92: push_frame
       ops.PUSH_FRAME,          -- 93: push_frame
-      ops.GET_SLOT_DIRECT, 441,-- 94: get_slot_direct(441)
+      ops.GET_SLOT_DIRECT, 507,-- 94: get_slot_direct(507)
       ops.DUP,                 -- 96: dup
       ops.GET_SLOT_DIRECT_CHECK, 22,-- 97: get_slot_direct_check(22)
       ops.SWAP,                -- 99: swap
       ops.PUSH_FRAME,          -- 100: push_frame
-      ops.GET_SLOT_DIRECT, 385,-- 101: get_slot_direct(385)
-      ops.GET_SLOT_DIRECT, 397,-- 103: get_slot_direct(397)
+      ops.GET_SLOT_DIRECT, 451,-- 101: get_slot_direct(451)
+      ops.GET_SLOT_DIRECT, 463,-- 103: get_slot_direct(463)
       ops.INVOKE, 1,           -- 105: invoke(1)
-      ops.SET_SLOT_DIRECT, 524,-- 107: set_slot_direct(524)
+      ops.SET_SLOT_DIRECT, 589,-- 107: set_slot_direct(589)
       ops.PUSH_FRAME,          -- 109: push_frame
-      ops.GET_SLOT_DIRECT, 385,-- 110: get_slot_direct(385)
-      ops.GET_SLOT_DIRECT, 464,-- 112: get_slot_direct(464)
+      ops.GET_SLOT_DIRECT, 451,-- 110: get_slot_direct(451)
+      ops.GET_SLOT_DIRECT, 530,-- 112: get_slot_direct(530)
       ops.DUP,                 -- 114: dup
       ops.GET_SLOT_DIRECT_CHECK, 94,-- 115: get_slot_direct_check(94)
       ops.SWAP,                -- 117: swap
-      ops.NEW_FUNCTION, 173,   -- 118: new_function(173)
+      ops.NEW_FUNCTION, 182,   -- 118: new_function(182)
       ops.INVOKE, 1,           -- 120: invoke(1)
       ops.POP,                 -- 122: pop
       ops.PHI,                 -- 123: phi
       ops.PUSH_LOCAL_FRAME,    -- 124: push_local_frame
       ops.PUSH_LOCAL_FRAME,    -- 125: push_local_frame
-      ops.GET_SLOT_DIRECT, 522,-- 126: get_slot_direct(522)
+      ops.GET_SLOT_DIRECT, 587,-- 126: get_slot_direct(587)
       ops.JMP_UNLESS, 136, 145,-- 128: jmp_unless(136,145)
       ops.PUSH_FRAME,          -- 131: push_frame
-      ops.GET_SLOT_DIRECT, 385,-- 132: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 132: get_slot_direct(451)
       ops.JMP, 145,            -- 134: jmp(145)
       ops.PUSH_FRAME,          -- 136: push_frame
-      ops.GET_SLOT_DIRECT, 385,-- 137: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 137: get_slot_direct(451)
       ops.DUP,                 -- 139: dup
-      ops.GET_SLOT_DIRECT_CHECK, 486,-- 140: get_slot_direct_check(486)
+      ops.GET_SLOT_DIRECT_CHECK, 552,-- 140: get_slot_direct_check(552)
       ops.SWAP,                -- 142: swap
       ops.INVOKE, 0,           -- 143: invoke(0)
       ops.PHI,                 -- 145: phi
@@ -16521,7 +18067,7 @@ startup.functions = {
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 173,
+    id = 182,
     nargs = 2,
     max_stack = 5,
     bytecode = {
@@ -16539,16 +18085,16 @@ startup.functions = {
       ops.SET_SLOT_DIRECT, 53, -- 15: set_slot_direct(53)
       ops.POP,                 -- 17: pop
       ops.PUSH_FRAME,          -- 18: push_frame
-      ops.GET_SLOT_DIRECT, 520,-- 19: get_slot_direct(520)
+      ops.GET_SLOT_DIRECT, 585,-- 19: get_slot_direct(585)
       ops.PUSH_LOCAL_FRAME,    -- 21: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 22: get_slot_direct(26)
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 385,-- 25: get_slot_direct(385)
+      ops.GET_SLOT_DIRECT, 451,-- 25: get_slot_direct(451)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
       ops.GET_SLOT_DIRECT, 109,-- 28: get_slot_direct(109)
-      ops.GET_SLOT_DIRECT, 295,-- 30: get_slot_direct(295)
+      ops.GET_SLOT_DIRECT, 368,-- 30: get_slot_direct(368)
       ops.PUSH_FRAME,          -- 32: push_frame
-      ops.GET_SLOT_DIRECT, 524,-- 33: get_slot_direct(524)
+      ops.GET_SLOT_DIRECT, 589,-- 33: get_slot_direct(589)
       ops.INVOKE, 3,           -- 35: invoke(3)
       ops.POP,                 -- 37: pop
       ops.PUSH_LITERAL, 0,     -- 38: push_literal(0)
@@ -16557,23 +18103,23 @@ startup.functions = {
   },
   ifunc.Function:new{ -- ".make_repl"
     name = jsval.newString(".make_repl"),
-    id = 174,
+    id = 183,
     nargs = 0,
     max_stack = 2,
     bytecode = {
       ops.PUSH_FRAME,          -- 0: push_frame
       ops.PUSH_LITERAL, 0,     -- 1: push_literal(0)
-      ops.SET_SLOT_DIRECT, 370,-- 3: set_slot_direct(370)
+      ops.SET_SLOT_DIRECT, 230,-- 3: set_slot_direct(230)
       ops.PUSH_FRAME,          -- 5: push_frame
       ops.PUSH_LITERAL, 41,    -- 6: push_literal(41)
-      ops.SET_SLOT_DIRECT, 370,-- 8: set_slot_direct(370)
-      ops.NEW_FUNCTION, 175,   -- 10: new_function(175)
+      ops.SET_SLOT_DIRECT, 230,-- 8: set_slot_direct(230)
+      ops.NEW_FUNCTION, 184,   -- 10: new_function(184)
       ops.RETURN               -- 12: return
     }
   },
   ifunc.Function:new{
     name = jsval.Undefined,
-    id = 175,
+    id = 184,
     nargs = 1,
     max_stack = 6,
     bytecode = {
@@ -16583,41 +18129,41 @@ startup.functions = {
       ops.GET_SLOT_DIRECT, 18, -- 4: get_slot_direct(18)
       ops.PUSH_LOCAL_FRAME,    -- 6: push_local_frame
       ops.SWAP,                -- 7: swap
-      ops.SET_SLOT_DIRECT, 363,-- 8: set_slot_direct(363)
+      ops.SET_SLOT_DIRECT, 430,-- 8: set_slot_direct(430)
       ops.POP,                 -- 10: pop
       ops.PUSH_LOCAL_FRAME,    -- 11: push_local_frame
       ops.PUSH_LITERAL, 0,     -- 12: push_literal(0)
-      ops.SET_SLOT_DIRECT, 525,-- 14: set_slot_direct(525)
+      ops.SET_SLOT_DIRECT, 590,-- 14: set_slot_direct(590)
       ops.PUSH_LOCAL_FRAME,    -- 16: push_local_frame
       ops.PUSH_FRAME,          -- 17: push_frame
-      ops.GET_SLOT_DIRECT, 252,-- 18: get_slot_direct(252)
+      ops.GET_SLOT_DIRECT, 325,-- 18: get_slot_direct(325)
       ops.DUP,                 -- 20: dup
-      ops.GET_SLOT_DIRECT_CHECK, 379,-- 21: get_slot_direct_check(379)
+      ops.GET_SLOT_DIRECT_CHECK, 445,-- 21: get_slot_direct_check(445)
       ops.SWAP,                -- 23: swap
       ops.PUSH_FRAME,          -- 24: push_frame
-      ops.GET_SLOT_DIRECT, 370,-- 25: get_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 230,-- 25: get_slot_direct(230)
       ops.PUSH_LOCAL_FRAME,    -- 27: push_local_frame
-      ops.GET_SLOT_DIRECT, 363,-- 28: get_slot_direct(363)
+      ops.GET_SLOT_DIRECT, 430,-- 28: get_slot_direct(430)
       ops.PUSH_FRAME,          -- 30: push_frame
-      ops.GET_SLOT_DIRECT, 521,-- 31: get_slot_direct(521)
+      ops.GET_SLOT_DIRECT, 586,-- 31: get_slot_direct(586)
       ops.INVOKE, 3,           -- 33: invoke(3)
-      ops.SET_SLOT_DIRECT, 525,-- 35: set_slot_direct(525)
+      ops.SET_SLOT_DIRECT, 590,-- 35: set_slot_direct(590)
       ops.PUSH_FRAME,          -- 37: push_frame
       ops.GET_SLOT_DIRECT, 117,-- 38: get_slot_direct(117)
       ops.PUSH_LOCAL_FRAME,    -- 40: push_local_frame
-      ops.GET_SLOT_DIRECT, 525,-- 41: get_slot_direct(525)
-      ops.GET_SLOT_DIRECT, 370,-- 43: get_slot_direct(370)
-      ops.SET_SLOT_DIRECT, 370,-- 45: set_slot_direct(370)
+      ops.GET_SLOT_DIRECT, 590,-- 41: get_slot_direct(590)
+      ops.GET_SLOT_DIRECT, 230,-- 43: get_slot_direct(230)
+      ops.SET_SLOT_DIRECT, 230,-- 45: set_slot_direct(230)
       ops.PUSH_FRAME,          -- 47: push_frame
-      ops.GET_SLOT_DIRECT, 450,-- 48: get_slot_direct(450)
+      ops.GET_SLOT_DIRECT, 516,-- 48: get_slot_direct(516)
       ops.PUSH_LOCAL_FRAME,    -- 50: push_local_frame
       ops.GET_SLOT_DIRECT, 26, -- 51: get_slot_direct(26)
       ops.PUSH_LOCAL_FRAME,    -- 53: push_local_frame
-      ops.GET_SLOT_DIRECT, 525,-- 54: get_slot_direct(525)
-      ops.GET_SLOT_DIRECT, 375,-- 56: get_slot_direct(375)
+      ops.GET_SLOT_DIRECT, 590,-- 54: get_slot_direct(590)
+      ops.GET_SLOT_DIRECT, 441,-- 56: get_slot_direct(441)
       ops.INVOKE, 1,           -- 58: invoke(1)
       ops.DUP,                 -- 60: dup
-      ops.GET_SLOT_DIRECT_CHECK, 486,-- 61: get_slot_direct_check(486)
+      ops.GET_SLOT_DIRECT_CHECK, 552,-- 61: get_slot_direct_check(552)
       ops.SWAP,                -- 63: swap
       ops.INVOKE, 0,           -- 64: invoke(0)
       ops.RETURN               -- 66: return
@@ -16818,341 +18364,406 @@ startup.literals = {
   jsval.newString("ifElse"), -- 189
   jsval.newString("ifTrue"), -- 190
   jsval.newString("ifFalse"), -- 191
-  jsval.newString("deps"), -- 192
-  jsval.newString("init_func"), -- 193
-  jsval.newString("d"), -- 194
-  jsval.newString("m"), -- 195
-  jsval.newString("_define"), -- 196
-  jsval.newString("define"), -- 197
-  jsval.newString("tokenize"), -- 198
-  jsval.newString("text!tokenize.js"), -- 199
-  jsval.newString("tokenize_source"), -- 200
-  jsval.newString("prefix"), -- 201
-  jsval.newString("suffix"), -- 202
-  jsval.newString("DEBUG"), -- 203
-  jsval.newString("c"), -- 204
-  jsval.newString("q"), -- 205
-  jsval.newString("error"), -- 206
-  jsval.newString("make"), -- 207
-  jsval.newString("message"), -- 208
-  jsval.newString("t"), -- 209
-  jsval.newString("Syntax Error"), -- 210
-  jsval.newString("to"), -- 211
-  jsval.newString(" ["), -- 212
-  jsval.newString("]"), -- 213
-  jsval.newString("type"), -- 214
-  jsval.newString("value"), -- 215
-  jsval.newString("<>+-&"), -- 216
-  jsval.newString("=>&:"), -- 217
-  jsval.newString(" "), -- 218
-  jsval.newString("a"), -- 219
-  jsval.newString("z"), -- 220
-  jsval.newString("A"), -- 221
-  jsval.newString("Z"), -- 222
-  jsval.newString("$"), -- 223
-  jsval.newString("_"), -- 224
-  jsval.newString("9"), -- 225
-  jsval.newString("isHex"), -- 226
-  jsval.newString("F"), -- 227
-  jsval.newString("+"), -- 228
-  jsval.newString("Bad exponent"), -- 229
-  jsval.newString("Bad number"), -- 230
-  jsval.newNumber(16), -- 231
-  jsval.newString("'"), -- 232
-  jsval.newString("\034"), -- 233
-  jsval.newString("\010"), -- 234
-  jsval.newString("\013"), -- 235
-  jsval.newString("Unterminated string."), -- 236
-  jsval.newString("Control character in string."), -- 237
-  jsval.newString("\092"), -- 238
-  jsval.newString("Unterminated string"), -- 239
-  jsval.newString("b"), -- 240
-  jsval.newString("\008"), -- 241
-  jsval.newString("\012"), -- 242
-  jsval.newString("\009"), -- 243
-  jsval.newString("u"), -- 244
-  jsval.newString("/"), -- 245
-  jsval.newString("*"), -- 246
-  jsval.newString("operator"), -- 247
-  jsval.newString("__module_name__"), -- 248
-  jsval.newString("make_tokenize"), -- 249
-  jsval.newString("__module_init__"), -- 250
-  jsval.newString("__module_source__"), -- 251
-  jsval.newString("parse"), -- 252
-  jsval.newString("text!parse.js"), -- 253
-  jsval.newString("parse_source"), -- 254
-  jsval.newString("scope"), -- 255
-  jsval.newString("symbol_table"), -- 256
-  jsval.newString("token"), -- 257
-  jsval.newString("tokens"), -- 258
-  jsval.newString("token_nr"), -- 259
-  jsval.newString("itself"), -- 260
-  jsval.newString("original_scope"), -- 261
-  jsval.newString("new_scope"), -- 262
-  jsval.newString("copy_scope"), -- 263
-  jsval.newString("advance"), -- 264
-  jsval.newString("expression"), -- 265
-  jsval.newString("statement"), -- 266
-  jsval.newString("hoist_var"), -- 267
-  jsval.newString("statements"), -- 268
-  jsval.newString("original_symbol"), -- 269
-  jsval.newString("symbol"), -- 270
-  jsval.newString("constant"), -- 271
-  jsval.newString("infix"), -- 272
-  jsval.newString("infixr"), -- 273
-  jsval.newString("assignment"), -- 274
-  jsval.newString("stmt"), -- 275
-  jsval.newString("parse_repl"), -- 276
-  jsval.newString("prop"), -- 277
-  jsval.newString("def"), -- 278
-  jsval.newString("reserved"), -- 279
-  jsval.newString("Already reserved."), -- 280
-  jsval.newString("Already defined."), -- 281
-  jsval.newString("nud"), -- 282
-  jsval.newString("led"), -- 283
-  jsval.newString("std"), -- 284
-  jsval.newString("lbp"), -- 285
-  jsval.newString("escape"), -- 286
-  jsval.newString("parent"), -- 287
-  jsval.newString("(name)"), -- 288
-  jsval.newString("find"), -- 289
-  jsval.newString("arity"), -- 290
-  jsval.newString("reserve"), -- 291
-  jsval.newString("s"), -- 292
-  jsval.newString("level"), -- 293
-  jsval.newString("assign"), -- 294
-  jsval.newString("id"), -- 295
-  jsval.newString("Expected '"), -- 296
-  jsval.newString("'."), -- 297
-  jsval.newString("(end)"), -- 298
-  jsval.newString("Unknown operator: "), -- 299
-  jsval.newString("(literal)"), -- 300
-  jsval.newString("literal"), -- 301
-  jsval.newString("Unexpected token."), -- 302
-  jsval.newString("rbp"), -- 303
-  jsval.newString("left"), -- 304
-  jsval.newString("("), -- 305
-  jsval.newString("Bad expression statement."), -- 306
-  jsval.newString(";"), -- 307
-  jsval.newString("stmt_list"), -- 308
-  jsval.newString("var"), -- 309
-  jsval.newString("}"), -- 310
-  jsval.newString("{"), -- 311
-  jsval.newString("Undefined: "), -- 312
-  jsval.newString("Missing operator."), -- 313
-  jsval.newString("bp"), -- 314
-  jsval.newString("binary"), -- 315
-  jsval.newString("["), -- 316
-  jsval.newString("Bad lvalue."), -- 317
-  jsval.newNumber(70), -- 318
-  jsval.newString("unary"), -- 319
-  jsval.newString(":"), -- 320
-  jsval.newString(")"), -- 321
-  jsval.newString("else"), -- 322
-  jsval.newString("null"), -- 323
-  jsval.newString("="), -- 324
-  jsval.newString("+="), -- 325
-  jsval.newString("-="), -- 326
-  jsval.newString("*="), -- 327
-  jsval.newString("/="), -- 328
-  jsval.newString("?"), -- 329
-  jsval.newNumber(20), -- 330
-  jsval.newString("third"), -- 331
-  jsval.newString("ternary"), -- 332
-  jsval.newString("||"), -- 333
-  jsval.newNumber(30), -- 334
-  jsval.newString("&&"), -- 335
-  jsval.newNumber(35), -- 336
-  jsval.newString("==="), -- 337
-  jsval.newNumber(40), -- 338
-  jsval.newString("!=="), -- 339
-  jsval.newString("<"), -- 340
-  jsval.newNumber(45), -- 341
-  jsval.newString("<="), -- 342
-  jsval.newString(">"), -- 343
-  jsval.newString(">="), -- 344
-  jsval.newNumber(50), -- 345
-  jsval.newNumber(60), -- 346
-  jsval.newNumber(80), -- 347
-  jsval.newString("Expected a property name."), -- 348
-  jsval.newNumber(75), -- 349
-  jsval.newString("Expected a variable name."), -- 350
-  jsval.newString("!"), -- 351
-  jsval.newString("typeof"), -- 352
-  jsval.newString("Expected a parameter name."), -- 353
-  jsval.newString("use strict"), -- 354
-  jsval.newString("arguments_escapes"), -- 355
-  jsval.newString("Bad property name."), -- 356
-  jsval.newString("key"), -- 357
-  jsval.newString("Expected a new variable name."), -- 358
-  jsval.newString("if"), -- 359
-  jsval.newString("return"), -- 360
-  jsval.newString("Unreachable statement."), -- 361
-  jsval.newString("break"), -- 362
-  jsval.newString("source"), -- 363
-  jsval.newString("top_level"), -- 364
-  jsval.newString("debug"), -- 365
-  jsval.newString("old_scope"), -- 366
-  jsval.newString("Try"), -- 367
-  jsval.newString("=<>!+-*&|/%^"), -- 368
-  jsval.newString("=<>&|"), -- 369
-  jsval.newString("state"), -- 370
-  jsval.newString("TOKEN_PREFIX"), -- 371
-  jsval.newString("TOKEN_SUFFIX"), -- 372
-  jsval.newString("nstate"), -- 373
-  jsval.newString("repl_tokens"), -- 374
-  jsval.newString("tree"), -- 375
-  jsval.newString("ee"), -- 376
-  jsval.newString("make_parse"), -- 377
-  jsval.newString("__module_deps__"), -- 378
-  jsval.newString("repl"), -- 379
-  jsval.newString("bytecode-table"), -- 380
-  jsval.newString("text!bytecode-table.js"), -- 381
-  jsval.newString("bytecode_table_source"), -- 382
-  jsval.newString("bytecodes_by_num"), -- 383
-  jsval.newString("bytecodes_by_name"), -- 384
-  jsval.newString("bc"), -- 385
-  jsval.newString("print_literal"), -- 386
-  jsval.newString("print_label"), -- 387
-  jsval.newString("args"), -- 388
-  jsval.newString("stackpop"), -- 389
-  jsval.newString("stackpush"), -- 390
-  jsval.newString("printargs"), -- 391
-  jsval.newString("nbc"), -- 392
-  jsval.newString("bytecode"), -- 393
-  jsval.newString("pc"), -- 394
-  jsval.newString("idx"), -- 395
-  jsval.newString(" /* "), -- 396
-  jsval.newString("literals"), -- 397
-  jsval.newString(" */"), -- 398
-  jsval.newString("lbl"), -- 399
-  jsval.newString("label"), -- 400
-  jsval.newString("push_frame"), -- 401
-  jsval.newString("push_local_frame"), -- 402
-  jsval.newString("push_literal"), -- 403
-  jsval.newString("new_object"), -- 404
-  jsval.newString("new_array"), -- 405
-  jsval.newString("new_function"), -- 406
-  jsval.newString("get_slot_direct"), -- 407
-  jsval.newString("get_slot_indirect"), -- 408
-  jsval.newString("get_slot_direct_check"), -- 409
-  jsval.newString("set_slot_direct"), -- 410
-  jsval.newString("set_slot_indirect"), -- 411
-  jsval.newString("invoke"), -- 412
-  jsval.newString("opname"), -- 413
-  jsval.newString("arg0"), -- 414
-  jsval.newString("jmp"), -- 415
-  jsval.newString("jmp_into_loop"), -- 416
-  jsval.newString("jmp_unless"), -- 417
-  jsval.newString("phi"), -- 418
-  jsval.newString("dup"), -- 419
-  jsval.newString("2dup"), -- 420
-  jsval.newString("over"), -- 421
-  jsval.newString("over2"), -- 422
-  jsval.newString("swap"), -- 423
-  jsval.newString("un_not"), -- 424
-  jsval.newString("un_minus"), -- 425
-  jsval.newString("un_typeof"), -- 426
-  jsval.newString("bi_eq"), -- 427
-  jsval.newString("bi_gt"), -- 428
-  jsval.newString("bi_gte"), -- 429
-  jsval.newString("bi_add"), -- 430
-  jsval.newString("bi_sub"), -- 431
-  jsval.newString("bi_mul"), -- 432
-  jsval.newString("bi_div"), -- 433
-  jsval.newString("make_bytecode_table"), -- 434
-  jsval.newString("for_num"), -- 435
-  jsval.newString("for_name"), -- 436
-  jsval.newString("literal-map"), -- 437
-  jsval.newString("text!literal-map.js"), -- 438
-  jsval.newString("literal_map_source"), -- 439
-  jsval.newString("ObjectIs"), -- 440
-  jsval.newString("LiteralMap"), -- 441
-  jsval.newString("is"), -- 442
-  jsval.newString("items"), -- 443
-  jsval.newString("list"), -- 444
-  jsval.newString("get"), -- 445
-  jsval.newString("constructor"), -- 446
-  jsval.newString("pair"), -- 447
-  jsval.newString("entries"), -- 448
-  jsval.newString("make_literal_map"), -- 449
-  jsval.newString("bcompile"), -- 450
-  jsval.newString("text!bcompile.js"), -- 451
-  jsval.newString("bcompile_source"), -- 452
-  jsval.newString("bytecode_table"), -- 453
-  jsval.newString("assert"), -- 454
-  jsval.newString("dispatch"), -- 455
-  jsval.newString("mkstate"), -- 456
-  jsval.newString("console"), -- 457
-  jsval.newString("log"), -- 458
-  jsval.newString("ASSERTION FAILURE"), -- 459
-  jsval.newString("dont_desugar_frame_get"), -- 460
-  jsval.newString("lm"), -- 461
-  jsval.newString("encode_uint"), -- 462
-  jsval.newString("encode_str"), -- 463
-  jsval.newString("functions"), -- 464
-  jsval.newString("desugar_frame_get"), -- 465
-  jsval.newString("newf"), -- 466
-  jsval.newString("max_stack"), -- 467
-  jsval.newString("stack_depth"), -- 468
-  jsval.newString("loop_label_stack"), -- 469
-  jsval.newString("bytecode_op"), -- 470
-  jsval.newString("op"), -- 471
-  jsval.newString("cf"), -- 472
-  jsval.newString("current_func"), -- 473
-  jsval.newString("can_fall_off"), -- 474
-  jsval.newString("emit"), -- 475
-  jsval.newString("func_id"), -- 476
-  jsval.newString(": "), -- 477
-  jsval.newString("decompile"), -- 478
-  jsval.newString("out"), -- 479
-  jsval.newString("msb"), -- 480
-  jsval.newString("lsb"), -- 481
-  jsval.newNumber(128), -- 482
-  jsval.newString("lv"), -- 483
-  jsval.newString("boolean"), -- 484
-  jsval.newString("UNKNOWN LITERAL TYPE"), -- 485
-  jsval.newString("encode"), -- 486
-  jsval.newString("<undefined>"), -- 487
-  jsval.newString("new_label"), -- 488
-  jsval.newString("set_label"), -- 489
-  jsval.newString("lls"), -- 490
-  jsval.newString("peek_loop_label"), -- 491
-  jsval.newString("pop_loop_label"), -- 492
-  jsval.newString("push_loop_label"), -- 493
-  jsval.newString("flatten_labels"), -- 494
-  jsval.newString("tree_lst"), -- 495
-  jsval.newString("bcompile_stmt"), -- 496
-  jsval.newString("bcompile_stmts"), -- 497
-  jsval.newString("bcompile_expr"), -- 498
-  jsval.newString("depth"), -- 499
-  jsval.newString("escapes"), -- 500
-  jsval.newString("which"), -- 501
-  jsval.newString("This isn't actually emitted by the parser anymore"), -- 502
-  jsval.newString("extra_name"), -- 503
-  jsval.newString("is_stmt"), -- 504
-  jsval.newString("mode"), -- 505
-  jsval.newString("sd_before"), -- 506
-  jsval.newString("sd_after"), -- 507
-  jsval.newString("mergeLabel"), -- 508
-  jsval.newString("falseLabel"), -- 509
-  jsval.newString("startLabel"), -- 510
-  jsval.newString("testLabel"), -- 511
-  jsval.newString("endLabel"), -- 512
-  jsval.newString("this_func"), -- 513
-  jsval.newString("new_func"), -- 514
-  jsval.newString("parse_tree"), -- 515
-  jsval.newString("make_bcompile"), -- 516
-  jsval.newString("top-level"), -- 517
-  jsval.newString("isFinite parseInt parseFloat isNaN Array Boolean Error Function Math Number Object JSON RangeError RegExp String SyntaxError TypeError console arguments now define document eval globalThis"), -- 518
-  jsval.newString("compile_from_source"), -- 519
-  jsval.newString("banalyze"), -- 520
-  jsval.newString("TOP_LEVEL"), -- 521
-  jsval.newString("as_object"), -- 522
-  jsval.newString("{ return 1+2; }"), -- 523
-  jsval.newString("literalMap"), -- 524
-  jsval.newString("rv"), -- 525
-  jsval.newString("make_repl") -- 526
+  jsval.newString("_make_stdlib"), -- 192
+  jsval.newString("ArrayIsArray"), -- 193
+  jsval.newString("StringSlice"), -- 194
+  jsval.newString("ObjectCreate"), -- 195
+  jsval.newString("ObjectKeys"), -- 196
+  jsval.newString("NumberIsFinite"), -- 197
+  jsval.newString("ArrayJoin"), -- 198
+  jsval.newString("ArrayForEach"), -- 199
+  jsval.newString("ToIntegerOrInfinity"), -- 200
+  jsval.newString("escapes"), -- 201
+  jsval.newString("UnicodeEscape"), -- 202
+  jsval.newString("QuoteJSONString"), -- 203
+  jsval.newString("SerializeJSONObject"), -- 204
+  jsval.newString("SerializeJSONArray"), -- 205
+  jsval.newString("SerializeJSONProperty"), -- 206
+  jsval.newString("keys"), -- 207
+  jsval.newString("_ToIntegerOrInfinity"), -- 208
+  jsval.newString("\092b"), -- 209
+  jsval.newString("\092t"), -- 210
+  jsval.newString("\092n"), -- 211
+  jsval.newString("\092f"), -- 212
+  jsval.newNumber(13), -- 213
+  jsval.newString("\092r"), -- 214
+  jsval.newNumber(34), -- 215
+  jsval.newString("\092\034"), -- 216
+  jsval.newNumber(92), -- 217
+  jsval.newString("\092\092"), -- 218
+  jsval.newString("C"), -- 219
+  jsval.newString("hex"), -- 220
+  jsval.newNumber(16), -- 221
+  jsval.newString("\092u"), -- 222
+  jsval.newString("_UnicodeEscape"), -- 223
+  jsval.newString("value"), -- 224
+  jsval.newString("product"), -- 225
+  jsval.newString("\034"), -- 226
+  jsval.newString("c"), -- 227
+  jsval.newNumber(32), -- 228
+  jsval.newString("_QuoteJSONString"), -- 229
+  jsval.newString("state"), -- 230
+  jsval.newString("stepback"), -- 231
+  jsval.newString("K"), -- 232
+  jsval.newString("partial"), -- 233
+  jsval.newString("final"), -- 234
+  jsval.newString("indent"), -- 235
+  jsval.newString("gap"), -- 236
+  jsval.newString("propertyList"), -- 237
+  jsval.newString("P"), -- 238
+  jsval.newString("strP"), -- 239
+  jsval.newString("member"), -- 240
+  jsval.newString(":"), -- 241
+  jsval.newString(" "), -- 242
+  jsval.newString("{}"), -- 243
+  jsval.newString("{"), -- 244
+  jsval.newString("}"), -- 245
+  jsval.newString("separator"), -- 246
+  jsval.newString(",\010"), -- 247
+  jsval.newString("{\010"), -- 248
+  jsval.newString("\010"), -- 249
+  jsval.newString("_SerializeJSONObject"), -- 250
+  jsval.newString("index"), -- 251
+  jsval.newString("null"), -- 252
+  jsval.newString("[]"), -- 253
+  jsval.newString("["), -- 254
+  jsval.newString("]"), -- 255
+  jsval.newString("[\010"), -- 256
+  jsval.newString("_SerializeJSONArray"), -- 257
+  jsval.newString("key"), -- 258
+  jsval.newString("holder"), -- 259
+  jsval.newString("toJSON"), -- 260
+  jsval.newString("replacerFunction"), -- 261
+  jsval.newString("_SerializeJSONProperty"), -- 262
+  jsval.newString("JSON"), -- 263
+  jsval.newString("replacer"), -- 264
+  jsval.newString("space"), -- 265
+  jsval.newString("wrapper"), -- 266
+  jsval.newString("seen"), -- 267
+  jsval.newString("$"), -- 268
+  jsval.newString("spaceMV"), -- 269
+  jsval.newString("stack"), -- 270
+  jsval.newString("stringify"), -- 271
+  jsval.newString("_make_json"), -- 272
+  jsval.newString("deps"), -- 273
+  jsval.newString("init_func"), -- 274
+  jsval.newString("d"), -- 275
+  jsval.newString("m"), -- 276
+  jsval.newString("_define"), -- 277
+  jsval.newString("define"), -- 278
+  jsval.newString("tokenize"), -- 279
+  jsval.newString("text!tokenize.js"), -- 280
+  jsval.newString("tokenize_source"), -- 281
+  jsval.newString("prefix"), -- 282
+  jsval.newString("suffix"), -- 283
+  jsval.newString("DEBUG"), -- 284
+  jsval.newString("q"), -- 285
+  jsval.newString("error"), -- 286
+  jsval.newString("make"), -- 287
+  jsval.newString("message"), -- 288
+  jsval.newString("t"), -- 289
+  jsval.newString("Syntax Error"), -- 290
+  jsval.newString("to"), -- 291
+  jsval.newString(" ["), -- 292
+  jsval.newString("type"), -- 293
+  jsval.newString("<>+-&"), -- 294
+  jsval.newString("=>&:"), -- 295
+  jsval.newString("a"), -- 296
+  jsval.newString("z"), -- 297
+  jsval.newString("A"), -- 298
+  jsval.newString("Z"), -- 299
+  jsval.newString("_"), -- 300
+  jsval.newString("9"), -- 301
+  jsval.newString("isHex"), -- 302
+  jsval.newString("F"), -- 303
+  jsval.newString("+"), -- 304
+  jsval.newString("Bad exponent"), -- 305
+  jsval.newString("Bad number"), -- 306
+  jsval.newString("'"), -- 307
+  jsval.newString("\013"), -- 308
+  jsval.newString("Unterminated string."), -- 309
+  jsval.newString("Control character in string."), -- 310
+  jsval.newString("\092"), -- 311
+  jsval.newString("Unterminated string"), -- 312
+  jsval.newString("b"), -- 313
+  jsval.newString("\008"), -- 314
+  jsval.newString("\012"), -- 315
+  jsval.newString("\009"), -- 316
+  jsval.newString("u"), -- 317
+  jsval.newString("/"), -- 318
+  jsval.newString("*"), -- 319
+  jsval.newString("operator"), -- 320
+  jsval.newString("__module_name__"), -- 321
+  jsval.newString("make_tokenize"), -- 322
+  jsval.newString("__module_init__"), -- 323
+  jsval.newString("__module_source__"), -- 324
+  jsval.newString("parse"), -- 325
+  jsval.newString("text!parse.js"), -- 326
+  jsval.newString("parse_source"), -- 327
+  jsval.newString("scope"), -- 328
+  jsval.newString("symbol_table"), -- 329
+  jsval.newString("token"), -- 330
+  jsval.newString("tokens"), -- 331
+  jsval.newString("token_nr"), -- 332
+  jsval.newString("itself"), -- 333
+  jsval.newString("original_scope"), -- 334
+  jsval.newString("new_scope"), -- 335
+  jsval.newString("copy_scope"), -- 336
+  jsval.newString("advance"), -- 337
+  jsval.newString("expression"), -- 338
+  jsval.newString("statement"), -- 339
+  jsval.newString("hoist_var"), -- 340
+  jsval.newString("statements"), -- 341
+  jsval.newString("original_symbol"), -- 342
+  jsval.newString("symbol"), -- 343
+  jsval.newString("constant"), -- 344
+  jsval.newString("infix"), -- 345
+  jsval.newString("infixr"), -- 346
+  jsval.newString("assignment"), -- 347
+  jsval.newString("stmt"), -- 348
+  jsval.newString("parse_repl"), -- 349
+  jsval.newString("prop"), -- 350
+  jsval.newString("def"), -- 351
+  jsval.newString("reserved"), -- 352
+  jsval.newString("Already reserved."), -- 353
+  jsval.newString("Already defined."), -- 354
+  jsval.newString("nud"), -- 355
+  jsval.newString("led"), -- 356
+  jsval.newString("std"), -- 357
+  jsval.newString("lbp"), -- 358
+  jsval.newString("escape"), -- 359
+  jsval.newString("parent"), -- 360
+  jsval.newString("(name)"), -- 361
+  jsval.newString("find"), -- 362
+  jsval.newString("arity"), -- 363
+  jsval.newString("reserve"), -- 364
+  jsval.newString("s"), -- 365
+  jsval.newString("level"), -- 366
+  jsval.newString("assign"), -- 367
+  jsval.newString("id"), -- 368
+  jsval.newString("Expected '"), -- 369
+  jsval.newString("'."), -- 370
+  jsval.newString("(end)"), -- 371
+  jsval.newString("Unknown operator: "), -- 372
+  jsval.newString("(literal)"), -- 373
+  jsval.newString("literal"), -- 374
+  jsval.newString("Unexpected token."), -- 375
+  jsval.newString("rbp"), -- 376
+  jsval.newString("left"), -- 377
+  jsval.newString("("), -- 378
+  jsval.newString("Bad expression statement."), -- 379
+  jsval.newString(";"), -- 380
+  jsval.newString("stmt_list"), -- 381
+  jsval.newString("var"), -- 382
+  jsval.newString("Undefined: "), -- 383
+  jsval.newString("Missing operator."), -- 384
+  jsval.newString("bp"), -- 385
+  jsval.newString("binary"), -- 386
+  jsval.newString("Bad lvalue."), -- 387
+  jsval.newNumber(70), -- 388
+  jsval.newString("unary"), -- 389
+  jsval.newString(")"), -- 390
+  jsval.newString("else"), -- 391
+  jsval.newString("="), -- 392
+  jsval.newString("+="), -- 393
+  jsval.newString("-="), -- 394
+  jsval.newString("*="), -- 395
+  jsval.newString("/="), -- 396
+  jsval.newString("?"), -- 397
+  jsval.newNumber(20), -- 398
+  jsval.newString("third"), -- 399
+  jsval.newString("ternary"), -- 400
+  jsval.newString("||"), -- 401
+  jsval.newNumber(30), -- 402
+  jsval.newString("&&"), -- 403
+  jsval.newNumber(35), -- 404
+  jsval.newString("==="), -- 405
+  jsval.newNumber(40), -- 406
+  jsval.newString("!=="), -- 407
+  jsval.newString("<"), -- 408
+  jsval.newNumber(45), -- 409
+  jsval.newString("<="), -- 410
+  jsval.newString(">"), -- 411
+  jsval.newString(">="), -- 412
+  jsval.newNumber(50), -- 413
+  jsval.newNumber(60), -- 414
+  jsval.newNumber(80), -- 415
+  jsval.newString("Expected a property name."), -- 416
+  jsval.newNumber(75), -- 417
+  jsval.newString("Expected a variable name."), -- 418
+  jsval.newString("!"), -- 419
+  jsval.newString("typeof"), -- 420
+  jsval.newString("Expected a parameter name."), -- 421
+  jsval.newString("use strict"), -- 422
+  jsval.newString("arguments_escapes"), -- 423
+  jsval.newString("Bad property name."), -- 424
+  jsval.newString("Expected a new variable name."), -- 425
+  jsval.newString("if"), -- 426
+  jsval.newString("return"), -- 427
+  jsval.newString("Unreachable statement."), -- 428
+  jsval.newString("break"), -- 429
+  jsval.newString("source"), -- 430
+  jsval.newString("top_level"), -- 431
+  jsval.newString("debug"), -- 432
+  jsval.newString("old_scope"), -- 433
+  jsval.newString("Try"), -- 434
+  jsval.newString("=<>!+-*&|/%^"), -- 435
+  jsval.newString("=<>&|"), -- 436
+  jsval.newString("TOKEN_PREFIX"), -- 437
+  jsval.newString("TOKEN_SUFFIX"), -- 438
+  jsval.newString("nstate"), -- 439
+  jsval.newString("repl_tokens"), -- 440
+  jsval.newString("tree"), -- 441
+  jsval.newString("ee"), -- 442
+  jsval.newString("make_parse"), -- 443
+  jsval.newString("__module_deps__"), -- 444
+  jsval.newString("repl"), -- 445
+  jsval.newString("bytecode-table"), -- 446
+  jsval.newString("text!bytecode-table.js"), -- 447
+  jsval.newString("bytecode_table_source"), -- 448
+  jsval.newString("bytecodes_by_num"), -- 449
+  jsval.newString("bytecodes_by_name"), -- 450
+  jsval.newString("bc"), -- 451
+  jsval.newString("print_literal"), -- 452
+  jsval.newString("print_label"), -- 453
+  jsval.newString("args"), -- 454
+  jsval.newString("stackpop"), -- 455
+  jsval.newString("stackpush"), -- 456
+  jsval.newString("printargs"), -- 457
+  jsval.newString("nbc"), -- 458
+  jsval.newString("bytecode"), -- 459
+  jsval.newString("pc"), -- 460
+  jsval.newString("idx"), -- 461
+  jsval.newString(" /* "), -- 462
+  jsval.newString("literals"), -- 463
+  jsval.newString(" */"), -- 464
+  jsval.newString("lbl"), -- 465
+  jsval.newString("label"), -- 466
+  jsval.newString("push_frame"), -- 467
+  jsval.newString("push_local_frame"), -- 468
+  jsval.newString("push_literal"), -- 469
+  jsval.newString("new_object"), -- 470
+  jsval.newString("new_array"), -- 471
+  jsval.newString("new_function"), -- 472
+  jsval.newString("get_slot_direct"), -- 473
+  jsval.newString("get_slot_indirect"), -- 474
+  jsval.newString("get_slot_direct_check"), -- 475
+  jsval.newString("set_slot_direct"), -- 476
+  jsval.newString("set_slot_indirect"), -- 477
+  jsval.newString("invoke"), -- 478
+  jsval.newString("opname"), -- 479
+  jsval.newString("arg0"), -- 480
+  jsval.newString("jmp"), -- 481
+  jsval.newString("jmp_into_loop"), -- 482
+  jsval.newString("jmp_unless"), -- 483
+  jsval.newString("phi"), -- 484
+  jsval.newString("dup"), -- 485
+  jsval.newString("2dup"), -- 486
+  jsval.newString("over"), -- 487
+  jsval.newString("over2"), -- 488
+  jsval.newString("swap"), -- 489
+  jsval.newString("un_not"), -- 490
+  jsval.newString("un_minus"), -- 491
+  jsval.newString("un_typeof"), -- 492
+  jsval.newString("bi_eq"), -- 493
+  jsval.newString("bi_gt"), -- 494
+  jsval.newString("bi_gte"), -- 495
+  jsval.newString("bi_add"), -- 496
+  jsval.newString("bi_sub"), -- 497
+  jsval.newString("bi_mul"), -- 498
+  jsval.newString("bi_div"), -- 499
+  jsval.newString("make_bytecode_table"), -- 500
+  jsval.newString("for_num"), -- 501
+  jsval.newString("for_name"), -- 502
+  jsval.newString("literal-map"), -- 503
+  jsval.newString("text!literal-map.js"), -- 504
+  jsval.newString("literal_map_source"), -- 505
+  jsval.newString("ObjectIs"), -- 506
+  jsval.newString("LiteralMap"), -- 507
+  jsval.newString("is"), -- 508
+  jsval.newString("items"), -- 509
+  jsval.newString("list"), -- 510
+  jsval.newString("get"), -- 511
+  jsval.newString("constructor"), -- 512
+  jsval.newString("pair"), -- 513
+  jsval.newString("entries"), -- 514
+  jsval.newString("make_literal_map"), -- 515
+  jsval.newString("bcompile"), -- 516
+  jsval.newString("text!bcompile.js"), -- 517
+  jsval.newString("bcompile_source"), -- 518
+  jsval.newString("bytecode_table"), -- 519
+  jsval.newString("assert"), -- 520
+  jsval.newString("dispatch"), -- 521
+  jsval.newString("mkstate"), -- 522
+  jsval.newString("console"), -- 523
+  jsval.newString("log"), -- 524
+  jsval.newString("ASSERTION FAILURE"), -- 525
+  jsval.newString("dont_desugar_frame_get"), -- 526
+  jsval.newString("lm"), -- 527
+  jsval.newString("encode_uint"), -- 528
+  jsval.newString("encode_str"), -- 529
+  jsval.newString("functions"), -- 530
+  jsval.newString("desugar_frame_get"), -- 531
+  jsval.newString("newf"), -- 532
+  jsval.newString("max_stack"), -- 533
+  jsval.newString("stack_depth"), -- 534
+  jsval.newString("loop_label_stack"), -- 535
+  jsval.newString("bytecode_op"), -- 536
+  jsval.newString("op"), -- 537
+  jsval.newString("cf"), -- 538
+  jsval.newString("current_func"), -- 539
+  jsval.newString("can_fall_off"), -- 540
+  jsval.newString("emit"), -- 541
+  jsval.newString("func_id"), -- 542
+  jsval.newString(": "), -- 543
+  jsval.newString("decompile"), -- 544
+  jsval.newString("out"), -- 545
+  jsval.newString("msb"), -- 546
+  jsval.newString("lsb"), -- 547
+  jsval.newNumber(128), -- 548
+  jsval.newString("lv"), -- 549
+  jsval.newString("boolean"), -- 550
+  jsval.newString("UNKNOWN LITERAL TYPE"), -- 551
+  jsval.newString("encode"), -- 552
+  jsval.newString("<undefined>"), -- 553
+  jsval.newString("new_label"), -- 554
+  jsval.newString("set_label"), -- 555
+  jsval.newString("lls"), -- 556
+  jsval.newString("peek_loop_label"), -- 557
+  jsval.newString("pop_loop_label"), -- 558
+  jsval.newString("push_loop_label"), -- 559
+  jsval.newString("flatten_labels"), -- 560
+  jsval.newString("tree_lst"), -- 561
+  jsval.newString("bcompile_stmt"), -- 562
+  jsval.newString("bcompile_stmts"), -- 563
+  jsval.newString("bcompile_expr"), -- 564
+  jsval.newString("depth"), -- 565
+  jsval.newString("which"), -- 566
+  jsval.newString("This isn't actually emitted by the parser anymore"), -- 567
+  jsval.newString("extra_name"), -- 568
+  jsval.newString("is_stmt"), -- 569
+  jsval.newString("mode"), -- 570
+  jsval.newString("sd_before"), -- 571
+  jsval.newString("sd_after"), -- 572
+  jsval.newString("mergeLabel"), -- 573
+  jsval.newString("falseLabel"), -- 574
+  jsval.newString("startLabel"), -- 575
+  jsval.newString("testLabel"), -- 576
+  jsval.newString("endLabel"), -- 577
+  jsval.newString("this_func"), -- 578
+  jsval.newString("new_func"), -- 579
+  jsval.newString("parse_tree"), -- 580
+  jsval.newString("make_bcompile"), -- 581
+  jsval.newString("top-level"), -- 582
+  jsval.newString("isFinite parseInt parseFloat isNaN Array Boolean Error Function Math Number Object JSON RangeError RegExp String SyntaxError TypeError console arguments now define document eval globalThis"), -- 583
+  jsval.newString("compile_from_source"), -- 584
+  jsval.newString("banalyze"), -- 585
+  jsval.newString("TOP_LEVEL"), -- 586
+  jsval.newString("as_object"), -- 587
+  jsval.newString("{ return 1+2; }"), -- 588
+  jsval.newString("literalMap"), -- 589
+  jsval.newString("rv"), -- 590
+  jsval.newString("make_repl") -- 591
 }
 
 return startup

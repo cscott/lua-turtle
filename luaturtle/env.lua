@@ -185,6 +185,10 @@ function Env:new()
    local Math = jsval.newObject(env, ObjectPrototype)
    setRealm('Math', '%Math%', Math)
 
+   -- 25.5 The JSON object
+   local JSON = jsval.newObject(env, ObjectPrototype)
+   setRealm('JSON', '%JSON%', JSON)
+
    -- 21.1.3 Properties of the String Prototype Object
    local StringPrototype = jsval.newObject(env, ObjectPrototype)
    jsval.extendObj(StringPrototype)
@@ -713,6 +717,7 @@ function Env:makeTopLevelFrame(context, arguments)
    self:mkHidden(frame, 'Boolean', self.realm.Boolean)
    self:mkHidden(frame, 'Error', self.realm.Error)
    self:mkHidden(frame, 'Function', self.realm.Function)
+   self:mkHidden(frame, 'JSON', self.realm.JSON)
    self:mkHidden(frame, 'Math', self.realm.Math)
    self:mkHidden(frame, 'Number', self.realm.Number)
    self:mkHidden(frame, 'Object', self.realm.Object)
