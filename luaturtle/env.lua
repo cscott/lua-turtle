@@ -529,6 +529,28 @@ function Env:new()
      local high,lo = string.byte(jsval.stringToUtf16(S), start, start + 1)
      return jsval.newNumber(compat.combineBytes(high, lo))
    end)
+   env:addNativeFunc(StringPrototype, 'substring', 2, function(this, args)
+     local O = RequireObjectCoercible(this)
+     local S = jsval.invokePrivate(env, O, 'ToString')
+     local len = jsval.strlen(S)
+     local startPos = args[1] or jsval.Undefined
+     local intStart = jsval.toLua(env, jsval.invokePrivate(env, startPos, 'ToInteger'))
+     local endPos = args[2] or jsval.Undefined
+     local intEnd = len
+     if not rawequal(endPos, jsval.Undefined) then
+        intEnd = jsval.toLua(env, jsval.invokePrivate(env, endPos, 'ToInteger'))
+     end
+     local finalStart = math.max(0, math.min(intStart, len))
+     local finalEnd = math.max(0, math.min(intEnd, len))
+     local from = math.min(finalStart, finalEnd)
+     local to = math.max(finalStart, finalEnd)
+     local resultStr = string.sub(jsval.stringToUtf16(S),
+                                  -- 1-based indexing
+                                  (from * 2) + 1,
+                                  -- last index is inclusive (not exclusive)
+                                  (to * 2) )
+     return jsval.newStringFromUtf16(resultStr)
+   end)
    env:addNativeFunc(String, 'fromCharCode', 1, function(this, args)
      local length = #args
      local elements = {}
