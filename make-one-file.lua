@@ -42,10 +42,10 @@ end
 
 function process_one(name, filename, seen)
    local result = {}
-   table.insert(seen, name)
+   seen[name] = true
    local source = string.gsub(
       io.input(filename):read('a'),
-      'require%(\'([^\']*)\'%)', function(next_name)
+      'require%([\'\"]([^\'\"]*)[\'\"]%)', function(next_name)
          if seen[next_name] == nil then
             next_filename = module_name_to_filename(next_name)
             table.insert(result, process_one(next_name, next_filename, seen))
