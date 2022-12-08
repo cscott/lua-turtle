@@ -19,7 +19,9 @@ function repl(line)
    end
 end
 
-function eval(line)
+-- This version takes a Scribunto 'frame' argument.
+function eval(frame)
+   local line = frame.args[1] or '"Hello, world"'
    local status, result = i:repl(line)
    if status then
       return i.env:prettyPrint(result)
