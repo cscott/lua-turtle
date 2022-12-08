@@ -24,6 +24,13 @@ function eval(frame)
    local line = frame.args[1] or '"Hello, world"'
    local status, result = i:repl(line)
    if status then
+      if jsval.Type(result) == 'String' then
+         -- If the JS returns a string, don't try to "pretty print" it,
+         -- just return it directly
+         return tostring(result)
+      end
+      -- otherwise try to pretty print the result to make it
+      -- human-friendly
       return i.env:prettyPrint(result)
    elseif jsval.isJsVal(result) then
       local msg = i.env:prettyPrint(result)
