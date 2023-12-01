@@ -11,14 +11,10 @@ speed.
 
 ## Install, and Run
 
-This installation is standalone.  I developed this code using Lua 5.3.3
-but it will probably run on later versions of Lua.
-
-It uses the bitwise >> operator, which was introduced in Lua 5.3 and
-is not present in earlier versions.
-
-It also uses the 'utf8' standard library module, which was added in Lua
-5.3 and is not present in earlier versions.
+This installation is standalone.  I developed this code using Lua
+5.3.3 and then ported it to Lua 5.1 to make it compatible with
+Scribunto on Wikimedia projects.  You can try it out on Wikipedia at
+https://en.wikipedia.org/wiki/User:Cscott/LuaTurtle .
 
 To run a TurtleScript
 [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop):
@@ -36,6 +32,13 @@ Use Control-D (or Control-C) to exit the REPL.  You can also evaluate entire
 TurtleScript scripts by passing the name on the command line:
 ```
 $ ./repl.lua foo.js
+```
+
+## Bundling
+The code running on Wikipedia has been bundled into a single file
+using the command:
+```
+$ lua make-one-file.lua luaturtle.repl
 ```
 
 ## Testing
