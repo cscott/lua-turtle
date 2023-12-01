@@ -40,10 +40,33 @@ function eval(frame)
    end
 end
 
+function eval_and_encode(frame)
+   local status, result = i:repl(frame.arg[1] or "{}")
+   if status then
+      -- JSON encode!
+      local stringify = jsval.invokePrivate(
+         i.env, i.env.realm.JSON, 'GetV', jsval.newString('stringify')
+      )
+      status, result = i.env:interpretFunction(
+         stringify, i.env.realm.JSON, { result }
+      );
+   end
+   if status then
+      return base64.encode(tostring(result)) -- XXX
+   elseif jsval.isJsVal(result) then
+      -- error case
+      local msg = i.env:prettyPrint(result)
+      return '* ' .. msg
+   else
+      return result
+   end
+end
+
 reset()
 
 return {
    reset = reset,
    repl = repl,
    eval = eval,
+   eval_and_encode = eval_and_encode,
 }
