@@ -34,29 +34,29 @@ function compat.utf8codes(s)
          state.nextpos = pos + 1
          return pos, c1
       end
-      c2 = string.byte(s, pos + 1)
+      local c2 = string.byte(s, pos + 1)
       if c1 <= 0xDF then
          state.nextpos = pos + 2
          return pos, ((c1 % 0x20 ) * 0x40) + (c2 % 0x40)
       end
-      c3 = string.byte(s, pos + 2)
+      local c3 = string.byte(s, pos + 2)
       if c1 <= 0xEF then
          state.nextpos = pos + 3
          return pos, (((c1 % 0x10) * 0x40) + (c2 % 0x40)) * 0x40 + (c3 % 0x40)
       end
-      c4 = string.byte(s, pos + 3)
+      local c4 = string.byte(s, pos + 3)
       if c1 <= 0xF7 then
          state.nextpos = pos + 4
          return pos, ((((c1 % 0x08) * 0x40) + (c2 % 0x40)) * 0x40 + (c3 % 0x40)) * 0x40 + (c4 % 0x40)
       end
-      error()
+      error("bad utf-8")
    end
    return f, { nextpos = 1 }, 0
 end
 
 function compat.utf8char(...)
    -- utf8.char(c)
-   result = {}
+   local result = {}
    for _,c in ipairs{...} do
       local s
       if c <= 0x7F then
@@ -101,5 +101,11 @@ end
 
 -- unpack is a global function for Lua 5.1, otherwise use table.unpack
 compat.unpack = rawget(_G, "unpack") or table.unpack
+-- table.pack was added in Lua 5.2
+compat.pack = table.pack or function(...)
+   local t = { ... }
+   t.n = #t
+   return t
+end
 
 return compat
