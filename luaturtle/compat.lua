@@ -5,6 +5,20 @@ local compat = {}
 local string = require('string')
 local table = require('table')
 
+function compat.len(v)
+   -- the length metamethod is only available starting in Lua 5.2
+   if type(v) == 'table' then
+      local mt = getmetatable(v)
+      if mt ~= nil then
+         local len = mt.__len
+         if len ~= nil then
+            return len(v)
+         end
+      end
+   end
+   return #v
+end
+
 function compat.combineBytes(msb, lsb)
    -- (msb << 8) | lsb
    return (msb * 256) + lsb
@@ -62,15 +76,15 @@ function compat.utf8char(...)
       if c <= 0x7F then
          s = string.char(c)
       else
-         c1 = c % 0x40
-         cN = (c - c1) / 0x40
+         local c1 = c % 0x40
+         local cN = (c - c1) / 0x40
          if c <= 0x7FF then
             s = string.char(
                cN + 0xC0,
                c1 + 0x80
             )
          else
-            c2 = cN % 0x40
+            local c2 = cN % 0x40
             cN = (cN - c2) / 0x40
             if c <= 0xFFFF then
                s = string.char(
@@ -79,7 +93,7 @@ function compat.utf8char(...)
                   c1 + 0x80
                )
             else
-               c3 = cN % 0x40
+               local c3 = cN % 0x40
                cN = (cN - c3) / 0x40
                if c <= 0x10FFFF then
                   s = string.char(
@@ -100,11 +114,17 @@ function compat.utf8char(...)
 end
 
 -- unpack is a global function for Lua 5.1, otherwise use table.unpack
-compat.unpack = rawget(_G, "unpack") or table.unpack
+compat.unpack = table.unpack or function(tbl, i, j)
+  local unpack = rawget(_G, "unpack")
+  -- we also need to use compat.len to get the length of this table!
+  if i == nil then i = 1 end
+  if j == nil then j = compat.len(tbl) end
+  return unpack(tbl, i, j)
+end
 -- table.pack was added in Lua 5.2
 compat.pack = table.pack or function(...)
    local t = { ... }
-   t.n = #t
+   t.n = select("#",...)
    return t
 end
 
