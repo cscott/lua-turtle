@@ -36,6 +36,23 @@ function compat.rshift(x, disp)
    return math.floor(x/(2^disp))
 end
 
+function compat.idiv(a, b)
+  local tya, tyb = type(a), type(b)
+  if tya ~= 'number' or tyb ~= 'number' then
+    local op = nil
+    local mt = getmetatable(a)
+    if mt ~= nil then op = mt.__idiv end
+    if op == nil then
+      mt = getmetatable(b)
+      if mt ~= nil then op = mt.__idiv end
+    end
+    if op ~= nil then
+      return op(a, b)
+    end
+  end
+  return math.floor(a / b)
+end
+
 function compat.utf8codes(s)
    local len = #s
    local f = function(state, _)
