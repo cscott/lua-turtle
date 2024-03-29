@@ -145,4 +145,17 @@ compat.pack = table.pack or function(...)
    return t
 end
 
+-- table.move was added in Lua 5.3
+compat.move = table.move or function(a1, f, e, t, a2)
+  if a2 == nil then a2 = a1 end
+  local tmp = {}
+  for i=f,e do
+    tmp[1+i-f] = a1[i]
+  end
+  for i=f,e do
+    a2[t+i-f] = tmp[1+i-f]
+  end
+  return a2
+end
+
 return compat
