@@ -158,4 +158,25 @@ compat.move = table.move or function(a1, f, e, t, a2)
   return a2
 end
 
+-- vararg parameters were added to xpcall in Lua 5.2
+local XPCALL_HAS_VARARGS = (function ()
+   local success, result = xpcall(
+      function (arg)
+         return arg
+      end,
+      function (m)
+         return m
+      end,
+      true
+   )
+   return success and !!result
+end)()
+
+compat.xpcall = XPCALL_HAS_VARARGS and xpcall or function (f, msgh, ...)
+   local args = compat.pack(...)
+   return xpcall(function ()
+      return f(compat.unpack(args, 1, args.n))
+   end, msgh)
+end
+
 return compat

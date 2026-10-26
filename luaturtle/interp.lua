@@ -1,6 +1,7 @@
 local Env = require('luaturtle.env')
 local Module = require('luaturtle.module')
 local jsval = require('luaturtle.jsval')
+local compat = require('luaturtle.compat')
 
 local Interpreter = {}
 Interpreter.__index = Interpreter
@@ -74,16 +75,10 @@ function Interpreter:createModuleAndExecute(bc)
    end)
    local nm = Module:newFromBytes( table.concat(buf) )
    -- Execute the new module
-   if true then -- lua 5.1
-      return pcall(function()
-            return self.env:interpret(nm, 0, self.frame)
-      end)
-   else
-      -- Set up error-handling
-      return xpcall(
-         self.env.interpret, debug.traceback, self.env, nm, 0, self.frame
-      )
-   end
+   -- Set up error-handling
+   return compat.xpcall(
+      self.env.interpret, debug.traceback, self.env, nm, 0, self.frame
+   )
 end
 
 return Interpreter

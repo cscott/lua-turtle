@@ -1055,16 +1055,10 @@ function Env:interpretFunction(func, this, args)
       local nFrame = jsval.newFrame(
          self, parentFrame, this, self:arrayCreate(args, true)
       )
-      if true then -- lua 5.1
-         return pcall(function()
-               return self:interpret(f.modul, f.func.id, nFrame)
-         end)
-      else
-         -- Set up error-handling
-         return xpcall(
-            self.interpret, debug.traceback, self, f.modul, f.func.id, nFrame
-         )
-      end
+      -- Set up error-handling
+      return compat.xpcall(
+         self.interpret, debug.traceback, self, f.modul, f.func.id, nFrame
+      )
    end
    error('bad function object')
 end
